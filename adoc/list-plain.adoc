@@ -5,7 +5,7 @@
 _Learn practical computer science and programming with Go as a first language_
 
 *Terminal Velocity* +
-_Master the fastest human-computer interface with bash_
+_Master the fastest human-computer interface_
 
 *Bonzai Beauty* +
 _Compose completable command trees with the Go Bonzai command-line framework_
