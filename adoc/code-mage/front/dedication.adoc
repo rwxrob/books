@@ -2,9 +2,9 @@
 = Dedication
 
 To Doris, my wife, +
-to friends of rwxrob, +
-to Chloe, my faithful assistant, +
-and to the memories of Aaron Swartz and Kris Nova:  
+To friends of rwxrob, +
+To Chloe, my faithful assistant, +
+And to the memories of Aaron Swartz and Kris Nova:  
 
 Thank you for your light, support, and inspiration. +
 This book would never have happened without you.
