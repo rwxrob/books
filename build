@@ -33,6 +33,7 @@ x-site() {
 		-a copy_script=./common/assets/scripts/script.js \
 		"./adoc/index.adoc"
 	x-book code-mage
+	x-book terminal-velocity
 }
 
 x-app() {

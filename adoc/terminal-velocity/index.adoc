@@ -1,5 +1,5 @@
 [separator=::]
-= A Code Mage's First Spell Book
+= Terminal Velocity
 :author: Robert S. Muhlestein (rwxrob)
 :creator: {author}
 :copyright: 2024 Robert S. Muhlestein
@@ -9,14 +9,14 @@
 :revremark: First draft
 :doctype: book
 :leveloffset: +1
-:front-cover-image: image:cover.jpeg[width=1024,height=1024]
+//:front-cover-image: image:cover.jpeg[width=1024,height=1024]
 :sectnums!:
 :sectlinks:
 :toc: left
 :toclevels: 4
 :toc-title: Table of Contents
-:description: Learn practical computer science and programming with Go as a first language
-:keywords: Learn practical computer science and programming with Go as a first language
+:description: Master the fastest human-computer interface with bash
+:keywords: Master the fastest human-computer interface with bash
 :icons: font
 :pdf-themesdir: {docdir}/themes
 :pdf-fontsdir: {docdir}/fonts

@@ -1,7 +1,7 @@
 link:code-mage[*A Code Mage's First Spell Book*] +
 _Learn practical computer science and programming with Go as a first language_
 
-*Terminal Velocity* +
+link:terminal-velocity[*Terminal Velocity*] +
 _Master the fastest human-computer interface with bash_
 
 *Bonzai Beauty* +

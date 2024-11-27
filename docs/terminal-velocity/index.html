@@ -5,9 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
+<meta name="description" content="Master the fastest human-computer interface with bash">
+<meta name="keywords" content="Master the fastest human-computer interface with bash">
 <meta name="author" content="Robert S. Muhlestein (rwxrob)">
 <meta name="copyright" content="2024 Robert S. Muhlestein">
-<title>Books from Robert S. Muhlestein (rwxrob)</title>
+<title>Terminal Velocity</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -436,27 +438,98 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.pygments .hll { background-color: #ffffcc }
+pre.pygments { background: #ffffff; }
+pre.pygments .tok-c { color: #008000 } /* Comment */
+pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+pre.pygments .tok-k { color: #0000ff } /* Keyword */
+pre.pygments .tok-ch { color: #008000 } /* Comment.Hashbang */
+pre.pygments .tok-cm { color: #008000 } /* Comment.Multiline */
+pre.pygments .tok-cp { color: #0000ff } /* Comment.Preproc */
+pre.pygments .tok-cpf { color: #008000 } /* Comment.PreprocFile */
+pre.pygments .tok-c1 { color: #008000 } /* Comment.Single */
+pre.pygments .tok-cs { color: #008000 } /* Comment.Special */
+pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+pre.pygments .tok-gh { font-weight: bold } /* Generic.Heading */
+pre.pygments .tok-gp { font-weight: bold } /* Generic.Prompt */
+pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+pre.pygments .tok-gu { font-weight: bold } /* Generic.Subheading */
+pre.pygments .tok-kc { color: #0000ff } /* Keyword.Constant */
+pre.pygments .tok-kd { color: #0000ff } /* Keyword.Declaration */
+pre.pygments .tok-kn { color: #0000ff } /* Keyword.Namespace */
+pre.pygments .tok-kp { color: #0000ff } /* Keyword.Pseudo */
+pre.pygments .tok-kr { color: #0000ff } /* Keyword.Reserved */
+pre.pygments .tok-kt { color: #2b91af } /* Keyword.Type */
+pre.pygments .tok-s { color: #a31515 } /* Literal.String */
+pre.pygments .tok-nc { color: #2b91af } /* Name.Class */
+pre.pygments .tok-ow { color: #0000ff } /* Operator.Word */
+pre.pygments .tok-sa { color: #a31515 } /* Literal.String.Affix */
+pre.pygments .tok-sb { color: #a31515 } /* Literal.String.Backtick */
+pre.pygments .tok-sc { color: #a31515 } /* Literal.String.Char */
+pre.pygments .tok-dl { color: #a31515 } /* Literal.String.Delimiter */
+pre.pygments .tok-sd { color: #a31515 } /* Literal.String.Doc */
+pre.pygments .tok-s2 { color: #a31515 } /* Literal.String.Double */
+pre.pygments .tok-se { color: #a31515 } /* Literal.String.Escape */
+pre.pygments .tok-sh { color: #a31515 } /* Literal.String.Heredoc */
+pre.pygments .tok-si { color: #a31515 } /* Literal.String.Interpol */
+pre.pygments .tok-sx { color: #a31515 } /* Literal.String.Other */
+pre.pygments .tok-sr { color: #a31515 } /* Literal.String.Regex */
+pre.pygments .tok-s1 { color: #a31515 } /* Literal.String.Single */
+pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
+</style>
 </head>
-<body class="book">
+<body class="book toc2 toc-left">
 <div id="header">
-<h1>Books from Robert S. Muhlestein (rwxrob)</h1>
+<h1>Terminal Velocity</h1>
 <div class="details">
 <span id="author" class="author">Robert S. Muhlestein (rwxrob)</span><br>
 <span id="email" class="email"><a href="mailto:rob@rwx.gg">rob@rwx.gg</a></span><br>
+<br><span id="revremark">First draft</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_copyright">Copyright</a></li>
+<li><a href="#book-list">Bookshelf</a></li>
+<li><a href="#_dedication">Dedication</a></li>
+<li><a href="#_preface">Preface</a></li>
+<li><a href="#_github_cli_tool_gh">GitHub CLI tool (gh)</a>
+<ul class="sectlevel2">
+<li><a href="#_redirect_user_github_io">Redirect user.github.io</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 <div id="content">
-<div id="preamble">
+<div class="sect1">
+<h2 id="_copyright"><a class="link" href="#_copyright">Copyright</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Here you&#8217;ll find Rob&#8217;s perpetually unfinished books. Feel free to <a href="https://github.com/rwxrob/books-talk/issues">heckle</a> or <a href="https://github.com/sponsors/rwxrob">support him</a>.</p>
+<p>Copyright © 2024 Robert S. Muhlestein (rwxrob). All rights reserved.</p>
 </div>
 <div class="paragraph">
-<p><a href="code-mage"><strong>A Code Mage&#8217;s First Spell Book</strong></a><br>
+<p>The code portions of this book are dedicated to the public domain under the terms of the <strong>Creative Commons Zero (CC0 1.0 Universal)</strong> license (<a href="https://creativecommons.org/publicdomain/zero/1.0/" class="bare">https://creativecommons.org/publicdomain/zero/1.0/</a>). This means you are free to copy, modify, distribute the <em>code portions only</em>, even for commercial purposes, without asking permission, and without saying where you got them. This is so there is no fear your creations are your own after learning to code using them.</p>
+</div>
+<div class="paragraph">
+<p>The non-code prose and images are licensed under the more restrictive Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0) (<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="bare">https://creativecommons.org/licenses/by-nc-nd/4.0/</a>). This means that no non-code prose or image from the book may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the copyright holder. This includes remaking the same content in different formats such as PDF or EPUB since these fall under the definition of derived works. This restriction is primarily in place to ensure outdated copies are not redistributed given the frequent updates expected.</p>
+</div>
+<div class="paragraph">
+<p><em>"Terminal Velocity"</em> is a legal trademarks of Robert S. Muhlestein but can be used freely to refer to this book without limitation. To avoid potential confusion, intentionally using this trademark to refer to other projects—free or proprietary—is prohibited.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="book-list"><a class="link" href="#book-list">Bookshelf</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>A Code Mage&#8217;s First Spell Book</strong><br>
 <em>Learn practical computer science and programming with Go as a first language</em></p>
 </div>
 <div class="paragraph">
-<p><a href="terminal-velocity"><strong>Terminal Velocity</strong></a><br>
+<p><strong>Terminal Velocity</strong><br>
 <em>Master the fastest human-computer interface with bash</em></p>
 </div>
 <div class="paragraph">
@@ -477,10 +550,77 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_dedication"><a class="link" href="#_dedication">Dedication</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To Doris, my wife,<br>
+To friends of rwxrob,<br>
+To Chloe, my faithful assistant,<br>
+And to the memories of Aaron Swartz and Kris Nova:</p>
+</div>
+<div class="paragraph">
+<p>Thank you for your light, support, and inspiration.<br>
+This book would never have happened without you.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_preface"><a class="link" href="#_preface">Preface</a></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_github_cli_tool_gh"><a class="link" href="#_github_cli_tool_gh">GitHub CLI tool (gh)</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>GitHub is a terminal master&#8217;s favorite service for one reason alone: the <code>gh</code> command-line tool. This humble command allows leveraging the full power of the GitHub API from the command line. In fact, it is so powerful that GitHub becomes more important than any other social media or threaded newsgroup service available.</p>
+</div>
+<div class="sect2">
+<h3 id="_redirect_user_github_io"><a class="link" href="#_redirect_user_github_io">Redirect user.github.io</a></h3>
+<div class="paragraph">
+<p>Many GitHub users are unaware that creating a special repo that matches your username plus <code>github.io</code>, <a href="https://rwxrob.github.io" class="bare">https://rwxrob.github.io</a>, for example. Most use that with a custom domain name to host their main landing page on the Web. But what if you just used your GitHub profile instead? After all, unless you are a designer you really have no reason to showcase your ability to create a custom Web page.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The more significant the person, the less likely they are to have a fancy web page. I always chuckle at <a href="https://bford.info">Bryan Ford&#8217;s web site</a>. He&#8217;s the inventor of Parsing Expression Grammars with multiple significant technology and academic credits to his name, but he&#8217;s completely content to have a 1990s web site. He has nothing to prove with a flashy web template design.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s the content of <code>index.html</code> you can add just such a GitHub repo that simply redirects anyone to your meticulously crafted and always up to date GitHub profile instead. Change <code>rwxrob</code> to your own name:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="html"><span></span><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span> <span class="tok-na">lang</span><span class="tok-o">=</span><span class="tok-s">&quot;en&quot;</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">meta</span> <span class="tok-na">charset</span><span class="tok-o">=</span><span class="tok-s">&quot;UTF-8&quot;</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">meta</span> <span class="tok-na">http-equiv</span><span class="tok-o">=</span><span class="tok-s">&quot;refresh&quot;</span> <span class="tok-na">content</span><span class="tok-o">=</span><span class="tok-s">&quot;0; url=https://github.com/rwxrob&quot;</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>Redirecting...<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">p</span><span class="tok-p">&gt;</span>If you are not redirected automatically, follow this <span class="tok-p">&lt;</span><span class="tok-nt">a</span> <span class="tok-na">href</span><span class="tok-o">=</span><span class="tok-s">&quot;https://github.com/rwxrob&quot;</span><span class="tok-p">&gt;</span>link<span class="tok-p">&lt;/</span><span class="tok-nt">a</span><span class="tok-p">&gt;</span>.<span class="tok-p">&lt;/</span><span class="tok-nt">p</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-11-26 23:30:00 -0500
+Last updated 2024-11-27 14:34:57 -0500
 </div>
 </div>
 </body>
