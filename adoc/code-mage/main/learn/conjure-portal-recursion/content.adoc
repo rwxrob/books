@@ -1,0 +1,23 @@
+== Conjure Portal (Recursion)
+*Purpose:* Illustrate recursion by showing repetitive self-calling spells.
+
+*Spell:* 
+`conjure portal <condition> using <action>`
+
+*Example:*
+[source, go]
+----
+func conjurePortal(steps int) {
+    if steps == 0 {
+        fmt.Println("Portal fully conjured!")
+        return
+    }
+    fmt.Printf("Conjuring portal... %d steps remaining\n", steps)
+    conjurePortal(steps - 1)
+}
+
+conjurePortal(5)
+----
+
+Moves forward recursively until `steps` reach `0`.
+

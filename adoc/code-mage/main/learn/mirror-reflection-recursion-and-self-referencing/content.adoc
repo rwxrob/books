@@ -1,0 +1,22 @@
+== Mirror Reflection (Recursion and Self-Referencing)
+*Purpose:* Introduce recursive problem-solving.
+
+*Spell:* 
+`reflect <action>`
+
+*Example:*
+[source, go]
+----
+func reflect(cloneCount int) {
+    if cloneCount == 0 {
+        fmt.Println("No more clones to generate!")
+        return
+    }
+    fmt.Printf("Generating clone %d\n", cloneCount)
+    reflect(cloneCount - 1)
+}
+
+reflect(10)
+----
+
+Teaches how to call a function repeatedly with a base case.

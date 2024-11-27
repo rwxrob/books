@@ -1,0 +1,45 @@
+== Create an email account
+
+In the digital age, your email account is more than just a communication tool—it’s the foundation of your online identity. A reliable email address is essential for accessing educational platforms, joining communities, and managing services like GitHub. Here’s why getting your own personal email account is a critical first step in your journey (if you don't have one already).
+
+[NOTE]
+====
+This section is unnecessarily long for most people. I have learned from direct experience with parents and educators that there is this idea that "students"—particularly kids—don't need an email to learn. Strictly speaking they don't, but there are very many reasons to get them started as early as possible with their _own personal email_ that they carry it with them on their learning journey. Often schools setup an email only to rob them of it as soon as they leave school. This unnecessarily disrupts that learning history and new opportunities outside of that school (perhaps by nefarious design).
+====
+
+=== Why email matters
+
+**Account Creation**: Most services require an email address to create an account. Whether you’re signing up for GitHub to manage your code, joining an educational learning platform, or subscribing to a community forum, your email is the gateway to these opportunities.
+
+**Identity Verification**: Services often use email for identity verification. This ensures that your accounts are secure and recoverable in case you forget a password or need to reset access.
+
+**Communication**: Many platforms use email to send critical updates, notifications, and resources. A well-organized email account ensures you don’t miss important messages.
+
+**Privacy and Professionalism**: A secure, reliable email address—especially one from a service like ProtonMail—protects your privacy and presents a professional image when engaging with communities and collaborators.
+
+=== Choosing the right email service
+
+For most users, selecting a reliable and secure email provider is vital. While free services like Gmail are popular, privacy-focused options like ProtonMail offer additional benefits, including end-to-end encryption, a free VPN, and strong data protection.
+
+=== How email powers your learning and collaboration
+
+**GitHub**: GitHub requires an email address to create an account and communicate updates about repositories, issues, and pull requests.
+
+**Educational platforms**: Online learning platforms, such as Coursera, edX, and Khan Academy, use your email for registration and access to course materials. They also send reminders and announcements to keep you on track.
+
+**Community engagement**: Developer forums, coding bootcamps, and discussion boards rely on email to verify users and facilitate networking.
+
+=== Tips for managing email
+
+**Use a professional address**: Choose an email address that reflects your identity and professionalism. Avoid overly casual or complex names. Restrict yourself to lowercase letters and only dots or dashes.
+
+[NOTE]
+====
+Did you know that Gmail provides unlimited aliases for any Gmail account by simply adding a plus to the name portion? (example+whatever@gmail.com) This can also be done by injecting a period anywhere in the name since they are ignored (e.xample, ex.ample, e.x.a.m.p.l.e, etc.). Using this technique allows a single email account to be used to create any number of different other service accounts and still have all of them use the common email account for communication and setup. The service thinks they are different users with unique email addresses even though the same Gmail account receives all the email to any of them.
+====
+
+**Enable security features**: Use two-factor authentication (2FA) to protect your account and ensure your provider supports encryption.
+
+**Organize your inbox**: Create folders or labels for services like GitHub, learning platforms, and community forums to keep your inbox tidy and manageable.
+
+Setting up a reliable email account is a small but significant step that unlocks a world of opportunities in learning and collaboration. Whether you’re diving into development with GitHub, joining an online course, or participating in a vibrant learning community, your email is the first key to the digital kingdom. Choose wisely, stay organized, and let it be the foundation for your growth.

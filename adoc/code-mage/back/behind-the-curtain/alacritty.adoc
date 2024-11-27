@@ -1,0 +1,62 @@
+== Install Alacritty terminal
+
+Alacritty is a modern, GPU-accelerated terminal emulator known for its speed and simplicity. It's speed and support for millions of colors make it particularly good for creating performant terminal animations and games, which always make fun micro-projects when learning the coding fundamentals. This guide walks you through installing Alacritty on Mac, Windows, and Linux by downloading the official installers from the Alacritty GitHub repository.
+
+=== Why install from the official site?
+
+- **Security**: Ensures you download the authentic, verified version of the software.
+- **Stability**: Access the latest stable release tested by the Alacritty developers.
+- **Support**: Get the correct files and instructions tailored to your system.
+
+=== Step-by-step install
+
+**Mac**:
+
+1. **Visit the Official Site**:
+   - Open your web browser and go to the https://github.com/alacritty/alacritty/releases[Alacritty GitHub Releases page].
+
+2. **Download the Installer**:
+   - Locate the latest version of Alacritty.
+   - Download the `Alacritty.dmg` file under the Assets section.
+
+3. **Install Alacritty**:
+   - Open the downloaded `.dmg` file.
+   - Drag the Alacritty icon into the Applications folder.
+
+4. **Launch Alacritty**:
+   - Open Spotlight (`Cmd + Space`), type `alacritty`, and press `Enter`.
+
+**Windows**:
+
+1. **Visit the Official Site**:
+   - Open your web browser and go to the https://github.com/alacritty/alacritty/releases[Alacritty GitHub Releases page].
+
+2. **Download the Installer**:
+   - Find the latest release and download the `Alacritty-vX.X.X-installer.msi` file (replace `X.X.X` with the version number).
+
+3. **Run the Installer**:
+   - Locate the downloaded `.msi` file in your Downloads folder.
+   - Double-click the file and follow the on-screen instructions to install Alacritty.
+
+4. **Launch Alacritty**:
+   - Press `Win`, type `alacritty`, and press `Enter`.
+
+**Linux**:
+
+If you managed to install Linux you probably already have a package manager and can just use that to install Alacritty instead. Open the built-in terminal and enter the following commands:
+
+[source,shell]
+----
+sudo apt update
+sudo apt install alacritty
+----
+
+[NOTE]
+====
+Only Linux distributions like Linux Mint, Ubuntu, and Debian that use `apt` package manager are covered in this book.
+====
+
+=== Customize later
+
+Don't worry about customization for now. Running `cm init` later will automatically configure the Alacritty teminal to startup up with a nice theme and font and reasonable defaults. You can always come back and update them in `~/.config/alacritty/alacritty.toml` file later.
+

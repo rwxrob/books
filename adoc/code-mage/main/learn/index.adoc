@@ -1,0 +1,27 @@
+= Learn to code
+Elements of code alchemy: the building blocks of all programs
+
+Programs, like alchemical creations, are forged from a set of fundamental elements. These elements, when combined with skill and intent, create the intricate systems that power our world. Understanding these core components is the first step in transforming raw ideas into functional, elegant applications.
+
+== The four fundamental elements
+
+1.	Variables (Earth):
+The foundation of all programs, variables store the data that gives your code purpose. Like the solid ground beneath your feet, they provide stability and structure.
+
+2.	Logic (Fire):
+The spark that drives decision-making, logic fuels the flow of your programs. Conditionals and loops ignite the power to adapt and respond.
+
+3.	Functions (Water):
+The essence of reusability, functions flow through your code, modular and flexible. They bring order to chaos, transforming repetition into simplicity.
+
+4.	Data Structures (Air):
+The unseen currents that organize complexity, data structures enable efficient storage and retrieval. Arrays, lists, and maps carry your program’s breath of life.
+
+== Combining the elements
+
+Just as an alchemist combines Earth, Fire, Water, and Air to create something extraordinary, so too does a programmer blend these elements into cohesive systems. Mastery comes not from knowing each individually but from understanding how they interact and balance one another.
+
+Remember: every grand application begins with these elemental fundamentals. Master them, and you hold the key to crafting any program your imagination can conjure.
+
+
+include::echo-greeting/content.adoc[]

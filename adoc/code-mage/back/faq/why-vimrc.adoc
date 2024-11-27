@@ -1,0 +1,61 @@
+[[whyvimrc]]
+== Why ~/.vimrc?
+
+Using .vimrc as your main configuration file has several advantages for someone who values portability and needs to use Vim across different systems, especially when Neovim might not always be available:
+
+Portability and Ubiquity
+
+**Vim is Ubiquitous**:
+
+-	Vim is pre-installed on virtually all Unix-like systems, including Linux distributions and macOS. It’s also commonly found on remote servers and even embedded systems.
+- This ensures you can always access a familiar editing environment without needing to install anything extra.
+
+**.vimrc Compatibility**:
+
+-	The .vimrc file is recognized by all standard Vim installations. By sticking to .vimrc, you ensure your configurations work everywhere that Vim is available.
+-	Neovim can also read `.vimrc`, either natively or by sourcing it, making it possible to share your configuration between Vim and Neovim.
+
+Simplicity and Minimal Dependencies
+
+**Avoids Neovim-Specific Features**:
+
+- Neovim introduces some features, such as Lua-based configuration, that are not compatible with standard Vim. While these can be powerful, they may lock you into using Neovim exclusively.
+-	By using `.vimrc`, you focus on features and plugins that work universally, avoiding incompatibilities on systems where only Vim is available.
+
+**Quick Setup**:
+
+- If you frequently work on different machines or servers, having a portable `.vimrc` file that you can quickly copy or source makes it easier to get up and running.
+- You can even store your `.vimrc` in a version-controlled repository (like GitHub), allowing you to fetch it quickly on any machine.
+
+Efficiency and Familiarity
+
+**Immediate Usability**:
+
+-	With `.vimrc`, your configurations and workflows are immediately usable on systems with Vim pre-installed. No need to install Neovim or additional dependencies.
+- This is particularly useful in environments like remote servers, where you may not have the permissions or the time to install Neovim.
+
+**Standard Features**:
+
+- Vim and .vimrc cover the majority of use cases for editing, scripting, and navigating text. For someone who values speed and universality over cutting-edge features, .vimrc is often enough.
+
+Use Case Scenarios
+
+- Remote Work: If you SSH into servers or work on machines where you cannot control the software installed, Vim is more likely to be available, and your .vimrc will ensure a consistent editing environment.
+- Team Environments: Some workplaces or collaborative environments may standardize on Vim instead of Neovim, making .vimrc the more practical choice.
+- Emergency Situations: If you find yourself on a system without Neovim, being familiar with and having a .vimrc setup ensures you won’t lose productivity.
+
+Best of Both Worlds
+
+For users who still want to take advantage of Neovim when available:
+
+- Dual Configuration: Use `.vimrc` as your main file and configure Neovim to source it:
+[source,lua]
+----
+vim.cmd('source ~/.vimrc')
+----
+
+This way, you can enjoy Neovim’s advanced features when it’s installed while maintaining a universal configuration for Vim.
+
+Conclusion
+
+Using `.vimrc` as your main configuration file provides the most flexibility and portability. It ensures you can work comfortably in almost any environment without needing to rely on Neovim-specific features. For someone who values a consistent workflow across systems, `.vimrc` is the pragmatic choice.

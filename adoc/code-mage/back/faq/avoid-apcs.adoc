@@ -1,0 +1,12 @@
+== Avoid AP Computer Science
+
+As of the writing of this book, the AP Computer Science program from College Board remains fundamentally broken. The materials are more than dated and down-right wrong in some cases. Here are some specific examples:
+
+- Using Java (without calling it Java)
+- Teaching students that "array indexes start at 1" (and not zero)
+- Emphasizing single-class, OOP inheritance over composition
+
+AP Computer Science has become so irrelevant that many colleges either do not give credit for AP Computer Science or strongly suggest that students take the fundamental CS college courses anyway because APCS does not properly prepare them.
+
+Put your time to better use, by building a coding lab at home, or starting a coding club with friends building real projects using modern principles of software development.
+

@@ -1,0 +1,21 @@
+== Weave Loop (Iteration)
+
+*Purpose:* Introduce loops.
+
+*Spell:* 
+`weave <action> for <count>`
+
+*Example:*
+[source, go]
+----
+for i := 0; i < 5; i++ {
+    lightOrbs(3)
+}
+
+func lightOrbs(count int) {
+    fmt.Printf("Lighting %d orbs\n", count)
+}
+----
+
+Highlights repetitive actions, similar to loops in programming.
+

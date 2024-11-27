@@ -1,0 +1,44 @@
+== Install Neovim (optional)
+
+Vim is fine to get started coding, but Neovim, the modern spiritual descendent of Vim, is a cleaner experience at the cost of a little unnoticeable bloat. Notably, Neovim has a cleaner help interface and dynamic error displays. It is also far more extensible when such makes sense later—particularly for those use the same computer for most of their work. This guide walk you through installing Neovim on Mac, Windows, and Linux using the package manager.
+
+[NOTE]
+====
+Notice how similar these workflows are with modern package managers. All operating systems have finally caught up to using a package manager for software installation and management. Becoming proficient with them is therefore mandatory for any serious tech professional.
+====
+
+**Mac with brew**:
+
+Run the following commands one at a time:
+
+[source, shell]
+----
+brew install neovim
+nvim --version
+nvim
+----
+
+Later after you run `cm init` (not yet) the `vi` command will automatically detect `nvim` and start that, otherwise it will run just `vim` or the actual `vi`.
+
+**Windows with winget**:
+
+Run the following commands one at a time:
+
+[source, shell]
+----
+winget install Neovim.Neovim
+nvim --version
+nvim
+----
+
+**Linux with apt**:
+
+Run the following commands one at a time:
+
+[source, shell]
+----
+sudo apt update
+sudo apt install -y neovim
+nvim --version
+nvim
+----

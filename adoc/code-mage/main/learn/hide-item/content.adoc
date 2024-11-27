@@ -1,0 +1,15 @@
+== Hide Item (Variable Type Declaration and Assignment)
+
+*Purpose:* Teach variables as containers for things with a type.
+
+*Spell:* 
+`hide <thing> in <container>`
+
+*Example:*
+[source, go]
+----
+var hat string = "rabbit"
+hat := "rabbit"
+hat := `rabbit`
+----
+

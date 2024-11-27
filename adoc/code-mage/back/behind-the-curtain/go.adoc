@@ -1,0 +1,32 @@
+== Install the Go compiler
+
+You'll need the Go compiler to turn your code into runnable commands. Go is available for all operating systems via the package manager for each:
+
+**Mac**:
+
+[source,shell]
+----
+brew install go
+go version
+----
+
+**Windows**:
+
+[source,shell]
+----
+winget install --id GoLang.Go -e
+go version
+----
+
+**Linux**:
+
+[source,shell]
+----
+sudo apt install golang
+go version
+----
+
+[NOTE]
+====
+These installs with the package manager should be getting a bit easier at this point, which is good because you'll be doing this all the time as a code mage and tech professional.
+====

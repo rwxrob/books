@@ -1,0 +1,17 @@
+== Transfigure (Type Casting)
+*Purpose:* Show how data types can be converted.
+
+*Spell:* 
+`transfigure <variable> to <type>`
+
+*Example:*
+[source, go]
+----
+num, err := strconv.Atoi("5")
+if err != nil {
+    fmt.Println("Error:", err)
+}
+----
+
+Converts the string `"5"` into the number `5` using Go's `strconv` package.
+

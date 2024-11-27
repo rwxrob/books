@@ -1,0 +1,61 @@
+== Create a Slack account
+
+Slack is a powerful communication platform used by teams, communities, and organizations worldwide to collaborate and share ideas. Creating a Slack account allows you to connect with others, join workspaces, and participate in meaningful conversations. Here’s why you should create an account and how to do it.
+
+=== Why create a Slack account?
+
+**Seamless Communication**: Slack makes real-time communication easy with channels for focused discussions and direct messages for private conversations.
+
+**Community Engagement**: Many livestream communities, open-source projects, and learning groups use Slack as their hub for collaboration and networking.
+
+**Team Collaboration**: Slack is widely adopted in workplaces for organizing team communication, file sharing, and project management.
+
+**Integrated Tools**: Slack integrates with tools like Google Drive, GitHub, Trello, and more, streamlining workflows and enhancing productivity.
+
+_Also see <<why-slack, Why Slack over others?>>_
+
+=== How to create a Slack account
+
+**Visit Slack**: Go to https://slack.com[Slack’s homepage] in your web browser.
+
+**Sign up**: Click on the "Sign Up" button. Enter your email address and click "Continue."
+
+**Verify email**: Slack will send a confirmation email to the address you provided. Open the email and click the verification link.
+
+**Set Up Your Profile**: Add a profile picture and fill out your display name and other details. Customize your profile to reflect your personality or professional role.
+
+**Consider installing app**: Slack can be used entirely from the web but also has a desktop application and a mobile phone app that can also be downloaded for better ease of use. Unfortunately, there is no decent command-line app (like IRC).
+
+[NOTE]
+====
+We have seriously thought of eventually creating a Code-Mage integration that allows looking up the latest messages in a specific workspace and channel and posting messages as well. Stay tuned. Or let us know if that is something you would like to eventually collaborate on.
+====
+
+**Join a workspace**: There are any number of great workspaces to join, here are a few recommendations:
+
+- https://invite.slack.golangbridge.org (free)
+- https://techworkersclub.com (minimal lifetime cost)
+- https://rwxrob.slack.com (free, but personal invite only, never anonymous)
+
+[NOTE]
+====
+Access to the https://rwxrob.slack.com workspace is invite only for my professional friends. I make no promises you will be accepted or not removed for any reason I see fit. Contact me to request membership and mention what you are interested in and why you want to become a member of our professional community. I am very peculiar about only allowing people dedicated to behaving professionally and helping anyone with their own learning journey. If you seek help, you promise to pass it on. There is no age restriction, but everyone in Slack is required to use their full, real name in their profile. No anonymous accounts will be accepted.
+====
+
+=== Best practices
+
+**Explore Slack Basics**: Familiarize yourself with channels, direct messages, and mentions.
+
+**Practice Professional Conduct**: Unlike platforms such as Discord or Twitch, Slack is often used in professional environments. Using clear, respectful, and concise communication not only fosters collaboration but also helps build a reputation for professionalism. Avoid casual or overly informal language unless the workspace culture explicitly encourages it. Use proper grammar, avoid slang, and maintain a polite tone in all interactions. Slack is _not_ Discord, Twitch, or Reddit. Be professional.
+
+**Why This Matters**: Professional conduct on Slack mirrors workplace expectations. Practicing these behaviors now prepares you for real-world employment scenarios, where Slack or similar tools may be used daily. It shows potential employers and collaborators that you can engage respectfully and effectively in team settings.
+
+**Organize Your Workspaces**: If you join multiple workspaces, switch between them easily from the sidebar.
+
+**Enable Notifications**: Set up notifications to stay informed about important messages without being overwhelmed.
+
+**Customize Settings**: Adjust your preferences for themes, availability, and message behavior.
+
+=== Why Slack now?
+
+Whether you’re connecting with our livestream community, collaborating with a team, or exploring learning opportunities, Slack provides a flexible and robust platform for communication and collaboration. By creating an account today, you gain access to an ecosystem of vibrant discussions, shared resources, and opportunities for growth.

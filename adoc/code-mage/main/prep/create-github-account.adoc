@@ -1,0 +1,46 @@
+== Create a GitHub account
+
+GitHub is one of the most powerful platforms for collaboration, code sharing, and version control. Creating a GitHub account is an essential step for developers, students, and anyone looking to participate in open-source projects or manage their personal projects effectively. Here’s a guide on how to create your account and why it matters.
+
+=== Why create a GitHub account?
+
+**Version Control**: GitHub is built on Git, a distributed version control system created by the inventor of Linux that helps you track changes in your code, collaborate with others, and maintain a history of your project.
+
+**Collaboration**: GitHub enables teams and communities to work together on projects, sharing ideas, code, and feedback seamlessly.
+
+**Portfolio Building**: Your GitHub profile showcases your work. It’s an excellent way to build a public portfolio for potential employers or collaborators to see your coding skills.
+
+**Access to Open-Source Projects**: GitHub hosts millions of open-source repositories. Contributing to these projects helps you learn, network, and gain valuable experience.
+
+**Integration**: Many tools, platforms, and educational resources integrate directly with GitHub, making it a central hub for your development activities.
+
+_See <<why-github, Why GitHub?>> for a more in-depth discussion and comparison to other services._
+
+=== How to create a GitHub account
+
+**Visit GitHub**: Go to https://github.com[GitHub's web site] in your web browser.
+
+**Sign up**: Click on the "Sign up" button in the top-right corner and enter your email address, create a username, and set a strong password. Keep your username lowercase with nothing but letters and possibly a dash, avoid underscore.
+
+**Verify your email**: GitHub will send a verification email to the address you provided. Open the email and click the verification link to activate your account.
+
+**Choose a plan**: GitHub offers free and paid plans. For most beginners, the free plan is sufficient as it includes unlimited public and private repositories.
+
+**Set up your profile**: - Add a profile picture and a bio that reflects your interests and goals. Optionally, link your website or social media accounts. Eventually, you will want to flesh out your special repo that matches your username that becomes your GitHub professional profile.
+
+**Create your first repository**: A repository (or “repo”) is where your project files are stored. Click "New Repository" to start your first project. Name it `notes` or `codebook` and make it private, for now. Even though this isn't really private stuff, it keeps from diluting your public appearance to others. Too many tiny projects and beginner repos distract from your online presence.
+
+**Follow some repos**: Star and follow a few project repos. Consider starting with the following related to this book:
+
+- https://github.com/rwxrob/code-mage-book
+- https://github.com/rwxrob/awesome-go
+- https://github.com/rwxrob/bonzai
+- https://github.com/rwxrob/rwxrob
+- https://github.com/rwxrob/skilstak
+- https://github.com/rwxrob/dot
+
+Who knows, perhaps soon you can contribute.
+
+=== Why GitHub now?
+
+Creating a GitHub account is not just a task; it’s an invitation to join a global community of developers. Whether you’re learning to code, managing personal projects, or contributing to the open-source world, GitHub provides the tools and visibility to grow your skills and connect with others. Start your journey today and become part of the development ecosystem.

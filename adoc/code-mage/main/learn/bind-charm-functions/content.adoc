@@ -1,0 +1,19 @@
+== Bind Charm (Functions)
+
+*Purpose:* Explain reusable blocks of code.
+
+*Spell:* 
+`bind charm <name> using <parameters> to <action>`
+
+*Example:*
+[source, go]
+----
+func heal(target string, amount int) {
+    fmt.Printf("Healing %s for %d points\n", target, amount)
+}
+
+heal("wizard", 50)
+----
+
+Introduces defining and calling functions.
+

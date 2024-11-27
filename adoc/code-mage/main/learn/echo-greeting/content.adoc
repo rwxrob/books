@@ -1,0 +1,30 @@
+== Cantrip: Echo Greeting (Hello World)
+
+*Problem:* I need to print something to the console for the user to read.
+
+Cast your first spell to greet the world of magic and code! This cantrip sets the tone for your magical journey ahead, giving acolytes like you a satisfying first success invoking code magic. "Hello World" is recognized across the realm as the first spell most mages will ever cast and continues to be a strong tradition today.
+
+[IMPORTANT]
+====
+You should already feel completely comfortable opening, editing, and saving a file before doing this first spell. If not go back to <<learnvim, Learn Vim>> until you have mastered the basics.
+====
+
+[source, go]
+----
+package main                        <1>
+
+import "fmt"                        <2>
+
+func main() {                       <3>
+    fmt.Println("Hello, World!")    <4>
+}
+----
+
+<1> Declares this file is package `main` which is where the actio is
+<2> Imports the standard `fmt` package containing `Println`
+<3> Declares special `main` function, every program must have one
+<4> Prints "Hello, World!" to the console with a new line at the end
+
+I see sparks! Congratulations! If this is the first time you have ever written code that works then write this day down someplace special. Today is your coding birthday! One day you will look back on it with fondness and want to know what day it was that you started your life as a code mage.
+
+Now delete it all and try again, from scratch. Maybe say something else. Then to it again until you can do it without looking before moving on.

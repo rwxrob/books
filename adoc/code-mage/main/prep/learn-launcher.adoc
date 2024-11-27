@@ -1,0 +1,62 @@
+== Learn to launch anything
+
+Every operating system offers a quick and efficient way to launch applications, open files, and search for information—similar to macOS’s powerful Spotlight feature. Learning how to use these tools effectively can save time and streamline your workflow. This guide will walk you through Spotlight equivalents on Windows, Linux, and other systems.
+
+=== Why learn launcher?
+
+**Efficiency**: Launching apps and files directly saves time compared to navigating menus. Your fingers never need to leave home row on the keyboard.
+
+**Focus**:Search and launch tools help you avoid distractions by providing a single interface for tasks.
+
+**Universal Skills**: Mastering these tools makes you productive on any operating system.
+
+=== Spotlight on Mac
+
+On macOS, Spotlight is the built-in search and launcher tool.
+
+**How to access Spotlight**:
+
+- Use the keyboard shortcut `Command (⌘) + Space`.
+- Click the magnifying glass icon in the top-right corner of the menu bar.
+
+**What you can do**:
+
+- Launch apps: Type the app name and press `Enter`.
+- Search files: Enter the file name or keywords.
+- Perform calculations: Type `5 * 7` or `100 USD to EUR`.
+- Look up definitions: Type a word to get a dictionary entry.
+- Search the web: Type your query and select a browser result.
+
+=== Search on Windows
+
+Windows provides a built-in search tool that acts as a launcher.
+
+**How to access Windows search**:
+
+- Press `Win` or click the search icon on the taskbar.
+
+**What you can do**:
+
+- Launch apps: Type the app name and press `Enter`.
+- Search files: Enter the file name or content keywords.
+- Execute commands: Run shell commands directly.
+
+=== Activities on Linux
+
+Linux has multiple application launchers, depending on your desktop environment and preferences.
+
+**GNOME: activities overview**:
+
+- Press the `Super` key (Windows key) to open the Activities Overview.
+- Type the app name or file you want to open.
+
+**KDE Plasma: KRunner**:
+
+- Press `Alt + Space` to open KRunner.
+
+**What you can do**:
+
+- Launch apps: Type the name and press `Enter`.
+- Open files: Search for files by name.
+- Run commands: Execute terminal commands directly.
+- Perform calculations and translations with plugins.

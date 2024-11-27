@@ -1,0 +1,20 @@
+[[books-list]]
+
+link:https://rwxrob.github.io/books/code-mage[*A Code Mage's First Spell Book*] +
+_Learn practical computer science and programming with Go as a first language_
+
+link:https://rwxrob.github.io/books/terminal-velocity[*Terminal Velocity*] +
+_Master the fastest human-computer interface with bash_
+
+link:https://rwxrob.github.io/books/bonzai-beauty[*Bonzai Beauty*] +
+_Compose completable command trees with the Go Bonzai command-line framework_
+
+link:https://rwxrob.github.io/books/linux-homelab-init[*Linux homelab init*] +
+_Extend your code-mage magic with Linux and a Proxmox power tower_
+
+link:https://rwxrob.github.io/books/autodidactic[*Autodidactic*] +
+_Keys to success as a modern knowledge worker_
+
+link:https://rwxrob.github.io/books/programming-with-purpose[*Programming with Purpose*] +
+_Code for self-empowerment to save humanity_
+

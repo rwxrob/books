@@ -1,0 +1,19 @@
+[separator=::]
+= Books from Robert S. Muhlestein (rwxrob)
+:author: Robert S. Muhlestein (rwxrob)
+:creator: {author}
+:copyright: 2024 Robert S. Muhlestein
+:email: rob@rwx.gg
+:doctype: book
+:leveloffset: +1
+:sectnums!:
+:sectlinks:
+:icons: font
+:xrefstyle: short
+
+Here you'll find Rob's perpetually unfinished books. Feel free to https://github.com/rwxrob/books/issues[complain] or https://github.com/sponsors/rwxrob[support him].
+
+include::list.adoc[]
+
+include::app.adoc[]
+

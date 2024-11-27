@@ -1,0 +1,19 @@
+== Alchemize (Data Manipulation)
+*Purpose:* Teach array/map transformations.
+
+*Spell:* 
+`alchemize <data> into <new form>`
+
+*Example:*
+[source, go]
+----
+numbers := []int{1, 2, 3}
+doubled := make([]int, len(numbers))
+for i, num := range numbers {
+    doubled[i] = num * 2
+}
+fmt.Println(doubled)
+----
+
+Introduces concepts like `map` or transformations on slices.
+

@@ -1,0 +1,53 @@
+== Manifest Essence (Demonstrating Main Types)
+
+*Purpose:* Teach the main types in Go, including primitives, slices, maps, and structs, without using functions.
+
+*Spell:* 
+`manifest essence as <type> with <value>`
+
+*Example:*
+[source, go]
+----
+package main
+
+import "fmt"
+
+func main() {
+    // Manifesting primitive types
+    var essenceInt int = 42
+    var essenceFloat float64 = 3.14
+    var essenceString string = "magic"
+    var essenceBool bool = true
+
+    fmt.Printf("Int: %d, Float: %f, String: %s, Bool: %t\n",
+        essenceInt, essenceFloat, essenceString, essenceBool)
+
+    // Manifesting composite types
+    var essenceSlice = []string{"fire", "water", "earth", "air"}
+    var essenceMap = map[string]int{
+        "fire":   100,
+        "water":  200,
+        "earth":  300,
+        "air":    400,
+    }
+
+    fmt.Println("Slice of elements:", essenceSlice)
+    fmt.Println("Map of element powers:", essenceMap)
+
+    // Manifesting a struct
+    type Element struct {
+        Name  string
+        Power int
+    }
+    var essenceStruct = Element{Name: "lightning", Power: 500}
+    fmt.Printf("Struct - Element: %s, Power: %d\n",
+        essenceStruct.Name, essenceStruct.Power)
+}
+----
+
+*Spell Breakdown:*
+1. **Primitives**: Declares `int`, `float64`, `string`, and `bool` variables.
+2. **Composite Types**: Creates a slice (`essenceSlice`) and a map (`essenceMap`).
+3. **Structs**: Introduces a user-defined type (`Element`) and creates a value (`essenceStruct`).
+4. **Outputs**: Displays the values using `fmt.Printf` and `fmt.Println` to show what was manifested.
+

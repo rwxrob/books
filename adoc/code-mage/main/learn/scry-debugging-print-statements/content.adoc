@@ -1,0 +1,15 @@
+== Scry (Debugging/Print Statements)
+*Purpose:* Show the importance of debugging tools.
+
+*Spell:* 
+`scry <variable>`
+
+*Example:*
+[source, go]
+----
+wizardHealth := 50
+fmt.Printf("Wizard's health: %d\n", wizardHealth)
+----
+
+Prints the current value of a variable.
+

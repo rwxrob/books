@@ -1,0 +1,68 @@
+== Install bash
+
+The **bash shell** (short for Bourne Again Shell) is a versatile command-line interface available on many operating systems. This guide explains how to install Git Bash on Windows, update bash to the latest version on Mac, and explains that bash is already included in most Linux distributions.
+
+=== Install Git-Bash on Windows
+
+Git Bash provides a bash emulation environment for Windows, allowing you to use Unix-like commands and workflows. (_Read more about <<why-git-bash, Why Git Bash?>> if you are wondering about WSL, virtual machines, and containers._)
+
+Launch the built-in `powershell` program as described earlier to get a command-line shell in order to install the _new_ `bash` shell. Then run the following command which installs bash (along with git and vim):
+
+[source, shell]
+----
+winget install --id Git.Git -e
+----
+
+This installs bash at `"C:\Program Files\Git\bin\bash.exe"` which you can run from the `Win` search box by typing `bash` to test. Note that Code-Mage will update the Alacritty configuration later to use bash as the default for all new Alacritty terminal sessions.
+
+[NOTE]
+====
+Windows comes with PowerShell, but bash is definitely more user-friendly when it comes to command-line shell interactions. Consider one of the most powerful Unix commands ever invented: `find`. With Git Bash this amazing command is available to use _on Windows_ now that you have Git Bash installed (just be sure to use the right one since Windows has its own inferior `find` command). Git Bash also adds two core tools that you will use extensively later: `vim` and `git`.
+====
+
+=== Update bash on macOS
+
+Mac computers come with an outdated bash by default. You can update it using Homebrew but first we need to install it since it is not a built-in Apple product (even though it should be at this point).
+
+Launch the `terminal` program as described earlier and then run the following:
+
+[source, shell]
+----
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+----
+
+Once brew is installed you can use it to update bash with the following command:
+
+[source, shell]
+----
+brew install bash
+----
+
+Unfortunately, Apple makes it hard to set this new bash shell as the default. Here's how. Enter each of these commands one at a time:
+
+[source, shell]
+----
+echo "$(brew --prefix)/bin/bash" | sudo tee -a /etc/shells
+chsh -s "$(brew --prefix)/bin/bash"
+----
+
+After you restart your terminal it should use the new bash shell which you can check with the following:
+
+[source, shell]
+----
+bash --version
+----
+
+[NOTE]
+====
+FunFact: Homebrew is named after the meetup where Steve Jobs and Steve Wozniak met for the first time.
+====
+
+=== Validate bash on Linux
+
+Bash is pre-installed on most Linux distributions, as it is the default shell for many systems. All Linux distributions have a bash that is plenty new enough for everything we are going to do in this book. Here's how you can check the version (after launching a terminal):
+
+[source, shell]
+----
+bash --version
+----
