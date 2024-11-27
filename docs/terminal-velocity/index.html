@@ -498,6 +498,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_github_cli_tool_gh">GitHub CLI tool (gh)</a>
 <ul class="sectlevel2">
 <li><a href="#_redirect_user_github_io">Redirect user.github.io</a></li>
+<li><a href="#_enable_github_repo_discussions">Enable GitHub repo discussions</a></li>
 </ul>
 </li>
 </ul>
@@ -612,6 +613,26 @@ This book would never have happened without you.</p>
     <span class="tok-p">&lt;</span><span class="tok-nt">p</span><span class="tok-p">&gt;</span>If you are not redirected automatically, follow this <span class="tok-p">&lt;</span><span class="tok-nt">a</span> <span class="tok-na">href</span><span class="tok-o">=</span><span class="tok-s">&quot;https://github.com/rwxrob&quot;</span><span class="tok-p">&gt;</span>link<span class="tok-p">&lt;/</span><span class="tok-nt">a</span><span class="tok-p">&gt;</span>.<span class="tok-p">&lt;/</span><span class="tok-nt">p</span><span class="tok-p">&gt;</span>
 <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
 <span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
+</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_enable_github_repo_discussions"><a class="link" href="#_enable_github_repo_discussions">Enable GitHub repo discussions</a></h3>
+<div class="paragraph">
+<p>Since GitHub added full support for threaded discussions there is even less reason to use any other service at all for communication. It&#8217;s not enabled by default, but can be enabled from one command on the command line:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>gh<span class="tok-w"> </span>repo<span class="tok-w"> </span>edit<span class="tok-w"> </span>--enable-discussions</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Although this does not yet have the ability to interact with discussions from the <code>gh</code> tool, it most likely will in the future given all the stuff that has been progressively added to the <code>gh</code> command set. For now, opening the repo and clicking on the Discussions tab isn&#8217;t that hard:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>gh<span class="tok-w"> </span>repo<span class="tok-w"> </span>view<span class="tok-w"> </span>--web</code></pre>
 </div>
 </div>
 </div>

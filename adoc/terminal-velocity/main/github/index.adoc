@@ -3,3 +3,7 @@
 GitHub is a terminal master's favorite service for one reason alone: the `gh` command-line tool. This humble command allows leveraging the full power of the GitHub API from the command line. In fact, it is so powerful that GitHub becomes more important than any other social media or threaded newsgroup service available.
 
 include::redirecting-github-io.adoc[]
+
+---
+
+include::enable-discussions.adoc[]

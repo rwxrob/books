@@ -1,0 +1,17 @@
+== Enable GitHub repo discussions
+
+Since GitHub added full support for threaded discussions there is even less reason to use any other service at all for communication. It's not enabled by default, but can be enabled from one command on the command line:
+
+[source,shell]
+----
+gh repo edit --enable-discussions
+----
+
+Although this does not yet have the ability to interact with discussions from the `gh` tool, it most likely will in the future given all the stuff that has been progressively added to the `gh` command set. For now, opening the repo and clicking on the Discussions tab isn't that hard:
+
+[source,shell]
+----
+gh repo view --web
+----
+
+
