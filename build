@@ -26,7 +26,7 @@ x-site() {
 }
 
 x-app() {
-	go build ./cmd/rwxrob-books
+	go install ./cmd/rwxrob-books
 }
 
 x-watch() {

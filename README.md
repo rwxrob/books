@@ -1,6 +1,6 @@
 # Books
 
-Here you'll find Rob's perpetually unfinished books and the `rwxrob-book` multicall binary [Bonzai](https://github.com/rwxrob/bonzai) command including the Code-Mage assistant app. Feel free to [complain](https://github.com/rwxrob/books/issues) or [support him](https://github.com/sponsors/rwxrob).
+Here you'll find Rob's perpetually unfinished books and the `rwxrob-book` multicall [Bonzai](https://github.com/rwxrob/bonzai) binary, which includes Code-Mage (`cm`) assistant app. Feel free to [complain](https://github.com/rwxrob/books/issues) or [support him](https://github.com/sponsors/rwxrob).
 
 The monorepo is nice because I can include sections in each book rather than repeat them if they are identical (such as how to start a terminal session). It also allows the building of applications that embed the content of the books.
 
