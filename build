@@ -17,12 +17,22 @@ x-help() {
 	echo "$helptxt"
 }
 
+x-book() {
+	asciidoctor \
+		-D "docs/$1" \
+		-o "index.html" \
+		-a copy_script=./common/assets/scripts/script.js \
+		"./adoc/$1/index.adoc"
+}
+
+
 x-site() {
 	asciidoctor \
 		-D "docs" \
 		-o "index.html" \
 		-a copy_script=./common/assets/scripts/script.js \
 		"./adoc/index.adoc"
+	x-book code-mage
 }
 
 x-app() {
@@ -30,15 +40,16 @@ x-app() {
 }
 
 x-watch() {
-	browser-sync &
+	(
+		cd docs || return
+		browser-sync &
+	)
 	tmux rename-window "watching $(pwd)"
-	while true; do
-		entr bash -c '
+	entr bash -c '
         echo "Change detected. Rebuilding..."
-				./build all
+				./build site
 				' < <(find .)
-		sleep 1
-	done
+	sleep 1
 }
 
 # --------------------- completion and delegation --------------------
