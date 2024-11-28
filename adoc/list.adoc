@@ -4,13 +4,13 @@ _Learn practical computer science and programming with Go as a first language_
 link:terminal-velocity[*Terminal Velocity*] +
 _Master the fastest human-computer interface_
 
-*Bonzai Beauty* +
+link:bonzai-beauty[*Bonzai Beauty*] +
 _Compose completable command trees with the Go Bonzai command-line framework_
 
-*Linux homelab init* +
+link:linux-homelab-init[*Linux homelab init*] +
 _Extend your code-mage magic with Linux and a Proxmox power tower_
 
-*Autodidactic* +
+link:autodidactic[*Autodidactic*] +
 _Keys to success as a modern knowledge warrior_
 
 link:programming-with-purpose[*Programming with Purpose*] +
@@ -18,4 +18,7 @@ _Coding for self-empowerment and to save humanity_
 
 link:bad-strimmer[*Bad Strimmer, No Biscuit*] +
 _Lessons learned from my livestream fails_
+
+link:mormons-tale[*There and Never Back Again*] +
+_A Mormon's tale_
 

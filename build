@@ -33,8 +33,12 @@ x-site() {
 		"./adoc/index.adoc"
 	x-book code-mage
 	x-book terminal-velocity
-	x-book bad-strimmer
+	x-book bonzai-beauty
+	x-book linux-homelab-init
+	x-book autodidactic
 	x-book programming-with-purpose
+	x-book bad-strimmer
+	x-book mormons-tale
 }
 
 x-app() {

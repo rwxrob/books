@@ -11,7 +11,7 @@
 :icons: font
 :xrefstyle: short
 
-Here you'll find Rob's perpetually unfinished books. Feel free to https://github.com/rwxrob/books-talk/issues[heckle] or https://github.com/sponsors/rwxrob[support him].
+Here you'll find Rob's perpetually unfinished books. Feel free to https://github.com/rwxrob/books-talk/issues[heckle] or https://github.com/sponsors/rwxrob[support him]. Keep in mind that these books are no where near finished and probably won't be for years. This is just a place to work on them dynamically so reader's can benefit with what has already been written. Look at the version to know when it actually has been published. Check the date at the bottom for when each was last updated.
 
 include::list.adoc[]
 

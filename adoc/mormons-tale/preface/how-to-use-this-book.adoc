@@ -1,0 +1,24 @@
+== How to use this book
+
+This book is generally designed to be read linearly, from top to bottom. The concepts build on one another. However, each "spell" is designed to be re-learned often like a mage preparing for a specific adventure. Not all spells can be memorized and at the ready at all times, which is why you create your own code book containing spells of your own creation to go with this book.
+
+Skip the Introduction if you are already really motivated and just want to get right to coding. You can come back to it later. Don't skip the intro, however, if you are still wondering if coding is something you want to learn.
+
+Here's how you will master each concept and skill by applying the verbs of Bloom's Taxonomy: remember, understand, apply, analyze, evaluate, create:
+
+[start=0]
+. Remember a new skill or concept by its fantasy theme association
+. Understand the problem: Why is this skill or concept needed?
+. Understand the solution: How do I overcome the problem?
+. Implement first solution with help and guidance from mentor
+. Repeat same first solution several times starting over every time
+. Create new challenge: different variation of problem with new solution
+. Assess effectiveness and validity of new solution with help from mentor
+. Correct and refine solution as needed
+. Repeat step #4 until mastery
+. Interalize by mentoring another
+
+> Повторение — мать учения.
+
+Repetition really is the mother of learning. While often we demonize "rote repetition" in the West, the slavs have promoted it for decades. The neurons in our brain store memory by having the same electical impulses repeated over and over. So in order to program oneself the only way is to repeat it. Repeat these spells as fast and as regularly as you can and you'll end up training your own neural net just like a machine learning model—but in your head. Repetition can be great to supplement your growth while working on a bigger project—especially 
+in the early days before everything becomes second nature.
