@@ -25,7 +25,6 @@ x-book() {
 		"./adoc/$1/index.adoc"
 }
 
-
 x-site() {
 	asciidoctor \
 		-D "docs" \
@@ -34,6 +33,8 @@ x-site() {
 		"./adoc/index.adoc"
 	x-book code-mage
 	x-book terminal-velocity
+	x-book bad-strimmer
+	x-book programming-with-purpose
 }
 
 x-app() {

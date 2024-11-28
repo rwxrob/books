@@ -1,0 +1,3 @@
+= Purpose
+
+include::aoc.adoc[]

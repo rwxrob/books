@@ -5,9 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
+<meta name="description" content="Lessons learned from my livestream fails">
+<meta name="keywords" content="Lessons learned livestream fails twitch youtube facebook">
 <meta name="author" content="Robert S. Muhlestein (rwxrob)">
 <meta name="copyright" content="2024 Robert S. Muhlestein">
-<title>Books from Robert S. Muhlestein (rwxrob)</title>
+<title>Bad Strimmer</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -437,26 +439,77 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="book">
+<body class="book toc2 toc-left">
 <div id="header">
-<h1>Books from Robert S. Muhlestein (rwxrob)</h1>
+<h1>Bad Strimmer</h1>
 <div class="details">
 <span id="author" class="author">Robert S. Muhlestein (rwxrob)</span><br>
 <span id="email" class="email"><a href="mailto:rob@rwx.gg">rob@rwx.gg</a></span><br>
+<br><span id="revremark">First draft</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_copyright">Copyright</a></li>
+<li><a href="#book-list">Bookshelf</a></li>
+<li><a href="#_dedication">Dedication</a></li>
+<li><a href="#_preface">Preface</a></li>
+<li><a href="#_lessons_learned">Lessons learned</a>
+<ul class="sectlevel2">
+<li><a href="#_stupid_titles_ftw">Stupid titles FTW!</a>
+<ul class="sectlevel3">
+<li><a href="#_the_more_confusing_the_better">The more confusing the better</a></li>
+<li><a href="#_not_enough_red">NOT ENOUGH RED</a></li>
+<li><a href="#_lazy_wins">Lazy wins</a></li>
+<li><a href="#_you_can_always_change_it_later">You can always change it later?</a></li>
+</ul>
+</li>
+<li><a href="#_dont_read_the_comments">Don&#8217;t read the comments</a>
+<ul class="sectlevel3">
+<li><a href="#_okay_maybe_read_them_but_dont_care_about_them">Okay, maybe read them, but don&#8217;t <em>care</em> about them</a></li>
+</ul>
+</li>
+<li><a href="#_do_it_now_dont_procrastinate">Do it now, don&#8217;t procrastinate</a></li>
+<li><a href="#_there_is_no_4th_wall">There is no 4th wall</a>
+<ul class="sectlevel3">
+<li><a href="#_face_on_stream">Face on stream</a></li>
+<li><a href="#_camera_position">Camera position</a></li>
+<li><a href="#_voice_and_good_audio">Voice and good audio</a></li>
+<li><a href="#_forget_the_green_screen">Forget the green screen</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 <div id="content">
-<div id="preamble">
+<div class="sect1">
+<h2 id="_copyright"><a class="link" href="#_copyright">Copyright</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Here you&#8217;ll find Rob&#8217;s perpetually unfinished books. Feel free to <a href="https://github.com/rwxrob/books-talk/issues">heckle</a> or <a href="https://github.com/sponsors/rwxrob">support him</a>.</p>
+<p>Copyright © 2024 Robert S. Muhlestein (rwxrob). All rights reserved.</p>
 </div>
 <div class="paragraph">
-<p><a href="code-mage"><strong>A Code Mage&#8217;s First Spell Book</strong></a><br>
+<p>The code portions of this book are dedicated to the public domain under the terms of the <strong>Creative Commons Zero (CC0 1.0 Universal)</strong> license (<a href="https://creativecommons.org/publicdomain/zero/1.0/" class="bare">https://creativecommons.org/publicdomain/zero/1.0/</a>). This means you are free to copy, modify, distribute the <em>code portions only</em>, even for commercial purposes, without asking permission, and without saying where you got them. This is so there is no fear your creations are your own after learning to code using them.</p>
+</div>
+<div class="paragraph">
+<p>The non-code prose and images are licensed under the more restrictive Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0) (<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="bare">https://creativecommons.org/licenses/by-nc-nd/4.0/</a>). This means that no non-code prose or image from the book may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the copyright holder. This includes remaking the same content in different formats such as PDF or EPUB since these fall under the definition of derived works. This restriction is primarily in place to ensure outdated copies are not redistributed given the frequent updates expected.</p>
+</div>
+<div class="paragraph">
+<p><em>"Terminal Velocity"</em> is a legal trademarks of Robert S. Muhlestein but can be used freely to refer to this book without limitation. To avoid potential confusion, intentionally using this trademark to refer to other projects—free or proprietary—is prohibited.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="book-list"><a class="link" href="#book-list">Bookshelf</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>A Code Mage&#8217;s First Spell Book</strong><br>
 <em>Learn practical computer science and programming with Go as a first language</em></p>
 </div>
 <div class="paragraph">
-<p><a href="terminal-velocity"><strong>Terminal Velocity</strong></a><br>
+<p><strong>Terminal Velocity</strong><br>
 <em>Master the fastest human-computer interface</em></p>
 </div>
 <div class="paragraph">
@@ -472,19 +525,196 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <em>Keys to success as a modern knowledge warrior</em></p>
 </div>
 <div class="paragraph">
-<p><a href="programming-with-purpose"><strong>Programming with Purpose</strong></a><br>
+<p><strong>Programming with Purpose</strong><br>
 <em>Coding for self-empowerment and to save humanity</em></p>
 </div>
 <div class="paragraph">
-<p><a href="bad-strimmer"><strong>Bad Strimmer, No Biscuit</strong></a><br>
+<p><strong>Bad Strimmer, No Biscuit</strong><br>
 <em>Lessons learned from my livestream fails</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dedication"><a class="link" href="#_dedication">Dedication</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To Doris, my wife,<br>
+To friends of rwxrob,<br>
+To Chloe, my faithful assistant,<br>
+And to the memories of Aaron Swartz and Kris Nova:</p>
+</div>
+<div class="paragraph">
+<p>Thank you for your light, support, and inspiration.<br>
+This book would never have happened without you.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_preface"><a class="link" href="#_preface">Preface</a></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lessons_learned"><a class="link" href="#_lessons_learned">Lessons learned</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_stupid_titles_ftw"><a class="link" href="#_stupid_titles_ftw">Stupid titles FTW!</a></h3>
+<div class="paragraph">
+<p>🟥 TITLES AND CATEGORIES 🟥</p>
+</div>
+<div class="paragraph">
+<p>Some of the biggest hate I&#8217;ve ever got came from having the wrong title or category.</p>
+</div>
+<div class="sect3">
+<h4 id="_the_more_confusing_the_better"><a class="link" href="#_the_more_confusing_the_better">The more confusing the better</a></h4>
+<div class="paragraph">
+<p>When I started streaming I really tried hard to have the best possible title and category and to always stay on topic. I would stop and start streams to make sure the titles were correct. But, being me, I would be easily distracted and want to respond to people in my chat—a cardinal sin of streaming, responding to people in chat.</p>
+</div>
+<div class="paragraph">
+<p>I even created an entire system for managing the title only to realize no matter what I did the final title would always be wrong unless I stopped and restarted the stream every time I randomly changed what I was talking about. It was exhausting, but worse than that, I <em>still</em> got hate.</p>
+</div>
+<div class="paragraph">
+<p>All it takes is once to have the wrong title on a VOD and people think that I&#8217;m the lazy one for not laboriously editing the video into different segments or even changing the title of the VOD or adding a full description of everything in the video. People always seem to have all the solutions figured out and feel strongly that they need to tell me what to do even though they have never produced any content at all. Obviously, I owe then the best possible content I can make, and they deserve it for free (yes, they still complain about ads).</p>
+</div>
+<div class="paragraph">
+<p>Even when people recommend my VOD to someone in Discord because it covers something interesting that someone else in the forum might want to look into I <em>still</em> get hate and "recommendations" about how to be a better strimmer. These people have no idea how much effort it takes to stream <em>at all</em> and frankly they don&#8217;t care.</p>
+</div>
+<div class="paragraph">
+<p>So what&#8217;s the solution?</p>
+</div>
+<div class="paragraph">
+<p><em><strong>Make absolutely sure that the titles and categories have absolutely, positively nothing to do with the content of the stream whatsoever.</strong></em></p>
+</div>
+<div class="paragraph">
+<p>People get justifiably angry when they open up a VOD that says "Come learn to code with us" but contains no coding whatsoever. But if the title is "</p>
+</div>
+<div class="paragraph">
+<p>Their titles. Look at the biggest streamers in history. Here&#8217;s an actual title fro Kai Cenat on Thanksgiving day that made sense, sort of:</p>
+</div>
+<div class="paragraph">
+<p>🦃 MAFIATHON 2 🦃 KAI X KEVIN HART X DRUSKI 🦃DAY 27🦃20% OF REVENUE GOING TO SCHOOL IN NIGERIA 🦃 ALL MONTH 🦃 CLICK HERE 🦃 !Subathon</p>
+</div>
+<div class="paragraph">
+<p>That&#8217;s all there is. Most of the time there isn&#8217;t even that much information, just some random thing that has nothing to do with what is in the stream, at all.</p>
+</div>
+<div class="paragraph">
+<p>My old gen x mind has a hard time with all this idiocracy but that&#8217;s where we are. If you want to keep down the hate and keep attracting anyone and everyone long enough to maybe stick around and learn something, make absolutely sure that everyone has no fucking idea what you are doing from the title and category, the worse the better. I mean, we are talking about a generation that thinks setting the reason for a Venmo to "Doink Reattachment Surgery" is actually funny (that&#8217;s an actual thing that the absolutely unfunny Andy Samburg sent to the dude from A Closer Look).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_not_enough_red"><a class="link" href="#_not_enough_red">NOT ENOUGH RED</a></h4>
+<div class="paragraph">
+<p>Or should I say 🟥 NOT 🟥 ENOUGH 🟥 RED 🟥 (okay, I could not <em>stand</em> that in my table of contents, the forced caps is bad enough). Silly me. I didn&#8217;t have enough annoying red emojis in my title. How could I possibly hope to succeed? All the best and biggest strimmers suddenly had an ungodly amount of red emojis. It&#8217;s as if all these people didn&#8217;t live through the <code>&lt;blink&gt;</code> tag era, and let&#8217;s face it, they didn&#8217;t. Hell, they would probably think it was amazing.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_lazy_wins"><a class="link" href="#_lazy_wins">Lazy wins</a></h4>
+<div class="paragraph">
+<p>It took me four years of streaming to finally realize that I was working <em>way</em> too hard. Why go though all the mental stress of making sure something as trivial as the title and category are accurate when you can just make it the same thing and never change it, or just change it on Thanksgiving to have a bunch of turkeys in it instead.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_you_can_always_change_it_later"><a class="link" href="#_you_can_always_change_it_later">You can always change it later?</a></h4>
+<div class="paragraph">
+<p>Occasionally, someone will say that they found me from one or my long-form, live stream VODs because of the title. That leads me to believe that having a good title <em>can</em> actually help if you make sure you get right. But the only way to make sure it is right is to wait until it is completely over and <em>then</em> decide what to name it. To be safe and lazy just have it make no sense at all, then, after the fact, go change the title and description on YouTube so that people will find it (Twitch VODs don&#8217;t matter).</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dont_read_the_comments"><a class="link" href="#_dont_read_the_comments">Don&#8217;t read the comments</a></h3>
+<div class="paragraph">
+<p>"Why are you reading the comments? Just ignore them."</p>
+</div>
+<div class="paragraph">
+<p>"Oh, I don&#8217;t know, because it is an opportunity to connect with the people that participate in my community and have things to share, questions, and good ideas."</p>
+</div>
+<div class="paragraph">
+<p>Silly me. What was I thinking? The best strimmers don&#8217;t care at all about the people who post comments or even chat messages. It&#8217;s all about whatever else it could be about (okay, I still haven&#8217;t figured that part out).</p>
+</div>
+<div class="paragraph">
+<p>I cannot help but read the comments because that is where people have a chance to give valuable feedback and I can legitimately help them. One of my favorite Gen X streamers, Mat Ryder, always answers all his emails and comments. He even profoundly apologizes when he doesn&#8217;t get to them all. He has a unique connection with his community that really seems amazing compared to the rest.</p>
+</div>
+<div class="sect3">
+<h4 id="_okay_maybe_read_them_but_dont_care_about_them"><a class="link" href="#_okay_maybe_read_them_but_dont_care_about_them">Okay, maybe read them, but don&#8217;t <em>care</em> about them</a></h4>
+<div class="paragraph">
+<p>Reading comments and responding build <em>engagement</em>, a fancy word that good strimmers don&#8217;t actually care about explicitly, or at least they don&#8217;t want people to <em>know</em> they do.</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;m been accused of having too much empathy and that allows trolls to have their way with me. Probably true. If I was a good strimmer I&#8217;d make sure to just ignore or delete the bad ones and focus on the positive without letting the haters get to me. But I can&#8217;t. I&#8217;m me. I care about what the random trolls say. I&#8217;m a bad strimmer.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_do_it_now_dont_procrastinate"><a class="link" href="#_do_it_now_dont_procrastinate">Do it now, don&#8217;t procrastinate</a></h3>
+<div class="paragraph">
+<p>Here&#8217;s a list of things that I would never do unless it did it immediately:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Publish a recorded video</p>
+</li>
+<li>
+<p>Edit a long video (better to just make another shorter one)</p>
+</li>
+<li>
+<p>Add chapter markers in the YouTube VOD</p>
+</li>
+<li>
+<p>Put zettelkasten pages into a blog or book</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You could hire people to do this for you, or you could be a bad strimmer with an actual job and no time for such things.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_there_is_no_4th_wall"><a class="link" href="#_there_is_no_4th_wall">There is no 4th wall</a></h3>
+<div class="paragraph">
+<p>Deadpool and Ferris Bueller were just strimmers.</p>
+</div>
+<div class="paragraph">
+<p>Breaking the fourth wall has always been a thing, but it is even more of a thing now that livestreaming is the norm. People demand connection to their entertainers now more than ever before. Even though I&#8217;ve never considered myself an entertainer, I suppose I am, just like all the other strimmers. I&#8217;m just bad at it.</p>
+</div>
+<div class="sect3">
+<h4 id="_face_on_stream"><a class="link" href="#_face_on_stream">Face on stream</a></h4>
+<div class="paragraph">
+<p>"Eyes connect, face builds."</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_camera_position"><a class="link" href="#_camera_position">Camera position</a></h4>
+<div class="paragraph">
+<p>I&#8217;ve learned to avoid the uncanny appearance that I am looking at the person&#8217;s forehead or ear by putting the chat too close the camera. When I look into the camera it is like I am actually talking to the person watching, in a good way. It&#8217;s better to have the chat far away so there is an intentional break in "gaze" signalling that I&#8217;m reading what people are saying off screen.</p>
+</div>
+<div class="paragraph">
+<p>It also follows that looking at coding screen by dropping my gaze away from the line of site with the camera signals to people that I am working on the code and not paying attention to the chat at the moment so they don&#8217;t immediately expect a response and think I am just ignoring them.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_voice_and_good_audio"><a class="link" href="#_voice_and_good_audio">Voice and good audio</a></h4>
+<div class="paragraph">
+<p>This is actually something I got right from the beginning. I always said, that I just wanted a radio show that happened to have a video element. I&#8217;ve even read that YouTube is actually primarily an audio service with video as an extra.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_forget_the_green_screen"><a class="link" href="#_forget_the_green_screen">Forget the green screen</a></h4>
+<div class="paragraph">
+<p>Big strimmers don&#8217;t use a green screen. In fact, on some of their streams you can see a dead green screen crumpled up in the background. I&#8217;ve learned that people want to see something about my surroundings more than they want to zoom in on just me and whatever I&#8217;m wearing. The comments from people were hilarious once I dropped the green screen about what everyone imagined my studio space actually looked like. Some imagined a corporate office, a school classroom, but few expected me to be in my crappy apartment room. The impression came because I used to dress up for streaming (instead of just wearing pajamas) and took it way too seriously. I was such a bad strimmer. The best strimmers are just themselves and everything that makes them human makes them worth watching. Some will pretend and do fine for a while, but the biggest strimmers are themselves.</p>
+</div>
+<div class="paragraph">
+<p>Sounds like relationship advice, right? Because it is. It&#8217;s building a relationship with my community.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-11-26 23:30:00 -0500
+Last updated 2024-11-28 06:40:27 -0500
 </div>
 </div>
 </body>

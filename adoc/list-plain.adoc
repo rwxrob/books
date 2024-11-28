@@ -17,7 +17,7 @@ _Extend your code-mage magic with Linux and a Proxmox power tower_
 _Keys to success as a modern knowledge warrior_
 
 *Programming with Purpose* +
-_Code for self-empowerment to save humanity_
+_Coding for self-empowerment and to save humanity_
 
 *Bad Strimmer, No Biscuit* +
 _Lessons learned from my livestream fails_

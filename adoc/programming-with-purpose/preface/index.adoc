@@ -1,0 +1,25 @@
+:compat-mode:
+[preface]
+= Preface
+
+include::why-another-go-book.adoc[]
+
+---
+
+include::who-should-read.adoc[]
+
+---
+
+include::what-with-the-magic.adoc[]
+
+---
+
+include::whats-in-this-book.adoc[]
+
+---
+
+include::how-to-use-this-book.adoc[]
+
+---
+
+include::supplement-your-reading.adoc[]
