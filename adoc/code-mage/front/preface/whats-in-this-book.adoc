@@ -6,7 +6,7 @@ This book is focused on learning to code in Go from the terminal command line an
 
 This book is divided into four main parts:
 
-. **Introduction**: Understand what coding means
+. **Understand**: Know what coding and computer science are
 . **Prepare**: Get everything ready and master coding prerequisites
 . **Learn**: Code memorable micro-projects based on concepts
 . **Create**: Develop something useful that you want

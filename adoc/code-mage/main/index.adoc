@@ -1,6 +1,6 @@
-include::intro/index.adoc[]
+include::understand/index.adoc[]
 
-include::prep/index.adoc[]
+include::prepare/index.adoc[]
 
 include::learn/index.adoc[]
 

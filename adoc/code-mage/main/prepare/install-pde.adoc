@@ -5,7 +5,7 @@ Every great mage has their sanctum, a personal development environment (PDE) whe
 
 This section shows how to install all the components of your PDE with Code-Mage assistant—transforming your computer into a professional coder workstation with just one command—and then summarizes the components that were installed and configured for you so you can understand what happened. In fact, you can customize these later on your own. Everything that the Code-Mage assistant does is well explained in the <<behind-the-curtain, Behind the Curtain>> section at the end of the book.
 
-=== Download and install rwxrob-books
+=== Install rwxrob-books
 
 [CAUTION]
 ====
