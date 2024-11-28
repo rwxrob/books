@@ -1,0 +1,36 @@
+[separator=::]
+= Bad Strimmer
+:author: Robert S. Muhlestein (rwxrob)
+:creator: {author}
+:copyright: 2024 Robert S. Muhlestein
+:email: rob@rwx.gg
+//:revnumber: v0.0.1
+//:revdate: 2024-11-19
+:revremark: First draft
+:doctype: book
+:leveloffset: +1
+//:front-cover-image: image:cover.jpeg[width=1024,height=1024]
+:sectnums!:
+:sectlinks:
+:toc: left
+:toclevels: 4
+:toc-title: Table of Contents
+:description: Lessons learned from my livestream fails
+:keywords: Lessons learned livestream fails twitch youtube facebook
+:icons: font
+:pdf-themesdir: {docdir}/themes
+:pdf-fontsdir: {docdir}/fonts
+:pdf-theme: dark
+:pdfmark: true
+:imagesdir: ./assets/images
+:xrefstyle: short
+:source-highlighter: pygments
+:pygments-style: vs
+:pygments-linenums-mode: table
+
+include::front/index.adoc[]
+
+include::main/index.adoc[]
+
+include::back/index.adoc[]
+

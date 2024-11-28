@@ -1,0 +1,4 @@
+:compat-mode:
+[preface]
+= Preface
+

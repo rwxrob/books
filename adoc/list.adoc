@@ -16,3 +16,6 @@ _Keys to success as a modern knowledge warrior_
 *Programming with Purpose* +
 _Code for self-empowerment to save humanity_
 
+link:bad-strimmer[*Bad Strimmer, No Biscuit*] +
+_Lessons learned from my livestream fails_
+
