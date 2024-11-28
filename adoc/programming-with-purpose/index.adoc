@@ -1,5 +1,5 @@
 [separator=::]
-= Bad Strimmer
+= Programming with Purpose
 :author: Robert S. Muhlestein (rwxrob)
 :creator: {author}
 :copyright: 2024 Robert S. Muhlestein
