@@ -13,7 +13,7 @@
 :sectnums!:
 :sectlinks:
 :toc: left
-:toclevels: 4
+:toclevels: 2
 :toc-title: Table of Contents
 :description: Keys to success as a modern knowledge warrior
 :keywords: Keys to success as a modern knowledge warrior
