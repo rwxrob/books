@@ -1,4 +1,4 @@
-== Install bash
+== Install bash shell
 
 The **bash shell** (short for Bourne Again Shell) is a versatile command-line interface available on many operating systems. This guide explains how to install Git Bash on Windows, update bash to the latest version on Mac, and explains that bash is already included in most Linux distributions.
 
