@@ -90,7 +90,7 @@ Besides, most schools wouldn't even know how to install Linux in their labs even
 
 [NOTE]
 ====
-For most of the 10 years I ran SKILSTAK in person I required people start with a cheap laptop on which they would install Linux themselves from a USB thumb drive that they downloaded and created. While it is not within the scope of this book, if you are up to the challenge this is a fun project with a lot of value later. I cover this sort of thing in one of my <<other-titles, other titles>>: _Linux homelab init_.
+For most of the 10 years I ran SKILSTAK in person I required people start with a cheap laptop on which they would install Linux themselves from a USB thumb drive that they downloaded and created. While it is not within the scope of this book, if you are up to the challenge this is a fun project with a lot of value later. I cover this sort of thing in one of my <<bookshelf, other titles>>: _Linux homelab init_.
 ====
 
 Choose the workstation that suits your needs best and ensure it meets the minimum requirements—your enchanted coding journey awaits!

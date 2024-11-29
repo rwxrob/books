@@ -1,4 +1,4 @@
-[[book-list]]
+[[bookshelf]]
 = Bookshelf
 
 *A Code Mage's First Spell Book* +
