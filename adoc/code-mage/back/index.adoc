@@ -1,6 +1,1 @@
-include::behind-the-curtain/index.adoc[]
-
 include::faq/index.adoc[]
-
-include::../../list.adoc[]
-

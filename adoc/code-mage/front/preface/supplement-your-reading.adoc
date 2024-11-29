@@ -8,7 +8,10 @@ Humans are social creatures and learning is communal. Join a community that is f
 
 My sincere hope is that the parents, teachers, and mages reading these words will find opportunities and motivation to create their own coding clubs and communities dedicated to helping others master the art of code and computer science and reap all the well-earned benefits of doing so.
 
-While you are working on creating your own community, consider joining mine at https://linktr.ee/rwxrob.
+[NOTE]
+====
+While you are working on creating your own community, consider joining ours at https://linktr.ee/rwxrob.
+====
 
 === Find a mentor
 

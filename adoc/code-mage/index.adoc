@@ -13,7 +13,7 @@
 :sectnums!:
 :sectlinks:
 :toc: left
-:toclevels: 4
+:toclevels: 2
 :toc-title: Table of Contents
 :description: Learn practical computer science and programming with Go as a first language
 :keywords: Learn practical computer science and programming with Go as a first language

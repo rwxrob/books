@@ -2,20 +2,30 @@
 
 This appendix is the final resting place of stuff that gets asked a lot, but does not really deserve a first-class discussion in the main context of the book. Most of these topics are distractions until a person has learned the other stuff.
 
-include::what-did-cm-do.adoc[]
+---
 
 include::why-vim.adoc[]
 
+---
+
 include::why-vimrc.adoc[]
 
-include::avoid-apcs.adoc[]
+---
 
 include::why-github.adoc[]
 
+---
+
 include::why-git-bash.adoc[]
+
+---
 
 include::why-bash-for-beginners.adoc[]
 
+---
+
 include::why-slack.adoc[]
+
+---
 
 include::why-no-nano.adoc[]

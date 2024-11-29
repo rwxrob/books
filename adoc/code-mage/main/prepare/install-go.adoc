@@ -1,0 +1,32 @@
+== Install the Go compiler
+
+Go, also known as Golang, is a modern, efficient programming language developed by Google. Designed to address the challenges of large-scale software development, Go emphasizes simplicity, concurrency, and performance. Its lightweight syntax and robust tooling make it an ideal choice for beginners and seasoned developers alike. Whether you're building web servers, distributed systems, or command-line tools, Go's powerful standard library and unparalleled speed can handle the task. Installing Go is your first step toward harnessing its capabilities to create scalable, maintainable, and lightning-fast applications.
+
+=== Mac with brew
+
+[source,shell]
+----
+brew install go
+go version
+----
+
+=== Windows with winget
+
+[source,shell]
+----
+winget install --id GoLang.Go -e
+go version
+----
+
+=== Windows with apt
+
+[source,shell]
+----
+sudo apt install golang
+go version
+----
+
+[NOTE]
+====
+These installs with the package manager should be getting a bit easier at this point, which is good because you'll be doing this all the time as a code mage and tech professional.
+====

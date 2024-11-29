@@ -2,3 +2,4 @@
 
 Many embark on the journey of learning to code through small, contrived examples—simple spells to grasp the fundamentals. But true magic lies beyond these first incantations, in crafting real-world applications that solve meaningful problems for real people. To transition from student to creator is to embrace the challenges of building tools, systems, and experiences that resonate with others and leave a lasting impact.
 
+include::coming-soon.adoc[]

@@ -30,9 +30,10 @@ _See <<why-github, Why GitHub?>> for a more in-depth discussion and comparison t
 
 **Create your first repository**: A repository (or “repo”) is where your project files are stored. Click "New Repository" to start your first project. Name it `notes` or `codebook` and make it private, for now. Even though this isn't really private stuff, it keeps from diluting your public appearance to others. Too many tiny projects and beginner repos distract from your online presence.
 
-**Follow some repos**: Star and follow a few project repos. Consider starting with the following related to this book:
+**Follow some repos**: Star and follow a few project repos. Consider starting with the following:
 
-- https://github.com/rwxrob/code-mage-book
+- https://github.com/rwxrob/code-mage
+- https://github.com/rwxrob/stream-talk
 - https://github.com/rwxrob/awesome-go
 - https://github.com/rwxrob/bonzai
 - https://github.com/rwxrob/rwxrob

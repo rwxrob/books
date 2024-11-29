@@ -12,16 +12,8 @@ This book is divided into four main parts:
 . **Create**: Develop something useful that you want
 
 [[cm-summary]]
-=== The Code-Mage (cm) command
+=== Code-Mage Assistant
 
-I created Code-Mage to skip a lot of that setup stuff with `cm init` in a way that you can come back to later and understand it if you want. But that's not all it can do:
+Code-Mage Assistant was created to skip a lot of that setup stuff with one `cm init` command in a way that you can come back to later and understand it if you want. The source code is available for public review and contribution at the following URL:
 
-- Dynamically display contextual help while you are typing
-- Validate your work and catch bugs as you progress
-- Create unit tests if you'd rather not type them in every time
-- Time how long it takes you to complete a challenge
-- Run a web-server for certain projects that require it
-- Display community news and announcements
-- Read this book in your web browser without Internet
-
-I won't lie, I'm very proud of Code-Mage. I really wish I had it when I was learning. In fact, making the things you wish you had is a great way to find project ideas and motivation. The source code for Code-Mage is entirely public domain and open for review so you can compile and install your own if you feel uncomfortable—as you should—trusting a downloadable executable from the Internet. More on that later (see Preparation).
+https://github.com/rwxrob/code-mage

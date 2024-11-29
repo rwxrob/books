@@ -6,14 +6,14 @@ The **bash shell** (short for Bourne Again Shell) is a versatile command-line in
 
 Git Bash provides a bash emulation environment for Windows, allowing you to use Unix-like commands and workflows. (_Read more about <<why-git-bash, Why Git Bash?>> if you are wondering about WSL, virtual machines, and containers._)
 
-Launch the built-in `powershell` program as described earlier to get a command-line shell in order to install the _new_ `bash` shell. Then run the following command which installs bash (along with git and vim):
+Launch the `powershell` as described earlier and then run the following:
 
 [source, shell]
 ----
 winget install --id Git.Git -e
 ----
 
-This installs bash at `"C:\Program Files\Git\bin\bash.exe"` which you can run from the `Win` search box by typing `bash` to test. Note that Code-Mage will update the Alacritty configuration later to use bash as the default for all new Alacritty terminal sessions.
+This installs bash at `"C:\Program Files\Git\bin\bash.exe"` which you can run from the `Win` search box by typing `bash` to test. In fact, you can use the `bash` terminal window from now on if you prefer. Note that Code-Mage will update the Alacritty configuration later to use bash as the default for all new Alacritty terminal sessions.
 
 [NOTE]
 ====

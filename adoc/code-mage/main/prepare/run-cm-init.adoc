@@ -1,1 +1,49 @@
-= Configure with Code-Mage
+== Configure with Code-Mage
+
+The Code-Mage Assistant, invoked through the `cm` command, is your magical companion for automating the setup and configuration of essential tools. Designed with efficiency and customization in mind, `cm` streamlines the process of configuring your development environment, saving you hours of additional unnecessary learning (at this time). With a single command, you can initialize and configure **bash**, **vim**, **alacritty**, and **tmux**, ensuring your system is ready for productive coding.
+
+[TIP]
+====
+To get coding as soon as possible, just run `cm init` and answer the prompts. The rest of this section just talks about what it does.
+====
+
+[WARNING]
+====
+Even though `cm init` prompts for confirmation it is a destructive command and permanently changes the configuration of the system it is run on. _**Do not run it on a system that you do not own.**_ The scope of changes is limited to the current user so it will not affect other users on the same system, but still be cautious to ensure you are not destroying customizations someone else may have already made to that account. Two people should generally not share the same OS system account, but be sure that is the case.
+====
+
+=== Bash configuration
+
+The `cm` command optimizes your shell experience by:
+
+- Replacing `.bashrc` file with a better one aliases, functions, and environment variables tailored for productivity.
+- Enabling safer scripting defaults.
+- Adding useful aliases, such as `vi` that intelligently detects if you have `vim` or `nvim` installed and progressively enhances your experience.
+
+After running `cm init bash`, you’ll have a bash environment configured for speed and reliability.
+
+=== Vim configuration
+
+For text editing, `cm` ensures your Vim configuration is both powerful and beginner-friendly:
+
+- Installs a curated `.vimrc` file, complete with syntax highlighting `vim-go` plugin, automatic completion and code formatting on save, dynamic bug display, better file-type detection, and more.
+- Adds the **gruvbox-material** color scheme for a visually pleasing coding experience.
+
+Running `cm init vim` gives you a fully-featured Vim setup, ready for serious coding.
+
+=== Configuring Alacritty
+
+The `cm` command configures the GPU-accelerated **Alacritty** terminal for optimal performance. It:
+
+- Creates an `~/.config/alacritty.toml` file with settings for font size, colors and bash default shell.
+- Applies the **gruvbox-material** theme for consistency across your tools.
+
+Execute `cm init alacritty` to enjoy a modern, high-performance terminal emulator.
+
+=== Customizing tmux
+
+Tmux, the terminal multiplexer, is a core tool for multitasking. With `cm`, your Tmux configuration is streamlined.
+
+- Installs a `~/.tmux.conf` file with sensible defaults for split panes, session management, and key bindings modeled after `screen` and with vim bindings.
+
+Run `cm init tmux` to transform your Tmux experience into a seamless multitasking powerhouse.

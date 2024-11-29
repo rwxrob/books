@@ -34,7 +34,7 @@ When learning to use the command line, choosing the right shell is crucial. Whil
 
 **PowerShell**: PowerShell is powerful and Windows-centric but diverges significantly from Unix-style shells, making it less relevant for those learning Linux or macOS environments.
 
-== Conclusion
+=== Conclusion
 
 For beginners, **Bash is the ideal starting point**. Its simplicity, availability, and practicality make it the best choice for learning the command line. By mastering Bash first, you’ll build a strong foundation in shell usage and scripting that will serve you well in any technical career.
 

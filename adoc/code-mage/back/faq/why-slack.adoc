@@ -42,7 +42,7 @@ Choosing the right platform for communication and collaboration is critical for 
 
 **User Privacy**: Slack allows admins to set clear boundaries for data retention and access. Discord and IRC, while flexible, may not meet the privacy standards required for professional use.
 
-== The best of all worlds
+=== The best of all worlds
 
 Slack combines the accessibility and simplicity of modern communication tools with the powerful features required for professional collaboration. Unlike Discord or IRC, it’s designed with productivity and structure in mind. Compared to Webex or Teams, Slack offers superior integrations, a more intuitive interface, and better support for diverse workflows.
 

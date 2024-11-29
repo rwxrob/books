@@ -8,19 +8,7 @@ include::get-computer.adoc[]
 
 ---
 
-include::learn-launcher.adoc[]
-
----
-
-include::learn-alt-tab.adoc[]
-
----
-
 include::create-email-account.adoc[]
-
----
-
-include::create-slack-account.adoc[]
 
 ---
 
@@ -32,7 +20,51 @@ include::start-taking-notes.adoc[]
 
 ---
 
-include::install-pde.adoc[]
+include::learn-launcher.adoc[]
+
+---
+
+include::learn-alt-tab.adoc[]
+
+---
+
+include::launch-native-terminal.adoc[]
+
+---
+
+include::install-bash.adoc[]
+
+---
+
+include::install-alacritty.adoc[]
+
+---
+
+include::install-neovim.adoc[]
+
+---
+
+include::install-git.adoc[]
+
+---
+
+include::install-gh.adoc[]
+
+---
+
+include::install-tmux.adoc[]
+
+---
+
+include::install-go.adoc[]
+
+---
+
+include::install-cm.adoc[]
+
+---
+
+include::run-cm-init.adoc[]
 
 ---
 
@@ -41,16 +73,4 @@ include::learn-shell-basics.adoc[]
 ---
 
 include::learn-vim-basics.adoc[]
-
----
-
-include::learn-tmux-basics.adoc[]
-
----
-
-include::learn-w3m-basics.adoc[]
-
----
-
-include::learn-mods-ai.adoc[]
 

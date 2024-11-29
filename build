@@ -2,10 +2,9 @@
 
 read -r -d '' helptxt <<EOF
 
-This script is used for building these books as a web site and into the app:
+This script is used for building these books as a web site:
 
   site
-	app
 	help
 	watch
 
@@ -39,10 +38,6 @@ x-site() {
 	x-book programming-with-purpose
 	x-book bad-strimmer
 	x-book mormons-tale
-}
-
-x-app() {
-	go install ./cmd/rwxrob-books
 }
 
 x-watch() {

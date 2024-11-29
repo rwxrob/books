@@ -1,0 +1,33 @@
+== Install git source control
+
+Learning Git is like mastering the foundational magic of version control in your journey as a Code Mage. It’s where you create spellbooks (repos) that allows you to track, manage, and safeguard every incantation of your code, ensuring you never lose your progress or stumble through chaos when experiments go awry. With Git, you wield the power to create branches of reality—parallel timelines for your projects—where you can safely test new ideas or collaborate seamlessly with other mages in your guild. Its mastery unlocks the ability to contribute to the vast repositories of knowledge shared across the coding world, making it an essential tool for any mage seeking to craft impactful spells and collaborate on grand endeavors.
+
+=== Mac with brew
+
+[source,shell]
+----
+brew install git
+git version
+----
+
+=== Windows with winget
+
+The `git` command was installed with Git Bash.
+
+[source,shell]
+----
+git version
+----
+
+=== Linux with apt
+
+[source,shell]
+----
+sudo apt install git
+git version
+----
+
+[NOTE]
+====
+Don't worry about learning git right now. We'll go over it after we have written some code to save.
+====

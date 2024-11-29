@@ -1,6 +1,4 @@
-== Cantrip: Echo Greeting (Hello World)
-
-*Problem:* I need to print something to the console for the user to read.
+== Greet (hello world)
 
 Cast your first spell to greet the world of magic and code! This cantrip sets the tone for your magical journey ahead, giving acolytes like you a satisfying first success invoking code magic. "Hello World" is recognized across the realm as the first spell most mages will ever cast and continues to be a strong tradition today.
 
@@ -9,22 +7,72 @@ Cast your first spell to greet the world of magic and code! This cantrip sets th
 You should already feel completely comfortable opening, editing, and saving a file before doing this first spell. If not go back to <<learnvim, Learn Vim>> until you have mastered the basics.
 ====
 
+**Task**:
+
+Print something to the terminal console for the user to read.
+
+**Topics**:
+
+`go run` • `go build` • `go mod init` • `go install` • `main` • `string` • `fmt` • `// comment`
+
+**Example**:
+
+First make a directory called `hello` and change into it. If you don't remember how, go back and refresh <<learn-shell, your basic shell skills>> from the previous section.
+
+Now type the following code into a file called `main.go` (ignore the numbered circles, for now):
+
 [source, go]
 ----
-package main                        <1>
+package main                          <1>
 
-import "fmt"                        <2>
+import "fmt"                          <2>
 
-func main() {                       <3>
-    fmt.Println("Hello, World!")    <4>
+func main() {                         <3>
+    // fmt.Println("Hello, World!")  <4> <5>
+    fmt.Println("Hello, 世界🌎")       <6>
 }
 ----
 
-<1> Declares this file is package `main` which is where the actio is
-<2> Imports the standard `fmt` package containing `Println`
-<3> Declares special `main` function, every program must have one
-<4> Prints "Hello, World!" to the console with a new line at the end
+At this point you have three choices:
 
-I see sparks! Congratulations! If this is the first time you have ever written code that works then write this day down someplace special. Today is your coding birthday! One day you will look back on it with fondness and want to know what day it was that you started your life as a code mage.
+. Just run it: `go run main.go`
+. Build and run it here: `go build; ./hello`
+. Make it a mod, install, run: `go mod hello; go install; hello`
 
-Now delete it all and try again, from scratch. Maybe say something else. Then to it again until you can do it without looking before moving on.
+I see sparks and a greeting appear out of the ether! Your first cantrip is cast. Congratulations!
+
+[TIP]
+====
+Never written code before? If so, mark this date on your calendar as your _code birthday_. You'll want to remember it one day.
+====
+
+Let's decipher the glyphs of your spell:
+
+<1> Declares this file is package `main` which is where the action is.
+
+<2> Imports the standard `fmt` package containing `Println`.
+
+<3> Declares special `main` function, every program must have one.
+
+<4> Prints "Hello, World!" to the console with a new line at the end.
+
+<5> Use `//` to deactivate code or "comment it out".
+
+<6> Unicode (emojis, languages) are supported by the language.
+
+[NOTE]
+====
+Rob Pike and Ken Thompson (two of Go's inventors) more or less invented Unicode as well, which is used for emojis and different languages. It's no surprise that, unlike other languages, Go has first-class support for these built into the language itself. 😃
+====
+
+**Challenges**:
+
+- Write and run a program to print "Hello World!" to the screen.
+- Alter the program to print hello in another language to the screen.
+- Add an emoji of the world in the output.
+- Delete the program and write another from scratch.
+
+[TIP]
+====
+Now is the time to show what you have mastered to a mentor or friend who is learning with you. See what they have to say. Even though this is a small application, it's a good time to get in the habit of _peer review_ when another looks over it and validates it or gives feedback..
+====

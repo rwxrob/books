@@ -1,2 +1,4 @@
 [[learnvim]]
 == Learn basic vim usage
+
+_Coming soon ..._

@@ -1,0 +1,32 @@
+[[why-not-wsl]]
+== Why not WSL
+
+For Windows developers looking to harness the power of the command line, there are multiple options, including Git Bash and the Windows Subsystem for Linux (WSL). While WSL offers a more complete Linux experience, Git Bash often stands out as the better choice for simplicity and focused workflows. Here’s why we use Git Bash over WSL.
+
+=== Lightweight and simple
+
+Git Bash is a lightweight tool that provides essential Unix-like commands and a bash shell environment directly on Windows. It doesn’t require the overhead of installing or maintaining a full Linux distribution, making it faster to set up and easier to manage. For many developers, especially those focused on Git workflows and basic shell scripting, Git Bash offers everything they need without unnecessary complexity.
+
+=== Seamless git integration
+
+Git Bash is purpose-built for working with Git. It includes Git pre-installed and configured for immediate use, making it ideal for developers managing repositories. WSL requires additional setup to install and configure Git, which can complicate workflows if you’re not already using Linux distributions.
+
+=== Works well with native windows tools
+
+Git Bash integrates smoothly with Windows-native tools and file systems. You can navigate your Windows directories without additional mounting configurations and run Windows executables alongside bash commands. WSL, on the other hand, often requires cross-environment handling, which can introduce inefficiencies when accessing files or interacting with Windows applications.
+
+=== Minimal learning curve
+
+Git Bash is straightforward and beginner-friendly. It provides a familiar Unix-like environment for those transitioning from Linux or macOS without the need to understand Linux distributions or the intricacies of WSL. If your goal is primarily to use Git and basic shell scripting, Git Bash minimizes the cognitive load.
+
+=== Reduced compatibility issues
+
+Using WSL can sometimes introduce unexpected compatibility issues, particularly when mixing Windows and Linux environments. These issues can manifest in pathing errors, permissions problems, or discrepancies between Windows tools and Linux binaries. Git Bash avoids these complications by providing a consistent Windows-compatible environment.
+
+===  No administrator permissions required
+
+Installing and using Git Bash does not require administrator permissions, whereas enabling and managing WSL often does. This makes Git Bash an accessible choice for developers working in restricted environments or without full control over their systems.
+
+=== Conclusion
+
+Git Bash is the ideal tool for developers seeking a simple, efficient, and Git-centric terminal experience on Windows. It eliminates the overhead of managing a Linux distribution while providing the essential Unix-like tools developers rely on. For workflows focused on Git, scripting, and integration with Windows, Git Bash is often the more practical and hassle-free choice.
