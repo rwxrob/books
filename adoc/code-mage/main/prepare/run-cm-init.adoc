@@ -31,7 +31,7 @@ For text editing, `cm` ensures your Vim configuration is both powerful and begin
 
 Running `cm init vim` gives you a fully-featured Vim setup, ready for serious coding.
 
-=== Configuring Alacritty
+=== Alacritty configuration
 
 The `cm` command configures the GPU-accelerated **Alacritty** terminal for optimal performance. It:
 
@@ -39,11 +39,3 @@ The `cm` command configures the GPU-accelerated **Alacritty** terminal for optim
 - Applies the **gruvbox-material** theme for consistency across your tools.
 
 Execute `cm init alacritty` to enjoy a modern, high-performance terminal emulator.
-
-=== Customizing tmux
-
-Tmux, the terminal multiplexer, is a core tool for multitasking. With `cm`, your Tmux configuration is streamlined.
-
-- Installs a `~/.tmux.conf` file with sensible defaults for split panes, session management, and key bindings modeled after `screen` and with vim bindings.
-
-Run `cm init tmux` to transform your Tmux experience into a seamless multitasking powerhouse.
