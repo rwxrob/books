@@ -2,11 +2,11 @@
 [preface]
 = Preface
 
-include::why-another-go-book.adoc[]
+include::who-should-read.adoc[]
 
 ---
 
-include::who-should-read.adoc[]
+include::why-another-go-book.adoc[]
 
 ---
 

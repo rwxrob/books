@@ -36,6 +36,10 @@ Or should I say 🟥 NOT 🟥 ENOUGH 🟥 RED 🟥 (okay, I could not _stand_ th
 
 It took me four years of streaming to finally realize that I was working _way_ too hard. Why go though all the mental stress of making sure something as trivial as the title and category are accurate when you can just make it the same thing and never change it, or just change it on Thanksgiving to have a bunch of turkeys in it instead.
 
+=== Use pinned messages
+
+Pinning a message that I would already have to write is definitely the easiest way to set the topic of the current moment. Both Twitch and YouTube support it and I don't care to livestream to anything else. Pinning might not add a chapter, but it also doesn't leave you with a title that doesn't make any sense in the end. So I leave the title something generic and even click-baity.
+
 === You can always change it later?
 
 Occasionally, someone will say that they found me from one or my long-form, live stream VODs because of the title. That leads me to believe that having a good title _can_ actually help if you make sure you get right. But the only way to make sure it is right is to wait until it is completely over and _then_ decide what to name it. To be safe and lazy just have it make no sense at all, then, after the fact, go change the title and description on YouTube so that people will find it (Twitch VODs don't matter).
