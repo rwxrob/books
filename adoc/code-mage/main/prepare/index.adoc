@@ -52,10 +52,6 @@ include::install-gh.adoc[]
 
 ---
 
-include::install-tmux.adoc[]
-
----
-
 include::install-go.adoc[]
 
 ---

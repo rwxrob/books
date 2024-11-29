@@ -4,6 +4,10 @@ This appendix is the final resting place of stuff that gets asked a lot, but doe
 
 ---
 
+include::why-no-nano.adoc[]
+
+---
+
 include::why-vim.adoc[]
 
 ---
@@ -16,16 +20,13 @@ include::why-github.adoc[]
 
 ---
 
-include::why-git-bash.adoc[]
-
----
-
 include::why-bash-for-beginners.adoc[]
 
 ---
 
-include::why-slack.adoc[]
+include::why-git-bash.adoc[]
 
 ---
 
-include::why-no-nano.adoc[]
+include::what-other-term-magic.adoc[]
+

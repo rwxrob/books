@@ -526,7 +526,6 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_install_neovim_optional">Install Neovim (optional)</a></li>
 <li><a href="#_install_git_source_control">Install git source control</a></li>
 <li><a href="#_install_github_cli_tool">Install GitHub CLI tool</a></li>
-<li><a href="#_install_tmux_multiplexer">Install tmux multiplexer</a></li>
 <li><a href="#_install_the_go_compiler">Install the Go compiler</a></li>
 <li><a href="#_install_code_mage_with_go">Install Code-Mage with go</a></li>
 <li><a href="#_configure_with_code_mage">Configure with Code-Mage</a></li>
@@ -548,13 +547,13 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </li>
 <li><a href="#_appendix_faq">Appendix: FAQ</a>
 <ul class="sectlevel2">
+<li><a href="#_why_no_nano">Why no nano?</a></li>
 <li><a href="#whyvim">Why Vim?</a></li>
 <li><a href="#whyvimrc">Why ~/.vimrc?</a></li>
 <li><a href="#why-github">Why GitHub?</a></li>
-<li><a href="#why-git-bash">Why Git Bash?</a></li>
 <li><a href="#_why_bash_for_beginners">Why bash for beginners?</a></li>
-<li><a href="#why-slack">Why Slack over others?</a></li>
-<li><a href="#_why_no_nano">Why no nano?</a></li>
+<li><a href="#why-git-bash">Why Git Bash?</a></li>
+<li><a href="#term-magic">Where&#8217;s more terminal magic?</a></li>
 </ul>
 </li>
 </ul>
@@ -2338,43 +2337,12 @@ gh<span class="tok-w"> </span>version</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_install_tmux_multiplexer"><a class="link" href="#_install_tmux_multiplexer">Install tmux multiplexer</a></h3>
-<div class="paragraph">
-<p>Tmux is a powerful terminal multiplexer that allows you to manage multiple terminal sessions from a single interface, making it an essential tool for any Code Mage. With Tmux, you can split your terminal into multiple panes, run multiple programs simultaneously, and keep sessions running even after you disconnect—perfect for long-running processes or remote work. It’s like having a portal that keeps all your active spells organized and ready to cast at any time. Whether you’re coding, monitoring logs, or managing servers, Tmux enhances your efficiency by letting you switch between tasks seamlessly, customize layouts, and even script repetitive actions. For those who want to take their command-line wizardry to the next level, Tmux is an indispensable artifact.</p>
-</div>
-<div class="sect3">
-<h4 id="_mac_with_brew_5"><a class="link" href="#_mac_with_brew_5">Mac with brew</a></h4>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>tmux
-tmux<span class="tok-w"> </span>-V</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_windows_does_not_have"><a class="link" href="#_windows_does_not_have">Windows does not have</a></h4>
-<div class="paragraph">
-<p>Windows unfortunately does not have a version of tmux automatically prepared to work with Git Bash. Every way to get tmux installed is equally annoying and usually not worth the extra work when using an actual Linux machine in a podman container or virtual machine is better. Since technically you do not require tmux to code the stuff in this book, Windows users can hobble along without it. This is one of the many reasons developers prefer Mac and Linux machines (and the reason Microsoft has tried to convince the world to use its broken WSL Linux virtual machine, which you should <a href="#why-not-wsl">absolutely not use</a>).</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_linux_with_apt_5"><a class="link" href="#_linux_with_apt_5">Linux with apt</a></h4>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>tmux
-tmux<span class="tok-w"> </span>-V</code></pre>
-</div>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
 <h3 id="_install_the_go_compiler"><a class="link" href="#_install_the_go_compiler">Install the Go compiler</a></h3>
 <div class="paragraph">
 <p>Go, also known as Golang, is a modern, efficient programming language developed by Google. Designed to address the challenges of large-scale software development, Go emphasizes simplicity, concurrency, and performance. Its lightweight syntax and robust tooling make it an ideal choice for beginners and seasoned developers alike. Whether you&#8217;re building web servers, distributed systems, or command-line tools, Go&#8217;s powerful standard library and unparalleled speed can handle the task. Installing Go is your first step toward harnessing its capabilities to create scalable, maintainable, and lightning-fast applications.</p>
 </div>
 <div class="sect3">
-<h4 id="_mac_with_brew_6"><a class="link" href="#_mac_with_brew_6">Mac with brew</a></h4>
+<h4 id="_mac_with_brew_5"><a class="link" href="#_mac_with_brew_5">Mac with brew</a></h4>
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>go
@@ -2790,6 +2758,85 @@ cm<span class="tok-w"> </span><span class="tok-nb">help</span></code></pre>
 </div>
 <hr>
 <div class="sect2">
+<h3 id="_why_no_nano"><a class="link" href="#_why_no_nano">Why no nano?</a></h3>
+<div class="paragraph">
+<p>The nano editor might be on all Linux systems but it really isn&#8217;t as good as basic vi for beginners.</p>
+</div>
+<div class="paragraph">
+<p>When starting out with command-line text editors, many beginners gravitate toward nano because it appears simpler and more user-friendly. However, this simplicity comes at a cost. While vi (or its enhanced versions, vim and nvim) might have a steeper learning curve, they provide a much better foundation for mastering text editing in the long run. Here’s why nano isn’t the best choice and how it can even create bad habits.</p>
+</div>
+<div class="sect3">
+<h4 id="_nanos_misleading_simplicity"><a class="link" href="#_nanos_misleading_simplicity">Nano’s misleading simplicity</a></h4>
+<div class="paragraph">
+<p><strong>Over-reliance on control key shortcuts</strong>: Nano uses control key shortcuts (<code>Ctrl</code> + letter) for basic operations like saving, exiting, or searching. While these shortcuts seem straightforward, they often overlap with critical terminal functions like <code>Ctrl+C</code> (interrupt) and <code>Ctrl+S</code> (pause/lock terminal output), causing confusion when beginners accidentally lock their terminal or interrupt running processes.</p>
+</div>
+<div class="paragraph">
+<p><strong>Limited Editing Features</strong>: Nano lacks advanced features that even basic vi provides, such as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Efficient navigation (jumping to the start of a line, word, or character)</p>
+</li>
+<li>
+<p>Powerful search and replace</p>
+</li>
+<li>
+<p>Undo/redo capabilities that are intuitive and robust</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Encourages Dependency</strong>: Nano’s heavy reliance on displayed shortcuts can prevent users from internalizing commands, making them less adaptable to other tools.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_why_basic_vi_is_a_better_choice"><a class="link" href="#_why_basic_vi_is_a_better_choice">Why basic vi is a better choice</a></h4>
+<div class="paragraph">
+<p><strong>Widely available</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Vi is included on virtually every Unix-like system, ensuring you can rely on it no matter where you work.</p>
+</li>
+<li>
+<p>Mastering vi guarantees you’ll always have an editor available, even in minimal environments.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Learn once, apply everywhere</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The skills learned in vi translate to other powerful editors like vim or neovim, which are used by professionals worldwide.</p>
+</li>
+<li>
+<p>Vi’s modal editing (switching between insert and command modes) teaches fundamental text-editing concepts applicable in advanced workflows.</p>
+</li>
+<li>
+<p>Vi navigation is built-in to all shells (with <code>set -o vi</code>) and many other systems because of its ubiquity.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Encourages muscle memory</strong>:</p>
+</div>
+<div class="paragraph">
+<p>By not relying on on-screen prompts, vi forces users to internalize commands quickly, building long-term proficiency and preserving terminal screen real-estate.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_conclusion"><a class="link" href="#_conclusion">Conclusion</a></h4>
+<div class="paragraph">
+<p>While nano’s simplicity might seem appealing at first, it ultimately hinders growth and can foster bad habits. Starting with vi, even at a basic level, sets a strong foundation for effective text editing. Vi’s ubiquity, efficiency, and transferable skills make it the better choice for beginners who want to build confidence and adaptability in the command line.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
 <h3 id="whyvim"><a class="link" href="#whyvim">Why Vim?</a></h3>
 <div class="paragraph">
 <p>The benefits of Vim over other editors lie in its unique approach to efficiency, customization, and versatility. Here’s a breakdown of why many developers swear by Vim:</p>
@@ -2877,7 +2924,7 @@ cm<span class="tok-w"> </span><span class="tok-nb">help</span></code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_conclusion"><a class="link" href="#_conclusion">Conclusion</a></h4>
+<h4 id="_conclusion_2"><a class="link" href="#_conclusion_2">Conclusion</a></h4>
 <div class="paragraph">
 <p>In summary, Vim shines for users who prioritize speed, flexibility, and control over out-of-the-box features or visual interfaces. It excels in environments where efficiency and keyboard-driven workflows are paramount. While it has a steeper learning curve than other editors, the productivity payoff makes it a beloved tool for developers, sysadmins, and writers alike.</p>
 </div>
@@ -2942,7 +2989,7 @@ _have<span class="tok-w"> </span>nvim<span class="tok-w"> </span><span class="to
 </div>
 </div>
 <div class="sect3">
-<h4 id="_conclusion_2"><a class="link" href="#_conclusion_2">Conclusion</a></h4>
+<h4 id="_conclusion_3"><a class="link" href="#_conclusion_3">Conclusion</a></h4>
 <div class="paragraph">
 <p>Using <code>.vimrc</code> as your main configuration file provides the most flexibility and portability. It ensures you can work comfortably in almost any environment without needing to rely on Neovim-specific features. For someone who values a consistent workflow across systems, <code>.vimrc</code> is the pragmatic choice.</p>
 </div>
@@ -3021,9 +3068,70 @@ _have<span class="tok-w"> </span>nvim<span class="tok-w"> </span><span class="to
 </div>
 </div>
 <div class="sect3">
-<h4 id="_conclusion_3"><a class="link" href="#_conclusion_3">Conclusion</a></h4>
+<h4 id="_conclusion_4"><a class="link" href="#_conclusion_4">Conclusion</a></h4>
 <div class="paragraph">
 <p>While alternatives like GitLab and SourceHut have their merits, GitHub’s unparalleled visibility, expansive community, and best-in-class tools make it the platform of choice for developers worldwide. Even for those wary of Microsoft’s involvement, GitHub’s contributions to open-source development and its continued innovation make it an essential part of any developer’s toolkit. Choosing GitHub means joining the largest, most active network of developers and setting yourself up for success in the modern software development ecosystem.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_why_bash_for_beginners"><a class="link" href="#_why_bash_for_beginners">Why bash for beginners?</a></h3>
+<div class="paragraph">
+<p>When learning to use the command line, choosing the right shell is crucial. While there are many shells available, such as Zsh, Fish, and PowerShell, <strong>bash</strong> (Bourne Again Shell) stands out as the best option for beginners. Here’s why:</p>
+</div>
+<div class="sect3">
+<h4 id="_ubiquity_and_universality"><a class="link" href="#_ubiquity_and_universality">Ubiquity and universality</a></h4>
+<div class="paragraph">
+<p><strong>Default shell on most systems</strong>: Bash is official shell of the Linux project and the default shell on the majority of Linux distributions. Zsh is only the default on macOS because Apple refuses to accept the terms of the license change on the bash project (even though they say it is because zsh is "superior"). Bash is widely available, making it the most accessible shell for learners across different platforms.</p>
+</div>
+<div class="paragraph">
+<p><strong>Cross-platform compatibility</strong>: Bash works on Linux, macOS, and Windows (via Git Bash or WSL), ensuring consistent usage regardless of your operating system.</p>
+</div>
+<div class="paragraph">
+<p><strong>Industry standard</strong>: Bash scripts are used in countless production environments, making knowledge of Bash a valuable skill in the job market. Modern bash is far more secure than the ancient POSIX shell scripts from the boomer UNIX era (use of <code>[[ ]]</code> that does not allow expansion injection attacks is just one example).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_simplicity_and_beginner_friendliness"><a class="link" href="#_simplicity_and_beginner_friendliness">Simplicity and beginner-friendliness</a></h4>
+<div class="paragraph">
+<p><strong>Straightforward syntax</strong>: Shell scripting is never really <em>that</em> easy, its just powerful. But bash’s syntax is relatively simple and easy to grasp for newcomers—especially when compared to monstrosities like PowerShell. Commands and scripting follow logical, minimalistic patterns that are less intimidating for beginners. In fact, every line a person types on the command-line is an ongoing, running, interactive program. Placing any of those same commands into a file and running it becomes a script. In that sense, using bash at all <em>is</em> itself "coding."</p>
+</div>
+<div class="paragraph">
+<p><strong>Rich documentation</strong>: Bash has an abundance of resources, including tutorials, man pages, and community support. Most command-line learning materials are written with Bash in mind, making it easier to find help.</p>
+</div>
+<div class="paragraph">
+<p><strong>No Overwhelming Features</strong>: Unlike Zsh or Fish, which come with extra features and plugins that can confuse new users, Bash focuses on core functionality, allowing learners to build a strong foundation. Most importantly, bash generally only uses a single <code>~/.bashrc</code> file rather than splitting them all out making it easy to configure and even easier to share that same configuration on any other system by simply copying a single file (which is what <code>cm init</code> does).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_portability_and_practicality"><a class="link" href="#_portability_and_practicality">Portability and practicality</a></h4>
+<div class="paragraph">
+<p><strong>Write once, run Anywhere</strong>: Bash scripts are portable and can be executed on almost any Unix-like system without modification—especially if the convenient (albeit slightly less safe and performant) <code>#!/usr/bin/env bash</code> idiom is used (which is essentially required to get bash scripts to work on Homebrew macOS machines that put the latest bash binary in a strange place by default).</p>
+</div>
+<div class="paragraph">
+<p><strong>Widely Used in Scripting</strong>: Bash is the default scripting language for many tasks, such as automating workflows and managing servers. Learning Bash provides immediate practical applications in automation and system administration.</p>
+</div>
+<div class="paragraph">
+<p><strong>Learning Core Unix Tools</strong>: By using Bash, beginners gain experience with essential Unix tools (e.g., <code>ls</code>, <code>find</code>, <code>grep</code>), which are foundational for more advanced shell scripting and programming.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_zsh_and_other_shells_why_not_start_there"><a class="link" href="#_zsh_and_other_shells_why_not_start_there">Zsh and other shells: why not start there?</a></h4>
+<div class="paragraph">
+<p><strong>Zsh</strong>: Zsh offers many advanced features (e.g., plugins, themes, and auto-suggestions) that are appealing for experienced users. However, these extras can distract beginners from mastering core shell concepts. And no one ever writes a "zsh script" for anything because no one can count on zsh being on the system and writing POSIX shell scripts is less secure and more annoying.</p>
+</div>
+<div class="paragraph">
+<p><strong>Fish</strong>: Fish is user-friendly and visually appealing but is not POSIX-compliant, meaning scripts written in Fish are not portable across systems. It introduces unique syntax that can make transitioning to other shells or environments more difficult. More importantly, however, fish promotes terminal muscle memory that does not work when on another system without it, a common occurrence in todays cloud-native, containerized, virtualised world.</p>
+</div>
+<div class="paragraph">
+<p><strong>PowerShell</strong>: PowerShell is powerful and Windows-centric but diverges significantly from Unix-style shells, making it less relevant for those learning Linux or macOS environments.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_conclusion_5"><a class="link" href="#_conclusion_5">Conclusion</a></h4>
+<div class="paragraph">
+<p>For beginners, <strong>Bash is the ideal starting point</strong>. Its simplicity, availability, and practicality make it the best choice for learning the command line. By mastering Bash first, you’ll build a strong foundation in shell usage and scripting that will serve you well in any technical career.</p>
 </div>
 <hr>
 </div>
@@ -3100,7 +3208,7 @@ _have<span class="tok-w"> </span>nvim<span class="tok-w"> </span><span class="to
 </div>
 </div>
 <div class="sect3">
-<h4 id="_conclusion_4"><a class="link" href="#_conclusion_4">Conclusion</a></h4>
+<h4 id="_conclusion_6"><a class="link" href="#_conclusion_6">Conclusion</a></h4>
 <div class="paragraph">
 <p>While WSL and VMs have their place for specialized needs (e.g., running a full Linux development stack or testing cross-platform applications), Git Bash is often the superior choice for developers seeking a lightweight, fast, and integrated command-line experience on Windows. Its ease of use, seamless compatibility with Windows, and low overhead make it the go-to tool for efficient development workflows.</p>
 </div>
@@ -3108,218 +3216,40 @@ _have<span class="tok-w"> </span>nvim<span class="tok-w"> </span><span class="to
 </div>
 </div>
 <div class="sect2">
-<h3 id="_why_bash_for_beginners"><a class="link" href="#_why_bash_for_beginners">Why bash for beginners?</a></h3>
+<h3 id="term-magic"><a class="link" href="#term-magic">Where&#8217;s more terminal magic?</a></h3>
 <div class="paragraph">
-<p>When learning to use the command line, choosing the right shell is crucial. While there are many shells available, such as Zsh, Fish, and PowerShell, <strong>bash</strong> (Bourne Again Shell) stands out as the best option for beginners. Here’s why:</p>
-</div>
-<div class="sect3">
-<h4 id="_ubiquity_and_universality"><a class="link" href="#_ubiquity_and_universality">Ubiquity and universality</a></h4>
-<div class="paragraph">
-<p><strong>Default shell on most systems</strong>: Bash is official shell of the Linux project and the default shell on the majority of Linux distributions. Zsh is only the default on macOS because Apple refuses to accept the terms of the license change on the bash project (even though they say it is because zsh is "superior"). Bash is widely available, making it the most accessible shell for learners across different platforms.</p>
-</div>
-<div class="paragraph">
-<p><strong>Cross-platform compatibility</strong>: Bash works on Linux, macOS, and Windows (via Git Bash or WSL), ensuring consistent usage regardless of your operating system.</p>
-</div>
-<div class="paragraph">
-<p><strong>Industry standard</strong>: Bash scripts are used in countless production environments, making knowledge of Bash a valuable skill in the job market. Modern bash is far more secure than the ancient POSIX shell scripts from the boomer UNIX era (use of <code>[[ ]]</code> that does not allow expansion injection attacks is just one example).</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_simplicity_and_beginner_friendliness"><a class="link" href="#_simplicity_and_beginner_friendliness">Simplicity and beginner-friendliness</a></h4>
-<div class="paragraph">
-<p><strong>Straightforward syntax</strong>: Shell scripting is never really <em>that</em> easy, its just powerful. But bash’s syntax is relatively simple and easy to grasp for newcomers—especially when compared to monstrosities like PowerShell. Commands and scripting follow logical, minimalistic patterns that are less intimidating for beginners. In fact, every line a person types on the command-line is an ongoing, running, interactive program. Placing any of those same commands into a file and running it becomes a script. In that sense, using bash at all <em>is</em> itself "coding."</p>
-</div>
-<div class="paragraph">
-<p><strong>Rich documentation</strong>: Bash has an abundance of resources, including tutorials, man pages, and community support. Most command-line learning materials are written with Bash in mind, making it easier to find help.</p>
-</div>
-<div class="paragraph">
-<p><strong>No Overwhelming Features</strong>: Unlike Zsh or Fish, which come with extra features and plugins that can confuse new users, Bash focuses on core functionality, allowing learners to build a strong foundation. Most importantly, bash generally only uses a single <code>~/.bashrc</code> file rather than splitting them all out making it easy to configure and even easier to share that same configuration on any other system by simply copying a single file (which is what <code>cm init</code> does).</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_portability_and_practicality"><a class="link" href="#_portability_and_practicality">Portability and practicality</a></h4>
-<div class="paragraph">
-<p><strong>Write once, run Anywhere</strong>: Bash scripts are portable and can be executed on almost any Unix-like system without modification—especially if the convenient (albeit slightly less safe and performant) <code>#!/usr/bin/env bash</code> idiom is used (which is essentially required to get bash scripts to work on Homebrew macOS machines that put the latest bash binary in a strange place by default).</p>
-</div>
-<div class="paragraph">
-<p><strong>Widely Used in Scripting</strong>: Bash is the default scripting language for many tasks, such as automating workflows and managing servers. Learning Bash provides immediate practical applications in automation and system administration.</p>
-</div>
-<div class="paragraph">
-<p><strong>Learning Core Unix Tools</strong>: By using Bash, beginners gain experience with essential Unix tools (e.g., <code>ls</code>, <code>find</code>, <code>grep</code>), which are foundational for more advanced shell scripting and programming.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_zsh_and_other_shells_why_not_start_there"><a class="link" href="#_zsh_and_other_shells_why_not_start_there">Zsh and other shells: why not start there?</a></h4>
-<div class="paragraph">
-<p><strong>Zsh</strong>: Zsh offers many advanced features (e.g., plugins, themes, and auto-suggestions) that are appealing for experienced users. However, these extras can distract beginners from mastering core shell concepts. And no one ever writes a "zsh script" for anything because no one can count on zsh being on the system and writing POSIX shell scripts is less secure and more annoying.</p>
-</div>
-<div class="paragraph">
-<p><strong>Fish</strong>: Fish is user-friendly and visually appealing but is not POSIX-compliant, meaning scripts written in Fish are not portable across systems. It introduces unique syntax that can make transitioning to other shells or environments more difficult. More importantly, however, fish promotes terminal muscle memory that does not work when on another system without it, a common occurrence in todays cloud-native, containerized, virtualised world.</p>
-</div>
-<div class="paragraph">
-<p><strong>PowerShell</strong>: PowerShell is powerful and Windows-centric but diverges significantly from Unix-style shells, making it less relevant for those learning Linux or macOS environments.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_conclusion_5"><a class="link" href="#_conclusion_5">Conclusion</a></h4>
-<div class="paragraph">
-<p>For beginners, <strong>Bash is the ideal starting point</strong>. Its simplicity, availability, and practicality make it the best choice for learning the command line. By mastering Bash first, you’ll build a strong foundation in shell usage and scripting that will serve you well in any technical career.</p>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="why-slack"><a class="link" href="#why-slack">Why Slack over others?</a></h3>
-<div class="paragraph">
-<p>Why not Discord, IRC, Webex, or Microsoft Teams?</p>
-</div>
-<div class="paragraph">
-<p>Choosing the right platform for communication and collaboration is critical for fostering effective teamwork and building communities. While alternatives like Discord, IRC, Webex, and Microsoft Teams each have their strengths, Slack remains the best choice for many use cases. Here’s why:</p>
-</div>
-<div class="sect3">
-<h4 id="_superior_design_for_team_collaboration"><a class="link" href="#_superior_design_for_team_collaboration">Superior design for team collaboration</a></h4>
-<div class="paragraph">
-<p><strong>Focused workspace structure</strong>: Slack’s channel-based organization makes it easy to create distinct spaces for specific projects, teams, or topics. Unlike Discord, which caters primarily to gaming and casual communities, Slack is optimized for professional and organizational communication.</p>
-</div>
-<div class="paragraph">
-<p><strong>Powerful search features</strong>: Slack’s robust search allows users to quickly find messages, files, and conversations, even across multiple channels. IRC lacks modern search functionality, and Microsoft Teams’ search can feel clunky in comparison.</p>
-</div>
-<div class="paragraph">
-<p><strong>Threaded conversations</strong>: Slack supports threaded discussions, keeping conversations organized and reducing channel clutter. Discord has a lesser version of this and IRC lack this functionality, leading to chaotic, hard-to-follow discussions in busy channels.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_integration_and_automation"><a class="link" href="#_integration_and_automation">Integration and automation</a></h4>
-<div class="paragraph">
-<p><strong>Wide range of integrations</strong>: Slack connects seamlessly with tools like GitHub, Google Drive, Jira, Trello, and many more. While Teams also integrates with many Microsoft tools, it lacks the breadth of third-party app support that Slack provides.</p>
-</div>
-<div class="paragraph">
-<p><strong>Custom workflows</strong>: Slack’s Workflow Builder enables users to automate repetitive tasks, streamline processes, and create custom notifications. Webex and Discord lack comparable built-in tools for workflow automation.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_usability_and_accessibility"><a class="link" href="#_usability_and_accessibility">Usability and Accessibility</a></h4>
-<div class="paragraph">
-<p><strong>Intuitive interface</strong>: Slack’s clean, modern interface is designed for productivity and ease of use. Discord’s interface is heavily gaming-oriented, which can be distracting for professional environments. IRC requires technical knowledge to set up and lacks user-friendly features.</p>
-</div>
-<div class="paragraph">
-<p><strong>Cross-platform consistency</strong>: Slack offers a seamless experience across devices, including desktop, mobile, and web applications. Teams and Webex can feel less consistent or polished across platforms.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_enhanced_features_for_modern_teams"><a class="link" href="#_enhanced_features_for_modern_teams">Enhanced features for modern teams</a></h4>
-<div class="paragraph">
-<p><strong>Rich notifications</strong> - Slack provides customizable notifications, ensuring users receive only the most relevant updates. Discord’s notifications can feel overwhelming, especially in larger servers.</p>
-</div>
-<div class="paragraph">
-<p><strong>File sharing and collaboration</strong>: Slack makes it easy to upload, share, and comment on files within channels. IRC lacks modern file-sharing capabilities, and Webex’s file-sharing features are less intuitive.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_community_building"><a class="link" href="#_community_building">Community building</a></h4>
-<div class="paragraph">
-<p><strong>Professional branding</strong>: Slack workspaces can be customized to reflect your organization’s identity, fostering a sense of belonging. Discord’s branding and gamer-centric features may not align with professional or educational communities.</p>
-</div>
-<div class="paragraph">
-<p><strong>Moderation tools</strong>: Slack includes detailed user permissions and moderation tools for managing channels and workspaces. IRC and Discord require third-party bots or scripts for comparable functionality.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_security_and_privacy"><a class="link" href="#_security_and_privacy">Security and privacy</a></h4>
-<div class="paragraph">
-<p><strong>Enterprise-grade security</strong>: Slack prioritizes data encryption, compliance, and administrative controls, making it a trusted platform for businesses. Microsoft Teams offers comparable security features but ties users into the Microsoft ecosystem. Webex has strong security but lacks Slack’s modern usability and integrations.</p>
-</div>
-<div class="paragraph">
-<p><strong>User Privacy</strong>: Slack allows admins to set clear boundaries for data retention and access. Discord and IRC, while flexible, may not meet the privacy standards required for professional use.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_the_best_of_all_worlds"><a class="link" href="#_the_best_of_all_worlds">The best of all worlds</a></h4>
-<div class="paragraph">
-<p>Slack combines the accessibility and simplicity of modern communication tools with the powerful features required for professional collaboration. Unlike Discord or IRC, it’s designed with productivity and structure in mind. Compared to Webex or Teams, Slack offers superior integrations, a more intuitive interface, and better support for diverse workflows.</p>
-</div>
-<div class="paragraph">
-<p>For teams, businesses, and communities that need a flexible, reliable, and feature-rich platform, Slack is the clear winner.</p>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_why_no_nano"><a class="link" href="#_why_no_nano">Why no nano?</a></h3>
-<div class="paragraph">
-<p>The nano editor might be on all Linux systems but it really isn&#8217;t as good as basic vi for beginners.</p>
-</div>
-<div class="paragraph">
-<p>When starting out with command-line text editors, many beginners gravitate toward nano because it appears simpler and more user-friendly. However, this simplicity comes at a cost. While vi (or its enhanced versions, vim and nvim) might have a steeper learning curve, they provide a much better foundation for mastering text editing in the long run. Here’s why nano isn’t the best choice and how it can even create bad habits.</p>
-</div>
-<div class="sect3">
-<h4 id="_nanos_misleading_simplicity"><a class="link" href="#_nanos_misleading_simplicity">Nano’s misleading simplicity</a></h4>
-<div class="paragraph">
-<p><strong>Over-reliance on control key shortcuts</strong>: Nano uses control key shortcuts (<code>Ctrl</code> + letter) for basic operations like saving, exiting, or searching. While these shortcuts seem straightforward, they often overlap with critical terminal functions like <code>Ctrl+C</code> (interrupt) and <code>Ctrl+S</code> (pause/lock terminal output), causing confusion when beginners accidentally lock their terminal or interrupt running processes.</p>
-</div>
-<div class="paragraph">
-<p><strong>Limited Editing Features</strong>: Nano lacks advanced features that even basic vi provides, such as:</p>
+<p>This book just scratches the surface of what is possible using a terminal—especially bash on a full Unix-like system. Several terminal tools have been left out of this book that are critical but covered in another book: <a href="https://rwxrob.github.io/books/terminal-velocity"><em>Terminal Velocity, Mastering the fastest human-computer interface</em></a>. These include:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Efficient navigation (jumping to the start of a line, word, or character)</p>
+<p><code>tmux</code> - terminal multiplexer and so much more</p>
 </li>
 <li>
-<p>Powerful search and replace</p>
+<p><code>w3m</code> - terminal web-browser 10x faster than GUI browsing</p>
 </li>
 <li>
-<p>Undo/redo capabilities that are intuitive and robust</p>
+<p><code>mods</code> - Claude AI integration and query from CLI</p>
+</li>
+<li>
+<p><code>find</code> - most powerful Unix command for finding and transforming files</p>
+</li>
+<li>
+<p><code>podman</code> - run containers from the command line</p>
+</li>
+<li>
+<p><code>gh</code> - even more that can be done with the <code>gh</code> tool</p>
+</li>
+<li>
+<p><code>git</code> - more powerful git functionality</p>
+</li>
+<li>
+<p><code>nvim</code> - the power of treesitter and other plugins</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p><strong>Encourages Dependency</strong>: Nano’s heavy reliance on displayed shortcuts can prevent users from internalizing commands, making them less adaptable to other tools.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_why_basic_vi_is_a_better_choice"><a class="link" href="#_why_basic_vi_is_a_better_choice">Why basic vi is a better choice</a></h4>
-<div class="paragraph">
-<p><strong>Widely available</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Vi is included on virtually every Unix-like system, ensuring you can rely on it no matter where you work.</p>
-</li>
-<li>
-<p>Mastering vi guarantees you’ll always have an editor available, even in minimal environments.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Learn once, apply everywhere</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The skills learned in vi translate to other powerful editors like vim or neovim, which are used by professionals worldwide.</p>
-</li>
-<li>
-<p>Vi’s modal editing (switching between insert and command modes) teaches fundamental text-editing concepts applicable in advanced workflows.</p>
-</li>
-<li>
-<p>Vi navigation is built-in to all shells (with <code>set -o vi</code>) and many other systems because of its ubiquity.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Encourages muscle memory</strong>:</p>
-</div>
-<div class="paragraph">
-<p>By not relying on on-screen prompts, vi forces users to internalize commands quickly, building long-term proficiency and preserving terminal screen real-estate.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_conclusion_6"><a class="link" href="#_conclusion_6">Conclusion</a></h4>
-<div class="paragraph">
-<p>While nano’s simplicity might seem appealing at first, it ultimately hinders growth and can foster bad habits. Starting with vi, even at a basic level, sets a strong foundation for effective text editing. Vi’s ubiquity, efficiency, and transferable skills make it the better choice for beginners who want to build confidence and adaptability in the command line.</p>
-</div>
+<p><em>Terminal Velocity</em> also covers advanced bash scripting and creating a "dot files" repo using a <a href="https://github.com/rwxrob/bonzai">Bonzai</a> monolith.</p>
 </div>
 </div>
 </div>
