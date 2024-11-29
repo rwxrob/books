@@ -1,4 +1,4 @@
-== I use Linux, btw
+== I use Linux, btw—for tree decades
 
 Me: "I wish I could get a Sun box at home."
 
@@ -64,13 +64,16 @@ My first livestreams were from a Linux machine. Not many people could say they w
 - Gaming from Linux? Seriously? Okay, if you want slow games for no reason.
 - What's that screen-ripping? Get used to it. You will fix and driver update will break it again.
 
-People that claim everything "works for them" are lying. They just hide it. I've heard Linux liars since 1996. I don't get it. It's okay to say when something is bad. It doesn't mean you don't support it. The truth is Linux never has and never will be amazing for livestreaming and gaming, not for 99.9% of people, the ones who value their time to do other things.
+[NOTE]
+====
+People that claim everything "works for them" are lying. They just hide it. When you politely press them for details and get to know them, the truth comes out. I've heard Linux liars since 1996. I don't get it. It's okay to say when something is bad. It doesn't mean you don't support it. The truth is Linux never has and never will be amazing for livestreaming and gaming, not for 99.9% of people, the ones who value their time to do other things.
+====
 
-=== Linux desktop dies live, on stream
+==== Linux desktop died live, on stream
 
 _Coming soon ..._
 
-=== Livestream community fails to get Zwift working
+==== Livestream community fails to get Zwift working
 
 _Coming soon ..._
 
