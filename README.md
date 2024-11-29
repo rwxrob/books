@@ -2,7 +2,7 @@
 
 Here you'll find Rob's perpetually unfinished books. Feel free to [complain](https://github.com/rwxrob/books/issues) or [support him](https://github.com/sponsors/rwxrob). Best to follow this repo for update notifications.
 
-The AsciiDoc monorepo is nice because I can include sections in each book rather than repeat them if they are identical (such as how to start a terminal session). It also allows the building of applications that embed the content of the books. More on this in the book [*Autodidactic*](autodidactic)
+The AsciiDoc monorepo is nice because I can include sections in each book rather than repeat them if they are identical (such as how to start a terminal session). It also allows the building of applications that embed the content of the books. More on this in the book [*Autodidactic*](https://rwxrob.github.io/books/autodidactic)
 
 ## Legal
 
