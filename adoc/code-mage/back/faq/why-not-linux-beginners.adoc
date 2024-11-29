@@ -1,0 +1,10 @@
+== Why not Linux for beginners?
+
+Linux is the most important operating system of our time. Every single technologist _must_ learn it to be considered serious. Those who do not languish behind those who do. So why not learn it first?
+
+=== Linux must be installed
+
+There are a tiny fraction of companies that sell computers that come with Linux, but usually they are as expensive as buying a Mac.
+
+=== Using Linux requires terminal skills
+

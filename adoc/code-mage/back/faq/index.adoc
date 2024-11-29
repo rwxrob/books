@@ -30,3 +30,15 @@ include::why-git-bash.adoc[]
 
 include::what-other-term-magic.adoc[]
 
+---
+
+include::why-not-linux-beginners.adoc[]
+
+---
+
+include::whats-your-distro.adoc[]
+
+---
+
+include::i-use-linux-btw.adoc[]
+
