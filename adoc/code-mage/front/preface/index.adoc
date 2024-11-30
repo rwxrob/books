@@ -26,5 +26,5 @@ include::supplement-your-reading.adoc[]
 
 ---
 
-include::../../../learn-one-school.adoc[]
+include::learn-one-school.adoc[]
 

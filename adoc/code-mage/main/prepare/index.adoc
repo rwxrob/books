@@ -8,6 +8,10 @@ include::get-computer.adoc[]
 
 ---
 
+include::bring-your-phone.adoc[]
+
+---
+
 include::create-email-account.adoc[]
 
 ---
