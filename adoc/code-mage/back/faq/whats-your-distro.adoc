@@ -1,3 +1,0 @@
-== What's your distro?
-
-I use Unix with a custom desktop manager.

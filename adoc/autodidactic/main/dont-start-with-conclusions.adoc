@@ -1,0 +1,27 @@
+== Don't start with conclusions
+
+People love to write and say these short conclusions. Just open any social media and you'll see them all over the place. In fact, it could be argued that a good video title must be a click-baity conclusion (see my book, https://rwxrob.github.io/books/bad-strimmer[*Bad Strimmer*]). Conclusions do draw you in, however, maybe that is the reason they are all over the place, even when the content is directly against the conclusion on purpose.
+
+- Microsoft sucks.
+- Linux rules!
+- Neovim rocks!
+- Rust is safe.
+- Go is lame.
+- College is a waste of time.
+- JavaScript is evil.
+- Big companies don't let you be creative.
+- AI is the future.
+- Object-Oriented-Programming is dead.
+
+[NOTE]
+====
+Let me melt your brain, "don't start with conclusions" is a conclusion.
+====
+
+Here's the problem. How many people have actually been influenced by conclusions? I'm guessing not many. Although, those who practice "lie big" tend to win things these days, so who actually knows.
+
+While a conclusion might actually draw a person in, it's the explanation that helped you arrive at the conclusion that has value. Its far move valuable to run around spewing your conclusion to provoke people and then immediately redirect to content that has the rest.
+
+== Presenting conclusions as questions
+
+I've noticed that just adding a question mark to the end of my conclusion makes it a more inviting and less proactive invitation to explore the idea. This means that I'm open to the possibility that my conclusion might be wrong and am open to feedback and alternative perspectives about it.

@@ -16,6 +16,9 @@ _Keys to success as a modern knowledge warrior_
 link:programming-with-purpose[*Programming with Purpose*] +
 _Coding for self-empowerment and to save humanity_
 
+link:shut-the-faq-up[*Shut the FAQ Up*] +
+_All the questions I'm tired of answering_
+
 link:bad-strimmer[*Bad Strimmer, No Biscuit*] +
 _Lessons learned from my livestream fails_
 

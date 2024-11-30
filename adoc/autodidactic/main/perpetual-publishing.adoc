@@ -1,0 +1,26 @@
+== Perpetual publishing approach
+
+=== Advantages over zettelkasten
+
+=== Managing knowledge as source code
+
+==== Open source required to follow
+
+==== Git based to dynamically show changes
+
+==== Enables crowd sourcing, but beware
+
+Don't lose all the reasons that people sometimes prefer a book.
+
+=== Combatting distributions of old copies
+
+=== What about other people distributing my content as their?
+
+=== What about it being constantly out of date?
+
+Is any website actually up to date? The difference is openly stating up front that your public book is perpetually out of date manages the expectation better.
+
+=== Not just throwing something into zettelkasten and never getting back to it
+
+=== Only has to be one line idea at first, but placement is initially correct
+

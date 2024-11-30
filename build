@@ -20,15 +20,14 @@ x-book() {
 	asciidoctor \
 		-D "docs/$1" \
 		-o "index.html" \
-		-a copy_script=./common/assets/scripts/script.js \
 		"./adoc/$1/index.adoc"
+
 }
 
 x-site() {
 	asciidoctor \
 		-D "docs" \
 		-o "index.html" \
-		-a copy_script=./common/assets/scripts/script.js \
 		"./adoc/index.adoc"
 	x-book code-mage
 	x-book terminal-velocity
@@ -37,6 +36,7 @@ x-site() {
 	x-book autodidactic
 	x-book programming-with-purpose
 	x-book bad-strimmer
+	x-book shut-the-faq-up
 	x-book mormons-tale
 }
 
