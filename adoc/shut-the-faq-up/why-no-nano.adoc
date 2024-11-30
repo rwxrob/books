@@ -1,0 +1,39 @@
+= Why no nano?
+
+The nano editor might be on all Linux systems but it really isn't as good as basic vi for beginners.
+
+When starting out with command-line text editors, many beginners gravitate toward nano because it appears simpler and more user-friendly. However, this simplicity comes at a cost. While vi (or its enhanced versions, vim and nvim) might have a steeper learning curve, they provide a much better foundation for mastering text editing in the long run. Here’s why nano isn’t the best choice and how it can even create bad habits.
+
+== Nano’s misleading simplicity
+
+**Over-reliance on control key shortcuts**: Nano uses control key shortcuts (`Ctrl` + letter) for basic operations like saving, exiting, or searching. While these shortcuts seem straightforward, they often overlap with critical terminal functions like `Ctrl+C` (interrupt) and `Ctrl+S` (pause/lock terminal output), causing confusion when beginners accidentally lock their terminal or interrupt running processes.
+
+**Limited Editing Features**: Nano lacks advanced features that even basic vi provides, such as:
+
+- Efficient navigation (jumping to the start of a line, word, or character)
+- Powerful search and replace
+- Undo/redo capabilities that are intuitive and robust
+
+**Encourages Dependency**: Nano’s heavy reliance on displayed shortcuts can prevent users from internalizing commands, making them less adaptable to other tools.
+
+== Why basic vi is a better choice
+
+**Widely available**:
+
+- Vi is included on virtually every Unix-like system, ensuring you can rely on it no matter where you work.
+- Mastering vi guarantees you’ll always have an editor available, even in minimal environments.
+
+**Learn once, apply everywhere**:
+
+- The skills learned in vi translate to other powerful editors like vim or neovim, which are used by professionals worldwide.
+- Vi’s modal editing (switching between insert and command modes) teaches fundamental text-editing concepts applicable in advanced workflows.
+- Vi navigation is built-in to all shells (with `set -o vi`) and many other systems because of its ubiquity.
+
+**Encourages muscle memory**:
+
+By not relying on on-screen prompts, vi forces users to internalize commands quickly, building long-term proficiency and preserving terminal screen real-estate.
+
+== Conclusion
+
+While nano’s simplicity might seem appealing at first, it ultimately hinders growth and can foster bad habits. Starting with vi, even at a basic level, sets a strong foundation for effective text editing. Vi’s ubiquity, efficiency, and transferable skills make it the better choice for beginners who want to build confidence and adaptability in the command line.
+
