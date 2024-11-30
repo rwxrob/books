@@ -1,6 +1,6 @@
 == Install Alacritty terminal
 
-Alacritty is a modern, GPU-accelerated terminal emulator known for its speed and simplicity. It's speed and support for millions of colors make it particularly good for creating performant terminal animations and games, which always make fun micro-projects when learning the coding fundamentals. This guide walks you through installing Alacritty on Mac, Windows, and Linux by downloading the official installers from the Alacritty GitHub repository.
+Alacritty is a modern, GPU-accelerated terminal emulator known for its speed and simplicity. It's speed and support for millions of colors make it particularly good for creating performant terminal animations and games, which always make fun micro-projects when learning the coding fundamentals. This guide walks you through installing official Alacritty on Mac, Windows, and Linux by using the package managers (discussed previously).
 
 [NOTE]
 ====
@@ -23,7 +23,7 @@ Run the following commands one at a time:
 
 [source, shell]
 ----
-winget install --id Alacritty.Alacritty -e
+winget install --id alacritty.alacritty
 alacritty --version
 ----
 

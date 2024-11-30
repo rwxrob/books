@@ -519,20 +519,22 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_bring_your_phone">Bring your phone</a></li>
 <li><a href="#_create_an_email_account">Create an email account</a></li>
 <li><a href="#_create_a_github_account">Create a GitHub account</a></li>
-<li><a href="#_start_taking_notes">Start taking notes</a></li>
 <li><a href="#_learn_to_launch_anything">Learn to launch anything</a></li>
 <li><a href="#_learn_alt_tab_for_window_switching">Learn Alt-Tab for window switching</a></li>
 <li><a href="#_launch_native_terminal">Launch native terminal</a></li>
 <li><a href="#_install_bash_shell">Install bash shell</a></li>
 <li><a href="#_install_alacritty_terminal">Install Alacritty terminal</a></li>
-<li><a href="#_install_neovim_optional">Install Neovim (optional)</a></li>
-<li><a href="#_install_git_source_control">Install git source control</a></li>
-<li><a href="#_install_github_cli_tool">Install GitHub CLI tool</a></li>
+<li><a href="#_launch_alacritty_terminal">Launch Alacritty terminal</a></li>
 <li><a href="#_install_the_go_compiler">Install the Go compiler</a></li>
 <li><a href="#_install_code_mage_with_go">Install Code-Mage with go</a></li>
 <li><a href="#_configure_with_code_mage">Configure with Code-Mage</a></li>
+<li><a href="#_install_git_source_control">Install git source control</a></li>
+<li><a href="#_install_github_cli_tool">Install GitHub CLI tool</a></li>
+<li><a href="#_login_to_github">Login to GitHub</a></li>
+<li><a href="#_verify_successful_authentication">Verify successful authentication</a></li>
 <li><a href="#learn-shell">Learn basic shell commands</a></li>
 <li><a href="#learnvim">Why Learn Vim First?</a></li>
+<li><a href="#_start_taking_notes">Start taking notes</a></li>
 </ul>
 </li>
 <li><a href="#_learn_to_code">Learn to code</a>
@@ -876,7 +878,7 @@ in the early days before everything becomes second nature.</p>
 <p>Mastery begins with focus. Whether you are stepping onto the mat of a martial arts dojo or opening your first terminal to learn the craft of coding, dedicating yourself to a single discipline lays the foundation for success. This commitment to one "school of magic" or art is a time-honored approach to learning—and it’s just as relevant for a Code Mage as it is for a martial artist.</p>
 </div>
 <div class="paragraph">
-<p>Commitment to a single school does not mean there is no value in others, or even that this school is better. Just that you are dedicated to this one at the moment. You would never walk into a Karate dojo and start talking about why Judo is a superior martial art. The masters of both dojos can even strongly respect the other for their commitment despite their different approaches. The master of the dojo need not justify why their form is better. That is up to the student to determine on their own after they have mastered the forms. A master and mentor, instead, focuses uniquely on the advantages of the form they know and how to execute it.</p>
+<p>Commitment to a single school does not mean there is no value in others, or even that this school is better. Just that you are dedicated to this one at the moment. You would never walk into a Karate dojo and start talking about why Judo is a superior martial art. The masters of both dojos can even strongly respect the other for their commitment despite their different approaches. The master of the dojo need not justify why their form is better. That is up to the student to determine on their own after they have mastered the forms. A master and mentor, instead, focus uniquely on the advantages of the form they know and how to execute it.</p>
 </div>
 <div class="paragraph">
 <p>Learning Go from the terminal follows the same philosophy. At first, you’re typing commands, structuring code, and running programs without fully understanding how it all connects. By focusing on the terminal environment and immersing yourself in Go’s syntax and core principles, you’re laying a foundation that will make advanced concepts easier to grasp later.</p>
@@ -1436,9 +1438,6 @@ in the early days before everything becomes second nature.</p>
 <div class="paragraph">
 <p><strong>Integration</strong>: Many tools, platforms, and educational resources integrate directly with GitHub, making it a central hub for your development activities.</p>
 </div>
-<div class="paragraph">
-<p><em>See <a href="#why-github">Why GitHub?</a> for a more in-depth discussion and comparison to other services.</em></p>
-</div>
 </div>
 <div class="sect3">
 <h4 id="_how_to_create_a_github_account"><a class="link" href="#_how_to_create_a_github_account">How to create a GitHub account</a></h4>
@@ -1457,14 +1456,28 @@ in the early days before everything becomes second nature.</p>
 <div class="paragraph">
 <p><strong>Set up your profile</strong>: - Add a profile picture and a bio that reflects your interests and goals. Optionally, link your website or social media accounts. Eventually, you will want to flesh out your special repo that matches your username that becomes your GitHub professional profile.</p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p><strong>Create your first repository</strong>: A repository (or “repo”) is where your project files are stored. Click "New Repository" to start your first project. Name it <code>notes</code> or <code>codebook</code> and make it private, for now. Even though this isn&#8217;t really private stuff, it keeps from diluting your public appearance to others. Too many tiny projects and beginner repos distract from your online presence.</p>
+<p>No need to create a repo right now. We will do that in the following steps <em>from the command line</em> when we start taking notes and writing our first code.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p><strong>Follow some repos</strong>: Star and follow a few project repos. Consider starting with the following:</p>
 </div>
 <div class="ulist">
 <ul>
+<li>
+<p><a href="https://github.com/rwxrob/books" class="bare">https://github.com/rwxrob/books</a></p>
+</li>
 <li>
 <p><a href="https://github.com/rwxrob/code-mage" class="bare">https://github.com/rwxrob/code-mage</a></p>
 </li>
@@ -1496,6 +1509,898 @@ in the early days before everything becomes second nature.</p>
 <h4 id="_why_github_now"><a class="link" href="#_why_github_now">Why GitHub now?</a></h4>
 <div class="paragraph">
 <p>Creating a GitHub account is not just a task; it’s an invitation to join a global community of developers. Whether you’re learning to code, managing personal projects, or contributing to the open-source world, GitHub provides the tools and visibility to grow your skills and connect with others. Start your journey today and become part of the development ecosystem.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learn_to_launch_anything"><a class="link" href="#_learn_to_launch_anything">Learn to launch anything</a></h3>
+<div class="paragraph">
+<p>Every operating system offers a quick and efficient way to launch applications, open files, and search for information—similar to macOS’s powerful Spotlight feature. Learning how to use these tools effectively can save time and streamline your workflow. This guide will walk you through Spotlight equivalents on Windows, Linux, and other systems.</p>
+</div>
+<div class="sect3">
+<h4 id="_why_learn_launcher"><a class="link" href="#_why_learn_launcher">Why learn launcher?</a></h4>
+<div class="paragraph">
+<p><strong>Efficiency</strong>: Launching apps and files directly saves time compared to navigating menus. Your fingers never need to leave home row on the keyboard.</p>
+</div>
+<div class="paragraph">
+<p><strong>Focus</strong>:Search and launch tools help you avoid distractions by providing a single interface for tasks.</p>
+</div>
+<div class="paragraph">
+<p><strong>Universal Skills</strong>: Mastering these tools makes you productive on any operating system.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_spotlight_on_mac"><a class="link" href="#_spotlight_on_mac">Spotlight on Mac</a></h4>
+<div class="paragraph">
+<p>On macOS, Spotlight is the built-in search and launcher tool.</p>
+</div>
+<div class="paragraph">
+<p><strong>How to access Spotlight</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the keyboard shortcut <code>Command (⌘) + Space</code>.</p>
+</li>
+<li>
+<p>Click the magnifying glass icon in the top-right corner of the menu bar.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>What you can do</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Launch apps: Type the app name and press <code>Enter</code>.</p>
+</li>
+<li>
+<p>Search files: Enter the file name or keywords.</p>
+</li>
+<li>
+<p>Perform calculations: Type <code>5 * 7</code> or <code>100 USD to EUR</code>.</p>
+</li>
+<li>
+<p>Look up definitions: Type a word to get a dictionary entry.</p>
+</li>
+<li>
+<p>Search the web: Type your query and select a browser result.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_search_on_windows"><a class="link" href="#_search_on_windows">Search on Windows</a></h4>
+<div class="paragraph">
+<p>Windows provides a built-in search tool that acts as a launcher.</p>
+</div>
+<div class="paragraph">
+<p><strong>How to access Windows search</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Press <code>Win</code> or click the search icon on the taskbar.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>What you can do</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Launch apps: Type the app name and press <code>Enter</code>.</p>
+</li>
+<li>
+<p>Search files: Enter the file name or content keywords.</p>
+</li>
+<li>
+<p>Execute commands: Run shell commands directly.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_activities_on_linux"><a class="link" href="#_activities_on_linux">Activities on Linux</a></h4>
+<div class="paragraph">
+<p>Linux has multiple application launchers, depending on your desktop environment and preferences.</p>
+</div>
+<div class="paragraph">
+<p><strong>GNOME: activities overview</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Press the <code>Super</code> key (Windows key) to open the Activities Overview.</p>
+</li>
+<li>
+<p>Type the app name or file you want to open.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>KDE Plasma: KRunner</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Press <code>Alt + Space</code> to open KRunner.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>What you can do</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Launch apps: Type the name and press <code>Enter</code>.</p>
+</li>
+<li>
+<p>Open files: Search for files by name.</p>
+</li>
+<li>
+<p>Run commands: Execute terminal commands directly.</p>
+</li>
+<li>
+<p>Perform calculations and translations with plugins.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learn_alt_tab_for_window_switching"><a class="link" href="#_learn_alt_tab_for_window_switching">Learn Alt-Tab for window switching</a></h3>
+<div class="paragraph">
+<p>The <code>Alt + Tab</code> shortcut is a universal skill that works across operating systems, allowing you to switch between open windows quickly and efficiently. It&#8217;s one of the most basic yet powerful tools to enhance productivity. No additional graphical window manager (like <code>i3</code>) is needed if you have already mastered this one skill.</p>
+</div>
+<div class="sect3">
+<h4 id="_why_learn_alt_tab"><a class="link" href="#_why_learn_alt_tab">Why learn Alt-Tab?</a></h4>
+<div class="paragraph">
+<p><strong>Speed</strong>: Quickly toggle between tasks without touching the mouse.</p>
+</div>
+<div class="paragraph">
+<p><strong>Universality</strong>: Works on nearly every major operating system, making it a portable skill.</p>
+</div>
+<div class="paragraph">
+<p><strong>Focus</strong>: Reduces distraction by helping you stay in the flow of your work.</p>
+</div>
+<div class="paragraph">
+<p>Incorporating <code>Alt + Tab</code> into your daily workflow ensures you can multitask efficiently across all platforms.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_how_to_use_alt_tab"><a class="link" href="#_how_to_use_alt_tab">How to Use Alt-Tab</a></h4>
+<div class="paragraph">
+<p><strong>On Windows</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Hold <code>Alt</code> and press <code>Tab</code> to cycle through open applications.</p>
+</li>
+<li>
+<p>Release both keys when the desired window is highlighted.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>On macOS</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use <code>Command (⌘) + Tab</code> for similar functionality.</p>
+</li>
+<li>
+<p>Press <code>Command (⌘) + ~</code> to switch between windows of the same application.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>On Linux</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Most desktop environments support <code>Alt + Tab</code> natively.</p>
+</li>
+<li>
+<p>Additional variations, like <code>Super + Tab</code>, may be available depending on your configuration.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Others</strong>:</p>
+</div>
+<div class="paragraph">
+<p>This functionality is supported on all tablets and phones as well so long as you attach a keyboard to them.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_launch_native_terminal"><a class="link" href="#_launch_native_terminal">Launch native terminal</a></h3>
+<div class="paragraph">
+<p>For the rest of these preparation steps we will need a terminal. The terminal is the mage’s staff—a powerful tool for casting commands, managing your environment, and creating magic in the digital realm. Here’s how to launch the native terminal on Mac, Windows, and Linux, so you can start your journey as a Code Mage.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Don&#8217;t get to invested in the native terminal. We&#8217;ll replace it with customized Alacritty later, which is faster and easier to use but just needs to be installed.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>You&#8217;ve already learned how to launch things using the launcher. Just use the right application name as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Mac: <code>terminal</code></p>
+</li>
+<li>
+<p>Win: <code>powershell</code></p>
+</li>
+<li>
+<p>Linux: <code>terminal</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Take a moment to increase the font size to something you can read just for this session while we install everything else including the Alacritty terminal and its custom configuration.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_install_bash_shell"><a class="link" href="#_install_bash_shell">Install bash shell</a></h3>
+<div class="paragraph">
+<p>The <strong>bash shell</strong> (short for Bourne Again Shell) is a versatile command-line interface available on many operating systems. This guide explains how to get bash on Mac, Windows, and Linux.</p>
+</div>
+<div class="sect3">
+<h4 id="_install_git_bash_on_windows"><a class="link" href="#_install_git_bash_on_windows">Install Git-Bash on Windows</a></h4>
+<div class="paragraph">
+<p>Git Bash provides a bash emulation environment for Windows, allowing you to use Unix-like commands and workflows.</p>
+</div>
+<div class="paragraph">
+<p>Launch the <code>powershell</code> as described earlier and then run the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>git.git</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This installs bash at <code>"C:\Program Files\Git\bin\bash.exe"</code> which you can run from the <code>Win</code> search box by typing <code>bash</code> to test. In fact, you can use the <code>bash</code> terminal window from now on if you prefer. Note that Code-Mage will update the Alacritty configuration later to use bash as the default for all new Alacritty terminal sessions.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Windows comes with PowerShell, but bash is definitely more user-friendly when it comes to command-line shell interactions. Consider one of the most powerful Unix commands ever invented: <code>find</code>. With Git Bash this amazing command is available to use <em>on Windows</em> now that you have Git Bash installed (just be sure to use the right one since Windows has its own inferior <code>find</code> command). Git Bash also adds two core tools that you will use extensively later: <code>vim</code> and <code>git</code>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_update_bash_on_macos"><a class="link" href="#_update_bash_on_macos">Update bash on macOS</a></h4>
+<div class="paragraph">
+<p>Mac computers come with an outdated bash by default. You can update it using Homebrew but first we need to install it since it is not a built-in Apple product (even though it should be at this point).</p>
+</div>
+<div class="paragraph">
+<p>Launch the <code>terminal</code> program as described earlier and then run the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>/bin/bash<span class="tok-w"> </span>-c<span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-k">$(</span>curl<span class="tok-w"> </span>-fsSL<span class="tok-w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="tok-k">)</span><span class="tok-s2">&quot;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once brew is installed you can use it to update bash with the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>bash</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Unfortunately, Apple makes it hard to set this new bash shell as the default. Here&#8217;s how. Enter each of these commands one at a time:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span><span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-k">$(</span>brew<span class="tok-w"> </span>--prefix<span class="tok-k">)</span><span class="tok-s2">/bin/bash&quot;</span><span class="tok-w"> </span><span class="tok-p">|</span><span class="tok-w"> </span>sudo<span class="tok-w"> </span>tee<span class="tok-w"> </span>-a<span class="tok-w"> </span>/etc/shells
+chsh<span class="tok-w"> </span>-s<span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-k">$(</span>brew<span class="tok-w"> </span>--prefix<span class="tok-k">)</span><span class="tok-s2">/bin/bash&quot;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After you restart your terminal it should use the new bash shell which you can check with the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>bash<span class="tok-w"> </span>--version</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>FunFact: Homebrew is named after the meetup where Steve Jobs and Steve Wozniak met for the first time.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_validate_bash_on_linux"><a class="link" href="#_validate_bash_on_linux">Validate bash on Linux</a></h4>
+<div class="paragraph">
+<p>Bash is pre-installed on most Linux distributions, as it is the default shell for many systems. All Linux distributions have a bash that is plenty new enough for everything we are going to do in this book. Here&#8217;s how you can check the version (after launching a terminal):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>bash<span class="tok-w"> </span>--version</code></pre>
+</div>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_install_alacritty_terminal"><a class="link" href="#_install_alacritty_terminal">Install Alacritty terminal</a></h3>
+<div class="paragraph">
+<p>Alacritty is a modern, GPU-accelerated terminal emulator known for its speed and simplicity. It&#8217;s speed and support for millions of colors make it particularly good for creating performant terminal animations and games, which always make fun micro-projects when learning the coding fundamentals. This guide walks you through installing official Alacritty on Mac, Windows, and Linux by using the package managers (discussed previously).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Notice how similar these modern package managers are (<code>brew</code>, <code>winget</code>, <code>apt</code>). All operating systems have finally caught up to using a package manager for software installation and management. Becoming proficient with them is therefore mandatory for any serious tech professional.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_mac_with_brew"><a class="link" href="#_mac_with_brew">Mac with brew</a></h4>
+<div class="paragraph">
+<p>Run the following commands one at a time:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>alacritty
+alacritty<span class="tok-w"> </span>--version</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_windows_with_winget"><a class="link" href="#_windows_with_winget">Windows with winget</a></h4>
+<div class="paragraph">
+<p>Run the following commands one at a time:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>alacritty.alacritty
+alacritty<span class="tok-w"> </span>--version</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_linux_with_apt"><a class="link" href="#_linux_with_apt">Linux with apt</a></h4>
+<div class="paragraph">
+<p>Run the following commands one at a time:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>sudo<span class="tok-w"> </span>add-apt-repository<span class="tok-w"> </span>ppa:aslatter/ppa
+sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update
+sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>-y<span class="tok-w"> </span>alacritty
+alacritty<span class="tok-w"> </span>--version</code></pre>
+</div>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Don&#8217;t worry about customization for now. Running <code>cm init</code> later will automatically configure the Alacritty teminal to startup up with a nice theme and font and reasonable defaults. You can always come back and update them in <code>~/.config/alacritty/alacritty.toml</code> file later.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_launch_alacritty_terminal"><a class="link" href="#_launch_alacritty_terminal">Launch Alacritty terminal</a></h3>
+<div class="paragraph">
+<p>If you haven&#8217;t closed out of your native terminal that we used for the initial install steps do so now.</p>
+</div>
+<div class="paragraph">
+<p>For the rest of rest of this book we will be using Alacritty GPU-accelerated terminal. Launching it is simple now that you know how to launch anything. Mac, Windows, and Linux all use the same application name: <code>alacritty</code>.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Once you have launched <code>alacritty</code>, make sure you have a bash shell running. On Windows you will likely need to type <code>bash + Enter</code>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Take a moment to figure out how you want to find and launch Alacritty later. Perhaps you want to pin it to your task bar or make a shortcut on the desktop. You decide. You can always launch it the way you did in this step, which is also usually the fastest way. The rest of this book assumes you know how.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Fight the urge to customize Alacritty too much right now. Perhaps just focus on getting the font to a size that you can read. The <code>cm init</code> command will configure Alacritty enough to get going for this book, including making <code>bash</code> the default shell for Windows. Later you can come back and change things the way you want. Alacritty configuration is covered in depth in the book <a href="https://rwxrob.github.com/books/terminal-velocity"><em>Terminal Velocity</em></a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_install_the_go_compiler"><a class="link" href="#_install_the_go_compiler">Install the Go compiler</a></h3>
+<div class="paragraph">
+<p>Go, also known as Golang, is a modern, efficient programming language developed by Google. Designed to address the challenges of large-scale software development, Go emphasizes simplicity, concurrency, and performance. Its lightweight syntax and robust tooling make it an ideal choice for beginners and seasoned developers alike. Whether you&#8217;re building web servers, distributed systems, or command-line tools, Go&#8217;s powerful standard library and unparalleled speed can handle the task. Installing Go is your first step toward harnessing its capabilities to create scalable, maintainable, and lightning-fast applications.</p>
+</div>
+<div class="sect3">
+<h4 id="_mac_with_brew_2"><a class="link" href="#_mac_with_brew_2">Mac with brew</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>go
+go<span class="tok-w"> </span>version</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_windows_with_winget_2"><a class="link" href="#_windows_with_winget_2">Windows with winget</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>golang.go
+go<span class="tok-w"> </span>version</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_windows_with_apt"><a class="link" href="#_windows_with_apt">Windows with apt</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>golang
+go<span class="tok-w"> </span>version</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>These installs with the package manager should be getting a bit easier at this point, which is good because you&#8217;ll be doing this all the time as a code mage and tech professional.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_install_code_mage_with_go"><a class="link" href="#_install_code_mage_with_go">Install Code-Mage with go</a></h3>
+<div class="paragraph">
+<p>Code-Mage is contained in the <code>cm</code> command. See the <a href="#cm-summary">summary</a> in the Preface for more about what it does. Unlike everything most everything else we&#8217;ve installed so far, we are going to use the <code>go</code> command itself to install the <code>cm</code> command directly from compiled source. This is the best way to install any Go project. It is the safest since the entire code of the project can be read by anyone to ensure there has been no tampering (as opposed to downloading some executable off the Internet). Plus you always get the latest unless you specify another specific version.</p>
+</div>
+<div class="paragraph">
+<p>After opening a terminal enter the following commands to install and then test it:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span><span class="tok-nv">GOPROXY</span><span class="tok-o">=</span>direct<span class="tok-w"> </span>go<span class="tok-w"> </span>install<span class="tok-w"> </span>github.com/rwxrob/code-mage/cmd/cm@latest
+cm<span class="tok-w"> </span><span class="tok-nb">help</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This same command can be used any time to update to the latest version and works for installing any Go command as well. You will be doing it a lot to get the latest digital copy of this book and more.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_configure_with_code_mage"><a class="link" href="#_configure_with_code_mage">Configure with Code-Mage</a></h3>
+<div class="paragraph">
+<p>The Code-Mage Assistant, invoked through the <code>cm</code> command, is your magical companion for automating the setup and configuration of essential tools. Designed with efficiency and customization in mind, <code>cm</code> streamlines the process of configuring your development environment, saving you hours of additional unnecessary learning (at this time). With a single command, you can initialize and configure <strong>bash</strong>, <strong>vim</strong>, <strong>alacritty</strong>, and <strong>tmux</strong>, ensuring your system is ready for productive coding.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To get coding as soon as possible, just run <code>cm init</code> and answer the prompts. The rest of this section just talks about what it does.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Even though <code>cm init</code> prompts for confirmation it is a destructive command and permanently changes the configuration of the system it is run on. <em><strong>Do not run it on a system that you do not own.</strong></em> The scope of changes is limited to the current user so it will not affect other users on the same system, but still be cautious to ensure you are not destroying customizations someone else may have already made to that account. Two people should generally not share the same OS system account, but be sure that is the case.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_bash_configuration"><a class="link" href="#_bash_configuration">Bash configuration</a></h4>
+<div class="paragraph">
+<p>The <code>cm</code> command optimizes your shell experience by:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Replacing <code>.bashrc</code> file with a better one aliases, functions, and environment variables tailored for productivity.</p>
+</li>
+<li>
+<p>Enabling safer scripting defaults.</p>
+</li>
+<li>
+<p>Adding useful aliases, such as <code>vi</code> that intelligently detects if you have <code>vim</code> or <code>nvim</code> installed and progressively enhances your experience.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>After running <code>cm init bash</code>, you’ll have a bash environment configured for speed and reliability.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_vim_configuration"><a class="link" href="#_vim_configuration">Vim configuration</a></h4>
+<div class="paragraph">
+<p>For text editing, <code>cm</code> ensures your Vim configuration is both powerful and beginner-friendly:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Installs a curated <code>.vimrc</code> file, complete with syntax highlighting <code>vim-go</code> plugin, automatic completion and code formatting on save, dynamic bug display, better file-type detection, and more.</p>
+</li>
+<li>
+<p>Adds the <strong>gruvbox-material</strong> color scheme for a visually pleasing coding experience.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Running <code>cm init vim</code> gives you a fully-featured Vim setup, ready for serious coding.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_alacritty_configuration"><a class="link" href="#_alacritty_configuration">Alacritty configuration</a></h4>
+<div class="paragraph">
+<p>The <code>cm</code> command configures the GPU-accelerated <strong>Alacritty</strong> terminal for optimal performance. It:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Creates an <code>~/.config/alacritty.toml</code> file with settings for font size, colors and bash default shell.</p>
+</li>
+<li>
+<p>Applies the <strong>gruvbox-material</strong> theme for consistency across your tools.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Execute <code>cm init alacritty</code> to enjoy a modern, high-performance terminal emulator.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_install_git_source_control"><a class="link" href="#_install_git_source_control">Install git source control</a></h3>
+<div class="paragraph">
+<p>Learning Git is like mastering the foundational magic of version control in your journey as a Code Mage. It’s where you create spellbooks (repos) that allows you to track, manage, and safeguard every incantation of your code, ensuring you never lose your progress or stumble through chaos when experiments go awry. With Git, you wield the power to create branches of reality—parallel timelines for your projects—where you can safely test new ideas or collaborate seamlessly with other mages in your guild. Its mastery unlocks the ability to contribute to the vast repositories of knowledge shared across the coding world, making it an essential tool for any mage seeking to craft impactful spells and collaborate on grand endeavors.</p>
+</div>
+<div class="sect3">
+<h4 id="_mac_with_brew_3"><a class="link" href="#_mac_with_brew_3">Mac with brew</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>git
+git<span class="tok-w"> </span>version</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_windows_with_winget_3"><a class="link" href="#_windows_with_winget_3">Windows with winget</a></h4>
+<div class="paragraph">
+<p>The <code>git</code> command was installed with Git Bash.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>git<span class="tok-w"> </span>version</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_linux_with_apt_2"><a class="link" href="#_linux_with_apt_2">Linux with apt</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>git
+git<span class="tok-w"> </span>version</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Don&#8217;t worry about learning git right now. We&#8217;ll go over it after we have written some code to save.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_install_github_cli_tool"><a class="link" href="#_install_github_cli_tool">Install GitHub CLI tool</a></h3>
+<div class="paragraph">
+<p>The gh command-line tool is the enchanted oracle of the GitHub realm, empowering a Code Mage to summon, interact with, and manage repositories directly from their terminal sanctum. With gh, you don’t just push and pull code—you weave GitHub’s collaborative magic into your workflow, creating pull requests, reviewing code, and managing issues as effortlessly as casting a spell. It bridges the gap between your local workspace and the expansive GitHub cosmos, giving you the power to navigate repositories, explore contributors’ archives, and orchestrate contributions without ever breaking your focus. For the Code Mage seeking to unlock the full potential of GitHub’s collaborative incantations, gh is an indispensable artifact.</p>
+</div>
+<div class="sect3">
+<h4 id="_mac_with_brew_4"><a class="link" href="#_mac_with_brew_4">Mac with brew</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>gh
+gh<span class="tok-w"> </span>version</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_windows_with_winget_4"><a class="link" href="#_windows_with_winget_4">Windows with winget</a></h4>
+<div class="paragraph">
+<p>The <code>git</code> command was installed with Git Bash.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>github.cli
+gh<span class="tok-w"> </span>version</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_linux_with_apt_3"><a class="link" href="#_linux_with_apt_3">Linux with apt</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>gh
+gh<span class="tok-w"> </span>version</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Don&#8217;t worry about logging in or anything with gh just yet. We will do that when we create our first repo to contain our codebook using it.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_login_to_github"><a class="link" href="#_login_to_github">Login to GitHub</a></h3>
+<div class="paragraph">
+<p>When using the <code>gh</code> CLI tool for the first time, connecting it to your GitHub account is a necessary step. The process ensures that you can seamlessly interact with GitHub repositories, issues, pull requests, and other features from the terminal.</p>
+</div>
+<div class="sect3">
+<h4 id="_start_the_login_process"><a class="link" href="#_start_the_login_process">Start the login process</a></h4>
+<div class="paragraph">
+<p>Open your terminal and run the <code>gh auth login</code> command. This initiates the authentication process and will guide you through selecting a preferred authentication method.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_choose_web_browser_authentication"><a class="link" href="#_choose_web_browser_authentication">Choose web browser authentication</a></h4>
+<div class="paragraph">
+<p>The CLI will ask whether you want to authenticate via a web browser or by using a personal access token. Choose the web browser method since it is a quicker, interactive login experience.</p>
+</div>
+<div class="paragraph">
+<p><code>gh</code> will provide you with a URL and a one-time code. Open the URL in your browser and cut and paste or just enter the provided code. After entering the code, you will be prompted to authorize the GitHub CLI to access your account. Follow the on-screen instructions to complete the process.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_verify_successful_authentication"><a class="link" href="#_verify_successful_authentication">Verify successful authentication</a></h3>
+<div class="paragraph">
+<p>Once the login process completes, the CLI will confirm that you’ve authenticated successfully. You can verify this by running a test command, such as <code>gh repo list</code>, to see your repositories. You should see something like the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code><span></span>There are no repositories in @YOU</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now we can proceed to create our first repo.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="learn-shell"><a class="link" href="#learn-shell">Learn basic shell commands</a></h3>
+<div class="paragraph">
+<p><em>Coming soon &#8230;&#8203;</em></p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="learnvim"><a class="link" href="#learnvim">Why Learn Vim First?</a></h3>
+<div class="paragraph">
+<p>When it comes to mastering text editing, choosing the right starting point can have a profound impact on your efficiency, understanding, and future flexibility as a developer or technical professional. Among the myriad of editors available, learning Vim first offers unique advantages that extend well beyond mere productivity.</p>
+</div>
+<div class="sect3">
+<h4 id="_the_foundation_of_universal_spells"><a class="link" href="#_the_foundation_of_universal_spells">The foundation of universal spells</a></h4>
+<div class="paragraph">
+<p>Vim’s modal editing and command structure teach you to think about editing as a sequence of spells—each with its own incantation. By separating navigation, insertion, and manipulation of text, Vim:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Builds Enduring Muscle Memory</strong>: The keystrokes you master with Vim transfer seamlessly to any Vim-compatible sanctum, whether it’s a terminal, an IDE, or a remote server.</p>
+</li>
+<li>
+<p><strong>Fosters Precision</strong>: The deliberate nature of Vim commands ensures that every action is intentional, reducing errors and enabling swift corrections.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This foundational knowledge is akin to learning universal spells that can be adapted and extended in other arcane editing environments.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_a_mages_constant_companion"><a class="link" href="#_a_mages_constant_companion">A Mage’s Constant Companion</a></h4>
+<div class="paragraph">
+<p>Vim’s ubiquity makes it the ideal companion for any Code Mage on their journey:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Always at Hand</strong>: Whether on a freshly conjured Linux server, a Mac, or a Windows portal with POSIX support, Vim is there, ready to serve.</p>
+</li>
+<li>
+<p><strong>The Standard for Remote Crafting</strong>: When you need to edit code or manage systems via SSH, Vim becomes your wand of choice.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Learning Vim equips you with a spellbook that works across realms without the need for additional rituals or installations.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_efficiency_through_pure_incantation"><a class="link" href="#_efficiency_through_pure_incantation">Efficiency Through Pure Incantation</a></h4>
+<div class="paragraph">
+<p>Vim’s philosophy of "hands on the keyboard, mind in the code" transforms how you interact with text:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Unparalleled Speed</strong>: Vim’s keystrokes allow you to navigate and manipulate text faster than the most dexterous mouse movements.</p>
+</li>
+<li>
+<p><strong>Endless Customizability</strong>: Vim’s configuration and plugin ecosystem are like crafting your own magical artifacts, tailored to your unique style of coding.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>While other editors may mimic Vim’s keybindings, they cannot replicate the depth of its arcane mastery.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_a_gateway_to_mastery_of_the_arcane"><a class="link" href="#_a_gateway_to_mastery_of_the_arcane">A Gateway to Mastery of the Arcane</a></h4>
+<div class="paragraph">
+<p>Learning Vim opens doors to understanding deeper magical concepts in text editing and beyond:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Command-Line Sorcery</strong>: Many Vim commands mirror the syntax and power of shell tools like <code>grep</code>, <code>sed</code>, and <code>awk</code>, preparing you for advanced terminal magic.</p>
+</li>
+<li>
+<p><strong>Mental Discipline</strong>: Vim trains you to approach challenges systematically, much like designing a spell with repeatable components.</p>
+</li>
+<li>
+<p><strong>Infinite Growth</strong>: As your skills grow, Vim’s extensibility allows you to weave it into your own systems and workflows.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_free_from_ecosystem_enchantments"><a class="link" href="#_free_from_ecosystem_enchantments">Free from Ecosystem Enchantments</a></h4>
+<div class="paragraph">
+<p>While modern editors and IDEs offer convenience, they often bind their users to specific ecosystems:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Timeless Magic</strong>: With roots in the 1970s, Vim is a timeless spellbook that continues to evolve without succumbing to trends.</p>
+</li>
+<li>
+<p><strong>Skills That Transcend Realms</strong>: Mastering Vim ensures you are never reliant on a single ecosystem. You wield power that adapts to any environment.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_forged_in_the_fire_of_challenge"><a class="link" href="#_forged_in_the_fire_of_challenge">Forged in the Fire of Challenge</a></h4>
+<div class="paragraph">
+<p>Vim’s reputation for difficulty is a reflection of its transformative power:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Overcoming the Learning Curve</strong>: Mastering Vim’s intricacies builds resilience and problem-solving skills.</p>
+</li>
+<li>
+<p><strong>Confidence in Complexity</strong>: After learning Vim, other tools will seem intuitive by comparison, and you will approach new challenges with the confidence of a seasoned mage.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_conclusion"><a class="link" href="#_conclusion">Conclusion</a></h4>
+<div class="paragraph">
+<p>Vim is more than an editor; it is the cornerstone of a Code Mage’s training. By learning Vim first, you gain access to a timeless spellbook of efficiency, adaptability, and precision. The skills you develop with Vim will serve you across realms, ensuring you are always prepared to wield your craft, no matter where your journey takes you. For the aspiring Code Mage, there is no better place to start.</p>
 </div>
 <hr>
 </div>
@@ -1761,897 +2666,6 @@ in the early days before everything becomes second nature.</p>
 | Row 1    | Data     |
 | Row 2    | More     |</code></pre>
 </div>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_learn_to_launch_anything"><a class="link" href="#_learn_to_launch_anything">Learn to launch anything</a></h3>
-<div class="paragraph">
-<p>Every operating system offers a quick and efficient way to launch applications, open files, and search for information—similar to macOS’s powerful Spotlight feature. Learning how to use these tools effectively can save time and streamline your workflow. This guide will walk you through Spotlight equivalents on Windows, Linux, and other systems.</p>
-</div>
-<div class="sect3">
-<h4 id="_why_learn_launcher"><a class="link" href="#_why_learn_launcher">Why learn launcher?</a></h4>
-<div class="paragraph">
-<p><strong>Efficiency</strong>: Launching apps and files directly saves time compared to navigating menus. Your fingers never need to leave home row on the keyboard.</p>
-</div>
-<div class="paragraph">
-<p><strong>Focus</strong>:Search and launch tools help you avoid distractions by providing a single interface for tasks.</p>
-</div>
-<div class="paragraph">
-<p><strong>Universal Skills</strong>: Mastering these tools makes you productive on any operating system.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_spotlight_on_mac"><a class="link" href="#_spotlight_on_mac">Spotlight on Mac</a></h4>
-<div class="paragraph">
-<p>On macOS, Spotlight is the built-in search and launcher tool.</p>
-</div>
-<div class="paragraph">
-<p><strong>How to access Spotlight</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Use the keyboard shortcut <code>Command (⌘) + Space</code>.</p>
-</li>
-<li>
-<p>Click the magnifying glass icon in the top-right corner of the menu bar.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>What you can do</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Launch apps: Type the app name and press <code>Enter</code>.</p>
-</li>
-<li>
-<p>Search files: Enter the file name or keywords.</p>
-</li>
-<li>
-<p>Perform calculations: Type <code>5 * 7</code> or <code>100 USD to EUR</code>.</p>
-</li>
-<li>
-<p>Look up definitions: Type a word to get a dictionary entry.</p>
-</li>
-<li>
-<p>Search the web: Type your query and select a browser result.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_search_on_windows"><a class="link" href="#_search_on_windows">Search on Windows</a></h4>
-<div class="paragraph">
-<p>Windows provides a built-in search tool that acts as a launcher.</p>
-</div>
-<div class="paragraph">
-<p><strong>How to access Windows search</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press <code>Win</code> or click the search icon on the taskbar.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>What you can do</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Launch apps: Type the app name and press <code>Enter</code>.</p>
-</li>
-<li>
-<p>Search files: Enter the file name or content keywords.</p>
-</li>
-<li>
-<p>Execute commands: Run shell commands directly.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_activities_on_linux"><a class="link" href="#_activities_on_linux">Activities on Linux</a></h4>
-<div class="paragraph">
-<p>Linux has multiple application launchers, depending on your desktop environment and preferences.</p>
-</div>
-<div class="paragraph">
-<p><strong>GNOME: activities overview</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press the <code>Super</code> key (Windows key) to open the Activities Overview.</p>
-</li>
-<li>
-<p>Type the app name or file you want to open.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>KDE Plasma: KRunner</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press <code>Alt + Space</code> to open KRunner.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>What you can do</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Launch apps: Type the name and press <code>Enter</code>.</p>
-</li>
-<li>
-<p>Open files: Search for files by name.</p>
-</li>
-<li>
-<p>Run commands: Execute terminal commands directly.</p>
-</li>
-<li>
-<p>Perform calculations and translations with plugins.</p>
-</li>
-</ul>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_learn_alt_tab_for_window_switching"><a class="link" href="#_learn_alt_tab_for_window_switching">Learn Alt-Tab for window switching</a></h3>
-<div class="paragraph">
-<p>The <code>Alt + Tab</code> shortcut is a universal skill that works across operating systems, allowing you to switch between open windows quickly and efficiently. It&#8217;s one of the most basic yet powerful tools to enhance productivity. No additional graphical window manager (like <code>i3</code>) is needed if you have already mastered this one skill.</p>
-</div>
-<div class="sect3">
-<h4 id="_why_learn_alt_tab"><a class="link" href="#_why_learn_alt_tab">Why learn Alt-Tab?</a></h4>
-<div class="paragraph">
-<p><strong>Speed</strong>: Quickly toggle between tasks without touching the mouse.</p>
-</div>
-<div class="paragraph">
-<p><strong>Universality</strong>: Works on nearly every major operating system, making it a portable skill.</p>
-</div>
-<div class="paragraph">
-<p><strong>Focus</strong>: Reduces distraction by helping you stay in the flow of your work.</p>
-</div>
-<div class="paragraph">
-<p>Incorporating <code>Alt + Tab</code> into your daily workflow ensures you can multitask efficiently across all platforms.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_how_to_use_alt_tab"><a class="link" href="#_how_to_use_alt_tab">How to Use Alt-Tab</a></h4>
-<div class="paragraph">
-<p><strong>On Windows</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Hold <code>Alt</code> and press <code>Tab</code> to cycle through open applications.</p>
-</li>
-<li>
-<p>Release both keys when the desired window is highlighted.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>On macOS</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Use <code>Command (⌘) + Tab</code> for similar functionality.</p>
-</li>
-<li>
-<p>Press <code>Command (⌘) + ~</code> to switch between windows of the same application.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>On Linux</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Most desktop environments support <code>Alt + Tab</code> natively.</p>
-</li>
-<li>
-<p>Additional variations, like <code>Super + Tab</code>, may be available depending on your configuration.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Others</strong>:</p>
-</div>
-<div class="paragraph">
-<p>This functionality is supported on all tablets and phones as well so long as you attach a keyboard to them.</p>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_launch_native_terminal"><a class="link" href="#_launch_native_terminal">Launch native terminal</a></h3>
-<div class="paragraph">
-<p>For the rest of these preparation steps we will need a terminal. The terminal is the mage’s staff—a powerful tool for casting commands, managing your environment, and creating magic in the digital realm. Here’s how to launch the native terminal on Mac, Windows, and Linux, so you can start your journey as a Code Mage.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Don&#8217;t get to invested in the native terminal. We&#8217;ll replace it with customized Alacritty later, which is faster and easier to use but just needs to be installed.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>You&#8217;ve already learned how to launch things using the launcher. Just use the right application name as follows:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Mac: <code>terminal</code></p>
-</li>
-<li>
-<p>Win: <code>powershell</code></p>
-</li>
-<li>
-<p>Linux: <code>terminal</code></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Take a moment to increase the font size to something you can read just for this session while we install everything else including the Alacritty terminal and its custom configuration.</p>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_install_bash_shell"><a class="link" href="#_install_bash_shell">Install bash shell</a></h3>
-<div class="paragraph">
-<p>The <strong>bash shell</strong> (short for Bourne Again Shell) is a versatile command-line interface available on many operating systems. This guide explains how to install Git Bash on Windows, update bash to the latest version on Mac, and explains that bash is already included in most Linux distributions.</p>
-</div>
-<div class="sect3">
-<h4 id="_install_git_bash_on_windows"><a class="link" href="#_install_git_bash_on_windows">Install Git-Bash on Windows</a></h4>
-<div class="paragraph">
-<p>Git Bash provides a bash emulation environment for Windows, allowing you to use Unix-like commands and workflows. (<em>Read more about <a href="#why-git-bash">Why Git Bash?</a> if you are wondering about WSL, virtual machines, and containers.</em>)</p>
-</div>
-<div class="paragraph">
-<p>Launch the <code>powershell</code> as described earlier and then run the following:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>Git.Git<span class="tok-w"> </span>-e</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>This installs bash at <code>"C:\Program Files\Git\bin\bash.exe"</code> which you can run from the <code>Win</code> search box by typing <code>bash</code> to test. In fact, you can use the <code>bash</code> terminal window from now on if you prefer. Note that Code-Mage will update the Alacritty configuration later to use bash as the default for all new Alacritty terminal sessions.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Windows comes with PowerShell, but bash is definitely more user-friendly when it comes to command-line shell interactions. Consider one of the most powerful Unix commands ever invented: <code>find</code>. With Git Bash this amazing command is available to use <em>on Windows</em> now that you have Git Bash installed (just be sure to use the right one since Windows has its own inferior <code>find</code> command). Git Bash also adds two core tools that you will use extensively later: <code>vim</code> and <code>git</code>.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_update_bash_on_macos"><a class="link" href="#_update_bash_on_macos">Update bash on macOS</a></h4>
-<div class="paragraph">
-<p>Mac computers come with an outdated bash by default. You can update it using Homebrew but first we need to install it since it is not a built-in Apple product (even though it should be at this point).</p>
-</div>
-<div class="paragraph">
-<p>Launch the <code>terminal</code> program as described earlier and then run the following:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>/bin/bash<span class="tok-w"> </span>-c<span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-k">$(</span>curl<span class="tok-w"> </span>-fsSL<span class="tok-w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="tok-k">)</span><span class="tok-s2">&quot;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Once brew is installed you can use it to update bash with the following command:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>bash</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Unfortunately, Apple makes it hard to set this new bash shell as the default. Here&#8217;s how. Enter each of these commands one at a time:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span><span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-k">$(</span>brew<span class="tok-w"> </span>--prefix<span class="tok-k">)</span><span class="tok-s2">/bin/bash&quot;</span><span class="tok-w"> </span><span class="tok-p">|</span><span class="tok-w"> </span>sudo<span class="tok-w"> </span>tee<span class="tok-w"> </span>-a<span class="tok-w"> </span>/etc/shells
-chsh<span class="tok-w"> </span>-s<span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-k">$(</span>brew<span class="tok-w"> </span>--prefix<span class="tok-k">)</span><span class="tok-s2">/bin/bash&quot;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>After you restart your terminal it should use the new bash shell which you can check with the following:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>bash<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>FunFact: Homebrew is named after the meetup where Steve Jobs and Steve Wozniak met for the first time.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_validate_bash_on_linux"><a class="link" href="#_validate_bash_on_linux">Validate bash on Linux</a></h4>
-<div class="paragraph">
-<p>Bash is pre-installed on most Linux distributions, as it is the default shell for many systems. All Linux distributions have a bash that is plenty new enough for everything we are going to do in this book. Here&#8217;s how you can check the version (after launching a terminal):</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>bash<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_install_alacritty_terminal"><a class="link" href="#_install_alacritty_terminal">Install Alacritty terminal</a></h3>
-<div class="paragraph">
-<p>Alacritty is a modern, GPU-accelerated terminal emulator known for its speed and simplicity. It&#8217;s speed and support for millions of colors make it particularly good for creating performant terminal animations and games, which always make fun micro-projects when learning the coding fundamentals. This guide walks you through installing Alacritty on Mac, Windows, and Linux by downloading the official installers from the Alacritty GitHub repository.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Notice how similar these modern package managers are (<code>brew</code>, <code>winget</code>, <code>apt</code>). All operating systems have finally caught up to using a package manager for software installation and management. Becoming proficient with them is therefore mandatory for any serious tech professional.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_mac_with_brew"><a class="link" href="#_mac_with_brew">Mac with brew</a></h4>
-<div class="paragraph">
-<p>Run the following commands one at a time:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>alacritty
-alacritty<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_windows_with_winget"><a class="link" href="#_windows_with_winget">Windows with winget</a></h4>
-<div class="paragraph">
-<p>Run the following commands one at a time:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>Alacritty.Alacritty<span class="tok-w"> </span>-e
-alacritty<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_linux_with_apt"><a class="link" href="#_linux_with_apt">Linux with apt</a></h4>
-<div class="paragraph">
-<p>Run the following commands one at a time:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>sudo<span class="tok-w"> </span>add-apt-repository<span class="tok-w"> </span>ppa:aslatter/ppa
-sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update
-sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>-y<span class="tok-w"> </span>alacritty
-alacritty<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Don&#8217;t worry about customization for now. Running <code>cm init</code> later will automatically configure the Alacritty teminal to startup up with a nice theme and font and reasonable defaults. You can always come back and update them in <code>~/.config/alacritty/alacritty.toml</code> file later.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_install_neovim_optional"><a class="link" href="#_install_neovim_optional">Install Neovim (optional)</a></h3>
-<div class="paragraph">
-<p>Vim is fine to get started coding, but Neovim, the modern spiritual descendent of Vim, is a cleaner experience at the cost of a little unnoticeable bloat. Notably, Neovim has a cleaner help interface and dynamic error displays. It is also far more extensible when such makes sense later—particularly for those use the same computer for most of their work. This guide walk you through installing Neovim on Mac, Windows, and Linux using the package manager.</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>If you accidentally run nvim you can quit with <code>ZZ + Enter</code> or <code>:wq!</code>.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_mac_with_brew_2"><a class="link" href="#_mac_with_brew_2">Mac with brew</a></h4>
-<div class="paragraph">
-<p>Run the following commands one at a time:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>neovim
-nvim<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Later after you run <code>cm init</code> (not yet) the <code>vi</code> command will automatically detect <code>nvim</code> and start that, otherwise it will run just <code>vim</code> or the actual <code>vi</code>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_windows_with_winget_2"><a class="link" href="#_windows_with_winget_2">Windows with winget</a></h4>
-<div class="paragraph">
-<p>Run the following commands one at a time:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>Neovim.Neovim
-nvim<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_linux_with_apt_2"><a class="link" href="#_linux_with_apt_2">Linux with apt</a></h4>
-<div class="paragraph">
-<p>Run the following commands one at a time:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update
-sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>-y<span class="tok-w"> </span>neovim
-nvim<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>The configuration installed with <code>cm init</code> later will automatically detect if <code>nvim</code> or <code>vim</code> or <code>vi</code> is on the system so you only have to type <code>vi</code> which on some machines later in life might be all you have. Plus it&#8217;s just shorter to type.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_install_git_source_control"><a class="link" href="#_install_git_source_control">Install git source control</a></h3>
-<div class="paragraph">
-<p>Learning Git is like mastering the foundational magic of version control in your journey as a Code Mage. It’s where you create spellbooks (repos) that allows you to track, manage, and safeguard every incantation of your code, ensuring you never lose your progress or stumble through chaos when experiments go awry. With Git, you wield the power to create branches of reality—parallel timelines for your projects—where you can safely test new ideas or collaborate seamlessly with other mages in your guild. Its mastery unlocks the ability to contribute to the vast repositories of knowledge shared across the coding world, making it an essential tool for any mage seeking to craft impactful spells and collaborate on grand endeavors.</p>
-</div>
-<div class="sect3">
-<h4 id="_mac_with_brew_3"><a class="link" href="#_mac_with_brew_3">Mac with brew</a></h4>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>git
-git<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_windows_with_winget_3"><a class="link" href="#_windows_with_winget_3">Windows with winget</a></h4>
-<div class="paragraph">
-<p>The <code>git</code> command was installed with Git Bash.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>git<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_linux_with_apt_3"><a class="link" href="#_linux_with_apt_3">Linux with apt</a></h4>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>git
-git<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Don&#8217;t worry about learning git right now. We&#8217;ll go over it after we have written some code to save.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_install_github_cli_tool"><a class="link" href="#_install_github_cli_tool">Install GitHub CLI tool</a></h3>
-<div class="paragraph">
-<p>The gh command-line tool is the enchanted oracle of the GitHub realm, empowering a Code Mage to summon, interact with, and manage repositories directly from their terminal sanctum. With gh, you don’t just push and pull code—you weave GitHub’s collaborative magic into your workflow, creating pull requests, reviewing code, and managing issues as effortlessly as casting a spell. It bridges the gap between your local workspace and the expansive GitHub cosmos, giving you the power to navigate repositories, explore contributors’ archives, and orchestrate contributions without ever breaking your focus. For the Code Mage seeking to unlock the full potential of GitHub’s collaborative incantations, gh is an indispensable artifact.</p>
-</div>
-<div class="sect3">
-<h4 id="_mac_with_brew_4"><a class="link" href="#_mac_with_brew_4">Mac with brew</a></h4>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>gh
-gh<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_windows_with_winget_4"><a class="link" href="#_windows_with_winget_4">Windows with winget</a></h4>
-<div class="paragraph">
-<p>The <code>git</code> command was installed with Git Bash.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>Github.cli<span class="tok-w"> </span>-e
-gh<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_linux_with_apt_4"><a class="link" href="#_linux_with_apt_4">Linux with apt</a></h4>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>gh
-gh<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Don&#8217;t worry about logging in or anything with gh just yet. We will do that when we create our first repo to contain our codebook using it.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_install_the_go_compiler"><a class="link" href="#_install_the_go_compiler">Install the Go compiler</a></h3>
-<div class="paragraph">
-<p>Go, also known as Golang, is a modern, efficient programming language developed by Google. Designed to address the challenges of large-scale software development, Go emphasizes simplicity, concurrency, and performance. Its lightweight syntax and robust tooling make it an ideal choice for beginners and seasoned developers alike. Whether you&#8217;re building web servers, distributed systems, or command-line tools, Go&#8217;s powerful standard library and unparalleled speed can handle the task. Installing Go is your first step toward harnessing its capabilities to create scalable, maintainable, and lightning-fast applications.</p>
-</div>
-<div class="sect3">
-<h4 id="_mac_with_brew_5"><a class="link" href="#_mac_with_brew_5">Mac with brew</a></h4>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>go
-go<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_windows_with_winget_5"><a class="link" href="#_windows_with_winget_5">Windows with winget</a></h4>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>GoLang.Go<span class="tok-w"> </span>-e
-go<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_windows_with_apt"><a class="link" href="#_windows_with_apt">Windows with apt</a></h4>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>golang
-go<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>These installs with the package manager should be getting a bit easier at this point, which is good because you&#8217;ll be doing this all the time as a code mage and tech professional.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_install_code_mage_with_go"><a class="link" href="#_install_code_mage_with_go">Install Code-Mage with go</a></h3>
-<div class="paragraph">
-<p>Code-Mage is contained in the <code>cm</code> command. See the <a href="#cm-summary">summary</a> in the Preface for more about what it does. Unlike everything most everything else we&#8217;ve installed so far, we are going to use the <code>go</code> command itself to install the <code>cm</code> command directly from compiled source. This is the best way to install any Go project. It is the safest since the entire code of the project can be read by anyone to ensure there has been no tampering (as opposed to downloading some executable off the Internet). Plus you always get the latest unless you specify another specific version.</p>
-</div>
-<div class="paragraph">
-<p>After opening a terminal enter the following commands to install and then test it:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>go<span class="tok-w"> </span>install<span class="tok-w"> </span>github.com/rwxrob/code-mage/cmd/cm@latest
-cm<span class="tok-w"> </span><span class="tok-nb">help</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>This same command can be used any time to update to the latest version and works for installing any Go command as well. You will be doing it a lot to get the latest digital copy of this book and more.</p>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_configure_with_code_mage"><a class="link" href="#_configure_with_code_mage">Configure with Code-Mage</a></h3>
-<div class="paragraph">
-<p>The Code-Mage Assistant, invoked through the <code>cm</code> command, is your magical companion for automating the setup and configuration of essential tools. Designed with efficiency and customization in mind, <code>cm</code> streamlines the process of configuring your development environment, saving you hours of additional unnecessary learning (at this time). With a single command, you can initialize and configure <strong>bash</strong>, <strong>vim</strong>, <strong>alacritty</strong>, and <strong>tmux</strong>, ensuring your system is ready for productive coding.</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>To get coding as soon as possible, just run <code>cm init</code> and answer the prompts. The rest of this section just talks about what it does.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Even though <code>cm init</code> prompts for confirmation it is a destructive command and permanently changes the configuration of the system it is run on. <em><strong>Do not run it on a system that you do not own.</strong></em> The scope of changes is limited to the current user so it will not affect other users on the same system, but still be cautious to ensure you are not destroying customizations someone else may have already made to that account. Two people should generally not share the same OS system account, but be sure that is the case.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_bash_configuration"><a class="link" href="#_bash_configuration">Bash configuration</a></h4>
-<div class="paragraph">
-<p>The <code>cm</code> command optimizes your shell experience by:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Replacing <code>.bashrc</code> file with a better one aliases, functions, and environment variables tailored for productivity.</p>
-</li>
-<li>
-<p>Enabling safer scripting defaults.</p>
-</li>
-<li>
-<p>Adding useful aliases, such as <code>vi</code> that intelligently detects if you have <code>vim</code> or <code>nvim</code> installed and progressively enhances your experience.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>After running <code>cm init bash</code>, you’ll have a bash environment configured for speed and reliability.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_vim_configuration"><a class="link" href="#_vim_configuration">Vim configuration</a></h4>
-<div class="paragraph">
-<p>For text editing, <code>cm</code> ensures your Vim configuration is both powerful and beginner-friendly:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Installs a curated <code>.vimrc</code> file, complete with syntax highlighting <code>vim-go</code> plugin, automatic completion and code formatting on save, dynamic bug display, better file-type detection, and more.</p>
-</li>
-<li>
-<p>Adds the <strong>gruvbox-material</strong> color scheme for a visually pleasing coding experience.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Running <code>cm init vim</code> gives you a fully-featured Vim setup, ready for serious coding.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_alacritty_configuration"><a class="link" href="#_alacritty_configuration">Alacritty configuration</a></h4>
-<div class="paragraph">
-<p>The <code>cm</code> command configures the GPU-accelerated <strong>Alacritty</strong> terminal for optimal performance. It:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Creates an <code>~/.config/alacritty.toml</code> file with settings for font size, colors and bash default shell.</p>
-</li>
-<li>
-<p>Applies the <strong>gruvbox-material</strong> theme for consistency across your tools.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Execute <code>cm init alacritty</code> to enjoy a modern, high-performance terminal emulator.</p>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="learn-shell"><a class="link" href="#learn-shell">Learn basic shell commands</a></h3>
-<div class="paragraph">
-<p><em>Coming soon &#8230;&#8203;</em></p>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="learnvim"><a class="link" href="#learnvim">Why Learn Vim First?</a></h3>
-<div class="paragraph">
-<p>When it comes to mastering text editing, choosing the right starting point can have a profound impact on your efficiency, understanding, and future flexibility as a developer or technical professional. Among the myriad of editors available, learning Vim first offers unique advantages that extend well beyond mere productivity.</p>
-</div>
-<div class="sect3">
-<h4 id="_the_foundation_of_universal_spells"><a class="link" href="#_the_foundation_of_universal_spells">The foundation of universal spells</a></h4>
-<div class="paragraph">
-<p>Vim’s modal editing and command structure teach you to think about editing as a sequence of spells—each with its own incantation. By separating navigation, insertion, and manipulation of text, Vim:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Builds Enduring Muscle Memory</strong>: The keystrokes you master with Vim transfer seamlessly to any Vim-compatible sanctum, whether it’s a terminal, an IDE, or a remote server.</p>
-</li>
-<li>
-<p><strong>Fosters Precision</strong>: The deliberate nature of Vim commands ensures that every action is intentional, reducing errors and enabling swift corrections.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>This foundational knowledge is akin to learning universal spells that can be adapted and extended in other arcane editing environments.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_a_mages_constant_companion"><a class="link" href="#_a_mages_constant_companion">A Mage’s Constant Companion</a></h4>
-<div class="paragraph">
-<p>Vim’s ubiquity makes it the ideal companion for any Code Mage on their journey:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Always at Hand</strong>: Whether on a freshly conjured Linux server, a Mac, or a Windows portal with POSIX support, Vim is there, ready to serve.</p>
-</li>
-<li>
-<p><strong>The Standard for Remote Crafting</strong>: When you need to edit code or manage systems via SSH, Vim becomes your wand of choice.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Learning Vim equips you with a spellbook that works across realms without the need for additional rituals or installations.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_efficiency_through_pure_incantation"><a class="link" href="#_efficiency_through_pure_incantation">Efficiency Through Pure Incantation</a></h4>
-<div class="paragraph">
-<p>Vim’s philosophy of "hands on the keyboard, mind in the code" transforms how you interact with text:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Unparalleled Speed</strong>: Vim’s keystrokes allow you to navigate and manipulate text faster than the most dexterous mouse movements.</p>
-</li>
-<li>
-<p><strong>Endless Customizability</strong>: Vim’s configuration and plugin ecosystem are like crafting your own magical artifacts, tailored to your unique style of coding.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>While other editors may mimic Vim’s keybindings, they cannot replicate the depth of its arcane mastery.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_a_gateway_to_mastery_of_the_arcane"><a class="link" href="#_a_gateway_to_mastery_of_the_arcane">A Gateway to Mastery of the Arcane</a></h4>
-<div class="paragraph">
-<p>Learning Vim opens doors to understanding deeper magical concepts in text editing and beyond:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Command-Line Sorcery</strong>: Many Vim commands mirror the syntax and power of shell tools like <code>grep</code>, <code>sed</code>, and <code>awk</code>, preparing you for advanced terminal magic.</p>
-</li>
-<li>
-<p><strong>Mental Discipline</strong>: Vim trains you to approach challenges systematically, much like designing a spell with repeatable components.</p>
-</li>
-<li>
-<p><strong>Infinite Growth</strong>: As your skills grow, Vim’s extensibility allows you to weave it into your own systems and workflows.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_free_from_ecosystem_enchantments"><a class="link" href="#_free_from_ecosystem_enchantments">Free from Ecosystem Enchantments</a></h4>
-<div class="paragraph">
-<p>While modern editors and IDEs offer convenience, they often bind their users to specific ecosystems:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Timeless Magic</strong>: With roots in the 1970s, Vim is a timeless spellbook that continues to evolve without succumbing to trends.</p>
-</li>
-<li>
-<p><strong>Skills That Transcend Realms</strong>: Mastering Vim ensures you are never reliant on a single ecosystem. You wield power that adapts to any environment.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_forged_in_the_fire_of_challenge"><a class="link" href="#_forged_in_the_fire_of_challenge">Forged in the Fire of Challenge</a></h4>
-<div class="paragraph">
-<p>Vim’s reputation for difficulty is a reflection of its transformative power:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Overcoming the Learning Curve</strong>: Mastering Vim’s intricacies builds resilience and problem-solving skills.</p>
-</li>
-<li>
-<p><strong>Confidence in Complexity</strong>: After learning Vim, other tools will seem intuitive by comparison, and you will approach new challenges with the confidence of a seasoned mage.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_conclusion"><a class="link" href="#_conclusion">Conclusion</a></h4>
-<div class="paragraph">
-<p>Vim is more than an editor; it is the cornerstone of a Code Mage’s training. By learning Vim first, you gain access to a timeless spellbook of efficiency, adaptability, and precision. The skills you develop with Vim will serve you across realms, ensuring you are always prepared to wield your craft, no matter where your journey takes you. For the aspiring Code Mage, there is no better place to start.</p>
 </div>
 </div>
 </div>

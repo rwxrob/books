@@ -14,7 +14,7 @@ go version
 
 [source,shell]
 ----
-winget install --id GoLang.Go -e
+winget install --id golang.go
 go version
 ----
 

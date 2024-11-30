@@ -20,10 +20,6 @@ include::create-github-account.adoc[]
 
 ---
 
-include::start-taking-notes.adoc[]
-
----
-
 include::learn-launcher.adoc[]
 
 ---
@@ -44,15 +40,7 @@ include::install-alacritty.adoc[]
 
 ---
 
-include::install-neovim.adoc[]
-
----
-
-include::install-git.adoc[]
-
----
-
-include::install-gh.adoc[]
+include::launch-alacritty.adoc[]
 
 ---
 
@@ -68,9 +56,25 @@ include::run-cm-init.adoc[]
 
 ---
 
+include::install-git.adoc[]
+
+---
+
+include::install-gh.adoc[]
+
+---
+
+include::login-to-github.adoc[]
+
+//include::create-github-repo.adoc[]
+
 include::learn-shell-basics.adoc[]
 
 ---
 
 include::learn-vim-basics.adoc[]
+
+---
+
+include::start-taking-notes.adoc[]
 

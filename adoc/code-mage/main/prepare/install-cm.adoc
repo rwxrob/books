@@ -6,7 +6,7 @@ After opening a terminal enter the following commands to install and then test i
 
 [source,shell]
 ----
-go install github.com/rwxrob/code-mage/cmd/cm@latest
+GOPROXY=direct go install github.com/rwxrob/code-mage/cmd/cm@latest
 cm help
 ----
 

@@ -1,0 +1,24 @@
+== Login to GitHub
+
+When using the `gh` CLI tool for the first time, connecting it to your GitHub account is a necessary step. The process ensures that you can seamlessly interact with GitHub repositories, issues, pull requests, and other features from the terminal.
+
+=== Start the login process
+
+Open your terminal and run the `gh auth login` command. This initiates the authentication process and will guide you through selecting a preferred authentication method.
+
+=== Choose web browser authentication
+
+The CLI will ask whether you want to authenticate via a web browser or by using a personal access token. Choose the web browser method since it is a quicker, interactive login experience.
+
+`gh` will provide you with a URL and a one-time code. Open the URL in your browser and cut and paste or just enter the provided code. After entering the code, you will be prompted to authorize the GitHub CLI to access your account. Follow the on-screen instructions to complete the process.
+
+== Verify successful authentication
+
+Once the login process completes, the CLI will confirm that you’ve authenticated successfully. You can verify this by running a test command, such as `gh repo list`, to see your repositories. You should see something like the following:
+
+[source]
+----
+There are no repositories in @YOU
+----
+
+Now we can proceed to create our first repo.

@@ -16,7 +16,7 @@ The `git` command was installed with Git Bash.
 
 [source,shell]
 ----
-winget install --id Github.cli -e
+winget install --id github.cli
 gh version
 ----
 

@@ -1,16 +1,16 @@
 == Install bash shell
 
-The **bash shell** (short for Bourne Again Shell) is a versatile command-line interface available on many operating systems. This guide explains how to install Git Bash on Windows, update bash to the latest version on Mac, and explains that bash is already included in most Linux distributions.
+The **bash shell** (short for Bourne Again Shell) is a versatile command-line interface available on many operating systems. This guide explains how to get bash on Mac, Windows, and Linux.
 
 === Install Git-Bash on Windows
 
-Git Bash provides a bash emulation environment for Windows, allowing you to use Unix-like commands and workflows. (_Read more about <<why-git-bash, Why Git Bash?>> if you are wondering about WSL, virtual machines, and containers._)
+Git Bash provides a bash emulation environment for Windows, allowing you to use Unix-like commands and workflows.
 
 Launch the `powershell` as described earlier and then run the following:
 
 [source, shell]
 ----
-winget install --id Git.Git -e
+winget install --id git.git
 ----
 
 This installs bash at `"C:\Program Files\Git\bin\bash.exe"` which you can run from the `Win` search box by typing `bash` to test. In fact, you can use the `bash` terminal window from now on if you prefer. Note that Code-Mage will update the Alacritty configuration later to use bash as the default for all new Alacritty terminal sessions.
