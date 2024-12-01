@@ -52,3 +52,5 @@ include::whats-your-distro.adoc[]
 
 include::i-use-linux-btw.adoc[]
 
+include::why-not-alacritty.adoc[]
+

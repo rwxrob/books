@@ -1,0 +1,7 @@
+= Why not Alacritty?
+
+I love Alacritty on Mac, but on Windows is does not support `Control-[` for escape. It also frequently crashes for me on Mac as well. I would never use it without tmux backing me up to I can just reattach.
+
+On Windows you cannot lose by using the Windows Terminal (which is no longer just Preview). It supports millions of colors, is fully GPU accelerated, and has the full backing of Microsoft.
+
+I absolutely hate that Alacritty _forces_ me to use TOML for configuration for now good reason at all. They supported YAML for a long time (and still quietly do). TOML has no tools for dynamically altering it from a simple shell script like `yq` does for YAML. The `yq` tool will do some TOML in-place edits, but nothing fancy. I know a tool shouldn't drive a structured data choice, but for me it does. Plus, can we just accept please that YAML has complete won at this point. (I cannot believe I liked TOML enough to make the logo. I really loathe it now.)
