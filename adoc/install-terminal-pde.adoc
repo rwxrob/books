@@ -1,4 +1,4 @@
-== Install terminal
+== Install terminal tools
 
 We'll be doing everything from the terminal or more specifically, the _terminal user interface_ (TUI). You might have terminals before, probably in a movie with hackers. They look rather retro, but they are still very much in use today. On the surface, a terminal just looks a bunch of glowing text and a pulsating prompt waiting for you to type in your magical commands. Just using the terminal is a form of coding magic where each command line is an actual line of code.
 
@@ -15,22 +15,9 @@ The most beginner-friendly and common shell is the Bourne Again Shell `bash`. It
 The book https://rwxrob.github.io/books/terminal-velocity[*Terminal Velocity*] talks more about shells and how to get good with scripting in bash.
 ====
 
-=== On Windows, install Git Bash
+=== Open a terminal
 
-Windows comes with the `powershell` shell built in. While powerful, it is not beginner-friendly at all so we to install bash. The simplest and fastest way to get bash installed is to install it along with another powerful tool: git. We'll learn more about git later. For now, just know that they come together. Here's how to install Git Bash:
-
-Start a terminal by pressing `Win` key and entering `powershell`. This will open a terminal. Now type the following `winget` command to install Git Bash:
-
-[source,shell]
-----
-winget install --id git.git
-----
-
-Wait for the output and check it to be sure everything worked. Then close the `powershell` terminal and open a `bash` terminal instead by pressing `Win` key and entering `bash`. You should see a terminal open up. Resize it if you want, but don't spend too much time customizing it because we'll be installing another terminal program later. You are now ready to continue.
-
-=== Open terminal on Mac and Linux
-
-There's no need to do any early installation of bash on Mac or Linux since it is already there. Only a terminal is needed.
+On Windows, type `Win` to open Search and enter the word `powershell`. You should see a terminal open up. Even though this shell is not bash it will still work to run the installer.
 
 On Mac, type `Command + Space` to open Spotlight and enter the word `terminal`. You should see a terminal open up. Even though this shell is `zsh` it will still work to run the installer.
 
@@ -38,7 +25,7 @@ On Linux `Control + Alt + T` works on most systems. The default shell on most Li
 
 === Run the remote installer script
 
-For the sake of time, we are going to run an installer script that we download off the Internet from a trusted site using a program called `curl`. This command installs several programs and makes many changes to the current computer user configuration.
+For the sake of time, we are going to run an installer script that we download off the Internet from a trusted site. These commands installs several programs and make many changes to the current computer user configuration.
 
 [WARNING]
 ====
@@ -47,9 +34,18 @@ Be absolutely sure you are authorized to make any changes to your computer and t
 
 Cut and paste or type out the following command exactly in your open bash terminal window:
 
+Mac, Linux:
+
 [source,shell]
 ----
-bash -c $(curl -fsSL https://rwxrob.github.io/code-mage/install)
+bash -c $(curl -fsSL "https://raw.githubusercontent.com/rwxrob/code-mage/HEAD/install.bash")
+----
+
+Windows:
+
+[source,powershell]
+----
+& ([scriptblock]::Create((iwr 'https://raw.githubusercontent.com/rwxrob/code-mage/HEAD/install.ps1')))
 ----
 
 This will do a whole lot of stuff so monitor it and answer the prompts when they pop up. If for some reason anything goes wrong, you can always try it again after fixing whatever is needed.
