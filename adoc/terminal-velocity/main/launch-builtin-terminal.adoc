@@ -1,4 +1,4 @@
-== Launch native terminal
+== Launch builtin terminal
 
 For the rest of these preparation steps we will need a terminal. The terminal is the mage’s staff—a powerful tool for casting commands, managing your environment, and creating magic in the digital realm. Here’s how to launch the native terminal on Mac, Windows, and Linux, so you can start your journey as a Code Mage.
 

@@ -4,7 +4,12 @@ Before embarking on your journey to craft Go-based command-line applications, yo
 
 === Minimum requirements
 
-To create and compile Go-based command-line applications, ensure your workstation meets these minimum requirements:
+[NOTE]
+====
+From my experience, there are many 12-year-olds who know everything about all this computer hardware stuff, usually from gaming. Often they are the ones schooling the parents in how they work and what they need. So no, this section isn't just for adults, but if any of it sounds unfamiliar pull in someone who knows about it. We aren't gonna cover it here. And don't forget to "download more RAM" while you are at it. 😉
+====
+
+To create and compile Go-based command-line applications, ensure your computer meets these minimum requirements:
 
 **Processor**: A 64-bit processor (Intel or ARM).
 
@@ -20,12 +25,7 @@ To create and compile Go-based command-line applications, ensure your workstatio
 - **Windows**: Windows 10 or later.
 - **Linux**: Ubuntu-based (preferably Linux Mint, apt-based).
 
-These requirements ensure that your workstation is equipped to create and compile the applications you create efficiently and handle the Go compiler, Alacritty terminal, bash shell, and Code-Mage assistant.
-
-[NOTE]
-====
-Rob Pike jokes that the Go language was conceived while they were waiting days for ungodly amounts of C++ code to compile at Google. The result is the most efficient language compiler on planet Earth.
-====
+These requirements ensure that your workstation is equipped to create and compile the applications you create efficiently and handle the Go compiler, Wezterm terminal, bash shell, and more.
 
 === A laptop is ideal
 
@@ -59,7 +59,7 @@ Mac is generally preferred among developers including the author and Rob Pike hi
 ====
 Stop asking people "what distro is that?" It implies you think that anything with a terminal interface is a Linux system, which is just stupid. People who ask that obviously do not know what Unix is, the original inspiration of Linux powering 10s of thousands of enterprise computers on which our world depends.
 
-Also, don't ever put someone else down for their choice of operating system, ever. We don't care if have a neck beard and "use Arch, btw." It does not make you superior, just annoying and unemployable. One of the very few times I ever had to ban a member of my SKILSTAK learning community was for repeatedly demeaning people in our chat room who were learning to code on Microsoft Windows machines because it was all they had. That stuff makes me angry. Here's a hot take: Windows desktop environment for anything involving the GPU for 3d acceleration is actually more stable than any Linux Desktop I have ever used, and I've used them all, extensively.
+Also, don't ever put someone else down for their choice of operating system, ever. We don't care if have a neck beard and "use Arch, btw." It does not make you superior, just annoying and unemployable.
 ====
 
 **Native Unix-like environment**: Mac provides a Unix-based operating system out of the box, which is closer to the environments where Go originated. Unix predates Linux by a decade and Mac is officially the largest UNIX distribution on the planet. This means you can use tools like `bash` and `vim` without additional configuration, creating a seamless experience for Go developers.

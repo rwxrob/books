@@ -54,3 +54,7 @@ include::i-use-linux-btw.adoc[]
 
 include::why-not-alacritty.adoc[]
 
+include::why-not-toml.adoc[]
+
+include::why-another-go-book.adoc[]
+

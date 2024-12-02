@@ -1,0 +1,19 @@
+[[why-not-toml]]
+= Why not TOML?
+
+Even though I created the original TOML logo, I have come to loathe it for anything. So many are obsessed with it like I was in 2018, but I have come to realize just how horrible it is for anything substantial. In fact, I won't hate on YAML at all anymore although my preferred way to configure anything these days is Lua. (Can you just imagine if Kubernetes resources had been implemented in Lua?)
+
+== Lack of real tool support
+
+TOML has no tools for dynamically altering it from a simple shell script like `yq` does for YAML. The `yq` tool will do some TOML in-place edits, but nothing fancy. I know a tool shouldn't drive a structured data choice, but for me it does. Plus, can we just accept please that YAML has complete won at this point. (I cannot believe I liked TOML enough to make the logo. I really loathe it now.)
+
+== Still has significant white space
+
+== Lack of adoption
+
+TOML was big with the Rust people for a while and still remains required for Cargo files.
+
+== Arrogant community
+
+> Maybe the Kubernetes project should change to TOML.
+

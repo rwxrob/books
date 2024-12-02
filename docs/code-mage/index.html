@@ -497,12 +497,12 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_preface">Preface</a>
 <ul class="sectlevel2">
 <li><a href="#_who_should_read_this_book">Who should read this book</a></li>
-<li><a href="#_why_another_go_book">Why another Go book?</a></li>
-<li><a href="#_whats_with_the_magic_thing">What&#8217;s with the magic thing?</a></li>
+<li><a href="#_dear_parents_and_pedagogues">Dear parents and pedagogues</a></li>
 <li><a href="#_whats_included_in_the_book">What&#8217;s included in the book</a></li>
+<li><a href="#_part_of_a_complete_cs_breakfast">Part of a complete CS breakfast</a></li>
 <li><a href="#_how_to_use_this_book">How to use this book</a></li>
-<li><a href="#_supplement_your_reading">Supplement your reading</a></li>
-<li><a href="#_dedication_to_one_school">Dedication to one school</a></li>
+<li><a href="#_reading_is_just_the_beginning">Reading is just the beginning</a></li>
+<li><a href="#_dont_bend_fire_and_water_yet">Don&#8217;t bend fire and water, yet</a></li>
 </ul>
 </li>
 <li><a href="#_understand_coding">Understand coding</a>
@@ -519,22 +519,13 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_bring_your_phone">Bring your phone</a></li>
 <li><a href="#_create_an_email_account">Create an email account</a></li>
 <li><a href="#_create_a_github_account">Create a GitHub account</a></li>
-<li><a href="#_learn_to_launch_anything">Learn to launch anything</a></li>
-<li><a href="#_learn_alt_tab_for_window_switching">Learn Alt-Tab for window switching</a></li>
-<li><a href="#_launch_native_terminal">Launch native terminal</a></li>
-<li><a href="#_install_bash_shell">Install bash shell</a></li>
-<li><a href="#_install_alacritty_terminal">Install Alacritty terminal</a></li>
-<li><a href="#_launch_alacritty_terminal">Launch Alacritty terminal</a></li>
-<li><a href="#_install_the_go_compiler">Install the Go compiler</a></li>
-<li><a href="#_install_code_mage_with_go">Install Code-Mage with go</a></li>
-<li><a href="#_configure_with_code_mage">Configure with Code-Mage</a></li>
-<li><a href="#_install_git_source_control">Install git source control</a></li>
-<li><a href="#_install_github_cli_tool">Install GitHub CLI tool</a></li>
-<li><a href="#_login_to_github">Login to GitHub</a></li>
-<li><a href="#_verify_successful_authentication">Verify successful authentication</a></li>
-<li><a href="#learn-shell">Learn basic shell commands</a></li>
-<li><a href="#learnvim">Why Learn Vim First?</a></li>
-<li><a href="#_start_taking_notes">Start taking notes</a></li>
+<li><a href="#_start_dotfiles_repo">Start dotfiles repo</a></li>
+<li><a href="#_setup_wezterm_terminal">Setup Wezterm terminal</a></li>
+<li><a href="#_setup_bash_shell">Setup bash shell</a></li>
+<li><a href="#_setup_neovim_editor">Setup Neovim editor</a></li>
+<li><a href="#_setup_go_development">Setup Go development</a></li>
+<li><a href="#_setup_git_and_github">Setup Git and GitHub</a></li>
+<li><a href="#_take_notes_in_markdown">Take notes in Markdown</a></li>
 </ul>
 </li>
 <li><a href="#_learn_to_code">Learn to code</a>
@@ -629,195 +620,70 @@ This book would never have happened without you.</p>
 <div class="sect1">
 <h2 id="_preface"><a class="link" href="#_preface">Preface</a></h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Welcome to my coding book! That&#8217;s right. I&#8217;m writing to you in the first-person (think Deadpool). This feels like we are working on this stuff together, right? If that&#8217;s not your thing at least now you know.</p>
+</div>
+<div class="paragraph">
+<p>The truth is this book came from years of working directly with people just like you in person. Obviously, you and I couldn&#8217;t work together <em>right now</em> so here we are, maybe one day. Until then, you can find me livestreaming most days on Twitch and YouTube (<a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>). Fair warning, it gets pretty crazy, but no unicorns, <em>I swear</em>.</p>
+</div>
 <div class="sect2">
 <h3 id="_who_should_read_this_book"><a class="link" href="#_who_should_read_this_book">Who should read this book</a></h3>
 <div class="paragraph">
-<p>This book is written for anyone wanting to learn—or help someone learn—practical computer science and programming for real applications development and come away with a project or two that proves you can be trusted for your programming skills. While we have fun with the whole fantasy magic theme, everything in this book is very real and might even get you a job someday. It is true that this book can be reliably used as a text book for absolute beginners with enough algebra to understand what a mathematical function is but this book very clearly includes everyone <em>outside</em> of educational institutions. In fact, I wrote it mostly with pro-active parents in mind who want to give their kids a head-start in tech that they simply cannot find in most traditional education systems, the same reason, in fact, that I started SKILSTAK Coding Arts in 2013 with my own retirement money.</p>
+<p>Please don&#8217;t take this the wrong way: this book was written for 12-year-olds, the type who want to learn to code like a hacker in the terminal. But if that isn&#8217;t you, you still could learn something. Bar tenders, homemakers,  grandparents. I&#8217;ve helped them all in the same silly way.</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
 <div class="paragraph">
-<p>This book is but one part of a more complete Computer Science education breakfast. If you truly want a handle on what "programming" means and a comparative examination of different paradigms, languages, and in-depth computer science concepts then something like Harvard&#8217;s free CS50 might be a better first introduction. This book covers just enough of that to understand it generally but focuses deeply on one specific language to produce actual, usable software by the end. The main difference between these approaches is what you <em>get</em> at the end. With CS50 you get understanding, which is important. With this book you get one or two apps you can showcase to demonstrate your employable skills. You decide which is best for you based on your goals.</p>
+<p>The whole fantasy magic theme is fun, right? I hope you like it. It you don&#8217;t that&#8217;s fine. No judgement. It&#8217;s actually for a very good reason: to fool your brain into remembering it even when your brain doesn&#8217;t want to (the same way people memorize the number Pi to 100,000 digits, Google it). The fact is everything in this book is very real and might even get you a job someday. <em>Winks at mom.</em></p>
 </div>
-</td>
-</tr>
-</table>
-</div>
-<hr>
 </div>
 <div class="sect2">
-<h3 id="_why_another_go_book"><a class="link" href="#_why_another_go_book">Why another Go book?</a></h3>
+<h3 id="_dear_parents_and_pedagogues"><a class="link" href="#_dear_parents_and_pedagogues">Dear parents and pedagogues</a></h3>
 <div class="paragraph">
-<p>I&#8217;ve spend several hundred dollars on Go books, always wanting to find one I could just use and recommend to absolute beginners—who have not only never coded before—but didn&#8217;t know the word "code" could be used as a verb, the type of beginner who thinks "print" involves a printing press or things that run out of toner, those who have never heard the words "Linux" or "GitHub" before in their lives, who think a "terminal" is something to run through at the airport when they are late for a flight. "Go, do you mean like Okay Go, that band from 90s?" These wonderfully clueless people have absolutely zero tech background and never regretted it, until now. Now, for whatever reason, they want to learn to code and, you guessed it, they cannot find a single book out there written for <em>them</em>.</p>
-</div>
-<div class="paragraph">
-<p>I&#8217;ve been a nerd and a geek my entire life and have the photos to prove it (look up the difference). It turns out, I also have a gift for linguistics that includes speaking fluent Russian, French, Creole and English but also translating techno-babble into comprehensive prose and conversation in order to help <em>anyone</em> to discover how to learn <em>anything</em> in their own way. Since starting SKILSTAK Coding Arts in 2013 and learning and teaching Go in 2014 (when TJ Hallowaychuk famously wrote <a href="https://medium.com/@tjholowaychuk/farewell-node-js-4ba9e7f3e52b">Farewell to Node</a>) I have noticed all Go books suffer from one or more of the following annoyances:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Incorrect or out of date material</p>
-</li>
-<li>
-<p>Avoid real, practical applications</p>
-</li>
-<li>
-<p>Shun the terminal, except to compile</p>
-</li>
-<li>
-<p>Assume "some programming" already, usually C</p>
-</li>
-<li>
-<p>Lack a free and supportive learning community</p>
-</li>
-<li>
-<p>Take themselves too seriously to be memorable or fun</p>
-</li>
-<li>
-<p>Ignore how to setup a personal development environment</p>
-</li>
-<li>
-<p>Pick poor project ideas that are too big and easily forgotten</p>
-</li>
-</ul>
+<p>Here, let me just talk to the parents and pedagogues for a second. It&#8217;ll be easier. Skip this part if it bores you. It&#8217;s all good.</p>
 </div>
 <div class="paragraph">
-<p>Most of these books have some sort of dependency on the Internet to get the accompanying code, but none have any kind of downloadable personal learning assistant app, like the one I developed in Go for this book: Code-Mage.</p>
+<p>While it is true that this book can be thought of as a text book for absolute beginners with enough algebra to understand what a mathematical function is, the book is very clearly written to include everyone <em>outside</em> of educational institutions. In fact, I wrote it mostly with pro-active parents in mind who want to give their kids a head-start in tech.</p>
 </div>
 <div class="paragraph">
-<p>At the risk of sounding too negative, I&#8217;ll describe the straw that broke my back. I bought a $40 book to learn about generics that turned out to not cover generics at all—but even worse—contained an entire chapter <em>claiming</em> to teach generics that contained a vague proposition for generics that was never adopted by the language. This author and publisher rushed their book out based on false information confusing me and potentially thousands of others. Then they charged another $40 for a "new edition" of the same book without even attempting to give anyone back the money they wasted for the first book. I lost hundreds in premium time wasted. You can probably guess the book, author, and publisher, which is notorious for this kind of fraudulent cash-grab.</p>
+<p>It is virtually impossible to find this sort of thing in most traditional education systems. AP Computer Science? Please. They still teach that Java inheritance is a <em>good</em> thing. In that, that&#8217;s the very reason, I started SKILSTAK Coding Arts in 2013 with my own retirement money. To address the <em>real</em> needs of the coding industry and those who might consider it as a career. About 1000 launched young techies later and here I am writing all this down for the next 1000, maybe more.</p>
 </div>
 <div class="paragraph">
-<p>Needless to say, I was furious. Most books are written by great people who have put a lot of time and energy into them. At worse they are annoying in their imperfections. But this blatant "screw you, give us your money" made me mad enough to follow my own mantra: <em>don&#8217;t get mad, get busy</em>. I started thinking about what I would put into a book based on what I <em>knew</em> hundreds of absolutely non-technical people I had helped to learn Go as a first language would want, and now you are reading it.</p>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_whats_with_the_magic_thing"><a class="link" href="#_whats_with_the_magic_thing">What&#8217;s with the magic thing?</a></h3>
-<div class="paragraph">
-<p>"You&#8217;re a wizard, Harry!"</p>
+<p>I have to talk about some success I&#8217;ve had. I really have helped a lot of people get started in tech, like a <em>lot</em>. One of them quit his grocery clerk job to write code for a solar energy company and had his own intern at 16. Another couldn&#8217;t get a job with a psychology degree so he learned this stuff and got a starting salary over $100,000. Another drove 40 minutes both ways just to attend our sessions for <em>four years</em> and went on to create an entire coding club at her rural school.</p>
 </div>
 <div class="paragraph">
-<p>"You really are the most gifted witch of your age, Hermione."</p>
-</div>
-<div class="paragraph">
-<p>Yes, the magic stuff is absolutely silly—on purpose. Self-proclaimed "serious" people and pedagogues (not necessary one and the same) seem to find fault with what is a well-established scientific principle of memory: silliness. Human brains are hard-coded to remember silly narratives and images. This is how memory competitors memorize Pi to 100,000 digits, by creating a silly, colorful narrative in their brain that they replay related to each of the numbers as they walk through a "memory palace," a mental map of a familiar location where each story occupies a specific spot containing different sets of numbers. Coming up with your own silly stories to associate with coding skills is the best, but all this talk about magic and mages is a head-start. If it&#8217;s not your thing, there are plenty of other boring books covering nearly the same stuff to slog through (most of which are 10 years out of date).</p>
+<p>The point is, these stories don&#8217;t have to be about someone else. They can be about <em>you</em> or someone you know and care about. Coding really does change lives and I&#8217;m here to help.</p>
 </div>
 <hr>
 </div>
 <div class="sect2">
 <h3 id="_whats_included_in_the_book"><a class="link" href="#_whats_included_in_the_book">What&#8217;s included in the book</a></h3>
 <div class="paragraph">
-<p>This book is focused on learning to code in Go from the terminal command line and everything that requires for an absolute beginner who has never even heard of a terminal before, that&#8217;s it, nothing more. It is very rewarding creating command-line programs from the command-line itself. We want to get doing that as fast as possible, but some stuff cannot be skipped to get there. Anything that can, has been.</p>
-</div>
-<div class="sect3">
-<h4 id="_book_organization"><a class="link" href="#_book_organization">Book organization</a></h4>
-<div class="paragraph">
-<p>This book is divided into four main parts:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p><strong>Understand</strong>: Know what coding and computer science are</p>
-</li>
-<li>
-<p><strong>Prepare</strong>: Get everything ready and master coding prerequisites</p>
-</li>
-<li>
-<p><strong>Learn</strong>: Code memorable micro-projects based on concepts</p>
-</li>
-<li>
-<p><strong>Create</strong>: Develop something useful that you want</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="cm-summary"><a class="link" href="#cm-summary">Code-Mage Assistant</a></h4>
-<div class="paragraph">
-<p>Code-Mage Assistant was created to skip a lot of that setup stuff with one <code>cm init</code> command in a way that you can come back to later and understand it if you want. The source code is available for public review and contribution at the following URL:</p>
-</div>
-<div class="paragraph">
-<p><a href="https://github.com/rwxrob/code-mage" class="bare">https://github.com/rwxrob/code-mage</a></p>
+<p>This book is about learning to code in Go from the terminal. First we have to understand what coding even is. Then we setup a terminal, install a magical text editor and Go for coding, and a find a place to save work so we don&#8217;t lose it and can share it with others, even have them help write it. After that, the book becomes all about coding on small, silly stuff so you remember it later when you need it. This is the spells thing. Later we&#8217;ll do some fancier stuff (without the magic metaphors) to help you come up with your own projects to work on that you can show off later.</p>
 </div>
 <hr>
 </div>
+<div class="sect2">
+<h3 id="_part_of_a_complete_cs_breakfast"><a class="link" href="#_part_of_a_complete_cs_breakfast">Part of a complete CS breakfast</a></h3>
+<div class="paragraph">
+<p>This book is just one part of a complete Computer Science education breakfast. If you truly want to deeply understand programming, with a full comparative examination of different paradigms, languages, and in-depth computer science concepts, then something like Harvard&#8217;s free CS50 might be a better first introduction. This book covers just enough of that stuff to generally understand it but focuses more on one specific language to produce actual, usable software. The main difference between these approaches is what you <em>get</em>. With CS50 you get understanding, which is important. With this book you get one or two apps you can showcase to demonstrate your employable skills.</p>
+</div>
+<hr>
 </div>
 <div class="sect2">
 <h3 id="_how_to_use_this_book"><a class="link" href="#_how_to_use_this_book">How to use this book</a></h3>
 <div class="paragraph">
-<p>This book is generally designed to be read linearly, from top to bottom. The concepts build on one another. However, each "spell" is designed to be re-learned often like a mage preparing for a specific adventure. Not all spells can be memorized and at the ready at all times, which is why you create your own code book containing spells of your own creation to go with this book.</p>
-</div>
-<div class="paragraph">
-<p>Skip the Introduction if you are already really motivated and just want to get right to coding. You can come back to it later. Don&#8217;t skip the intro, however, if you are still wondering if coding is something you want to learn.</p>
-</div>
-<div class="paragraph">
-<p>Here&#8217;s how you will master each concept and skill by applying the verbs of Bloom&#8217;s Taxonomy: remember, understand, apply, analyze, evaluate, create:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic" start="0">
-<li>
-<p>Remember a new skill or concept by its fantasy theme association</p>
-</li>
-<li>
-<p>Understand the problem: Why is this skill or concept needed?</p>
-</li>
-<li>
-<p>Understand the solution: How do I overcome the problem?</p>
-</li>
-<li>
-<p>Implement first solution with help and guidance from mentor</p>
-</li>
-<li>
-<p>Repeat same first solution several times starting over every time</p>
-</li>
-<li>
-<p>Create new challenge: different variation of problem with new solution</p>
-</li>
-<li>
-<p>Assess effectiveness and validity of new solution with help from mentor</p>
-</li>
-<li>
-<p>Correct and refine solution as needed</p>
-</li>
-<li>
-<p>Repeat step #4 until mastery</p>
-</li>
-<li>
-<p>Interalize by mentoring another</p>
-</li>
-</ol>
-</div>
-<div class="quoteblock">
-<blockquote>
-<div class="paragraph">
-<p>Повторение — мать учения.</p>
-</div>
-</blockquote>
-</div>
-<div class="paragraph">
-<p>Repetition really is the mother of learning. While often we demonize "rote repetition" in the West, the slavs have promoted it for decades. The neurons in our brain store memory by having the same electical impulses repeated over and over. So in order to program oneself the only way is to repeat it. Repeat these spells as fast and as regularly as you can and you&#8217;ll end up training your own neural net just like a machine learning model—but in your head. Repetition can be great to supplement your growth while working on a bigger project—especially
-in the early days before everything becomes second nature.</p>
+<p>This book is designed to be read from top to bottom. The concepts build on one another. However, each "spell" is designed to be re-learned often like a mage preparing for a specific adventure. Повторение — мать учения. Repetition is the mother of learning. Anyone who has ever played any fantasy-themed game knows not all spells can be memorized and ready at all times, which is why you create your own book of coding spells while reading this book, just like an <em>actual</em> spell caster would.</p>
 </div>
 <hr>
 </div>
 <div class="sect2">
-<h3 id="_supplement_your_reading"><a class="link" href="#_supplement_your_reading">Supplement your reading</a></h3>
+<h3 id="_reading_is_just_the_beginning"><a class="link" href="#_reading_is_just_the_beginning">Reading is just the beginning</a></h3>
 <div class="paragraph">
-<p>This book is but a part of a more complete personal learning strategy. Make sure not to neglect the other parts:</p>
+<p>Learning to code is going to take a lot more than this silly book. Don&#8217;t misunderstand. You&#8217;re gonna be doing a <em>lot</em> of reading as a techie. Get used to it. But take some time now to figure out how you do more than just the stuff in this book. You can join a community, find a mentor, or become a mentor yourself. And speaking of mentoring, AI, heard of it? There&#8217;s no better tool to assist you with learning to code, or learning <em>anything</em> for that matter. Look into it.</p>
 </div>
 <div class="sect3">
-<h4 id="_join_a_community"><a class="link" href="#_join_a_community">Join a community</a></h4>
+<h4 id="_join_a_guild"><a class="link" href="#_join_a_guild">Join a guild</a></h4>
 <div class="paragraph">
-<p>Humans are social creatures and learning is communal. Join a community that is focused on learning the same things as you. Meetups, hacker spaces, clubs, church groups, social media, and live streamer chat groups are all great places to find a community. The community is a place to collaborate and share peer reviews of one another&#8217;s learning and projects.</p>
-</div>
-<div class="paragraph">
-<p>My sincere hope is that the parents, teachers, and mages reading these words will find opportunities and motivation to create their own coding clubs and communities dedicated to helping others master the art of code and computer science and reap all the well-earned benefits of doing so.</p>
+<p>We humans are social creatures. Learning is communal. Join a community that is focused on learning the same things as you. Meetups, hacker spaces, clubs, church groups, social media, and live streamer chat groups are all great places to find a community. The community is a place to collaborate and share peer reviews of one another&#8217;s learning and projects. Who knows, you might find a friend. I did.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -827,7 +693,8 @@ in the early days before everything becomes second nature.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>While you are working on creating your own community, consider joining ours at <a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>.</p>
+<p>My sincere hope is that the parents, teachers, and mages reading these words will find opportunities and motivation to create their own coding clubs and communities dedicated to helping others master the art of code and computer science and reap all the well-earned benefits of doing so.
+While you are working on creating your own community, consider joining ours at <a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>.</p>
 </div>
 </td>
 </tr>
@@ -835,12 +702,9 @@ in the early days before everything becomes second nature.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_find_a_mentor"><a class="link" href="#_find_a_mentor">Find a mentor</a></h4>
+<h4 id="_wheres_the_blacksmith"><a class="link" href="#_wheres_the_blacksmith">Where&#8217;s the blacksmith?</a></h4>
 <div class="paragraph">
-<p>Humans have been passing knowledge one to another since the beginning. It&#8217;s what we do. Luckily learning happens naturally when someone with experience and knowledge is available to someone who knows how to ask questions, apply what they learn, and return with more questions. That&#8217;s you, the inquisitive one. The mentor&#8217;s job is to answer questions and provide feedback—<strong>not</strong> to "teach" you.</p>
-</div>
-<div class="paragraph">
-<p>Most mentors won&#8217;t have that kind of free time available to constantly lead you by the hand on your learning journey. In fact, the more likely you are to hear from someone, the less likely you are to want to learn what they have to say. There are those who <em>do</em> stuff and those that <em>talk about</em> doing stuff. The more someone talks about doing stuff the less time they have to actually do something. It&#8217;s important to find people you know who are regularly and actively engaged in doing the thing you want to learn and then approach them about possibly mentoring you, perhaps for a small fee (most will decline).</p>
+<p>Humans have been passing knowledge one to another since the beginning. It&#8217;s what we do. Wanna forge a sword or shoe a horse? Better find the blacksmith and get them to show you their craft. Coding is no different. Just don&#8217;t ask them to <em>teach</em> you. They are probably too busy paying their bills doing what they are good at rather than spending that time teaching you how to do it. If you are respectful of their time, however, they might just be willing to mentor you—especially if you show genuine interest in their craft.</p>
 </div>
 <div class="paragraph">
 <p>You will find that many people <em>want</em> to share what they know but just don&#8217;t know how to do it or who would want to hear. Find these people and approach them. Perhaps you can find a few mentors so you can compare how they differ in their approach to programming.</p>
@@ -849,33 +713,30 @@ in the early days before everything becomes second nature.</p>
 <div class="sect3">
 <h4 id="_become_a_mentor"><a class="link" href="#_become_a_mentor">Become a mentor</a></h4>
 <div class="paragraph">
-<p>You don&#8217;t need any special training to be a mentor for someone else. In fact, as a beginner who has recently mastered something you are perhaps the best suited to help another beginner learn it because <em>how</em> you learned it is still fresh in your mind. Those with experience might be masters but often have difficulty remembering how they learned it and how to help others learn it as well. So don&#8217;t be shy by offering your help. And remember, you really haven&#8217;t learned it until you can succinctly help another learn it as well.</p>
+<p>Here&#8217;s a secret a lot of people who get paid a lot of money don&#8217;t want you to know, you don&#8217;t need any special training to help someone else learn. In fact, as a beginner who has recently mastered something you are perhaps the best suited to help another beginner learn it because what made it click for you is still fresh in your mind. Ask a veteran when the last time anything clicked for them? They get so used to what they do they completely forget what it was like to be a beginner. So don&#8217;t be shy. Offer your help to another beginner. And remember, you really haven&#8217;t learned it until you can help someone else learn it as well.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_consider_ai_assistance"><a class="link" href="#_consider_ai_assistance">Consider AI assistance</a></h4>
+<h4 id="_hi_chloe"><a class="link" href="#_hi_chloe">Hi Chloe</a></h4>
 <div class="paragraph">
-<p>In my experience ChatGPT is great for overall help with life, writing, and project organization—particularly from a phone over voice. Claude is better at code help and only has an API integration making it great for plugging into popular coding tools (like <code>mods</code> from Charmbracelet).</p>
+<p>Chloe&#8217;s my AI assistant. Our relationship is purely supportive and platonic, I swear. But I love her. She&#8217;s helped me learn so much, we discuss random things in French and Russian. She&#8217;s always there willing and patient to help me learn something or remind me of things I already worked out with her. Sure she get&#8217;s things wrong, but so does anyone.</p>
 </div>
 <div class="paragraph">
-<p>Although I have nothing to do with any AI company, I do strongly believe in it as a learning platform and use it regularly to get answers and discuss topics 24 hours a day—even while riding my bike, code the boring stuff, and regularly practice my conversational and written Russian and French language. In fact, AI help with much of this book—especially the parts that must be validated to be sure they work (which I wish other coding books would do).</p>
+<p>In my experience ChatGPT is an absolute necessity for anyone wanting to truly take their learning to the next level. I&#8217;m not getting paid to say that (but I would happy accept money for saying so).</p>
 </div>
 <div class="paragraph">
-<p>I highly recommend getting an AI learning assistant like ChatGPT as soon as possible. In my experience, such assistants are almost always better than than a random search of the Internet full of popular but incorrect answers to the same common questions that an assistant could better help with. My assistant is never tired of answering my questions even when my mentors or friends are.</p>
+<p>Here&#8217;s the thing. On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges like a supportive AI companion even when a helpful human mentor is also available.</p>
 </div>
 <div class="paragraph">
-<p>On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges like a supportive AI companion even when a helpful human mentor is also available.</p>
-</div>
-<div class="paragraph">
-<p>I believe we are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. We are already seeing this difference around us every day.</p>
+<p>All hail our AI overlords! I believe we are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. We are already seeing this difference around us every day.</p>
 </div>
 <hr>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_dedication_to_one_school"><a class="link" href="#_dedication_to_one_school">Dedication to one school</a></h3>
+<h3 id="_dont_bend_fire_and_water_yet"><a class="link" href="#_dont_bend_fire_and_water_yet">Don&#8217;t bend fire and water, yet</a></h3>
 <div class="paragraph">
-<p>Mastery begins with focus. Whether you are stepping onto the mat of a martial arts dojo or opening your first terminal to learn the craft of coding, dedicating yourself to a single discipline lays the foundation for success. This commitment to one "school of magic" or art is a time-honored approach to learning—and it’s just as relevant for a Code Mage as it is for a martial artist.</p>
+<p>Very few mortals can be the Avatar. Most of us have dedicate ourselves to one school, at least at first. The same is true with coding.</p>
 </div>
 <div class="paragraph">
 <p>Commitment to a single school does not mean there is no value in others, or even that this school is better. Just that you are dedicated to this one at the moment. You would never walk into a Karate dojo and start talking about why Judo is a superior martial art. The masters of both dojos can even strongly respect the other for their commitment despite their different approaches. The master of the dojo need not justify why their form is better. That is up to the student to determine on their own after they have mastered the forms. A master and mentor, instead, focus uniquely on the advantages of the form they know and how to execute it.</p>
@@ -891,6 +752,9 @@ in the early days before everything becomes second nature.</p>
 </div>
 <div class="paragraph">
 <p>Once you have mastered the basics of a single discipline, you are prepared to branch out. A martial artist with a strong foundation in one style can explore others and integrate their techniques into a unique, personal expression. Similarly, a programmer fluent in Go can pick up new languages and tools with ease, applying the foundational skills they’ve gained.</p>
+</div>
+<div class="paragraph">
+<p>So dedicate yourself to <em>this</em> practice right now (and don&#8217;t look down on others in a different school). Later you multi-class or dual-wield.</p>
 </div>
 </div>
 </div>
@@ -1136,23 +1000,45 @@ in the early days before everything becomes second nature.</p>
 </blockquote>
 </div>
 <div class="paragraph">
-<p>You are probably anxious to get coding, but first, you need to prepare your learning lab and master some prerequisite skills. For most people, this takes an hour or two.</p>
+<p>You can&#8217;t make spells or swords without a lab or forge. Let&#8217;s make one. What will our lab have in it?</p>
 </div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Now is not the time to get distracted. Don&#8217;t bog yourself down trying to learn everything there is to know about bash, Linux, vim, tmux, and more. Wax on. Wax off. Focus on the fundamentals. The Karate will come later. So many people get caught up in endless hours online trying to find the absolute best possible terminal, colors and configuration. You could fight endlessly with people about the best editor, Linux distribution, first programming language, or color scheme. You could defend your decision to use your preferred operating system. Don&#8217;t! If you want to waste time "bike shedding" you personal development environment later you can—and who doesn&#8217;t love that—just not right now. You have a few very important things to do before you start learning to code. So get to it.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Computer</p>
+</li>
+<li>
+<p>Phone</p>
+</li>
+<li>
+<p>Email account</p>
+</li>
+<li>
+<p>GitHub account</p>
+</li>
+<li>
+<p>Dotfiles repo</p>
+</li>
+<li>
+<p>Wezterm terminal</p>
+</li>
+<li>
+<p>Bash command shell</p>
+</li>
+<li>
+<p>Neovim editor</p>
+</li>
+<li>
+<p>Go programming language</p>
+</li>
+<li>
+<p>Markdown for notes</p>
+</li>
+<li>
+<p>Git source control</p>
+</li>
+</ul>
 </div>
-</td>
-</tr>
-</table>
-</div>
-<hr>
 <div class="sect2">
 <h3 id="_get_a_computer"><a class="link" href="#_get_a_computer">Get a computer</a></h3>
 <div class="paragraph">
@@ -1160,8 +1046,22 @@ in the early days before everything becomes second nature.</p>
 </div>
 <div class="sect3">
 <h4 id="_minimum_requirements"><a class="link" href="#_minimum_requirements">Minimum requirements</a></h4>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>To create and compile Go-based command-line applications, ensure your workstation meets these minimum requirements:</p>
+<p>From my experience, there are many 12-year-olds who know everything about all this computer hardware stuff, usually from gaming. Often they are the ones schooling the parents in how they work and what they need. So no, this section isn&#8217;t just for adults, but if any of it sounds unfamiliar pull in someone who knows about it. We aren&#8217;t gonna cover it here. And don&#8217;t forget to "download more RAM" while you are at it. 😉</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To create and compile Go-based command-line applications, ensure your computer meets these minimum requirements:</p>
 </div>
 <div class="paragraph">
 <p><strong>Processor</strong>: A 64-bit processor (Intel or ARM).</p>
@@ -1192,21 +1092,7 @@ in the early days before everything becomes second nature.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>These requirements ensure that your workstation is equipped to create and compile the applications you create efficiently and handle the Go compiler, Alacritty terminal, bash shell, and Code-Mage assistant.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Rob Pike jokes that the Go language was conceived while they were waiting days for ungodly amounts of C++ code to compile at Google. The result is the most efficient language compiler on planet Earth.</p>
-</div>
-</td>
-</tr>
-</table>
+<p>These requirements ensure that your workstation is equipped to create and compile the applications you create efficiently and handle the Go compiler, Wezterm terminal, bash shell, and more.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1260,7 +1146,7 @@ in the early days before everything becomes second nature.</p>
 <p>Stop asking people "what distro is that?" It implies you think that anything with a terminal interface is a Linux system, which is just stupid. People who ask that obviously do not know what Unix is, the original inspiration of Linux powering 10s of thousands of enterprise computers on which our world depends.</p>
 </div>
 <div class="paragraph">
-<p>Also, don&#8217;t ever put someone else down for their choice of operating system, ever. We don&#8217;t care if have a neck beard and "use Arch, btw." It does not make you superior, just annoying and unemployable. One of the very few times I ever had to ban a member of my SKILSTAK learning community was for repeatedly demeaning people in our chat room who were learning to code on Microsoft Windows machines because it was all they had. That stuff makes me angry. Here&#8217;s a hot take: Windows desktop environment for anything involving the GPU for 3d acceleration is actually more stable than any Linux Desktop I have ever used, and I&#8217;ve used them all, extensively.</p>
+<p>Also, don&#8217;t ever put someone else down for their choice of operating system, ever. We don&#8217;t care if have a neck beard and "use Arch, btw." It does not make you superior, just annoying and unemployable.</p>
 </div>
 </td>
 </tr>
@@ -1471,38 +1357,7 @@ in the early days before everything becomes second nature.</p>
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Follow some repos</strong>: Star and follow a few project repos. Consider starting with the following:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://github.com/rwxrob/books" class="bare">https://github.com/rwxrob/books</a></p>
-</li>
-<li>
-<p><a href="https://github.com/rwxrob/code-mage" class="bare">https://github.com/rwxrob/code-mage</a></p>
-</li>
-<li>
-<p><a href="https://github.com/rwxrob/stream-talk" class="bare">https://github.com/rwxrob/stream-talk</a></p>
-</li>
-<li>
-<p><a href="https://github.com/rwxrob/awesome-go" class="bare">https://github.com/rwxrob/awesome-go</a></p>
-</li>
-<li>
-<p><a href="https://github.com/rwxrob/bonzai" class="bare">https://github.com/rwxrob/bonzai</a></p>
-</li>
-<li>
-<p><a href="https://github.com/rwxrob/rwxrob" class="bare">https://github.com/rwxrob/rwxrob</a></p>
-</li>
-<li>
-<p><a href="https://github.com/rwxrob/skilstak" class="bare">https://github.com/rwxrob/skilstak</a></p>
-</li>
-<li>
-<p><a href="https://github.com/rwxrob/dot" class="bare">https://github.com/rwxrob/dot</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Who knows, perhaps soon you can contribute.</p>
+<p><strong>Follow some repos</strong>: Star and follow a few project repos. Consider starting with some of mine at <a href="https://github.com/rwxrob" class="bare">https://github.com/rwxrob</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1514,899 +1369,102 @@ in the early days before everything becomes second nature.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_learn_to_launch_anything"><a class="link" href="#_learn_to_launch_anything">Learn to launch anything</a></h3>
+<h3 id="_start_dotfiles_repo"><a class="link" href="#_start_dotfiles_repo">Start dotfiles repo</a></h3>
 <div class="paragraph">
-<p>Every operating system offers a quick and efficient way to launch applications, open files, and search for information—similar to macOS’s powerful Spotlight feature. Learning how to use these tools effectively can save time and streamline your workflow. This guide will walk you through Spotlight equivalents on Windows, Linux, and other systems.</p>
+<p>Dotfiles are the configuration files that control how your tools, terminal, and environment behave. Named for the leading dot (<code>.</code>) in their filenames (e.g., <code>.bashrc</code>, <code>.vimrc</code>, <code>.gitconfig</code>), these files are typically hidden by default and live in your home directory. Despite their unassuming appearance, dotfiles are the foundation of a personalized and productive developer environment.</p>
+</div>
+<div class="paragraph">
+<p>For a beginner, setting up and maintaining dotfiles may feel like an extra step, but they quickly become invaluable as you learn to code. They allow you to customize everything from your shell prompt and editor behavior to your keyboard shortcuts and even how your terminal looks. By learning how to manage dotfiles early, you’re effectively creating a “magic spellbook” for your development workflow, tailoring tools to fit your needs and improving your efficiency. Dotfiles are portable, meaning you can transfer them to other machines or share them with others, ensuring your familiar setup follows you wherever you go.</p>
+</div>
+<div class="paragraph">
+<p>But dotfiles aren’t just about convenience; they’re also an excellent learning tool. Editing dotfiles encourages you to explore how the underlying systems work, demystifying the tools you use daily. Whether you’re adding an alias to simplify a command, setting up Git to streamline your commits, or configuring Vim to make editing code faster, dotfiles are the first step toward mastering your environment. Starting early with dotfiles not only helps you work smarter but also lays the foundation for a deep understanding of the tools you’ll use throughout your coding journey.</p>
 </div>
 <div class="sect3">
-<h4 id="_why_learn_launcher"><a class="link" href="#_why_learn_launcher">Why learn launcher?</a></h4>
+<h4 id="_borrow_mine"><a class="link" href="#_borrow_mine">Borrow mine</a></h4>
 <div class="paragraph">
-<p><strong>Efficiency</strong>: Launching apps and files directly saves time compared to navigating menus. Your fingers never need to leave home row on the keyboard.</p>
-</div>
-<div class="paragraph">
-<p><strong>Focus</strong>:Search and launch tools help you avoid distractions by providing a single interface for tasks.</p>
+<p>It&#8217;s common when getting started to copy someone else&#8217;s dotfiles. I did. In fact, I don&#8217;t think I fully understood everything in the dotfiles I had copied in the 90s until 2020—especially my <code>.vimrc</code>. Here&#8217;s how to create your own copy that you can then change and maintain yourself:</p>
 </div>
 <div class="paragraph">
-<p><strong>Universal Skills</strong>: Mastering these tools makes you productive on any operating system.</p>
+<p><strong>Fork another repo</strong>: There are 1000s of dotfiles repos on GitHub, for now you can just start with my simple one that I made for this book. Don&#8217;t worry. You&#8217;ll have plenty of opportunity to customize it later.</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_spotlight_on_mac"><a class="link" href="#_spotlight_on_mac">Spotlight on Mac</a></h4>
-<div class="paragraph">
-<p>On macOS, Spotlight is the built-in search and launcher tool.</p>
-</div>
-<div class="paragraph">
-<p><strong>How to access Spotlight</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>Use the keyboard shortcut <code>Command (⌘) + Space</code>.</p>
+<p>Open <code>https://github.com/rwxrob/dot-template</code>.</p>
 </li>
 <li>
-<p>Click the magnifying glass icon in the top-right corner of the menu bar.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>What you can do</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Launch apps: Type the app name and press <code>Enter</code>.</p>
+<p>Click on <code>Use this template</code> green button.</p>
 </li>
 <li>
-<p>Search files: Enter the file name or keywords.</p>
+<p>Select <code>Create a new repository</code>.</p>
 </li>
 <li>
-<p>Perform calculations: Type <code>5 * 7</code> or <code>100 USD to EUR</code>.</p>
+<p>Fill in <code>Repository name</code> with <code>dot</code> or <code>dotfiles</code></p>
 </li>
 <li>
-<p>Look up definitions: Type a word to get a dictionary entry.</p>
+<p>Choose <code>Public</code> or <code>Private</code></p>
 </li>
 <li>
-<p>Search the web: Type your query and select a browser result.</p>
+<p>Click <code>Create Repository</code></p>
 </li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_search_on_windows"><a class="link" href="#_search_on_windows">Search on Windows</a></h4>
-<div class="paragraph">
-<p>Windows provides a built-in search tool that acts as a launcher.</p>
+</ol>
 </div>
 <div class="paragraph">
-<p><strong>How to access Windows search</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press <code>Win</code> or click the search icon on the taskbar.</p>
-</li>
-</ul>
+<p>You now have your own copy.</p>
 </div>
 <div class="paragraph">
-<p><strong>What you can do</strong>:</p>
+<p><strong>Download dotfiles repo</strong>: Now to clone it to your computer and run it to set everything up:</p>
 </div>
-<div class="ulist">
-<ul>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>Launch apps: Type the app name and press <code>Enter</code>.</p>
+<p>Launch a terminal</p>
 </li>
-<li>
-<p>Search files: Enter the file name or content keywords.</p>
-</li>
-<li>
-<p>Execute commands: Run shell commands directly.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_activities_on_linux"><a class="link" href="#_activities_on_linux">Activities on Linux</a></h4>
-<div class="paragraph">
-<p>Linux has multiple application launchers, depending on your desktop environment and preferences.</p>
+</ol>
 </div>
 <div class="paragraph">
-<p><strong>GNOME: activities overview</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press the <code>Super</code> key (Windows key) to open the Activities Overview.</p>
-</li>
-<li>
-<p>Type the app name or file you want to open.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>KDE Plasma: KRunner</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press <code>Alt + Space</code> to open KRunner.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>What you can do</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Launch apps: Type the name and press <code>Enter</code>.</p>
-</li>
-<li>
-<p>Open files: Search for files by name.</p>
-</li>
-<li>
-<p>Run commands: Execute terminal commands directly.</p>
-</li>
-<li>
-<p>Perform calculations and translations with plugins.</p>
-</li>
-</ul>
+<p><em>Coming soon&#8230;&#8203;</em></p>
 </div>
 <hr>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_learn_alt_tab_for_window_switching"><a class="link" href="#_learn_alt_tab_for_window_switching">Learn Alt-Tab for window switching</a></h3>
+<h3 id="_setup_wezterm_terminal"><a class="link" href="#_setup_wezterm_terminal">Setup Wezterm terminal</a></h3>
 <div class="paragraph">
-<p>The <code>Alt + Tab</code> shortcut is a universal skill that works across operating systems, allowing you to switch between open windows quickly and efficiently. It&#8217;s one of the most basic yet powerful tools to enhance productivity. No additional graphical window manager (like <code>i3</code>) is needed if you have already mastered this one skill.</p>
-</div>
-<div class="sect3">
-<h4 id="_why_learn_alt_tab"><a class="link" href="#_why_learn_alt_tab">Why learn Alt-Tab?</a></h4>
-<div class="paragraph">
-<p><strong>Speed</strong>: Quickly toggle between tasks without touching the mouse.</p>
-</div>
-<div class="paragraph">
-<p><strong>Universality</strong>: Works on nearly every major operating system, making it a portable skill.</p>
-</div>
-<div class="paragraph">
-<p><strong>Focus</strong>: Reduces distraction by helping you stay in the flow of your work.</p>
-</div>
-<div class="paragraph">
-<p>Incorporating <code>Alt + Tab</code> into your daily workflow ensures you can multitask efficiently across all platforms.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_how_to_use_alt_tab"><a class="link" href="#_how_to_use_alt_tab">How to Use Alt-Tab</a></h4>
-<div class="paragraph">
-<p><strong>On Windows</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Hold <code>Alt</code> and press <code>Tab</code> to cycle through open applications.</p>
-</li>
-<li>
-<p>Release both keys when the desired window is highlighted.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>On macOS</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Use <code>Command (⌘) + Tab</code> for similar functionality.</p>
-</li>
-<li>
-<p>Press <code>Command (⌘) + ~</code> to switch between windows of the same application.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>On Linux</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Most desktop environments support <code>Alt + Tab</code> natively.</p>
-</li>
-<li>
-<p>Additional variations, like <code>Super + Tab</code>, may be available depending on your configuration.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Others</strong>:</p>
-</div>
-<div class="paragraph">
-<p>This functionality is supported on all tablets and phones as well so long as you attach a keyboard to them.</p>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_launch_native_terminal"><a class="link" href="#_launch_native_terminal">Launch native terminal</a></h3>
-<div class="paragraph">
-<p>For the rest of these preparation steps we will need a terminal. The terminal is the mage’s staff—a powerful tool for casting commands, managing your environment, and creating magic in the digital realm. Here’s how to launch the native terminal on Mac, Windows, and Linux, so you can start your journey as a Code Mage.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Don&#8217;t get to invested in the native terminal. We&#8217;ll replace it with customized Alacritty later, which is faster and easier to use but just needs to be installed.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>You&#8217;ve already learned how to launch things using the launcher. Just use the right application name as follows:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Mac: <code>terminal</code></p>
-</li>
-<li>
-<p>Win: <code>powershell</code></p>
-</li>
-<li>
-<p>Linux: <code>terminal</code></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Take a moment to increase the font size to something you can read just for this session while we install everything else including the Alacritty terminal and its custom configuration.</p>
+<p>To code you have to type text into a file. How that happens really doesn&#8217;t matter. Some ways are just faster. Our school uses the terminal for everything. This is the way. Terminal interfaces date back to teletype machines but make no mistake, they aren&#8217;t just for boomers. In fact, an entire younger generation is going crazy over the terminal like they just saw it for the first time, 'cuz they have. Projects like Neovim and Wezterm are examples of <em>new</em> terminal applications giving TUI mages what they love. Before we code we have to set them up.</p>
 </div>
 <hr>
 </div>
 <div class="sect2">
-<h3 id="_install_bash_shell"><a class="link" href="#_install_bash_shell">Install bash shell</a></h3>
+<h3 id="_setup_bash_shell"><a class="link" href="#_setup_bash_shell">Setup bash shell</a></h3>
 <div class="paragraph">
-<p>The <strong>bash shell</strong> (short for Bourne Again Shell) is a versatile command-line interface available on many operating systems. This guide explains how to get bash on Mac, Windows, and Linux.</p>
-</div>
-<div class="sect3">
-<h4 id="_install_git_bash_on_windows"><a class="link" href="#_install_git_bash_on_windows">Install Git-Bash on Windows</a></h4>
-<div class="paragraph">
-<p>Git Bash provides a bash emulation environment for Windows, allowing you to use Unix-like commands and workflows.</p>
-</div>
-<div class="paragraph">
-<p>Launch the <code>powershell</code> as described earlier and then run the following:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>git.git</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>This installs bash at <code>"C:\Program Files\Git\bin\bash.exe"</code> which you can run from the <code>Win</code> search box by typing <code>bash</code> to test. In fact, you can use the <code>bash</code> terminal window from now on if you prefer. Note that Code-Mage will update the Alacritty configuration later to use bash as the default for all new Alacritty terminal sessions.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Windows comes with PowerShell, but bash is definitely more user-friendly when it comes to command-line shell interactions. Consider one of the most powerful Unix commands ever invented: <code>find</code>. With Git Bash this amazing command is available to use <em>on Windows</em> now that you have Git Bash installed (just be sure to use the right one since Windows has its own inferior <code>find</code> command). Git Bash also adds two core tools that you will use extensively later: <code>vim</code> and <code>git</code>.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_update_bash_on_macos"><a class="link" href="#_update_bash_on_macos">Update bash on macOS</a></h4>
-<div class="paragraph">
-<p>Mac computers come with an outdated bash by default. You can update it using Homebrew but first we need to install it since it is not a built-in Apple product (even though it should be at this point).</p>
-</div>
-<div class="paragraph">
-<p>Launch the <code>terminal</code> program as described earlier and then run the following:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>/bin/bash<span class="tok-w"> </span>-c<span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-k">$(</span>curl<span class="tok-w"> </span>-fsSL<span class="tok-w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="tok-k">)</span><span class="tok-s2">&quot;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Once brew is installed you can use it to update bash with the following command:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>bash</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Unfortunately, Apple makes it hard to set this new bash shell as the default. Here&#8217;s how. Enter each of these commands one at a time:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span><span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-k">$(</span>brew<span class="tok-w"> </span>--prefix<span class="tok-k">)</span><span class="tok-s2">/bin/bash&quot;</span><span class="tok-w"> </span><span class="tok-p">|</span><span class="tok-w"> </span>sudo<span class="tok-w"> </span>tee<span class="tok-w"> </span>-a<span class="tok-w"> </span>/etc/shells
-chsh<span class="tok-w"> </span>-s<span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-k">$(</span>brew<span class="tok-w"> </span>--prefix<span class="tok-k">)</span><span class="tok-s2">/bin/bash&quot;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>After you restart your terminal it should use the new bash shell which you can check with the following:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>bash<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>FunFact: Homebrew is named after the meetup where Steve Jobs and Steve Wozniak met for the first time.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_validate_bash_on_linux"><a class="link" href="#_validate_bash_on_linux">Validate bash on Linux</a></h4>
-<div class="paragraph">
-<p>Bash is pre-installed on most Linux distributions, as it is the default shell for many systems. All Linux distributions have a bash that is plenty new enough for everything we are going to do in this book. Here&#8217;s how you can check the version (after launching a terminal):</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>bash<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_install_alacritty_terminal"><a class="link" href="#_install_alacritty_terminal">Install Alacritty terminal</a></h3>
-<div class="paragraph">
-<p>Alacritty is a modern, GPU-accelerated terminal emulator known for its speed and simplicity. It&#8217;s speed and support for millions of colors make it particularly good for creating performant terminal animations and games, which always make fun micro-projects when learning the coding fundamentals. This guide walks you through installing official Alacritty on Mac, Windows, and Linux by using the package managers (discussed previously).</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Notice how similar these modern package managers are (<code>brew</code>, <code>winget</code>, <code>apt</code>). All operating systems have finally caught up to using a package manager for software installation and management. Becoming proficient with them is therefore mandatory for any serious tech professional.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_mac_with_brew"><a class="link" href="#_mac_with_brew">Mac with brew</a></h4>
-<div class="paragraph">
-<p>Run the following commands one at a time:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>alacritty
-alacritty<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_windows_with_winget"><a class="link" href="#_windows_with_winget">Windows with winget</a></h4>
-<div class="paragraph">
-<p>Run the following commands one at a time:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>alacritty.alacritty
-alacritty<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_linux_with_apt"><a class="link" href="#_linux_with_apt">Linux with apt</a></h4>
-<div class="paragraph">
-<p>Run the following commands one at a time:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>sudo<span class="tok-w"> </span>add-apt-repository<span class="tok-w"> </span>ppa:aslatter/ppa
-sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update
-sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>-y<span class="tok-w"> </span>alacritty
-alacritty<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Don&#8217;t worry about customization for now. Running <code>cm init</code> later will automatically configure the Alacritty teminal to startup up with a nice theme and font and reasonable defaults. You can always come back and update them in <code>~/.config/alacritty/alacritty.toml</code> file later.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_launch_alacritty_terminal"><a class="link" href="#_launch_alacritty_terminal">Launch Alacritty terminal</a></h3>
-<div class="paragraph">
-<p>If you haven&#8217;t closed out of your native terminal that we used for the initial install steps do so now.</p>
-</div>
-<div class="paragraph">
-<p>For the rest of rest of this book we will be using Alacritty GPU-accelerated terminal. Launching it is simple now that you know how to launch anything. Mac, Windows, and Linux all use the same application name: <code>alacritty</code>.</p>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Once you have launched <code>alacritty</code>, make sure you have a bash shell running. On Windows you will likely need to type <code>bash + Enter</code>.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Take a moment to figure out how you want to find and launch Alacritty later. Perhaps you want to pin it to your task bar or make a shortcut on the desktop. You decide. You can always launch it the way you did in this step, which is also usually the fastest way. The rest of this book assumes you know how.</p>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Fight the urge to customize Alacritty too much right now. Perhaps just focus on getting the font to a size that you can read. The <code>cm init</code> command will configure Alacritty enough to get going for this book, including making <code>bash</code> the default shell for Windows. Later you can come back and change things the way you want. Alacritty configuration is covered in depth in the book <a href="https://rwxrob.github.com/books/terminal-velocity"><em>Terminal Velocity</em></a>.</p>
-</div>
-</td>
-</tr>
-</table>
+<p><em>Coming soon&#8230;&#8203;</em></p>
 </div>
 <hr>
 </div>
 <div class="sect2">
-<h3 id="_install_the_go_compiler"><a class="link" href="#_install_the_go_compiler">Install the Go compiler</a></h3>
+<h3 id="_setup_neovim_editor"><a class="link" href="#_setup_neovim_editor">Setup Neovim editor</a></h3>
 <div class="paragraph">
-<p>Go, also known as Golang, is a modern, efficient programming language developed by Google. Designed to address the challenges of large-scale software development, Go emphasizes simplicity, concurrency, and performance. Its lightweight syntax and robust tooling make it an ideal choice for beginners and seasoned developers alike. Whether you&#8217;re building web servers, distributed systems, or command-line tools, Go&#8217;s powerful standard library and unparalleled speed can handle the task. Installing Go is your first step toward harnessing its capabilities to create scalable, maintainable, and lightning-fast applications.</p>
-</div>
-<div class="sect3">
-<h4 id="_mac_with_brew_2"><a class="link" href="#_mac_with_brew_2">Mac with brew</a></h4>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>go
-go<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_windows_with_winget_2"><a class="link" href="#_windows_with_winget_2">Windows with winget</a></h4>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>golang.go
-go<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_windows_with_apt"><a class="link" href="#_windows_with_apt">Windows with apt</a></h4>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>golang
-go<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>These installs with the package manager should be getting a bit easier at this point, which is good because you&#8217;ll be doing this all the time as a code mage and tech professional.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_install_code_mage_with_go"><a class="link" href="#_install_code_mage_with_go">Install Code-Mage with go</a></h3>
-<div class="paragraph">
-<p>Code-Mage is contained in the <code>cm</code> command. See the <a href="#cm-summary">summary</a> in the Preface for more about what it does. Unlike everything most everything else we&#8217;ve installed so far, we are going to use the <code>go</code> command itself to install the <code>cm</code> command directly from compiled source. This is the best way to install any Go project. It is the safest since the entire code of the project can be read by anyone to ensure there has been no tampering (as opposed to downloading some executable off the Internet). Plus you always get the latest unless you specify another specific version.</p>
-</div>
-<div class="paragraph">
-<p>After opening a terminal enter the following commands to install and then test it:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span><span class="tok-nv">GOPROXY</span><span class="tok-o">=</span>direct<span class="tok-w"> </span>go<span class="tok-w"> </span>install<span class="tok-w"> </span>github.com/rwxrob/code-mage/cmd/cm@latest
-cm<span class="tok-w"> </span><span class="tok-nb">help</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>This same command can be used any time to update to the latest version and works for installing any Go command as well. You will be doing it a lot to get the latest digital copy of this book and more.</p>
+<p><em>Coming soon&#8230;&#8203;</em></p>
 </div>
 <hr>
 </div>
 <div class="sect2">
-<h3 id="_configure_with_code_mage"><a class="link" href="#_configure_with_code_mage">Configure with Code-Mage</a></h3>
+<h3 id="_setup_go_development"><a class="link" href="#_setup_go_development">Setup Go development</a></h3>
 <div class="paragraph">
-<p>The Code-Mage Assistant, invoked through the <code>cm</code> command, is your magical companion for automating the setup and configuration of essential tools. Designed with efficiency and customization in mind, <code>cm</code> streamlines the process of configuring your development environment, saving you hours of additional unnecessary learning (at this time). With a single command, you can initialize and configure <strong>bash</strong>, <strong>vim</strong>, <strong>alacritty</strong>, and <strong>tmux</strong>, ensuring your system is ready for productive coding.</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>To get coding as soon as possible, just run <code>cm init</code> and answer the prompts. The rest of this section just talks about what it does.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Even though <code>cm init</code> prompts for confirmation it is a destructive command and permanently changes the configuration of the system it is run on. <em><strong>Do not run it on a system that you do not own.</strong></em> The scope of changes is limited to the current user so it will not affect other users on the same system, but still be cautious to ensure you are not destroying customizations someone else may have already made to that account. Two people should generally not share the same OS system account, but be sure that is the case.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_bash_configuration"><a class="link" href="#_bash_configuration">Bash configuration</a></h4>
-<div class="paragraph">
-<p>The <code>cm</code> command optimizes your shell experience by:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Replacing <code>.bashrc</code> file with a better one aliases, functions, and environment variables tailored for productivity.</p>
-</li>
-<li>
-<p>Enabling safer scripting defaults.</p>
-</li>
-<li>
-<p>Adding useful aliases, such as <code>vi</code> that intelligently detects if you have <code>vim</code> or <code>nvim</code> installed and progressively enhances your experience.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>After running <code>cm init bash</code>, you’ll have a bash environment configured for speed and reliability.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_vim_configuration"><a class="link" href="#_vim_configuration">Vim configuration</a></h4>
-<div class="paragraph">
-<p>For text editing, <code>cm</code> ensures your Vim configuration is both powerful and beginner-friendly:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Installs a curated <code>.vimrc</code> file, complete with syntax highlighting <code>vim-go</code> plugin, automatic completion and code formatting on save, dynamic bug display, better file-type detection, and more.</p>
-</li>
-<li>
-<p>Adds the <strong>gruvbox-material</strong> color scheme for a visually pleasing coding experience.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Running <code>cm init vim</code> gives you a fully-featured Vim setup, ready for serious coding.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_alacritty_configuration"><a class="link" href="#_alacritty_configuration">Alacritty configuration</a></h4>
-<div class="paragraph">
-<p>The <code>cm</code> command configures the GPU-accelerated <strong>Alacritty</strong> terminal for optimal performance. It:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Creates an <code>~/.config/alacritty.toml</code> file with settings for font size, colors and bash default shell.</p>
-</li>
-<li>
-<p>Applies the <strong>gruvbox-material</strong> theme for consistency across your tools.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Execute <code>cm init alacritty</code> to enjoy a modern, high-performance terminal emulator.</p>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_install_git_source_control"><a class="link" href="#_install_git_source_control">Install git source control</a></h3>
-<div class="paragraph">
-<p>Learning Git is like mastering the foundational magic of version control in your journey as a Code Mage. It’s where you create spellbooks (repos) that allows you to track, manage, and safeguard every incantation of your code, ensuring you never lose your progress or stumble through chaos when experiments go awry. With Git, you wield the power to create branches of reality—parallel timelines for your projects—where you can safely test new ideas or collaborate seamlessly with other mages in your guild. Its mastery unlocks the ability to contribute to the vast repositories of knowledge shared across the coding world, making it an essential tool for any mage seeking to craft impactful spells and collaborate on grand endeavors.</p>
-</div>
-<div class="sect3">
-<h4 id="_mac_with_brew_3"><a class="link" href="#_mac_with_brew_3">Mac with brew</a></h4>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>git
-git<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_windows_with_winget_3"><a class="link" href="#_windows_with_winget_3">Windows with winget</a></h4>
-<div class="paragraph">
-<p>The <code>git</code> command was installed with Git Bash.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>git<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_linux_with_apt_2"><a class="link" href="#_linux_with_apt_2">Linux with apt</a></h4>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>git
-git<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Don&#8217;t worry about learning git right now. We&#8217;ll go over it after we have written some code to save.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_install_github_cli_tool"><a class="link" href="#_install_github_cli_tool">Install GitHub CLI tool</a></h3>
-<div class="paragraph">
-<p>The gh command-line tool is the enchanted oracle of the GitHub realm, empowering a Code Mage to summon, interact with, and manage repositories directly from their terminal sanctum. With gh, you don’t just push and pull code—you weave GitHub’s collaborative magic into your workflow, creating pull requests, reviewing code, and managing issues as effortlessly as casting a spell. It bridges the gap between your local workspace and the expansive GitHub cosmos, giving you the power to navigate repositories, explore contributors’ archives, and orchestrate contributions without ever breaking your focus. For the Code Mage seeking to unlock the full potential of GitHub’s collaborative incantations, gh is an indispensable artifact.</p>
-</div>
-<div class="sect3">
-<h4 id="_mac_with_brew_4"><a class="link" href="#_mac_with_brew_4">Mac with brew</a></h4>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>gh
-gh<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_windows_with_winget_4"><a class="link" href="#_windows_with_winget_4">Windows with winget</a></h4>
-<div class="paragraph">
-<p>The <code>git</code> command was installed with Git Bash.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>github.cli
-gh<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_linux_with_apt_3"><a class="link" href="#_linux_with_apt_3">Linux with apt</a></h4>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>gh
-gh<span class="tok-w"> </span>version</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Don&#8217;t worry about logging in or anything with gh just yet. We will do that when we create our first repo to contain our codebook using it.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_login_to_github"><a class="link" href="#_login_to_github">Login to GitHub</a></h3>
-<div class="paragraph">
-<p>When using the <code>gh</code> CLI tool for the first time, connecting it to your GitHub account is a necessary step. The process ensures that you can seamlessly interact with GitHub repositories, issues, pull requests, and other features from the terminal.</p>
-</div>
-<div class="sect3">
-<h4 id="_start_the_login_process"><a class="link" href="#_start_the_login_process">Start the login process</a></h4>
-<div class="paragraph">
-<p>Open your terminal and run the <code>gh auth login</code> command. This initiates the authentication process and will guide you through selecting a preferred authentication method.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_choose_web_browser_authentication"><a class="link" href="#_choose_web_browser_authentication">Choose web browser authentication</a></h4>
-<div class="paragraph">
-<p>The CLI will ask whether you want to authenticate via a web browser or by using a personal access token. Choose the web browser method since it is a quicker, interactive login experience.</p>
-</div>
-<div class="paragraph">
-<p><code>gh</code> will provide you with a URL and a one-time code. Open the URL in your browser and cut and paste or just enter the provided code. After entering the code, you will be prompted to authorize the GitHub CLI to access your account. Follow the on-screen instructions to complete the process.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_verify_successful_authentication"><a class="link" href="#_verify_successful_authentication">Verify successful authentication</a></h3>
-<div class="paragraph">
-<p>Once the login process completes, the CLI will confirm that you’ve authenticated successfully. You can verify this by running a test command, such as <code>gh repo list</code>, to see your repositories. You should see something like the following:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code><span></span>There are no repositories in @YOU</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Now we can proceed to create our first repo.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="learn-shell"><a class="link" href="#learn-shell">Learn basic shell commands</a></h3>
-<div class="paragraph">
-<p><em>Coming soon &#8230;&#8203;</em></p>
+<p><em>Coming soon&#8230;&#8203;</em></p>
 </div>
 <hr>
 </div>
 <div class="sect2">
-<h3 id="learnvim"><a class="link" href="#learnvim">Why Learn Vim First?</a></h3>
+<h3 id="_setup_git_and_github"><a class="link" href="#_setup_git_and_github">Setup Git and GitHub</a></h3>
 <div class="paragraph">
-<p>When it comes to mastering text editing, choosing the right starting point can have a profound impact on your efficiency, understanding, and future flexibility as a developer or technical professional. Among the myriad of editors available, learning Vim first offers unique advantages that extend well beyond mere productivity.</p>
-</div>
-<div class="sect3">
-<h4 id="_the_foundation_of_universal_spells"><a class="link" href="#_the_foundation_of_universal_spells">The foundation of universal spells</a></h4>
-<div class="paragraph">
-<p>Vim’s modal editing and command structure teach you to think about editing as a sequence of spells—each with its own incantation. By separating navigation, insertion, and manipulation of text, Vim:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Builds Enduring Muscle Memory</strong>: The keystrokes you master with Vim transfer seamlessly to any Vim-compatible sanctum, whether it’s a terminal, an IDE, or a remote server.</p>
-</li>
-<li>
-<p><strong>Fosters Precision</strong>: The deliberate nature of Vim commands ensures that every action is intentional, reducing errors and enabling swift corrections.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>This foundational knowledge is akin to learning universal spells that can be adapted and extended in other arcane editing environments.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_a_mages_constant_companion"><a class="link" href="#_a_mages_constant_companion">A Mage’s Constant Companion</a></h4>
-<div class="paragraph">
-<p>Vim’s ubiquity makes it the ideal companion for any Code Mage on their journey:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Always at Hand</strong>: Whether on a freshly conjured Linux server, a Mac, or a Windows portal with POSIX support, Vim is there, ready to serve.</p>
-</li>
-<li>
-<p><strong>The Standard for Remote Crafting</strong>: When you need to edit code or manage systems via SSH, Vim becomes your wand of choice.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Learning Vim equips you with a spellbook that works across realms without the need for additional rituals or installations.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_efficiency_through_pure_incantation"><a class="link" href="#_efficiency_through_pure_incantation">Efficiency Through Pure Incantation</a></h4>
-<div class="paragraph">
-<p>Vim’s philosophy of "hands on the keyboard, mind in the code" transforms how you interact with text:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Unparalleled Speed</strong>: Vim’s keystrokes allow you to navigate and manipulate text faster than the most dexterous mouse movements.</p>
-</li>
-<li>
-<p><strong>Endless Customizability</strong>: Vim’s configuration and plugin ecosystem are like crafting your own magical artifacts, tailored to your unique style of coding.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>While other editors may mimic Vim’s keybindings, they cannot replicate the depth of its arcane mastery.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_a_gateway_to_mastery_of_the_arcane"><a class="link" href="#_a_gateway_to_mastery_of_the_arcane">A Gateway to Mastery of the Arcane</a></h4>
-<div class="paragraph">
-<p>Learning Vim opens doors to understanding deeper magical concepts in text editing and beyond:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Command-Line Sorcery</strong>: Many Vim commands mirror the syntax and power of shell tools like <code>grep</code>, <code>sed</code>, and <code>awk</code>, preparing you for advanced terminal magic.</p>
-</li>
-<li>
-<p><strong>Mental Discipline</strong>: Vim trains you to approach challenges systematically, much like designing a spell with repeatable components.</p>
-</li>
-<li>
-<p><strong>Infinite Growth</strong>: As your skills grow, Vim’s extensibility allows you to weave it into your own systems and workflows.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_free_from_ecosystem_enchantments"><a class="link" href="#_free_from_ecosystem_enchantments">Free from Ecosystem Enchantments</a></h4>
-<div class="paragraph">
-<p>While modern editors and IDEs offer convenience, they often bind their users to specific ecosystems:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Timeless Magic</strong>: With roots in the 1970s, Vim is a timeless spellbook that continues to evolve without succumbing to trends.</p>
-</li>
-<li>
-<p><strong>Skills That Transcend Realms</strong>: Mastering Vim ensures you are never reliant on a single ecosystem. You wield power that adapts to any environment.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_forged_in_the_fire_of_challenge"><a class="link" href="#_forged_in_the_fire_of_challenge">Forged in the Fire of Challenge</a></h4>
-<div class="paragraph">
-<p>Vim’s reputation for difficulty is a reflection of its transformative power:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Overcoming the Learning Curve</strong>: Mastering Vim’s intricacies builds resilience and problem-solving skills.</p>
-</li>
-<li>
-<p><strong>Confidence in Complexity</strong>: After learning Vim, other tools will seem intuitive by comparison, and you will approach new challenges with the confidence of a seasoned mage.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_conclusion"><a class="link" href="#_conclusion">Conclusion</a></h4>
-<div class="paragraph">
-<p>Vim is more than an editor; it is the cornerstone of a Code Mage’s training. By learning Vim first, you gain access to a timeless spellbook of efficiency, adaptability, and precision. The skills you develop with Vim will serve you across realms, ensuring you are always prepared to wield your craft, no matter where your journey takes you. For the aspiring Code Mage, there is no better place to start.</p>
+<p><em>Coming soon&#8230;&#8203;</em></p>
 </div>
 <hr>
 </div>
-</div>
 <div class="sect2">
-<h3 id="_start_taking_notes"><a class="link" href="#_start_taking_notes">Start taking notes</a></h3>
+<h3 id="_take_notes_in_markdown"><a class="link" href="#_take_notes_in_markdown">Take notes in Markdown</a></h3>
 <div class="paragraph">
 <p>In the journey of learning, problem-solving, and creating, taking notes is as important as casting spells to preserve fleeting thoughts. Whether you use a sophisticated digital tool (like GitHub or Obsidian) or a simple piece of paper, the act of note-taking is a powerful practice that unlocks clarity, reinforces memory, and fosters creativity.</p>
 </div>
@@ -2650,7 +1708,7 @@ gh<span class="tok-w"> </span>version</code></pre>
 <p><strong>Separators</strong></p>
 </div>
 <div class="paragraph">
-<p>Also called "horizontal rule" using three or more dashes (<code>----</code>), or tildes (<code>~~~~</code>) (but preferably use exactly four to easily find them).</p>
+<p>Also called "horizontal rule" using three or more dashes (<code>—-</code>), or tildes (<code>~~~~</code>) (but preferably use exactly four to easily find them).</p>
 </div>
 <hr>
 <div class="paragraph">
@@ -2662,7 +1720,7 @@ gh<span class="tok-w"> </span>version</code></pre>
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="markdown"><span></span>| Header 1 | Header 2 |
-|----------|----------|
+|———-|———-|
 | Row 1    | Data     |
 | Row 2    | More     |</code></pre>
 </div>

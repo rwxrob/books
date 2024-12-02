@@ -1,8 +1,17 @@
 == Who should read this book
 
-This book is written for anyone wanting to learn—or help someone learn—practical computer science and programming for real applications development and come away with a project or two that proves you can be trusted for your programming skills. While we have fun with the whole fantasy magic theme, everything in this book is very real and might even get you a job someday. It is true that this book can be reliably used as a text book for absolute beginners with enough algebra to understand what a mathematical function is but this book very clearly includes everyone _outside_ of educational institutions. In fact, I wrote it mostly with pro-active parents in mind who want to give their kids a head-start in tech that they simply cannot find in most traditional education systems, the same reason, in fact, that I started SKILSTAK Coding Arts in 2013 with my own retirement money.
+Please don't take this the wrong way: this book was written for 12-year-olds, the type who want to learn to code like a hacker in the terminal. But if that isn't you, you still could learn something. Bar tenders, homemakers,  grandparents. I've helped them all in the same silly way.
 
-[NOTE]
-====
-This book is but one part of a more complete Computer Science education breakfast. If you truly want a handle on what "programming" means and a comparative examination of different paradigms, languages, and in-depth computer science concepts then something like Harvard's free CS50 might be a better first introduction. This book covers just enough of that to understand it generally but focuses deeply on one specific language to produce actual, usable software by the end. The main difference between these approaches is what you _get_ at the end. With CS50 you get understanding, which is important. With this book you get one or two apps you can showcase to demonstrate your employable skills. You decide which is best for you based on your goals.
-====
+The whole fantasy magic theme is fun, right? I hope you like it. It you don't that's fine. No judgement. It's actually for a very good reason: to fool your brain into remembering it even when your brain doesn't want to (the same way people memorize the number Pi to 100,000 digits, Google it). The fact is everything in this book is very real and might even get you a job someday. _Winks at mom._
+
+== Dear parents and pedagogues
+
+Here, let me just talk to the parents and pedagogues for a second. It'll be easier. Skip this part if it bores you. It's all good.
+
+While it is true that this book can be thought of as a text book for absolute beginners with enough algebra to understand what a mathematical function is, the book is very clearly written to include everyone _outside_ of educational institutions. In fact, I wrote it mostly with pro-active parents in mind who want to give their kids a head-start in tech.
+
+It is virtually impossible to find this sort of thing in most traditional education systems. AP Computer Science? Please. They still teach that Java inheritance is a _good_ thing. In that, that's the very reason, I started SKILSTAK Coding Arts in 2013 with my own retirement money. To address the _real_ needs of the coding industry and those who might consider it as a career. About 1000 launched young techies later and here I am writing all this down for the next 1000, maybe more.
+
+I have to talk about some success I've had. I really have helped a lot of people get started in tech, like a _lot_. One of them quit his grocery clerk job to write code for a solar energy company and had his own intern at 16. Another couldn't get a job with a psychology degree so he learned this stuff and got a starting salary over $100,000. Another drove 40 minutes both ways just to attend our sessions for _four years_ and went on to create an entire coding club at her rural school.
+
+The point is, these stories don't have to be about someone else. They can be about _you_ or someone you know and care about. Coding really does change lives and I'm here to help.

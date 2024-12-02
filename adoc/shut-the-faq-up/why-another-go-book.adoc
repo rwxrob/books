@@ -1,4 +1,4 @@
-== Why another Go book?
+= Why another Go book?
 
 I've spend several hundred dollars on Go books, always wanting to find one I could just use and recommend to absolute beginners—who have not only never coded before—but didn't know the word "code" could be used as a verb, the type of beginner who thinks "print" involves a printing press or things that run out of toner, those who have never heard the words "Linux" or "GitHub" before in their lives, who think a "terminal" is something to run through at the airport when they are late for a flight. "Go, do you mean like Okay Go, that band from 90s?" These wonderfully clueless people have absolutely zero tech background and never regretted it, until now. Now, for whatever reason, they want to learn to code and, you guessed it, they cannot find a single book out there written for _them_.
 

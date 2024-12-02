@@ -1,9 +1,0 @@
-> Learning happens in the lab, not the lecture hall.
-
-You are probably anxious to get coding, but first, you need to prepare your learning lab and master some prerequisite skills. For most people, this takes an hour or two.
-
-[CAUTION]
-====
-Now is not the time to get distracted. Don't bog yourself down trying to learn everything there is to know about bash, Linux, vim, tmux, and more. Wax on. Wax off. Focus on the fundamentals. The Karate will come later. So many people get caught up in endless hours online trying to find the absolute best possible terminal, colors and configuration. You could fight endlessly with people about the best editor, Linux distribution, first programming language, or color scheme. You could defend your decision to use your preferred operating system. Don't! If you want to waste time "bike shedding" you personal development environment later you can—and who doesn't love that—just not right now. You have a few very important things to do before you start learning to code. So get to it.
-====
-

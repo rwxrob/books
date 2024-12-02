@@ -31,18 +31,7 @@ GitHub is one of the most powerful platforms for collaboration, code sharing, an
 No need to create a repo right now. We will do that in the following steps _from the command line_ when we start taking notes and writing our first code.
 ====
 
-**Follow some repos**: Star and follow a few project repos. Consider starting with the following:
-
-- https://github.com/rwxrob/books
-- https://github.com/rwxrob/code-mage
-- https://github.com/rwxrob/stream-talk
-- https://github.com/rwxrob/awesome-go
-- https://github.com/rwxrob/bonzai
-- https://github.com/rwxrob/rwxrob
-- https://github.com/rwxrob/skilstak
-- https://github.com/rwxrob/dot
-
-Who knows, perhaps soon you can contribute.
+**Follow some repos**: Star and follow a few project repos. Consider starting with some of mine at https://github.com/rwxrob.
 
 === Why GitHub now?
 

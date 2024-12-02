@@ -1,0 +1,4 @@
+== Setup Wezterm terminal
+
+To code you have to type text into a file. How that happens really doesn't matter. Some ways are just faster. Our school uses the terminal for everything. This is the way. Terminal interfaces date back to teletype machines but make no mistake, they aren't just for boomers. In fact, an entire younger generation is going crazy over the terminal like they just saw it for the first time, 'cuz they have. Projects like Neovim and Wezterm are examples of _new_ terminal applications giving TUI mages what they love. Before we code we have to set them up.
+

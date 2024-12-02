@@ -1,0 +1,3 @@
+== Setup bash shell
+
+_Coming soon..._

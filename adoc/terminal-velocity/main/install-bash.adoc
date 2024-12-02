@@ -28,7 +28,7 @@ Launch the `terminal` program as described earlier and then run the following:
 
 [source, shell]
 ----
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.bash)"
 ----
 
 Once brew is installed you can use it to update bash with the following command:

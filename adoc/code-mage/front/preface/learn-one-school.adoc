@@ -1,6 +1,6 @@
-== Dedication to one school
+== Don't bend fire and water, yet
 
-Mastery begins with focus. Whether you are stepping onto the mat of a martial arts dojo or opening your first terminal to learn the craft of coding, dedicating yourself to a single discipline lays the foundation for success. This commitment to one "school of magic" or art is a time-honored approach to learning—and it’s just as relevant for a Code Mage as it is for a martial artist.
+Very few mortals can be the Avatar. Most of us have dedicate ourselves to one school, at least at first. The same is true with coding.
 
 Commitment to a single school does not mean there is no value in others, or even that this school is better. Just that you are dedicated to this one at the moment. You would never walk into a Karate dojo and start talking about why Judo is a superior martial art. The masters of both dojos can even strongly respect the other for their commitment despite their different approaches. The master of the dojo need not justify why their form is better. That is up to the student to determine on their own after they have mastered the forms. A master and mentor, instead, focus uniquely on the advantages of the form they know and how to execute it.
 
@@ -11,3 +11,5 @@ By dedicating yourself to Go—especially in the terminal—you’re committing 
 Through this focused practice, you begin to see the "why" behind the techniques, and the lessons become part of your intuition.
 
 Once you have mastered the basics of a single discipline, you are prepared to branch out. A martial artist with a strong foundation in one style can explore others and integrate their techniques into a unique, personal expression. Similarly, a programmer fluent in Go can pick up new languages and tools with ease, applying the foundational skills they’ve gained.
+
+So dedicate yourself to _this_ practice right now (and don't look down on others in a different school). Later you multi-class or dual-wield.

@@ -1,4 +1,4 @@
-== Start taking notes
+== Take notes in Markdown
 
 In the journey of learning, problem-solving, and creating, taking notes is as important as casting spells to preserve fleeting thoughts. Whether you use a sophisticated digital tool (like GitHub or Obsidian) or a simple piece of paper, the act of note-taking is a powerful practice that unlocks clarity, reinforces memory, and fosters creativity.
 
@@ -182,7 +182,7 @@ Indent text with a `>` to create blockquotes. Keep paragraphs to a single long l
 
 **Separators**
 
-Also called "horizontal rule" using three or more dashes (`----`), or tildes (`~~~~`) (but preferably use exactly four to easily find them).
+Also called "horizontal rule" using three or more dashes (`—-`), or tildes (`~~~~`) (but preferably use exactly four to easily find them).
 
 ---
 
@@ -193,7 +193,7 @@ Create tables with pipes (`|`) and dashes:
 [source,markdown]
 ----
 | Header 1 | Header 2 |
-|----------|----------|
+|———-|———-|
 | Row 1    | Data     |
 | Row 2    | More     |
 ----

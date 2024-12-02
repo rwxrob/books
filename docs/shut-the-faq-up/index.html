@@ -575,6 +575,26 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_skills_issue">"Skills issue."</a></li>
 </ul>
 </li>
+<li><a href="#_why_not_alacritty">Why not Alacritty?</a>
+<ul class="sectlevel2">
+<li><a href="#_no_support_for_control">No support for <code>Control-[</code></a></li>
+<li><a href="#_frequent_unexplained_crashes">Frequent, unexplained crashes</a></li>
+<li><a href="#_toml_configuration">TOML configuration</a></li>
+<li><a href="#_impossibly_poor_emoji_support">Impossibly poor emoji support</a></li>
+<li><a href="#_failure_to_implement_all_ansi_terminal_escapes">Failure to implement all ANSI terminal escapes</a></li>
+<li><a href="#_no_italic_and_true_bold_support">No italic and true bold support</a></li>
+<li><a href="#_speed">Speed</a></li>
+</ul>
+</li>
+<li><a href="#why-not-toml">Why not TOML?</a>
+<ul class="sectlevel2">
+<li><a href="#_lack_of_real_tool_support">Lack of real tool support</a></li>
+<li><a href="#_still_has_significant_white_space">Still has significant white space</a></li>
+<li><a href="#_lack_of_adoption">Lack of adoption</a></li>
+<li><a href="#_arrogant_community">Arrogant community</a></li>
+</ul>
+</li>
+<li><a href="#_why_another_go_book">Why another Go book?</a></li>
 </ul>
 </div>
 </div>
@@ -1264,10 +1284,159 @@ _have<span class="tok-w"> </span>nvim<span class="tok-w"> </span><span class="to
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_why_not_alacritty"><a class="link" href="#_why_not_alacritty">Why not Alacritty?</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I loved Alacritty on Mac for years, but in 2024 it has fallen way behind and contains substantial, show-stopping bugs that make it absolutely unusable for me.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>I am so glad <a href="https://twitch.tv/s9tpepper_"><code>s9tpepper_</code></a> from Twitch shared with me why he prefers Wezterm (which has its own section now in <a href="https://rwxrob.github.io/books/terminal-velocity"><em>Terminal Velocity</em></a>. (Even that italic that I just wrote for that title showed up beautifully, as does actual bold fonts. Wezterm is just so superior to Alacritty there isn&#8217;t even a comparison at this point.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_no_support_for_control"><a class="link" href="#_no_support_for_control">No support for <code>Control-[</code></a></h3>
+<div class="paragraph">
+<p>While testing it on Windows I noticed a bunch of <code>[</code> showing up on the screen using the terminal the same was I have for more than 25 years. This turns out to be because Alacritty has a bug that does not observe the standard <code>Control-[</code> as <code>Esc</code>. If nothing else were wrong this would be enough for me to never use it again.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_frequent_unexplained_crashes"><a class="link" href="#_frequent_unexplained_crashes">Frequent, unexplained crashes</a></h3>
+<div class="paragraph">
+<p>Last week while working on this book and trying to standardize on Alacritty (eventually going with Wezterm instead). Alacritty crashed without explanation or error at least a dozen times. I wasn&#8217;t doing anything fancy. At least it was a good reminder why to write about tmux saving the day by being able to reattach after restarting.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_toml_configuration"><a class="link" href="#_toml_configuration">TOML configuration</a></h3>
+<div class="paragraph">
+<p>I absolutely hate that Alacritty <em>forces</em> me to use TOML for configuration for now good reason at all even though it quietly supports YAML still.</p>
+</div>
+<div class="paragraph">
+<p><em>(See <a href="#why-not-toml">Why Not TOML</a>.)</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_impossibly_poor_emoji_support"><a class="link" href="#_impossibly_poor_emoji_support">Impossibly poor emoji support</a></h3>
+<div class="paragraph">
+<p>Want to use your favorite emoji with the emoji picker on a Mac? Tough. Alacritty doesn&#8217;t support pasting them inline like every other terminal on the planet.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_failure_to_implement_all_ansi_terminal_escapes"><a class="link" href="#_failure_to_implement_all_ansi_terminal_escapes">Failure to implement all ANSI terminal escapes</a></h3>
+<div class="paragraph">
+<p>I abandoned Alacritty once already in 2021 when I realized that some of the terminal animation and coloring using popular ANSI escapes wasn&#8217;t supported. While I think that is supported now, the fact that it didn&#8217;t work and now <code>Control-[</code> isn&#8217;t supported suggests the team is not too keen on supporting the actual ANSI standards. All the other major terminals definitely do.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_no_italic_and_true_bold_support"><a class="link" href="#_no_italic_and_true_bold_support">No italic and true bold support</a></h3>
+<div class="paragraph">
+<p>I have waited most of my life for a proper terminal to support thin and think text in the same font. Alacritty doesn&#8217;t, most of the other modern ones do, including Windows Terminal Preview. That&#8217;s right, Windows Terminal Preview is <em>better</em> than Alacritty and every bit as fast.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_speed"><a class="link" href="#_speed">Speed</a></h3>
+<div class="paragraph">
+<p>It took using Wezterm for a day or two to realize just how much I was needlessly suffering with terminal display lag on Alacritty. With things like pop-up completion options and such that lag is noticeable and annoying. Such is simply not an issue in all the others. Alacritty can&#8217;t even compare and increasing speed on that level is not something Alacritty will ever be able to catch up with since it is a core implementation thing. They&#8217;d have to rewrite the entire engine.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="why-not-toml"><a class="link" href="#why-not-toml">Why not TOML?</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Even though I created the original TOML logo, I have come to loathe it for anything. So many are obsessed with it like I was in 2018, but I have come to realize just how horrible it is for anything substantial. In fact, I won&#8217;t hate on YAML at all anymore although my preferred way to configure anything these days is Lua. (Can you just imagine if Kubernetes resources had been implemented in Lua?)</p>
+</div>
+<div class="sect2">
+<h3 id="_lack_of_real_tool_support"><a class="link" href="#_lack_of_real_tool_support">Lack of real tool support</a></h3>
+<div class="paragraph">
+<p>TOML has no tools for dynamically altering it from a simple shell script like <code>yq</code> does for YAML. The <code>yq</code> tool will do some TOML in-place edits, but nothing fancy. I know a tool shouldn&#8217;t drive a structured data choice, but for me it does. Plus, can we just accept please that YAML has complete won at this point. (I cannot believe I liked TOML enough to make the logo. I really loathe it now.)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_still_has_significant_white_space"><a class="link" href="#_still_has_significant_white_space">Still has significant white space</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="_lack_of_adoption"><a class="link" href="#_lack_of_adoption">Lack of adoption</a></h3>
+<div class="paragraph">
+<p>TOML was big with the Rust people for a while and still remains required for Cargo files.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_arrogant_community"><a class="link" href="#_arrogant_community">Arrogant community</a></h3>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Maybe the Kubernetes project should change to TOML.</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_why_another_go_book"><a class="link" href="#_why_another_go_book">Why another Go book?</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I&#8217;ve spend several hundred dollars on Go books, always wanting to find one I could just use and recommend to absolute beginners—who have not only never coded before—but didn&#8217;t know the word "code" could be used as a verb, the type of beginner who thinks "print" involves a printing press or things that run out of toner, those who have never heard the words "Linux" or "GitHub" before in their lives, who think a "terminal" is something to run through at the airport when they are late for a flight. "Go, do you mean like Okay Go, that band from 90s?" These wonderfully clueless people have absolutely zero tech background and never regretted it, until now. Now, for whatever reason, they want to learn to code and, you guessed it, they cannot find a single book out there written for <em>them</em>.</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;ve been a nerd and a geek my entire life and have the photos to prove it (look up the difference). It turns out, I also have a gift for linguistics that includes speaking fluent Russian, French, Creole and English but also translating techno-babble into comprehensive prose and conversation in order to help <em>anyone</em> to discover how to learn <em>anything</em> in their own way. Since starting SKILSTAK Coding Arts in 2013 and learning and teaching Go in 2014 (when TJ Hallowaychuk famously wrote <a href="https://medium.com/@tjholowaychuk/farewell-node-js-4ba9e7f3e52b">Farewell to Node</a>) I have noticed all Go books suffer from one or more of the following annoyances:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Incorrect or out of date material</p>
+</li>
+<li>
+<p>Avoid real, practical applications</p>
+</li>
+<li>
+<p>Shun the terminal, except to compile</p>
+</li>
+<li>
+<p>Assume "some programming" already, usually C</p>
+</li>
+<li>
+<p>Lack a free and supportive learning community</p>
+</li>
+<li>
+<p>Take themselves too seriously to be memorable or fun</p>
+</li>
+<li>
+<p>Ignore how to setup a personal development environment</p>
+</li>
+<li>
+<p>Pick poor project ideas that are too big and easily forgotten</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Most of these books have some sort of dependency on the Internet to get the accompanying code, but none have any kind of downloadable personal learning assistant app, like the one I developed in Go for this book: Code-Mage.</p>
+</div>
+<div class="paragraph">
+<p>At the risk of sounding too negative, I&#8217;ll describe the straw that broke my back. I bought a $40 book to learn about generics that turned out to not cover generics at all—but even worse—contained an entire chapter <em>claiming</em> to teach generics that contained a vague proposition for generics that was never adopted by the language. This author and publisher rushed their book out based on false information confusing me and potentially thousands of others. Then they charged another $40 for a "new edition" of the same book without even attempting to give anyone back the money they wasted for the first book. I lost hundreds in premium time wasted. You can probably guess the book, author, and publisher, which is notorious for this kind of fraudulent cash-grab.</p>
+</div>
+<div class="paragraph">
+<p>Needless to say, I was furious. Most books are written by great people who have put a lot of time and energy into them. At worse they are annoying in their imperfections. But this blatant "screw you, give us your money" made me mad enough to follow my own mantra: <em>don&#8217;t get mad, get busy</em>. I started thinking about what I would put into a book based on what I <em>knew</em> hundreds of absolutely non-technical people I had helped to learn Go as a first language would want, and now you are reading it.</p>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-11-29 23:31:11 -0500
+Last updated 2024-12-02 05:11:12 -0500
 </div>
 </div>
 </body>
