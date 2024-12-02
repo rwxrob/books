@@ -58,3 +58,4 @@ include::why-not-toml.adoc[]
 
 include::why-another-go-book.adoc[]
 
+include::why-asciidoc-not-mkdocs.adoc[]
