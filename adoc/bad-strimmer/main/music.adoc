@@ -1,0 +1,25 @@
+== Music
+
+I have learned through a lot of experience that music and live streaming usually do not mix. When they do, focusing on the music is key. Here me out. Music shows up on several different types of livestreams:
+
+- DJ/Music category where the music is the reason for being there
+- Audience participation where chat picks music
+- Music while gaming or doing something else while talking
+- Music in background, no talking, coworking
+- Music is the only thing on the stream, Chillhop, etc.
+
+=== Good music is always best
+
+I hate free music. I'm a music snob. Free music is generally really horrible. But to play the good stuff you really cannot stream to YouTube. I learned that lesson really quickly with a strike and several times that they shut my stream down in the middle of the stream. Only YouTube does that. Twitch never does. In fact, Twitch altered their DJ category to automatically disable VODs. They support good, live music. YouTube does not. But if you dual stream, as you would for most everything except DJ/Music streams, then you simple cannot.
+
+== People don't like your music taste
+
+I cannot say how many times someone has been doing something amazing that I wanted to stay and watch but was completely unable to withstand their absolutely bad taste in music. It got to the point where the frustration bubbled over into resentment and my impression of them as a human. There's no need for that in most streams. It isn't unlike talking about politics or religion in a tech stream (which I've also done). Your music has no place there, unless you want to dictate to the least offensive music taste. Then your livestream because a Twitch purple version of Musak.
+
+== Demonitized VODs
+
+Nothing screams noob streamer like some who thinks that just because you have copyright free music in your VOD that it won't be demonetized. All it takes is one video with copyright free music in it to be monetized for that entire group of copyright free music to no longer be worth using. I've been burned by this so many times I cannot count. I played shitty, bad free music and still got demonetized because another streamer or YouTuber did the same. This is a fundamental problem with the entire music thing on YouTube and it _can never be fixed_. The only way to have a prayer of hope is to just keep the music out of the videos completely, even the "free" stuff.
+
+== "What, I cannot hear you over your bad music?"
+
+If people cannot turn your music off because you are talking and they have to listen to you. And your sound balances are probably not going to be the same for everyone. Even if you successfully manage to get the volume in your ears the way you want it and a standard volume for everyone on stream, people on the stream will have different sensitivities to the mixture of music and voice if you try to talk. I cannot count how many times someone told me to turn the music down. And what's worse, by routing the music and voice mix through a sound board (as you should) you are fundamentally mixing the music and voice together so you lose all possibility of setting up track 2 VOD so that music doesn't appear in the VOD. It's better to play DJ and focus on the music on occasion, with no VODs, than to try to produce VOD-able content for YouTube with music in the background.

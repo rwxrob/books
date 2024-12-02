@@ -7,3 +7,5 @@ include::comments.adoc[]
 include::do-it-now.adoc[]
 
 include::4th-wall.adoc[]
+
+include::music.adoc[]
