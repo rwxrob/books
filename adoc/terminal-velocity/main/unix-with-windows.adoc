@@ -1,0 +1,11 @@
+== Unix with Windows
+
+- Git Bash
+- MSYS2
+- Cygwin
+- WSL1
+- WSL2
+- Podman
+- VirtualBox
+- VMWare
+- Dual boot
