@@ -42,7 +42,7 @@ Once brew is installed you can use it to update bash with the following command:
 brew install bash
 ----
 
-Unfortunately, Apple makes it hard to set this new bash shell as the default. Here's how. Enter each of these commands one at a time:
+Unfortunately, Apple makes it hard to set this new bash shell as the default. Here's how. Enter the two following commands, one to a line. The first line has a pipe (`|`) operator in it, but it is still a single line.
 
 [source, shell]
 ----
@@ -50,7 +50,7 @@ echo "$(brew --prefix)/bin/bash" | sudo tee -a /etc/shells
 chsh -s "$(brew --prefix)/bin/bash"
 ----
 
-After you install WezTerm it will use the new bash shell. For now just do `exec bash -l` to start using the new bash in the same terminal window.
+Later, after you install WezTerm, your new terminal will use the new bash shell. For now just do `exec bash -l` to start using the new bash in the same terminal window you started for this step.
 
 [NOTE]
 ====
