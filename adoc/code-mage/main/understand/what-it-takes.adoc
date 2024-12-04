@@ -50,5 +50,3 @@ Becoming a Code Mage is a journey open to all ages. Whether you are a young appr
 === Are you ready to begin?
 
 Becoming a Code Mage is not about perfection; it’s about embracing the journey. If you’re ready to cultivate these attributes and immerse yourself in the magical world of code, you already have what it takes to start. The path ahead may be challenging, but the rewards are boundless. The realm of coding awaits—will you answer the call?
-
----

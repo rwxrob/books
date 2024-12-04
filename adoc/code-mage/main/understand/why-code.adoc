@@ -29,5 +29,3 @@ Learning to code connects you with a vibrant and supportive global community of 
 === Start your journey today
 
 Learning to code is not just about mastering a skill—it’s about gaining the confidence to explore, experiment, and innovate in a world driven by technology. No matter your background or goals, coding has something to offer. The journey may have its challenges, but the rewards are immense. So take the first step—your adventure in coding awaits!
-
----

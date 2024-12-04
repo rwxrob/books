@@ -1,0 +1,26 @@
+== Install GitHub CLI tool
+
+The gh command-line tool is the enchanted oracle of the GitHub realm, empowering a Code Mage to summon, interact with, and manage repositories directly from their terminal sanctum. With gh, you don’t just push and pull code—you weave GitHub’s collaborative magic into your workflow, creating pull requests, reviewing code, and managing issues as effortlessly as casting a spell. It bridges the gap between your local workspace and the expansive GitHub cosmos, giving you the power to navigate repositories, explore contributors’ archives, and orchestrate contributions without ever breaking your focus. For the Code Mage seeking to unlock the full potential of GitHub’s collaborative incantations, gh is an indispensable artifact.
+
+=== Mac with brew
+
+[source,shell]
+----
+brew install gh
+----
+
+=== Windows with winget
+
+The `git` command was installed with Git Bash.
+
+[source,shell]
+----
+winget install --id github.cli
+----
+
+=== Linux with apt
+
+[source,shell]
+----
+sudo apt install gh
+----

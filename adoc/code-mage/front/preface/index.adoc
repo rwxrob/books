@@ -2,9 +2,7 @@
 [preface]
 = Preface
 
-Welcome to my coding book! That's right. I'm writing to you in the first-person (think Deadpool). This feels like we are working on this stuff together, right? If that's not your thing at least now you know.
-
-The truth is this book came from years of working directly with people just like you in person. Obviously, you and I couldn't work together _right now_ so here we are, maybe one day. Until then, you can find me livestreaming most days on Twitch and YouTube (https://linktr.ee/rwxrob). Fair warning, it gets pretty crazy, but no unicorns, _I swear_.
+include::welcome.adoc[]
 
 include::who-should-read.adoc[]
 

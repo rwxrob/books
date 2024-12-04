@@ -1,34 +1,34 @@
 = Prepare to code
 
-> Learning happens in the lab, not the lecture hall.
+Learning happens in the lab, not the lecture hall. You can't make spells or swords without a lab or forge. So let's make one. Here's what we'll need:
 
-You can't make spells or swords without a lab or forge. Let's make one. What will our lab have in it?
-
-- Computer
-- Phone
-- Email account
-- GitHub account
-- Dotfiles repo
-- Wezterm terminal
 - Bash command shell
+- GitHub account
+- Dotfiles configuration
+- Wezterm terminal
 - Neovim editor
 - Go programming language
 - Markdown for notes
-- Git source control
+- Git for saving and sharing
 
-include::computer.adoc[]
+[CAUTION]
+====
+You don't need more than this. Avoid the temptation to customize everything for now. You'll have plenty of time to do that later.
+====
 
----
-
-include::phone.adoc[]
-
----
-
-include::email.adoc[]
+include::bash.adoc[]
 
 ---
 
 include::github.adoc[]
+
+---
+
+include::github-cli.adoc[]
+
+---
+
+include::github-login.adoc[]
 
 ---
 
@@ -40,10 +40,6 @@ include::wezterm.adoc[]
 
 ---
 
-include::bash.adoc[]
-
----
-
 include::neovim.adoc[]
 
 ---
@@ -52,9 +48,9 @@ include::golang.adoc[]
 
 ---
 
-include::git.adoc[]
+include::markdown.adoc[]
 
 ---
 
-include::markdown.adoc[]
+include::git.adoc[]
 

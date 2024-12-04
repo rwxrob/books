@@ -1,28 +1,42 @@
-== Start dotfiles repo
+== Create first dotfiles
 
-Dotfiles are the configuration files that control how your tools, terminal, and environment behave. Named for the leading dot (`.`) in their filenames (e.g., `.bashrc`, `.vimrc`, `.gitconfig`), these files are typically hidden by default and live in your home directory. Despite their unassuming appearance, dotfiles are the foundation of a personalized and productive developer environment.
+Dotfiles are the configuration files that control how your tools, terminal, and environment behave. Named for the leading dot (`.`) in their filenames (e.g., `.bashrc`, `.vimrc`, `.wezterm.lua`), these files are typically hidden by default and live in your home directory. Despite their unassuming appearance, dotfiles are the foundation of a personalized and productive developer environment.
 
 For a beginner, setting up and maintaining dotfiles may feel like an extra step, but they quickly become invaluable as you learn to code. They allow you to customize everything from your shell prompt and editor behavior to your keyboard shortcuts and even how your terminal looks. By learning how to manage dotfiles early, you’re effectively creating a “magic spellbook” for your development workflow, tailoring tools to fit your needs and improving your efficiency. Dotfiles are portable, meaning you can transfer them to other machines or share them with others, ensuring your familiar setup follows you wherever you go.
 
 But dotfiles aren’t just about convenience; they’re also an excellent learning tool. Editing dotfiles encourages you to explore how the underlying systems work, demystifying the tools you use daily. Whether you’re adding an alias to simplify a command, setting up Git to streamline your commits, or configuring Vim to make editing code faster, dotfiles are the first step toward mastering your environment. Starting early with dotfiles not only helps you work smarter but also lays the foundation for a deep understanding of the tools you’ll use throughout your coding journey.
 
-=== Borrow mine
+[NOTE]
+====
+Everyone copies at first. I did. In fact, I don't think I fully understood everything in the dotfiles for 20 years. There are literally https://github.com/search?q=dotfiles&type=repositories[1000s of dotfiles repos on GitHub]. These are just customized for this book and almost exact copies of what I use on the job—including on my livestreams. You have the rest of your life to spent making them just right. Careful. It's very addicting.
+====
 
-It's common when getting started to copy someone else's dotfiles. I did. In fact, I don't think I fully understood everything in the dotfiles I had copied in the 90s until 2020—especially my `.vimrc`. Here's how to create your own copy that you can then change and maintain yourself:
+Open a terminal and type the following command. I'm using the long form of all the options so they are easy to remember:
 
-**Fork another repo**: There are 1000s of dotfiles repos on GitHub, for now you can just start with my simple one that I made for this book. Don't worry. You'll have plenty of opportunity to customize it later.
+[source, shell]
+----
+gh repo create dot --template rwxrob/dot-template --clone --private
+----
 
-1. Open `https://github.com/rwxrob/dot-template`.
-2. Click on `Use this template` green button.
-3. Select `Create a new repository`.
-4. Fill in `Repository name` with `dot` or `dotfiles`
-5. Choose `Public` or `Private`
-6. Click `Create Repository`
+- `dot` is the name of your repo to be created (`dotfiles` also fine)
+- `--template rwxrob/dot-template` means to copy those starting files
+- `--clone` means to pull down a clone to your computer
+- `--private` means to make it so no one can see them
 
-You now have your own copy.
+You can always make your dotfiles public when you feel like you having something you want to share and show off. For now this just gets you started.
 
-**Download dotfiles repo**: Now to clone it to your computer and run it to set everything up:
+You'll see the status and a check mark or two and like magic you have your own dotfiles right in front of you. To see them use the following command to change into your new `dotfiles` directory and list the contents:
 
-1. Launch a terminal
+[source, shell]
+----
+cd dotfiles
+ls
+----
 
-_Coming soon..._
+You should see a bunch of files here including a `README.md` and a `setup` and they are likely in different colors indicating different types of files. You now have your own copy and you can customize and learn from. These belong to you. But don't experiment just yet.
+
+[CAUTION]
+====
+You might be tempted to run one of the commands in here right now but you might want to wait for the next section.
+====
+

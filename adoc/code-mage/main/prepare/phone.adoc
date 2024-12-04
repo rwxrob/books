@@ -1,3 +1,0 @@
-== Bring your phone
-
-A phone or a tablet is a great tool to have around to lookup stuff on a quick reference site or app while coding on the laptop. Quick refs for both bash command line and vim usage are available for this book. Combining a phone with a laptop or workstation during development is particularly common when doing web and applications development so it's a good habit to get into now. It's also very common to use a phone for messaging and notifications while keeping the laptop or workstation focused on the terminal for development and free of on-screen notifications.

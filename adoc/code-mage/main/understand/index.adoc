@@ -4,8 +4,10 @@ Welcome to the magical world of coding! This book will help you learn programmin
 
 include::why-code.adoc[]
 
+---
+
 include::what-it-takes.adoc[]
 
-include::mage-life.adoc[]
+---
 
-include::why-go.adoc[]
+include::mage-life.adoc[]

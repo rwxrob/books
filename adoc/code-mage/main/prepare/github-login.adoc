@@ -1,0 +1,55 @@
+== Login to GitHub
+
+When wielding the tools of a Code Mage, having direct access to GitHub is essential for managing repositories, collaborating with others, and conjuring new spells of code. The **GitHub CLI (`gh`)** is a powerful artifact in your magical arsenal, and to harness its full potential, you must first authenticate yourself.
+
+Type the following command into the terminal followed by `Enter`:
+
+[source,shell]
+----
+gh auth login
+----
+
+This command initiates the authentication process, prompting you with several options.
+
+Select Github.com for _account_.
+
+Select HTTPS for _preferred protocol_.
+
+Type enter to accept _Authenticate Git with GitHub credentials_.
+
+Type enter to accept _Login with a web browser_.
+
+Copy or remember the _one-time_ code and press `Enter`.
+
+Your web browser should open automatically.
+
+[NOTE]
+====
+If your browser does not open automatically you can open it and go to `https://github.com/login/device` to do the same. By the way, this is one reason we used bash on the computer and not something else (like a virtual machine or container) that would not have been able to open the web browser.
+====
+
+Click _Continue_ if on web page.
+
+Paste or type in the _one-time_ code and click _Continue_.
+
+Review the permissions and grant access.
+
+Follow any remaining authentication steps you have setup (two-factor authentication, etc.)
+
+When the process is complete, the CLI will confirm that you are successfully logged in:
+
+[source]
+----
+Logged in as <your_username>
+----
+
+To ensure your login worked, try the following commands:
+
+[source, sh]
+----
+gh auth status
+gh repo list
+----
+
+If these commands return results without errors, your login is successful, and you’re ready to work your magic on GitHub!
+
