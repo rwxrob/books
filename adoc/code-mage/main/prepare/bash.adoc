@@ -15,7 +15,7 @@ winget install --id git.git
 
 This installs bash at `"C:\Program Files\Git\bin\bash.exe"`.
 
-Now close your `powershell` window and open a Git Bash one instead by tapping `Win` and typing `bash` into the search bar this time.
+Launch the new Git Bash terminal now by closing your `powershell` window and open a Git Bash one instead by tapping `Win` and typing `bash` into the search bar this time.
 
 You should see a terminal come up. You will probably want to increase the font size (`Control - +`) and stuff a bit but don't bother too much because we will be installing WezTerm later, a much better terminal program.
 
@@ -45,7 +45,7 @@ echo "$(brew --prefix)/bin/bash" | sudo tee -a /etc/shells
 chsh -s "$(brew --prefix)/bin/bash"
 ----
 
-After you install WezTerm it will use the new bash shell.
+After you install WezTerm it will use the new bash shell. For now just do `exec bash -l` to start using the new bash in the same terminal window.
 
 [NOTE]
 ====
