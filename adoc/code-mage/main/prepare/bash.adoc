@@ -57,6 +57,6 @@ Later, after you install WezTerm, your new terminal will use the new bash shell.
 FunFact: Homebrew is named after the meetup where Steve Jobs and Steve Wozniak met for the first time before they created Apple Computer company.
 ====
 
-=== Validate bash on Linux
+=== Linux already has bash
 
 Bash is pre-installed on most Linux distributions, as it is the default shell for many systems. All Linux distributions have a bash that is plenty new enough for everything we are going to do in this book.
