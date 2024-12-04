@@ -1,6 +1,6 @@
 == What's included in the book
 
-This book is about learning to code in Go from the terminal. First we have to understand what coding even is. Then we setup a terminal, install a magical text editor and Go for coding, and a find a place to save work so we don't lose it and can share it with others, even have them help write it. After that, the book becomes all about coding on small, silly stuff so you remember it later when you need it. This is the spells thing. Later we'll do some fancier stuff (without the magic metaphors) to help you come up with your own projects to work on that you can show off later.
+This book is about learning to code in Go from the terminal. First we have to understand what coding even is. Then we setup a terminal, install a magical text editor and Go for coding, and a finally a place to save work so we don't lose it and can share it with others, even have them help write it. After that, the book becomes all about coding on small, silly stuff so you remember it later when you need it. This is the spells thing. Later we'll do some fancier stuff (without the magic metaphors) to help you come up with your own projects to work on that you can show off later.
 
 === What's with the magic stuff?
 
