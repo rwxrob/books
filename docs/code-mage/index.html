@@ -515,16 +515,16 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </li>
 <li><a href="#_prepare_to_code">Prepare to code</a>
 <ul class="sectlevel2">
-<li><a href="#_setup_bash_shell">Setup bash shell</a></li>
+<li><a href="#_install_bash_shell">Install bash shell</a></li>
 <li><a href="#_create_a_github_account">Create a GitHub account</a></li>
 <li><a href="#_install_github_cli_tool">Install GitHub CLI tool</a></li>
 <li><a href="#_login_to_github">Login to GitHub</a></li>
 <li><a href="#_create_first_dotfiles">Create first dotfiles</a></li>
-<li><a href="#_setup_wezterm_terminal">Setup Wezterm terminal</a></li>
+<li><a href="#_setup_bash">Setup bash</a></li>
+<li><a href="#_setup_wezterm_terminal">Setup WezTerm terminal</a></li>
 <li><a href="#_setup_neovim_editor">Setup Neovim editor</a></li>
 <li><a href="#_setup_go_development">Setup Go development</a></li>
 <li><a href="#_take_notes_in_markdown">Take notes in Markdown</a></li>
-<li><a href="#_setup_git_and_github">Setup Git and GitHub</a></li>
 </ul>
 </li>
 <li><a href="#_learn_to_code">Learn to code</a>
@@ -1062,7 +1062,7 @@ While you are working on creating your own community, consider joining ours at <
 </table>
 </div>
 <div class="sect2">
-<h3 id="_setup_bash_shell"><a class="link" href="#_setup_bash_shell">Setup bash shell</a></h3>
+<h3 id="_install_bash_shell"><a class="link" href="#_install_bash_shell">Install bash shell</a></h3>
 <div class="paragraph">
 <p>The <strong>bash shell</strong> (short for Bourne Again Shell) is a versatile command-line interface available on most operating systems. It&#8217;s ubiquitous, powerful, and easy to use. Don&#8217;t worry too much about that that all means for now. We&#8217;ll talk more about it later. Let&#8217;s go get it.</p>
 </div>
@@ -1408,12 +1408,14 @@ ls</code></pre>
 <hr>
 </div>
 <div class="sect2">
-<h3 id="_setup_wezterm_terminal"><a class="link" href="#_setup_wezterm_terminal">Setup Wezterm terminal</a></h3>
+<h3 id="_setup_bash"><a class="link" href="#_setup_bash">Setup bash</a></h3>
 <div class="paragraph">
-<p>You&#8217;ve already been using a terminal, but now let&#8217;s get <em>the</em> terminal. Wezterm is the most amazing terminal I have ever used. You won&#8217;t understand all its full power now, but you will. Just know it is the fastest terminal on the planet, which matters whether it be lag while typing and waiting for hints to appear or just to do fun terminal animations. It&#8217;s got full support for emojis, italics, and millions of colors unlike other terminals. Plus it&#8217;s incredibly easy to adapt and configure and fully supported by an amazing team of volunteers (who are actually nice people). There&#8217;s really nothing like it.</p>
+<p>The <code>.bashrc</code> file is a hidden gem in the world of shell scripting and terminal wizardry. Found in your home directory, it serves as a a part of your spell book, automatically invoked each time you open a new bash shell session. This file lets you customize your shell environment by defining aliases, setting environment variables, and scripting commands to enhance your productivity. Whether you’re simplifying repetitive tasks or fine-tuning your terminal’s behavior, eventually mastering the <code>.bashrc</code> file is an essential step for any Code Mage who seeks to harness the full power of the Bash terminal.</p>
 </div>
+<div class="sect3">
+<h4 id="_bash_is_a_language"><a class="link" href="#_bash_is_a_language">Bash is a language</a></h4>
 <div class="paragraph">
-<p>When you did the <code>ls</code> command you probably saw a directory called <code>wezterm</code> and another called <code>install</code>. The <code>wezterm</code> directory is where your configuration setup lives, in the <code>wezterm/wezterm.lua</code> file specifically.</p>
+<p>Even though this book is mostly about Go, bash is actually a very real programming language, every command line is part of an ongoing program. In fact, put those same lines into a file and you have a <em>script</em>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1423,11 +1425,15 @@ ls</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Lua itself is a language that is used for configuration in this case. You might have heard about it from WoW or Roblox.</p>
+<p>Bash is serious. A lot of people have been paid a lot of money over the years doing nothing more than putting bash commands into "automation" and other scripts that are a part of bigger systems. Hackers regularly use scripts to get a lot of stuff done very quickly.</p>
 </div>
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p>When you did the <code>ls</code> command you probably saw a directory called <code>bash</code> and another called <code>install</code>. The <code>bash</code> directory is where your <code>.bashrc</code> configuration setup lives, in the <code>bash/bashrc</code> file specifically.</p>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_less_is_more"><a class="link" href="#_less_is_more">Less is more</a></h4>
@@ -1439,7 +1445,7 @@ ls</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>less<span class="tok-w"> </span>wezterm/wezterm.lua</code></pre>
+<pre class="pygments highlight"><code data-lang="sh"><span></span>less<span class="tok-w"> </span>bash/bashrc</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1453,7 +1459,8 @@ ls</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>man<span class="tok-w"> </span>ls</code></pre>
+<pre class="pygments highlight"><code data-lang="sh"><span></span>man<span class="tok-w"> </span>ls
+man<span class="tok-w"> </span>less</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1464,17 +1471,21 @@ ls</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_install"><a class="link" href="#_install">Install</a></h4>
+<h4 id="_check_setup_script"><a class="link" href="#_check_setup_script">Check setup script</a></h4>
 <div class="paragraph">
-<p>Time to install WezTerm in one simple command. Have a look at it with the following:</p>
+<p>It&#8217;s always a good idea to look into any script that you can before running it on your computer—especially one that makes as many substantial changes as these installers do.</p>
+</div>
+<div class="paragraph">
+<p>First let&#8217;s change into the <code>bash</code> directory and list its contents:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>ls<span class="tok-w"> </span>-l<span class="tok-w"> </span>install/wezterm</code></pre>
+<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-nb">cd</span><span class="tok-w"> </span>bash
+ls<span class="tok-w"> </span>-la</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Notice the color and the <code>x</code> part of <code>rwx</code>. That means not only is it a text file, it&#8217;s also an <em>executable</em>, something that can be executed on the system, or run.</p>
+<p>Notice the color and the <code>x</code> part of <code>rwx</code> on the <code>setup</code> script. That means not only is it a text file, it&#8217;s also an <em>executable</em>, something that can be executed on the system, or run.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1484,11 +1495,88 @@ ls</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>It&#8217;s at this point that everyone is usually saying, "oooohhh, that&#8217;s where Rob got the <code>rwx</code> from." 'Cuz I&#8217;m readable, I write a lot, and—most of all—I make stuff happen. Full perms, mother f*cker.</p>
+<p>It&#8217;s at this point that everyone is usually saying, "oooohhh, that&#8217;s where Rob got the <code>rwx</code> from."</p>
 </div>
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p>Have a look at the <code>setup</code> script with <code>less</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>less<span class="tok-w"> </span>setup</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once you feel comfortable with it, go ahead and run it:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>./setup</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It should return almost instantly. It&#8217;s not doing that much, which is what exactly?</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_symbolic_links"><a class="link" href="#_symbolic_links">Symbolic links</a></h4>
+<div class="paragraph">
+<p>Unix-like systems have something called a symbolic link, a way to have a reference to the same file someplace else:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>ls<span class="tok-w"> </span>-l<span class="tok-w"> </span>~/.bashrc</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Notice the arrow pointing to the other location. The tilde or squiggle (<code>~</code>) is an alias to your home directory location. We used it here because we are currently in <code>~/dot/bash</code>, which you can test with <code>pwd</code> right now.</p>
+</div>
+<div class="paragraph">
+<p>By creating this link where bash expects to find it we can keep our <code>bashrc</code> in our <code>dot</code> files repo and maintain it there where it can be saved and pushed to GitHub. This is a common and effective use of symbolic links.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_activate_a_new_shell"><a class="link" href="#_activate_a_new_shell">Activate a new shell</a></h4>
+<div class="paragraph">
+<p>In order for the changes to get loaded you have to replace your current bash shell with another interactive login shell with the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-nb">exec</span><span class="tok-w"> </span>bash<span class="tok-w"> </span>-l</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Notice how the command prompt changed. A lot more changed, but we&#8217;ll talk about that later.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This <code>exec bash -l</code> is a a good command to memorize. You can add to your notes later. It automatically reloads all the new changes to a <code>~/.bashrc</code> without restarting a terminal. It&#8217;s absolutely amazing how many veteran mages have no idea about <code>exec bash -l</code> but you do.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_setup_wezterm_terminal"><a class="link" href="#_setup_wezterm_terminal">Setup WezTerm terminal</a></h3>
+<div class="paragraph">
+<p>You&#8217;ve already been using a terminal, but now let&#8217;s get <em>the</em> terminal. WezTerm is the most amazing terminal I have ever used (and I have used them all over 25 years). You won&#8217;t understand the full power of WezTerm now, but you will. Just know it is the fastest terminal on the planet, which matters whether it be lag while typing and waiting for hints to appear or just to do fun terminal animations. It&#8217;s got full support for emojis, italics, and millions of colors unlike other terminals. Plus it&#8217;s incredibly easy to adapt and configure and fully supported by an amazing team of volunteers who seem like nice people. There&#8217;s really nothing like it.</p>
+</div>
+<div class="sect3">
+<h4 id="_install"><a class="link" href="#_install">Install</a></h4>
+<div class="paragraph">
+<p>Installing WezTerm is in one simple command. Have a look at it with the following:</p>
 </div>
 <div class="paragraph">
 <p>Take a look inside the script:</p>
@@ -1501,20 +1589,6 @@ ls</code></pre>
 <div class="paragraph">
 <p>That&#8217;s the bash script we will be using to install wezterm on whatever operating system you are on (Mac, Windows, or Linux).</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>It&#8217;s always a good idea to look into any script that you can before running it on your computer—especially one that makes as many substantial changes as these installers do.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
 <div class="paragraph">
 <p>Ready to install? Okay then:</p>
 </div>
@@ -1524,7 +1598,7 @@ ls</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>There&#8217;s gonna be all kinds of stuff happening on your screen now. Fonts installing, dependencies being checked, progress bars animating. Welcome to the terminal, mage!</p>
+<p>There&#8217;s gonna be all kinds of exciting stuff happening on your screen now. Welcome to the terminal, mage!</p>
 </div>
 </div>
 <div class="sect3">
@@ -1549,7 +1623,7 @@ ls</code></pre>
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-nb">cd</span><span class="tok-w"> </span>wezterm
-./wezterm</code></pre>
+./setup</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1576,10 +1650,10 @@ ls</code></pre>
 <p>Now open up WezTerm using the same launch technique as before but with <code>wez</code> as the word.</p>
 </div>
 <div class="paragraph">
-<p>You should see your terminal open up with the same bash prompt as you had with the older terminal, except it should look a lot better.</p>
+<p>You should see your terminal open up with the same bash prompt as you had with the older terminal, except it should look <em>a lot</em> better.</p>
 </div>
 <div class="paragraph">
-<p>Congratulations! You now have the most powerful terminal on the planet to play with and learn to code in.</p>
+<p>Congratulations! You now have the most powerful terminal on the planet to play with and learn to code in. Can&#8217;t wait to get coding!</p>
 </div>
 <hr>
 </div>
@@ -1587,9 +1661,93 @@ ls</code></pre>
 <div class="sect2">
 <h3 id="_setup_neovim_editor"><a class="link" href="#_setup_neovim_editor">Setup Neovim editor</a></h3>
 <div class="paragraph">
-<p><em>Coming soon&#8230;&#8203;</em></p>
+<p>We&#8217;ve been looking at a lot of text files. Now its time to learn how to edit them in the terminal with the most legendary tool in the code mage&#8217;s arsenal: Vim and Neovim. These are more than text editors known for their efficiency, power, and adaptability. They transcend the mundane, offering a modal editing experience that lets you manipulate text with precision and speed. While Vim has a long history of being the go-to editor for terminal wizards, Neovim builds on this legacy with modern enhancements, including better extensibility, asynchronous plugins, and a thriving community. Whether you’re crafting code or shaping prose, mastering Vim or Neovim is like learning the incantations of powerful magic, opening the door to unparalleled productivity.</p>
+</div>
+<div class="sect3">
+<h4 id="_change_back_into_dotfiles_directory"><a class="link" href="#_change_back_into_dotfiles_directory">Change back into dotfiles directory</a></h4>
+<div class="paragraph">
+<p>Because you started new terminal you should be back at home. You can check with the <code>pwd</code> command. It shows you the <em>physical/present/path working directory</em>. Your home directory will be something like <code>/home/you</code> on Mac and Linux and <code>/c/Users/you</code> on Windows with Git Bash.</p>
+</div>
+<div class="paragraph">
+<p>If you are home, then you can list all the files and directories with <code>ls</code>. Now&#8217;s a good time to learn the <code>ls -a</code> to show you <em>all</em> the files. See the ones starting with dot?</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_terminal_command_input_and_output"><a class="link" href="#_terminal_command_input_and_output">Terminal command input and output</a></h4>
+<div class="paragraph">
+<p>Sometimes there are too many files to see on one screen. You can probably guess dealing with this has something to do with <code>less</code>, your pager. You can combine the <code>ls -al</code> command with <code>less</code>. Just connect them with a pipe (the <code>|</code> character):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>ls<span class="tok-w"> </span>-a<span class="tok-w"> </span><span class="tok-p">|</span><span class="tok-w"> </span>less</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Connecting commands like this is called a <em>pipe line</em> and was invented when Unix was magically created. The output from one command goes into the input of the other. These two streams of data are called <em>standard input</em> and <em>standard output</em> or <code>stdin</code> and <code>stdout</code>. You will hear a lot more about them later—especially when doing things from the command line. There is one more stream called <em>standard error</em> or <code>stderr</code> that <em>looks</em> like <code>stdout</code> because it is interleaved with it but is a distinct stream. These all have numbers associated with them as well.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="0">
+<li>
+<p><code>stdin</code></p>
+</li>
+<li>
+<p><code>stdout</code></p>
+</li>
+<li>
+<p><code>stderr</code></p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_you_know_what_to_do"><a class="link" href="#_you_know_what_to_do">You know what to do</a></h4>
+<div class="paragraph">
+<p>Thanks to the power of the command line, the steps to install and configure Neovim are essentially the same as for WezTerm even though they are totally different tools.</p>
+</div>
+<div class="paragraph">
+<p>Use the new shell commands you know (<code>ls</code>, <code>cd</code>, <code>man</code>, <code>less</code>) to checkout the <code>neovim</code> directory and the <code>neovim/setup</code> and <code>install/neovim</code> scripts. When you are ready install and setup by doing the following commands one after another:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>./install/neovim
+<span class="tok-nb">cd</span><span class="tok-w"> </span>neovim
+./setup
+<span class="tok-nb">cd</span><span class="tok-w"> </span>-</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Notice that we did <code>cd -</code> instead of <code>cd ..</code> which is a good habit to get into because it changes back to whatever the previous directory was (instead of the parent, which is the same in this case).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_confirm_installation"><a class="link" href="#_confirm_installation">Confirm installation</a></h4>
+<div class="paragraph">
+<p>Just check the version for now:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>nvim<span class="tok-w"> </span>--version</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_or_is_it"><a class="link" href="#_or_is_it">Or is it &#8230;&#8203;</a></h4>
+<div class="paragraph">
+<p>Try another one:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>vim<span class="tok-w"> </span>--version</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Quite a bit different, right? That&#8217;s because <code>vim</code> came with Git Bash or the operating system itself. Neovim is a new version of <code>vim</code> that addresses several of the original inadequacies of <code>vim</code>. In fact, <code>vim</code> itself did the same for <code>vi</code>, the original "visual" mode of <code>ex</code> a modern version of <code>ed</code>, the first computer text editor ever made. Whew. That&#8217;s a lot of history in that sentence. You might not care now, but you will when you are on a computer that doesn&#8217;t have <code>nvim</code> or even <code>vim</code> in the future. There are 10s of thousands of them running the world.</p>
+</div>
+<div class="paragraph">
+<p>Now try <code>vi</code> by itself. Notice that it is the name as <code>nvim</code>. That&#8217;s because <code>vi</code> is an <em>alias</em>. Aliases are expanded by the shell to be something else, could be one word of several.</p>
 </div>
 <hr>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_setup_go_development"><a class="link" href="#_setup_go_development">Setup Go development</a></h3>
@@ -1860,13 +2018,6 @@ ls</code></pre>
 | Row 2    | More     |</code></pre>
 </div>
 </div>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_setup_git_and_github"><a class="link" href="#_setup_git_and_github">Setup Git and GitHub</a></h3>
-<div class="paragraph">
-<p><em>Coming soon&#8230;&#8203;</em></p>
 </div>
 </div>
 </div>

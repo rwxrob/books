@@ -1,0 +1,106 @@
+== Setup bash
+
+The `.bashrc` file is a hidden gem in the world of shell scripting and terminal wizardry. Found in your home directory, it serves as a a part of your spell book, automatically invoked each time you open a new bash shell session. This file lets you customize your shell environment by defining aliases, setting environment variables, and scripting commands to enhance your productivity. Whether you’re simplifying repetitive tasks or fine-tuning your terminal’s behavior, eventually mastering the `.bashrc` file is an essential step for any Code Mage who seeks to harness the full power of the Bash terminal.
+
+=== Bash is a language
+
+Even though this book is mostly about Go, bash is actually a very real programming language, every command line is part of an ongoing program. In fact, put those same lines into a file and you have a _script_.
+
+[NOTE]
+====
+Bash is serious. A lot of people have been paid a lot of money over the years doing nothing more than putting bash commands into "automation" and other scripts that are a part of bigger systems. Hackers regularly use scripts to get a lot of stuff done very quickly.
+====
+
+When you did the `ls` command you probably saw a directory called `bash` and another called `install`. The `bash` directory is where your `.bashrc` configuration setup lives, in the `bash/bashrc` file specifically.
+
+=== Less is more
+
+You'll have plenty of opportunity to edit and play with these files later, for now let's just look at them before we set them up. To look into any text file we can use a thing called a _pager_. It just pages through files of text so we can read it from the terminal. We'll use the `less` pager (a newer version of `more`).
+
+Type the following command into the terminal:
+
+[source,sh]
+----
+less bash/bashrc
+----
+
+Press space until you reach the end they type `q` to quit. Do it as many times as you like to get friendly with how the pager works. You will be doing it a lot. Notice that there are no colors when paging, this is because a pager does not know about the type of file, only that it is text.
+
+=== Hey man
+
+While we are at it, let's use the pager again in a different way, from the `man` command to read about the `ls` command. Type the following command and `Enter` to see the manual page about the `ls` command:
+
+[source,sh]
+----
+man ls
+man less
+----
+
+Notice all the stuff to read. In comparison, try `man bash` for fun as well, but you might have to page several dozen times.
+
+There are few more important commands to learn than `man`. You'll be using it constantly. You'll add it to your notes a bit later in the next sections.
+
+=== Check setup script
+
+It's always a good idea to look into any script that you can before running it on your computer—especially one that makes as many substantial changes as these installers do.
+
+First let's change into the `bash` directory and list its contents:
+
+[source, sh]
+----
+cd bash
+ls -la
+----
+
+Notice the color and the `x` part of `rwx` on the `setup` script. That means not only is it a text file, it's also an _executable_, something that can be executed on the system, or run.
+
+[NOTE]
+====
+It's at this point that everyone is usually saying, "oooohhh, that's where Rob got the `rwx` from."
+====
+
+Have a look at the `setup` script with `less`:
+
+[source, sh]
+----
+less setup
+----
+
+Once you feel comfortable with it, go ahead and run it:
+
+[source, sh]
+----
+./setup
+----
+
+It should return almost instantly. It's not doing that much, which is what exactly?
+
+=== Symbolic links
+
+Unix-like systems have something called a symbolic link, a way to have a reference to the same file someplace else:
+
+[source, sh]
+----
+ls -l ~/.bashrc
+----
+
+Notice the arrow pointing to the other location. The tilde or squiggle (`~`) is an alias to your home directory location. We used it here because we are currently in `~/dot/bash`, which you can test with `pwd` right now.
+
+By creating this link where bash expects to find it we can keep our `bashrc` in our `dot` files repo and maintain it there where it can be saved and pushed to GitHub. This is a common and effective use of symbolic links.
+
+=== Activate a new shell
+
+In order for the changes to get loaded you have to replace your current bash shell with another interactive login shell with the following command:
+
+[source, sh]
+----
+exec bash -l
+----
+
+Notice how the command prompt changed. A lot more changed, but we'll talk about that later.
+
+[NOTE]
+====
+This `exec bash -l` is a a good command to memorize. You can add to your notes later. It automatically reloads all the new changes to a `~/.bashrc` without restarting a terminal. It's absolutely amazing how many veteran mages have no idea about `exec bash -l` but you do.
+====
+

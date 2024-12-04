@@ -1,3 +1,63 @@
 == Setup Neovim editor
 
-_Coming soon..._
+We've been looking at a lot of text files. Now its time to learn how to edit them in the terminal with the most legendary tool in the code mage's arsenal: Vim and Neovim. These are more than text editors known for their efficiency, power, and adaptability. They transcend the mundane, offering a modal editing experience that lets you manipulate text with precision and speed. While Vim has a long history of being the go-to editor for terminal wizards, Neovim builds on this legacy with modern enhancements, including better extensibility, asynchronous plugins, and a thriving community. Whether you’re crafting code or shaping prose, mastering Vim or Neovim is like learning the incantations of powerful magic, opening the door to unparalleled productivity.
+
+=== Change back into dotfiles directory
+
+Because you started new terminal you should be back at home. You can check with the `pwd` command. It shows you the _physical/present/path working directory_. Your home directory will be something like `/home/you` on Mac and Linux and `/c/Users/you` on Windows with Git Bash.
+
+If you are home, then you can list all the files and directories with `ls`. Now's a good time to learn the `ls -a` to show you _all_ the files. See the ones starting with dot?
+
+=== Terminal command input and output
+
+Sometimes there are too many files to see on one screen. You can probably guess dealing with this has something to do with `less`, your pager. You can combine the `ls -al` command with `less`. Just connect them with a pipe (the `|` character):
+
+[source,sh]
+----
+ls -a | less
+----
+
+Connecting commands like this is called a _pipe line_ and was invented when Unix was magically created. The output from one command goes into the input of the other. These two streams of data are called _standard input_ and _standard output_ or `stdin` and `stdout`. You will hear a lot more about them later—especially when doing things from the command line. There is one more stream called _standard error_ or `stderr` that _looks_ like `stdout` because it is interleaved with it but is a distinct stream. These all have numbers associated with them as well.
+
+[start=0]
+. `stdin`
+. `stdout`
+. `stderr`
+
+=== You know what to do
+
+Thanks to the power of the command line, the steps to install and configure Neovim are essentially the same as for WezTerm even though they are totally different tools.
+
+Use the new shell commands you know (`ls`, `cd`, `man`, `less`) to checkout the `neovim` directory and the `neovim/setup` and `install/neovim` scripts. When you are ready install and setup by doing the following commands one after another:
+
+[source, shell]
+----
+./install/neovim
+cd neovim
+./setup
+cd -
+----
+
+Notice that we did `cd -` instead of `cd ..` which is a good habit to get into because it changes back to whatever the previous directory was (instead of the parent, which is the same in this case).
+
+=== Confirm installation
+
+Just check the version for now:
+
+[source, shell]
+----
+nvim --version
+----
+
+=== Or is it ...
+
+Try another one:
+
+[source, shell]
+----
+vim --version
+----
+
+Quite a bit different, right? That's because `vim` came with Git Bash or the operating system itself. Neovim is a new version of `vim` that addresses several of the original inadequacies of `vim`. In fact, `vim` itself did the same for `vi`, the original "visual" mode of `ex` a modern version of `ed`, the first computer text editor ever made. Whew. That's a lot of history in that sentence. You might not care now, but you will when you are on a computer that doesn't have `nvim` or even `vim` in the future. There are 10s of thousands of them running the world.
+
+Now try `vi` by itself. Notice that it is the name as `nvim`. That's because `vi` is an _alias_. Aliases are expanded by the shell to be something else, could be one word of several.

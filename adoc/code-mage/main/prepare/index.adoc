@@ -36,6 +36,10 @@ include::dotfiles.adoc[]
 
 ---
 
+include::bash-setup.adoc[]
+
+---
+
 include::wezterm.adoc[]
 
 ---
@@ -49,8 +53,4 @@ include::golang.adoc[]
 ---
 
 include::markdown.adoc[]
-
----
-
-include::git.adoc[]
 
