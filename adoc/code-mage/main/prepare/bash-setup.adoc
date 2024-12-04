@@ -1,4 +1,4 @@
-== Setup bash
+== Setup bash with .bashrc
 
 The `.bashrc` file is a hidden gem in the world of shell scripting and terminal wizardry. Found in your home directory, it serves as a a part of your spell book, automatically invoked each time you open a new bash shell session. This file lets you customize your shell environment by defining aliases, setting environment variables, and scripting commands to enhance your productivity. Whether you’re simplifying repetitive tasks or fine-tuning your terminal’s behavior, eventually mastering the `.bashrc` file is an essential step for any Code Mage who seeks to harness the full power of the Bash terminal.
 
@@ -103,4 +103,28 @@ Notice how the command prompt changed. A lot more changed, but we'll talk about 
 ====
 This `exec bash -l` is a a good command to memorize. You can add to your notes later. It automatically reloads all the new changes to a `~/.bashrc` without restarting a terminal. It's absolutely amazing how many veteran mages have no idea about `exec bash -l` but you do.
 ====
+
+=== Print working directory
+
+I mentioned `pwd` earlier. This helps you get your bearings by printing the full path of the directory you are currently in. Your home directory will be something like `/home/you` on Mac and Linux and `/c/Users/you` on Windows with Git Bash.
+
+If you are home, then you can list all the files and directories with `ls`. Now's a good time to learn the `ls -al` to show you _all_ the files. See the ones starting with dot? If you want to get crazy list something like `/bin` or `/etc`. It becomes quickly obvious that we need a way to keep all that stuff from scrolling off the screen (without resorting to any mouse scrolling a terminal may or may not have).
+
+=== Terminal command input and output
+
+You probably guessed `less` would be involved, but how. You can combine the `ls -al` command with `less`. Just connect them with a pipe (the `|` character):
+
+[source,sh]
+----
+ls -a | less
+----
+
+Did that just blow your mind? It did, right. Something so simple and yet so amazing, welcome to "the Unix way" but it's just the beginning.
+
+Connecting commands like this is called a _pipe line_ and was invented when Unix was magically created. The output from one command goes into the input of the other. These two streams of data are called _standard input_ and _standard output_ or `stdin` and `stdout`. You will hear a lot more about them later—especially when doing things from the command line. There is one more stream called _standard error_ or `stderr` that _looks_ like `stdout` because it is interleaved with it but is a distinct stream. These all have numbers associated with them as well.
+
+[start=0]
+. `stdin`
+. `stdout`
+. `stderr`
 

@@ -4,31 +4,18 @@ We've been looking at a lot of text files. Now its time to learn how to edit the
 
 === Change back into dotfiles directory
 
-Because you started new terminal you should be back at home. You can check with the `pwd` command. It shows you the _physical/present/path working directory_. Your home directory will be something like `/home/you` on Mac and Linux and `/c/Users/you` on Windows with Git Bash.
+Because you started a new terminal you should be back at home on the command line, not figuratively, in your `~` directory (`/home/you` for example). This means you need to change back into your `dot` files directory:
 
-If you are home, then you can list all the files and directories with `ls`. Now's a good time to learn the `ls -a` to show you _all_ the files. See the ones starting with dot?
-
-=== Terminal command input and output
-
-Sometimes there are too many files to see on one screen. You can probably guess dealing with this has something to do with `less`, your pager. You can combine the `ls -al` command with `less`. Just connect them with a pipe (the `|` character):
-
-[source,sh]
+[source, sh]
 ----
-ls -a | less
+cd dot
 ----
 
-Connecting commands like this is called a _pipe line_ and was invented when Unix was magically created. The output from one command goes into the input of the other. These two streams of data are called _standard input_ and _standard output_ or `stdin` and `stdout`. You will hear a lot more about them later—especially when doing things from the command line. There is one more stream called _standard error_ or `stderr` that _looks_ like `stdout` because it is interleaved with it but is a distinct stream. These all have numbers associated with them as well.
+=== You got this
 
-[start=0]
-. `stdin`
-. `stdout`
-. `stderr`
+Everything else is stuff you already know from before. Thanks to the power of the command line, the steps to install and configure Neovim are essentially the same as for bashrc and WezTerm even though they are totally different tools.
 
-=== You know what to do
-
-Thanks to the power of the command line, the steps to install and configure Neovim are essentially the same as for WezTerm even though they are totally different tools.
-
-Use the new shell commands you know (`ls`, `cd`, `man`, `less`) to checkout the `neovim` directory and the `neovim/setup` and `install/neovim` scripts. When you are ready install and setup by doing the following commands one after another:
+Use the new shell commands you just learned (`ls`, `cd`, `man`, `less`, `pwd`) to checkout the `neovim` directory with its configuration files and scripts. When you are ready, install and setup the new `nvim` command by doing the following commands one after another:
 
 [source, shell]
 ----
@@ -58,6 +45,44 @@ Try another one:
 vim --version
 ----
 
-Quite a bit different, right? That's because `vim` came with Git Bash or the operating system itself. Neovim is a new version of `vim` that addresses several of the original inadequacies of `vim`. In fact, `vim` itself did the same for `vi`, the original "visual" mode of `ex` a modern version of `ed`, the first computer text editor ever made. Whew. That's a lot of history in that sentence. You might not care now, but you will when you are on a computer that doesn't have `nvim` or even `vim` in the future. There are 10s of thousands of them running the world.
+Quite a bit different, right?
 
-Now try `vi` by itself. Notice that it is the name as `nvim`. That's because `vi` is an _alias_. Aliases are expanded by the shell to be something else, could be one word of several.
+This is because `vim` was already on the system with Git Bash or the operating system itself. Why install another one you ask?
+
+Neovim is a new (hence `neo`) version of `vim` that addresses several of the original inadequacies of `vim`. In fact, `vim` itself did the same by iMproving `vi`, the original "visual" mode of `ex` a modern version of `ed`, the first computer text editor ever made for—you guessed it—Unix, one of the first computer operating systems ever made.
+
+Whew. That's a lot of history. No other editor can claim that line of authority. You might not care now, but you will when you are on a computer that doesn't have `nvim` or even `vim` in the future. There are hundreds of thousands of them running the world, a world to which you will soon be granted access due to your emerging mage powers.
+
+=== See what I did there?
+
+Try this for fun:
+
+[source, shell]
+----
+vi --version
+----
+
+Notice that it is the same `--version` output as `nvim`. That's because `vi` is an _alias_ for `nvim`. Aliases are expanded by the shell to be something else, could be one word or several. In this case the new `~/.bashrc` you installed is _progressively enhancing_ your editor by detecting what is available and using that. When you ran `neovim/setup` you actually created a `~/.vimrc` file as well as a `~/.config/nvim/init.lua` file even though `nvim` was not yet available. The `.vimrc` file can be put on any system with `vim` or `nvim` on it and it will work. In fact, `nvim` won't even read `~/.vimrc` at that location unless you tell it to (for reasons I don't fully agree with). Instead, `nvim` reads `~/.config/nvim/init.lua` and that reads `~/.vimrc` meaning `~/.vimrc` gets used by _both_ `vim` and `nvim`. Get it? This is the way.
+
+[TIP]
+====
+This flexibility—at the cost of being able to use super-cool Neovim Lua for all configuration—is critical to a code mage who wants to be productive on any computer in the world. Tens of thousands of computers _already_ have `vim` on them. None already have `nvim`, and, I hate to disappoint you, but you won't usually have permission to install `nvim` on most of them even though you will _always_ have permission to bring your own `.vimrc` file with you.
+====
+
+=== Activate your plugins
+
+Neovim and vim have some great plugins. There are entire https://neovimconf.live[NeovimConfs] dedicated just to talking about them. That's how big a deal Vim and Neovim are in the land of tech arcana. For now, however, we only want to get our stuff ready for coding. Let's install and activate out plugins:
+
+[source, sh]
+----
+vi +PlugInstall +qa
+----
+
+This command usually returns rather quickly if you have a good Internet connection. If you want, you can also pull down all the Go binaries that will be needed for Go coding later (or you can wait, I'll remind you):
+
+[source, sh]
+----
+vi +GoInstallBinaries +qa
+----
+
+This one takes significantly longer probably because it is compiling them on the fly while installing them.

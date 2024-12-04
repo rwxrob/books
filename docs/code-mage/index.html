@@ -517,14 +517,16 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <ul class="sectlevel2">
 <li><a href="#_install_bash_shell">Install bash shell</a></li>
 <li><a href="#_create_a_github_account">Create a GitHub account</a></li>
-<li><a href="#_install_github_cli_tool">Install GitHub CLI tool</a></li>
+<li><a href="#_install_git_and_github_tool">Install Git and GitHub tool</a></li>
 <li><a href="#_login_to_github">Login to GitHub</a></li>
 <li><a href="#_create_first_dotfiles">Create first dotfiles</a></li>
-<li><a href="#_setup_bash">Setup bash</a></li>
+<li><a href="#_setup_bash_with_bashrc">Setup bash with .bashrc</a></li>
 <li><a href="#_setup_wezterm_terminal">Setup WezTerm terminal</a></li>
 <li><a href="#_setup_neovim_editor">Setup Neovim editor</a></li>
+<li><a href="#_learn_vim_basics">Learn vim basics</a></li>
+<li><a href="#_start_notes_in_markdown">Start notes in Markdown</a></li>
+<li><a href="#_review_shell_commands">Review shell commands</a></li>
 <li><a href="#_setup_go_development">Setup Go development</a></li>
-<li><a href="#_take_notes_in_markdown">Take notes in Markdown</a></li>
 </ul>
 </li>
 <li><a href="#_learn_to_code">Learn to code</a>
@@ -1212,15 +1214,15 @@ chsh<span class="tok-w"> </span>-s<span class="tok-w"> </span><span class="tok-s
 </div>
 </div>
 <div class="sect2">
-<h3 id="_install_github_cli_tool"><a class="link" href="#_install_github_cli_tool">Install GitHub CLI tool</a></h3>
+<h3 id="_install_git_and_github_tool"><a class="link" href="#_install_git_and_github_tool">Install Git and GitHub tool</a></h3>
 <div class="paragraph">
-<p>The gh command-line tool is the enchanted oracle of the GitHub realm, empowering a Code Mage to summon, interact with, and manage repositories directly from their terminal sanctum. With gh, you don’t just push and pull code—you weave GitHub’s collaborative magic into your workflow, creating pull requests, reviewing code, and managing issues as effortlessly as casting a spell. It bridges the gap between your local workspace and the expansive GitHub cosmos, giving you the power to navigate repositories, explore contributors’ archives, and orchestrate contributions without ever breaking your focus. For the Code Mage seeking to unlock the full potential of GitHub’s collaborative incantations, gh is an indispensable artifact.</p>
+<p>The git and gh command-line tools provide the enchanted oracle of the GitHub realm, empowering a Code Mage to summon, interact with, and manage repositories directly from their terminal sanctum. With git and gh, you don’t just push and pull code—you weave GitHub’s collaborative magic into your workflow, creating pull requests, reviewing code, and managing issues as effortlessly as casting a spell. It bridges the gap between your local workspace and the expansive GitHub cosmos, giving you the power to navigate repositories, explore contributors’ archives, and orchestrate contributions without ever breaking your focus. For the Code Mage seeking to unlock the full potential of GitHub’s collaborative incantations, gh is an indispensable artifact.</p>
 </div>
 <div class="sect3">
 <h4 id="_mac_with_brew"><a class="link" href="#_mac_with_brew">Mac with brew</a></h4>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>gh</code></pre>
+<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>git<span class="tok-w"> </span>gh</code></pre>
 </div>
 </div>
 </div>
@@ -1239,7 +1241,7 @@ chsh<span class="tok-w"> </span>-s<span class="tok-w"> </span><span class="tok-s
 <h4 id="_linux_with_apt"><a class="link" href="#_linux_with_apt">Linux with apt</a></h4>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>gh</code></pre>
+<pre class="pygments highlight"><code data-lang="shell"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>git<span class="tok-w"> </span>gh</code></pre>
 </div>
 </div>
 <hr>
@@ -1408,7 +1410,7 @@ ls</code></pre>
 <hr>
 </div>
 <div class="sect2">
-<h3 id="_setup_bash"><a class="link" href="#_setup_bash">Setup bash</a></h3>
+<h3 id="_setup_bash_with_bashrc"><a class="link" href="#_setup_bash_with_bashrc">Setup bash with .bashrc</a></h3>
 <div class="paragraph">
 <p>The <code>.bashrc</code> file is a hidden gem in the world of shell scripting and terminal wizardry. Found in your home directory, it serves as a a part of your spell book, automatically invoked each time you open a new bash shell session. This file lets you customize your shell environment by defining aliases, setting environment variables, and scripting commands to enhance your productivity. Whether you’re simplifying repetitive tasks or fine-tuning your terminal’s behavior, eventually mastering the <code>.bashrc</code> file is an essential step for any Code Mage who seeks to harness the full power of the Bash terminal.</p>
 </div>
@@ -1565,6 +1567,45 @@ ls<span class="tok-w"> </span>-la</code></pre>
 </tr>
 </table>
 </div>
+</div>
+<div class="sect3">
+<h4 id="_print_working_directory"><a class="link" href="#_print_working_directory">Print working directory</a></h4>
+<div class="paragraph">
+<p>I mentioned <code>pwd</code> earlier. This helps you get your bearings by printing the full path of the directory you are currently in. Your home directory will be something like <code>/home/you</code> on Mac and Linux and <code>/c/Users/you</code> on Windows with Git Bash.</p>
+</div>
+<div class="paragraph">
+<p>If you are home, then you can list all the files and directories with <code>ls</code>. Now&#8217;s a good time to learn the <code>ls -al</code> to show you <em>all</em> the files. See the ones starting with dot? If you want to get crazy list something like <code>/bin</code> or <code>/etc</code>. It becomes quickly obvious that we need a way to keep all that stuff from scrolling off the screen (without resorting to any mouse scrolling a terminal may or may not have).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_terminal_command_input_and_output"><a class="link" href="#_terminal_command_input_and_output">Terminal command input and output</a></h4>
+<div class="paragraph">
+<p>You probably guessed <code>less</code> would be involved, but how. You can combine the <code>ls -al</code> command with <code>less</code>. Just connect them with a pipe (the <code>|</code> character):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>ls<span class="tok-w"> </span>-a<span class="tok-w"> </span><span class="tok-p">|</span><span class="tok-w"> </span>less</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Did that just blow your mind? It did, right. Something so simple and yet so amazing, welcome to "the Unix way" but it&#8217;s just the beginning.</p>
+</div>
+<div class="paragraph">
+<p>Connecting commands like this is called a <em>pipe line</em> and was invented when Unix was magically created. The output from one command goes into the input of the other. These two streams of data are called <em>standard input</em> and <em>standard output</em> or <code>stdin</code> and <code>stdout</code>. You will hear a lot more about them later—especially when doing things from the command line. There is one more stream called <em>standard error</em> or <code>stderr</code> that <em>looks</em> like <code>stdout</code> because it is interleaved with it but is a distinct stream. These all have numbers associated with them as well.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="0">
+<li>
+<p><code>stdin</code></p>
+</li>
+<li>
+<p><code>stdout</code></p>
+</li>
+<li>
+<p><code>stderr</code></p>
+</li>
+</ol>
+</div>
 <hr>
 </div>
 </div>
@@ -1666,46 +1707,21 @@ ls<span class="tok-w"> </span>-la</code></pre>
 <div class="sect3">
 <h4 id="_change_back_into_dotfiles_directory"><a class="link" href="#_change_back_into_dotfiles_directory">Change back into dotfiles directory</a></h4>
 <div class="paragraph">
-<p>Because you started new terminal you should be back at home. You can check with the <code>pwd</code> command. It shows you the <em>physical/present/path working directory</em>. Your home directory will be something like <code>/home/you</code> on Mac and Linux and <code>/c/Users/you</code> on Windows with Git Bash.</p>
-</div>
-<div class="paragraph">
-<p>If you are home, then you can list all the files and directories with <code>ls</code>. Now&#8217;s a good time to learn the <code>ls -a</code> to show you <em>all</em> the files. See the ones starting with dot?</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_terminal_command_input_and_output"><a class="link" href="#_terminal_command_input_and_output">Terminal command input and output</a></h4>
-<div class="paragraph">
-<p>Sometimes there are too many files to see on one screen. You can probably guess dealing with this has something to do with <code>less</code>, your pager. You can combine the <code>ls -al</code> command with <code>less</code>. Just connect them with a pipe (the <code>|</code> character):</p>
+<p>Because you started a new terminal you should be back at home on the command line, not figuratively, in your <code>~</code> directory (<code>/home/you</code> for example). This means you need to change back into your <code>dot</code> files directory:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>ls<span class="tok-w"> </span>-a<span class="tok-w"> </span><span class="tok-p">|</span><span class="tok-w"> </span>less</code></pre>
+<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-nb">cd</span><span class="tok-w"> </span>dot</code></pre>
 </div>
-</div>
-<div class="paragraph">
-<p>Connecting commands like this is called a <em>pipe line</em> and was invented when Unix was magically created. The output from one command goes into the input of the other. These two streams of data are called <em>standard input</em> and <em>standard output</em> or <code>stdin</code> and <code>stdout</code>. You will hear a lot more about them later—especially when doing things from the command line. There is one more stream called <em>standard error</em> or <code>stderr</code> that <em>looks</em> like <code>stdout</code> because it is interleaved with it but is a distinct stream. These all have numbers associated with them as well.</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic" start="0">
-<li>
-<p><code>stdin</code></p>
-</li>
-<li>
-<p><code>stdout</code></p>
-</li>
-<li>
-<p><code>stderr</code></p>
-</li>
-</ol>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_you_know_what_to_do"><a class="link" href="#_you_know_what_to_do">You know what to do</a></h4>
+<h4 id="_you_got_this"><a class="link" href="#_you_got_this">You got this</a></h4>
 <div class="paragraph">
-<p>Thanks to the power of the command line, the steps to install and configure Neovim are essentially the same as for WezTerm even though they are totally different tools.</p>
+<p>Everything else is stuff you already know from before. Thanks to the power of the command line, the steps to install and configure Neovim are essentially the same as for bashrc and WezTerm even though they are totally different tools.</p>
 </div>
 <div class="paragraph">
-<p>Use the new shell commands you know (<code>ls</code>, <code>cd</code>, <code>man</code>, <code>less</code>) to checkout the <code>neovim</code> directory and the <code>neovim/setup</code> and <code>install/neovim</code> scripts. When you are ready install and setup by doing the following commands one after another:</p>
+<p>Use the new shell commands you just learned (<code>ls</code>, <code>cd</code>, <code>man</code>, <code>less</code>, <code>pwd</code>) to checkout the <code>neovim</code> directory with its configuration files and scripts. When you are ready, install and setup the new <code>nvim</code> command by doing the following commands one after another:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1741,72 +1757,226 @@ ls<span class="tok-w"> </span>-la</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Quite a bit different, right? That&#8217;s because <code>vim</code> came with Git Bash or the operating system itself. Neovim is a new version of <code>vim</code> that addresses several of the original inadequacies of <code>vim</code>. In fact, <code>vim</code> itself did the same for <code>vi</code>, the original "visual" mode of <code>ex</code> a modern version of <code>ed</code>, the first computer text editor ever made. Whew. That&#8217;s a lot of history in that sentence. You might not care now, but you will when you are on a computer that doesn&#8217;t have <code>nvim</code> or even <code>vim</code> in the future. There are 10s of thousands of them running the world.</p>
+<p>Quite a bit different, right?</p>
 </div>
 <div class="paragraph">
-<p>Now try <code>vi</code> by itself. Notice that it is the name as <code>nvim</code>. That&#8217;s because <code>vi</code> is an <em>alias</em>. Aliases are expanded by the shell to be something else, could be one word of several.</p>
+<p>This is because <code>vim</code> was already on the system with Git Bash or the operating system itself. Why install another one you ask?</p>
+</div>
+<div class="paragraph">
+<p>Neovim is a new (hence <code>neo</code>) version of <code>vim</code> that addresses several of the original inadequacies of <code>vim</code>. In fact, <code>vim</code> itself did the same by iMproving <code>vi</code>, the original "visual" mode of <code>ex</code> a modern version of <code>ed</code>, the first computer text editor ever made for—you guessed it—Unix, one of the first computer operating systems ever made.</p>
+</div>
+<div class="paragraph">
+<p>Whew. That&#8217;s a lot of history. No other editor can claim that line of authority. You might not care now, but you will when you are on a computer that doesn&#8217;t have <code>nvim</code> or even <code>vim</code> in the future. There are hundreds of thousands of them running the world, a world to which you will soon be granted access due to your emerging mage powers.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_see_what_i_did_there"><a class="link" href="#_see_what_i_did_there">See what I did there?</a></h4>
+<div class="paragraph">
+<p>Try this for fun:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>vi<span class="tok-w"> </span>--version</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Notice that it is the same <code>--version</code> output as <code>nvim</code>. That&#8217;s because <code>vi</code> is an <em>alias</em> for <code>nvim</code>. Aliases are expanded by the shell to be something else, could be one word or several. In this case the new <code>~/.bashrc</code> you installed is <em>progressively enhancing</em> your editor by detecting what is available and using that. When you ran <code>neovim/setup</code> you actually created a <code>~/.vimrc</code> file as well as a <code>~/.config/nvim/init.lua</code> file even though <code>nvim</code> was not yet available. The <code>.vimrc</code> file can be put on any system with <code>vim</code> or <code>nvim</code> on it and it will work. In fact, <code>nvim</code> won&#8217;t even read <code>~/.vimrc</code> at that location unless you tell it to (for reasons I don&#8217;t fully agree with). Instead, <code>nvim</code> reads <code>~/.config/nvim/init.lua</code> and that reads <code>~/.vimrc</code> meaning <code>~/.vimrc</code> gets used by <em>both</em> <code>vim</code> and <code>nvim</code>. Get it? This is the way.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This flexibility—at the cost of being able to use super-cool Neovim Lua for all configuration—is critical to a code mage who wants to be productive on any computer in the world. Tens of thousands of computers <em>already</em> have <code>vim</code> on them. None already have <code>nvim</code>, and, I hate to disappoint you, but you won&#8217;t usually have permission to install <code>nvim</code> on most of them even though you will <em>always</em> have permission to bring your own <code>.vimrc</code> file with you.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_activate_your_plugins"><a class="link" href="#_activate_your_plugins">Activate your plugins</a></h4>
+<div class="paragraph">
+<p>Neovim and vim have some great plugins. There are entire <a href="https://neovimconf.live">NeovimConfs</a> dedicated just to talking about them. That&#8217;s how big a deal Vim and Neovim are in the land of tech arcana. For now, however, we only want to get our stuff ready for coding. Let&#8217;s install and activate out plugins:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>vi<span class="tok-w"> </span>+PlugInstall<span class="tok-w"> </span>+qa</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This command usually returns rather quickly if you have a good Internet connection. If you want, you can also pull down all the Go binaries that will be needed for Go coding later (or you can wait, I&#8217;ll remind you):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>vi<span class="tok-w"> </span>+GoInstallBinaries<span class="tok-w"> </span>+qa</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This one takes significantly longer probably because it is compiling them on the fly while installing them.</p>
 </div>
 <hr>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_setup_go_development"><a class="link" href="#_setup_go_development">Setup Go development</a></h3>
+<h3 id="_learn_vim_basics"><a class="link" href="#_learn_vim_basics">Learn vim basics</a></h3>
 <div class="paragraph">
-<p><em>Coming soon&#8230;&#8203;</em></p>
+<p>When it comes to mastering text editing, choosing the right starting point can have a profound impact on your efficiency, understanding, and future flexibility as a developer or technical professional. Among the myriad of editors available, learning Vim first offers unique advantages that extend well beyond mere productivity.</p>
+</div>
+<div class="paragraph">
+<p>Is it hard? Yes.</p>
+</div>
+<div class="paragraph">
+<p>Is it worth it? Yes.</p>
+</div>
+<div class="paragraph">
+<p>Honestly, it&#8217;s not as hard as people think. Start with the basics, which are covered in the <code>vimtutor</code> command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>vimtutor</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Go ahead. Get going. It should take you under 90 minutes or so. After you finished it once, maybe do it one more time. Then proceed to the next section were we talk about taking notes so you can begin crafting your book of code spells and notes to get the best practice of all.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Don&#8217;t do things like VimAdventures. You won&#8217;t remember them. The best way to learn Vim is to use <code>vim</code>. Finish the <code>vimtutor</code> and then start taking notes with your new editing skills. It will be a much better use of your time.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <hr>
 </div>
 <div class="sect2">
-<h3 id="_take_notes_in_markdown"><a class="link" href="#_take_notes_in_markdown">Take notes in Markdown</a></h3>
+<h3 id="_start_notes_in_markdown"><a class="link" href="#_start_notes_in_markdown">Start notes in Markdown</a></h3>
 <div class="paragraph">
-<p>In the journey of learning, problem-solving, and creating, taking notes is as important as casting spells to preserve fleeting thoughts. Whether you use a sophisticated digital tool (like GitHub or Obsidian) or a simple piece of paper, the act of note-taking is a powerful practice that unlocks clarity, reinforces memory, and fosters creativity.</p>
+<p>In the journey of learning, problem-solving, and creating, taking notes is as important as casting spells to preserve fleeting thoughts. Whether you use a sophisticated digital tool or a simple piece of paper, the act of note-taking is a powerful practice that unlocks clarity, reinforces memory, and fosters creativity.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>There are <em>a lot</em> of note take apps, philosophies, and vampires who will suck all your life force attacking you about your note taking method. The best method is the one that is the easiest, most compatible, and simple. You can always try fancier things later, for not you need practice with Vim and Git and GitHub to stick with this method.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="sect3">
-<h4 id="_why_notes_matter"><a class="link" href="#_why_notes_matter">Why notes matter</a></h4>
+<h4 id="_github_notes_repo"><a class="link" href="#_github_notes_repo">GitHub notes repo</a></h4>
 <div class="paragraph">
-<p><strong>Preserving ideas</strong>: Our minds are like flowing rivers of thought. Without notes, many brilliant ideas risk being swept away. Notes capture these ideas, making them tangible and retrievable.</p>
+<p>The best way to manage knowledge is the same way we manage source code, with GitHub. Let&#8217;s create a new repo for both our code and notes, we&#8217;ll call it a <code>codebook</code> (but you can call it whatever you want):</p>
 </div>
-<div class="paragraph">
-<p><strong>Enhancing memory</strong>: The process of writing, even on paper, strengthens your ability to recall information. It’s an active engagement with the material that makes it stick.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-nb">cd</span>
+gh<span class="tok-w"> </span>repo<span class="tok-w"> </span>create<span class="tok-w"> </span>codebook<span class="tok-w"> </span>--private<span class="tok-w"> </span>--clone
+<span class="tok-nb">cd</span><span class="tok-w"> </span>codebook</code></pre>
 </div>
-<div class="paragraph">
-<p><strong>Organizing complexity</strong>: Notes allow you to break down complex concepts into manageable pieces, creating a map that guides your understanding.</p>
-</div>
-<div class="paragraph">
-<p><strong>Encouraging reflection</strong>: By reviewing your notes, you can identify patterns, revisit insights, and refine your thinking over time.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_the_value_of_starting_simple"><a class="link" href="#_the_value_of_starting_simple">The value of starting simple</a></h4>
-<div class="paragraph">
-<p>You don’t need a perfect system to begin. Even a humble notebook can be your first spellbook. What matters is consistency and intent. Scribble ideas, sketch diagrams, or jot down questions—whatever helps you capture and organize your thoughts.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_a_note_taking_habit_for_mages"><a class="link" href="#_a_note_taking_habit_for_mages">A note-taking habit for mages</a></h4>
-<div class="paragraph">
-<p><strong>Always be ready</strong>: Keep a notebook or a few blank sheets nearby, whether at your desk or on the go.</p>
 </div>
 <div class="paragraph">
-<p><strong>Write what matters</strong>: Focus on key points, insights, and actionable ideas rather than trying to transcribe everything.</p>
+<p>Notice that the first <code>cd</code> has nothing after it. That automatically takes you home exactly like <code>cd ~</code> but just a lot easier to type.</p>
 </div>
 <div class="paragraph">
-<p><strong>Review and reflect</strong>: Set aside time to revisit your notes. What once seemed incomplete might spark new understanding.</p>
+<p>Now let&#8217;s create a <code>README.md</code> with the <code>touch</code> command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>touch<span class="tok-w"> </span>README.md</code></pre>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_from_paper_to_systems"><a class="link" href="#_from_paper_to_systems">From paper to systems</a></h4>
 <div class="paragraph">
-<p>As your habit grows, you might find value in transitioning to a digital system that organizes your notes into searchable collections. But remember: the tool is less important than the practice. What matters most is capturing the magic of your thoughts, whether in ink or bytes.</p>
+<p>The <code>touch</code> command makes a new file if it does not exist or updates the time that it was last modified.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>It is a good habit to use it to make new files so that you don&#8217;t attempt to make one where you don&#8217;t have permission only to realize after you are written a bunch of stuff that you don&#8217;t have permission to save the file. If it sounds like that lesson came from years of mistakenly doing exactly that it did.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>Taking notes is not just about recording—it’s about thinking. With each word you write, you deepen your engagement with your learning, your ideas, and yourself. Start small, stay consistent, and watch as your notes become a treasure trove of inspiration and growth.</p>
+<p>Now go head and put anything into the file and save it using the <code>git</code> command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>git<span class="tok-w"> </span>add<span class="tok-w"> </span>.<span class="tok-w">                     </span><i class="conum" data-value="1"></i><b>(1)</b>
+git<span class="tok-w"> </span>commit<span class="tok-w"> </span>-m<span class="tok-w"> </span><span class="tok-s1">&#39;add readme&#39;</span><span class="tok-w">    </span><i class="conum" data-value="2"></i><b>(2)</b>
+git<span class="tok-w"> </span>push<span class="tok-w"> </span>-u<span class="tok-w"> </span>origin<span class="tok-w"> </span>main<span class="tok-w">       </span><i class="conum" data-value="3"></i><b>(3)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Add everything in the current directory and below.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Commit with a comment message.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Push up to GitHub (first push always needs <code>-u origin main</code>)</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The <code>README.md</code> is a special file. It is displayed automatically on GitHub when people visit that page. Let&#8217;s open our graphic web browser and check it out:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>gh<span class="tok-w"> </span>repo<span class="tok-w"> </span>view<span class="tok-w"> </span>--web</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Nice! The spell book begins to take form.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_start_using_markdown"><a class="link" href="#_start_using_markdown">Start using Markdown</a></h4>
 <div class="paragraph">
-<p>Your spell book will not just be written in Go, but also Markdown, a lightweight markup language that allows document formatting and such using nothing but a plain text editor. This page will guide you through the essential features of Markdown, helping you harness its potential for organizing and presenting information. Markdown is perfect for taking notes because of the following:</p>
+<p>You might have noticed the <code>.md</code> at the end and wondered what that was about. That&#8217;s Markdown, a lightweight markup language that allows document formatting and such using nothing but a plain text editor. This page will guide you through the essential features of Markdown, helping you harness its potential for organizing and presenting information. Go ahead and practice it all taking notes as you go. You can repeat the steps for saving and pushing to view it on the web as you go to practice those commands.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Yes, there are many ways to dynamically preview Markdown while you are writing it. Forget about them all right now. You are <em>deliberately</em> repeating that process of <code>git add</code>, <code>git commit</code>, <code>git push</code> until you dream of it in your sleep. Later you can look at other methods of previewing and reduce the number of commits if you really want to by making a PR, but that&#8217;s getting way ahead of ourselves. Feels good knowing everything you are doing is the exact same professionals are doing thousands of times a day, just like me right now while I&#8217;m writing this.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Markdown is perfect for taking notes because of the following:</p>
 </div>
 <div class="paragraph">
 <p><strong>Simplicity</strong>: Markdown’s syntax is intuitive and easy to learn.</p>
@@ -2017,6 +2187,255 @@ ls<span class="tok-w"> </span>-la</code></pre>
 | Row 1    | Data     |
 | Row 2    | More     |</code></pre>
 </div>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_review_shell_commands"><a class="link" href="#_review_shell_commands">Review shell commands</a></h3>
+<div class="paragraph">
+<p>Since you are so good at taking Markdown notes, it&#8217;s time to review all the commands we have been using so far to do different things. Take this time to put them in your notes in your own way.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>I kept the description separate so you can cover it up and quiz yourself if you want.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+winget<span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
+apt<span class="tok-w"> </span><i class="conum" data-value="3"></i><b>(3)</b>
+sudo<span class="tok-w"> </span><i class="conum" data-value="4"></i><b>(4)</b>
+man<span class="tok-w"> </span>ls<span class="tok-w"> </span><i class="conum" data-value="5"></i><b>(5)</b>
+less<span class="tok-w"> </span>setup<span class="tok-w"> </span><i class="conum" data-value="6"></i><b>(6)</b>
+ls<span class="tok-w"> </span><i class="conum" data-value="7"></i><b>(7)</b>
+ls<span class="tok-w"> </span>-l<span class="tok-w"> </span><i class="conum" data-value="8"></i><b>(8)</b>
+ls<span class="tok-w"> </span>-l<span class="tok-w"> </span><span class="tok-p">|</span><span class="tok-w"> </span>less<span class="tok-w"> </span><i class="conum" data-value="9"></i><b>(9)</b>
+/dev/stdout<span class="tok-w"> </span><i class="conum" data-value="10"></i><b>(10)</b>
+/dev/stdin<span class="tok-w"> </span><i class="conum" data-value="11"></i><b>(11)</b>
+/dev/stderr<span class="tok-w"> </span><i class="conum" data-value="12"></i><b>(12)</b>
+ls<span class="tok-w"> </span>-a<span class="tok-w"> </span><i class="conum" data-value="13"></i><b>(13)</b>
+<span class="tok-nb">cd</span><span class="tok-w"> </span>bash<span class="tok-w"> </span><i class="conum" data-value="14"></i><b>(14)</b>
+<span class="tok-nb">cd</span><span class="tok-w"> </span><i class="conum" data-value="15"></i><b>(15)</b>
+<span class="tok-nb">cd</span><span class="tok-w"> </span>-<span class="tok-w"> </span><i class="conum" data-value="16"></i><b>(16)</b>
+<span class="tok-nb">cd</span><span class="tok-w"> </span>..<span class="tok-w"> </span><i class="conum" data-value="17"></i><b>(17)</b>
+<span class="tok-nb">pwd</span><span class="tok-w"> </span><i class="conum" data-value="18"></i><b>(18)</b>
+<span class="tok-nb">exec</span><span class="tok-w"> </span>bash<span class="tok-w"> </span>-l<span class="tok-w"> </span><i class="conum" data-value="19"></i><b>(19)</b>
+touch<span class="tok-w"> </span>README.md<span class="tok-w"> </span><i class="conum" data-value="20"></i><b>(20)</b>
+vi<span class="tok-w"> </span><i class="conum" data-value="21"></i><b>(21)</b>
+vim<span class="tok-w"> </span><i class="conum" data-value="22"></i><b>(22)</b>
+nvim<span class="tok-w"> </span><i class="conum" data-value="23"></i><b>(23)</b>
+gh<span class="tok-w"> </span>auth<span class="tok-w"> </span>login<span class="tok-w"> </span><i class="conum" data-value="24"></i><b>(24)</b>
+gh<span class="tok-w"> </span>repo<span class="tok-w"> </span>create<span class="tok-w"> </span>codebook<span class="tok-w"> </span>--private<span class="tok-w"> </span>--clone<span class="tok-w"> </span><i class="conum" data-value="25"></i><b>(25)</b>
+gh<span class="tok-w"> </span>repo<span class="tok-w"> </span>create<span class="tok-w"> </span>codebook<span class="tok-w"> </span>--private<span class="tok-w"> </span>--clone<span class="tok-w"> </span>--template<span class="tok-w"> </span>rwxrob/dot-template<span class="tok-w"> </span><i class="conum" data-value="26"></i><b>(26)</b>
+gh<span class="tok-w"> </span>repo<span class="tok-w"> </span>view<span class="tok-w"> </span>--web<span class="tok-w"> </span><i class="conum" data-value="27"></i><b>(27)</b>
+git<span class="tok-w"> </span>add<span class="tok-w"> </span>.<span class="tok-w"> </span><i class="conum" data-value="28"></i><b>(28)</b>
+git<span class="tok-w"> </span>commit<span class="tok-w"> </span>-m<span class="tok-w"> </span><span class="tok-s1">&#39;message&#39;</span><span class="tok-w"> </span><i class="conum" data-value="29"></i><b>(29)</b>
+git<span class="tok-w"> </span>push<span class="tok-w"> </span>-u<span class="tok-w"> </span>origin<span class="tok-w"> </span>main<span class="tok-w"> </span><i class="conum" data-value="30"></i><b>(30)</b>
+git<span class="tok-w"> </span>push<span class="tok-w"> </span><i class="conum" data-value="31"></i><b>(31)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Installer and package manager for macOS</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Install and package manager for Windows</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Installer and package manager for Ubuntu Linux</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Do something as root/admin on Unix/Linux</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Show manual page about <code>ls</code> command</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Read the <code>setup</code> file with pager</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="7"></i><b>7</b></td>
+<td>Display list of current directory content</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="8"></i><b>8</b></td>
+<td>Display long list of directory content</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="9"></i><b>9</b></td>
+<td>Page through long listing of directory content</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="10"></i><b>10</b></td>
+<td>Name for output from a command</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="11"></i><b>11</b></td>
+<td>Name for input coming coming into a command</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="12"></i><b>12</b></td>
+<td>Name for error output from a command</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="13"></i><b>13</b></td>
+<td>Display all content, even hidden (dots)</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="14"></i><b>14</b></td>
+<td>Change into the <code>bash</code> subdirectory</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="15"></i><b>15</b></td>
+<td>Change into home directory (same as <code>cd ~</code>)</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="16"></i><b>16</b></td>
+<td>Change to previous directory</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="17"></i><b>17</b></td>
+<td>Change to parent directory</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="18"></i><b>18</b></td>
+<td>Print the current working directory path</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="19"></i><b>19</b></td>
+<td>Replace current shell with new one</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="20"></i><b>20</b></td>
+<td>Create <code>README.md</code> or update modified time</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="21"></i><b>21</b></td>
+<td>Original visual editor (alias for <code>vi</code>, <code>vim</code>, <code>nvim</code>)</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="22"></i><b>22</b></td>
+<td>Improved <code>vi</code> text editor</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="23"></i><b>23</b></td>
+<td>New <code>vim</code> text editor</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="24"></i><b>24</b></td>
+<td>Authenticate to GitHub</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="25"></i><b>25</b></td>
+<td>Create new private repo and clone locally</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="26"></i><b>26</b></td>
+<td>Same as 25 but copy from a template</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="27"></i><b>27</b></td>
+<td>Open GitHub repo in graphic web browser</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="28"></i><b>28</b></td>
+<td>Add changes in current directory and below</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="29"></i><b>29</b></td>
+<td>Commit with a message</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="30"></i><b>30</b></td>
+<td>Push committed changes to GitHub (first time)</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="31"></i><b>31</b></td>
+<td>Push committed changes to GitHub</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>You might also want to add a section in your <code>codebook</code> notes about your favorite combos with Vim (are you a <code>ZZ</code> person or a <code>:wq</code> or a <code>:x</code> person).</p>
+</div>
+<div class="paragraph">
+<p>Damn! You&#8217;ve covered a lot! Take a victory lap, do a dab, or just smile to yourself knowingly. You deserve it. Great job, terminal mage! Looks like we are ready to learn some more advanced magic.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_setup_go_development"><a class="link" href="#_setup_go_development">Setup Go development</a></h3>
+<div class="paragraph">
+<p>Setting up a Go development environment in the terminal is an essential ritual for any Code Mage aspiring to master this language of power. Installing and configuring Go is ridiculously easy:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span><span class="tok-nb">cd</span>
+<span class="tok-nb">cd</span><span class="tok-w"> </span>dot
+./install/go</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can look at the script (as usual) if you wish. There&#8217;s nothing new in it at this point, same old <code>brew</code>, <code>winget</code>, and <code>apt</code> stuff.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>It&#8217;s worth noting that this method of installation is easy, but doesn&#8217;t always get us the latest and greatest <code>go</code> binary. Go handles updating itself pretty well, however, so this won&#8217;t be a problem for this book.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_environment_variables"><a class="link" href="#_environment_variables">Environment variables</a></h4>
+<div class="paragraph">
+<p>They have already been set for you in <code>~/.bashrc</code> but it is worth knowing about them. I&#8217;m not going to explain the environment variables at all in this book since there are plenty of places you can read about them starting with <a href="https://github.com/rwxrob/awesome-go"><em>my awesome-go list</em></a>.</p>
+</div>
+<div class="paragraph">
+<p>To list all the environment variables (we&#8217;ll get into what a <em>variable</em> even means to coders later):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>go<span class="tok-w"> </span>env</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>I only mention this because you might be talking about your Go development with another experienced Go developer and if you are having problems they will likely want to know this stuff.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>

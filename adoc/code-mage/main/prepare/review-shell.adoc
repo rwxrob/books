@@ -1,0 +1,79 @@
+== Review shell commands
+
+Since you are so good at taking Markdown notes, it's time to review all the commands we have been using so far to do different things. Take this time to put them in your notes in your own way. 
+
+[TIP]
+====
+I kept the description separate so you can cover it up and quiz yourself if you want.
+====
+
+[source,shell]
+----
+brew <1>
+winget <2>
+apt <3>
+sudo <4>
+man ls <5>
+less setup <6>
+ls <7>
+ls -l <8>
+ls -l | less <9>
+/dev/stdout <10>
+/dev/stdin <11>
+/dev/stderr <12>
+ls -a <13>
+cd bash <14>
+cd <15>
+cd - <16>
+cd .. <17>
+pwd <18>
+exec bash -l <19>
+touch README.md <20>
+vi <21>
+vim <22>
+nvim <23>
+gh auth login <24>
+gh repo create codebook --private --clone <25>
+gh repo create codebook --private --clone --template rwxrob/dot-template <26>
+gh repo view --web <27>
+git add . <28>
+git commit -m 'message' <29>
+git push -u origin main <30>
+git push <31>
+----
+
+<1> Installer and package manager for macOS
+<2> Install and package manager for Windows
+<3> Installer and package manager for Ubuntu Linux
+<4> Do something as root/admin on Unix/Linux
+<5> Show manual page about `ls` command
+<6> Read the `setup` file with pager
+<7> Display list of current directory content
+<8> Display long list of directory content
+<9> Page through long listing of directory content
+<10> Name for output from a command
+<11> Name for input coming coming into a command
+<12> Name for error output from a command
+<13> Display all content, even hidden (dots)
+<14> Change into the `bash` subdirectory
+<15> Change into home directory (same as `cd ~`)
+<16> Change to previous directory
+<17> Change to parent directory
+<18> Print the current working directory path
+<19> Replace current shell with new one
+<20> Create `README.md` or update modified time
+<21> Original visual editor (alias for `vi`, `vim`, `nvim`)
+<22> Improved `vi` text editor
+<23> New `vim` text editor
+<24> Authenticate to GitHub
+<25> Create new private repo and clone locally
+<26> Same as 25 but copy from a template
+<27> Open GitHub repo in graphic web browser
+<28> Add changes in current directory and below
+<29> Commit with a message
+<30> Push committed changes to GitHub (first time)
+<31> Push committed changes to GitHub
+
+You might also want to add a section in your `codebook` notes about your favorite combos with Vim (are you a `ZZ` person or a `:wq` or a `:x` person).
+
+Damn! You've covered a lot! Take a victory lap, do a dab, or just smile to yourself knowingly. You deserve it. Great job, terminal mage! Looks like we are ready to learn some more advanced magic.

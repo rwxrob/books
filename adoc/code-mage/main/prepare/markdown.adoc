@@ -1,38 +1,71 @@
-== Take notes in Markdown
+== Start notes in Markdown
 
-In the journey of learning, problem-solving, and creating, taking notes is as important as casting spells to preserve fleeting thoughts. Whether you use a sophisticated digital tool (like GitHub or Obsidian) or a simple piece of paper, the act of note-taking is a powerful practice that unlocks clarity, reinforces memory, and fosters creativity.
+In the journey of learning, problem-solving, and creating, taking notes is as important as casting spells to preserve fleeting thoughts. Whether you use a sophisticated digital tool or a simple piece of paper, the act of note-taking is a powerful practice that unlocks clarity, reinforces memory, and fosters creativity.
 
-=== Why notes matter
+[CAUTION]
+====
+There are _a lot_ of note take apps, philosophies, and vampires who will suck all your life force attacking you about your note taking method. The best method is the one that is the easiest, most compatible, and simple. You can always try fancier things later, for not you need practice with Vim and Git and GitHub to stick with this method.
+====
 
-**Preserving ideas**: Our minds are like flowing rivers of thought. Without notes, many brilliant ideas risk being swept away. Notes capture these ideas, making them tangible and retrievable.
+=== GitHub notes repo
 
-**Enhancing memory**: The process of writing, even on paper, strengthens your ability to recall information. It’s an active engagement with the material that makes it stick.
+The best way to manage knowledge is the same way we manage source code, with GitHub. Let's create a new repo for both our code and notes, we'll call it a `codebook` (but you can call it whatever you want):
 
-**Organizing complexity**: Notes allow you to break down complex concepts into manageable pieces, creating a map that guides your understanding.
+[source, sh]
+----
+cd
+gh repo create codebook --private --clone
+cd codebook
+----
 
-**Encouraging reflection**: By reviewing your notes, you can identify patterns, revisit insights, and refine your thinking over time.
+Notice that the first `cd` has nothing after it. That automatically takes you home exactly like `cd ~` but just a lot easier to type.
 
-=== The value of starting simple
+Now let's create a `README.md` with the `touch` command:
 
-You don’t need a perfect system to begin. Even a humble notebook can be your first spellbook. What matters is consistency and intent. Scribble ideas, sketch diagrams, or jot down questions—whatever helps you capture and organize your thoughts.
+[source, sh]
+----
+touch README.md
+----
 
-=== A note-taking habit for mages
+The `touch` command makes a new file if it does not exist or updates the time that it was last modified.
 
-**Always be ready**: Keep a notebook or a few blank sheets nearby, whether at your desk or on the go.
+[TIP]
+====
+It is a good habit to use it to make new files so that you don't attempt to make one where you don't have permission only to realize after you are written a bunch of stuff that you don't have permission to save the file. If it sounds like that lesson came from years of mistakenly doing exactly that it did.
+====
 
-**Write what matters**: Focus on key points, insights, and actionable ideas rather than trying to transcribe everything.
+Now go head and put anything into the file and save it using the `git` command:
 
-**Review and reflect**: Set aside time to revisit your notes. What once seemed incomplete might spark new understanding.
+[source,sh]
+----
+git add .                     <1>
+git commit -m 'add readme'    <2>
+git push -u origin main       <3>
+----
 
-=== From paper to systems
+<1> Add everything in the current directory and below.
+<2> Commit with a comment message.
+<3> Push up to GitHub (first push always needs `-u origin main`)
 
-As your habit grows, you might find value in transitioning to a digital system that organizes your notes into searchable collections. But remember: the tool is less important than the practice. What matters most is capturing the magic of your thoughts, whether in ink or bytes.
+The `README.md` is a special file. It is displayed automatically on GitHub when people visit that page. Let's open our graphic web browser and check it out:
 
-Taking notes is not just about recording—it’s about thinking. With each word you write, you deepen your engagement with your learning, your ideas, and yourself. Start small, stay consistent, and watch as your notes become a treasure trove of inspiration and growth.
+[source, sh]
+----
+gh repo view --web
+----
+
+Nice! The spell book begins to take form.
 
 === Start using Markdown
 
-Your spell book will not just be written in Go, but also Markdown, a lightweight markup language that allows document formatting and such using nothing but a plain text editor. This page will guide you through the essential features of Markdown, helping you harness its potential for organizing and presenting information. Markdown is perfect for taking notes because of the following:
+You might have noticed the `.md` at the end and wondered what that was about. That's Markdown, a lightweight markup language that allows document formatting and such using nothing but a plain text editor. This page will guide you through the essential features of Markdown, helping you harness its potential for organizing and presenting information. Go ahead and practice it all taking notes as you go. You can repeat the steps for saving and pushing to view it on the web as you go to practice those commands.
+
+[TIP]
+====
+Yes, there are many ways to dynamically preview Markdown while you are writing it. Forget about them all right now. You are _deliberately_ repeating that process of `git add`, `git commit`, `git push` until you dream of it in your sleep. Later you can look at other methods of previewing and reduce the number of commits if you really want to by making a PR, but that's getting way ahead of ourselves. Feels good knowing everything you are doing is the exact same professionals are doing thousands of times a day, just like me right now while I'm writing this.
+====
+
+Markdown is perfect for taking notes because of the following:
 
 **Simplicity**: Markdown’s syntax is intuitive and easy to learn.
 

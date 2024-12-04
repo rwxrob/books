@@ -1,0 +1,21 @@
+== Learn vim basics
+
+When it comes to mastering text editing, choosing the right starting point can have a profound impact on your efficiency, understanding, and future flexibility as a developer or technical professional. Among the myriad of editors available, learning Vim first offers unique advantages that extend well beyond mere productivity.
+
+Is it hard? Yes.
+
+Is it worth it? Yes.
+
+Honestly, it's not as hard as people think. Start with the basics, which are covered in the `vimtutor` command:
+
+[source, sh]
+----
+vimtutor
+----
+
+Go ahead. Get going. It should take you under 90 minutes or so. After you finished it once, maybe do it one more time. Then proceed to the next section were we talk about taking notes so you can begin crafting your book of code spells and notes to get the best practice of all.
+
+[CAUTION]
+====
+Don't do things like VimAdventures. You won't remember them. The best way to learn Vim is to use `vim`. Finish the `vimtutor` and then start taking notes with your new editing skills. It will be a much better use of your time.
+====

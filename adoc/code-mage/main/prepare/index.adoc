@@ -48,9 +48,16 @@ include::neovim.adoc[]
 
 ---
 
-include::golang.adoc[]
+include::learn-vim.adoc[]
 
 ---
 
 include::markdown.adoc[]
 
+---
+
+include::review-shell.adoc[]
+
+---
+
+include::golang.adoc[]
