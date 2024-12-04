@@ -2411,6 +2411,39 @@ git<span class="tok-w"> </span>push<span class="tok-w"> </span><i class="conum" 
 </table>
 </div>
 <div class="sect3">
+<h4 id="_goinstallbinaries"><a class="link" href="#_goinstallbinaries">GoInstallBinaries</a></h4>
+<div class="paragraph">
+<p>Vim needs to have the binaries installed. These seem like they compile so they take a while. Be patient:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>vi<span class="tok-w"> </span>+GoInstallBinaries<span class="tok-w"> </span>+qa</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once those are in you should be able to create a new random Go file and have it automatically populate it:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>vi<span class="tok-w"> </span>/tmp/foo.go</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You should see the following created in the file automatically:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-kn">package</span><span class="tok-w"> </span><span class="tok-nx">main</span>
+
+<span class="tok-kn">import</span><span class="tok-w"> </span><span class="tok-s">&quot;fmt&quot;</span>
+
+<span class="tok-kd">func</span><span class="tok-w"> </span><span class="tok-nx">main</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">	</span><span class="tok-nx">fmt</span><span class="tok-p">.</span><span class="tok-nx">Println</span><span class="tok-p">(</span><span class="tok-s">&quot;vim-go&quot;</span><span class="tok-p">)</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
 <h4 id="_environment_variables"><a class="link" href="#_environment_variables">Environment variables</a></h4>
 <div class="paragraph">
 <p>They have already been set for you in <code>~/.bashrc</code> but it is worth knowing about them. I&#8217;m not going to explain the environment variables at all in this book since there are plenty of places you can read about them starting with <a href="https://github.com/rwxrob/awesome-go"><em>my awesome-go list</em></a>.</p>
