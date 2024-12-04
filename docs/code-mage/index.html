@@ -498,7 +498,6 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_preface">Preface</a>
 <ul class="sectlevel2">
 <li><a href="#_who_should_read_this_book">Who should read this book</a></li>
-<li><a href="#_dear_parents_and_pedagogues">Dear parents and pedagogues</a></li>
 <li><a href="#_whats_included_in_the_book">What&#8217;s included in the book</a></li>
 <li><a href="#_how_to_use_this_book">How to use this book</a></li>
 </ul>
@@ -510,7 +509,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_life_of_a_code_mage">Life of a code mage</a></li>
 </ul>
 </li>
-<li><a href="#_prepare_to_code">Prepare to code</a>
+<li><a href="#prepare">Prepare to code</a>
 <ul class="sectlevel2">
 <li><a href="#_install_bash_shell">Install bash shell</a></li>
 <li><a href="#_create_a_github_account">Create a GitHub account</a></li>
@@ -680,19 +679,81 @@ This book would never have happened without you.</p>
 <div class="sect2">
 <h3 id="_who_should_read_this_book"><a class="link" href="#_who_should_read_this_book">Who should read this book</a></h3>
 <div class="paragraph">
-<p>Please don&#8217;t take this the wrong way: this book was written for 12-year-olds, the type who want to learn to code like a hacker in the terminal. But if that isn&#8217;t you, you still could learn something. Bar tenders, homemakers,  grandparents. I&#8217;ve helped them all in the same silly way.</p>
+<p>This book was written for <em><strong>12-year-olds who want to learn to code like a hacker in the terminal</strong></em>. I&#8217;ve found that twelve is the ideal age to learn to code for most: math and typing skills are good, cognitive abilities sound, and—hormones haven&#8217;t <em>completely</em> taken over their brains.</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_dear_parents_and_pedagogues"><a class="link" href="#_dear_parents_and_pedagogues">Dear parents and pedagogues</a></h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>Here, let me just talk to the parents and pedagogues for a second. It&#8217;ll be easier. Skip this part if it bores you. It&#8217;s all good. It&#8217;s okay if you are wondering who the heck this guy thinks he is. I know I would be.</p>
+<p>I personally started coding when I was around 13 years old, mostly because there were no computers available until then. In 1979 the Atari 400 came out and my Junior High had exactly one of them sequestered away in a back room of the library where Mr. Bevans, the media coordinator, was the only one allowed to use it—until I came along. I suppose he took pity on my for all the bullying I got. Whatever the reason, I was the <em>only</em> kid in the entire school who got to use that computer. Every morning I took refuge in front of the dark glow of this magical box in front of me. I was <em>completely</em> hooked. The power!</p>
 </div>
 <div class="paragraph">
-<p>While it is true that this book can be thought of as a text book for absolute beginners with enough algebra to understand what a mathematical function is, the book is very clearly written to include everyone <em>outside</em> of educational institutions. In fact, I wrote it mostly with pro-active <em>parents</em> in mind who want to give their kids a head-start in tech (not teachers). I know that might come as a surprise to those who have gotten used to overpriced books written with the intent of impressing the board of education more than actually helping the reader learn anything.</p>
+<p>In true 80s nerd fashion my first program was in BASIC loaded into a cartridge with its own paper manual. I&#8217;ve always coded something I <em>wanted</em>, never coding for coding sake. I have too many other things I want to do. I <em>wanted</em> a Dungeons and Dragons character stats generator to save me from hours of dice rolling. We&#8217;ll code one later in the book. It&#8217;s a surprisingly fun program to write.</p>
 </div>
 <div class="paragraph">
-<p>To be completely honest, it is virtually impossible to find this sort of thing in most traditional education systems. AP Computer Science? Please. They still teach that Java inheritance is a <em>good</em> thing.</p>
+<p>I did play a <em>lot</em> of Dungeons and Dragons when I was 11. I think our human brains are just ready for the challenge around that age, some earlier, some later. I even overcame my nerdy shyness to approach the only person in my Junior High who played regularly. We stayed friends all through school serving in High School executive council together. He&#8217;s a rich surgeon now and occasionally takes out on Lake Powell on his fancy house boat. Love that dude.</p>
+</div>
+<div class="paragraph">
+<p>It was all the complexity and fantasy that drew me in to D&amp;D, computers were just a tool to make <em>that</em> even more fun. I would pour over those pages studying every single fact. My brain was starving for a challenge. Maybe you are having that same feeling reading these pages. I certainly hope so, that&#8217;s what I&#8217;m going for, the <em>Player&#8217;s Handbook of Code</em>. (Humm, maybe I should reconsider the title.)</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_wait_what_are_you_doing_here"><a class="link" href="#_wait_what_are_you_doing_here">Wait, what are <em>you</em> doing here?</a></h4>
+<div class="paragraph">
+<p>I see you, you are <em>definitely</em> not 12. That&#8217;s okay. I&#8217;ve helped bar tenders, homemakers,  even grandparents learn to code in the same silly way.</p>
+</div>
+<div class="paragraph">
+<p>Some of you probably already know how to code. If that describes you, have a look at the following URL where you can setup everything in the book in a <code>podman</code> container:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>https://github.com/rwxrob/code-mage</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The container has a few limitations since the version of Neovim is so old, but other than that, it&#8217;s the same as doing all the steps of the <a href="#prepare">Prepare section</a> for you.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dear_parents_and_pedagogues"><a class="link" href="#_dear_parents_and_pedagogues">Dear parents and pedagogues</a></h4>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Hey kids, skip this long, boring section. The grown ups are talking.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Some of you are parents and pedagogues. Let me talk to you for a second.</p>
+</div>
+<div class="paragraph">
+<p>First of all, thank you for being <em>awesome</em>! It takes a lot to bring kids into this world and even more to dedicate your life to helping kids that aren&#8217;t even your own to find their way and learn something even if they don&#8217;t want to. Deep respect.</p>
+</div>
+<div class="paragraph">
+<p>If you are like me you are wondering, "who the heck is this guy and should I trust those in my care to his wild ramblings?" In so many ways you really shouldn&#8217;t, I&#8217;m a degenerate in the first degree, but when it come to help kids learn to code, well, that&#8217;s my super power. I don&#8217;t mess around—I mean—I do mess around but, um—you know what I mean.</p>
+</div>
+<div class="paragraph">
+<p>While it is true that this book can be thought of as a text book for absolute beginners with enough algebra to understand what a mathematical function is, the book is very clearly written to include everyone <em>outside</em> of educational institutions. In fact, I wrote it mostly with pro-active <em>parents</em> in mind who want to give their kids a head-start in tech (not teachers). I was a scout master for more than a decade and the scouts and their parents constantly asked me, "Mr. Rob, teach us to code. Teach us to hack, Mr. Rob."</p>
+</div>
+<div class="paragraph">
+<p>So yes, this <em>could</em> be a "text book" but quite honestly, I <em>hate</em> text books. Too stuffy, too full of themselves, to overpriced and written for the adult members of board of education who are going to cut the check (do they still have checks?) Really though, who is thinking of the children, yes, <em>the children</em> the ones we are doing this for, right? I could name names, but I won&#8217;t. You pompous, bombastic, airbags know who you are and I <em>never</em> want to be grouped with you, ever.</p>
+</div>
+<div class="paragraph">
+<p>To be completely honest, it is virtually impossible to find this sort of thing in most traditional education systems. AP Computer Science? Please. They still teach that Java single class inheritance is a <em>good</em> thing.</p>
 </div>
 <div class="paragraph">
 <p>In fact, I started SKILSTAK Coding Arts in 2013 with my own retirement money to address the <em>real</em> needs of the coding industry and those who might consider it as a career, the next generation of coding super-heroes. Hundreds of launched heroes later and here I am writing all this down for the next thousand or more.</p>
@@ -701,9 +762,10 @@ This book would never have happened without you.</p>
 <p>Still skeptical? What if I told you that I really have helped a lot of people get started in tech, like a <em>lot</em>. One of them quit his grocery clerk job to write code for a solar energy company and had his own intern at 16. Another couldn&#8217;t get a job with a psychology degree so he learned this stuff and got a starting salary over $100,000. Another drove 40 minutes both ways just to attend our sessions for <em>four years</em> and went on to create an entire coding club at her rural school. I keep a <em>nice things</em> file full of real comments from people like these that keeps me going even when the money doesn&#8217;t (which is the reason I still have a full-time job and it ain&#8217;t writing books, although it probably should have been).</p>
 </div>
 <div class="paragraph">
-<p>The point is, these stories don&#8217;t have to be about someone else. They can be about <em>you</em> or someone you know and care about. Coding really does change lives and I&#8217;m here to help.</p>
+<p>The point is, these stories don&#8217;t have to be about someone else. They can be about someone you know and care about. Coding really does change lives and I&#8217;m here to help in whatever way I can.</p>
 </div>
 <hr>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_whats_included_in_the_book"><a class="link" href="#_whats_included_in_the_book">What&#8217;s included in the book</a></h3>
@@ -1027,7 +1089,7 @@ While you are working on creating your own community, consider joining ours at <
 </div>
 </div>
 <div class="sect1">
-<h2 id="_prepare_to_code"><a class="link" href="#_prepare_to_code">Prepare to code</a></h2>
+<h2 id="prepare"><a class="link" href="#prepare">Prepare to code</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Learning happens in the lab, not the lecture hall. You can&#8217;t make spells or swords without a lab or forge. So let&#8217;s make one. Here&#8217;s what we&#8217;ll need:</p>

@@ -1,3 +1,4 @@
+[[prepare]]
 = Prepare to code
 
 Learning happens in the lab, not the lecture hall. You can't make spells or swords without a lab or forge. So let's make one. Here's what we'll need:
