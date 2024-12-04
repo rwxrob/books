@@ -2,8 +2,6 @@
 
 Please don't take this the wrong way: this book was written for 12-year-olds, the type who want to learn to code like a hacker in the terminal. But if that isn't you, you still could learn something. Bar tenders, homemakers,  grandparents. I've helped them all in the same silly way.
 
-The whole fantasy magic theme is fun, right? I hope you like it. It you don't that's fine. No judgement. It's actually for a very good reason: to fool your brain into remembering it even when your brain doesn't want to (the same way people memorize the number Pi to 100,000 digits, Google it). The fact is everything in this book is very real and might even get you a job someday. _Winks at mom._
-
 == Dear parents and pedagogues
 
 Here, let me just talk to the parents and pedagogues for a second. It'll be easier. Skip this part if it bores you. It's all good. It's okay if you are wondering who the heck this guy thinks he is. I know I would be.

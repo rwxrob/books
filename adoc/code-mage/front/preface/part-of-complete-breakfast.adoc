@@ -1,3 +1,0 @@
-== Part of a complete CS breakfast
-
-This book is just one part of a complete Computer Science education breakfast. If you truly want to deeply understand programming, with a full comparative examination of different paradigms, languages, and in-depth computer science concepts, then something like Harvard's free CS50 might be a better first introduction. This book covers just enough of that stuff to generally understand it but focuses more on one specific language to produce actual, usable software. The main difference between these approaches is what you _get_. With CS50 you get understanding, which is important. With this book you get one or two apps you can showcase to demonstrate your employable skills.

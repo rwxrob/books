@@ -12,17 +12,5 @@ include::whats-in-this-book.adoc[]
 
 ---
 
-include::part-of-complete-breakfast.adoc[]
-
----
-
 include::how-to-use-this-book.adoc[]
-
----
-
-include::supplement-your-reading.adoc[]
-
----
-
-include::learn-one-school.adoc[]
 
