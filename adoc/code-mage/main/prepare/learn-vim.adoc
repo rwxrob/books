@@ -13,6 +13,22 @@ Honestly, it's not as hard as people think. Start with the basics, which are cov
 vimtutor
 ----
 
+A few things to keep in mind while doing the tutorial:
+
+- `Control-[` is the same as `Esc` on American keyboards.
+- `Control-i` is the same as `Tab`.
+- `Control-c` should never be used in Vim or Neovim.
+- This tutorial was made by noobs in college, so it's missing a lot.
+
+[IMPORTANT]
+====
+**DO NOT USE `Control-c` INSTEAD OF ESCAPE!** This completely prevents you from using `set -o vi` for history navigation later because it sends a signal interrupt that is not handled by the shell as an `Esc`! `Control-[` _does_ send an actual `Esc`.
+
+Some prominent YouTubers suggest using `Control-c` instead. But _why_?! How can anyone claim to be a Vim advocate and yet willingly teach people something that will permanently prevent them from ever using Vim for history navigation, forcing them to use "emacs mode" instead? All while talking trash about emacs. It makes _no_ sense.
+
+One of the biggest advantages of learning Vim in the first place is all the _other_ things besides Vim that act like Vim, like command history navigation. Just don't shoot yourself in the foot learning the _wrong) thing.
+====
+
 Go ahead. Get going. It should take you under 90 minutes or so. After you finished it once, maybe do it one more time. Then proceed to the next section were we talk about taking notes so you can begin crafting your book of code spells and notes to get the best practice of all.
 
 [CAUTION]
