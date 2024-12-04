@@ -6,7 +6,7 @@ The **bash shell** (short for Bourne Again Shell) is a versatile command-line in
 
 Windows doesn't come with bash so we'll install it. Git Bash provides a basic bash that plays nice with Windows and does everything we want.
 
-Launch a `powershell` by tapping the `Win` key to pull up the search box and entering the word `powershell`. Then type in the following and press enter:
+Launch a `powershell` by tapping the `Win` key to pull up the search box and entering the word `powershell` then tapping `Enter`. You should see a terminal come up. Now type in the following and press `Enter`:
 
 [source, shell]
 ----
@@ -15,13 +15,18 @@ winget install --id git.git
 
 This installs bash at `"C:\Program Files\Git\bin\bash.exe"`.
 
-Launch the new Git Bash terminal now by closing your `powershell` window and open a Git Bash one instead by tapping `Win` and typing `bash` into the search bar this time.
+Launch the new Git Bash terminal now by first closing your `powershell` window and then opening a new Git Bash one instead by tapping `Win` and typing `bash` into the search bar this time and tapping `Enter`. You getting the hang of it?
 
-You should see a terminal come up. You will probably want to increase the font size (`Control - +`) and stuff a bit but don't bother too much because we will be installing WezTerm later, a much better terminal program.
+You should see a terminal come up, again, but this one looks different. You will probably want to increase the font size (`Control - +`) and stuff a bit but don't bother too much because we will be installing WezTerm later, a much better terminal program.
 
 === Update bash on macOS
 
-Mac computers come with an outdated bash by default. You can update it using Homebrew (`brew`) but first we need to install it since it is not a built-in Apple product.
+Mac computers come with an outdated bash by default. You can update it using Homebrew (`brew`) but first we need to install the `brew` command using the built-in Terminal app.
+
+[NOTE]
+====
+I really don't like how complicated it is to install `brew`. I never have. I wish there were something to download and install—especially for beginners. There simply isn't. Just know the stuff after this will actually not require a lot of complicated long commands that we just have to do without understanding them.
+====
 
 Launch the `terminal` program by pressing `Command + Space` and entering `terminal` into the Spotlight box. Then type the following:
 
