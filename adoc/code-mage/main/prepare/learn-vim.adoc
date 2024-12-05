@@ -1,3 +1,4 @@
+[[learnvim]]
 == Learn vim basics
 
 When it comes to mastering text editing, choosing the right starting point can have a profound impact on your efficiency, understanding, and future flexibility as a developer or technical professional. Among the myriad of editors available, learning Vim first offers unique advantages that extend well beyond mere productivity.

@@ -519,7 +519,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_setup_bash_with_bashrc">Setup bash with .bashrc</a></li>
 <li><a href="#_setup_wezterm_terminal">Setup WezTerm terminal</a></li>
 <li><a href="#_setup_neovim_editor">Setup Neovim editor</a></li>
-<li><a href="#_learn_vim_basics">Learn vim basics</a></li>
+<li><a href="#learnvim">Learn vim basics</a></li>
 <li><a href="#_start_notes_in_markdown">Start notes in Markdown</a></li>
 <li><a href="#_review_shell_commands">Review shell commands</a></li>
 <li><a href="#_setup_go_development">Setup Go development</a></li>
@@ -528,7 +528,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_learn_to_code">Learn to code</a>
 <ul class="sectlevel2">
 <li><a href="#_the_four_fundamental_elements">The four fundamental elements</a></li>
-<li><a href="#_greet_hello_world">Greet (hello world)</a></li>
+<li><a href="#_hello_world">Hello world</a></li>
 <li><a href="#_coming_soon">Coming soon &#8230;&#8203;</a></li>
 </ul>
 </li>
@@ -1929,7 +1929,7 @@ ls<span class="tok-w"> </span>-la</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_learn_vim_basics"><a class="link" href="#_learn_vim_basics">Learn vim basics</a></h3>
+<h3 id="learnvim"><a class="link" href="#learnvim">Learn vim basics</a></h3>
 <div class="paragraph">
 <p>When it comes to mastering text editing, choosing the right starting point can have a profound impact on your efficiency, understanding, and future flexibility as a developer or technical professional. Among the myriad of editors available, learning Vim first offers unique advantages that extend well beyond mere productivity.</p>
 </div>
@@ -2649,7 +2649,7 @@ git<span class="tok-w"> </span>push<span class="tok-w"> </span><i class="conum" 
 <hr>
 </div>
 <div class="sect2">
-<h3 id="_greet_hello_world"><a class="link" href="#_greet_hello_world">Greet (hello world)</a></h3>
+<h3 id="_hello_world"><a class="link" href="#_hello_world">Hello world</a></h3>
 <div class="paragraph">
 <p>Cast your first spell to greet the world of magic and code! This cantrip sets the tone for your magical journey ahead, giving acolytes like you a satisfying first success invoking code magic. "Hello World" is recognized across the realm as the first spell most mages will ever cast and continues to be a strong tradition today.</p>
 </div>
@@ -2667,20 +2667,27 @@ git<span class="tok-w"> </span>push<span class="tok-w"> </span><i class="conum" 
 </tr>
 </table>
 </div>
-<div class="paragraph">
-<p><strong>Task</strong>:</p>
-</div>
+<div class="sect3">
+<h4 id="_task"><a class="link" href="#_task">Task</a></h4>
 <div class="paragraph">
 <p>Print something to the terminal console for the user to read.</p>
 </div>
-<div class="paragraph">
-<p><strong>Topics</strong>:</p>
 </div>
+<div class="sect3">
+<h4 id="_practice"><a class="link" href="#_practice">Practice</a></h4>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p><code>go run</code> • <code>go build</code> • <code>go mod init</code> • <code>go install</code> • <code>main</code> • <code>string</code> • <code>fmt</code> • <code>// comment</code></p>
+<p>It is assumed that you are in your <code>codebook</code> repo directory for all of these.</p>
 </div>
-<div class="paragraph">
-<p><strong>Example</strong>:</p>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>First make a directory called <code>hello</code> and change into it. If you don&#8217;t remember how, go back and refresh <a href="#learn-shell">your basic shell skills</a> from the previous section.</p>
@@ -2701,20 +2708,12 @@ git<span class="tok-w"> </span>push<span class="tok-w"> </span><i class="conum" 
 </div>
 </div>
 <div class="paragraph">
-<p>At this point you have three choices:</p>
+<p>Now let&#8217;s run it. Enter the following command from the command line:</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Just run it: <code>go run main.go</code></p>
-</li>
-<li>
-<p>Build and run it here: <code>go build; ./hello</code></p>
-</li>
-<li>
-<p>Make it a mod, install, run: <code>go mod hello; go install; hello</code></p>
-</li>
-</ol>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>go<span class="tok-w"> </span>run<span class="tok-w"> </span>main.go</code></pre>
+</div>
 </div>
 <div class="paragraph">
 <p>I see sparks and a greeting appear out of the ether! Your first cantrip is cast. Congratulations!</p>
@@ -2779,8 +2778,103 @@ git<span class="tok-w"> </span>push<span class="tok-w"> </span><i class="conum" 
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Challenges</strong>:</p>
+<p>But we aren&#8217;t done yet. There are other ways to cast this spell. Try the following:</p>
 </div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>go<span class="tok-w"> </span>build
+./greet</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Notice it does the same thing but creates a binary executable. Now delete it so we can try another way:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>rm<span class="tok-w"> </span>greet</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>That&#8217;s a new command to add to your list. Make sure to read about <code>rm</code> with <code>man rm</code> a bit to get to understand it. It&#8217;s a powerful and dangerous command.</p>
+</div>
+<div class="paragraph">
+<p>Now that <code>greet</code> is gone. Let&#8217;s create one and install it in one command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>go<span class="tok-w"> </span>install</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Woops! Looks like we got an error:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code><span></span>go: go.mod file not found in current directory or any parent directory</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>What&#8217;s that about? The reason is because only Go <em>modules</em> can be installed. We&#8217;ll get into modules a lot later, but for now just know it means there has to be a <code>go.mod</code> file. Here&#8217;s how to you create one (change <code>you</code>):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>go<span class="tok-w"> </span>mod<span class="tok-w"> </span>init<span class="tok-w"> </span>github.com/you/codebook/hello
+go<span class="tok-w"> </span>install
+greet</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Notice this time that the <code>./</code> wasn&#8217;t required. That&#8217;s because the <code>greet</code> command was compiled and moved into your <code>PATH</code>—specifically your <code>GOBIN</code> directory. Have a look at both of them:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-nv">$PATH</span><span class="tok-w">     </span><i class="conum" data-value="1"></i><b>(1)</b>
+path<span class="tok-w">           </span><i class="conum" data-value="2"></i><b>(2)</b>
+go<span class="tok-w"> </span>env<span class="tok-w"> </span>GOBIN<span class="tok-w">   </span><i class="conum" data-value="3"></i><b>(3)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Prints the list of directories combined with a colon between each</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Same as &lt;1&gt; but easier to read</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>The directory Go always installs into</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The <code>PATH</code> contains a list of directory paths that can contain executable commands. Anything with executable permission in one of these directories doesn&#8217;t need to have directory at the the beginning telling where to find it. <code>./</code> means "in this directory right here". You could, for example, run <code>ls</code> with <code>/bin/ls</code> instead, but who wants to type that. To see the full path to any command use the <code>which</code> command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>which<span class="tok-w"> </span>ls
+which<span class="tok-w"> </span>greet</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>At this point you might have noticed that <code>go</code> does a <em>lot</em>. You might have even tried <code>man go</code> and noticed there isn&#8217;t anything. Go has decided to put all the help documentation into the command itself:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>go<span class="tok-w"> </span><span class="tok-nb">help</span><span class="tok-w"> </span><span class="tok-p">|</span><span class="tok-w"> </span>less</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Just thought you should know.</p>
+</div>
+<div class="paragraph">
+<p>That&#8217;s a lot for now. Let it sink in for a while, then try out some of these challenges to test your mastery of what you&#8217;ve learned.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_challenges"><a class="link" href="#_challenges">Challenges</a></h4>
 <div class="ulist">
 <ul>
 <li>
@@ -2805,13 +2899,65 @@ git<span class="tok-w"> </span>push<span class="tok-w"> </span><i class="conum" 
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Now is the time to show what you have mastered to a mentor or friend who is learning with you. See what they have to say. Even though this is a small application, it&#8217;s a good time to get in the habit of <em>peer review</em> when another looks over it and validates it or gives feedback..</p>
+<p>Now is the time to show what you have mastered to a mentor or friend who is learning with you. See what they have to say. Even though this is a small application, it&#8217;s a good time to get in the habit of <em>peer review</em> when another looks over it and validates it or gives feedback.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
+</div>
+<div class="sect3">
+<h4 id="_review"><a class="link" href="#_review">Review</a></h4>
+<div class="literalblock">
+<div class="content">
+<pre>go run <i class="conum" data-value="1"></i><b>(1)</b>
+go build <i class="conum" data-value="2"></i><b>(2)</b>
+go mod init <i class="conum" data-value="3"></i><b>(3)</b>
+go install <i class="conum" data-value="4"></i><b>(4)</b>
+main <i class="conum" data-value="5"></i><b>(5)</b>
+string <i class="conum" data-value="6"></i><b>(6)</b>
+fmt <i class="conum" data-value="7"></i><b>(7)</b>
+// comment <i class="conum" data-value="8"></i><b>(8)</b></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>some</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>here</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>adf</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>adf</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>adf</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>adf</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="7"></i><b>7</b></td>
+<td>adf</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="8"></i><b>8</b></td>
+<td>adf</td>
+</tr>
+</table>
+</div>
 <hr>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_coming_soon"><a class="link" href="#_coming_soon">Coming soon &#8230;&#8203;</a></h3>

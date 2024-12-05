@@ -1,0 +1,168 @@
+== Hello world
+
+Cast your first spell to greet the world of magic and code! This cantrip sets the tone for your magical journey ahead, giving acolytes like you a satisfying first success invoking code magic. "Hello World" is recognized across the realm as the first spell most mages will ever cast and continues to be a strong tradition today.
+
+[IMPORTANT]
+====
+You should already feel completely comfortable opening, editing, and saving a file before doing this first spell. If not go back to <<learnvim, Learn Vim>> until you have mastered the basics.
+====
+
+=== Task
+
+Print something to the terminal console for the user to read.
+
+=== Practice
+
+[NOTE]
+====
+It is assumed that you are in your `codebook` repo directory for all of these.
+====
+
+First make a directory called `hello` and change into it. If you don't remember how, go back and refresh <<learn-shell, your basic shell skills>> from the previous section.
+
+Now type the following code into a file called `main.go` (ignore the numbered circles, for now):
+
+[source, go]
+----
+package main                          <1>
+
+import "fmt"                          <2>
+
+func main() {                         <3>
+    // fmt.Println("Hello, World!")  <4> <5>
+    fmt.Println("Hello, 世界🌎")       <6>
+}
+----
+
+Now let's run it. Enter the following command from the command line:
+
+[source, shell]
+----
+go run main.go
+----
+
+I see sparks and a greeting appear out of the ether! Your first cantrip is cast. Congratulations!
+
+[TIP]
+====
+Never written code before? If so, mark this date on your calendar as your _code birthday_. You'll want to remember it one day.
+====
+
+Let's decipher the glyphs of your spell:
+
+<1> Declares this file is package `main` which is where the action is.
+<2> Imports the standard `fmt` package containing `Println`.
+<3> Declares special `main` function, every program must have one.
+<4> Prints "Hello, World!" to the console with a new line at the end.
+<5> Use `//` to deactivate code or "comment it out".
+<6> Unicode (emojis, languages) are supported by the language.
+
+[NOTE]
+====
+Rob Pike and Ken Thompson (two of Go's inventors) more or less invented Unicode as well, which is used for emojis and different languages. It's no surprise that, unlike other languages, Go has first-class support for these built into the language itself. 😃
+====
+
+But we aren't done yet. There are other ways to cast this spell. Try the following:
+
+[source,sh]
+----
+go build
+./greet
+----
+
+Notice it does the same thing but creates a binary executable. Now delete it so we can try another way:
+
+[source,sh]
+----
+rm greet
+----
+
+That's a new command to add to your list. Make sure to read about `rm` with `man rm` a bit to get to understand it. It's a powerful and dangerous command.
+
+Now that `greet` is gone. Let's create one and install it in one command:
+
+[source,sh]
+----
+go install
+----
+
+Woops! Looks like we got an error:
+
+[source]
+----
+go: go.mod file not found in current directory or any parent directory
+----
+
+What's that about? The reason is because only Go _modules_ can be installed. We'll get into modules a lot later, but for now just know it means there has to be a `go.mod` file. Here's how to you create one (change `you`):
+
+[source, sh]
+----
+go mod init github.com/you/codebook/hello
+go install
+greet
+----
+
+Notice this time that the `./` wasn't required. That's because the `greet` command was compiled and moved into your `PATH`—specifically your `GOBIN` directory. Have a look at both of them:
+
+[source,sh]
+----
+echo $PATH     <1>
+path           <2>
+go env GOBIN   <3>
+----
+
+<1> Prints the list of directories combined with a colon between each
+<2> Same as <1> but easier to read
+<3> The directory Go always installs into
+
+The `PATH` contains a list of directory paths that can contain executable commands. Anything with executable permission in one of these directories doesn't need to have directory at the the beginning telling where to find it. `./` means "in this directory right here". You could, for example, run `ls` with `/bin/ls` instead, but who wants to type that. To see the full path to any command use the `which` command:
+
+[source,sh]
+----
+which ls
+which greet
+----
+
+At this point you might have noticed that `go` does a _lot_. You might have even tried `man go` and noticed there isn't anything. Go has decided to put all the help documentation into the command itself:
+
+[source,sh]
+----
+go help | less
+----
+
+Just thought you should know.
+
+That's a lot for now. Let it sink in for a while, then try out some of these challenges to test your mastery of what you've learned.
+
+=== Challenges
+
+- Write and run a program to print "Hello World!" to the screen.
+- Alter the program to print hello in another language to the screen.
+- Add an emoji of the world in the output.
+- Delete the program and write another from scratch.
+
+[TIP]
+====
+Now is the time to show what you have mastered to a mentor or friend who is learning with you. See what they have to say. Even though this is a small application, it's a good time to get in the habit of _peer review_ when another looks over it and validates it or gives feedback.
+====
+
+=== Review
+
+  go run <1>
+  go build <2>
+  go mod init <3>
+  go install <4>
+  main <5>
+  string <6>
+  fmt <7>
+  // comment <8>
+
+<1> some
+<2> here
+<3> adf
+<4> adf
+<5> adf
+<6> adf
+<7> adf
+<8> adf
+

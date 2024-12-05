@@ -18,7 +18,7 @@ Remember: every grand application begins with these elemental fundamentals. Mast
 
 ---
 
-include::echo-greeting/content.adoc[]
+include::greet.adoc[]
 
 ---
 
