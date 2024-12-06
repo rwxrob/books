@@ -62,7 +62,11 @@ include::learn-vim.adoc[]
 
 ---
 
-include::markdown.adoc[]
+include::codebook.adoc[]
+
+---
+
+include::learn-markdown.adoc[]
 
 ---
 

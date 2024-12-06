@@ -1,9 +1,11 @@
 == Unix with Windows
 
 - Git Bash
-- MSYS2
+- MSYS2 (preferred, tmux included, pacman)
+
 - Cygwin
 - WSL1
+
 - WSL2
 - Podman
 - VirtualBox

@@ -1,6 +1,6 @@
 == Review shell commands
 
-Since you are so good at taking Markdown notes, it's time to review all the commands we have been using so far to do different things. Take this time to put them in your notes in your own way. 
+Since you are so good at taking Markdown notes now, it's time to review all the commands we have been using so far to do different things. Take this time to put them in your notes in your own way.
 
 [TIP]
 ====

@@ -1,0 +1,57 @@
+== Create a codebook
+
+In the journey of learning, problem-solving, and creating, taking notes is as important as casting spells to preserve fleeting thoughts. Whether you use a sophisticated digital tool or a simple piece of paper, the act of note-taking is a powerful practice that unlocks clarity, reinforces memory, and fosters creativity.
+
+[CAUTION]
+====
+There are _a lot_ of note take apps, philosophies, and vampires who will suck all your life force attacking you about your note taking method. The best method is the one that is the easiest, most compatible, and simple. You can always try fancier things later, for not you need practice with Vim and Git and GitHub to stick with this method.
+====
+
+=== GitHub repo for notes and code
+
+The best way to manage knowledge is the same way we manage source code, with GitHub. Let's create a new repo for both our code and notes, we'll call it a `codebook` (but you can call it whatever you want):
+
+[source, sh]
+----
+cd
+gh repo create codebook --private --clone
+cd codebook
+----
+
+Notice that the first `cd` has nothing after it. That automatically takes you home exactly like `cd ~` but just a lot easier to type.
+
+Now let's create a `README.md` with the `touch` command:
+
+[source, sh]
+----
+touch README.md
+----
+
+The `touch` command makes a new file if it does not exist or updates the time that it was last modified.
+
+[TIP]
+====
+It is a good habit to use it to make new files so that you don't attempt to make one where you don't have permission only to realize after you are written a bunch of stuff that you don't have permission to save the file. If it sounds like that lesson came from years of mistakenly doing exactly that it did.
+====
+
+Now go head and put anything into the file and save it using the `git` command:
+
+[source,sh]
+----
+git add .                     <1>
+git commit -m 'add readme'    <2>
+git push -u origin main       <3>
+----
+
+<1> Add everything in the current directory and below.
+<2> Commit with a comment message.
+<3> Push up to GitHub (first push always needs `-u origin main`)
+
+The `README.md` is a special file. It is displayed automatically on GitHub when people visit that page. Let's open our graphic web browser and check it out:
+
+[source, sh]
+----
+gh repo view --web
+----
+
+Nice! The spell book begins to take form.
