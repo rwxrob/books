@@ -499,7 +499,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <ul class="sectlevel2">
 <li><a href="#_redirect_user_github_io">Redirect user.github.io</a></li>
 <li><a href="#_enable_github_repo_discussions">Enable GitHub repo discussions</a></li>
-<li><a href="#_lets_git_into_it_lol">Let&#8217;s git into it (lol)</a></li>
+<li><a href="#_terminal_browsing_lynx_vs_w3m">Terminal browsing: lynx vs w3m</a></li>
 </ul>
 </li>
 </ul>
@@ -650,7 +650,42 @@ This book would never have happened without you.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_lets_git_into_it_lol"><a class="link" href="#_lets_git_into_it_lol">Let&#8217;s git into it (lol)</a></h3>
+<h3 id="_terminal_browsing_lynx_vs_w3m"><a class="link" href="#_terminal_browsing_lynx_vs_w3m">Terminal browsing: lynx vs w3m</a></h3>
+<div class="paragraph">
+<p>Both are great and they are almost identical in function and usage, but there are some considerations:</p>
+</div>
+<div class="paragraph">
+<p><strong>Both are for a certain type of discerning terminal user</strong>: There are tons of terminal users out there who have no idea what either of these are. Extremely intelligent people choose not to use them, preferring to slog around using their mouse in a graphic browser where every single page has a different font style and layout. This is scientifically horrible when it comes to scanning for information. Text-based browsing turns you into a web crawler with maximum efficiency, no context switching or understanding what is going on with that font choice, or color, or completely unnecessary image. You find what you need and then if and when a graphic version is needed you tap <code>,</code> to open your graphical browser, no cookies, no tracking, just raw speed.</p>
+</div>
+<div class="paragraph">
+<p><strong>w3m is a lot newer</strong>: Although it has never been an issue for me, w3m was created much more recently, even though its source code is still maintained on SourceForge.</p>
+</div>
+<div class="paragraph">
+<p><strong>w3m does a better job on most pages</strong>:</p>
+</div>
+<div class="paragraph">
+<p><strong>w3m left justifies all paragraphs</strong>:</p>
+</div>
+<div class="paragraph">
+<p><strong>lynx uses initial intend paragraphs</strong>:</p>
+</div>
+<div class="paragraph">
+<p><strong>w3m navigation is more spammy, but intuitive</strong>:</p>
+</div>
+<div class="paragraph">
+<p><strong>lynx navigation takes only your right-hand</strong>:</p>
+</div>
+<div class="paragraph">
+<p><strong>Both have sustainability issues</strong>: Neither is maintained in a GitHub repo. They have mirrors, but the maintainers are not interested at all in creating anything on GitHub, for whatever reason. The tiny niche of people who prefer text-based browsing for reasons that are not obvious to the masses of slow-browsing mediocrity are not loud enough to sway those maintainers. I&#8217;m guessing they also have a lot better things to do, which is why they love terminal-based browsing so much. The good news is that the type of people who use and love both of these great browsers are perfectly able to create a port in a month or so if needed, and they totally would if either were put into jeopardy.</p>
+</div>
+<div class="sect3">
+<h4 id="_conclusion"><a class="link" href="#_conclusion">Conclusion</a></h4>
+<div class="paragraph">
+<p>For me the older lynx is just better. With the least amount of customization I get what I find to be the fastest possible browsing experience with the least amount of effort, and isn&#8217;t that this is all about?</p>
+</div>
+<div class="paragraph">
+<p>Every time I switch to w3m I start to hate all the extra spamming I need to do to get the cursor onto a link on the page. That alone is reason enough for me to stick with lynx. I find the built-in assumption that I want to jump to the next link in the page with j and previous with k to be almost always what I want. I miss not being able to do research while also taking a sip of coffee. After scanning thousands of web pages with both, I can say that lynx initial-line-indented paragraphs are way easier to scan. I&#8217;m also frequently copying the URL out of the information page with tmux, which is just <code>i</code> in lynx and <code>=</code> in w3m. While I realize all of this stuff could be remapped, lynx just gets more things right for my style of terminal browsing than anything else.</p>
+</div>
 <div class="paragraph">
 <p>&lt;script type="module"&gt;
 import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
@@ -669,9 +704,10 @@ mermaid.initialize({ startOnLoad: true });
 </div>
 </div>
 </div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-11-29 20:18:32 -0500
+Last updated 2024-12-06 12:30:21 -0500
 </div>
 </div>
 </body>

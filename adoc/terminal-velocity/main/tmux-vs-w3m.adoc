@@ -1,0 +1,25 @@
+== Terminal browsing: lynx vs w3m
+
+Both are great and they are almost identical in function and usage, but there are some considerations:
+
+**Both are for a certain type of discerning terminal user**: There are tons of terminal users out there who have no idea what either of these are. Extremely intelligent people choose not to use them, preferring to slog around using their mouse in a graphic browser where every single page has a different font style and layout. This is scientifically horrible when it comes to scanning for information. Text-based browsing turns you into a web crawler with maximum efficiency, no context switching or understanding what is going on with that font choice, or color, or completely unnecessary image. You find what you need and then if and when a graphic version is needed you tap `,` to open your graphical browser, no cookies, no tracking, just raw speed.
+
+**w3m is a lot newer**: Although it has never been an issue for me, w3m was created much more recently, even though its source code is still maintained on SourceForge.
+
+**w3m does a better job on most pages**:
+
+**w3m left justifies all paragraphs**:
+
+**lynx uses initial intend paragraphs**:
+
+**w3m navigation is more spammy, but intuitive**:
+
+**lynx navigation takes only your right-hand**:
+
+**Both have sustainability issues**: Neither is maintained in a GitHub repo. They have mirrors, but the maintainers are not interested at all in creating anything on GitHub, for whatever reason. The tiny niche of people who prefer text-based browsing for reasons that are not obvious to the masses of slow-browsing mediocrity are not loud enough to sway those maintainers. I'm guessing they also have a lot better things to do, which is why they love terminal-based browsing so much. The good news is that the type of people who use and love both of these great browsers are perfectly able to create a port in a month or so if needed, and they totally would if either were put into jeopardy.
+
+=== Conclusion
+
+For me the older lynx is just better. With the least amount of customization I get what I find to be the fastest possible browsing experience with the least amount of effort, and isn't that this is all about?
+
+Every time I switch to w3m I start to hate all the extra spamming I need to do to get the cursor onto a link on the page. That alone is reason enough for me to stick with lynx. I find the built-in assumption that I want to jump to the next link in the page with j and previous with k to be almost always what I want. I miss not being able to do research while also taking a sip of coffee. After scanning thousands of web pages with both, I can say that lynx initial-line-indented paragraphs are way easier to scan. I'm also frequently copying the URL out of the information page with tmux, which is just `i` in lynx and `=` in w3m. While I realize all of this stuff could be remapped, lynx just gets more things right for my style of terminal browsing than anything else.

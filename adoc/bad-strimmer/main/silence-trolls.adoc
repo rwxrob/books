@@ -1,0 +1,17 @@
+== Silence trolls
+
+There are several types of trolls that I encountered over the years. Everyone knows not to feed them, but how do you shut them the fuck up without banning them?
+
+Shame.
+
+By outing a troll they shut themselves up. Ironically, giving them attention front and center by printing their chat on the screen of the video is the best way to silence them so long as they care about their account name, and believe me, a lot of them do. Those that don't just have to be banned, but they are really easy to deal with because usually Twitch already knows about them and silences them.
+
+=== Back-seaters
+
+Here's how I learned about this lesson the hard way. I was coding in the foreground with my chat completely invisible to the stream and myself. This fostered a backseat driving troll atmosphere where a bunch of assholes started slamming everything I was doing thinking I might not ever read it. Well I did, and banned them all. I ain't got no tolerance for that kind of shit in my own house. Good natured ribbing is one thing, that kind of trolling, back seating, is just a waste of everyone's energy. How did I fix it?
+
+First of all, put anything anyone says on the screen. All those back-seaters now have to own up to the fact that their words will be there for everyone to see—including me. Sure I paid for the peace of mind by silencing adhoc conversations in the chat and a few lines of precious screen real-estate, but it is worth it. I never have to worry about it again.
+
+There is one problem though: YouTube. If I want to dual stream to YouTube and Twitch at the same time I cannot monitor the YouTube chat at all. I have to check it on occasion but it does not appear on the screen. This is horrible because YouTuber viewers—in my experience—are the absolute worst community members I could ever have. They overwhelmingly are more clueless, willing to troll, and just all-around horrible people. Strangely, I don't get that in Twitch/IRC.
+
+The fix for YouTube is simple: don't enable chat. The chat interface is horrible anyway and lags behind the video by a lot. I can still stream and they will see the Twitch comments and figure it out, or not. Either way I don't have to worry about them. Are there some who cannot chat to Twitch? Yep. But when I am streaming with full voice and camera I can enable the chat from both. It's only those long co-working streams when I'm working on something that need to have the back-seaters outed so I can see who is misbehaving. If my community were to ever grow large enough to make chat unreadable, I'd change to filtering only those people I want to hear from on screen, which is totally doable with weechat all by itself.
