@@ -156,7 +156,7 @@ _(This is currently a place for me to dump all the things that I notice as I rem
 
 == Multiple panes and buffers
 
-I've seen so many Vim users—particularly Neovim users—completely wall themselves in by becoming completely dependent on Vim buffers and panes. Soon they start turning to completely bloated options that find and open files, do Internet searches, and other insanity—some of which requires NodeJS to be installed in order to even use Neovim—that has no place in a text editor.
+I've seen so many Vim users—particularly Neovim users—completely wall themselves in by becoming completely dependent on Vim buffers and panes. Soon they start turning to completely bloated options that find and open files, do Internet searches, and other insanity—some of which requires NodeJS to be installed in order to even use Neovim. None of that has any place in a text editor—even one that only you are going to use on your nice cushy personal workstation.
 
 [NOTE]
 ====
