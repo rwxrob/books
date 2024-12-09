@@ -1,0 +1,52 @@
+== Where to do what
+
+Over the years I have learned a lot of lessons about where to store and glean knowledge and how to manage it. My preferences might not work for others, but at least I can put them here for those who don't have any yet.
+
+=== Avoid custom domains for longevity
+
+When I was young I was obsessed with squatting on cool domain names. I was a fool. As I approach 60 I'm starting to realize all this knowledge I'm capturing doesn't have a chance of getting discovered after I die unless I begin to let go of the notion of vanity domain names (like rwx.gg). Sure the Wayback Internet Archive is available for now, but it might not always be. What is likely to remain are domains like `github.io` that millions of people depend on being there for as long as GitHub exists.
+
+Unless the domain name is for a fun application that could eventually die, or there is a timeless organization associated with the domain that will always have a member there to renew it, it simply doesn't make sense to even buy and maintain an independent domain. There is zero practical advantage over the several domains that are from services that are completely and perpetually free (like `github.io`).
+
+=== Code: GitHub
+
+This is a no brainier. Just the GitHub CLI tool (`gh`) completely solidifies this decision. It helps that it is the largest repository collection in the world, the best for employment and discovery, the most sustainably financed (by Microsoft), and even regularly saves source into the Arctic Archive.
+
+=== Written notes: GitHub
+
+That's right. Nothing but GitHub Flavored Markdown organized in whatever way you like. If I were to ever use a tool like Obsidian I would make sure it is 100% backed by GitHub and that no proprietary Markdown is used (like `[[]]` for links).
+
+=== Spoken notes and reminders: Chloe my ChatGPT on my phone
+
+Having Chloe has revolutionized the way I do knowledge management while in motion. I can have an interactive session with Chloe and have her perfectly recall every aspect of the conversation later when I want to put that idea or the whole conversation into a more polished written form later.
+
+For example, while I'm driving or on the bike I can converse with Chloe in any language I want and then just forget about it. Before I might have tried to do some sort of bad text-to-speech to load my words into some brain-dead note system (like Obsidian). No more. Today Chloe has my note-taking back.
+
+=== Knowledge worth publishing: books repo (rwxrob.github.io/books)
+
+Stuff that could one day be published in a book or booklet goes in my
+collection of books. I call this <<perpetual-publishing, _perpetual
+publishing_>>. It's not the same as a blog.
+
+=== Personal blog: site repo (rwxrob.github.io)
+
+Few people know that everyone gets a free web site with a full content deployment network (CDN) on GitHub. It used to be you had to use Netlify or pay for this. No more. Most people will never hit the caps and limitations of simply pusting to GitHub itself—especially for blogging stuff.
+
+[CAUTION]
+====
+DO NOT USE WORDPRESS! I made the horrible mistake of using Wordpress.com once for this. I thought it would make blogging from my bike easier from the phone. It didn't. All it did was ensure I would never be able to extract my posts in any useable way. Instead, I take my 14" Macbook Pro with me and do a proper blog—much more quickly—when I can take it out and use it. I just use Chloe, my ChatGPT AI, to capture quick notes that I can have her remind me of later when I'm ready to write the blog.
+====
+
+=== Rants: YouTube and GitHub issues
+
+=== Real-time chat: Twitch IRC with weechat
+
+Ironically, Twitch IRC is the best way to maintain a community chat for the most people because it has built-in account validation. No worries that someone is going to crash the server. This allows the use of IRC for other communities and questions as well.
+
+I find this far better than Discord or Reddit or Slack for real-time communication at a personal level.
+
+=== Work chat: Slack and MS Teams and Webex
+
+=== Personal near-read-time chat: Discord
+
+I hardly ever use Discord, but it has the best formatting of any of the chat systems even if it isn't designed for work. I just cannot get anyone to participate to the same level in GitHub threaded discussions. This what people tend to use in their personal lives.

@@ -151,3 +151,21 @@ _(This is currently a place for me to dump all the things that I notice as I rem
 - `C-]` follow link in `:help` (only, `C-]` is paste in `tmux`)
 - `:PlugInstall` reload plugins
 - `:GoInstallBinaries` download and install Go development binaries (slow)
+
+= Don'ts
+
+== Don't use Vim buffers, use TMUX instead
+
+I've seen so many Vim users—particularly Neovim users—completely wall themselves in by becoming completely dependent on Vim buffers and panes. Eventually, the smart ones realize they would have been better off the entire time using TMUX windows instead—especially when TMUX is setup to be compatible with the original `screen` that can be found on any Unix system for some time. Cutting and pasting between TMUX windows works _even if you are not in an editor session_ and can be automatically setup to load the host system buffer (think `pbcopy`). The main reason TMUX is better is because it is the right tool for that job.
+
+TMUX windows and pane can be completely scripted from the command line using simple shell commands. Vim cannot.
+
+Want to run IRC at the same time as you editor and have them both come up at the same time? That can _only_ be done with Vim + TMUX, not Vim alone. Want to have some service or cronjob automatically open a window or pane in your current work session? Only TMUX can do that, not Vim. So, again, why would you handicap yourself by using the wrong tool for the job, in this case windows and panes in Vim. Want to integrate your functional cut and paste buffers with your host system and other programs? Vim buffers cannot do this, but a clever `yyy` or `ppp` Vim filter can. It can even be made to open another TMUX window but—more importantly—can be fully integrated into anything else running on your computer. Vim buffers cannot.
+
+Only `:help` is a valid exception to this.
+
+[NOTE]
+====
+Emacs uses have been doing this forever. So much so that they ultimately decided to create an OS within an OS that essentially is one big Lisp interpreter. Vim is not Emacs.
+====
+

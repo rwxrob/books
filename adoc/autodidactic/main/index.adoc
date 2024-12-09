@@ -5,3 +5,7 @@ include::dont-start-with-conclusions.adoc[]
 ---
 
 include::perpetual-publishing.adoc[]
+
+---
+
+include::where-to-do-what.adoc[]
