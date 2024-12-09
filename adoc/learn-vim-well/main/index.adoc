@@ -49,10 +49,6 @@ These same "influencers" continually trash talk Emacs, and yet they _force_ peop
 Either these influencers aren't _really_ committed to Vim, or just don't know what `set -o vi` even does. Either way, you should _never_ trust someone claiming to be a "Vim expert" asking you to remap `Esc` to `Control-[`. Now you know why and can tell anyone suggesting this how stupid it is. Vim mappings are everywhere. Don't start by learning this wrong. I promise, you'll be glad you didn't.
 ====
 
-== Vimtutor gets a lot wrong
-
-The `vimtutor` was made by college kids who just learned it and Brahm who added unnecessary vim-isms where vi way is actually better. It is full of substantial errors. Many of them make it impossible for you to use `vi` if that is all you have, and for no reason. Many of the combinations are actually harder to type like `:10` versus `:10G`.  The `vimtutor` is still better than many other methods of learning, but make sure you understand the rest of the summary that follows when you do it.
-
 [NOTE]
 ====
 A prominent YouTuber once joked that I am "one of the two people who actually use vi" in the world. It always makes me grin. I hold no ill-will against the person for saying it. I mean, it is pretty funny—and wrong—so very wrong. This person has obviously not spent a lot of time working for different substantial multi-national corporations upon which the world runs—like I have.
@@ -65,6 +61,10 @@ Perhaps you only want to work for a company that considerings installing Neovim 
 
 By the way, these big, boring, high-paying companies aren't the kind to make YouTube videos and pedal influence. They are too busy producing value that actually matters—like providing your power, water, banking, insurance, transportation, and food—not streaming your favorite video to you.
 ====
+
+== Vimtutor gets a lot wrong
+
+The `vimtutor` was made by college kids who just learned it and Brahm who added unnecessary vim-isms where vi way is actually better. It is full of substantial errors. Many of them make it impossible for you to use `vi` if that is all you have, and for no reason. Many of the combinations are actually harder to type like `:10` versus `:10G`.  The `vimtutor` is still better than many other methods of learning, but make sure you understand the rest of the summary that follows when you do it.
 
 = Summary
 
