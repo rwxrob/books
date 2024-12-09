@@ -14,7 +14,7 @@ Do not even attempt to learn Vim before learning to type from home row on an Ame
 
 [CAUTION]
 ====
-Don't do things like VimAdventures. You won't remember them. The best way to learn Vim is to use `vim`. Finish the `vimtutor` and then start taking notes with your new editing skills. It will be a much better use of your time.
+Don't do things like VimAdventures. You won't remember them. The best way to learn Vim is to use `vim`. Finish the `vimtutor` and then start taking notes with your new editing skills. It will be a much better use if your time.
 ====
 
 == Get an American keyboard
