@@ -1,5 +1,5 @@
 [[learnvim]]
-== Learn vim
+== Learn vim basics
 
 It's time to learn the world's most powerful terminal editor: Vim. To date, the best way to learn it remains using the very old and broken `vimtutor` program.
 
