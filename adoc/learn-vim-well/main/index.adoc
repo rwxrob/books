@@ -160,7 +160,7 @@ I've seen so many Vim users—particularly Neovim users—completely wall themse
 
 [NOTE]
 ====
-Emacs user have been doing this forever. They gave in to the dark side and decided to just keep adding things to it. Eventually they ultimately decided to create an OS within their editor, one big Lisp interpreter to rule them all. Vim is not Emacs even though sometimes Neovim feels like it actually wants to be Emacs—but with Lua instead.
+Emacs users have been doing this forever. They gave in to the dark side and decided to just keep adding things to it. Eventually they ultimately decided to create an OS within their editor, one big Lisp interpreter to rule them all. Vim is not Emacs even though sometimes Neovim feels like it actually wants to be Emacs—but with Lua instead.
 ====
 
 Eventually, the smart ones realize they would have been better off the entire time using TMUX windows instead—especially when TMUX is setup to be compatible with the original `screen` that can be found on any Unix system for some time. Cutting and pasting between TMUX windows works _even if you are not in an editor session_ and can be automatically setup to load the host system buffer (think `pbcopy`). The main reason TMUX is better is because it is the right tool for that job.
