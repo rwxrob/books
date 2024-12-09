@@ -47,7 +47,7 @@ Tens of thousands—possibly millions—of Unix systems don't even have `vim` av
 
 I actually feel sorry for the people listening to naive YouTubers like this because they are seriously limiting their skills and job potential if they think they will use `nvim` for any of these employment opportunities. Want to get laughed out of the room? Ask an administrator at one of these serious companies to install `nvim` on the corporate servers so you can do your job.
 
-Perhaps you only want to work for a company that considers installing Neovim on all enterprise systems a corporate priority. I don't. There are plenty of jobs where having your own personal development environment is all that is required, but there are even more that require the use of their environment. This is changing, for sure, but until it fully changes why limit yourself unnecessarily? You can have the best of both worlds of you learn it right.
+Perhaps you only want to work for a company that considers installing Neovim on all enterprise systems a corporate priority. I don't. There are plenty of jobs where having your own personal development environment is all that is required, but there are even more that require the use of their environment. This is changing, for sure, but until it fully changes why limit yourself unnecessarily? You can have the best of both worlds if you learn it right.
 
 By the way, these big, boring, high-paying companies aren't the kind to make YouTube videos and pedal influence. They are too busy producing value that actually matters—like providing your power, food, water, sewage, banking, medicine, healh-care, insurance, education, government, transportation, and public safety—not streaming your favorite video to you.
 ====
