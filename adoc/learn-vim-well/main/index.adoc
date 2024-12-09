@@ -33,7 +33,7 @@ Here's why the default Vim keybindings are optimized for the US layout.
 
 [NOTE]
 ====
-Remember that the `vi` alias from https://rwxrob.github.io/books/code-page[*Code Mage book*] progressively enhances your editing experience by searching for `nvim` or `vim` and using the most powerful one detected instead. If on AIX Unix, for example, it just works because `vi` is the name of the editor there.
+Remember that the `vi` alias from https://rwxrob.github.io/books/code-mage[*Code Mage book*] progressively enhances your editing experience by searching for `nvim` or `vim` and using the most powerful one detected instead. If on AIX Unix, for example, it just works because `vi` is the name of the editor there.
 ====
 
 The first thing anyone who learns that you are learning Vim will try to tell you is all the things you should customize and install to make it "easier" to use Vim. Don't listen to them, for now. Right now you are focused on learning the standard Vim text editor with mostly default settings so that you can use Vim on any computer that has it installed. Then, after you have fully mastered the standard, you can decide what to allow yourself to use on your favorite computer confident in the knowledge that you can be productive on _any_ computer that has Vim if you need to be later. To do otherwise would be to shoot yourself in the foot by putting bad things permanently into your muscle memory.
