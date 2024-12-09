@@ -46,7 +46,7 @@ Some very prominent tech "influencers" use `Control-c` instead. But _why_?! This
 
 These same "influencers" continually trash talk Emacs, and yet they _force_ people they influence to use Emacs for any history navigation.
 
-Either these influencers aren't _really_ committed to Vim, or just don't know what `set -o vi` even does. Either way, you should _never_ trust someone claiming to be a "Vim expert" asking you to remap `Esc` to `Control-[`. Now you know why and tell anyone suggesting this how stupid it is. Vim mappings are everywhere. Don't start by learning this wrong. I promise, you'll be glad you didn't.
+Either these influencers aren't _really_ committed to Vim, or just don't know what `set -o vi` even does. Either way, you should _never_ trust someone claiming to be a "Vim expert" asking you to remap `Esc` to `Control-[`. Now you know why and can tell anyone suggesting this how stupid it is. Vim mappings are everywhere. Don't start by learning this wrong. I promise, you'll be glad you didn't.
 ====
 
 == Vimtutor gets a lot wrong
