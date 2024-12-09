@@ -592,6 +592,29 @@ This book would never have happened without you.</p>
 <div class="paragraph">
 <p>You have probably discovered  a <em>lot</em> of stuff about Vim on the Internet and in the few books that exist. Far too much of it is legitimately bad, old, or sometimes just plain wrong—especially the infamous <code>vimtutor</code> made by a few college kids who had just <em>barely</em> learned it. Why use <code>d$</code> when <code>D</code> is much easier, for example? <code>¯\_(ツ)_/¯</code> Other resources would have you play a game instead of actually using <code>vim</code> to learn it.</p>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Speaking of putting bad things into your muscle memory, <strong>DO NOT USE <code>Control-c</code> INSTEAD OF ESCAPE!</strong> This completely prevents you from using <code>set -o vi</code> for history navigation later—one of the single biggest reasons to learn Vim in the first place—because it sends a signal interrupt that is not handled by the shell as an <code>Esc</code>! <code>Control-[</code> <em>does</em> send an actual <code>Esc</code>.</p>
+</div>
+<div class="paragraph">
+<p>Some very prominent tech "influencers" use <code>Control-c</code> instead. But <em>why</em>?! This makes absolutely no sense. How can anyone claim to be a Vim advocate and yet willingly teach people something that will permanently handicap them, preventing them from <em>ever</em> using Vim for history navigation?</p>
+</div>
+<div class="paragraph">
+<p>These same "influencers" continually trash talk Emacs, and yet they <em>force</em> people they influence to use Emacs for any history navigation.</p>
+</div>
+<div class="paragraph">
+<p>Either these influencers aren&#8217;t <em>really</em> committed to Vim, or just don&#8217;t know what <code>set -o vi</code> even does. Either way, you should <em>never</em> trust someone claiming to be a "Vim expert" asking you to remap <code>Esc</code> to <code>Control-[</code>. Now you know why and can tell anyone suggesting this how stupid it is. Vim mappings are everywhere. Don&#8217;t start by learning this wrong. I promise, you&#8217;ll be glad you didn&#8217;t.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>This book was created in response to that problem. This state of confusion frustrates and angers me. Don&#8217;t get mad, get busy. So here I am putting that energy into a book that hopefully counters the problem and saves <em>you</em> from permanently damaging your muscle memory by learning this stuff the wrong way. Save yourself the hardship and pain by learning the world&#8217;s most powerful editor—the right way.</p>
 </div>
@@ -716,29 +739,6 @@ This book would never have happened without you.</p>
 </div>
 <div class="paragraph">
 <p>The first thing anyone who learns that you are learning Vim will try to tell you is all the things you should customize and install to make it "easier" to use Vim. Don&#8217;t listen to them, for now. Right now you are focused on learning the standard Vim text editor with mostly default settings so that you can use Vim on any computer that has it installed. Then, after you have fully mastered the standard, you can decide what to allow yourself to use on your favorite computer confident in the knowledge that you can be productive on <em>any</em> computer that has Vim if you need to be later. To do otherwise would be to shoot yourself in the foot by putting bad things permanently into your muscle memory.</p>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Speaking of putting bad things into your muscle memory, <strong>DO NOT USE <code>Control-c</code> INSTEAD OF ESCAPE!</strong> This completely prevents you from using <code>set -o vi</code> for history navigation later—one of the single biggest reasons to learn Vim in the first place—because it sends a signal interrupt that is not handled by the shell as an <code>Esc</code>! <code>Control-[</code> <em>does</em> send an actual <code>Esc</code>.</p>
-</div>
-<div class="paragraph">
-<p>Some very prominent tech "influencers" use <code>Control-c</code> instead. But <em>why</em>?! This makes absolutely no sense. How can anyone claim to be a Vim advocate and yet willingly teach people something that will permanently handicap them, preventing them from <em>ever</em> using Vim for history navigation?</p>
-</div>
-<div class="paragraph">
-<p>These same "influencers" continually trash talk Emacs, and yet they <em>force</em> people they influence to use Emacs for any history navigation.</p>
-</div>
-<div class="paragraph">
-<p>Either these influencers aren&#8217;t <em>really</em> committed to Vim, or just don&#8217;t know what <code>set -o vi</code> even does. Either way, you should <em>never</em> trust someone claiming to be a "Vim expert" asking you to remap <code>Esc</code> to <code>Control-[</code>. Now you know why and can tell anyone suggesting this how stupid it is. Vim mappings are everywhere. Don&#8217;t start by learning this wrong. I promise, you&#8217;ll be glad you didn&#8217;t.</p>
-</div>
-</td>
-</tr>
-</table>
 </div>
 <div class="admonitionblock note">
 <table>

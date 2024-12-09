@@ -38,16 +38,6 @@ Remember that the `vi` alias from https://rwxrob.github.io/books/code-mage[*Code
 
 The first thing anyone who learns that you are learning Vim will try to tell you is all the things you should customize and install to make it "easier" to use Vim. Don't listen to them, for now. Right now you are focused on learning the standard Vim text editor with mostly default settings so that you can use Vim on any computer that has it installed. Then, after you have fully mastered the standard, you can decide what to allow yourself to use on your favorite computer confident in the knowledge that you can be productive on _any_ computer that has Vim if you need to be later. To do otherwise would be to shoot yourself in the foot by putting bad things permanently into your muscle memory.
 
-[IMPORTANT]
-====
-Speaking of putting bad things into your muscle memory, **DO NOT USE `Control-c` INSTEAD OF ESCAPE!** This completely prevents you from using `set -o vi` for history navigation later—one of the single biggest reasons to learn Vim in the first place—because it sends a signal interrupt that is not handled by the shell as an `Esc`! `Control-[` _does_ send an actual `Esc`.
-
-Some very prominent tech "influencers" use `Control-c` instead. But _why_?! This makes absolutely no sense. How can anyone claim to be a Vim advocate and yet willingly teach people something that will permanently handicap them, preventing them from _ever_ using Vim for history navigation?
-
-These same "influencers" continually trash talk Emacs, and yet they _force_ people they influence to use Emacs for any history navigation.
-
-Either these influencers aren't _really_ committed to Vim, or just don't know what `set -o vi` even does. Either way, you should _never_ trust someone claiming to be a "Vim expert" asking you to remap `Esc` to `Control-[`. Now you know why and can tell anyone suggesting this how stupid it is. Vim mappings are everywhere. Don't start by learning this wrong. I promise, you'll be glad you didn't.
-====
 
 [NOTE]
 ====
