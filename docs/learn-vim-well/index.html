@@ -1085,10 +1085,7 @@ This book would never have happened without you.</p>
 </table>
 </div>
 <div class="paragraph">
-<p>Eventually, the smart ones realize they would have been better off the entire time using TMUX windows instead—especially when TMUX is setup to be compatible with the original <code>screen</code> that can be found on any Unix system for some time. Cutting and pasting between TMUX windows works <em>even if you are not in an editor session</em> and can be automatically setup to load the host system buffer (think <code>pbcopy</code>). The main reason TMUX is better is because it is the right tool for that job.</p>
-</div>
-<div class="paragraph">
-<p>TMUX windows and pane can be completely scripted from the command line using simple shell commands. Vim cannot.</p>
+<p>Eventually, the smart ones realize they would have been better off the entire time using TMUX windows instead—especially when TMUX is setup to be compatible with the original <code>screen</code> that can be found on any Unix system for some time. Cutting and pasting between TMUX windows works <em>even if you are not in an editor session</em> and can be automatically setup to load the host system buffer (think <code>pbcopy</code>). The main reason TMUX is better is because it is the right tool for that job. TMUX windows, panes, and buffers can be completely scripted <em>very</em> easily from the command line using simple shell commands. Vim cannot.</p>
 </div>
 <div class="paragraph">
 <p>Want to run IRC at the same time as you editor and have them both come up at the same time? That can <em>only</em> be done with Vim + TMUX, not Vim alone. Want to have some service or cronjob automatically open a window or pane in your current work session? Only TMUX can do that, not Vim. So, again, why would you handicap yourself by using the wrong tool for the job, in this case windows and panes in Vim. Want to integrate your functional cut and paste buffers with your host system and other programs? Vim buffers cannot do this, but a clever <code>yyy</code> or <code>ppp</code> Vim filter can. It can even be made to open another TMUX window but—more importantly—can be fully integrated into anything else running on your computer. Vim buffers cannot.</p>
