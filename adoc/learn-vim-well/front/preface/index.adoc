@@ -1,0 +1,16 @@
+:compat-mode:
+[preface]
+= Preface
+
+include::welcome.adoc[]
+
+include::who-should-read.adoc[]
+
+---
+
+include::whats-in-this-book.adoc[]
+
+---
+
+include::how-to-use-this-book.adoc[]
+

@@ -1,6 +1,9 @@
 link:code-mage[*A Code Mage's First Spell Book*] +
 _Learn practical computer science and programming with Go as a first language_
 
+link:learn-vim-well[*Learn Vim Well*] +
+_The best way to use the world's best text editor—everywhere_
+
 link:terminal-velocity[*Terminal Velocity*] +
 _Master the fastest human-computer interface_
 

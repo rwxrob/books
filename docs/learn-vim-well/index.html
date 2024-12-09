@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="description" content="Coding for self-empowerment to save humanity">
-<meta name="keywords" content="Coding for self-empowerment to save humanity">
+<meta name="description" content="The best way to use the world's best text editor—everywhere">
+<meta name="keywords" content="The best way to use the world's best text editor—everywhere">
 <meta name="author" content="Robert S. Muhlestein (rwxrob)">
 <meta name="copyright" content="2024 Robert S. Muhlestein">
-<title>Programming with Purpose</title>
+<title>Learn Vim Well</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -441,7 +441,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>Programming with Purpose</h1>
+<h1>Learn Vim Well</h1>
 <div class="details">
 <span id="author" class="author">Robert S. Muhlestein (rwxrob)</span><br>
 <span id="email" class="email"><a href="mailto:rob@rwx.gg">rob@rwx.gg</a></span><br>
@@ -453,8 +453,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_copyright">Copyright</a></li>
 <li><a href="#bookshelf">Bookshelf</a></li>
 <li><a href="#_dedication">Dedication</a></li>
-<li><a href="#_preface">Preface</a></li>
-<li><a href="#_purpose">Purpose</a></li>
+<li><a href="#_prerequisites">Prerequisites</a></li>
+<li><a href="#_preface">Preface</a>
+<ul class="sectlevel2">
+<li><a href="#_who_should_read_this_book">Who should read this book</a></li>
+<li><a href="#_whats_included_in_the_book">What&#8217;s included in the book</a></li>
+<li><a href="#_how_to_use_this_book">How to use this book</a></li>
+</ul>
+</li>
+<li><a href="#learnvim">Prepare</a>
+<ul class="sectlevel2">
+<li><a href="#_get_an_american_keyboard">Get an American keyboard</a></li>
+<li><a href="#_learn_standard_vim_first">Learn standard Vim first</a></li>
+<li><a href="#_vimtutor_gets_a_lot_wrong">Vimtutor gets a lot wrong</a></li>
+</ul>
+</li>
+<li><a href="#_this_is_the_way">This is the way</a></li>
 </ul>
 </div>
 </div>
@@ -470,9 +484,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="paragraph">
 <p>The non-code prose and images are licensed under the more restrictive Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0) (<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="bare">https://creativecommons.org/licenses/by-nc-nd/4.0/</a>). This means that no non-code prose or image from the book may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the copyright holder. This includes remaking the same content in different formats such as PDF or EPUB since these fall under the definition of derived works. This restriction is primarily in place to ensure outdated copies are not redistributed given the frequent updates expected.</p>
-</div>
-<div class="paragraph">
-<p><em>"Terminal Velocity"</em> is a legal trademarks of Robert S. Muhlestein but can be used freely to refer to this book without limitation. To avoid potential confusion, intentionally using this trademark to refer to other projects—free or proprietary—is prohibited.</p>
 </div>
 </div>
 </div>
@@ -537,34 +548,493 @@ This book would never have happened without you.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_preface"><a class="link" href="#_preface">Preface</a></h2>
+<h2 id="_prerequisites"><a class="link" href="#_prerequisites">Prerequisites</a></h2>
 <div class="sectionbody">
-
+<div class="paragraph">
+<p>Stop. Don&#8217;t read another word until you have:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A computer with an American keyboard on which you can install software</p>
+</li>
+<li>
+<p>A phone for research and reading while working</p>
+</li>
+<li>
+<p>A reliable Internet connection for installing and saving</p>
+</li>
+<li>
+<p>An email account that you control</p>
+</li>
+<li>
+<p>The ability to type 30 words per minute from home row</p>
+</li>
+<li>
+<p>Enough snacks to keep you from getting hangry</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Mac, Windows, or Linux are all fine. A laptop is best since you can code anywhere, like when fleeing from your enemies. <em>Wink.</em></p>
+</div>
+<div class="paragraph">
+<p>There. I hope that didn&#8217;t sound to harsh—or weird. It&#8217;s a time thing. I value mine—and yours. No sense wasting it reading this if you aren&#8217;t ready—or worse—you don&#8217;t like my rhetorical style. I&#8217;m not selling time-shares here.</p>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_purpose"><a class="link" href="#_purpose">Purpose</a></h2>
+<h2 id="_preface"><a class="link" href="#_preface">Preface</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>&lt;script type="module"&gt;
-import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-mermaid.initialize({ startOnLoad: true });
-&lt;/script&gt;
-&lt;script type="module"&gt;
-import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-mermaid.initialize({ startOnLoad: true });
-&lt;/script&gt;
-&lt;script type="module"&gt;
-import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-mermaid.initialize({ startOnLoad: true });
-&lt;/script&gt;</p>
+<p>Welcome to the best book for learning to use the Vim text editor in the most powerful, sustainable way. This includes <code>vi</code> (pronouced vee-eye), <code>vim</code>, and <code>nvim</code> (Neovim).</p>
+</div>
+<div class="paragraph">
+<p>You have probably discovered  a <em>lot</em> of stuff about Vim on the Internet and in the few books that exist. Far too much of it is legitimately bad, old, or sometimes just plain wrong—especially the infamous <code>vimtutor</code> made by a few college kids who had just <em>barely</em> learned it. Why use <code>d$</code> when <code>D</code> is much easier, for example? <code>¯\_(ツ)_/¯</code> Other resources would have you play a game instead of actually using <code>vim</code> to learn it.</p>
+</div>
+<div class="paragraph">
+<p>This book was created in response to that problem. This state of confusion frustrates and angers me. Don&#8217;t get mad, get busy. So here I am putting that energy into a book that hopefully counters the problem and saves <em>you</em> from permanently damaging your muscle memory by learning this stuff the wrong way. Save yourself the hardship and pain by learning the world&#8217;s most powerful editor—the right way.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Does it bother you that I&#8217;m referring to myself in the first-person? At least now you know. Get used to it. Or not. I think it just makes it more special, 'cuz <em>you</em> are special.</p>
+</div>
+<div class="paragraph">
+<p>The truth is this book came from years of working with people in person. Obviously, you and I couldn&#8217;t work together <em>right now</em> so here we are, maybe one day. Until then, you can find me livestreaming most days on Twitch and YouTube (<a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>). Fair warning, it gets pretty crazy, but no unicorns, <em>I swear</em>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_who_should_read_this_book"><a class="link" href="#_who_should_read_this_book">Who should read this book</a></h3>
+<div class="paragraph">
+<p><em>Coming soon &#8230;&#8203;</em></p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_whats_included_in_the_book"><a class="link" href="#_whats_included_in_the_book">What&#8217;s included in the book</a></h3>
+<div class="paragraph">
+<p><em>Coming soon &#8230;&#8203;</em></p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_how_to_use_this_book"><a class="link" href="#_how_to_use_this_book">How to use this book</a></h3>
+<div class="paragraph">
+<p>This book is designed to be read from top to bottom. The concepts build on one another. Use the quick reference guides as well from your phone or a printed copy.</p>
+</div>
+<div class="sect3">
+<h4 id="_dont_just_read_it"><a class="link" href="#_dont_just_read_it">Don&#8217;t just read it</a></h4>
+<div class="paragraph">
+<p><em>Coming soon &#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="learnvim"><a class="link" href="#learnvim">Prepare</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When it comes to mastering text editing, choosing the right starting point can have a profound impact on your efficiency, understanding, and future flexibility as a developer or technical professional. Among the myriad of editors available, learning Vim first offers unique advantages that extend well beyond mere productivity. Honestly, it&#8217;s not as hard as people think. Start with the basics.</p>
+</div>
+<div class="paragraph">
+<p>Is it hard? Yes.</p>
+</div>
+<div class="paragraph">
+<p>Is it worth it? Yes.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Do not even attempt to learn Vim before learning to type from home row on an American keyboard and achieving a speed of about 30 words per minute.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Don&#8217;t do things like VimAdventures. You won&#8217;t remember them. The best way to learn Vim is to use <code>vim</code>. Finish the <code>vimtutor</code> and then start taking notes with your new editing skills. It will be a much better use of your time.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_get_an_american_keyboard"><a class="link" href="#_get_an_american_keyboard">Get an American keyboard</a></h3>
+<div class="paragraph">
+<p>Here&#8217;s why the default Vim keybindings are optimized for the US layout.</p>
+</div>
+<div class="paragraph">
+<p><strong>Home Row Optimization</strong>: Vim’s most frequently used commands (<code>hjkl</code>, <code>:</code>, <code>/</code>, etc.) are easily accessible from the <strong>home row</strong> of an American QWERTY keyboard.</p>
+</div>
+<div class="paragraph">
+<p><strong>Symbol Placement</strong>: Essential symbols like <code>:</code> (colon) for command mode and <code>/</code> for search are conveniently placed and don’t require multiple key presses or awkward hand movements.</p>
+</div>
+<div class="paragraph">
+<p><strong>Bracket and Punctuation Placement</strong>: Keys like <code>[</code> and <code>]</code>, which are commonly used in Vim mappings, are easily accessible on the American keyboard.</p>
+</div>
+<div class="paragraph">
+<p><strong>Minimal Key Remapping</strong>: With an American layout, most of Vim&#8217;s default keybindings are intuitive and require little customization for efficient use.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learn_standard_vim_first"><a class="link" href="#_learn_standard_vim_first">Learn standard Vim first</a></h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Remember that the <code>vi</code> alias from <a href="https://rwxrob.github.io/books/code-page"><strong>Code Mage book</strong></a> progressively enhances your editing experience by searching for <code>nvim</code> or <code>vim</code> and using the most powerful one detected instead. If on AIX Unix, for example, it just works because <code>vi</code> is the name of the editor there.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The first thing anyone who learns that you are learning Vim will try to tell you is all the things you should customize and install to make it "easier" to use Vim. Don&#8217;t listen to them, for now. Right now you are focused on learning the standard Vim text editor with mostly default settings so that you can use Vim on any computer that has it installed. Then, after you have fully mastered the standard, you can decide what to allow yourself to use on your favorite computer confident in the knowledge that you can be productive on <em>any</em> computer that has Vim if you need to be later. To do otherwise would be to shoot yourself in the foot by putting bad things permanently into your muscle memory.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Speaking of putting bad things into your muscle memory, <strong>DO NOT USE <code>Control-c</code> INSTEAD OF ESCAPE!</strong> This completely prevents you from using <code>set -o vi</code> for history navigation later—one of the single biggest reasons to learn Vim in the first place—because it sends a signal interrupt that is not handled by the shell as an <code>Esc</code>! <code>Control-[</code> <em>does</em> send an actual <code>Esc</code>.</p>
+</div>
+<div class="paragraph">
+<p>Some very prominent tech "influencers" use <code>Control-c</code> instead. But <em>why</em>?! This makes absolutely no sense. How can anyone claim to be a Vim advocate and yet willingly teach people something that will permanently handicap them, preventing them from <em>ever</em> using Vim for history navigation?</p>
+</div>
+<div class="paragraph">
+<p>These same "influencers" continually trash talk Emacs, and yet they <em>force</em> people they influence to use Emacs for any history navigation.</p>
+</div>
+<div class="paragraph">
+<p>Either these influencers aren&#8217;t <em>really</em> committed to Vim, or just don&#8217;t know what <code>set -o vi</code> even does. Either way, you should <em>never</em> trust someone claiming to be a "Vim expert" asking you to remap <code>Esc</code> to <code>Control-[</code>. Now you know why and tell anyone suggesting this how stupid it is. Vim mappings are everywhere. Don&#8217;t start by learning this wrong. I promise, you&#8217;ll be glad you didn&#8217;t.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_vimtutor_gets_a_lot_wrong"><a class="link" href="#_vimtutor_gets_a_lot_wrong">Vimtutor gets a lot wrong</a></h3>
+<div class="paragraph">
+<p>The <code>vimtutor</code> was made by college kids who barely knew how to use Vim. It is full of substantial errors. Many of them make it impossible for you to use <code>vi</code> if that is all you have, and for no reason, because the combinations are actually harder to type (like <code>:10</code> versus <code>:10G</code>). Really, these kids had no idea how to use <code>vim</code> and probably never heard of <code>vi</code> when they made the tutorial. Still, <code>vimtutor</code> is one of the best resources out there because it has you use Vim to edit a file while learning how to edit files. Until I can finish my own version of it, here is a list of the major problems:</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_this_is_the_way"><a class="link" href="#_this_is_the_way">This is the way</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>Coming soon &#8230;&#8203;</em></p>
+</div>
+<div class="paragraph">
+<p><em>(This is currently a place for me to dump all the things that I notice as I remember them. Eventually, each will be fleshed out in addition to being included in the quick reference sheet and the eventual <code>learnvim</code> command.)</em></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use <code>Control-[</code> instead of <code>Esc</code> on American keyboards.</p>
+</li>
+<li>
+<p><code>hjkl</code> for navigation</p>
+</li>
+<li>
+<p><code>u</code> for undo</p>
+</li>
+<li>
+<p><code>C-r</code> for redo (but rare)</p>
+</li>
+<li>
+<p>Prefer search-centric navigation with <code>/</code> and <code>?</code> (over line num and counting)</p>
+</li>
+<li>
+<p>Prefer "paragraph" and "function" operations (<code>dap</code>,<code>yap</code>,<code>daf</code>,<code>yaf</code>)</p>
+</li>
+<li>
+<p><code>daw</code> + <code>.</code> instead of <code>d2w</code> to delete current word</p>
+</li>
+<li>
+<p>Do not use counts for motion, use search and paragraph <code>p</code> and word <code>w</code></p>
+</li>
+<li>
+<p>Do not use Vim visual mode, use filters and TMUX copy and paste instead!</p>
+</li>
+<li>
+<p>Make strong use of filters (<code>!!</code>,<code>!}</code>, <code>!af</code>, <code>!if</code>)</p>
+</li>
+<li>
+<p><code>:r /tmp/foo</code> to read file</p>
+</li>
+<li>
+<p><code>:n</code> next file</p>
+</li>
+<li>
+<p><code>:wn</code> save current file so can open next (otherwise you have to find later)</p>
+</li>
+<li>
+<p><code>:N</code> open previous file</p>
+</li>
+<li>
+<p>Use filter instead of <code>:r</code> (<code>:r !ls</code> becomes <code>ls</code> on line and <code>!!bash</code>)</p>
+</li>
+<li>
+<p>Filters on actual text (instead of <code>:</code>) allow easy modification and multi-line</p>
+</li>
+<li>
+<p>Filter command + backspace to remove <code>!</code> easier than typing <code>:#,#</code> numbers</p>
+</li>
+<li>
+<p>Filter with <code>yyy</code> command to yank to <code>/tmp/buf</code> (loads <code>pbcopy</code> also)</p>
+</li>
+<li>
+<p>Filter with <code>ddd</code> command to delete to <code>/tmp/buf</code> (loads <code>pbcopy</code> also)</p>
+</li>
+<li>
+<p>Filter with <code>cmt</code> to comment based on current file type</p>
+</li>
+<li>
+<p>Filter with <code>pre foo</code> to prefix</p>
+</li>
+<li>
+<p>Prefer new <code>tmux</code> window over external commands with <code>:!</code> (unless filters)</p>
+</li>
+<li>
+<p><code>ZZ</code> instead of <code>:wq</code>, <code>:qw</code>, or <code>:x</code></p>
+</li>
+<li>
+<p><code>:q!</code> instead of <code>ZQ</code></p>
+</li>
+<li>
+<p><code>x</code> to delete character under cursor</p>
+</li>
+<li>
+<p><code>i</code> to start inserting in front of current character</p>
+</li>
+<li>
+<p><code>w</code> for word nav</p>
+</li>
+<li>
+<p>Forget about <code>e</code>.</p>
+</li>
+<li>
+<p>Forget about <code>G</code>.</p>
+</li>
+<li>
+<p><code>:%</code> instead of <code>G</code> to nav to end of file</p>
+</li>
+<li>
+<p><code>:0</code> instead of <code>gg</code> to nav to start of file</p>
+</li>
+<li>
+<p><code>D</code> instead of <code>d$</code> to delete to end of line</p>
+</li>
+<li>
+<p><code>C</code> instead of <code>c$</code> to change to end of line</p>
+</li>
+<li>
+<p><code>Y</code> to yank to the end of a line (must add in <code>.vimrc</code>)</p>
+</li>
+<li>
+<p><code>ciw</code> start changing the current word from within it.</p>
+</li>
+<li>
+<p><code>ct</code> change up to next character</p>
+</li>
+<li>
+<p><code>c/</code> change up to next search match</p>
+</li>
+<li>
+<p><code>A</code> to append to end of line</p>
+</li>
+<li>
+<p><code>p</code> to put/paste on line after</p>
+</li>
+<li>
+<p><code>P</code> to put/paste line above (good for top of file)</p>
+</li>
+<li>
+<p><code>r</code> replace current character with another</p>
+</li>
+<li>
+<p>Forget about <code>R</code>.</p>
+</li>
+<li>
+<p><code>o</code> open new line for editing after current line</p>
+</li>
+<li>
+<p><code>O</code> open new line for editing above (good for top of file)</p>
+</li>
+<li>
+<p><code>I</code> to insert at beginning of text on the line</p>
+</li>
+<li>
+<p><code>0i</code> to insert at absolute beginning of line</p>
+</li>
+<li>
+<p><code>J</code> join following line to current</p>
+</li>
+<li>
+<p><code>t&lt;char&gt;</code> to navigate to first character in line (better than counting)</p>
+</li>
+<li>
+<p><code>/</code> to navigate to search match</p>
+</li>
+<li>
+<p><code>C-l</code> clear last search term</p>
+</li>
+<li>
+<p><code>n</code> to repeat search for next</p>
+</li>
+<li>
+<p><code>N</code> to go back to previous search match</p>
+</li>
+<li>
+<p><code>?</code> to navigate to match behind (less frequent, use <code>N</code> instead after <code>/</code>)</p>
+</li>
+<li>
+<p><code>.</code> repeat last command, spam this a lot, easier than numbers</p>
+</li>
+<li>
+<p><code>!!</code> to replace current line by sending it to filter program</p>
+</li>
+<li>
+<p><code>!ap</code> send the current paragraph to filter program</p>
+</li>
+<li>
+<p><code>dap</code> to delete a paragraph from within it.</p>
+</li>
+<li>
+<p><code>yap</code> to yank a paragraph from within it.</p>
+</li>
+<li>
+<p><code>daf</code> to yank delete an entire function.</p>
+</li>
+<li>
+<p><code>dif</code> to yank indide of the function.</p>
+</li>
+<li>
+<p><code>yif</code> to yank the inside of a function.</p>
+</li>
+<li>
+<p><code>yaf</code> to yank an entire function.</p>
+</li>
+<li>
+<p><code>gwaf</code> reformat comment paragraphs, etc</p>
+</li>
+<li>
+<p><code>K</code> to see documentation about anything</p>
+</li>
+<li>
+<p><code>gd</code> to jump to definition</p>
+</li>
+<li>
+<p><code>C-o</code> to jump to last nav position</p>
+</li>
+<li>
+<p><code>C-i</code> opposite of <code>C-o</code></p>
+</li>
+<li>
+<p>Forget about <code>%</code> since requires exact position (use <code>dap</code>, etc. instead)</p>
+</li>
+<li>
+<p><code>gx</code> to open a URL in web browser</p>
+</li>
+<li>
+<p><code>z=</code> to lookup word in dictionary</p>
+</li>
+<li>
+<p><code>zg</code> to add a word to dictionary</p>
+</li>
+<li>
+<p>Use <code>Control-i</code> optionally instead of <code>Tab</code></p>
+</li>
+<li>
+<p><code>C-d</code> for completion from <code>:</code> line</p>
+</li>
+<li>
+<p><code>Tab Tab</code> for in-line omni-completion</p>
+</li>
+<li>
+<p><code>C-n</code> down in completion menu</p>
+</li>
+<li>
+<p><code>C-p</code> up in completion menu</p>
+</li>
+<li>
+<p><code>C-w C-o</code> fix window buffers</p>
+</li>
+<li>
+<p><code>~</code> toggle case of current character</p>
+</li>
+<li>
+<p><code>,</code> leader (for later)</p>
+</li>
+<li>
+<p><code>:s,some,other,g</code> replace other with some on line (<code>:s/some/other/g</code> also)</p>
+</li>
+<li>
+<p><code>:%s,some,other,g</code> replace some with other in file (live display)</p>
+</li>
+<li>
+<p><code>:set list</code> show all spaces and tabs</p>
+</li>
+<li>
+<p><code>:set nolist</code> hide all spaces and tabs</p>
+</li>
+<li>
+<p><code>:set nu</code> turn on line numbers</p>
+</li>
+<li>
+<p><code>:set nonu</code> turn off line numbers</p>
+</li>
+<li>
+<p><code>:help</code> for help</p>
+</li>
+<li>
+<p><code>C-]</code> follow link in <code>:help</code> (only, <code>C-]</code> is paste in <code>tmux</code>)</p>
+</li>
+<li>
+<p><code>:PlugInstall</code> reload plugins</p>
+</li>
+<li>
+<p><code>:GoInstallBinaries</code> download and install Go development binaries (slow)</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-11-29 20:18:33 -0500
+Last updated 2024-12-09 10:24:00 -0500
 </div>
 </div>
 </body>

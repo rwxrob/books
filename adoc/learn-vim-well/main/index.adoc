@@ -1,0 +1,150 @@
+[[learnvim]]
+= Prepare
+
+When it comes to mastering text editing, choosing the right starting point can have a profound impact on your efficiency, understanding, and future flexibility as a developer or technical professional. Among the myriad of editors available, learning Vim first offers unique advantages that extend well beyond mere productivity. Honestly, it's not as hard as people think. Start with the basics.
+
+Is it hard? Yes.
+
+Is it worth it? Yes.
+
+[IMPORTANT]
+====
+Do not even attempt to learn Vim before learning to type from home row on an American keyboard and achieving a speed of about 30 words per minute.
+====
+
+[CAUTION]
+====
+Don't do things like VimAdventures. You won't remember them. The best way to learn Vim is to use `vim`. Finish the `vimtutor` and then start taking notes with your new editing skills. It will be a much better use of your time.
+====
+
+== Get an American keyboard
+
+Here's why the default Vim keybindings are optimized for the US layout.
+
+*Home Row Optimization*: Vim’s most frequently used commands (`hjkl`, `:`, `/`, etc.) are easily accessible from the **home row** of an American QWERTY keyboard.
+
+*Symbol Placement*: Essential symbols like `:` (colon) for command mode and `/` for search are conveniently placed and don’t require multiple key presses or awkward hand movements.
+
+*Bracket and Punctuation Placement*: Keys like `[` and `]`, which are commonly used in Vim mappings, are easily accessible on the American keyboard.
+
+*Minimal Key Remapping*: With an American layout, most of Vim's default keybindings are intuitive and require little customization for efficient use.
+
+== Learn standard Vim first
+
+[NOTE]
+====
+Remember that the `vi` alias from https://rwxrob.github.io/books/code-page[*Code Mage book*] progressively enhances your editing experience by searching for `nvim` or `vim` and using the most powerful one detected instead. If on AIX Unix, for example, it just works because `vi` is the name of the editor there.
+====
+
+The first thing anyone who learns that you are learning Vim will try to tell you is all the things you should customize and install to make it "easier" to use Vim. Don't listen to them, for now. Right now you are focused on learning the standard Vim text editor with mostly default settings so that you can use Vim on any computer that has it installed. Then, after you have fully mastered the standard, you can decide what to allow yourself to use on your favorite computer confident in the knowledge that you can be productive on _any_ computer that has Vim if you need to be later. To do otherwise would be to shoot yourself in the foot by putting bad things permanently into your muscle memory.
+
+[IMPORTANT]
+====
+Speaking of putting bad things into your muscle memory, **DO NOT USE `Control-c` INSTEAD OF ESCAPE!** This completely prevents you from using `set -o vi` for history navigation later—one of the single biggest reasons to learn Vim in the first place—because it sends a signal interrupt that is not handled by the shell as an `Esc`! `Control-[` _does_ send an actual `Esc`.
+
+Some very prominent tech "influencers" use `Control-c` instead. But _why_?! This makes absolutely no sense. How can anyone claim to be a Vim advocate and yet willingly teach people something that will permanently handicap them, preventing them from _ever_ using Vim for history navigation?
+
+These same "influencers" continually trash talk Emacs, and yet they _force_ people they influence to use Emacs for any history navigation.
+
+Either these influencers aren't _really_ committed to Vim, or just don't know what `set -o vi` even does. Either way, you should _never_ trust someone claiming to be a "Vim expert" asking you to remap `Esc` to `Control-[`. Now you know why and tell anyone suggesting this how stupid it is. Vim mappings are everywhere. Don't start by learning this wrong. I promise, you'll be glad you didn't.
+====
+
+== Vimtutor gets a lot wrong
+
+The `vimtutor` was made by college kids who barely knew how to use Vim. It is full of substantial errors. Many of them make it impossible for you to use `vi` if that is all you have, and for no reason, because the combinations are actually harder to type (like `:10` versus `:10G`). Really, these kids had no idea how to use `vim` and probably never heard of `vi` when they made the tutorial. Still, `vimtutor` is one of the best resources out there because it has you use Vim to edit a file while learning how to edit files. Until I can finish my own version of it, here is a list of the major problems:
+
+= This is the way
+
+_Coming soon ..._
+
+_(This is currently a place for me to dump all the things that I notice as I remember them. Eventually, each will be fleshed out in addition to being included in the quick reference sheet and the eventual `learnvim` command.)_
+
+- Use `Control-[` instead of `Esc` on American keyboards.
+- `hjkl` for navigation
+- `u` for undo
+- `C-r` for redo (but rare)
+- Prefer search-centric navigation with `/` and `?` (over line num and counting)
+- Prefer "paragraph" and "function" operations (`dap`,`yap`,`daf`,`yaf`)
+- `daw` + `.` instead of `d2w` to delete current word
+- Do not use counts for motion, use search and paragraph `p` and word `w`
+- Do not use Vim visual mode, use filters and TMUX copy and paste instead!
+- Make strong use of filters (`!!`,`!}`, `!af`, `!if`)
+- `:r /tmp/foo` to read file
+- `:n` next file
+- `:wn` save current file so can open next (otherwise you have to find later)
+- `:N` open previous file
+- Use filter instead of `:r` (`:r !ls` becomes `ls` on line and `!!bash`)
+- Filters on actual text (instead of `:`) allow easy modification and multi-line
+- Filter command + backspace to remove `!` easier than typing `:#,#` numbers
+- Filter with `yyy` command to yank to `/tmp/buf` (loads `pbcopy` also)
+- Filter with `ddd` command to delete to `/tmp/buf` (loads `pbcopy` also)
+- Filter with `cmt` to comment based on current file type
+- Filter with `pre foo` to prefix
+- Prefer new `tmux` window over external commands with `:!` (unless filters)
+- `ZZ` instead of `:wq`, `:qw`, or `:x`
+- `:q!` instead of `ZQ`
+- `x` to delete character under cursor
+- `i` to start inserting in front of current character
+- `w` for word nav
+- Forget about `e`.
+- Forget about `G`.
+- `:%` instead of `G` to nav to end of file
+- `:0` instead of `gg` to nav to start of file
+- `D` instead of `d$` to delete to end of line
+- `C` instead of `c$` to change to end of line
+- `Y` to yank to the end of a line (must add in `.vimrc`)
+- `ciw` start changing the current word from within it.
+- `ct` change up to next character
+- `c/` change up to next search match
+- `A` to append to end of line
+- `p` to put/paste on line after
+- `P` to put/paste line above (good for top of file)
+- `r` replace current character with another
+- Forget about `R`.
+- `o` open new line for editing after current line
+- `O` open new line for editing above (good for top of file)
+- `I` to insert at beginning of text on the line
+- `0i` to insert at absolute beginning of line
+- `J` join following line to current
+- `t<char>` to navigate to first character in line (better than counting)
+- `/` to navigate to search match
+- `C-l` clear last search term
+- `n` to repeat search for next
+- `N` to go back to previous search match
+- `?` to navigate to match behind (less frequent, use `N` instead after `/`)
+- `.` repeat last command, spam this a lot, easier than numbers
+- `!!` to replace current line by sending it to filter program
+- `!ap` send the current paragraph to filter program
+- `dap` to delete a paragraph from within it.
+- `yap` to yank a paragraph from within it.
+- `daf` to yank delete an entire function.
+- `dif` to yank indide of the function.
+- `yif` to yank the inside of a function.
+- `yaf` to yank an entire function.
+- `gwaf` reformat comment paragraphs, etc
+- `K` to see documentation about anything
+- `gd` to jump to definition
+- `C-o` to jump to last nav position
+- `C-i` opposite of `C-o`
+- Forget about `%` since requires exact position (use `dap`, etc. instead)
+- `gx` to open a URL in web browser
+- `z=` to lookup word in dictionary
+- `zg` to add a word to dictionary
+- Use `Control-i` optionally instead of `Tab`
+- `C-d` for completion from `:` line
+- `Tab Tab` for in-line omni-completion
+- `C-n` down in completion menu
+- `C-p` up in completion menu
+- `C-w C-o` fix window buffers
+- `~` toggle case of current character
+- `,` leader (for later)
+- `:s,some,other,g` replace other with some on line (`:s/some/other/g` also)
+- `:%s,some,other,g` replace some with other in file (live display)
+- `:set list` show all spaces and tabs
+- `:set nolist` hide all spaces and tabs
+- `:set nu` turn on line numbers
+- `:set nonu` turn off line numbers
+- `:help` for help
+- `C-]` follow link in `:help` (only, `C-]` is paste in `tmux`)
+- `:PlugInstall` reload plugins
+- `:GoInstallBinaries` download and install Go development binaries (slow)

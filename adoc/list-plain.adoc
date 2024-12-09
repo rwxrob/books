@@ -4,6 +4,9 @@
 *A Code Mage's First Spell Book* +
 _Learn practical computer science and programming with Go as a first language_
 
+*Learn Vim Well* +
+_The best way to use the world's best text editor—everywhere_
+
 *Terminal Velocity* +
 _Master the fastest human-computer interface_
 

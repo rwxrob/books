@@ -1,0 +1,8 @@
+Welcome to the best book for learning to use the Vim text editor in the most powerful, sustainable way. This includes `vi` (pronouced vee-eye), `vim`, and `nvim` (Neovim).
+
+You have probably discovered  a _lot_ of stuff about Vim on the Internet and in the few books that exist. Far too much of it is legitimately bad, old, or sometimes just plain wrong—especially the infamous `vimtutor` made by a few college kids who had just _barely_ learned it. Why use `d$` when `D` is much easier, for example? `¯\_(ツ)_/¯` Other resources would have you play a game instead of actually using `vim` to learn it.
+
+This book was created in response to that problem. This state of confusion frustrates and angers me. Don't get mad, get busy. So here I am putting that energy into a book that hopefully counters the problem and saves _you_ from permanently damaging your muscle memory by learning this stuff the wrong way. Save yourself the hardship and pain by learning the world's most powerful editor—the right way.
+
+include::../../../first-person.adoc[]
+

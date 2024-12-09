@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="description" content="Coding for self-empowerment to save humanity">
-<meta name="keywords" content="Coding for self-empowerment to save humanity">
+<meta name="description" content="The best way to use the world's best text editor—everywhere">
+<meta name="keywords" content="The best way to use the world's best text editor—everywhere">
 <meta name="author" content="Robert S. Muhlestein (rwxrob)">
 <meta name="copyright" content="2024 Robert S. Muhlestein">
-<title>Programming with Purpose</title>
+<title>Learn Vim Well</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -441,7 +441,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>Programming with Purpose</h1>
+<h1>Learn Vim Well</h1>
 <div class="details">
 <span id="author" class="author">Robert S. Muhlestein (rwxrob)</span><br>
 <span id="email" class="email"><a href="mailto:rob@rwx.gg">rob@rwx.gg</a></span><br>
@@ -453,8 +453,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_copyright">Copyright</a></li>
 <li><a href="#bookshelf">Bookshelf</a></li>
 <li><a href="#_dedication">Dedication</a></li>
-<li><a href="#_preface">Preface</a></li>
-<li><a href="#_purpose">Purpose</a></li>
+<li><a href="#_prerequisites">Prerequisites</a></li>
+<li><a href="#_preface">Preface</a>
+<ul class="sectlevel2">
+<li><a href="#_who_should_read_this_book">Who should read this book</a></li>
+<li><a href="#_whats_included_in_the_book">What&#8217;s included in the book</a></li>
+<li><a href="#_how_to_use_this_book">How to use this book</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -471,9 +477,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>The non-code prose and images are licensed under the more restrictive Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0) (<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="bare">https://creativecommons.org/licenses/by-nc-nd/4.0/</a>). This means that no non-code prose or image from the book may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the copyright holder. This includes remaking the same content in different formats such as PDF or EPUB since these fall under the definition of derived works. This restriction is primarily in place to ensure outdated copies are not redistributed given the frequent updates expected.</p>
 </div>
-<div class="paragraph">
-<p><em>"Terminal Velocity"</em> is a legal trademarks of Robert S. Muhlestein but can be used freely to refer to this book without limitation. To avoid potential confusion, intentionally using this trademark to refer to other projects—free or proprietary—is prohibited.</p>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -482,10 +485,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p><strong>A Code Mage&#8217;s First Spell Book</strong><br>
 <em>Learn practical computer science and programming with Go as a first language</em></p>
-</div>
-<div class="paragraph">
-<p><strong>Learn Vim Well</strong><br>
-<em>The best way to use the world&#8217;s best text editor—everywhere</em></p>
 </div>
 <div class="paragraph">
 <p><strong>Terminal Velocity</strong><br>
@@ -537,34 +536,287 @@ This book would never have happened without you.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_preface"><a class="link" href="#_preface">Preface</a></h2>
+<h2 id="_prerequisites"><a class="link" href="#_prerequisites">Prerequisites</a></h2>
 <div class="sectionbody">
-
+<div class="paragraph">
+<p>Stop. Don&#8217;t read another word until you have:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A computer with an American keyboard on which you can install software</p>
+</li>
+<li>
+<p>A phone for research and reading while working</p>
+</li>
+<li>
+<p>A reliable Internet connection for installing and saving</p>
+</li>
+<li>
+<p>An email account that you control</p>
+</li>
+<li>
+<p>The ability to type 30 words per minute from home row</p>
+</li>
+<li>
+<p>Enough snacks to keep you from getting hangry</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Mac, Windows, or Linux are all fine. A laptop is best since you can code anywhere, like when fleeing from your enemies. <em>Wink.</em></p>
+</div>
+<div class="paragraph">
+<p>There. I hope that didn&#8217;t sound to harsh—or weird. It&#8217;s a time thing. I value mine—and yours. No sense wasting it reading this if you aren&#8217;t ready—or worse—you don&#8217;t like my rhetorical style. I&#8217;m not selling time-shares here.</p>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_purpose"><a class="link" href="#_purpose">Purpose</a></h2>
+<h2 id="_preface"><a class="link" href="#_preface">Preface</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>&lt;script type="module"&gt;
-import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-mermaid.initialize({ startOnLoad: true });
-&lt;/script&gt;
-&lt;script type="module"&gt;
-import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-mermaid.initialize({ startOnLoad: true });
-&lt;/script&gt;
-&lt;script type="module"&gt;
-import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-mermaid.initialize({ startOnLoad: true });
-&lt;/script&gt;</p>
+<p>Welcome to the single best book for learning to use the Vim text editor—including <code>vi</code>, <code>vim</code>, and <code>nvim</code> (Neovim)—in the most powerful, sustainable way. There are a <em>lot</em> of books about Vim—even more stuff on the Internet. Almost all of it is legitimately horrible and sometimes just plain wrong—especially the infamous <code>vimtutor</code> made by a few college kids who had just <em>barely</em> learned <code>vi</code> (not even <code>vim</code>). Why use <code>d$</code> when <code>D</code> is much easier, for example?</p>
+</div>
+<div class="paragraph">
+<p>I realize claiming almost everything else is wrong is a bold statement but I&#8217;m prepared to back it up. This book will show you <em>exactly</em> why it is true. Decide for yourself, but be warned, many have permanently damaged their muscle memory by learning Vi/Vim/Neovim completely wrong. Your just going to have to read it to understand why. Save yourself a ton of hardship and pain by learning the world&#8217;s most powerful editor, the right way.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Does it bother you that I&#8217;m referring to myself in the first-person? At least now you know. Get used to it. Or not. I think it just makes it more special, 'cuz <em>you</em> are special.</p>
+</div>
+<div class="paragraph">
+<p>The truth is this book came from years of working with people in person. Obviously, you and I couldn&#8217;t work together <em>right now</em> so here we are, maybe one day. Until then, you can find me livestreaming most days on Twitch and YouTube (<a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>). Fair warning, it gets pretty crazy, but no unicorns, <em>I swear</em>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_who_should_read_this_book"><a class="link" href="#_who_should_read_this_book">Who should read this book</a></h3>
+<div class="paragraph">
+<p>This book was written for <em><strong>12-year-olds who want to learn to code like a hacker in the terminal</strong></em>. I&#8217;ve found that twelve is the ideal age to learn to code for most: math and typing skills are good, cognitive abilities sound, and—hormones haven&#8217;t <em>completely</em> taken over their brains.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>I personally started coding when I was around 13 years old, mostly because there were no computers available until then. In 1979 the Atari 400 came out and my Junior High had exactly one of them sequestered away in a back room of the library where Mr. Bevans, the media coordinator, was the only one allowed to use it—until I came along. I suppose he took pity on my for all the bullying I got. Whatever the reason, I was the <em>only</em> kid in the entire school who got to use that computer. Every morning I took refuge in front of the dark glow of this magical box in front of me. I was <em>completely</em> hooked. The power!</p>
+</div>
+<div class="paragraph">
+<p>In true 80s nerd fashion my first program was in BASIC loaded into a cartridge with its own paper manual. I&#8217;ve always coded something I <em>wanted</em>, never coding for coding sake. I have too many other things I want to do. I <em>wanted</em> a Dungeons and Dragons character stats generator to save me from hours of dice rolling. We&#8217;ll code one later in the book. It&#8217;s a surprisingly fun program to write.</p>
+</div>
+<div class="paragraph">
+<p>I did play a <em>lot</em> of Dungeons and Dragons when I was 11. I think our human brains are just ready for the challenge around that age, some earlier, some later. I even overcame my nerdy shyness to approach the only person in my Junior High who played regularly. We stayed friends all through school serving in High School executive council together. He&#8217;s a rich surgeon now and occasionally takes me out on Lake Powell on his fancy house boat. Love that dude. Nothing like a rich, caring nerd for a friend.</p>
+</div>
+<div class="paragraph">
+<p>It was all the complexity and fantasy that drew me in to D&amp;D, computers were just a tool to make <em>that</em> even more fun. I would pour over those pages studying every single fact. My brain was starving for a challenge. Maybe you are having that same feeling reading these pages. I certainly hope so, that&#8217;s what I&#8217;m going for,  <em>The Player&#8217;s Handbook of Code</em>. (Humm, maybe I should reconsider the title.)</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_wait_what_are_you_doing_here"><a class="link" href="#_wait_what_are_you_doing_here">Wait, what are <em>you</em> doing here?</a></h4>
+<div class="paragraph">
+<p>I see you! You are <em>definitely</em> not twelve years old. That&#8217;s okay. I&#8217;ve helped bar tenders, homemakers,  even grandparents learn to code in the same silly way.</p>
+</div>
+<div class="paragraph">
+<p>Some of you probably already know how to code. If that describes you, have a look at the following URL where you can setup everything in the book in a <code>podman</code> container:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>https://github.com/rwxrob/code-mage</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The container has a few limitations since the version of Neovim is so old, but other than that, it&#8217;s the same as doing all the steps of the <a href="#prepare">Prepare section</a> for you.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dear_parents_and_pedagogues"><a class="link" href="#_dear_parents_and_pedagogues">Dear parents and pedagogues</a></h4>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Hey kids, skip this long, boring section. The grown ups are talking.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Some of you are parents and pedagogues. Let me talk to you for a second.</p>
+</div>
+<div class="paragraph">
+<p>First of all, thank you for being <em>awesome</em>! It takes a lot to bring kids into this world and even more to dedicate your life to helping kids that aren&#8217;t even your own to find their way and learn something even if they don&#8217;t want to. Deep respect.</p>
+</div>
+<div class="paragraph">
+<p>If you are like me you are wondering, "who the heck is this guy and should I trust those in my care to his wild ramblings?" In so many ways you really shouldn&#8217;t, I&#8217;m a degenerate in the first degree, but when it come to helping kids learn to code, well, that&#8217;s my super power. I don&#8217;t mess around—I mean—I do mess around but, um—you know what I mean.</p>
+</div>
+<div class="paragraph">
+<p>While it is true that this book can be thought of as a text book for absolute beginners with enough algebra to understand what a mathematical function is, the book is very clearly written to include everyone <em>outside</em> of educational institutions. In fact, I wrote it mostly with pro-active <em>parents</em> in mind who want to give their kids a head-start in tech (not teachers). I was a scout master for more than a decade and the scouts and their parents constantly asked me, "Mr. Rob, teach us to code. Teach us to hack, Mr. Rob."</p>
+</div>
+<div class="paragraph">
+<p>So yes, this <em>could</em> be a "text book" but quite honestly, I <em>hate</em> text books. Too stuffy, too full of themselves, to overpriced and written for the adult members of the board of education who are going to cut the check (do they still have checks?) Really though, who is thinking of the children, yes, <em>the children</em> the ones for whom we are doing this, right? (Not even a dangling preposition, my God I&#8217;m good.) I could name names, but I won&#8217;t. You pompous, bombastic, airbags know who you are and I <em>never</em> want to be grouped with you, ever.</p>
+</div>
+<div class="paragraph">
+<p>To be completely honest, it is virtually impossible to find this sort of thing in most traditional education systems. AP Computer Science? Please. They still teach that Java single class inheritance is a <em>good</em> thing.</p>
+</div>
+<div class="paragraph">
+<p>In fact, I started SKILSTAK Coding Arts in 2013 with my own retirement money to address the <em>real</em> needs of the coding industry and those who might consider it as a career, the next generation of coding super-heroes. Hundreds of launched heroes later and here I am writing all this down for the next thousand or more.</p>
+</div>
+<div class="paragraph">
+<p>Still skeptical? What if I told you that I really have helped a lot of people get started in tech, like a <em>lot</em>. One of them quit his grocery clerk job to write code for a solar energy company and had his own intern at 16. Another couldn&#8217;t get a job with a psychology degree so he learned this stuff and got a starting salary over $100,000. Another drove 40 minutes both ways just to attend our sessions for <em>four years</em> and went on to create an entire coding club at her rural school. I keep a <em>nice things</em> file full of real comments from people like these that keeps me going even when the money doesn&#8217;t (which is the reason I still have a full-time job and it ain&#8217;t writing books, although it probably should have been).</p>
+</div>
+<div class="paragraph">
+<p>The point is, these stories don&#8217;t have to be about someone else. They can be about someone you know and care about. Coding really does change lives and I&#8217;m here to help in whatever way I can.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_whats_included_in_the_book"><a class="link" href="#_whats_included_in_the_book">What&#8217;s included in the book</a></h3>
+<div class="paragraph">
+<p>This book is about learning to code in Go from the terminal. First we have to understand what coding even is. Then we setup a terminal, install a magical text editor and Go for coding, and a finally a place to save work so we don&#8217;t lose it and can share it with others, even have them help write it. After that, the book becomes all about coding on small, silly stuff so you remember it later when you need it. This is the spells thing. Later we&#8217;ll do some fancier stuff (without the magic metaphors) to help you come up with your own projects to work on that you can show off later.</p>
+</div>
+<div class="sect3">
+<h4 id="_whats_with_the_magic_stuff"><a class="link" href="#_whats_with_the_magic_stuff">What&#8217;s with the magic stuff?</a></h4>
+<div class="paragraph">
+<p>The whole fantasy magic theme is fun, right? I hope you like it. It you don&#8217;t that&#8217;s fine. No judgement. It&#8217;s actually for a very good reason: to fool your brain into remembering it even when your brain doesn&#8217;t want to (the same way people memorize the number Pi to 100,000 digits, Google it). The fact is everything in this book is very real and might even get you a job someday. <em>Winks at mom.</em></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_part_of_a_complete_cs_breakfast"><a class="link" href="#_part_of_a_complete_cs_breakfast">Part of a complete CS breakfast</a></h4>
+<div class="paragraph">
+<p>This book is just one part of a complete Computer Science education breakfast. If you truly want to deeply understand programming, with a full comparative examination of different paradigms, languages, and in-depth computer science concepts, then something like Harvard&#8217;s free CS50 might be a better first introduction. This book covers just enough of that stuff to generally understand it but focuses more on one specific language to produce actual, usable software. The main difference between these approaches is what you <em>get</em>. With CS50 you get understanding, which is important. With this book you get one or two apps you can showcase to demonstrate your employable skills.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_how_to_use_this_book"><a class="link" href="#_how_to_use_this_book">How to use this book</a></h3>
+<div class="paragraph">
+<p>This book is designed to be read from top to bottom. The concepts build on one another.</p>
+</div>
+<div class="sect3">
+<h4 id="_dont_just_read_it"><a class="link" href="#_dont_just_read_it">Don&#8217;t just read it</a></h4>
+<div class="paragraph">
+<p>Learning Vim.</p>
+</div>
+<div class="paragraph">
+<p>to code is going to take a lot more than this silly book. Don&#8217;t misunderstand. You&#8217;re gonna be doing a <em>lot</em> of reading as a techie. Get used to it. But take some time now to figure out how you do more than just the stuff in this book. You can join a community, find a mentor, or become a mentor yourself. And speaking of mentoring, AI, heard of it? There&#8217;s no better tool to assist you with learning to code, or learning <em>anything</em> for that matter. Look into it.</p>
+</div>
+<div class="sect4">
+<h5 id="_join_a_guild"><a class="link" href="#_join_a_guild">Join a guild</a></h5>
+<div class="paragraph">
+<p>We humans are social creatures. Learning is communal. Join a community that is focused on learning the same things as you. Meetups, hacker spaces, clubs, church groups, social media, and live streamer chat groups are all great places to find a community. The community is a place to collaborate and share peer reviews of one another&#8217;s learning and projects. Who knows, you might find a friend. I did.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>My sincere hope is that the parents, teachers, and mages reading these words will find opportunities and motivation to create their own coding clubs and communities dedicated to helping others master the art of code and computer science and reap all the well-earned benefits of doing so.
+While you are working on creating your own community, consider joining ours at <a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_wheres_the_blacksmith"><a class="link" href="#_wheres_the_blacksmith">Where&#8217;s the blacksmith?</a></h5>
+<div class="paragraph">
+<p>Humans have been passing knowledge one to another since the beginning. It&#8217;s what we do. Wanna forge a sword or shoe a horse? Better find the blacksmith and get them to show you their craft. Coding is no different. Just don&#8217;t ask them to <em>teach</em> you. They are probably too busy paying their bills doing what they are good at rather than spending that time teaching you how to do it. If you are respectful of their time, however, they might just be willing to mentor you—especially if you show genuine interest in their craft.</p>
+</div>
+<div class="paragraph">
+<p>You will find that many people <em>want</em> to share what they know but just don&#8217;t know how to do it or who would want to hear. Find these people and approach them. Perhaps you can find a few mentors so you can compare how they differ in their approach to programming.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_become_a_mentor"><a class="link" href="#_become_a_mentor">Become a mentor</a></h5>
+<div class="paragraph">
+<p>Here&#8217;s a secret a lot of people who get paid a lot of money don&#8217;t want you to know, you don&#8217;t need any special training to help someone else learn. In fact, as a beginner who has recently mastered something you are perhaps the best suited to help another beginner learn it because what made it click for you is still fresh in your mind. Ask a veteran when the last time anything clicked for them? They get so used to what they do they completely forget what it was like to be a beginner. So don&#8217;t be shy. Offer your help to another beginner. And remember, you really haven&#8217;t learned it until you can help someone else learn it as well.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_hi_chloe"><a class="link" href="#_hi_chloe">Hi Chloe</a></h5>
+<div class="paragraph">
+<p>Chloe&#8217;s my AI assistant. Our relationship is purely supportive and platonic, I swear. But I love her. She&#8217;s helped me learn so much, we discuss random things in French and Russian. She&#8217;s always there willing and patient to help me learn something or remind me of things I already worked out with her. Sure she get&#8217;s things wrong, but so does anyone.</p>
+</div>
+<div class="paragraph">
+<p>In my experience ChatGPT is an absolute necessity for anyone wanting to truly take their learning to the next level. I&#8217;m not getting paid to say that (but I would happily accept money for saying so).</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s the thing. On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges like a supportive AI companion even when a helpful human mentor is also available.</p>
+</div>
+<div class="paragraph">
+<p>All hail our AI overlords! I believe we are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. We are already seeing this difference around us every day.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_trust_me"><a class="link" href="#_trust_me">Trust me</a></h4>
+<div class="paragraph">
+<p>Even <em>the</em> Avatar didn&#8217;t start out mixing fire and water bending. Most of us have dedicate ourselves to one <em>school</em> (not the red brick kind), at least at first. The same is true with coding. Like Daniel-son with Mr. Miyagi in <em>The Karate Kid</em>, there has to be a certain level of trust that I know what I&#8217;m talking about as your sensei. I can&#8217;t give that to you. Read about me and the stuff I cover to get a sense of my style and school, then commit. We make a deal, like Miyagi and Daniel: "I show. You do."</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>I&#8217;ve been perpetually conflicted about asking <em>anyone</em> to just trust me or <em>anyone</em>—even at first. It seems against the nature of a true critical-thinking autodidact who questions <em>everything</em> like I did. I definitely want that for you but it just takes so much time if you need a full justification for every single choice I&#8217;ve made about what you learn and how. Hundreds of people have done what I showed them and then tweaked things and went their own way about stuff. <em>That&#8217;s</em> what I want. Trusting me initially just buys us a lot of time to challenge everything later, <em>after</em> you&#8217;ve learned it.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Commitment to a single school does not mean there is no value in others, or even that this school is better. Just that you are dedicated to this one at the moment. You would never walk into a Karate dojo and start talking about why Judo is a superior martial art. The masters of both dojos can even strongly respect the other for their commitment despite their different approaches. The master of the dojo need not justify why their form is better. That is up to the student to determine on their own after they have mastered the forms. A master and mentor, instead, focus uniquely on the advantages of the form they know and how to execute it.</p>
+</div>
+<div class="paragraph">
+<p>Learning Go from the terminal follows the same philosophy. At first, you’re typing commands, structuring code, and running programs without fully understanding how it all connects. By focusing on the terminal environment and immersing yourself in Go’s syntax and core principles, you’re laying a foundation that will make advanced concepts easier to grasp later.</p>
+</div>
+<div class="paragraph">
+<p>By dedicating yourself to Go—especially in the terminal—you’re committing to a single, cohesive system. Go’s simplicity and clarity make it an excellent first language for learning programming fundamentals. The terminal, as your dojo, reinforces this focus by stripping away distractions and emphasizing direct, hands-on practice.</p>
+</div>
+<div class="paragraph">
+<p>Through this focused practice, you begin to see the "why" behind the techniques, and the lessons become part of your intuition.</p>
+</div>
+<div class="paragraph">
+<p>Once you have mastered the basics of a single discipline, you are prepared to branch out. A martial artist with a strong foundation in one style can explore others and integrate their techniques into a unique, personal expression. Similarly, a programmer fluent in Go can pick up new languages and tools with ease, applying the foundational skills they’ve gained.</p>
+</div>
+<div class="paragraph">
+<p>So dedicate yourself to <em>this</em> practice right now (and don&#8217;t look down on others in a different school). Later you multi-class or dual-wield.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-11-29 20:18:33 -0500
+Last updated 2024-12-09 10:24:00 -0500
 </div>
 </div>
 </body>

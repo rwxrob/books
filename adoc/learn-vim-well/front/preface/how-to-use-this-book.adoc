@@ -1,0 +1,7 @@
+== How to use this book
+
+This book is designed to be read from top to bottom. The concepts build on one another. Use the quick reference guides as well from your phone or a printed copy.
+
+=== Don't just read it
+
+_Coming soon ..._

@@ -519,7 +519,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_setup_bash_with_bashrc">Setup bash with .bashrc</a></li>
 <li><a href="#_setup_wezterm_terminal">Setup WezTerm terminal</a></li>
 <li><a href="#_setup_neovim_editor">Setup Neovim editor</a></li>
-<li><a href="#learnvim">Learn vim basics</a></li>
+<li><a href="#learnvim">Learn vim</a></li>
 <li><a href="#_create_a_codebook">Create a codebook</a></li>
 <li><a href="#_learn_markdown">Learn Markdown</a></li>
 <li><a href="#_review_shell_commands">Review shell commands</a></li>
@@ -565,6 +565,10 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <div class="paragraph">
 <p><strong>A Code Mage&#8217;s First Spell Book</strong><br>
 <em>Learn practical computer science and programming with Go as a first language</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Learn Vim Well</strong><br>
+<em>The best way to use the world&#8217;s best text editor—everywhere</em></p>
 </div>
 <div class="paragraph">
 <p><strong>Terminal Velocity</strong><br>
@@ -657,9 +661,6 @@ This book would never have happened without you.</p>
 <div class="paragraph">
 <p>Welcome to my how-to-be-an-awesome-coder-person book! The magic stuff is just to get you to pick it up and remember it.</p>
 </div>
-<div class="paragraph">
-<p>Does it bother you that I&#8217;m referring to myself in the first-person? At least now you know. Get used to it. Or not. I think it just makes it more special, 'cuz <em>you</em> are special.</p>
-</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -668,14 +669,14 @@ This book would never have happened without you.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Can I help it if Fred Rogers raised me? Did you know Mr. Rogers middle name was actually McFeely in real life? I did not know until just now. Seems like a very unfortunate middle name for a person in his profession.</p>
+<p>Does it bother you that I&#8217;m referring to myself in the first-person? At least now you know. Get used to it. Or not. I think it just makes it more special, 'cuz <em>you</em> are special.</p>
+</div>
+<div class="paragraph">
+<p>The truth is this book came from years of working with people in person. Obviously, you and I couldn&#8217;t work together <em>right now</em> so here we are, maybe one day. Until then, you can find me livestreaming most days on Twitch and YouTube (<a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>). Fair warning, it gets pretty crazy, but no unicorns, <em>I swear</em>.</p>
 </div>
 </td>
 </tr>
 </table>
-</div>
-<div class="paragraph">
-<p>The truth is this book came from years of working with people in person. Obviously, you and I couldn&#8217;t work together <em>right now</em> so here we are, maybe one day. Until then, you can find me livestreaming most days on Twitch and YouTube (<a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>). Fair warning, it gets pretty crazy, but no unicorns, <em>I swear</em>.</p>
 </div>
 <div class="sect2">
 <h3 id="_who_should_read_this_book"><a class="link" href="#_who_should_read_this_book">Who should read this book</a></h3>
@@ -1930,355 +1931,40 @@ ls<span class="tok-w"> </span>-la</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="learnvim"><a class="link" href="#learnvim">Learn vim basics</a></h3>
+<h3 id="learnvim"><a class="link" href="#learnvim">Learn vim</a></h3>
 <div class="paragraph">
-<p>When it comes to mastering text editing, choosing the right starting point can have a profound impact on your efficiency, understanding, and future flexibility as a developer or technical professional. Among the myriad of editors available, learning Vim first offers unique advantages that extend well beyond mere productivity. Honestly, it&#8217;s not as hard as people think. Start with the basics.</p>
+<p>It&#8217;s time to learn the world&#8217;s most powerful terminal editor: Vim. To date, the best way to learn it remains using the very old and broken <code>vimtutor</code> program.</p>
 </div>
-<div class="paragraph">
-<p>Is it hard? Yes.</p>
-</div>
-<div class="paragraph">
-<p>Is it worth it? Yes.</p>
-</div>
-<div class="admonitionblock important">
+<div class="admonitionblock caution">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-important" title="Important"></i>
+<i class="fa icon-caution" title="Caution"></i>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Do not even attempt to learn Vim before learning to type from home row on an American keyboard and achieving a speed of about 30 words per minute.</p>
+<p>Don&#8217;t do things like VimAdventures. You won&#8217;t remember them. The best way to learn Vim is to use <code>vim</code>. Finish the <code>vimtutor</code> and then start taking notes with your new editing skills. It will be a much better use of your time.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="_get_an_american_keyboard"><a class="link" href="#_get_an_american_keyboard">Get an American keyboard</a></h4>
-<div class="paragraph">
-<p>Here&#8217;s why the default Vim keybindings are optimized for the US layout.</p>
-</div>
-<div class="paragraph">
-<p><strong>Home Row Optimization</strong>: Vim’s most frequently used commands (<code>hjkl</code>, <code>:</code>, <code>/</code>, etc.) are easily accessible from the <strong>home row</strong> of an American QWERTY keyboard.</p>
-</div>
-<div class="paragraph">
-<p><strong>Symbol Placement</strong>: Essential symbols like <code>:</code> (colon) for command mode and <code>/</code> for search are conveniently placed and don’t require multiple key presses or awkward hand movements.</p>
-</div>
-<div class="paragraph">
-<p><strong>Bracket and Punctuation Placement</strong>: Keys like <code>[</code> and <code>]</code>, which are commonly used in Vim mappings, are easily accessible on the American keyboard.</p>
-</div>
-<div class="paragraph">
-<p><strong>Minimal Key Remapping</strong>: With an American layout, most of Vim&#8217;s default keybindings are intuitive and require little customization for efficient use.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_learn_standard_vim_first"><a class="link" href="#_learn_standard_vim_first">Learn standard Vim first</a></h4>
-<div class="paragraph">
-<p>The first thing anyone who learns that you are learning Vim will try to tell you is all the things you should customize and install to make it "easier" to use Vim. Don&#8217;t listen to them, for now. Right now you are focused on learning the standard Vim text editor with mostly default settings so that you can use Vim on any computer that has it installed. Then, after you have fully mastered the standard, you can decide what to allow yourself to use on your favorite computer confident in the knowledge that you can be productive on <em>any</em> computer that has Vim if you need to be later. To do otherwise would be to shoot yourself in the foot by putting bad things permanently into your muscle memory.</p>
-</div>
-<div class="admonitionblock important">
+<div class="admonitionblock note">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-important" title="Important"></i>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Speaking of putting bad things into your muscle memory, <strong>DO NOT USE <code>Control-c</code> INSTEAD OF ESCAPE!</strong> This completely prevents you from using <code>set -o vi</code> for history navigation later—one of the single biggest reasons to learn Vim in the first place—because it sends a signal interrupt that is not handled by the shell as an <code>Esc</code>! <code>Control-[</code> <em>does</em> send an actual <code>Esc</code>.</p>
-</div>
-<div class="paragraph">
-<p>Some very prominent tech "influencers" use <code>Control-c</code> instead. But <em>why</em>?! This makes absolutely no sense. How can anyone claim to be a Vim advocate and yet willingly teach people something that will permanently handicap them, preventing them from <em>ever</em> using Vim for history navigation?</p>
-</div>
-<div class="paragraph">
-<p>These same "influencers" continually trash talk Emacs, and yet they <em>force</em> people they influence to use Emacs for any history navigation.</p>
-</div>
-<div class="paragraph">
-<p>Either these influencers aren&#8217;t <em>really</em> committed to Vim, or just don&#8217;t know what <code>set -o vi</code> even does. Either way, you should <em>never</em> trust someone claiming to be a "Vim expert" asking you to remap <code>Esc</code> to <code>Control-[</code>. Now you know why and tell anyone suggesting this how stupid it is. Vim mappings are everywhere. Don&#8217;t start by learning this wrong. I promise, you&#8217;ll be glad you didn&#8217;t.</p>
+<p>I am frantically working on a replacement to <code>vimtutor</code> called <code>learnvim</code> that will contain all the corrections.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_vimtutor_gets_a_lot_wrong"><a class="link" href="#_vimtutor_gets_a_lot_wrong">Vimtutor gets a lot wrong</a></h4>
 <div class="paragraph">
-<p>The <code>vimtutor</code> was made by college kids who barely knew how to use Vim. It is fully of substantial errors. Many of them make it impossible for you to use <code>vi</code> if that is all you have, and for no reason, because the combinations are actually harder to type (like <code>:10</code> versus <code>:10G</code>). Really, these kids had no idea how to use <code>vim</code> and probably never heard of <code>vi</code> when they made the tutorial. Still, <code>vimtutor</code> is one of the best resources out there because it has you use Vim to edit a file while learning how to edit files. Until I can finish my own version of it, here is a list of the major problems:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Use <code>Control-[</code> instead of <code>Esc</code> on American keyboards.</p>
-</li>
-<li>
-<p><code>hjkl</code> for navigation</p>
-</li>
-<li>
-<p><code>u</code> for undo</p>
-</li>
-<li>
-<p><code>C-r</code> for redo (but rare)</p>
-</li>
-<li>
-<p>Prefer search-centric navigation with <code>/</code> and <code>?</code> (over line num and counting)</p>
-</li>
-<li>
-<p>Prefer "paragraph" and "function" operations (<code>dap</code>,<code>yap</code>,<code>daf</code>,<code>yaf</code>)</p>
-</li>
-<li>
-<p><code>daw</code> + <code>.</code> instead of <code>d2w</code> to delete current word</p>
-</li>
-<li>
-<p>Do not use counts for motion, use search and paragraph <code>p</code> and word <code>w</code></p>
-</li>
-<li>
-<p>Do not use Vim visual mode, use filters and TMUX copy and paste instead!</p>
-</li>
-<li>
-<p>Make strong use of filters (<code>!!</code>,<code>!}</code>, <code>!af</code>, <code>!if</code>)</p>
-</li>
-<li>
-<p><code>:r /tmp/foo</code> to read file</p>
-</li>
-<li>
-<p><code>:n</code> next file</p>
-</li>
-<li>
-<p><code>:wn</code> save current file so can open next (otherwise you have to find later)</p>
-</li>
-<li>
-<p><code>:N</code> open previous file</p>
-</li>
-<li>
-<p>Use filter instead of <code>:r</code> (<code>:r !ls</code> becomes <code>ls</code> on line and <code>!!bash</code>)</p>
-</li>
-<li>
-<p>Filters on actual text (instead of <code>:</code>) allow easy modification and multi-line</p>
-</li>
-<li>
-<p>Filter command + backspace to remove <code>!</code> easier than typing <code>:#,#</code> numbers</p>
-</li>
-<li>
-<p>Filter with <code>yyy</code> command to yank to <code>/tmp/buf</code> (loads <code>pbcopy</code> also)</p>
-</li>
-<li>
-<p>Filter with <code>ddd</code> command to delete to <code>/tmp/buf</code> (loads <code>pbcopy</code> also)</p>
-</li>
-<li>
-<p>Filter with <code>cmt</code> to comment based on current file type</p>
-</li>
-<li>
-<p>Filter with <code>pre foo</code> to prefix</p>
-</li>
-<li>
-<p>Prefer new <code>tmux</code> window over external commands with <code>:!</code> (unless filters)</p>
-</li>
-<li>
-<p><code>ZZ</code> instead of <code>:wq</code>, <code>:qw</code>, or <code>:x</code></p>
-</li>
-<li>
-<p><code>:q!</code> instead of <code>ZQ</code></p>
-</li>
-<li>
-<p><code>x</code> to delete character under cursor</p>
-</li>
-<li>
-<p><code>i</code> to start inserting in front of current character</p>
-</li>
-<li>
-<p><code>w</code> for word nav</p>
-</li>
-<li>
-<p>Forget about <code>e</code>.</p>
-</li>
-<li>
-<p>Forget about <code>G</code>.</p>
-</li>
-<li>
-<p><code>:%</code> instead of <code>G</code> to nav to end of file</p>
-</li>
-<li>
-<p><code>:0</code> instead of <code>gg</code> to nav to start of file</p>
-</li>
-<li>
-<p><code>D</code> instead of <code>d$</code> to delete to end of line</p>
-</li>
-<li>
-<p><code>C</code> instead of <code>c$</code> to change to end of line</p>
-</li>
-<li>
-<p><code>ciw</code> start changing the current word from within it.</p>
-</li>
-<li>
-<p><code>ct</code> change up to next character</p>
-</li>
-<li>
-<p><code>c/</code> change up to next search match</p>
-</li>
-<li>
-<p><code>A</code> to append to end of line</p>
-</li>
-<li>
-<p><code>p</code> to put/paste on line after</p>
-</li>
-<li>
-<p><code>P</code> to put/paste line above (good for top of file)</p>
-</li>
-<li>
-<p><code>r</code> replace current character with another</p>
-</li>
-<li>
-<p>Forget about <code>R</code>.</p>
-</li>
-<li>
-<p><code>o</code> open new line for editing after current line</p>
-</li>
-<li>
-<p><code>O</code> open new line for editing above (good for top of file)</p>
-</li>
-<li>
-<p><code>I</code> to insert at beginning of text on the line</p>
-</li>
-<li>
-<p><code>0i</code> to insert at absolute beginning of line</p>
-</li>
-<li>
-<p><code>J</code> join following line to current</p>
-</li>
-<li>
-<p><code>t&lt;char&gt;</code> to navigate to first character in line (better than counting)</p>
-</li>
-<li>
-<p><code>/</code> to navigate to search match</p>
-</li>
-<li>
-<p><code>C-l</code> clear last search term</p>
-</li>
-<li>
-<p><code>n</code> to repeat search for next</p>
-</li>
-<li>
-<p><code>N</code> to go back to previous search match</p>
-</li>
-<li>
-<p><code>?</code> to navigate to match behind (less frequent, use <code>N</code> instead after <code>/</code>)</p>
-</li>
-<li>
-<p><code>.</code> repeat last command, spam this a lot, easier than numbers</p>
-</li>
-<li>
-<p><code>!!</code> to replace current line by sending it to filter program</p>
-</li>
-<li>
-<p><code>!ap</code> send the current paragraph to filter program</p>
-</li>
-<li>
-<p><code>dap</code> to delete a paragraph from within it.</p>
-</li>
-<li>
-<p><code>yap</code> to yank a paragraph from within it.</p>
-</li>
-<li>
-<p><code>daf</code> to yank delete an entire function.</p>
-</li>
-<li>
-<p><code>dif</code> to yank indide of the function.</p>
-</li>
-<li>
-<p><code>yif</code> to yank the inside of a function.</p>
-</li>
-<li>
-<p><code>yaf</code> to yank an entire function.</p>
-</li>
-<li>
-<p><code>gwaf</code> reformat comment paragraphs, etc</p>
-</li>
-<li>
-<p><code>K</code> to see documentation about anything</p>
-</li>
-<li>
-<p><code>gd</code> to jump to definition</p>
-</li>
-<li>
-<p><code>C-o</code> to jump to last nav position</p>
-</li>
-<li>
-<p><code>C-i</code> opposite of <code>C-o</code></p>
-</li>
-<li>
-<p>Forget about <code>%</code> since requires exact position (use <code>dap</code>, etc. instead)</p>
-</li>
-<li>
-<p><code>gx</code> to open a URL in web browser</p>
-</li>
-<li>
-<p><code>z=</code> to lookup word in dictionary</p>
-</li>
-<li>
-<p><code>zg</code> to add a word to dictionary</p>
-</li>
-<li>
-<p>Use <code>Control-i</code> optionally instead of <code>Tab</code></p>
-</li>
-<li>
-<p><code>C-d</code> for completion from <code>:</code> line</p>
-</li>
-<li>
-<p><code>Tab Tab</code> for in-line omni-completion</p>
-</li>
-<li>
-<p><code>C-n</code> down in completion menu</p>
-</li>
-<li>
-<p><code>C-p</code> up in completion menu</p>
-</li>
-<li>
-<p><code>C-w C-o</code> fix window buffers</p>
-</li>
-<li>
-<p><code>~</code> toggle case of current character</p>
-</li>
-<li>
-<p><code>,</code> leader (for later)</p>
-</li>
-<li>
-<p><code>:s,some,other,g</code> replace other with some on line (<code>:s/some/other/g</code> also)</p>
-</li>
-<li>
-<p><code>:%s,some,other,g</code> replace some with other in file (live display)</p>
-</li>
-<li>
-<p><code>:set list</code> show all spaces and tabs</p>
-</li>
-<li>
-<p><code>:set nolist</code> hide all spaces and tabs</p>
-</li>
-<li>
-<p><code>:set nu</code> turn on line numbers</p>
-</li>
-<li>
-<p><code>:set nonu</code> turn off line numbers</p>
-</li>
-<li>
-<p><code>:help</code> for help</p>
-</li>
-<li>
-<p><code>C-]</code> follow link in <code>:help</code> (only, <code>C-]</code> is paste in <code>tmux</code>)</p>
-</li>
-<li>
-<p><code>:PlugInstall</code> reload plugins</p>
-</li>
-<li>
-<p><code>:GoInstallBinaries</code> download and install Go development binaries (slow)</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Go ahead. Get going. It should take you under 90 minutes or so. Take note of the things wrong with it by comparing it to what you have learned in the list above.</p>
-</div>
-<div class="paragraph">
-<p>After you open it, immediately save the file it generates to someplace else so that you can practice on an actual file that you control.</p>
+<p>Before you begin, make sure you have the list of corrections from my <a href="https://rwxrob.github.io/books/learn-vim-well"><em>Learn Vim Well</em></a> book available to see what is wrong and why.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2294,15 +1980,29 @@ ls<span class="tok-w"> </span>-la</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Now exit so you can reopen to edit that file.</p>
+<p>Exit so that you can reopen the saved copy:</p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="vim"><span></span><span class="tok-p">:</span>ZZ</code></pre>
 </div>
 </div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>The <code>vimtutor</code> is really stupid about remembering the last file you were editing. Besides, for some reason using <code>vimtutor</code> only disables a bunch of stuff that you could be using that you installed with <code>nvim</code>. Now we can open a file we control:</p>
+<p>The <code>vimtutor</code> is really stupid about remembering the last file you were editing.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Now we can open a file we control:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2326,22 +2026,7 @@ ls<span class="tok-w"> </span>-la</code></pre>
 <div class="paragraph">
 <p>After you finish it once, proceed to the next section were we talk about taking notes so you can begin crafting your book of code spells and notes to get the best practice of all.</p>
 </div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Don&#8217;t do things like VimAdventures. You won&#8217;t remember them. The best way to learn Vim is to use <code>vim</code>. Finish the <code>vimtutor</code> and then start taking notes with your new editing skills. It will be a much better use of your time.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
 <hr>
-</div>
 </div>
 <div class="sect2">
 <h3 id="_create_a_codebook"><a class="link" href="#_create_a_codebook">Create a codebook</a></h3>
