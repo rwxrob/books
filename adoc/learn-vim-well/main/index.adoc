@@ -51,9 +51,9 @@ Either these influencers aren't _really_ committed to Vim, or just don't know wh
 
 == Vimtutor gets a lot wrong
 
-The `vimtutor` was made by college kids who barely knew how to use Vim. It is full of substantial errors. Many of them make it impossible for you to use `vi` if that is all you have, and for no reason, because the combinations are actually harder to type (like `:10` versus `:10G`). Really, these kids had no idea how to use `vim` and probably never heard of `vi` when they made the tutorial. Still, `vimtutor` is one of the best resources out there because it has you use Vim to edit a file while learning how to edit files. Until I can finish my own version of it, here is a list of the major problems:
+The `vimtutor` was made by college kids who just learned it and Brahm who added unnecessary vim-isms where vi way is actually better. It is full of substantial errors. Many of them make it impossible for you to use `vi` if that is all you have, and for no reason. Many of the combinations are actually harder to type like `:10` versus `:10G`.  The `vimtutor` is still better than many other methods of learning, but make sure you understand the rest of the summary that follows when you do it.
 
-= This is the way
+= Summary
 
 _Coming soon ..._
 
