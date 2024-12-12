@@ -28,21 +28,16 @@
 :pygments-style: vs
 :pygments-linenums-mode: table
 
-include::front/index.adoc[]
+= Lessons learned
 
-include::main/index.adoc[]
+include::titles.adoc[]
 
-include::back/index.adoc[]
+include::comments.adoc[]
 
-<script type="module">
-import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-mermaid.initialize({ startOnLoad: true });
-</script>
-<script type="module">
-import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-mermaid.initialize({ startOnLoad: true });
-</script>
-<script type="module">
-import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-mermaid.initialize({ startOnLoad: true });
-</script>
+include::do-it-now.adoc[]
+
+include::4th-wall.adoc[]
+
+include::music.adoc[]
+
+include::silence-trolls.adoc[]

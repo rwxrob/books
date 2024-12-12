@@ -1,0 +1,29 @@
+== Text editing with ed, ex, vi, vim, and nvim
+
+Listen, learning *ed*, *ex*, *vi*, *vim*, and finally *nvim* isn’t just some progression of tools—it’s the evolution of a mindset. This isn’t about convenience; it’s about control. Total, undeniable control. You want to call yourself a hacker? Then you need to start where it all began, in the silence of a terminal that doesn’t care about your comfort or your flashy GUI.
+
+=== Why `ed`?
+
+`ed` isn’t just a tool—it’s a foundation. It’s raw. It’s what you use when the system is against you. Imagine this: you’ve gained access, but there’s no PTY. No terminal emulator. Nothing fancy. You’re in, but the system isn’t your friend, and it sure as hell won’t give you a cozy keylogger-free interface. `ed` doesn’t broadcast to a PTY. It’s quiet. Silent. Like a shadow. Learn it, and you’ve already outmaneuvered the lazy attackers who need their tools to hold their hands.
+
+=== Then `ex`
+
+You graduate to `ex`, and it’s like finding a knife in the dark—it’s sharper, more versatile. `ex` introduces the idea of commanding the editor like an operating system. You don’t need to see what’s happening on the screen; you feel it. You own it. This is where you start to understand editing isn’t just about text—it’s about intent.
+
+=== Then `vi`
+
+With `vi`, you step into the world of visibility. It's literally the _visual_ mode of `ex`. You see your actions take shape, but the constraints remain. It’s fast, lean, and everywhere. Why? Because it’s the standard. No matter what system you touch—some archaic Unix box or a modern Linux server—`vi` is there, waiting for you. The only place you _won't_ find it is in hacked containers, but that'll come later. Learn it, and you can edit your way out of anything.
+
+=== Then `vim`
+
+`vim` is power. It’s mastery. It's iMprovement. It’s taking everything you’ve learned and putting it on steroids. Syntax highlighting, macros, buffers—you don’t just edit files now. You command them. You wield `vim` like a weapon, bending it to your will.
+
+=== Finally, `nvim`
+
+And then there’s `nvim`. Modern, extensible, programmable. The preferred editor of Roblox players and software developers, which, let's be honest, are usually one and the same. It’s for the hacker who doesn’t just want to use tools but wants to build their own on their cushy home rig. You script. You automate. You create your own path. Then you use your creations to own your enemies. `nvim` isn’t just a tool—it’s a platform for invention. But don’t skip the steps. Without the grit of `ed`, the insight of `ex`, the ubiquity of `vi`, and the power of `vim`, you won’t appreciate the elegance of `nvim`.
+
+=== The hacker’s creed
+
+When you’re in, the system doesn’t want you there. GUIs are a liability, PTYs tattletale, and every keystroke could betray you. But with these tools, you’re invisible. They don’t demand attention, and they don’t leave a trail. They’re lean, fast, and everywhere. Learn them in this order, and you’ll become the master of any environment you touch.
+
+Hacking isn’t about the flash. It’s about control. Take it.

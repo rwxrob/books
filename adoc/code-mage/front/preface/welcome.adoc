@@ -1,3 +1,0 @@
-Welcome to my how-to-be-an-awesome-coder-person book! The magic stuff is just to get you to pick it up and remember it.
-
-include::../../../first-person.adoc[]

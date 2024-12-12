@@ -1,0 +1,2 @@
+include::cv-vs-resume.adoc[]
+

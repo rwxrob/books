@@ -1,0 +1,12 @@
+**`Hello, friend.`** Exciting time in the world. Exciting time. Systems are breaking. Power structures are crumbling. Climate fluctuating. The ones who control the code, control the narrative and the solutions. You see it, don’t you? Technology is reshaping everything—how we live, work, and connect. Quantum and AI advancements are growing at exponential rates of exponential rates. The terminal isn’t just a relic of the past; it’s the key to survival at this pace, understanding and mastering the systems that drive the world forward. https://shodan.io[_Everything_] can be accessed from a terminal.
+
+> “What is the most important thing you could be working on in the world right now? And if you’re not working on that, why aren’t you?” (Aaron Swartz)
+
+Those not moving at _terminal velocity_ will be left behind. While most of the world flails in chaos, grasping for the next game, streaming video, or shiny desktop distraction, those who learn and use the terminal see through the noise, into the Matrix, where they automating processes, secure networks, and provide solutions to the world's most dire and complex problems. Like anything worth learning, these skills take commitment. Are you ready? Willing to put in the time? If so, welcome to the edge, knowledge warrior. Now let’s get to work.
+
+[NOTE]
+====
+Data Science might be the fastest growing tech profession in 2024 (36% growth rate)—having recently bested Security Analyst (33%) for that position—but you need terminal skills for both.
+
+I once watched a remote presentation from a data scientist who didn't know about `mv name newname`. 100 people watched him drop out of the terminal—where he was already showing everyone how to do some data-science things—just so he could rename a file. He minimized his terminal, opened the File Explorer, renamed the file using the GUI properties dialog box, then reopened the terminal to continue. I couldn't believe it. Still blows me away today. It's one of the reasons I wrote this. Don't get mad, get busy.
+====

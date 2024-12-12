@@ -1,0 +1,9 @@
+[[gitea]]
+== Gitea alternative to GitHub
+
+Maybe you are too young to use GitHub—but plenty capable. Setup Gitea at home instead. I've known hundreds of kids who fit that description. One 9-year-old who installed Linux from USB on his laptop by himself with nothing but a little help over the phone from me.
+
+Maybe you don't want all your code shared with the world. Maybe you want to keep the best stuff hidden. Your automated pentesting code that is filling your wallet. Why would you give that away? Hackers are definitely competitive. You _definitely_ want to protect it. No harm setting up your own source management system with Gitea instead. Here's How.
+
+_Coming soon..._
+

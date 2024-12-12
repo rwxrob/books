@@ -1,3 +1,11 @@
-include::github/index.adoc[]
+
+//include::mission-briefing/index.adoc[]
+
+include::git-github/index.adoc[]
 
 include::tmux-vs-w3m.adoc[]
+
+include::learn-vim-well.adoc[]
+
+
+

@@ -1,9 +1,0 @@
-include::copyright.adoc[]
-
-include::../../list-plain.adoc[]
-
-include::dedication.adoc[]
-
-include::prerequisites.adoc[]
-
-include::preface/index.adoc[]

@@ -1,0 +1,158 @@
+[[learn-vim]]
+== Learn Vim
+
+When it comes to mastering text editing, choosing the right starting point can have a profound impact on your efficiency, understanding, and future flexibility as a developer or technical professional. Among the myriad of editors available, learning Vim first offers unique advantages that extend well beyond mere productivity. Honestly, it's not as hard as people think. Start with the basics.
+
+Is it hard? Yes.
+
+Is it worth it? Yes.
+
+[IMPORTANT]
+====
+Do not even attempt to learn Vim before learning to type from home row on an American keyboard and achieving a speed of about 30 words per minute.
+====
+
+=== Avoid gimmicks and games
+
+Don't do things like VimAdventures or even VimTutor. Use an _actual_ terminal to learn how to use a _terminal_ editor instead. I know, crazy, right? The thought that just maybe a _web_ app isn't the best way to learn a _terminal_ editor. It doesn't work. I promise. Not even all the key combinations are possible doing that stuff within a web browser.
+
+Plus you won't remember them. Our brains are hard coded to remember things by association. None of this gimmick creators are aware of that, for some reason. The best way to learn Vim is to use `vim` to edit actual documents and code. Commit to learning it _right_ and then tell yourself you won't create or edit another text file with any other editor. If you are frightened, start with simple notes that you have backed up in Git.
+
+[NOTE]
+====
+Making the commitment to do everything in `vim` is terrifying at first. I remember exactly where I was sitting, looking out the two-story window across the street at Wieden & Kennedy in Portland, Oregon while working for Teleport Internet Services. The same place I committed to learning Linux when my unknowing mentor Joey (our head systems administrator) told me about it. At first the pain was excruciating, would I make my deadlines, would people thought I was a slow coder, would I royally screw up an important configuration file. That fear quickly turned to the greatest confidence I've gained. I can handle any text file on any of millions of Unix and Linux systems and containers in the world today. It's so worth it.
+====
+
+=== Learn standard Vim first
+
+The first thing anyone who learns that you are learning Vim will try to tell you is all the things you should customize and install to make it "easier" to use Vim. Don't listen to them, for now. Right now you are focused on learning the standard Vim text editor with mostly default settings so that you can use Vim on any computer that has it installed. Then, after you have fully mastered the standard, you can decide what to allow yourself to use on your favorite computer confident in the knowledge that you can be productive on _any_ computer that has Vim if you need to be later. To do otherwise would be to shoot yourself in the foot by putting bad things permanently into your muscle memory.
+
+=== Vimtutor gets almost everything wrong
+
+The `vimtutor` was made by college kids who just learned it and Bram who added several unnecessary Vim-isms. It is full of substantial errors. Many of them make it impossible for you to use `vi` if that is all you have, and for no reason. Many of the combinations are actually harder to type like `:10` versus `:10G`.  The `vimtutor` is still better than many other methods of learning, but make sure you understand the rest of the summary that follows when you do it.
+
+=== Summary
+
+The full documentation for commands is perhaps best referenced in the excellent Neovim help documentation itself with `:help`. You can get help on a specific command, for example, by typing the command after `:help` like `:help )`. The following summary distinguishes the command I personally find the most useful and organizes them based on the ones you will have in _any_ `vi` from those in `vim` and `nvim`. This helps you make a solid decision about what priority you put on learning the command. For example, `:100` takes you to line number 100 without updating the "jump list" but you might not care to ever start doing that if you want to be compatible with `vi` which used `100G` instead. The `:100` does not work in `vi` at all. This also affects how you memorize use of external filters, which are supported in most all versions of `vi` but _do not work_ with `:100` while they do work with `:100G`. I've organized these confusing distinctions for your simply here so you know to learn the `vi` compatible stuff first before using the rest—as any true hacker would prefer.
+
+_Coming soon ..._
+
+_(This is currently a place for me to dump all the things that I notice as I remember them. Eventually, each will be fleshed out in addition to being included in the quick reference sheet and the eventual `learnvim` command.)_
+
+- Use `Control-[` instead of `Esc` on American keyboards.
+- `hjkl` for navigation
+- `u` for undo
+- Prefer search-centric navigation with `/` and `?` (over line num and counting)
+- `:r /tmp/foo` to read file
+- Do not use counts for motion, use search and paragraph `p` and word `w`
+- Filters (`!!`,`!}`)
+- `:n` next file
+- `:wn` save current file so can open next (otherwise you have to find later)
+- `:N` open previous file
+- Use filter instead of `:r` (`:r !ls` becomes `ls` on line and `!!bash`)
+- Filters on actual text (instead of `:`) allow easy modification and multi-line
+- Filter command + backspace to remove `!` easier than typing `:#,#` numbers
+- Filter with `yyy` command to yank to `/tmp/buf` (loads `pbcopy` also)
+- Filter with `ddd` command to delete to `/tmp/buf` (loads `pbcopy` also)
+- Filter with `cmt` to comment based on current file type
+- Filter with `pre foo` to prefix
+- Prefer new `tmux` window over external commands with `:!` (unless filters)
+- `ZZ` instead of `:wq`, `:qw`, or `:x`
+- `:q!` instead of `ZQ`
+- `x` to delete character under cursor
+- `i` to start inserting in front of current character
+- `w` for word nav
+- `G` always instead of `:` (vimism)
+- `1G` instead of `gg` (vimism) to nav to start of file
+- `D` instead of `d$` to delete to end of line
+- `C` instead of `c$` to change to end of line
+- `y$` yank to end of line
+- `ct` change up to next character
+- `c/` change up to next search match
+- `A` append to end of line
+- `ea` append to the end of a word
+- `p` to put/paste on line after
+- `P` to put/paste line above (good for top of file)
+- `r` replace current character with another
+- `o` open new line for editing after current line
+- `O` open new line for editing above (good for top of file)
+- `I` to insert at beginning of text on the line
+- `0i` to insert at absolute beginning of line
+- `J` join following line to current
+- `t<char>` to navigate to first character in line (better than counting)
+- `/` to navigate to search match
+- `n` to repeat search for next
+- `N` to go back to previous search match
+- `.` repeat last command, spam this a lot, easier than numbers
+- `!!` to replace current line by sending it to filter program
+- Use `Control-i` optionally instead of `Tab`
+- `~` toggle case of current character
+- `:s,some,other,g` replace other with some on line (`:s/some/other/g` also)
+- `:%s,some,other,g` replace some with other in file (live display)
+- `:set list` show all spaces and tabs
+- `:set nolist` hide all spaces and tabs
+- `:set nu` turn on line numbers
+- `:set nonu` turn off line numbers
+- `:help` for help
+
+Vimisms that are useful and worth learning:
+
+- `(` start of sentence
+- `)` end of sentence
+- `das` cut current current sentence
+- `K` to see documentation about anything
+- `gwaf` reformat comment paragraphs, etc
+- `gd` to jump to definition
+- `gj` down one display line (good for single line markdown paragraphs)
+- `gk` down one display line (good for single line markdown paragraphs)
+- `C-o` to jump to last nav position
+- `C-i` opposite of `C-o`
+- `gx` to open a URL in web browser
+- `z=` to lookup word in dictionary
+- `zg` to add a word to dictionary
+- `,` leader (for later)
+- `Tab Tab` for in-line omni-completion
+- `C-d` for completion from `:` line
+- `C-n` down in completion menu
+- `C-p` up in completion menu
+- `C-r` (vimism) for redo (but rare)
+- `C-w C-o` fix window buffers
+- `ciw` start changing the current word from within it.
+- `!ap` send the current paragraph to filter program
+- `dap` to delete a paragraph from within it.
+- `yap` to yank a paragraph from within it.
+- `daf` to yank delete an entire function.
+- `dif` to yank indide of the function.
+- `yif` to yank the inside of a function.
+- `yaf` to yank an entire function.
+- Paragraph and function operations: `dap`,`yap`,`daf`,`yaf`
+- `daw` + `.` instead of `d2w` to delete current word
+- Filters (`!af`, `!if`)
+- `C-l` clear last search term
+- `:PlugInstall` reload plugins
+- `:GoInstallBinaries` download and install Go development binaries (slow)
+- `C-]` follow link in `:help` (only, `C-]` is paste in `tmux`)
+
+=== Don'ts
+
+- Forget about `?` use `/` instead which wraps, then `N` to consistently go back
+- Forget about `e`.
+- Forget about `R`.
+- Do not use Vim visual mode, use filters and TMUX copy and paste instead!
+- Forget about `%` since requires exact position (use `dap`, etc. instead)
+
+=== Multiple panes and buffers
+
+I've seen so many Vim users—particularly Neovim users—completely wall themselves in by becoming completely dependent on Vim buffers and panes. Soon they start turning to completely bloated options that find and open files, do Internet searches, and other insanity—some of which requires NodeJS to be installed in order to even use Neovim. None of that has any place in a _text editor_—even one that only you are going to use on your nice cushy personal workstation.
+
+[NOTE]
+====
+Emacs users have been doing this forever. They gave in to the dark side and decided to just keep adding things to it. Eventually they ultimately decided to create an OS within their editor, one big Lisp interpreter to rule them all. Vim is not Emacs even though sometimes Neovim feels like it actually wants to be Emacs—but with Lua instead.
+====
+
+Eventually, the smart ones realize they would have been better off the entire time using TMUX windows instead—especially when TMUX is setup to be compatible with the original `screen` that can be found on any Unix system for some time. Cutting and pasting between TMUX windows works _even if you are not in an editor session_ and can be automatically setup to load the host system buffer (think `pbcopy`). The main reason TMUX is better is because it is the right tool for that job. TMUX windows, panes, and buffers can be completely scripted _very_ easily from the command line using simple shell commands. Vim cannot.
+
+Want to run IRC at the same time as you editor and have them both come up at the same time? That can _only_ be done with Vim + TMUX, not Vim alone. Want to have some service or cronjob automatically open a window or pane in your current work session? Only TMUX can do that, not Vim. So, again, why would you handicap yourself by using the wrong tool for the job, in this case windows and panes in Vim. Want to integrate your functional cut and paste buffers with your host system and other programs? Vim buffers cannot do this, but a clever `yyy` or `ppp` Vim filter can. It can even be made to open another TMUX window but—more importantly—can be fully integrated into anything else running on your computer. Vim buffers cannot.
+
+Only `:help` is a valid exception to this.
+

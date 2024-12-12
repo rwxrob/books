@@ -1,0 +1,49 @@
+= Recon: interface origins
+
+Listen up. The terminal isn’t just some relic of the past—it’s the edge, the pulse of everything we do. People think they need flashy GUIs, shortcuts, whatever—they’re wrong. The real power has always been here, in this black box with a blinking cursor. The terminal is raw, unfiltered control. It’s where Unix set the rules and Linux rewrote them for anyone bold enough to take control. If you’re ready to wake up, you need to start here. Understand the tools, the history, the mindset. Because once you do, you’ll see—it’s not just code. It’s power.
+
+== From teletypes to command lines
+
+The modern terminal traces its lineage back to _teletype machines_ (`tty`), devices originally designed to send and receive typed messages over telegraph lines. These electromechanical marvels bridged human communication with machines, setting the stage for the command line interfaces we use today.
+
+=== What were teletypes?
+
+Teletypes were essentially typewriters connected to a communication line, capable of sending and receiving text. Early models like the *Teletype Model 33* (1963) became iconic in the computing world, serving as both input and output devices for time-sharing systems. Back then you had to buy time for a lot of money to even use a computer so using it efficiently was a big deal. Imagine if you had to pay even $10/hour to use your computer now.
+
+=== How teletypes shaped terminals
+
+*Input via keyboards*: Users typed commands directly onto the teletype keyboard.
+   For example, in the *Multics* operating system, users would type commands like:
+
+   [source,sh]
+   —-
+   print filename
+   —-
+
+The machine printed the results on paper.
+
+*Output on paper or screens*: Output appeared in real-time, printed on paper rolls. Early systems like *DEC PDP-11* connected to teletypes allowed users to interact with Unix via commands typed on the Model 33.
+
+*Full-duplex communication*: Teletypes supported simultaneous input and output. You could type commands while the machine printed responses.
+
+*Baud rates*: The Model 33 operated at 10 characters per second (110 baud), a speed that today feels like a crawl but was revolutionary for its time. Understanding how slow these interfaces is key to understanding how we got wildly efficient tools like `vi` for text input. Spamming the arrow keys to move around the screen would have been ridiculously slow. Computers and terminals are much faster now, but understanding this helps us understand things like the `vimtutor` tutorial that was made for a much different, slower time. Having every keystroke cause a pop-up tab-completion possibility would have been impossible, but today that is considered normal.
+
+=== Legacy in modern terminals
+
+*TTY as a concept*: Modern Unix/Linux systems still refer to terminal sessions as `tty`, a nod to their teletype ancestry.
+
+*Behavior*: Features like line buffering and carriage return come directly from teletype operation quirks.
+
+*Commands*: Early commands like `ls`, `cp`, and `cat` in Unix were designed to be typed on teletypes. The `man` command was designed to generate actual paper manuals.
+
+*Documentation*: Some tutorials and documentation such as `vimtutor` assume you are using an extremely slow screen and overemphasize counting and positional navigation when search-centric navigation and completion are now preferred.
+
+=== A specific example: Unix and the Model 33
+
+In the 1970s, Ken Thompson and Dennis Ritchie (friends of the young Rob Pike, who invented the Go programming and Unicode language later) developed *Unix* using a PDP-11 connected to a Teletype Model 33. Commands like `ls` (list files) or `man` (manual pages) were short to minimize typing effort on the slow device. The Model 33’s limitations, like its speed and one-line-at-a-time input, directly influenced the minimalism of Unix’s command-line interface.
+
+=== Why it matters
+
+The terminal’s design reflects its history: efficient, concise, and text-driven. Even as we use modern tools like virtual terminals and IDEs, every command typed is a salute to the era when engineers sat at teletypes, hearing the clatter of keys and the hum of progress. They may have been "boomers" but they invented this revolution. We owe them our thanks—and allegiance.
+
+

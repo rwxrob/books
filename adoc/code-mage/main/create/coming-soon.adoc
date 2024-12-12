@@ -1,7 +1,0 @@
-== Coming soon ...
-
-Collaborative project ideas and boilerplate will be added here. There's no need to wait, however, start thinking about what it is that you have always dreamed of coding and we can help you break it up into manageable subprojects.
-
-We can always use contributors on the https://github.com/rwxrob/bonzai[Bonzai] and https://github.com/rwxrob/code-mage[Code-Mage Assistant] projects as well.
-
-Or perhaps you just want to start up your own "dot files" in Go to do your favorite things.

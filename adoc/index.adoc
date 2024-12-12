@@ -12,9 +12,13 @@
 :icons: font
 :xrefstyle: short
 
-Here you'll find Rob's perpetually unfinished books. Check for updates at the bottom. Don't link directly to sections since they may change until first version released. Feel free to https://github.com/rwxrob/books-talk/issues[give your feedback] or https://github.com/sponsors/rwxrob[support him].
+Here you'll find my perpetually unfinished books. Check for updates at the bottom. If you link directly to stuff just know those links will likely break when I move things around (Tim Berners-Lee's biggest complaint about the Web that he created). Feel free to https://github.com/rwxrob/books/issues[give your feedback] or https://github.com/sponsors/rwxrob[sponsor] if you like.
 
-include::list.adoc[]
+link:terminal-velocity[*Terminal Velocity*] +
+_Boost your coding, hacking, and learning with a Unix or Linux terminal_
 
-//include::app.adoc[]
+link:bad-strimmer[*Bad Strimmer, No Biscuit*] +
+_Lessons learned from my livestream fails_
 
+link:shut-the-faq-up[*Shut the FAQ Up*] +
+_All the questions I'm tired of answering_

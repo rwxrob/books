@@ -1,0 +1,12 @@
+== Get an American keyboard
+
+Here's why the default Vim keybindings are optimized for the US layout.
+
+*Home Row Optimization*: Vim’s most frequently used commands (`hjkl`, `:`, `/`, etc.) are easily accessible from the **home row** of an American QWERTY keyboard.
+
+*Symbol Placement*: Essential symbols like `:` (colon) for command mode and `/` for search are conveniently placed and don’t require multiple key presses or awkward hand movements.
+
+*Bracket and Punctuation Placement*: Keys like `[` and `]`, which are commonly used in Vim mappings, are easily accessible on the American keyboard.
+
+*Minimal Key Remapping*: With an American layout, most of Vim's default keybindings are intuitive and require little customization for efficient use.
+

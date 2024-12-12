@@ -1,0 +1,5 @@
+== What's with the hacker stuff?
+
+The whole hacker theme is fun, right? I hope you like it. If you don't that's fine. No judgement. It's actually for a very good reason: to fool your brain into remembering it even when your brain doesn't want to—the same way people memorize the number Pi to 100,000 digits.
+
+I'm not _really_ encouraging you to hack your enemies, just creating a memorable narrative linking the concepts and techniques together lodging them firmly into you squishy grey matter. That's how human neural nets are made. If it helps, you can image an alien race of soulless AIs attacking our planet and only your terminal skills can save us. "I know Kung Fu." Go ahead, you'll remember it better.

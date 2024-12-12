@@ -1,0 +1,21 @@
+[CAUTION]
+====
+A prominent YouTuber once joked that I am "one of the two people who actually use vi" in the world. It always makes me grin. I hold no ill-will against the person for saying it. I mean, it's pretty funny—and wrong—so very wrong. Another nice, intelligent, and personable Twitch streamer was complaining about having to learn "vee" (he meant "vee-eye") on some IBM AIX systems he was being forced to work on because the boomers supporting them had retired. He had literally never heard of `vi`.
+
+Obviously, neither of these people has spent a lot of time working for different substantial multi-national enterprises, or hacking multiple systems for fun and profit, like I have. Yes I'm old, but that should make you want to read what I'm about to say even more. You'll be glad you did.
+
+Tens of thousands—possibly millions—of Unix systems don't even have `vim` available. Any hacker knows this. It's `vi` only. On a few of these, it's `ed` only. On Alpine or BusyBox it's not even that. Yes these systems are old—much older than me—but not all of them. AIX, Solaris/SunOS, and BSD are _huge_ Unix distributions used all over the world. Most YouTube "influencers" wouldn't even recognize those names let alone know what to do if they had to hack or manage one of them.
+
+I actually feel sorry for the people listening to naive YouTubers telling everyone all they need to learn is Neovim and put all their configuration into `~/.config/nvim/init.lua`. The people who listen to them are seriously limiting their skills and job potential if they think they will use `nvim` for any of these employment opportunities. Want to get laughed out of the room? Ask an administrator at one of these serious companies to install `nvim`—or worse, VSCode extensions—on their corporate servers so you can do your job because you haven't learn Vim correctly.
+
+[NOTE]
+====
+I once had a random Discord user call the system administrators who wouldn't install the completely bug-ridden, insecure VSCode extensions onto their production servers "babies" for not wanting to do it. Who _really_ is the baby here?
+====
+
+Perhaps you only want to work for a company that considers installing Neovim on all enterprise systems a corporate priority. I don't. There are plenty of jobs where having your own personal development environment is all that is required, but there are even more that require the use of their environment. This is changing, for sure, but until it fully changes why limit yourself unnecessarily? You can have the best of both worlds if you learn it right.
+
+[CAUTION]
+====
+You might want to check yourself before dissing one of these big boring companies that doesn't have a letter in the FAANG acronym (which Microsoft also does not have). These FAANG-less, boring, high-paying companies aren't the kind to make YouTube videos and pedal influence. They are too busy producing value that actually matters—like providing your power, food, water, sewage, banking, medicine, healh-care, insurance, education, government, transportation, and public safety—not streaming your favorite video to you, hosting your cat videos, or pumping you with ads when you do a search. And another thing, I've lived through several massive economic downturns and it is always the people working for the sexy, empty companies that end up unemployed—many of which ballooned into hype bubbles that _caused_ these crises in the first place. The unsexy essential companies do just fine—every time.
+====

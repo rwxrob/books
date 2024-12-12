@@ -1,8 +1,0 @@
-include::understand/index.adoc[]
-
-include::prepare/index.adoc[]
-
-include::learn/index.adoc[]
-
-include::create/index.adoc[]
-
