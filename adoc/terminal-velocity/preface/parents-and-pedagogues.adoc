@@ -8,7 +8,7 @@ The answer is yes. Yes I am. In fact, my goal is to fully corrupt them much the 
 
 Why me? Because getting people to discover this potential and realize it through their own learning is my super power. I've been mentored by the best and I'm _really_ good at it. Since the first time my scouts begged "Mr. Rob, teach us to code. Mr. Rob, teach us to hack. Mr. Rob, teach us Russian." I have been bound and determined to make this a reality. In fact, I started SKILSTAK Coding Arts in 2013 with my own retirement money to address the _real_ needs of the tech industry and those who might consider it as a career, raising a generation of highly skilled knowledge warriors.
 
-Let me tell you about some of these amazing people. [I keep a collection of <<nice, nice things>> to keep me going even when the money doesn't (which is also why I still have a full-time job for a huge multi-national corporation).]:
+Let me tell you about some of these amazing people:
 
 - One of them quit his grocery clerk job to write code for a solar energy company and was paired with essentially his own intern at 16.
 

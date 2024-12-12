@@ -1,6 +1,3 @@
-[[nice]]
-== Nice comments
-
 A big **thank you** to all the people who have made supportive, motivational comments in different ways over the years. It means more than you know. I would not have kept at it without them.
 
 ---
@@ -9,7 +6,7 @@ A big **thank you** to all the people who have made supportive, motivational com
 **Title**: Site Reliability Engineer, HomeAdvisor +
 **Note**: Sent "Thanks Award" for helping learn Linux
 
-Robert is a very skilled programmer. His ability to come up whith solutions to problems enables them to be resolved faster.  I worked with him as a Systems Administrator. He was able to use his skills to automate many of the processes that made work much easier for the rest of the team. His zeal for coding prompted other team members to strengthen and/or learn programming skills.
+Robert is a very skilled programmer. His ability to come up with solutions to problems enables them to be resolved faster.  I worked with him as a Systems Administrator. He was able to use his skills to automate many of the processes that made work much easier for the rest of the team. His zeal for coding prompted other team members to strengthen and/or learn programming skills.
 
 ---
 
