@@ -100,12 +100,12 @@ _In development..._
 _In development..._
 
 [[tmux]]
-= Learn tmux multiplexing
+= Learn screen and tmux multiplexing
 
 _In development..._
 
 [[vim]]
-= Learn to edit text
+= Learn to edit text anywhere
 
 _In development..._
 
@@ -149,19 +149,31 @@ _In development..._
 
 _In development..._
 
+[[bashrc]]
+= Customize bashrc file
+
 [[advshell]]
-= Learn advanced shell commands
+= Learn shell advanced commands
 
 `find`, `xargs`, `entr`, `ps`, `awk`, `sed, `perl`, `tr`, `cut`, `split`, `sort`, `uniq`, `ip`, `strace`, `base64`, `ssh`, `top`, `netstat`, `ipconfig`, `ifconfig`, `nc`, `complete`, `tail`, `head`, `cat`, `tac`
 
 _In development..._
 
+[[bashcompletion]]
+= Learn bash completion
+
+_In development..._
+
 [[golang]]
-= Learn Go programming
+= Learn Go terminal programming
 
 _In development..._
 
 include::learn-go-programming/index.adoc[]
+
+_In development..._
+
+= Learn Lua basics for configuration
 
 _In development..._
 
@@ -171,7 +183,7 @@ _In development..._
 _In development..._
 
 [[k8s]]
-= Learn k9s for Kubernetes
+= Learn local Kubernetes commands
 
 _In development..._
 
