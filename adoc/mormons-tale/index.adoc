@@ -28,9 +28,35 @@
 :pygments-style: vs
 :pygments-linenums-mode: table
 
-_A Mormon's tale_
+_A Mormon's Tale_
 
-_Some day I'll get to this..._
+This is the autobiography of a life-long autodidact, polyglot, nefarious hacker, and ex-communicated Mormon; an attention starved, shameless narcissist and adulterer who finally realized it actually can be all about him and still be about all those around him.
+
+The him in that sentence is me, rwxrob, but people have known me by many names:
+
+- Mr. Rob
+- Mo Hax
+- ironmo (my secret name swapped around)
+- Moroni (my super secret Mormon cult name)
+- Роберт
+- President Muhlestein
+- Elder Muhlestein
+- Brother Muhlestein
+- Pokey the Knee-Rider (Poke, for short)
+- Muhley
+- Schnoz
+- ... and several others that I cannot divulge for safety reasons.
+
+[CAUTION]
+====
+Caution: the following contains ultra-secret Mormon temple rituals; explicit curse words; references to sex, drugs, and rock and roll; a bare nipple or two; and wanton disregard for propriety and decorum.
+====
+
+It's been a rough life for sure but not nearly as rough as others have had. All I can do, I suppose, is share what I've learned—most of it the hard way.
+
+But do I really want to? Do I really want to write all this shit down? Do I want to drag it all out for the wild public to consume? This book is really going to piss a lot of people off. Honestly, I've never given less of a shit. That's the thing about hitting rock bottom and rebuilding from zero. You really do stop caring about perception management. Life is too precious and short to waste time pretending to be something you're not.
+
+_Some day I'll get to the rest of this..._
 
 [[nice]]
 = Nice comments
