@@ -130,17 +130,17 @@ _In development..._
 _In development..._
 
 [[markdown]]
-= Learn GitHub Flavored Markdown
+= Learn Markdown and pandoc
 
 _In development..._
 
 [[json]]
-= Learn JSON structured data
+= Learn jq for JSON structured data
 
 _In development..._
 
 [[yaml]]
-= Learn YAML structured data
+= Learn yq for YAML structured data
 
 _In development..._
 
@@ -163,67 +163,15 @@ _In development..._
 
 include::learn-go-programming/index.adoc[]
 
-[[webdev]]
-= Learn just enough webdev
-
-_In development..._
-
-[[proxmox]]
-= Build a Proxmox homelab tower
-
-_In development..._
-
-[[vmware]]
-= Learn VMWare for local VMs
-
-_In development..._
-
-[[kvm]]
-= Learn KVM and QEMU for server VMs
-
 _In development..._
 
 [[podman]]
-= Learn Podman for OCI containers
+= Learn podman for OCI containers
 
 _In development..._
 
 [[k8s]]
-= Learn Kubernetes orchestrator
-
-_In development..._
-
-[[terraform]]
-= Learn Terraform to provision systems
-
-_In development..._
-
-[[ansible]]
-= Learn Ansible to automate
-
-_In development..._
-
-[[actions]]
-= Learn GitOps with GitHub actions
-
-_In development..._
-
-[[behave]]
-= Learn to behave
-
-_In development..._
-
-include::learn-to-behave/index.adoc[]
-
-[[job]]
-= Get a job
-
-_In development..._
-
-include::get-a-job/index.adoc[]
-
-[[learn]]
-= Always be learning
+= Learn k9s for Kubernetes
 
 _In development..._
 

@@ -30,6 +30,7 @@ x-site() {
 		-o "index.html" \
 		"./adoc/index.adoc"
 	x-book terminal-velocity
+	x-book autodidactic
 	x-book bad-strimmer
 }
 
