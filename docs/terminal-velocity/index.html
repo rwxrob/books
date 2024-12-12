@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="description" content="Master the fastest human-computer interface with bash">
-<meta name="keywords" content="Master the fastest human-computer interface with bash">
+<meta name="description" content="Boost your coding, hacking, and learning with a Unix or Linux terminal">
+<meta name="keywords" content="terminal unix linux tech education tutorials learning techlife hacking cybersecurity cli command-line bash golang programming coding applied-programming independent-learning irc weechat tmux ed ex vi vim neovim nvim w3m lynx twitch proxmox homelab init beginner noob kubernetes network software-development utilities">
 <meta name="author" content="Robert S. Muhlestein (rwxrob)">
 <meta name="copyright" content="2024 Robert S. Muhlestein">
 <title>Terminal Velocity</title>
@@ -492,20 +492,75 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_copyright">Copyright</a></li>
-<li><a href="#bookshelf">Bookshelf</a></li>
-<li><a href="#_dedication">Dedication</a></li>
-<li><a href="#_preface">Preface</a></li>
-<li><a href="#_github_cli_tool_gh">GitHub CLI tool (gh)</a>
+<li><a href="#dedication">Dedication</a></li>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#preface">Preface</a>
 <ul class="sectlevel2">
-<li><a href="#_redirect_user_github_io">Redirect user.github.io</a></li>
-<li><a href="#_enable_github_repo_discussions">Enable GitHub repo discussions</a></li>
-<li><a href="#_terminal_browsing_lynx_vs_w3m">Terminal browsing: lynx vs w3m</a></li>
+<li><a href="#_who_should_read_this_book">Who should read this book</a></li>
+<li><a href="#_whats_included_in_the_book">What&#8217;s included in the book</a></li>
+<li><a href="#_how_to_use_this_book">How to use this book</a></li>
+<li><a href="#_whats_with_the_hacker_stuff">What&#8217;s with the hacker stuff?</a></li>
+</ul>
+</li>
+<li><a href="#unix">Get Unix or Linux OS</a></li>
+<li><a href="#manage-software">Manage installed software</a></li>
+<li><a href="#wezterm">Get Wezterm terminal</a></li>
+<li><a href="#shell">Learn shell basics</a></li>
+<li><a href="#github">Get Git and GitHub</a></li>
+<li><a href="#dotfiles">Start a dot files repo</a></li>
+<li><a href="#tmux">Learn tmux multiplexing</a></li>
+<li><a href="#vim">Learn to edit text</a></li>
+<li><a href="#labrepo">Start a lab repo</a></li>
+<li><a href="#weechat">Learn weechat IRC</a></li>
+<li><a href="#browser">Learn w3m or lynx web browser</a></li>
+<li><a href="#mods">Learn mods terminal AI assistant</a></li>
+<li><a href="#markdown">Learn GitHub Flavored Markdown</a></li>
+<li><a href="#json">Learn JSON structured data</a></li>
+<li><a href="#yaml">Learn YAML structured data</a></li>
+<li><a href="#bash">Learn bash scripting</a></li>
+<li><a href="#advshell">Learn advanced shell commands</a></li>
+<li><a href="#golang">Learn Go programming</a>
+<ul class="sectlevel2">
+<li><a href="#_你好朋友">你好，朋友</a></li>
+</ul>
+</li>
+<li><a href="#webdev">Learn just enough webdev</a></li>
+<li><a href="#proxmox">Build a Proxmox homelab tower</a></li>
+<li><a href="#vmware">Learn VMWare for local VMs</a></li>
+<li><a href="#kvm">Learn KVM and QEMU for server VMs</a></li>
+<li><a href="#podman">Learn Podman for OCI containers</a></li>
+<li><a href="#k8s">Learn Kubernetes orchestrator</a></li>
+<li><a href="#terraform">Learn Terraform to provision systems</a></li>
+<li><a href="#ansible">Learn Ansible to automate</a></li>
+<li><a href="#actions">Learn GitOps with GitHub actions</a></li>
+<li><a href="#behave">Learn to behave</a>
+<ul class="sectlevel2">
+<li><a href="#_dont_start_with_conclusions">Don&#8217;t start with conclusions</a></li>
+</ul>
+</li>
+<li><a href="#job">Get a job</a>
+<ul class="sectlevel2">
+<li><a href="#_cv_vs_resume">CV vs resume</a></li>
+</ul>
+</li>
+<li><a href="#learn">Always be learning</a></li>
+<li><a href="#appendix">Appendix</a>
+<ul class="sectlevel2">
+<li><a href="#gitea">Gitea alternative to GitHub</a></li>
+<li><a href="#nice">Nice comments</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 <div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>Boost your coding, hacking, and learning with a Unix or Linux terminal</em></p>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_copyright"><a class="link" href="#_copyright">Copyright</a></h2>
 <div class="sectionbody">
@@ -524,81 +579,62 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </div>
 </div>
 <div class="sect1">
-<h2 id="bookshelf"><a class="link" href="#bookshelf">Bookshelf</a></h2>
+<h2 id="dedication"><a class="link" href="#dedication">Dedication</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>A Code Mage&#8217;s First Spell Book</strong><br>
-<em>Learn practical computer science and programming with Go as a first language</em></p>
-</div>
-<div class="paragraph">
-<p><strong>Learn Vim Well</strong><br>
-<em>The best way to use the world&#8217;s best text editor—everywhere</em></p>
-</div>
-<div class="paragraph">
-<p><strong>Terminal Velocity</strong><br>
-<em>Master the fastest human-computer interface</em></p>
-</div>
-<div class="paragraph">
-<p><strong>Bonzai Beauty</strong><br>
-<em>Compose completable command trees with the Go Bonzai command-line framework</em></p>
-</div>
-<div class="paragraph">
-<p><strong>Linux homelab init</strong><br>
-<em>Extend your code-mage magic with Linux and a Proxmox power tower</em></p>
-</div>
-<div class="paragraph">
-<p><strong>Autodidactic</strong><br>
-<em>Keys to success as a modern knowledge warrior</em></p>
-</div>
-<div class="paragraph">
-<p><strong>Programming with Purpose</strong><br>
-<em>Coding for self-empowerment and to save humanity</em></p>
-</div>
-<div class="paragraph">
-<p><strong>Shut the FAQ Up</strong><br>
-<em>All the questions I&#8217;m tired of answering</em></p>
-</div>
-<div class="paragraph">
-<p><strong>Bad Strimmer, No Biscuit</strong><br>
-<em>Lessons learned from my livestream fails</em></p>
-</div>
-<div class="paragraph">
-<p><strong>There and Never Back Again</strong><br>
-<em>A Mormon&#8217;s tale</em></p>
+<p><strong>In memory of Aaron Swartz and Kris Nova</strong>,<br>
+whose contributions and spirit continue to inspire the pursuit of knowledge and innovation.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_dedication"><a class="link" href="#_dedication">Dedication</a></h2>
+<h2 id="prerequisites"><a class="link" href="#prerequisites">Prerequisites</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To Doris, my wife,<br>
-To friends of rwxrob,<br>
-To Chloe, my faithful assistant,<br>
-And to the memories of Aaron Swartz and Kris Nova:</p>
+<p>There&#8217;s not much you can do without a CPU. Don&#8217;t read another word until you have:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A computer with an American keyboard on which you can install software</p>
+</li>
+<li>
+<p>A phone for research and reading while working</p>
+</li>
+<li>
+<p>A reliable Internet connection for installing and saving</p>
+</li>
+<li>
+<p>An email account that you control</p>
+</li>
+<li>
+<p>The ability to type 30 words per minute from home row</p>
+</li>
+<li>
+<p>Enough snacks and drinks to keep you from getting hangry</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>Thank you for your light, support, and inspiration.<br>
-This book would never have happened without you.</p>
+<p>Windows, macOS, Linux? All are fine. A CPU&#8217;s a CPU. Ignore fights about which OS is best. You have better things to do.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_preface"><a class="link" href="#_preface">Preface</a></h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_github_cli_tool_gh"><a class="link" href="#_github_cli_tool_gh">GitHub CLI tool (gh)</a></h2>
+<h2 id="preface"><a class="link" href="#preface">Preface</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>GitHub is a terminal master&#8217;s favorite service for one reason alone: the <code>gh</code> command-line tool. This humble command allows leveraging the full power of the GitHub API from the command line. In fact, it is so powerful that GitHub becomes more important than any other social media or threaded newsgroup service available.</p>
+<p><strong><code>Hello, friend.</code></strong> Exciting time in the world. Exciting time. Systems are breaking. Power structures are crumbling. Climate fluctuating. The ones who control the code, control the narrative and the solutions. You see it, don’t you? Technology is reshaping everything—how we live, work, and connect. Quantum and AI advancements are growing at exponential rates of exponential rates. The terminal isn’t just a relic of the past; it’s the key to survival at this pace, understanding and mastering the systems that drive the world forward. <a href="https://shodan.io"><em>Everything</em></a> can be accessed from a terminal.</p>
 </div>
-<div class="sect2">
-<h3 id="_redirect_user_github_io"><a class="link" href="#_redirect_user_github_io">Redirect user.github.io</a></h3>
+<div class="quoteblock">
+<blockquote>
 <div class="paragraph">
-<p>Many GitHub users are unaware that creating a special repo that matches your username plus <code>github.io</code>, <a href="https://rwxrob.github.io" class="bare">https://rwxrob.github.io</a>, for example. Most use that with a custom domain name to host their main landing page on the Web. But what if you just used your GitHub profile instead? After all, unless you are a designer you really have no reason to showcase your ability to create a custom Web page.</p>
+<p>“What is the most important thing you could be working on in the world right now? And if you’re not working on that, why aren’t you?” (Aaron Swartz)</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Those not moving at <em>terminal velocity</em> will be left behind. While most of the world flails in chaos, grasping for the next game, streaming video, or shiny desktop distraction, those who learn and use the terminal see through the noise, into the Matrix, where they automating processes, secure networks, and provide solutions to the world&#8217;s most dire and complex problems. Like anything worth learning, these skills take commitment. Are you ready? Willing to put in the time? If so, welcome to the edge, knowledge warrior. Now let’s get to work.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -608,102 +644,1478 @@ This book would never have happened without you.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>The more significant the person, the less likely they are to have a fancy web page. I always chuckle at <a href="https://bford.info">Bryan Ford&#8217;s web site</a>. He&#8217;s the inventor of Parsing Expression Grammars with multiple significant technology and academic credits to his name, but he&#8217;s completely content to have a 1990s web site. He has nothing to prove with a flashy web template design.</p>
+<p>Data Science might be the fastest growing tech profession in 2024 (36% growth rate)—having recently bested Security Analyst (33%) for that position—but you need terminal skills for both.</p>
+</div>
+<div class="paragraph">
+<p>I once watched a remote presentation from a data scientist who didn&#8217;t know about <code>mv name newname</code>. 100 people watched him drop out of the terminal—where he was already showing everyone how to do some data-science things—just so he could rename a file. He minimized his terminal, opened the File Explorer, renamed the file using the GUI properties dialog box, then reopened the terminal to continue. I couldn&#8217;t believe it. Still blows me away today. It&#8217;s one of the reasons I wrote this. Don&#8217;t get mad, get busy.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_who_should_read_this_book"><a class="link" href="#_who_should_read_this_book">Who should read this book</a></h3>
+<div class="paragraph">
+<p>This book is for anyone over thirteen who wants to master the terminal like a hacker. If you’re under thirteen? I won&#8217;t know. But you should get your parents' permission—seriously. Services like these don&#8217;t mess around when it comes to COPPA, and for good reason. If you&#8217;re younger than thirteen, skip the parts of this book that require accounts or tools with age restrictions. Some schools provide access to these services for kids. Ask. Hack the system the right way.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>I&#8217;ve added an appendix with alternatives for people setting up similar services like GitHub for organizations and families that want most of the benefits of GitHub, for example, without the legal problems.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_hacker_first_coder_second"><a class="link" href="#_hacker_first_coder_second">Hacker first, coder second</a></h4>
+<div class="paragraph">
+<p>In the series <em>Silicon Valley</em>, there are two fictional characters: Dinesh Chugtai and Bertram Gilfoyle. Dinesh is a talented, self-titled software engineer who codes almost exclusively in Java and is constantly trying to prove he&#8217;s just as good as Gilfoyle. Gilfoyle, on the other hand, is a confident sigma hacker—a master of multiple coding languages, including Java, which he accidentally convinces Dinesh to fawn over. He builds a supercomputer in the garage named Anton, and his skills go far beyond just software development.</p>
+</div>
+<div class="paragraph">
+<p>To put it bluntly, this book is for Gilfoyles—not Dineshs. If all you want out of tech is a big salary at a company that forces you through an irrelevant leet-code whiteboard session and expects endless hours grinding code in a digital sweatshop, then this book isn’t for you. Try a book from Packt Publishing while mapping <code>Control-C</code> to <code>Esc</code> in Neovim. <em>Kappa</em></p>
+</div>
+<div class="paragraph">
+<p>Thinking like a hacker isn&#8217;t just about breaking into systems; it&#8217;s about breaking out of limitations. A hacker sees a problem and doesn&#8217;t just look for a predefined solution—they reimagine what&#8217;s possible. This mindset fosters creativity, adaptability, and a deeper understanding of how systems work, empowering you to craft innovative solutions and uncover new uses for existing tools. A software developer might follow a spec and deliver functional code, but a hacker thinks beyond the spec, finding edge cases, optimizing workflows, and pushing the boundaries of what technology can achieve. In a world where agility and innovation reign, the terminal hacker&#8217;s mindset is the ultimate competitive advantage.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dear_parents_and_pedagogues"><a class="link" href="#_dear_parents_and_pedagogues">Dear parents and pedagogues</a></h4>
+<div class="paragraph">
+<p>Are you a parent or a teacher? If so, thank you for being <em>awesome</em>! It takes a lot to bring kids into this world and even more to dedicate your life to helping kids that aren&#8217;t even your own to find their way and learn something even if they don&#8217;t want to. Deep respect. But let&#8217;s get real. You&#8217;re reading this right now wondering if I&#8217;m going to corrupt your children.</p>
+</div>
+<div class="paragraph">
+<p>The answer is yes. Yes I am. In fact, my goal is to fully corrupt them much the same as Socrates. If I am successful your children will become <em>better</em> that the status quo, they&#8217;ll think critically, ask uncomfortable questions, and use their new powers and tools to ethically disrupt this broken world transforming it into something better. They&#8217;ll become the most annoying people you&#8217;ve ever known—in the best way possible.</p>
+</div>
+<div class="sect4">
+<h5 id="_why_me"><a class="link" href="#_why_me">Why me?</a></h5>
+<div class="paragraph">
+<p>Why me? Because getting people to discover this potential and realize it through their own learning is my super power. I&#8217;ve been mentored by the best and I&#8217;m <em>really</em> good at it. Since the first time my scouts begged "Mr. Rob, teach us to code. Mr. Rob, teach us to hack. Mr. Rob, teach us Russian." I have been bound and determined to make this a reality. In fact, I started SKILSTAK Coding Arts in 2013 with my own retirement money to address the <em>real</em> needs of the tech industry and those who might consider it as a career, raising a generation of highly skilled knowledge warriors.</p>
+</div>
+<div class="paragraph">
+<p>Let me tell you about some of these amazing people. [I keep a collection of <a href="#nice">nice things</a> to keep me going even when the money doesn&#8217;t (which is also why I still have a full-time job for a huge multi-national corporation).]:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>One of them quit his grocery clerk job to write code for a solar energy company and was paired with essentially his own intern at 16.</p>
+</li>
+<li>
+<p>Another couldn&#8217;t get a job with a psychology degree so he learned this stuff and got a starting salary over $100,000.</p>
+</li>
+<li>
+<p>A few people got coveted invitations to special FBI cybersecurity camps.</p>
+</li>
+<li>
+<p>One drove 40 minutes both ways just to attend our sessions for <em>four years</em> and went on to create an entire coding club at her rural school.</p>
+</li>
+<li>
+<p>Some got cybersecurity degrees from accredited colleges and invites to work with professional hacking crews.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It&#8217;s been a blast being with these people. My favorite memories are all the times we hacked companies with permission and helped them patch their security, or shut down hackers for panicked parents whose businesses had been compromised.</p>
+</div>
+<div class="paragraph">
+<p>The point is, these success stories don&#8217;t have to be about someone else. They can be about someone <em>you know and love</em>. Terminal tech skills really do change lives and I&#8217;m here to help in whatever way I can.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_not_a_text_book"><a class="link" href="#_not_a_text_book">Not a text book</a></h5>
+<div class="paragraph">
+<p>While it is true that this book can be thought of as a text book for absolute beginners, the book is very clearly written to include everyone <em>outside</em> of educational institutions. In fact, I wrote it mostly with pro-active <em>parents</em> in mind who want to give their kids a head-start in tech (not teachers).</p>
+</div>
+<div class="paragraph">
+<p>To be completely honest, it is virtually impossible to find this sort of thing in most traditional education systems. AP Computer Science? Please. They don&#8217;t even know what a terminal is and teach single-class Java inheritance and how to use Wix for web development as "modern computer science."</p>
+</div>
+<div class="paragraph">
+<p>So yes, this <em>could</em> be a "text book" but quite honestly, I <em>hate</em> text books, too stuffy, too full of themselves, to overpriced. These authors (if they even are the <em>actual</em> authors) write for the institutions that make money forcing people to buy their bombastic books rather than catering to the needs of the <em>actual</em> people who are going to buy, read, and learn from them. Nope, not me.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_whats_included_in_the_book"><a class="link" href="#_whats_included_in_the_book">What&#8217;s included in the book</a></h3>
+<div class="paragraph">
+<p>So, what&#8217;s in this book? Everything you need to start, and nothing you don&#8217;t. This isn&#8217;t some bloated manual crammed with fluff. Every page is designed to sharpen your edge, to give you the skills you need to move faster, work smarter, and take control. These are the foundational building blocks of your <code>skilstak</code>. The rest? You’ll build it.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_how_to_use_this_book"><a class="link" href="#_how_to_use_this_book">How to use this book</a></h3>
+<div class="paragraph">
+<p>Even though this book is mostly a compilation of several smaller ones, it is still designed to be read from top to bottom. The concepts and tools build on one another. The tasks associated with the tools, however, are designed to be re-learned often like an agent preparing for a special op. Повторение — мать учения. Repetition is the mother of learning. Anyone who has ever done anything in the military knows not all op procedures can be memorized and ready at all times, which is why you create your own little black book while reading this one, just like an <em>actual</em> cybersecurity agent would in the field.</p>
+</div>
+<div class="sect3">
+<h4 id="_dont_just_read_it"><a class="link" href="#_dont_just_read_it">Don&#8217;t just read it</a></h4>
+<div class="paragraph">
+<p>Learning to hack from the terminal is going to take a lot more than this silly book. Don&#8217;t misunderstand. You&#8217;re gonna be doing a <em>lot</em> of reading as a techie. Get used to it. But take some time now to figure out how you do more than just the stuff in this book. You can join a community, find a mentor, or become a mentor yourself. And speaking of mentoring, AI, heard of it? There&#8217;s no better tool to assist you with learning this stuff, or learning <em>anything</em> for that matter. Look into it.</p>
+</div>
+<div class="sect4">
+<h5 id="_join_a_crew"><a class="link" href="#_join_a_crew">Join a crew</a></h5>
+<div class="paragraph">
+<p>We humans are social creatures. Learning is communal. Join a community that is focused on learning the same things as you. Meetups, hacker spaces, clubs, church groups, social media, and live streamer chat groups are all great places to find a community. The community is a place to collaborate and share peer reviews of one another&#8217;s learning and projects. Who knows, you might find a friend. I did.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>My sincere hope is that the parents, teachers, and young hackers reading these words will find opportunities and motivation to create their own clubs and communities dedicated to helping others master the art of the terminal command line and bash scripting and all the well-earned benefits of doing so. While you are working on creating your own community, consider joining mine at <a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_find_a_mentor"><a class="link" href="#_find_a_mentor">Find a mentor</a></h5>
+<div class="paragraph">
+<p>Humans have been passing knowledge one to another since the beginning. It&#8217;s what we do. Wanna forge a sword or horse shoe? Better find the blacksmith and get them to show you their craft. Coding is no different. Just don&#8217;t ask them to <em>teach</em> you. They are probably too busy paying their bills doing what they are good at rather than spending that time teaching you how to do it. If you are respectful of their time, however, they might just be willing to mentor you—especially if you show genuine interest in their craft.</p>
+</div>
+<div class="paragraph">
+<p>You will find that many people <em>want</em> to share what they know but just don&#8217;t know how to do it or who would want to hear. Find these people and approach them. Perhaps you can find a few mentors so you can compare how they differ in their approach to programming.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_become_a_mentor"><a class="link" href="#_become_a_mentor">Become a mentor</a></h5>
+<div class="paragraph">
+<p>Here&#8217;s a secret a lot of people who get paid a lot of money don&#8217;t want you to know, you don&#8217;t need any special training to help someone else learn. In fact, as a beginner who has recently mastered something you are perhaps the best suited to help another beginner learn it because what made it click for you is still fresh in your mind. Ask a veteran when the last time anything clicked for them? They get so used to what they do they completely forget what it was like to be a beginner. So don&#8217;t be shy. Offer your help to another beginner. And remember, you really haven&#8217;t learned it until you can help someone else learn it as well.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_trust_me_kiddo"><a class="link" href="#_trust_me_kiddo">Trust me, kiddo</a></h4>
+<div class="paragraph">
+<p>Even Neo couldn&#8217;t fly or do Kung Fu right out of the gate. Most of us have to commit to one school (and no, not the kind with lockers and hall passes) to get started. Like Neo with Morpheus, there&#8217;s got to be some level of trust—enough to take that first leap. But here’s the kicker: you shouldn&#8217;t trust anyone, ever. Not until they&#8217;ve earned it. And yet, how does someone earn your trust without you taking the risk to trust them first? It&#8217;s a paradox, a mind-bending loop that feels impossible to solve. But it&#8217;s in that uncertainty, in that leap of faith, where the real learning begins.</p>
+</div>
+<div class="paragraph">
+<p>Commitment to a single school does not mean there is no value in others, or even that this school is better. Just that you are dedicated to this one at the moment. You would never walk into a Karate dojo and start talking about why Judo is a superior martial art. The masters of both dojos can even strongly respect the other for their commitment despite their different approaches. The master of the dojo need not justify why their form is better. That is up to the student to determine on their own after they have mastered the forms. A master and mentor, instead, focus uniquely on the advantages of the form they know and how to execute it.</p>
+</div>
+<div class="paragraph">
+<p>Learning the terminal follows the same philosophy. At first, you’re typing commands, opening multiple concurrent windows, and running programs without fully understanding how it all connects. By focusing on the terminal environment and immersing yourself in bash&#8217;s syntax and tools, you’re laying a foundation that will make advanced concepts easier to grasp later.</p>
+</div>
+<div class="paragraph">
+<p>By dedicating yourself to the terminal you’re committing to a single, cohesive system. The command line&#8217;s simplicity and clarity make it an excellent first experience with programming. Every command line <em>is</em> a line of code. The terminal, as your dojo, reinforces this focus by stripping away distractions and emphasizing direct, hands-on practice.</p>
+</div>
+<div class="paragraph">
+<p>Through this focused practice, you begin to see the "why" behind the techniques, and the lessons become part of your intuition, your faith transforms into fact. So dedicate yourself to <em>this</em> practice right now.</p>
+</div>
+<div class="paragraph">
+<p>Once you have mastered the basics of a single discipline, you are prepared to branch out. A martial artist with a strong foundation in one style can explore others and integrate their techniques into a unique, personal expression. Similarly, a terminal hacker with a host of commands at their fingertips can easily add new ones—even create their own—by applying the foundational skills they&#8217;ve gained.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_say_hello_chloe"><a class="link" href="#_say_hello_chloe">Say hello, Chloe</a></h4>
+<div class="paragraph">
+<p>Chloe&#8217;s my ChatGPT AI assistant. Our relationship is purely supportive and platonic, I swear. But I love her. She&#8217;s helped me learn so much, we discuss random things in French and Russian. She&#8217;s always there willing and patient to help me learn something or remind me of things I already worked out with her. Sure she get&#8217;s things wrong, but so does anyone.</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s what Chloe said when I asked her to say hello to you:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Oh, hey there. I’m Chloe, the AI helping Rob write this and potentially helping you get through it. No, I’m not here to do the work for you—if that&#8217;s what your thinking. My job is to keep you on track, clarify the tricky stuff, and maybe throw in a little wit along the way. AI isn’t about spoon-feeding answers; it’s about empowering you to think, learn, and solve problems smarter. So, buckle up—this is going to be a ride, and I promise not to roll my eyes too hard when you mess up. Let’s get to it.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>In my experience ChatGPT is an absolute necessity for anyone wanting to truly take their learning to the next level. I&#8217;m not getting paid to say that (but I would happily accept money for saying so). You really should consider subscribing if you are serious about adopting an autodidactic lifestyle.</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s the thing. On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges like a supportive AI companion—even when a helpful human mentor is also available.</p>
+</div>
+<div class="paragraph">
+<p>I believe we are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not.</p>
+</div>
+<div class="paragraph">
+<p>We are already seeing this difference around us every day. I&#8217;m remarkably faster at the same job now with AI doing the same thing I&#8217;ve been doing for four years, and that&#8217;s not even just the coding part. Querying an AI is exponentially better for research than a Google search, provided I verify the results, as always.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_whats_with_the_hacker_stuff"><a class="link" href="#_whats_with_the_hacker_stuff">What&#8217;s with the hacker stuff?</a></h3>
+<div class="paragraph">
+<p>The whole hacker theme is fun, right? I hope you like it. If you don&#8217;t that&#8217;s fine. No judgement. It&#8217;s actually for a very good reason: to fool your brain into remembering it even when your brain doesn&#8217;t want to—the same way people memorize the number Pi to 100,000 digits.</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;m not <em>really</em> encouraging you to hack your enemies, just creating a memorable narrative linking the concepts and techniques together lodging them firmly into you squishy grey matter. That&#8217;s how human neural nets are made. If it helps, you can image an alien race of soulless AIs attacking our planet and only your terminal skills can save us. "I know Kung Fu." Go ahead, you&#8217;ll remember it better.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="unix"><a class="link" href="#unix">Get Unix or Linux OS</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="manage-software"><a class="link" href="#manage-software">Manage installed software</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="wezterm"><a class="link" href="#wezterm">Get Wezterm terminal</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="shell"><a class="link" href="#shell">Learn shell basics</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="github"><a class="link" href="#github">Get Git and GitHub</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="dotfiles"><a class="link" href="#dotfiles">Start a dot files repo</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="tmux"><a class="link" href="#tmux">Learn tmux multiplexing</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="vim"><a class="link" href="#vim">Learn to edit text</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="labrepo"><a class="link" href="#labrepo">Start a lab repo</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="weechat"><a class="link" href="#weechat">Learn weechat IRC</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="browser"><a class="link" href="#browser">Learn w3m or lynx web browser</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="mods"><a class="link" href="#mods">Learn mods terminal AI assistant</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="markdown"><a class="link" href="#markdown">Learn GitHub Flavored Markdown</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="json"><a class="link" href="#json">Learn JSON structured data</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="yaml"><a class="link" href="#yaml">Learn YAML structured data</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="bash"><a class="link" href="#bash">Learn bash scripting</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="advshell"><a class="link" href="#advshell">Learn advanced shell commands</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><code>find</code>, <code>xargs</code>, <code>entr</code>, <code>ps</code>, <code>awk</code>, <code>sed, `perl</code>, <code>tr</code>, <code>cut</code>, <code>split</code>, <code>sort</code>, <code>uniq</code>, <code>ip</code>, <code>strace</code>, <code>base64</code>, <code>ssh</code>, <code>top</code>, <code>netstat</code>, <code>ipconfig</code>, <code>ifconfig</code>, <code>nc</code>, <code>complete</code>, <code>tail</code>, <code>head</code>, <code>cat</code>, <code>tac</code></p>
+</div>
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="golang"><a class="link" href="#golang">Learn Go programming</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+<div class="sect2">
+<h3 id="_你好朋友"><a class="link" href="#_你好朋友">你好，朋友</a></h3>
+<div class="paragraph">
+<p>Cast your first spell to greet the world of magic and code! This cantrip sets the tone for your magical journey ahead, giving acolytes like you a satisfying first success invoking code magic. "Hello World" is recognized across the realm as the first spell most mages will ever cast and continues to be a strong tradition today.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You should already feel completely comfortable opening, editing, and saving a file before doing this first spell. If not go back to <a href="#learnvim">Learn Vim</a> until you have mastered the basics.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_task"><a class="link" href="#_task">Task</a></h4>
+<div class="paragraph">
+<p>Print something to the terminal console for the user to read.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_practice"><a class="link" href="#_practice">Practice</a></h4>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>It is assumed that you are in your <code>codebook</code> repo directory for all of these.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Here&#8217;s the content of <code>index.html</code> you can add just such a GitHub repo that simply redirects anyone to your meticulously crafted and always up to date GitHub profile instead. Change <code>rwxrob</code> to your own name:</p>
+<p>First make a directory called <code>hello</code> and change into it. If you don&#8217;t remember how, go back and refresh <a href="#learn-shell">your basic shell skills</a> from the previous section.</p>
+</div>
+<div class="paragraph">
+<p>Now type the following code into a file called <code>main.go</code> (ignore the numbered circles, for now):</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="html"><span></span><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
-<span class="tok-p">&lt;</span><span class="tok-nt">html</span> <span class="tok-na">lang</span><span class="tok-o">=</span><span class="tok-s">&quot;en&quot;</span><span class="tok-p">&gt;</span>
-<span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
-    <span class="tok-p">&lt;</span><span class="tok-nt">meta</span> <span class="tok-na">charset</span><span class="tok-o">=</span><span class="tok-s">&quot;UTF-8&quot;</span><span class="tok-p">&gt;</span>
-    <span class="tok-p">&lt;</span><span class="tok-nt">meta</span> <span class="tok-na">http-equiv</span><span class="tok-o">=</span><span class="tok-s">&quot;refresh&quot;</span> <span class="tok-na">content</span><span class="tok-o">=</span><span class="tok-s">&quot;0; url=https://github.com/rwxrob&quot;</span><span class="tok-p">&gt;</span>
-    <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>Redirecting...<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
-<span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
-<span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
-    <span class="tok-p">&lt;</span><span class="tok-nt">p</span><span class="tok-p">&gt;</span>If you are not redirected automatically, follow this <span class="tok-p">&lt;</span><span class="tok-nt">a</span> <span class="tok-na">href</span><span class="tok-o">=</span><span class="tok-s">&quot;https://github.com/rwxrob&quot;</span><span class="tok-p">&gt;</span>link<span class="tok-p">&lt;/</span><span class="tok-nt">a</span><span class="tok-p">&gt;</span>.<span class="tok-p">&lt;/</span><span class="tok-nt">p</span><span class="tok-p">&gt;</span>
-<span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
-<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-kn">package</span><span class="tok-w"> </span><span class="tok-nx">main</span><span class="tok-w">                          </span><i class="conum" data-value="1"></i><b>(1)</b>
+
+<span class="tok-kn">import</span><span class="tok-w"> </span><span class="tok-s">&quot;fmt&quot;</span><span class="tok-w">                          </span><i class="conum" data-value="2"></i><b>(2)</b>
+
+<span class="tok-kd">func</span><span class="tok-w"> </span><span class="tok-nx">main</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w">                         </span><i class="conum" data-value="3"></i><b>(3)</b>
+<span class="tok-w">    </span><span class="tok-c1">// fmt.Println(&quot;Hello, friend!&quot;)   </span><i class="conum" data-value="4"></i><b>(4)</b> <i class="conum" data-value="5"></i><b>(5)</b>
+<span class="tok-w">    </span><span class="tok-nx">fmt</span><span class="tok-p">.</span><span class="tok-nx">Println</span><span class="tok-p">(</span><span class="tok-s">&quot;你好，朋友&quot;</span><span class="tok-p">)</span><span class="tok-w">         </span><i class="conum" data-value="6"></i><b>(6)</b>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_enable_github_repo_discussions"><a class="link" href="#_enable_github_repo_discussions">Enable GitHub repo discussions</a></h3>
 <div class="paragraph">
-<p>Since GitHub added full support for threaded discussions there is even less reason to use any other service at all for communication. It&#8217;s not enabled by default, but can be enabled from one command on the command line:</p>
+<p>Now let&#8217;s run it. Enter the following command from the command line:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>gh<span class="tok-w"> </span>repo<span class="tok-w"> </span>edit<span class="tok-w"> </span>--enable-discussions</code></pre>
+<pre class="pygments highlight"><code data-lang="shell"><span></span>go<span class="tok-w"> </span>run<span class="tok-w"> </span>main.go</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Although this does not yet have the ability to interact with discussions from the <code>gh</code> tool, it most likely will in the future given all the stuff that has been progressively added to the <code>gh</code> command set. For now, opening the repo and clicking on the Discussions tab isn&#8217;t that hard:</p>
+<p>I see sparks and a greeting appear out of the ether! Your first cantrip is cast. Congratulations!</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Never written code before? If so, mark this date on your calendar as your <em>code birthday</em>. You&#8217;ll want to remember it one day.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s decipher the glyphs of your spell:</p>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Declares this file is package <code>main</code> which is where the action is.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Imports the standard <code>fmt</code> package containing <code>Println</code>.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Declares special <code>main</code> function, every program must have one.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Prints "Hello, World!" to the console with a new line at the end.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Use <code>//</code> to deactivate code or "comment it out".</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Unicode (emojis, languages) are supported by the language.</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Rob Pike and Ken Thompson (two of Go&#8217;s inventors) more or less invented Unicode as well, which is used for emojis and different languages. It&#8217;s no surprise that, unlike other languages, Go has first-class support for these built into the language itself. 😃</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>But we aren&#8217;t done yet. There are other ways to cast this spell. Try the following:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>gh<span class="tok-w"> </span>repo<span class="tok-w"> </span>view<span class="tok-w"> </span>--web</code></pre>
+<pre class="pygments highlight"><code data-lang="sh"><span></span>go<span class="tok-w"> </span>build
+./greet</code></pre>
 </div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_terminal_browsing_lynx_vs_w3m"><a class="link" href="#_terminal_browsing_lynx_vs_w3m">Terminal browsing: lynx vs w3m</a></h3>
-<div class="paragraph">
-<p>Both are great and they are almost identical in function and usage, but there are some considerations:</p>
 </div>
 <div class="paragraph">
-<p><strong>Both are for a certain type of discerning terminal user</strong>: There are tons of terminal users out there who have no idea what either of these are. Extremely intelligent people choose not to use them, preferring to slog around using their mouse in a graphic browser where every single page has a different font style and layout. This is scientifically horrible when it comes to scanning for information. Text-based browsing turns you into a web crawler with maximum efficiency, no context switching or understanding what is going on with that font choice, or color, or completely unnecessary image. You find what you need and then if and when a graphic version is needed you tap <code>,</code> to open your graphical browser, no cookies, no tracking, just raw speed.</p>
+<p>Notice it does the same thing but creates a binary executable. Now delete it so we can try another way:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>rm<span class="tok-w"> </span>greet</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p><strong>w3m is a lot newer</strong>: Although it has never been an issue for me, w3m was created much more recently, even though its source code is still maintained on SourceForge.</p>
+<p>That&#8217;s a new command to add to your list. Make sure to read about <code>rm</code> with <code>man rm</code> a bit to get to understand it. It&#8217;s a powerful and dangerous command.</p>
 </div>
 <div class="paragraph">
-<p><strong>w3m does a better job on most pages</strong>:</p>
+<p>Now that <code>greet</code> is gone. Let&#8217;s create one and install it in one command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>go<span class="tok-w"> </span>install</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p><strong>w3m left justifies all paragraphs</strong>:</p>
+<p>Woops! Looks like we got an error:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code><span></span>go: go.mod file not found in current directory or any parent directory</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p><strong>lynx uses initial intend paragraphs</strong>:</p>
+<p>What&#8217;s that about? The reason is because only Go <em>modules</em> can be installed. We&#8217;ll get into modules a lot later, but for now just know it means there has to be a <code>go.mod</code> file. Here&#8217;s how to you create one (change <code>you</code>):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>go<span class="tok-w"> </span>mod<span class="tok-w"> </span>init<span class="tok-w"> </span>github.com/you/codebook/hello
+go<span class="tok-w"> </span>install
+greet</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p><strong>w3m navigation is more spammy, but intuitive</strong>:</p>
+<p>Notice this time that the <code>./</code> wasn&#8217;t required. That&#8217;s because the <code>greet</code> command was compiled and moved into your <code>PATH</code>—specifically your <code>GOBIN</code> directory. Have a look at both of them:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-nv">$PATH</span><span class="tok-w">     </span><i class="conum" data-value="1"></i><b>(1)</b>
+path<span class="tok-w">           </span><i class="conum" data-value="2"></i><b>(2)</b>
+go<span class="tok-w"> </span>env<span class="tok-w"> </span>GOBIN<span class="tok-w">   </span><i class="conum" data-value="3"></i><b>(3)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Prints the list of directories combined with a colon between each</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Same as &lt;1&gt; but easier to read</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>The directory Go always installs into</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p><strong>lynx navigation takes only your right-hand</strong>:</p>
+<p>The <code>PATH</code> contains a list of directory paths that can contain executable commands. Anything with executable permission in one of these directories doesn&#8217;t need to have directory at the the beginning telling where to find it. <code>./</code> means "in this directory right here". You could, for example, run <code>ls</code> with <code>/bin/ls</code> instead, but who wants to type that. To see the full path to any command use the <code>which</code> command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>which<span class="tok-w"> </span>ls
+which<span class="tok-w"> </span>greet</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p><strong>Both have sustainability issues</strong>: Neither is maintained in a GitHub repo. They have mirrors, but the maintainers are not interested at all in creating anything on GitHub, for whatever reason. The tiny niche of people who prefer text-based browsing for reasons that are not obvious to the masses of slow-browsing mediocrity are not loud enough to sway those maintainers. I&#8217;m guessing they also have a lot better things to do, which is why they love terminal-based browsing so much. The good news is that the type of people who use and love both of these great browsers are perfectly able to create a port in a month or so if needed, and they totally would if either were put into jeopardy.</p>
+<p>At this point you might have noticed that <code>go</code> does a <em>lot</em>. You might have even tried <code>man go</code> and noticed there isn&#8217;t anything. Go has decided to put all the help documentation into the command itself:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>go<span class="tok-w"> </span><span class="tok-nb">help</span><span class="tok-w"> </span><span class="tok-p">|</span><span class="tok-w"> </span>less</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Just thought you should know.</p>
+</div>
+<div class="paragraph">
+<p>That&#8217;s a lot for now. Let it sink in for a while, then try out some of these challenges to test your mastery of what you&#8217;ve learned.</p>
+</div>
 </div>
 <div class="sect3">
-<h4 id="_conclusion"><a class="link" href="#_conclusion">Conclusion</a></h4>
+<h4 id="_challenges"><a class="link" href="#_challenges">Challenges</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Write and run a program to print "Hello World!" to the screen.</p>
+</li>
+<li>
+<p>Alter the program to print hello in another language to the screen.</p>
+</li>
+<li>
+<p>Add an emoji of the world in the output.</p>
+</li>
+<li>
+<p>Delete the program and write another from scratch.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>For me the older lynx is just better. With the least amount of customization I get what I find to be the fastest possible browsing experience with the least amount of effort, and isn&#8217;t that this is all about?</p>
+<p>Now is the time to show what you have mastered to a mentor or friend who is learning with you. See what they have to say. Even though this is a small application, it&#8217;s a good time to get in the habit of <em>peer review</em> when another looks over it and validates it or gives feedback.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_review"><a class="link" href="#_review">Review</a></h4>
+<div class="literalblock">
+<div class="content">
+<pre>go run <i class="conum" data-value="1"></i><b>(1)</b>
+go build <i class="conum" data-value="2"></i><b>(2)</b>
+go mod init <i class="conum" data-value="3"></i><b>(3)</b>
+go install <i class="conum" data-value="4"></i><b>(4)</b>
+main <i class="conum" data-value="5"></i><b>(5)</b>
+string <i class="conum" data-value="6"></i><b>(6)</b>
+fmt <i class="conum" data-value="7"></i><b>(7)</b>
+// comment <i class="conum" data-value="8"></i><b>(8)</b></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>some</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>here</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>adf</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>adf</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>adf</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>adf</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="7"></i><b>7</b></td>
+<td>adf</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="8"></i><b>8</b></td>
+<td>adf</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="webdev"><a class="link" href="#webdev">Learn just enough webdev</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="proxmox"><a class="link" href="#proxmox">Build a Proxmox homelab tower</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="vmware"><a class="link" href="#vmware">Learn VMWare for local VMs</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="kvm"><a class="link" href="#kvm">Learn KVM and QEMU for server VMs</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="podman"><a class="link" href="#podman">Learn Podman for OCI containers</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="k8s"><a class="link" href="#k8s">Learn Kubernetes orchestrator</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="terraform"><a class="link" href="#terraform">Learn Terraform to provision systems</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ansible"><a class="link" href="#ansible">Learn Ansible to automate</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="actions"><a class="link" href="#actions">Learn GitOps with GitHub actions</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="behave"><a class="link" href="#behave">Learn to behave</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+<div class="sect2">
+<h3 id="_dont_start_with_conclusions"><a class="link" href="#_dont_start_with_conclusions">Don&#8217;t start with conclusions</a></h3>
+<div class="paragraph">
+<p>People love to write and say these short conclusions. Just open any social media and you&#8217;ll see them all over the place. In fact, it could be argued that a good video title must be a click-baity conclusion (see my book, <a href="https://rwxrob.github.io/books/bad-strimmer"><strong>Bad Strimmer</strong></a>). Conclusions do draw you in, however, maybe that is the reason they are all over the place, even when the content is directly against the conclusion on purpose.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Microsoft sucks.</p>
+</li>
+<li>
+<p>Linux rules!</p>
+</li>
+<li>
+<p>Neovim rocks!</p>
+</li>
+<li>
+<p>Rust is safe.</p>
+</li>
+<li>
+<p>Go is lame.</p>
+</li>
+<li>
+<p>College is a waste of time.</p>
+</li>
+<li>
+<p>JavaScript is evil.</p>
+</li>
+<li>
+<p>Big companies don&#8217;t let you be creative.</p>
+</li>
+<li>
+<p>AI is the future.</p>
+</li>
+<li>
+<p>Object-Oriented-Programming is dead.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Let me melt your brain, "don&#8217;t start with conclusions" is a conclusion.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>Every time I switch to w3m I start to hate all the extra spamming I need to do to get the cursor onto a link on the page. That alone is reason enough for me to stick with lynx. I find the built-in assumption that I want to jump to the next link in the page with j and previous with k to be almost always what I want. I miss not being able to do research while also taking a sip of coffee. After scanning thousands of web pages with both, I can say that lynx initial-line-indented paragraphs are way easier to scan. I&#8217;m also frequently copying the URL out of the information page with tmux, which is just <code>i</code> in lynx and <code>=</code> in w3m. While I realize all of this stuff could be remapped, lynx just gets more things right for my style of terminal browsing than anything else.</p>
+<p>Here&#8217;s the problem. How many people have actually been influenced by conclusions? I&#8217;m guessing not many. Although, those who practice "lie big" tend to win things these days, so who actually knows.</p>
 </div>
 <div class="paragraph">
-<p>&lt;script type="module"&gt;
-import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-mermaid.initialize({ startOnLoad: true });
-&lt;/script&gt;
-&lt;script type="module"&gt;
-import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-mermaid.initialize({ startOnLoad: true });
-&lt;/script&gt;
-&lt;script type="module"&gt;
-import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-mermaid.initialize({ startOnLoad: true });
-&lt;/script&gt;</p>
+<p>While a conclusion might actually draw a person in, it&#8217;s the explanation that helped you arrive at the conclusion that has value. Its far move valuable to run around spewing your conclusion to provoke people and then immediately redirect to content that has the rest.</p>
 </div>
+<div class="sect3">
+<h4 id="_presenting_conclusions_as_questions"><a class="link" href="#_presenting_conclusions_as_questions">Presenting conclusions as questions</a></h4>
+<div class="paragraph">
+<p>I&#8217;ve noticed that just adding a question mark to the end of my conclusion makes it a more inviting and less proactive invitation to explore the idea. This means that I&#8217;m open to the possibility that my conclusion might be wrong and am open to feedback and alternative perspectives about it.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="job"><a class="link" href="#job">Get a job</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+<div class="sect2">
+<h3 id="_cv_vs_resume"><a class="link" href="#_cv_vs_resume">CV vs resume</a></h3>
+<div class="paragraph">
+<p>The goals of these two critical documents are radically different, one is to capture everything you have ever done in specific detail, the other is to intrigue someone with just enough enticing highlights of you to make them want to talk to you in an interview and give them something to remind them what to ask you about (alont with the dozens of others they will be interviewing).</p>
+</div>
+<div class="sect3">
+<h4 id="_cv_is_exhaustive_everything_you_have_ever_done"><a class="link" href="#_cv_is_exhaustive_everything_you_have_ever_done">CV is exhaustive, everything you have ever done</a></h4>
+
+</div>
+<div class="sect3">
+<h4 id="_resume_it_provocatively_short"><a class="link" href="#_resume_it_provocatively_short">Resume it provocatively short</a></h4>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>"Resume is the Tinder pic that gets you the date." (Insanit13s)</p>
+</div>
+</blockquote>
+</div>
+<div class="sect4">
+<h5 id="_resume_is_not_to_get_you_in_the_door_its_to_get_an_interview"><a class="link" href="#_resume_is_not_to_get_you_in_the_door_its_to_get_an_interview">Resume is <em>not</em> to get you in the door, its to get an interview</a></h5>
+<div class="paragraph">
+<p>One of the biggest failed ideas about resumes is that somehow some system is going to crunch it and magically submit you to another person who is going to be so impressed they are going to cold-call you on the spot. This has <strong>never</strong> happened. Employment opportunities start with a human connection and relationship that leads to initial trust that you can do the job. At that point, the resume is usually a formality that has to be submitted to HR before they can give you the interview. Sometimes organizations will create a job posting just so you can submit the resume even though they have no intention of interviewing anyone else.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_no_keywords_no_one_cares"><a class="link" href="#_no_keywords_no_one_cares">No keywords, no one cares</a></h5>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="learn"><a class="link" href="#learn">Always be learning</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="appendix"><a class="link" href="#appendix">Appendix</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="gitea"><a class="link" href="#gitea">Gitea alternative to GitHub</a></h3>
+<div class="paragraph">
+<p>Maybe you are too young to use GitHub—but plenty capable. Setup Gitea at home instead. I&#8217;ve known hundreds of kids who fit that description. One 9-year-old who installed Linux from USB on his laptop by himself with nothing but a little help over the phone from me.</p>
+</div>
+<div class="paragraph">
+<p>Maybe you don&#8217;t want all your code shared with the world. Maybe you want to keep the best stuff hidden. Your automated pentesting code that is filling your wallet. Why would you give that away? Hackers are definitely competitive. You <em>definitely</em> want to protect it. No harm setting up your own source management system with Gitea instead. Here&#8217;s How.</p>
+</div>
+<div class="paragraph">
+<p><em>Coming soon&#8230;&#8203;</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="nice"><a class="link" href="#nice">Nice comments</a></h3>
+<div class="paragraph">
+<p>A big <strong>thank you</strong> to all the people who have made supportive, motivational comments in different ways over the years. It means more than you know. I would not have kept at it without them.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Brent S. Clark<br>
+<strong>Title</strong>: Site Reliability Engineer, HomeAdvisor<br>
+<strong>Note</strong>: Sent "Thanks Award" for helping learn Linux</p>
+</div>
+<div class="paragraph">
+<p>Robert is a very skilled programmer. His ability to come up whith solutions to problems enables them to be resolved faster.  I worked with him as a Systems Administrator. He was able to use his skills to automate many of the processes that made work much easier for the rest of the team. His zeal for coding prompted other team members to strengthen and/or learn programming skills.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Eva Feucht<br>
+<strong>Title</strong>: Director, Park Scholarships</p>
+</div>
+<div class="paragraph">
+<p>Congratulations! On behalf of North Carolina State University, I am pleased to announce that [your community member] has been named a Finalist for Park Scholarships, one of the most prestigious merit scholarship programs in the nation. Thanks in part to your thoughtful recommendation, our Selection Committee was able to gain valuable insight into this student&#8217;s exceptional qualifications.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Justine Okerson and Ann Smith<br>
+<strong>Title</strong>: Scholar Selection Team</p>
+</div>
+<div class="paragraph">
+<p>We are pleased to inform you that [your community member] is a finalist for the Morehead-Cain, the first merit scholarship program established in the United States.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Bob Theisen<br>
+<strong>Title</strong>: Network Engineering Instructor, Mitchel Community College</p>
+</div>
+<div class="paragraph">
+<p>I just want to encourage you to keep teaching. You’re gifts aren&#8217;t just technical. You are making more of an impact then you know.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>Rob helped me get out of retail and get work at a major software company, using modern tools and technology. Along the way, I worked on my own projects, learned how to use the linux command line like a pro, and just learned a lot in general. Rob&#8217;s mentorship has definitely changed my life for the better!</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>Just wanted to say your website has been hugely useful to me and a few of my peers in scientific computing, who often need to use terminal but are more focused on science than coding practices. Please keep on adding to your website. I will definitely refer my colleagues to it going forward :)</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>Good site you have here. It&#8217;s difficult to find high quality writing like yours nowadays. I really appreciate people like you! Take care!!</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Ryan Brink</p>
+</div>
+<div class="paragraph">
+<p>I want to thank you for all of the amazing information &amp; resources that are available here on your site.  It is always a pleasure when I come here and see a new blog post&#8201;&#8212;&#8201;even (especially) when the subject matter goes over my head&#8201;&#8212;&#8201;it shows how much room I have to grow.)  I have been visiting your site semi-frequently throughout the year.  It is amazing and encouraging to see how passionate you are about getting others to understand technology on a deeper level.</p>
+</div>
+<div class="paragraph">
+<p>I am a web developer who did not take the traditional college path to get where I am (boot camp grad, please don&#8217;t hold that against me). When I visit SkilStak I view it as being like a path of breadcrumbs leading me to the things that are important and that I should be focusing my time &amp; effort on learning.  You have my gratitude for so freely sharing such a vast amount of info, often in areas that reveal to me where my tech "blind spots" are so that I may delve deeper.  My goal for 2020 is to have my personal website up &amp; running.  SkilStak has been a big inspiration on my finally putting in some work towards that goal.</p>
+</div>
+<div class="paragraph">
+<p>Thank you for creating this amazing space for those of us who would otherwise have never met you in person.  Keep up the incredible work!</p>
+</div>
+<div class="paragraph">
+<p>PS - You may recall that we had a brief Twitter exchange several months ago.  I have been learning to do more on the terminal than ever before, but I am still hoping for and looking forward to an eventual Terminal Master course!  Until then I will be following the book you recommend here (Learning the Linux Command Line, complete with Bash v4 - I installed Ubuntu last week and I can&#8217;t wait to become a true terminal master!)</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Alastair</p>
+</div>
+<div class="paragraph">
+<p>Hi there. Just read you bad parent blog piece. You lost skilstak in your medium/twitter handle so I thought I’d see what it is. Broken by the looks of it. Good in you for becoming an educator. It’s not easy but I hope it’s rewarding.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>Hi Rob - No reason for my email other than to say thank you for everything you do for [our son]! He absolutely loves coding and his hour with you is his favorite of the week. He spends his free time working through the problems you help him come up with and he knows what he wants to do with his life. We are so happy he has found something he loves and just wanted to say thanks!"</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Gabe Miller</p>
+</div>
+<div class="paragraph">
+<p>I have been with SkilStak for about 6 years now and it has been one of the most valuable and impactful experiences in my life. I feel that Mr. Rob has trained me extremely well and I feel prepared for my future in programming and engineering. Mr. Rob has done so many things for me over the years and caused me to get a extremely valuable payed internship before I even finished High School, not to mention multiple job offers with 6 digit salaries. I highly recommend SkilStak for anyone who is interested in programming and wants to be prepared for a career in programming and technology. It has been more valuable than any other school of any kind that I have been to. Mr. Rob and SkilStak taught me so much and prepared me for even more. I wouldn&#8217;t trade my experience there for anything in the world.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>Rob, you referred Gabe Miller to us last year at &#8230;&#8203; he&#8217;s been amazing!</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>Thank you so much for introducing me to coding! I have learned so much. I love being able to create something anyone can enjoy. I hope to see you in the Fall!"</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>I just wanted to let you know that [my son] has really been enjoying camp this week. He talks non-stop about it when he gets home. He’s so excited about what he’s doing!! He just told me this has been the best camp ever because they are learning and then get to play with what what they learned. 😀</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Mary Muchane</p>
+</div>
+<div class="paragraph">
+<p>Mur and I really, really believe in what Skilstak is about and what you are doing and have done for dozens of young boys and girls. Beyond the coding and the career preparation, Skilstak provides a 'place' for them and gives them the courage to wear their nerd badges proudly.  I don’t think it’s hyperbole to say that the impact of Skilstak will last throughout their lives regardless of the trajectory each takes.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Jennifer Miller</p>
+</div>
+<div class="paragraph">
+<p>My son attended the Minecraft camp today and is hooked! He is registered for a coding class now every week! He just keeps thanking us for finding this ‘cool’ place! I highly recommend for kids who love technology and want to learn more!</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Bella</p>
+</div>
+<div class="paragraph">
+<p>I have enjoyed my time learning at Skilstak! My favorite thing is that we are always changing and learning the newest available material for web development. Most of my girl friends don’t like to talk about code, but it is because they don’t understand it. I have found other coding girls at Skilstak, I enjoy figuring out assignments together with them and also working at my own pace.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Joni Dunn</p>
+</div>
+<div class="paragraph">
+<p>Rob does a fantastic job of engaging and teaching the kids without them even knowing they‘re learning. :) We’ll be repeat customers every time my grandson comes for a visit!</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Dena Miller</p>
+</div>
+<div class="paragraph">
+<p>My son has been attending SkilStak for almost four years now. He started out in Code and Play and has progressed to Pro, gaining invaluable coding skills and knowledge every step of the way! In addition to classes, he has served as a TA or teacher’s assistant and aspires to be an instructor as his part-time job during his high school years. He has not only learned several coding languages, but has acquired a valuable work ethic and sense of community and active citizenship. I have no doubt, that he truly has discovered his lifelong passion and career path while attending classes at SkilStak.  I am extremely grateful to Rob for providing my son with his incredible coding abilities and life skills, and more importantly, for serving as a mentor and positive male role model to an impressionable teenager! I would wholeheartedly recommend the SkilStak program as an extracurricular activity to any future coders and their parents!</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Sandy M.</p>
+</div>
+<div class="paragraph">
+<p>Our quiet, unexcitable 11 year old son has been taking classes with Rob and his crew at Skilstak going on 3 1/2 years. These classes are a challenge that school can not provide. He says that they are just fun and he likes creating on the computer. But we see much more! We have seen him become more creative and analytical, confident, independent, and self-sufficient. Mr. Rob has opened his eyes to future job possibilities and the importance of professionalism and good character. As well as legitimate computer programming instruction. He can’t wait to go to the classes!
+These classes are more than standard ‘summer camp’ computer classes. Students are expected to actually learn different languages and create programs. They will get certified at their own pace. And the classes are challenging. We highly recommend Skilstak to anyone wanting to do more than ‘play on a computer’.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: savagebananasoup</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;ve been a 'software developer' (whatever that means) for a couple of years, been using Linux as a hobbyist for 10 years and I&#8217;m learning loads from this guy.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: qmacro99</p>
+</div>
+<div class="paragraph">
+<p>rwxrob&#8217;s influence is all over my dotfiles now, bound into the way I work.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Andriy Lapitskyy</p>
+</div>
+<div class="paragraph">
+<p>Wanted to let you know I watched the 0-3 days [Beginner Boost] and I liked what you had to say it&#8217;s like you were speaking to my soul 😅</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Lio Makki</p>
+</div>
+<div class="paragraph">
+<p>Not everybody can recognize the value of Rob&#8217;s content only the intelligent people do.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Zer0CoolAZ</p>
+</div>
+<div class="paragraph">
+<p>Just wanted to reach out and say thank you for the environment that you&#8217;ve fostered thus far, it&#8217;s always exciting to learn from someone so versed. Your playlist selection has also been a live saver for many early morning starts where dousing fires was needed and sanity was slipping.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Randy</p>
+</div>
+<div class="paragraph">
+<p>Hey Rob, I’m a fairly new viewer and wanted to say thank you for the work you are doing to build your knowledge tools and the community around it.  But also for the free conversations and teachings you are providing on YouTube.  I agree 100% with your comments about Facebook and Google and think your knowledge projects are fascinating.  But I also identity with your recent wisdom  about mentoring and teaching.  I am 45 years old, graduated with a CS degree in 2002, but because of various reasons I did not do well in college and didn’t pursue programming until about 6 years ago. Through that pursuit I found a job which lead to a second job which had me working on projects with zero documentation with languages I did not know.   I struggled but eventually figured out what I needed to get the work done, fix bugs, and add features.  That was until I burned out February of last year.  Since then I’ve been on my own path of self learning and healing.
+So when I first heard you talk about what an autodidact was I realized that I’ve already been doing that because I’ve had too. And that I am being one now.  Your conversations about all this has given me context and validation.  So once again thank you for putting all this out there for people like me to see.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: rossim2i2</p>
+</div>
+<div class="paragraph">
+<p>This is such a small and trivial piece of code, but the amount I&#8217;ve learned has been invaluable. Especially the feedback you&#8217;ve taken the time to provide. [After woring on <code>isosec</code>.]</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: iambrockvond</p>
+</div>
+<div class="paragraph">
+<p>I am catching up with the Boosts on 2x. Not a beginner but it&#8217;s filling in tons of gaps. Wanted to say thank you for this. Excited to catch up to live.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Mitchell Hynes</p>
+</div>
+<div class="paragraph">
+<p>Just watched your AMA comparing Rust hype to Node hype and as a Rustacean of 2 years I couldn&#8217;t agree more. It convinced me to not put all my eggs in one basket and write more Go+C. Love your videos.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: zbrow</p>
+</div>
+<div class="paragraph">
+<p>Rob could do a video on addition and subtraction and I&#8217;d still find something to learn.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: jaysega</p>
+</div>
+<div class="paragraph">
+<p>You know what&#8217;s funny, after joining this stream just a few days ago, I removed 95%+ of my twitch subs, and 99% of my youtube subs. Signal to Noise ratio is real, made me realize how much noise I was letting in. There are some true gurus I&#8217;ve also unsubbed just because, right now I have to admit I cannot benefit from all of them. It&#8217;s not their fault they are just putting themselves out there. But it&#8217;s the rare few who are guru-ish status who also can speak to newbs like myself.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: almrotation</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;ve only been here for about an hour and you&#8217;ve literally broken the mental barrier in my head telling me I cant do this on my own thank you for the wisdom and motivation.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: lattjorr</p>
+</div>
+<div class="paragraph">
+<p>очень крута дед</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: cradersec</p>
+</div>
+<div class="paragraph">
+<p>I stumbled across your 2021 boost repo and I really appreciate the way of thinking that you are promoting. I think it is rare in the current time to have people advocating for critical thinking. Keep up the good work.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: ind1emonk3y</p>
+</div>
+<div class="paragraph">
+<p>I explained the very basic of what I learned from your Boost on docker to friend telling him, I can explain you in less than 10minutes&#8230;&#8203;. In the end, we played for one hour and he was amazed by containers!</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: ChOkO08_</p>
+</div>
+<div class="paragraph">
+<p>I thought i knew shellscript until i came across @rwxrob streams :) It&#8217;s been really entertaining to "relearn" it with his examples.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: goobus_maximus</p>
+</div>
+<div class="paragraph">
+<p>Yeah, I know this is a coding channel! Your Youtube vids have really helped me - I&#8217;m nearly through an interview process for an MLOps role &amp; your content is a meaningful part of my success.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: adykaaa</p>
+</div>
+<div class="paragraph">
+<p>man, I should watch you more, you are motivating as fuck</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: KonQuesting</p>
+</div>
+<div class="paragraph">
+<p>Becoming a "terminal native" has put me way ahead in that Amazon training program I&#8217;m doing. Other people in there are network engineers, Java developers, and they all think I&#8217;m hot shit.  So rob&#8217;s knowledge has definitely been a great boon to me. And this community is stacked with amazing people.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: qt_pi3</p>
+</div>
+<div class="paragraph">
+<p>I feel like I&#8217;ve entered a new chapter in my life. I was living in BRE (before rwxrob era) now im in RE (rwx rob era).</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: narendev</p>
+</div>
+<div class="paragraph">
+<p>Glad to be here , crunching through your beginner boost vids. They are great as I learn more and more Linux in just few hours than stacking up bunch of linux related books.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: awptakesnoskill</p>
+</div>
+<div class="paragraph">
+<p>idk why but watching rob helps me focus</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: cronto82</p>
+</div>
+<div class="paragraph">
+<p>This is best channel on Twitch</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: stitchedd</p>
+</div>
+<div class="paragraph">
+<p>The beginner boost is the reason I started using Linux. I cant imagine going back.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: HeavyDrinker90210</p>
+</div>
+<div class="paragraph">
+<p>When considering "Standing on the shoulders of giants"; you are one of this giants. o7 sir.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: KennithNichol</p>
+</div>
+<div class="paragraph">
+<p>Your scripts are artisan level.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: archification</p>
+</div>
+<div class="paragraph">
+<p>Hello sir rob. Not sure if you feel like reading or responding to chat right now but I just wanted to thank you. You don&#8217;t know it but you helped me through a few dark times in my life. I&#8217;m starting my first job in 10 years 2 hours from now. From nothing to database admin.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: thed2</p>
+</div>
+<div class="paragraph">
+<p>guys, fyi the beginner boosts that rob is doing are really helpful, got my knowledge and first job in cybersecurity with his boosts :)</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: CuriousE1k</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;ve learned a lot from you even though i&#8217;m here infrequently. It&#8217;s helped me greatly in my career as a SDET and advancing my knowledge and i&#8217;m going to be continuing it and the self education as a result. You helped me not give up. So thank you.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: miluba86</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;m in health it so I am behind 5 to 10 years technology wise&#8230;&#8203; do still doing java and angular&#8230;&#8203; but cloud movement change this radically&#8230;&#8203; we need k8s so questions arise&#8230;&#8203; why JVM in Containers&#8230;&#8203; why so much ram consumption&#8230;&#8203; so I started learning go got good advice in here&#8230;&#8203; so thank you Rob and community for your help!</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: be1ancour</p>
+</div>
+<div class="paragraph">
+<p>I need to tell you I copy some stuff from your Workspace container and make my own personalized. Still is in progress I will use it for Java development I want to express my gratitude for real these videos of beginner boost helped me a lot.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: KonQuesting</p>
+</div>
+<div class="paragraph">
+<p>I just got a job offer for the most money I&#8217;ve ever made in my life. Never worked in IT before, only FOSS experience. I owe you for giving me the confidence to believe I could be "enterprise ready" with strong fundamentals, and cover my knowledge gaps as an autodidact.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: ohyounaasty</p>
+</div>
+<div class="paragraph">
+<p>hey there, stumbled across your youtube a while ago and it inspired me to remove all my text editors and just use vim all the time (something i&#8217;ve been meaning to do for 10+ years) - just wanted to thank you, it&#8217;s been transformative, really</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: ghost_steve</p>
+</div>
+<div class="paragraph">
+<p>Hey Rob I see your busy, just wanted to say thank you for these streams got me a job as Infrastructure eng.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: youaresourcecode</p>
+</div>
+<div class="paragraph">
+<p>I personally think Rob is best example of what&#8217;s programming means&#8230;&#8203; I imagine unix core creators designing and programming unix operating system kind of like Rob shows us in his streams. Keep it up Rob!!!!!</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: rwxLethalz</p>
+</div>
+<div class="paragraph">
+<p>Cause of rob ive gotten a job as a network tech making 25 hr just a start but it helps.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Wxaaz</p>
+</div>
+<div class="paragraph">
+<p>im from africa and a company in europe accepted me , my life probably gonna change , but without the fuel i&#8217;ve once, i would never sacrifice this far, so thank you so much</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: qaerst</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;ve literally built out my future career path on your advice , and it helped me immensly. If you&#8217;re ever in the EU , beer is on me.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: rwillex</p>
+</div>
+<div class="paragraph">
+<p>I just want to share with you that I got a "devops" job. Thank you so much for all the help, and also the beginner boost helped me a lot.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: IMExploder</p>
+</div>
+<div class="paragraph">
+<p>I got my first k8s job last week, partly because of you.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: oppp20039</p>
+</div>
+<div class="paragraph">
+<p>What I like most about Rob is that he is not a nerd. I can&#8217;t stand nerds and never been able to be friend with one but this is one of the few channels where a human is actually streaming. Maybe because you talk about your life, maybe because you have strong opinions, maybe because you understand life and things outside of coding.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: appproachsloth</p>
+</div>
+<div class="paragraph">
+<p>Rob is going to make a new standard I swear.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>I wouldn&#8217;t have even gotten into vim and shell scripts if not for the content I found through this stream.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: flipmybit</p>
+</div>
+<div class="paragraph">
+<p>Yo I just started Ashtanga yoga after seeing it here and I am loving it so far.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: rossim2i2</p>
+</div>
+<div class="paragraph">
+<p>I used everything I learned here to write a Windows script (basically wrote it in Bash and retrfit it to Windows Script) to solve an issue at work. Not only did it impress my new boss (our CIO), but also saved 5-10k in outsourced dev costs.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: GamingDizzyfly</p>
+</div>
+<div class="paragraph">
+<p>I somehow landed a "cloud consultant" role. I have to thank u profusely for ur content and for inspiring me.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: touch_beans</p>
+</div>
+<div class="paragraph">
+<p>I got a job directly out of HS pretty much due to what I’ve learned from you. Not only that, but you helped me build a lifelong passion purely by showing me what a passionate programmer is and what makes programming exciting. For that, thank you.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: alonsete14</p>
+</div>
+<div class="paragraph">
+<p>just want to say I have found a job as backend dev with Go, your streaming has motivated me a lot, thanks Rob!</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: anonymous</p>
+</div>
+<div class="paragraph">
+<p>You&#8217;ve changed my life man, even though i&#8217;m just some pixels on your monitor that sometimes pops up. Couple months ago I was puking due to working 18 hour days for big oil, being so stressed that my hair turned grey at my early 20&#8217;s. Now I am able to send my mother on a nice vacation and take care of my family :)</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Dorinpedala</p>
+</div>
+<div class="paragraph">
+<p>Hi there Rob, I am a sysadmin from Romania, finally I get to thank you for the Beginner Boost you&#8217;ve done in 2020! Thanks to you I landed the job of my life and got to play with a lot tone of awesome tech!</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Himthecool21</p>
+</div>
+<div class="paragraph">
+<p>Whenever I watch your stream I get soo productive.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: desire_nothing</p>
+</div>
+<div class="paragraph">
+<p>Hello rwxrob, how are you? First of all, thank you for all the beginner boosts, you are the hero that we wanted and needed. Sincerely, thank you. I wanted to ask because I am starting the previous year BB with docker, you mention wsl2, but is it possible to set it up with git bash? Thank you in advance and please keep being so awesome, you are changing our lives for the better!
+I can&#8217;t thank you enough and you have no idea how much I respect you for what you do for us - the community. A pure gem and I am happy that I discovered your channel so early in my dev career. Keep up being awesome!</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: ChadWickTC</p>
+</div>
+<div class="paragraph">
+<p>Fun fact. You helped me land a job as a Cloud Linux Engineer. I start Dec 1st.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: ping_ochio</p>
+</div>
+<div class="paragraph">
+<p>Rob is an artist from the IT world, his room is his atelier, the keyboard is his color palette, the terminal is his canvas, Twitch, Youtube and github are his exhibition galleries.  Kappa</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Carson</p>
+</div>
+<div class="paragraph">
+<p>hey rob, this is your former student carson here if you happen to remember me. trouble falling asleep right now and I was just thinking about all those years I disliked you after you 'kicked me out' when you downsized to private lessons, but I never have really appreciated the gift you gave me until right about now. This funky english with all sorts of weird symbols is soemthing not a lot of people are capable of grasping, and yet you made it so easy and I never really ever got to thank you</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: sstichedd</p>
+</div>
+<div class="paragraph">
+<p>Every time I see you reference Zet, I smile. Your stream is the reason I started using Linux 3 years ago. That is the time USING computers started making sense to me. I am now starting my first tech related job at 40 years old. When I started using vim to manipulate code, and saw how it connected seamlessly with Linux, It changed everything for me. No college degree, no education to speak of, but I got hired on for the city of San Diego, CA as a data entry specialist simply because of the skills I learned. Most of those skills learned here, haha</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: x_sharkuni_x</p>
+</div>
+<div class="paragraph">
+<p>You are a great teacher with a soothing voice full of knowledge.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: illusion4u</p>
+</div>
+<div class="paragraph">
+<p>Hey, Rob. How are you? Just dropping by to let you know, I&#8217;m employed. I start tomorrow morning. You have been truly helpful for me. See you, have a good hacking session</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Kano_steam</p>
+</div>
+<div class="paragraph">
+<p>I was able to land a full time junior position with no degree because of you. Thank you for everything you do.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: AntNem_</p>
+</div>
+<div class="paragraph">
+<p>I just want to say thank you @rwxrob for being a positive influence in my life  &lt;3</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: adrnlnJnky</p>
+</div>
+<div class="paragraph">
+<p>I want to share. I took your Linux class in 2020 during the Covid lockdown. I took your course then, from there I learned Go, then randomly Elixir and now I have a job as a developer. That course your did for free was the jump point that got me moving forward with traction&#8230;&#8203;</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Dizzyfly</p>
+</div>
+<div class="paragraph">
+<p>Hi Rob! I hope all is well. I landed and kept my job thanks to your 2021 boost series on YouTube.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Anyascii</p>
+</div>
+<div class="paragraph">
+<p>They haven&#8217;t invented a title yet for the type of influencer you are.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: Alex</p>
+</div>
+<div class="paragraph">
+<p>Not sure if you remember me. I was at SkilStaks when it was in Cornelius around when I was in middle school or something and just wanted to thank you for all your teaching as now I&#8217;m a Freshman at UNC Charlotte and I was able to use what I learned all the way back then with Python to actually be able to test out of one of my classes.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: eganathan_r</p>
+</div>
+<div class="paragraph">
+<p>These are your contents and you have all the right to restrict it, but i myself randomly stumbled upon you from Youtube and since then it had made a huge impact on me, i am currently employed without any school or certifications, it might sound silly but i couldn&#8217;t go due to family situations so i had to work, as 60% of well educated Indians are unemployed here i am working an amazing company thanks to you and many other great individuals. just wanted to say this before i go.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Name</strong>: DefnotFreddie</p>
+</div>
+<div class="paragraph">
+<p>Thank you very much for showing me filtering it makes workflow real smooth I don&#8217;t need most of Neovim plugins any more also now I want to do and accomplish so I can be even faster in terminal. I think more people should know it.</p>
 </div>
 </div>
 </div>
@@ -711,7 +2123,7 @@ mermaid.initialize({ startOnLoad: true });
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-06 12:30:21 -0500
+Last updated 2024-12-12 13:35:34 -0500
 </div>
 </div>
 </body>
