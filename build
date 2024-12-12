@@ -32,6 +32,7 @@ x-site() {
 	x-book terminal-velocity
 	x-book autodidactic
 	x-book bad-strimmer
+	x-book mormons-tale
 }
 
 x-watch() {
