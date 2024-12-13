@@ -25,39 +25,11 @@
 
 _Boost your coding, hacking, and learning with a Unix or Linux terminal_
 
-[copyright]
-= Copyright
+include::copyright.adoc[]
 
-Copyright © 2024 Robert S. Muhlestein (rwxrob). All rights reserved.
+include::dedication.adoc[]
 
-The code portions of this book are dedicated to the public domain under the terms of the **Creative Commons Zero (CC0 1.0 Universal)** license (https://creativecommons.org/publicdomain/zero/1.0/). This means you are free to copy, modify, distribute the _code portions only_, even for commercial purposes, without asking permission, and without saying where you got them. This is so there is no fear your creations are your own after learning to code using them.
-
-The non-code prose and images are licensed under the more restrictive Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0) (https://creativecommons.org/licenses/by-nc-nd/4.0/). This means that no non-code prose or image from the book may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the copyright holder. This includes remaking the same content in different formats such as PDF or EPUB since these fall under the definition of derived works. This restriction is primarily in place to ensure outdated copies are not redistributed given the frequent updates expected.
-
-_"Terminal Velocity"_ is a legal trademarks of Robert S. Muhlestein but can be used freely to refer to this book without limitation. To avoid potential confusion, intentionally using this trademark to refer to other projects—free or proprietary—is prohibited.
-
-[[dedication]]
-= Dedication
-
-**In memory of Aaron Swartz and Kris Nova**, +
-whose contributions and spirit continue to inspire the pursuit of knowledge and innovation.
-
-[[prerequisites]]
-= Prerequisites
-
-There's not much you can do without a CPU. Don't read another word until you have:
-
-- A computer with an American keyboard on which you can install software
-- A phone for research and reading while working
-- A reliable Internet connection for installing and saving
-- An email account that you control
-- The ability to type 30 words per minute from home row
-- Enough snacks and drinks to keep you from getting hangry
-
-Windows, macOS, Linux? All are fine. A CPU's a CPU. Ignore fights about which OS is best. You have better things to do.
-
-[[preface]]
-= Preface
+include::prerequisites.adoc[]
 
 include::preface/welcome.adoc[]
 
@@ -69,24 +41,21 @@ include::preface/how-to-use-this-book.adoc[]
 
 include::preface/whats-with-the-hacker-stuff.adoc[]
 
+include::terminal-origins.adoc[]
+
+include::learn-launcher.adoc[]
+
+include::learn-alt-tab.adoc[]
+
 include::get-wsl2-on-windows.adoc[]
 
 include::update-bash-on-macos.adoc[]
 
 include::validate-bash-on-linux.adoc[]
 
-[[manage-software]]
-= Manage installed software
-
 include::manage-software/index.adoc[]
 
-[[get-wezterm]]
-= Get WezTerm terminal
-
 include::get-wezterm.adoc[]
-
-[[github]]
-= Get Git and GitHub
 
 include::get-git-github.adoc[]
 

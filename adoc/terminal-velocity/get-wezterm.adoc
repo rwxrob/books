@@ -1,3 +1,6 @@
+[[get-wezterm]]
+= Get WezTerm terminal
+
 When you can hack from your own computer, WezTerm is your gateway to a terminal experience that matches your skills: fast, modern, and built for power users. Whether you're hacking on Windows, macOS, or Linux, this guide gets you set up without breaking a sweat. Pick your platform, follow the steps, and take control of your terminal. It's time to upgrade your game.
 
 === Windows: Install with winget

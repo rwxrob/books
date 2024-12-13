@@ -1,3 +1,6 @@
+[[manage-software]]
+= Manage installed software
+
 Package management is the backbone of software installation, updates, and maintenance on Unix (macOS) and Linux (WSL2, Ubuntu, etc.).
 
 [NOTE]

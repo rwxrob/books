@@ -1,5 +1,0 @@
-== Bonzai Beauty
-
-_Compose completable command trees with the Go Bonzai command-line framework_
-
-_Coming soon..._

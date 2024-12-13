@@ -1,18 +1,18 @@
-== Learn Alt-Tab for window switching
+= Learn Alt-Tab for window switching
 
 The `Alt + Tab` shortcut is a universal skill that works across operating systems, allowing you to switch between open windows quickly and efficiently. It's one of the most basic yet powerful tools to enhance productivity. No additional graphical window manager (like `i3`) is needed if you have already mastered this one skill.
 
-=== Why learn Alt-Tab?
+== Why learn Alt-Tab?
 
-**Speed**: Quickly toggle between tasks without touching the mouse.
+- **Speed**: quickly toggle between tasks without touching the mouse.
 
-**Universality**: Works on nearly every major operating system, making it a portable skill.
+- **Universality**: works on nearly every major operating system, making it a portable skill.
 
-**Focus**: Reduces distraction by helping you stay in the flow of your work.
+- **Focus**: reduces distraction by helping you stay in the flow of your work.
 
 Incorporating `Alt + Tab` into your daily workflow ensures you can multitask efficiently across all platforms.
 
-=== How to Use Alt-Tab
+== How to use Alt-Tab
 
 **On Windows**:
 

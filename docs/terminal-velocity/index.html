@@ -502,6 +502,30 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_whats_with_the_hacker_stuff">What&#8217;s with the hacker stuff?</a></li>
 </ul>
 </li>
+<li><a href="#_terminal_origins">Terminal origins</a>
+<ul class="sectlevel2">
+<li><a href="#_from_teletypes_to_command_lines">From teletypes to command lines</a></li>
+<li><a href="#_what_were_teletypes">What were teletypes?</a></li>
+<li><a href="#_how_teletypes_shaped_terminals">How teletypes shaped terminals</a></li>
+<li><a href="#_legacy_in_modern_terminals">Legacy in modern terminals</a></li>
+<li><a href="#_a_specific_example_unix_and_the_model_33">A specific example: Unix and the Model 33</a></li>
+<li><a href="#_why_it_matters">Why it matters</a></li>
+</ul>
+</li>
+<li><a href="#launcher">Learn to launch anything</a>
+<ul class="sectlevel2">
+<li><a href="#_why_learn_launcher">Why learn launcher?</a></li>
+<li><a href="#_spotlight_on_mac">Spotlight on Mac</a></li>
+<li><a href="#_search_on_windows">Search on Windows</a></li>
+<li><a href="#_activities_on_linux">Activities on Linux</a></li>
+</ul>
+</li>
+<li><a href="#_learn_alt_tab_for_window_switching">Learn Alt-Tab for window switching</a>
+<ul class="sectlevel2">
+<li><a href="#_why_learn_alt_tab">Why learn Alt-Tab?</a></li>
+<li><a href="#_how_to_use_alt_tab">How to use Alt-Tab</a></li>
+</ul>
+</li>
 <li><a href="#_get_wsl2_bash_on_windows">Get WSL2 bash on Windows</a>
 <ul class="sectlevel2">
 <li><a href="#_enable_wsl">Enable WSL</a></li>
@@ -879,6 +903,296 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 </div>
 <div class="paragraph">
 <p>I&#8217;m not <em>really</em> encouraging you to hack your enemies, just creating a memorable narrative linking the concepts and techniques together lodging them firmly into you squishy grey matter. That&#8217;s how human neural nets are made. If it helps, you can image an alien race of soulless AIs attacking our planet and only your terminal skills can save us. "I know Kung Fu." Go ahead, you&#8217;ll remember it better.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_terminal_origins"><a class="link" href="#_terminal_origins">Terminal origins</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Listen up. The terminal isn&#8217;t just some relic of the past—it&#8217;s the edge, the pulse of everything we do. People think they need flashy GUIs, shortcuts, whatever—they&#8217;re wrong. The real power has always been here, in this black box with a blinking cursor. The terminal is raw, unfiltered control. It&#8217;s where Unix set the rules and Linux rewrote them for anyone bold enough to take control. If you’re ready to wake up, you need to start here. Understand the tools, the history, the mindset. Because once you do, you’ll see—it&#8217;s not just code. It&#8217;s power.</p>
+</div>
+<div class="sect2">
+<h3 id="_from_teletypes_to_command_lines"><a class="link" href="#_from_teletypes_to_command_lines">From teletypes to command lines</a></h3>
+<div class="paragraph">
+<p>The modern terminal traces its lineage back to <em>teletype machines</em> (<code>tty</code>), devices originally designed to send and receive typed messages over telegraph lines. These electromechanical marvels bridged human communication with machines, setting the stage for the command line interfaces we use today.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_what_were_teletypes"><a class="link" href="#_what_were_teletypes">What were teletypes?</a></h3>
+<div class="paragraph">
+<p>Teletypes were essentially typewriters connected to a communication line, capable of sending and receiving text. Early models like the <strong>Teletype Model 33</strong> (1963) became iconic in the computing world, serving as both input and output devices for time-sharing systems. Back then you had to buy time for a lot of money to even use a computer so using it efficiently was a big deal. Imagine if you had to pay even $10/hour to use your computer now.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_how_teletypes_shaped_terminals"><a class="link" href="#_how_teletypes_shaped_terminals">How teletypes shaped terminals</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Input via keyboards</strong>: users typed commands directly onto the teletype keyboard. For example, in the <strong>Multics</strong> operating system, users would type commands like <code>print filename</code>. The machine printed the results on paper.</p>
+</li>
+<li>
+<p><strong>Output on paper or screens</strong>: output appeared in real-time, printed on paper rolls. Early systems like <strong>DEC PDP-11</strong> connected to teletypes allowed users to interact with Unix via commands typed on the Model 33.</p>
+</li>
+<li>
+<p><strong>Full-duplex communication</strong>: teletypes supported simultaneous input and output. You could type commands while the machine printed responses.</p>
+</li>
+<li>
+<p><strong>Baud rates</strong>: the Model 33 operated at 10 characters per second (110 baud), a speed that today feels like a crawl but was revolutionary for its time. Understanding how slow these interfaces is key to understanding how we got wildly efficient tools like <code>vi</code> for text input. Spamming the arrow keys to move around the screen would have been ridiculously slow. Computers and terminals are much faster now, but understanding this helps us understand things like the <code>vimtutor</code> tutorial that was made for a much different, slower time. Having every keystroke cause a pop-up tab-completion possibility would have been impossible, but today that is considered normal.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_legacy_in_modern_terminals"><a class="link" href="#_legacy_in_modern_terminals">Legacy in modern terminals</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>TTY as a concept</strong>: modern Unix/Linux systems still refer to terminal sessions as <code>tty</code>, a nod to their teletype ancestry.</p>
+</li>
+<li>
+<p><strong>Behavior</strong>: features like line buffering and carriage return come directly from teletype operation quirks.</p>
+</li>
+<li>
+<p><strong>Commands</strong>: early commands like <code>ls</code>, <code>cp</code>, and <code>cat</code> in Unix were designed to be typed on teletypes. The <code>man</code> command was designed to generate actual paper manuals.</p>
+</li>
+<li>
+<p><strong>Documentation</strong>: some tutorials and documentation such as <code>vimtutor</code> assume you are using an extremely slow screen and overemphasize counting and positional navigation when search-centric navigation and completion are now preferred.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_a_specific_example_unix_and_the_model_33"><a class="link" href="#_a_specific_example_unix_and_the_model_33">A specific example: Unix and the Model 33</a></h3>
+<div class="paragraph">
+<p>In the 1970s, Ken Thompson and Dennis Ritchie (friends of the young Rob Pike, who invented the Go programming and Unicode language later) developed <strong>Unix</strong> using a PDP-11 connected to a Teletype Model 33. Commands like <code>ls</code> (list files) or <code>man</code> (manual pages) were short to minimize typing effort on the slow device. The Model 33’s limitations, like its speed and one-line-at-a-time input, directly influenced the minimalism of Unix’s command-line interface.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_why_it_matters"><a class="link" href="#_why_it_matters">Why it matters</a></h3>
+<div class="paragraph">
+<p>The terminal’s design reflects its history: efficient, concise, and text-driven. Even as we use modern tools like virtual terminals and IDEs, every command typed is a salute to the era when engineers sat at teletypes, hearing the clatter of keys and the hum of progress. They may have been "boomers" but they invented this revolution. We owe them our thanks—and allegiance.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="launcher"><a class="link" href="#launcher">Learn to launch anything</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Every operating system offers a quick and efficient way to launch applications, open files, and search for information—similar to macOS’s powerful Spotlight feature. Learning how to use these tools effectively can save time and streamline your workflow. This guide will walk you through Spotlight equivalents on Windows, Linux, and other systems.</p>
+</div>
+<div class="sect2">
+<h3 id="_why_learn_launcher"><a class="link" href="#_why_learn_launcher">Why learn launcher?</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Efficiency</strong>: launching apps and files directly saves time compared to navigating menus. Your fingers never need to leave home row on the keyboard.</p>
+</li>
+<li>
+<p><strong>Focus</strong>: search and launch tools help you avoid distractions by providing a single interface for tasks.</p>
+</li>
+<li>
+<p><strong>Universal skills</strong>: mastering these tools makes you productive on any operating system.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_spotlight_on_mac"><a class="link" href="#_spotlight_on_mac">Spotlight on Mac</a></h3>
+<div class="paragraph">
+<p>On macOS, Spotlight is the built-in search and launcher tool.</p>
+</div>
+<div class="paragraph">
+<p><strong>How to access Spotlight</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the keyboard shortcut <code>Command (⌘) + Space</code>.</p>
+</li>
+<li>
+<p>Click the magnifying glass icon in the top-right corner of the menu bar.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>What you can do</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Launch apps: Type the app name and press <code>Enter</code>.</p>
+</li>
+<li>
+<p>Search files: Enter the file name or keywords.</p>
+</li>
+<li>
+<p>Perform calculations: Type <code>5 * 7</code> or <code>100 USD to EUR</code>.</p>
+</li>
+<li>
+<p>Look up definitions: Type a word to get a dictionary entry.</p>
+</li>
+<li>
+<p>Search the web: Type your query and select a browser result.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_search_on_windows"><a class="link" href="#_search_on_windows">Search on Windows</a></h3>
+<div class="paragraph">
+<p>Windows provides a built-in search tool that acts as a launcher.</p>
+</div>
+<div class="paragraph">
+<p><strong>How to access Windows search</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Press <code>Win</code> or click the search icon on the taskbar.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>What you can do</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Launch apps: Type the app name and press <code>Enter</code>.</p>
+</li>
+<li>
+<p>Search files: Enter the file name or content keywords.</p>
+</li>
+<li>
+<p>Execute commands: Run shell commands directly.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_activities_on_linux"><a class="link" href="#_activities_on_linux">Activities on Linux</a></h3>
+<div class="paragraph">
+<p>Linux has multiple application launchers, depending on your desktop environment and preferences.</p>
+</div>
+<div class="paragraph">
+<p><strong>GNOME: activities overview</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Press the <code>Super</code> key (Windows key) to open the Activities Overview.</p>
+</li>
+<li>
+<p>Type the app name or file you want to open.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>KDE Plasma: KRunner</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Press <code>Alt + Space</code> to open KRunner.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>What you can do</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Launch apps: Type the name and press <code>Enter</code>.</p>
+</li>
+<li>
+<p>Open files: Search for files by name.</p>
+</li>
+<li>
+<p>Run commands: Execute terminal commands directly.</p>
+</li>
+<li>
+<p>Perform calculations and translations with plugins.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_learn_alt_tab_for_window_switching"><a class="link" href="#_learn_alt_tab_for_window_switching">Learn Alt-Tab for window switching</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>Alt + Tab</code> shortcut is a universal skill that works across operating systems, allowing you to switch between open windows quickly and efficiently. It&#8217;s one of the most basic yet powerful tools to enhance productivity. No additional graphical window manager (like <code>i3</code>) is needed if you have already mastered this one skill.</p>
+</div>
+<div class="sect2">
+<h3 id="_why_learn_alt_tab"><a class="link" href="#_why_learn_alt_tab">Why learn Alt-Tab?</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Speed</strong>: quickly toggle between tasks without touching the mouse.</p>
+</li>
+<li>
+<p><strong>Universality</strong>: works on nearly every major operating system, making it a portable skill.</p>
+</li>
+<li>
+<p><strong>Focus</strong>: reduces distraction by helping you stay in the flow of your work.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Incorporating <code>Alt + Tab</code> into your daily workflow ensures you can multitask efficiently across all platforms.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_how_to_use_alt_tab"><a class="link" href="#_how_to_use_alt_tab">How to use Alt-Tab</a></h3>
+<div class="paragraph">
+<p><strong>On Windows</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Hold <code>Alt</code> and press <code>Tab</code> to cycle through open applications.</p>
+</li>
+<li>
+<p>Release both keys when the desired window is highlighted.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>On macOS</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use <code>Command (⌘) + Tab</code> for similar functionality.</p>
+</li>
+<li>
+<p>Press <code>Command (⌘) + ~</code> to switch between windows of the same application.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>On Linux</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Most desktop environments support <code>Alt + Tab</code> natively.</p>
+</li>
+<li>
+<p>Additional variations, like <code>Super + Tab</code>, may be available depending on your configuration.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Others</strong>:</p>
+</div>
+<div class="paragraph">
+<p>This functionality is supported on all tablets and phones as well so long as you attach a keyboard to them.</p>
 </div>
 </div>
 </div>
@@ -2483,7 +2797,7 @@ fmt <i class="conum" data-value="7"></i><b>(7)</b>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-12 22:00:18 -0500
+Last updated 2024-12-12 23:20:47 -0500
 </div>
 </div>
 </body>

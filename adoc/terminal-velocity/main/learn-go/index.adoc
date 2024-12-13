@@ -1,3 +1,0 @@
-
-link:bonzai-beauty[*Bonzai Beauty*] +
-_Compose completable command trees with the Go Bonzai command-line framework_

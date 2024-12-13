@@ -1,16 +1,17 @@
-== Learn to launch anything
+[[launcher]]
+= Learn to launch anything
 
 Every operating system offers a quick and efficient way to launch applications, open files, and search for information—similar to macOS’s powerful Spotlight feature. Learning how to use these tools effectively can save time and streamline your workflow. This guide will walk you through Spotlight equivalents on Windows, Linux, and other systems.
 
-=== Why learn launcher?
+== Why learn launcher?
 
-**Efficiency**: Launching apps and files directly saves time compared to navigating menus. Your fingers never need to leave home row on the keyboard.
+- **Efficiency**: launching apps and files directly saves time compared to navigating menus. Your fingers never need to leave home row on the keyboard.
 
-**Focus**:Search and launch tools help you avoid distractions by providing a single interface for tasks.
+- **Focus**: search and launch tools help you avoid distractions by providing a single interface for tasks.
 
-**Universal Skills**: Mastering these tools makes you productive on any operating system.
+- **Universal skills**: mastering these tools makes you productive on any operating system.
 
-=== Spotlight on Mac
+== Spotlight on Mac
 
 On macOS, Spotlight is the built-in search and launcher tool.
 
@@ -27,7 +28,7 @@ On macOS, Spotlight is the built-in search and launcher tool.
 - Look up definitions: Type a word to get a dictionary entry.
 - Search the web: Type your query and select a browser result.
 
-=== Search on Windows
+== Search on Windows
 
 Windows provides a built-in search tool that acts as a launcher.
 
@@ -41,7 +42,7 @@ Windows provides a built-in search tool that acts as a launcher.
 - Search files: Enter the file name or content keywords.
 - Execute commands: Run shell commands directly.
 
-=== Activities on Linux
+== Activities on Linux
 
 Linux has multiple application launchers, depending on your desktop environment and preferences.
 

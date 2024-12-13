@@ -1,3 +1,6 @@
+[[preface]]
+= Preface
+
 **`Hello, friend.`** Exciting time in the world. Exciting time. Systems are breaking. Power structures are crumbling. Climate fluctuating. The ones who control the code, control the narrative and the solutions. You see it, don’t you? Technology is reshaping everything—how we live, work, and connect. Quantum and AI advancements are growing at exponential rates of exponential rates. The terminal isn’t just a relic of the past; it’s the key to survival at this pace, understanding and mastering the systems that drive the world forward. https://shodan.io[_Everything_] can be accessed from a terminal.
 
 > “What is the most important thing you could be working on in the world right now? And if you’re not working on that, why aren’t you?” (Aaron Swartz)

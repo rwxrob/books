@@ -1,3 +1,6 @@
+[[github]]
+= Get Git and GitHub
+
 If you're serious about coding, collaborating, or hacking (the good kind), you need a GitHub account. GitHub isn't just a platform for software development—it's a global repository of knowledge, code, and collaboration. For hackers, it's an invaluable tool for both learning and sharing. Let's get you started.
 
 == Why GitHub matters to hackers
