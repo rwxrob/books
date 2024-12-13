@@ -1,0 +1,92 @@
+[[dotfiles]]
+= Start a dotfiles repo
+
+Every hacker worth their salt has a dotfiles collection—a personal toolkit of scripts, configurations, and tweaks that transform any terminal into their perfect workspace. Dotfiles aren't just files; they're the DNA of your workflow, the signature of your system mastery. Let's get you started on the path to creating your own, the hacker's way.
+
+== Why dotfiles matter
+
+Dotfiles are the ultimate expression of control. They house everything but mainly your `.bashrc`, your `.vimrc`, and `.tmux.conf`, the configurations that make your tools work the way you want them to. Hackers can always use the defaults when they have to—but prefer to  refine, customize, and adapt their environment. With dotfiles, your setup becomes portable, repeatable, and tailored to perfection. It's not just about efficiency—it's about owning your system and quickly turning any _other_ system into your own as well.
+
+== Create your dotfiles repo
+
+GitHub makes managing and sharing your dotfiles effortless. Using a repository as a template allows you to bootstrap your setup on any machine, in seconds. Here's how to start your dotfiles collection with GitHub and the power of `gh`.
+
+Run the following command to create a private repository for your dotfiles using a pre-built template:
+
+[source,bash]
+----
+gh repo create dot --template rwxrob/dot-template --clone --private
+----
+
+What's happening here:
+
+- `dot` is the name of your new repository. Simple and universal. Also `dotfiles`.
+- `--template rwxrob/dot-template` pre-configured template to jumpstart your collection.
+- `--clone` brings the repository to your local machine immediately.
+- `--private` keeps your dotfiles secure—because not everything needs to be public.
+
+[NOTE]
+====
+In the hacker community, copying another hacker's dotfiles to get started isn't just acceptable—it's tradition. Dotfiles are deeply personal, shaped by years of customization, but every hacker begins somewhere. Borrowing someone else's collection is like inheriting a toolbox, ready for you to tweak and adapt. It's not about imitation; it's about building on what works. To get started, explore the vast collection of dotfiles on GitHub:
+
+https://github.com/search?q=dotfiles&type=repositories
+
+Pick one, pilfer it, repeat. That's what they're for. Hackers don't reinvent the wheel—they improve it.
+====
+
+== Make it yours
+
+Once cloned, navigate into your new repository and start customizing:
+
+[source,bash]
+----
+cd dot                <1>
+nano README.md        <2>
+----
+
+<1> Change into the `dot` directory
+<2> Open the `README.md` file with `nano` text editor
+
+[IMPORTANT]
+====
+There's no shame in using nano to get started—every hacker needs a starting point. At least you're still in the terminal. But don't put off learning vim. It's not as hard as it seems, and once you get the hang of it, you'll wonder how you ever lived without its power and efficiency. Start small, practice often, and level up.
+====
+
+Eventually, we'll be add aliases, functions, and environment variables to `bash/bashrc` and customizing your `/vim/vimrc` and stuff. These files will define how your system behaves.
+
+Where are the dots? That'll come later. These files get linked into your home directory and begin with a dot (`.`) then.
+
+== Commit and push changes
+
+After making edits, push your changes back to GitHub to keep your repository up to date:
+
+[source,bash]
+----
+git add .
+git commit -m 'Initial customizations'
+git push
+----
+
+[NOTE]
+====
+You might be prompted to do some other things here along the way.
+====
+
+This ensures your dotfiles are always available, ready to deploy wherever you go.
+
+== Bootstrap any machine
+
+Setting up a new machine? Perhaps not now, but later when you need to things just got a lot easier. Clone your dotfiles repo and run your setup script:
+
+[source,bash]
+----
+git clone https://github.com/<your-username>/dot
+cd dot
+./setup
+----
+
+Assuming you've already installed all the other software packages you need, this single command sequence turns any blank system into your personal hacker's workspace.
+
+== Hacker's perspective
+
+Dotfiles aren't just a tradition; they're a rite of passage. They represent ownership of your tools, your workflow, and your productivity. Every alias, every script, every tweak is a step toward mastery. With GitHub and the right template, managing and deploying your dotfiles is easier than ever. Hackers don't wait for tools to adapt to them—they make the tools theirs. Start your dotfiles collection today, and take your first step toward complete system control.

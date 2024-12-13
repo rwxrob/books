@@ -59,10 +59,8 @@ include::get-wezterm.adoc[]
 
 include::get-git-github.adoc[]
 
-[[dotfiles]]
-= Start a dot files repo
 
-_In development..._
+include::start-dotfiles.adoc[]
 
 [[config-wezterm]]
 = Configure WezTerm terminal

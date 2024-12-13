@@ -581,7 +581,16 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_hackers_perspective_10">Hacker’s perspective</a></li>
 </ul>
 </li>
-<li><a href="#dotfiles">Start a dot files repo</a></li>
+<li><a href="#dotfiles">Start a dotfiles repo</a>
+<ul class="sectlevel2">
+<li><a href="#_why_dotfiles_matter">Why dotfiles matter</a></li>
+<li><a href="#_create_your_dotfiles_repo">Create your dotfiles repo</a></li>
+<li><a href="#_make_it_yours">Make it yours</a></li>
+<li><a href="#_commit_and_push_changes">Commit and push changes</a></li>
+<li><a href="#_bootstrap_any_machine">Bootstrap any machine</a></li>
+<li><a href="#_hackers_perspective_11">Hacker&#8217;s perspective</a></li>
+</ul>
+</li>
 <li><a href="#config-wezterm">Configure WezTerm terminal</a></li>
 <li><a href="#shell">Learn shell basics</a></li>
 <li><a href="#tmux">Learn screen and tmux multiplexing</a></li>
@@ -2358,10 +2367,165 @@ gh<span class="tok-w"> </span>--version</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="dotfiles"><a class="link" href="#dotfiles">Start a dot files repo</a></h2>
+<h2 id="dotfiles"><a class="link" href="#dotfiles">Start a dotfiles repo</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
+<p>Every hacker worth their salt has a dotfiles collection—a personal toolkit of scripts, configurations, and tweaks that transform any terminal into their perfect workspace. Dotfiles aren&#8217;t just files; they&#8217;re the DNA of your workflow, the signature of your system mastery. Let&#8217;s get you started on the path to creating your own, the hacker&#8217;s way.</p>
+</div>
+<div class="sect2">
+<h3 id="_why_dotfiles_matter"><a class="link" href="#_why_dotfiles_matter">Why dotfiles matter</a></h3>
+<div class="paragraph">
+<p>Dotfiles are the ultimate expression of control. They house everything but mainly your <code>.bashrc</code>, your <code>.vimrc</code>, and <code>.tmux.conf</code>, the configurations that make your tools work the way you want them to. Hackers can always use the defaults when they have to—but prefer to  refine, customize, and adapt their environment. With dotfiles, your setup becomes portable, repeatable, and tailored to perfection. It&#8217;s not just about efficiency—it&#8217;s about owning your system and quickly turning any <em>other</em> system into your own as well.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_your_dotfiles_repo"><a class="link" href="#_create_your_dotfiles_repo">Create your dotfiles repo</a></h3>
+<div class="paragraph">
+<p>GitHub makes managing and sharing your dotfiles effortless. Using a repository as a template allows you to bootstrap your setup on any machine, in seconds. Here&#8217;s how to start your dotfiles collection with GitHub and the power of <code>gh</code>.</p>
+</div>
+<div class="paragraph">
+<p>Run the following command to create a private repository for your dotfiles using a pre-built template:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>gh<span class="tok-w"> </span>repo<span class="tok-w"> </span>create<span class="tok-w"> </span>dot<span class="tok-w"> </span>--template<span class="tok-w"> </span>rwxrob/dot-template<span class="tok-w"> </span>--clone<span class="tok-w"> </span>--private</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>What&#8217;s happening here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>dot</code> is the name of your new repository. Simple and universal. Also <code>dotfiles</code>.</p>
+</li>
+<li>
+<p><code>--template rwxrob/dot-template</code> pre-configured template to jumpstart your collection.</p>
+</li>
+<li>
+<p><code>--clone</code> brings the repository to your local machine immediately.</p>
+</li>
+<li>
+<p><code>--private</code> keeps your dotfiles secure—because not everything needs to be public.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In the hacker community, copying another hacker&#8217;s dotfiles to get started isn&#8217;t just acceptable—it&#8217;s tradition. Dotfiles are deeply personal, shaped by years of customization, but every hacker begins somewhere. Borrowing someone else&#8217;s collection is like inheriting a toolbox, ready for you to tweak and adapt. It&#8217;s not about imitation; it&#8217;s about building on what works. To get started, explore the vast collection of dotfiles on GitHub:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/search?q=dotfiles&amp;type=repositories" class="bare">https://github.com/search?q=dotfiles&amp;type=repositories</a></p>
+</div>
+<div class="paragraph">
+<p>Pick one, pilfer it, repeat. That&#8217;s what they&#8217;re for. Hackers don&#8217;t reinvent the wheel—they improve it.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_make_it_yours"><a class="link" href="#_make_it_yours">Make it yours</a></h3>
+<div class="paragraph">
+<p>Once cloned, navigate into your new repository and start customizing:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nb">cd</span><span class="tok-w"> </span>dot<span class="tok-w">                </span><i class="conum" data-value="1"></i><b>(1)</b>
+nano<span class="tok-w"> </span>README.md<span class="tok-w">        </span><i class="conum" data-value="2"></i><b>(2)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Change into the <code>dot</code> directory</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Open the <code>README.md</code> file with <code>nano</code> text editor</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>There&#8217;s no shame in using nano to get started—every hacker needs a starting point. At least you&#8217;re still in the terminal. But don&#8217;t put off learning vim. It&#8217;s not as hard as it seems, and once you get the hang of it, you&#8217;ll wonder how you ever lived without its power and efficiency. Start small, practice often, and level up.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Eventually, we&#8217;ll be add aliases, functions, and environment variables to <code>bash/bashrc</code> and customizing your <code>/vim/vimrc</code> and stuff. These files will define how your system behaves.</p>
+</div>
+<div class="paragraph">
+<p>Where are the dots? That&#8217;ll come later. These files get linked into your home directory and begin with a dot (<code>.</code>) then.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_commit_and_push_changes"><a class="link" href="#_commit_and_push_changes">Commit and push changes</a></h3>
+<div class="paragraph">
+<p>After making edits, push your changes back to GitHub to keep your repository up to date:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>git<span class="tok-w"> </span>add<span class="tok-w"> </span>.
+git<span class="tok-w"> </span>commit<span class="tok-w"> </span>-m<span class="tok-w"> </span><span class="tok-s1">&#39;Initial customizations&#39;</span>
+git<span class="tok-w"> </span>push</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You might be prompted to do some other things here along the way.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>This ensures your dotfiles are always available, ready to deploy wherever you go.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_bootstrap_any_machine"><a class="link" href="#_bootstrap_any_machine">Bootstrap any machine</a></h3>
+<div class="paragraph">
+<p>Setting up a new machine? Perhaps not now, but later when you need to things just got a lot easier. Clone your dotfiles repo and run your setup script:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>git<span class="tok-w"> </span>clone<span class="tok-w"> </span>https://github.com/&lt;your-username&gt;/dot
+<span class="tok-nb">cd</span><span class="tok-w"> </span>dot
+./setup</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Assuming you&#8217;ve already installed all the other software packages you need, this single command sequence turns any blank system into your personal hacker&#8217;s workspace.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_hackers_perspective_11"><a class="link" href="#_hackers_perspective_11">Hacker&#8217;s perspective</a></h3>
+<div class="paragraph">
+<p>Dotfiles aren&#8217;t just a tradition; they&#8217;re a rite of passage. They represent ownership of your tools, your workflow, and your productivity. Every alias, every script, every tweak is a step toward mastery. With GitHub and the right template, managing and deploying your dotfiles is easier than ever. Hackers don&#8217;t wait for tools to adapt to them—they make the tools theirs. Start your dotfiles collection today, and take your first step toward complete system control.</p>
+</div>
 </div>
 </div>
 </div>
@@ -3629,7 +3793,7 @@ fmt <i class="conum" data-value="7"></i><b>(7)</b>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-13 10:36:41 -0500
+Last updated 2024-12-13 11:25:00 -0500
 </div>
 </div>
 </body>
