@@ -543,7 +543,14 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_why_wezterm">Why WezTerm?</a></li>
 </ul>
 </li>
-<li><a href="#github">Get Git and GitHub</a></li>
+<li><a href="#github">Get Git and GitHub</a>
+<ul class="sectlevel2">
+<li><a href="#_why_github_matters_to_hackers">Why GitHub matters to hackers</a></li>
+<li><a href="#_get_a_github_account">Get a GitHub account</a></li>
+<li><a href="#_github_tips_for_hackers">GitHub tips for hackers</a></li>
+<li><a href="#_the_hackers_perspective">The hacker’s perspective</a></li>
+</ul>
+</li>
 <li><a href="#dotfiles">Start a dot files repo</a></li>
 <li><a href="#config-wezterm">Configure WezTerm terminal</a></li>
 <li><a href="#shell">Learn shell basics</a></li>
@@ -1494,12 +1501,26 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 <div class="sect2">
 <h3 id="_windows_winget"><a class="link" href="#_windows_winget">Windows: winget</a></h3>
 <div class="paragraph">
-<p>Windows finally has a native package manager: <strong>winget</strong> (Windows Package Manager). It simplifies the process of installing, updating, and managing software directly from the command line, just like package managers on Unix-like systems. Here’s how you can master the basics.</p>
+<p>Windows finally has a native package manager: <code>winget</code> (Windows Package Manager). It simplifies the process of installing, updating, and managing software directly from the command line, just like package managers on Unix-like systems. Here’s how you can master the basics.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>We&#8217;ll only use <code>winget</code> to get WezTerm in this book since we are using WSL2 on Windows, but if you were to prefer Git-Bash <code>winget install --id git.git</code> would do it.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="sect3">
 <h4 id="_installing_winget"><a class="link" href="#_installing_winget">Installing winget</a></h4>
 <div class="paragraph">
-<p>Most modern versions of Windows 10 and 11 already have <strong>winget</strong> installed. To check, open PowerShell or Command Prompt and run:</p>
+<p>Most modern versions of Windows 10 and 11 already have <code>winget</code> installed. To check, open PowerShell or Command Prompt and run:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1512,6 +1533,9 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 </div>
 <div class="sect3">
 <h4 id="_common_winget_commands"><a class="link" href="#_common_winget_commands">Common winget commands</a></h4>
+<div class="paragraph">
+<p>Here are some of the <code>winget</code> command that you will use most often.</p>
+</div>
 <div class="sect4">
 <h5 id="_search_for_a_package"><a class="link" href="#_search_for_a_package">Search for a package</a></h5>
 <div class="paragraph">
@@ -1527,7 +1551,7 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">search</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">microsoft</span><span class="tok-p">.</span><span class="tok-n">visualstudiocode</span></code></pre>
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">search</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">github</span><span class="tok-p">.</span><span class="tok-nb">cli</span></code></pre>
 </div>
 </div>
 </div>
@@ -1546,7 +1570,7 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">install</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">microsoft</span><span class="tok-p">.</span><span class="tok-n">visualstudiocode</span></code></pre>
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">install</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">github</span><span class="tok-p">.</span><span class="tok-nb">cli</span></code></pre>
 </div>
 </div>
 </div>
@@ -1576,7 +1600,7 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">upgrade</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">microsoft</span><span class="tok-p">.</span><span class="tok-n">visualstudiocode</span></code></pre>
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">upgrade</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">github</span><span class="tok-p">.</span><span class="tok-nb">cli</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1603,7 +1627,7 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">uninstall</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">microsoft</span><span class="tok-p">.</span><span class="tok-n">visualstudiocode</span></code></pre>
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">uninstall</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">github</span><span class="tok-p">.</span><span class="tok-nb">cli</span></code></pre>
 </div>
 </div>
 </div>
@@ -1624,46 +1648,45 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 <div class="ulist">
 <ul>
 <li>
-<p><strong>View Command Help</strong>:</p>
-<div class="paragraph">
-<p>Not sure about a specific command? Use the help flag:</p>
+<p><strong>View Command Help</strong>: not sure about a specific command? Use the help flag:</p>
+</li>
+</ul>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-p">-</span><span class="tok-n">-help</span></code></pre>
 </div>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Add third-party repositories</strong>: winget supports additional repositories, giving you access to even more packages. Check out the official documentation for setup instructions.</p>
 </li>
 <li>
-<p><strong>Add Third-Party Repositories</strong>:</p>
-<div class="paragraph">
-<p>winget supports additional repositories, giving you access to even more packages. Check out the official documentation for setup instructions.</p>
-</div>
+<p><strong>Silent installs</strong>: some packages support silent installation. To avoid unnecessary prompts during installation, add:</p>
 </li>
-<li>
-<p><strong>Silent Installs</strong>:</p>
-<div class="paragraph">
-<p>Some packages support silent installation. To avoid unnecessary prompts during installation, add:</p>
+</ul>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-p">-</span><span class="tok-n">-silent</span></code></pre>
 </div>
 </div>
-</li>
-</ul>
-</div>
 </div>
 <div class="sect3">
 <h4 id="_benefits_of_winget"><a class="link" href="#_benefits_of_winget">Benefits of winget</a></h4>
-<div class="paragraph">
-<p><strong>Unified Package Management</strong>: Manage all your software installations and updates from one tool.</p>
-</div>
-<div class="paragraph">
-<p><strong>Simplified Workflow</strong>: No need to download installers or navigate through GUI wizards.</p>
-</div>
-<div class="paragraph">
-<p><strong>Cross-Compatibility</strong>: Works seamlessly with Windows 10 and 11.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Unified Package Management</strong>: manage all your software installations and updates from one tool.</p>
+</li>
+<li>
+<p><strong>Simplified Workflow</strong>: no need to download installers or navigate through GUI wizards.</p>
+</li>
+<li>
+<p><strong>Cross-Compatibility</strong>: works seamlessly with Windows 10 and 11.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>With winget, Windows users finally have a powerful tool to simplify software management. Whether you’re a developer or just looking to streamline your setup, winget brings the convenience of Linux-style package management to the Windows ecosystem.</p>
@@ -1794,7 +1817,175 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 <h2 id="github"><a class="link" href="#github">Get Git and GitHub</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
+<p>If you&#8217;re serious about coding, collaborating, or hacking (the good kind), you need a GitHub account. GitHub isn&#8217;t just a platform for software development—it&#8217;s a global repository of knowledge, code, and collaboration. For hackers, it&#8217;s an invaluable tool for both learning and sharing. Let&#8217;s get you started.</p>
+</div>
+<div class="sect2">
+<h3 id="_why_github_matters_to_hackers"><a class="link" href="#_why_github_matters_to_hackers">Why GitHub matters to hackers</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Learn from the best</strong>: GitHub hosts millions of open-source projects. Dive into repositories from industry giants or individual coders solving unique problems. Explore everything from cutting-edge AI models to security tools and exploits.</p>
+</li>
+<li>
+<p><strong>Version control mastery</strong>: understanding <code>git</code> and version control is a must for any hacker. GitHub is the perfect place to practice these skills in real-world scenarios.</p>
+</li>
+<li>
+<p><strong>Collaborate and contribute</strong>: join open-source projects, contribute code, and learn from community feedback. It&#8217;s the ultimate way to build your reputation and skills.</p>
+</li>
+<li>
+<p><strong>Showcase your skills</strong>: use GitHub as your portfolio. Potential collaborators, employers, or even other hackers will look at your repositories to see what you&#8217;re capable of.</p>
+</li>
+<li>
+<p><strong>Explore hidden gems</strong>: GitHub isn&#8217;t just code. It&#8217;s a treasure trove of scripts, configs, and knowledge that hackers can leverage for learning and inspiration.</p>
+</li>
+<li>
+<p><strong>Host your tools</strong>: publish your own scripts, utilities, or tools. Sharing your work solidifies your place in the hacker community.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You don&#8217;t have to use GitHub, you can <a href="#gitea">setup Gitea</a> instead—eventually.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_get_a_github_account"><a class="link" href="#_get_a_github_account">Get a GitHub account</a></h3>
+<div class="paragraph">
+<p>Everyone starts with a GitHub account. Here&#8217;s the part where you have to be thirteen or older.</p>
+</div>
+<div class="sect3">
+<h4 id="_sign_up"><a class="link" href="#_sign_up">Sign up</a></h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Visit <a href="https://github.com" class="bare">https://github.com</a>.</p>
+</li>
+<li>
+<p>Click on <strong>Sign Up</strong>.</p>
+</li>
+<li>
+<p>Enter a username (pick something unique and memorable), email, and password.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Choose a username that matches your local system&#8217;s account name on WSL2, Linux, or macOS. Consistency across environments reduces confusion and simplifies setup.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_install_git_and_github_cli"><a class="link" href="#_install_git_and_github_cli">Install Git and GitHub CLI</a></h4>
+<div class="paragraph">
+<p>The <code>git</code> and <code>gh</code> commands are two of the most important that you will use, sometimes hundreds of times a day.</p>
+</div>
+<div class="sect4">
+<h5 id="_for_macos"><a class="link" href="#_for_macos">For macOS</a></h5>
+<div class="paragraph">
+<p>Install Git and GitHub CLI with Homebrew:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>git<span class="tok-w"> </span>gh</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_for_linuxwsl2"><a class="link" href="#_for_linuxwsl2">For Linux/WSL2</a></h5>
+<div class="paragraph">
+<p>Update your system and install Git and GitHub CLI:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update<span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>-y<span class="tok-w"> </span>git<span class="tok-w"> </span>gh</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_verify_installations"><a class="link" href="#_verify_installations">Verify installations</a></h5>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>git<span class="tok-w"> </span>--version
+gh<span class="tok-w"> </span>--version</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_authenticate_with_github_cli"><a class="link" href="#_authenticate_with_github_cli">Authenticate with GitHub CLI</a></h4>
+<div class="paragraph">
+<p>Use the GitHub CLI tool to authenticate your account securely:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>gh<span class="tok-w"> </span>auth<span class="tok-w"> </span>login</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Choose HTTPS your preferred authentication method.</p>
+</div>
+<div class="paragraph">
+<p>Follow the prompts to log in and configure access. Your web browser should be opened automatically.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This is one of the reasons we installed <code>wslu</code> earlier on WSL2 on Windows since it allows the web browser to be automatically opened by the <code>gh auth login</code> command.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_github_tips_for_hackers"><a class="link" href="#_github_tips_for_hackers">GitHub tips for hackers</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Fork and tweak</strong>: fork repositories of tools or code you admire, tweak them, and make them yours.</p>
+</li>
+<li>
+<p><strong>Follow interesting developers</strong>: keep up with others who are building tools or hacking on problems that interest you.</p>
+</li>
+<li>
+<p><strong>Discover awesome lists</strong>: search for curated "awesome lists" on GitHub to find new tools, frameworks, and libraries.</p>
+</li>
+<li>
+<p><strong>Get ideas for own dot files and scripts</strong>:  everyone shares their personal home directory configurations. You&#8217;ll start yours next.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_hackers_perspective"><a class="link" href="#_the_hackers_perspective">The hacker’s perspective</a></h3>
+<div class="paragraph">
+<p>GitHub isn&#8217;t just for developers—it&#8217;s for hackers, thinkers, and creators. It&#8217;s a playground, a library, and a stage all in one. Whether you&#8217;re contributing to open-source security tools, learning from codebases, or building your own projects, GitHub is where it all happens. Get an account, dive in, and start hacking (ethically, of course).</p>
+</div>
 </div>
 </div>
 </div>
@@ -2292,7 +2483,7 @@ fmt <i class="conum" data-value="7"></i><b>(7)</b>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-12 21:37:49 -0500
+Last updated 2024-12-12 22:00:18 -0500
 </div>
 </div>
 </body>

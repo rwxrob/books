@@ -88,7 +88,7 @@ include::get-wezterm.adoc[]
 [[github]]
 = Get Git and GitHub
 
-_In development..._
+include::get-git-github.adoc[]
 
 [[dotfiles]]
 = Start a dot files repo
