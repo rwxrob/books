@@ -43,3 +43,7 @@ include::perpetual-publishing.adoc[]
 = Get a job
 
 include::cv-vs-resume.adoc[]
+
+= Purpose
+
+include::motivation.adoc[]
