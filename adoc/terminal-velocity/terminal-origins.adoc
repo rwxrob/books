@@ -30,9 +30,9 @@ Teletypes were essentially typewriters connected to a communication line, capabl
 
 - *Documentation*: some tutorials and documentation such as `vimtutor` assume you are using an extremely slow screen and overemphasize counting and positional navigation when search-centric navigation and completion are now preferred.
 
-== A specific example: Unix and the Model 33
+== Unix and the Model 33
 
-In the 1970s, Ken Thompson and Dennis Ritchie (friends of the young Rob Pike, who invented the Go programming and Unicode language later) developed *Unix* using a PDP-11 connected to a Teletype Model 33. Commands like `ls` (list files) or `man` (manual pages) were short to minimize typing effort on the slow device. The Model 33’s limitations, like its speed and one-line-at-a-time input, directly influenced the minimalism of Unix’s command-line interface.
+In the 1970s, Ken Thompson and Dennis Ritchie (friends of the young Rob Pike, who invented the Go programming and Unicode language later) developed *Unix* using a PDP-11 connected to a Teletype Model 33. Commands like `ls` (list files) or `man` (manual pages) were short to minimize typing effort on the slow device. The Model 33’s limitations, like its speed and one-line-at-a-time input, directly influenced the minimalism of Unix’s command-line interface. The modern _Internet of (hackable) Things_ today ironically contains many more devices just like these original slow ones that can only be hacked with the same minimal command line attacks.
 
 == Hacker's perspective
 

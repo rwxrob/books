@@ -59,7 +59,6 @@ include::get-wezterm.adoc[]
 
 include::get-git-github.adoc[]
 
-
 include::start-dotfiles.adoc[]
 
 [[config-wezterm]]
