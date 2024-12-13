@@ -80,15 +80,10 @@ include::validate-bash-on-linux.adoc[]
 
 include::manage-software/index.adoc[]
 
-[[wezterm]]
-= Get Wezterm terminal
+[[get-wezterm]]
+= Get WezTerm terminal
 
-_In development..._
-
-[[shell]]
-= Learn shell basics
-
-_In development..._
+include::get-wezterm.adoc[]
 
 [[github]]
 = Get Git and GitHub
@@ -97,6 +92,16 @@ _In development..._
 
 [[dotfiles]]
 = Start a dot files repo
+
+_In development..._
+
+[[config-wezterm]]
+= Configure WezTerm terminal
+
+_In development..._
+
+[[shell]]
+= Learn shell basics
 
 _In development..._
 
