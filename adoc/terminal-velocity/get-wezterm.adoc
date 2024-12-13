@@ -3,7 +3,7 @@
 
 When you can hack from your own computer, WezTerm is your gateway to a terminal experience that matches your skills: fast, modern, and built for power users. Whether you're hacking on Windows, macOS, or Linux, this guide gets you set up without breaking a sweat. Pick your platform, follow the steps, and take control of your terminal. It's time to upgrade your game.
 
-=== Windows: Install with winget
+== Windows: Install with winget
 
 You've got *winget*, and that's all you need. Open PowerShell and run:
 
@@ -21,7 +21,7 @@ wezterm
 
 Done. That's it. Fast, efficient, and no unnecessary clicking around.
 
-=== Mac: Install with Homebrew
+== Mac: Install with Homebrew
 
 On macOS, *Homebrew* does all the heavy lifting. Just run:
 
@@ -39,11 +39,11 @@ wezterm
 
 That's how macOS should always feel—simple and to the point.
 
-=== Linux/WSL2: Install with apt
+== Linux/WSL2: Install with apt
 
 For apt-based systems like Ubuntu, you can use the official WezTerm repository for a streamlined install.
 
-==== Add the WezTerm repository
+=== Add the WezTerm repository
 
 Add the GPG key and repository to your system:
 
@@ -54,7 +54,7 @@ curl -fsSL "https://apt.wezfurlong.org/wezterm.asc" | gpg --dearmor | sudo tee /
 echo "deb [signed-by=/usr/share/keyrings/wezterm-archive-keyring.gpg] https://apt.wezfurlong.org/ stable main" | sudo tee /etc/apt/sources.list.d/wezterm.list
 ----
 
-==== Update your package lists
+=== Update your package lists
 
 Refresh your package index:
 
@@ -63,7 +63,7 @@ Refresh your package index:
 sudo apt update
 ----
 
-==== Install WezTerm
+=== Install WezTerm
 
 Install it directly with apt:
 
@@ -72,7 +72,7 @@ Install it directly with apt:
 sudo apt install wezterm
 ----
 
-==== Verify and Launch
+=== Verify and Launch
 
 Check the installation:
 

@@ -1,6 +1,8 @@
 # Books
 
-Here you'll find my perpetually unfinished books.
+Here you'll find my perpetually unfinished books. I make no promises. I have a job.
+
+## Monorepo magic
 
 The AsciiDoc monorepo is nice because I can include sections in each book rather than repeat them if they are identical (such as how to start a terminal session). It also allows the building of applications that embed the content of the books. More on this in the book [*Autodidactic*](https://rwxrob.github.io/books/autodidactic)
 

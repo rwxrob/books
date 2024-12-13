@@ -7,5 +7,5 @@ The code portions of this book are dedicated to the public domain under the term
 
 The non-code prose and images are licensed under the more restrictive Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0) (https://creativecommons.org/licenses/by-nc-nd/4.0/). This means that no non-code prose or image from the book may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the copyright holder. This includes remaking the same content in different formats such as PDF or EPUB since these fall under the definition of derived works. This restriction is primarily in place to ensure outdated copies are not redistributed given the frequent updates expected.
 
-_"Terminal Velocity"_ is a legal trademarks of Robert S. Muhlestein but can be used freely to refer to this book without limitation. To avoid potential confusion, intentionally using this trademark to refer to other projects—free or proprietary—is prohibited.
+_"Terminal Velocity"_ is a legal trademark of Robert S. Muhlestein but can be used freely to refer to this book without limitation. To avoid potential confusion, intentionally using this trademark to refer to other projects—free or proprietary—is prohibited.
 
