@@ -64,9 +64,14 @@ sudo apt install wslu
 
 Now when you do anything like open a URL or a file it will use the host Windows OS application to do it. This is particularly nice when authenticating with `gh auth login` later and opening a graphical web browser when a terminal one needs the help with a single `,` keystroke.
 
+[TIP]
+====
+Any executable can be run from within WSL2, you just have to make sure you have the `.exe` at the end (ex: `powershell.exe`, `winget.exe`, `notepad.exe`). This level of integration makes it possible to create automatic notifications and other integrations with Windows but to write them in bash or even Go and have them run on Linux under WSL2. If that doesn't bring out your hacker grin, I don't know what will.
+====
+
 == Start WSL terminal
 
-Until we upgrade the terminal, you can pull up a terminal running bash shell in WSL by pressing `Windows` key and typing `wsl` and pressing `Enter`.
+Until we upgrade the terminal, you can pull up a terminal anytime by running bash shell in WSL by pressing `Windows` key and typing `wsl` and pressing `Enter`.
 
 [NOTE]
 ====
