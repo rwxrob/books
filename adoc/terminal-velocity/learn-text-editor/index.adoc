@@ -1,4 +1,10 @@
+[[edit-text]]
+= Learn to edit text anywhere
+
+_In development..._
+
 include::why-all.adoc[]
+
 
 include::learn-ed.adoc[]
 

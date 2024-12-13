@@ -79,10 +79,7 @@ _In development..._
 
 _In development..._
 
-[[vim]]
-= Learn to edit text anywhere
-
-_In development..._
+include::learn-text-editor/index.adoc[]
 
 [[labrepo]]
 = Start a lab repo

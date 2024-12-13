@@ -579,7 +579,13 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#config-wezterm">Configure WezTerm terminal</a></li>
 <li><a href="#shell">Learn shell basics</a></li>
 <li><a href="#tmux">Learn screen and tmux multiplexing</a></li>
-<li><a href="#vim">Learn to edit text anywhere</a></li>
+<li><a href="#edit-text">Learn to edit text anywhere</a>
+<ul class="sectlevel2">
+<li><a href="#_text_editing_with_ed_ex_vi_vim_and_nvim">Text editing with ed, ex, vi, vim, and nvim</a></li>
+<li><a href="#_learn_ed">Learn ed</a></li>
+<li><a href="#learn-vim">Learn Vim</a></li>
+</ul>
+</li>
 <li><a href="#labrepo">Start a lab repo</a></li>
 <li><a href="#weechat">Learn weechat IRC</a></li>
 <li><a href="#browser">Learn w3m or lynx web browser</a></li>
@@ -2336,10 +2342,788 @@ gh<span class="tok-w"> </span>--version</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="vim"><a class="link" href="#vim">Learn to edit text anywhere</a></h2>
+<h2 id="edit-text"><a class="link" href="#edit-text">Learn to edit text anywhere</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><em>In development&#8230;&#8203;</em></p>
+</div>
+<div class="sect2">
+<h3 id="_text_editing_with_ed_ex_vi_vim_and_nvim"><a class="link" href="#_text_editing_with_ed_ex_vi_vim_and_nvim">Text editing with ed, ex, vi, vim, and nvim</a></h3>
+<div class="paragraph">
+<p>Listen, learning <strong>ed</strong>, <strong>ex</strong>, <strong>vi</strong>, <strong>vim</strong>, and finally <strong>nvim</strong> isn’t just some progression of tools—it’s the evolution of a mindset. This isn’t about convenience; it’s about control. Total, undeniable control. You want to call yourself a hacker? Then you need to start where it all began, in the silence of a terminal that doesn’t care about your comfort or your flashy GUI.</p>
+</div>
+<div class="sect3">
+<h4 id="_why_ed"><a class="link" href="#_why_ed">Why <code>ed</code>?</a></h4>
+<div class="paragraph">
+<p><code>ed</code> isn’t just a tool—it’s a foundation. It’s raw. It’s what you use when the system is against you. Imagine this: you’ve gained access, but there’s no PTY. No terminal emulator. Nothing fancy. You’re in, but the system isn’t your friend, and it sure as hell won’t give you a cozy keylogger-free interface. <code>ed</code> doesn’t broadcast to a PTY. It’s quiet. Silent. Like a shadow. Learn it, and you’ve already outmaneuvered the lazy attackers who need their tools to hold their hands.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_then_ex"><a class="link" href="#_then_ex">Then <code>ex</code></a></h4>
+<div class="paragraph">
+<p>You graduate to <code>ex</code>, and it’s like finding a knife in the dark—it’s sharper, more versatile. <code>ex</code> introduces the idea of commanding the editor like an operating system. You don’t need to see what’s happening on the screen; you feel it. You own it. This is where you start to understand editing isn’t just about text—it’s about intent.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_then_vi"><a class="link" href="#_then_vi">Then <code>vi</code></a></h4>
+<div class="paragraph">
+<p>With <code>vi</code>, you step into the world of visibility. It&#8217;s literally the <em>visual</em> mode of <code>ex</code>. You see your actions take shape, but the constraints remain. It’s fast, lean, and everywhere. Why? Because it’s the standard. No matter what system you touch—some archaic Unix box or a modern Linux server—<code>vi</code> is there, waiting for you. The only place you <em>won&#8217;t</em> find it is in hacked containers, but that&#8217;ll come later. Learn it, and you can edit your way out of anything.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_then_vim"><a class="link" href="#_then_vim">Then <code>vim</code></a></h4>
+<div class="paragraph">
+<p><code>vim</code> is power. It’s mastery. It&#8217;s iMprovement. It’s taking everything you’ve learned and putting it on steroids. Syntax highlighting, macros, buffers—you don’t just edit files now. You command them. You wield <code>vim</code> like a weapon, bending it to your will.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_finally_nvim"><a class="link" href="#_finally_nvim">Finally, <code>nvim</code></a></h4>
+<div class="paragraph">
+<p>And then there’s <code>nvim</code>. Modern, extensible, programmable. The preferred editor of Roblox players and software developers, which, let&#8217;s be honest, are usually one and the same. It’s for the hacker who doesn’t just want to use tools but wants to build their own on their cushy home rig. You script. You automate. You create your own path. Then you use your creations to own your enemies. <code>nvim</code> isn’t just a tool—it’s a platform for invention. But don’t skip the steps. Without the grit of <code>ed</code>, the insight of <code>ex</code>, the ubiquity of <code>vi</code>, and the power of <code>vim</code>, you won’t appreciate the elegance of <code>nvim</code>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_hackers_creed"><a class="link" href="#_the_hackers_creed">The hacker’s creed</a></h4>
+<div class="paragraph">
+<p>When you’re in, the system doesn’t want you there. GUIs are a liability, PTYs tattletale, and every keystroke could betray you. But with these tools, you’re invisible. They don’t demand attention, and they don’t leave a trail. They’re lean, fast, and everywhere. Learn them in this order, and you’ll become the master of any environment you touch.</p>
+</div>
+<div class="paragraph">
+<p>Hacking isn’t about the flash. It’s about control. Take it.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learn_ed"><a class="link" href="#_learn_ed">Learn ed</a></h3>
+<div class="paragraph">
+<p><code>ed</code> is the original Unix text editor. It was based on QED that Ken Thompson had used so it was not the first but was definitely the most influential digital text editor in history.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To shut down editor flame wars, someone will usually quote the <code>ed</code> <code>man</code> page: "ed is the standard Unix editor". Now you know why.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_one_line_at_a_time"><a class="link" href="#_one_line_at_a_time">One line at a time</a></h4>
+<div class="paragraph">
+<p>The <code>ed</code> editor is line-oriented, operating on a text file one line at a time. Today this may seem like a huge annoyance, but elite hackers know how valuable knowing how to edit text from just the command-line is today.</p>
+</div>
+<div class="paragraph">
+<p>When a system is compromised for the first time—and you (the hacker) gains access—very often it is by owning a vulnerability that will just run a single command injected into the small amount of compromised memory. There&#8217;s not enough room to run even a large program like <code>vim</code> if it is even on the computer. Having something small—and even better—something that doesn&#8217;t have to be sent over the wire is a golden advantage once you&#8217;ve gained this initial access.</p>
+</div>
+<div class="paragraph">
+<p>Then there&#8217;s the problem of getting a full terminal interface instead of just a command line interface. As we&#8217;ll learn <code>vi</code> stands for <em>visual</em> mode of the command-line <code>ex</code> (a newer <code>ed</code>). Even if you did have the memory and <code>vi</code> availability, it requires a much more complicated interface driver (a <code>pty</code>) in order to work, which takes time and energy to setup. Some devices don&#8217;t even have <code>pty</code> devices at all because they are not even designed to ever be used interactively—but you can.</p>
+</div>
+<div class="paragraph">
+<p>This is where <code>ed</code> skills shine. If you can edit the key files that you need to with nothing more than a simple read-evaluate-print-loop (REPL) command line you can enhance your connection to do other things later.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Security conscious systems monitoring often triggers when <em>anything</em> uses a <code>pty</code> in order to detect unauthorized interactivity. Using something like <code>ed</code> doesn&#8217;t trigger these alarms. In fact, you can even make it so there are no keystrokes at all to monitor by typing the commands on your system and just sending them one at a time to the compromised target.</p>
+</div>
+<div class="paragraph">
+<p>While I was at Teleport our sysadmins caught a hacker who did exactly this through a vulnerable printer driver that was listening on the public Internet. I watched our lead admin—with the cops standing beside him—as he setup a keylogger and saved every keystroke the black-hat made to a file so they could put the naive script kiddie away. They did. Had he known what you know now they might never have caught him.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_getting_started"><a class="link" href="#_getting_started">Getting started</a></h4>
+<div class="paragraph">
+<p>To open a file in <code>ed</code>, use the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>ed<span class="tok-w"> </span>filename.txt</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If the file does not exist, <code>ed</code> creates it when you save changes.</p>
+</div>
+<div class="sect4">
+<h5 id="_a_append_text"><a class="link" href="#_a_append_text"><code>a</code>: append text</a></h5>
+<div class="paragraph">
+<p>Appends text after the current line. End the input with a period (<code>.</code>) on a new line.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>a
+This<span class="tok-w"> </span>is<span class="tok-w"> </span>the<span class="tok-w"> </span>first<span class="tok-w"> </span>line.
+This<span class="tok-w"> </span>is<span class="tok-w"> </span>the<span class="tok-w"> </span>second<span class="tok-w"> </span>line.
+.</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_i_insert_text"><a class="link" href="#_i_insert_text"><code>i</code>: insert text</a></h5>
+<div class="paragraph">
+<p>Inserts text before the current line.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>i
+This<span class="tok-w"> </span>line<span class="tok-w"> </span>will<span class="tok-w"> </span>be<span class="tok-w"> </span>inserted<span class="tok-w"> </span>before<span class="tok-w"> </span>the<span class="tok-w"> </span>current<span class="tok-w"> </span>line.
+.</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_c_change_text"><a class="link" href="#_c_change_text"><code>c</code>: change text</a></h5>
+<div class="paragraph">
+<p>Replaces the current line with new text.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>c
+This<span class="tok-w"> </span>is<span class="tok-w"> </span>the<span class="tok-w"> </span>new<span class="tok-w"> </span>text<span class="tok-w"> </span><span class="tok-k">for</span><span class="tok-w"> </span>the<span class="tok-w"> </span>current<span class="tok-w"> </span>line.
+.</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_d_delete_text"><a class="link" href="#_d_delete_text"><code>d</code>: delete text</a></h5>
+<div class="paragraph">
+<p>Deletes the current line or a specified range of lines.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>d</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To delete a range of lines:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-m">1</span>,3d</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_p_or_print_the_current_line"><a class="link" href="#_p_or_print_the_current_line"><code>p</code> or <code>.</code>: print the current line</a></h5>
+<div class="paragraph">
+<p>Prints the text on the current line.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>p</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Or the simpler:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>.</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You will find <code>.</code> is used to mean <em>current</em> a lot in everything from the terminal. For example, it also means the current directory in the file system.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_n_print_line_number"><a class="link" href="#_n_print_line_number"><code>n</code>: print line number</a></h5>
+<div class="paragraph">
+<p>Prints the line number alongside the text.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>n</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_print_the_current_line_number"><a class="link" href="#_print_the_current_line_number"><code>=</code>: print the current line number</a></h5>
+<div class="paragraph">
+<p>Displays the number of the current line.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-o">=</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_nmp_print_range_of_lines"><a class="link" href="#_nmp_print_range_of_lines"><code>N,Mp</code>: print range of lines</a></h5>
+<div class="paragraph">
+<p>Prints everything from first line number (N) to second line number (M).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-m">10</span>,20p</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_p_print_the_whole_file"><a class="link" href="#_p_print_the_whole_file"><code>%p</code>: print the whole file</a></h5>
+<div class="paragraph">
+<p>Prints everything from first line to last.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>%p</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This is the same as the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-m">1</span>,<span class="tok-nv">$p</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_re_search_for_a_regular_expression_pattern"><a class="link" href="#_re_search_for_a_regular_expression_pattern"><code>/re/</code>: search for a regular expression pattern</a></h5>
+<div class="paragraph">
+<p>Finds the next occurrence of a pattern in the file.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>/text/</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_grep_search_for_pattern_and_print_it"><a class="link" href="#_grep_search_for_pattern_and_print_it"><code>g/re/p</code>: search for pattern and print it</a></h5>
+<div class="paragraph">
+<p>Globally finds all the occurences of a pattern in the file and then prints them out.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>g/^1/p</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If you didn&#8217;t notice by now, this is the origin of the <code>grep</code> (<code>g</code> + <code>r`egular + `e`xpression + `p</code>) command, which does exactly the same thing but as a single command.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_spatternreplacement_substitute_text"><a class="link" href="#_spatternreplacement_substitute_text"><code>s/pattern/replacement/</code>: substitute text</a></h5>
+<div class="paragraph">
+<p>Replaces the first occurrence of a pattern in the current line with the replacement.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>s/old/new/</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To replace globally in all lines:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-m">1</span>,<span class="tok-nv">$s</span>/old/new/g</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Or, you can use <code>%</code> instead:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>%s/old/new/g</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If you didn&#8217;t notice by now, this is the origin of the <code>sed</code> (<code>s</code> - <code>ed</code>) command, which does exactly the same thing but as a single command.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_w_write_changes"><a class="link" href="#_w_write_changes"><code>w</code>: write changes</a></h5>
+<div class="paragraph">
+<p>Writes the changes made to the file.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>w</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_q_quit"><a class="link" href="#_q_quit"><code>q</code>: quit</a></h5>
+<div class="paragraph">
+<p>Exits the editor.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>q</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Usually, you will want to combine this with <code>w</code> so save before quitting. It&#8217;s a good habit.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>wq</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_q_quit_without_saving"><a class="link" href="#_q_quit_without_saving"><code>Q</code>: quit without saving</a></h5>
+<div class="paragraph">
+<p>Exits the editor without saving changes.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>Q</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="learn-vim"><a class="link" href="#learn-vim">Learn Vim</a></h3>
+<div class="paragraph">
+<p>When it comes to mastering text editing, choosing the right starting point can have a profound impact on your efficiency, understanding, and future flexibility as a developer or technical professional. Among the myriad of editors available, learning Vim first offers unique advantages that extend well beyond mere productivity. Honestly, it&#8217;s not as hard as people think. Start with the basics.</p>
+</div>
+<div class="paragraph">
+<p>Is it hard? Yes.</p>
+</div>
+<div class="paragraph">
+<p>Is it worth it? Yes.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Do not even attempt to learn Vim before learning to type from home row on an American keyboard and achieving a speed of about 30 words per minute.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_avoid_gimmicks_and_games"><a class="link" href="#_avoid_gimmicks_and_games">Avoid gimmicks and games</a></h4>
+<div class="paragraph">
+<p>Don&#8217;t do things like VimAdventures or even VimTutor. Use an <em>actual</em> terminal to learn how to use a <em>terminal</em> editor instead. I know, crazy, right? The thought that just maybe a <em>web</em> app isn&#8217;t the best way to learn a <em>terminal</em> editor. It doesn&#8217;t work. I promise. Not even all the key combinations are possible doing that stuff within a web browser.</p>
+</div>
+<div class="paragraph">
+<p>Plus you won&#8217;t remember them. Our brains are hard coded to remember things by association. None of this gimmick creators are aware of that, for some reason. The best way to learn Vim is to use <code>vim</code> to edit actual documents and code. Commit to learning it <em>right</em> and then tell yourself you won&#8217;t create or edit another text file with any other editor. If you are frightened, start with simple notes that you have backed up in Git.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Making the commitment to do everything in <code>vim</code> is terrifying at first. I remember exactly where I was sitting, looking out the two-story window across the street at Wieden &amp; Kennedy in Portland, Oregon while working for Teleport Internet Services. The same place I committed to learning Linux when my unknowing mentor Joey (our head systems administrator) told me about it. At first the pain was excruciating, would I make my deadlines, would people thought I was a slow coder, would I royally screw up an important configuration file. That fear quickly turned to the greatest confidence I&#8217;ve gained. I can handle any text file on any of millions of Unix and Linux systems and containers in the world today. It&#8217;s so worth it.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_learn_standard_vim_first"><a class="link" href="#_learn_standard_vim_first">Learn standard Vim first</a></h4>
+<div class="paragraph">
+<p>The first thing anyone who learns that you are learning Vim will try to tell you is all the things you should customize and install to make it "easier" to use Vim. Don&#8217;t listen to them, for now. Right now you are focused on learning the standard Vim text editor with mostly default settings so that you can use Vim on any computer that has it installed. Then, after you have fully mastered the standard, you can decide what to allow yourself to use on your favorite computer confident in the knowledge that you can be productive on <em>any</em> computer that has Vim if you need to be later. To do otherwise would be to shoot yourself in the foot by putting bad things permanently into your muscle memory.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_vimtutor_gets_almost_everything_wrong"><a class="link" href="#_vimtutor_gets_almost_everything_wrong">Vimtutor gets almost everything wrong</a></h4>
+<div class="paragraph">
+<p>The <code>vimtutor</code> was made by college kids who just learned it and Bram who added several unnecessary Vim-isms. It is full of substantial errors. Many of them make it impossible for you to use <code>vi</code> if that is all you have, and for no reason. Many of the combinations are actually harder to type like <code>:10</code> versus <code>:10G</code>.  The <code>vimtutor</code> is still better than many other methods of learning, but make sure you understand the rest of the summary that follows when you do it.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_summary"><a class="link" href="#_summary">Summary</a></h4>
+<div class="paragraph">
+<p>The full documentation for commands is perhaps best referenced in the excellent Neovim help documentation itself with <code>:help</code>. You can get help on a specific command, for example, by typing the command after <code>:help</code> like <code>:help )</code>. The following summary distinguishes the command I personally find the most useful and organizes them based on the ones you will have in <em>any</em> <code>vi</code> from those in <code>vim</code> and <code>nvim</code>. This helps you make a solid decision about what priority you put on learning the command. For example, <code>:100</code> takes you to line number 100 without updating the "jump list" but you might not care to ever start doing that if you want to be compatible with <code>vi</code> which used <code>100G</code> instead. The <code>:100</code> does not work in <code>vi</code> at all. This also affects how you memorize use of external filters, which are supported in most all versions of <code>vi</code> but <em>do not work</em> with <code>:100</code> while they do work with <code>:100G</code>. I&#8217;ve organized these confusing distinctions for your simply here so you know to learn the <code>vi</code> compatible stuff first before using the rest—as any true hacker would prefer.</p>
+</div>
+<div class="paragraph">
+<p><em>Coming soon &#8230;&#8203;</em></p>
+</div>
+<div class="paragraph">
+<p><em>(This is currently a place for me to dump all the things that I notice as I remember them. Eventually, each will be fleshed out in addition to being included in the quick reference sheet and the eventual <code>learnvim</code> command.)</em></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use <code>Control-[</code> instead of <code>Esc</code> on American keyboards.</p>
+</li>
+<li>
+<p><code>hjkl</code> for navigation</p>
+</li>
+<li>
+<p><code>u</code> for undo</p>
+</li>
+<li>
+<p>Prefer search-centric navigation with <code>/</code> and <code>?</code> (over line num and counting)</p>
+</li>
+<li>
+<p><code>:r /tmp/foo</code> to read file</p>
+</li>
+<li>
+<p>Do not use counts for motion, use search and paragraph <code>p</code> and word <code>w</code></p>
+</li>
+<li>
+<p>Filters (<code>!!</code>,<code>!}</code>)</p>
+</li>
+<li>
+<p><code>:n</code> next file</p>
+</li>
+<li>
+<p><code>:wn</code> save current file so can open next (otherwise you have to find later)</p>
+</li>
+<li>
+<p><code>:N</code> open previous file</p>
+</li>
+<li>
+<p>Use filter instead of <code>:r</code> (<code>:r !ls</code> becomes <code>ls</code> on line and <code>!!bash</code>)</p>
+</li>
+<li>
+<p>Filters on actual text (instead of <code>:</code>) allow easy modification and multi-line</p>
+</li>
+<li>
+<p>Filter command + backspace to remove <code>!</code> easier than typing <code>:#,#</code> numbers</p>
+</li>
+<li>
+<p>Filter with <code>yyy</code> command to yank to <code>/tmp/buf</code> (loads <code>pbcopy</code> also)</p>
+</li>
+<li>
+<p>Filter with <code>ddd</code> command to delete to <code>/tmp/buf</code> (loads <code>pbcopy</code> also)</p>
+</li>
+<li>
+<p>Filter with <code>cmt</code> to comment based on current file type</p>
+</li>
+<li>
+<p>Filter with <code>pre foo</code> to prefix</p>
+</li>
+<li>
+<p>Prefer new <code>tmux</code> window over external commands with <code>:!</code> (unless filters)</p>
+</li>
+<li>
+<p><code>ZZ</code> instead of <code>:wq</code>, <code>:qw</code>, or <code>:x</code></p>
+</li>
+<li>
+<p><code>:q!</code> instead of <code>ZQ</code></p>
+</li>
+<li>
+<p><code>x</code> to delete character under cursor</p>
+</li>
+<li>
+<p><code>i</code> to start inserting in front of current character</p>
+</li>
+<li>
+<p><code>w</code> for word nav</p>
+</li>
+<li>
+<p><code>G</code> always instead of <code>:</code> (vimism)</p>
+</li>
+<li>
+<p><code>1G</code> instead of <code>gg</code> (vimism) to nav to start of file</p>
+</li>
+<li>
+<p><code>D</code> instead of <code>d$</code> to delete to end of line</p>
+</li>
+<li>
+<p><code>C</code> instead of <code>c$</code> to change to end of line</p>
+</li>
+<li>
+<p><code>y$</code> yank to end of line</p>
+</li>
+<li>
+<p><code>ct</code> change up to next character</p>
+</li>
+<li>
+<p><code>c/</code> change up to next search match</p>
+</li>
+<li>
+<p><code>A</code> append to end of line</p>
+</li>
+<li>
+<p><code>ea</code> append to the end of a word</p>
+</li>
+<li>
+<p><code>p</code> to put/paste on line after</p>
+</li>
+<li>
+<p><code>P</code> to put/paste line above (good for top of file)</p>
+</li>
+<li>
+<p><code>r</code> replace current character with another</p>
+</li>
+<li>
+<p><code>o</code> open new line for editing after current line</p>
+</li>
+<li>
+<p><code>O</code> open new line for editing above (good for top of file)</p>
+</li>
+<li>
+<p><code>I</code> to insert at beginning of text on the line</p>
+</li>
+<li>
+<p><code>0i</code> to insert at absolute beginning of line</p>
+</li>
+<li>
+<p><code>J</code> join following line to current</p>
+</li>
+<li>
+<p><code>t&lt;char&gt;</code> to navigate to first character in line (better than counting)</p>
+</li>
+<li>
+<p><code>/</code> to navigate to search match</p>
+</li>
+<li>
+<p><code>n</code> to repeat search for next</p>
+</li>
+<li>
+<p><code>N</code> to go back to previous search match</p>
+</li>
+<li>
+<p><code>.</code> repeat last command, spam this a lot, easier than numbers</p>
+</li>
+<li>
+<p><code>!!</code> to replace current line by sending it to filter program</p>
+</li>
+<li>
+<p>Use <code>Control-i</code> optionally instead of <code>Tab</code></p>
+</li>
+<li>
+<p><code>~</code> toggle case of current character</p>
+</li>
+<li>
+<p><code>:s,some,other,g</code> replace other with some on line (<code>:s/some/other/g</code> also)</p>
+</li>
+<li>
+<p><code>:%s,some,other,g</code> replace some with other in file (live display)</p>
+</li>
+<li>
+<p><code>:set list</code> show all spaces and tabs</p>
+</li>
+<li>
+<p><code>:set nolist</code> hide all spaces and tabs</p>
+</li>
+<li>
+<p><code>:set nu</code> turn on line numbers</p>
+</li>
+<li>
+<p><code>:set nonu</code> turn off line numbers</p>
+</li>
+<li>
+<p><code>:help</code> for help</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Vimisms that are useful and worth learning:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>(</code> start of sentence</p>
+</li>
+<li>
+<p><code>)</code> end of sentence</p>
+</li>
+<li>
+<p><code>das</code> cut current current sentence</p>
+</li>
+<li>
+<p><code>K</code> to see documentation about anything</p>
+</li>
+<li>
+<p><code>gwaf</code> reformat comment paragraphs, etc</p>
+</li>
+<li>
+<p><code>gd</code> to jump to definition</p>
+</li>
+<li>
+<p><code>gj</code> down one display line (good for single line markdown paragraphs)</p>
+</li>
+<li>
+<p><code>gk</code> down one display line (good for single line markdown paragraphs)</p>
+</li>
+<li>
+<p><code>C-o</code> to jump to last nav position</p>
+</li>
+<li>
+<p><code>C-i</code> opposite of <code>C-o</code></p>
+</li>
+<li>
+<p><code>gx</code> to open a URL in web browser</p>
+</li>
+<li>
+<p><code>z=</code> to lookup word in dictionary</p>
+</li>
+<li>
+<p><code>zg</code> to add a word to dictionary</p>
+</li>
+<li>
+<p><code>,</code> leader (for later)</p>
+</li>
+<li>
+<p><code>Tab Tab</code> for in-line omni-completion</p>
+</li>
+<li>
+<p><code>C-d</code> for completion from <code>:</code> line</p>
+</li>
+<li>
+<p><code>C-n</code> down in completion menu</p>
+</li>
+<li>
+<p><code>C-p</code> up in completion menu</p>
+</li>
+<li>
+<p><code>C-r</code> (vimism) for redo (but rare)</p>
+</li>
+<li>
+<p><code>C-w C-o</code> fix window buffers</p>
+</li>
+<li>
+<p><code>ciw</code> start changing the current word from within it.</p>
+</li>
+<li>
+<p><code>!ap</code> send the current paragraph to filter program</p>
+</li>
+<li>
+<p><code>dap</code> to delete a paragraph from within it.</p>
+</li>
+<li>
+<p><code>yap</code> to yank a paragraph from within it.</p>
+</li>
+<li>
+<p><code>daf</code> to yank delete an entire function.</p>
+</li>
+<li>
+<p><code>dif</code> to yank indide of the function.</p>
+</li>
+<li>
+<p><code>yif</code> to yank the inside of a function.</p>
+</li>
+<li>
+<p><code>yaf</code> to yank an entire function.</p>
+</li>
+<li>
+<p>Paragraph and function operations: <code>dap</code>,<code>yap</code>,<code>daf</code>,<code>yaf</code></p>
+</li>
+<li>
+<p><code>daw</code> + <code>.</code> instead of <code>d2w</code> to delete current word</p>
+</li>
+<li>
+<p>Filters (<code>!af</code>, <code>!if</code>)</p>
+</li>
+<li>
+<p><code>C-l</code> clear last search term</p>
+</li>
+<li>
+<p><code>:PlugInstall</code> reload plugins</p>
+</li>
+<li>
+<p><code>:GoInstallBinaries</code> download and install Go development binaries (slow)</p>
+</li>
+<li>
+<p><code>C-]</code> follow link in <code>:help</code> (only, <code>C-]</code> is paste in <code>tmux</code>)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_donts"><a class="link" href="#_donts">Don&#8217;ts</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Forget about <code>?</code> use <code>/</code> instead which wraps, then <code>N</code> to consistently go back</p>
+</li>
+<li>
+<p>Forget about <code>e</code>.</p>
+</li>
+<li>
+<p>Forget about <code>R</code>.</p>
+</li>
+<li>
+<p>Do not use Vim visual mode, use filters and TMUX copy and paste instead!</p>
+</li>
+<li>
+<p>Forget about <code>%</code> since requires exact position (use <code>dap</code>, etc. instead)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_multiple_panes_and_buffers"><a class="link" href="#_multiple_panes_and_buffers">Multiple panes and buffers</a></h4>
+<div class="paragraph">
+<p>I&#8217;ve seen so many Vim users—particularly Neovim users—completely wall themselves in by becoming completely dependent on Vim buffers and panes. Soon they start turning to completely bloated options that find and open files, do Internet searches, and other insanity—some of which requires NodeJS to be installed in order to even use Neovim. None of that has any place in a <em>text editor</em>—even one that only you are going to use on your nice cushy personal workstation.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Emacs users have been doing this forever. They gave in to the dark side and decided to just keep adding things to it. Eventually they ultimately decided to create an OS within their editor, one big Lisp interpreter to rule them all. Vim is not Emacs even though sometimes Neovim feels like it actually wants to be Emacs—but with Lua instead.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Eventually, the smart ones realize they would have been better off the entire time using TMUX windows instead—especially when TMUX is setup to be compatible with the original <code>screen</code> that can be found on any Unix system for some time. Cutting and pasting between TMUX windows works <em>even if you are not in an editor session</em> and can be automatically setup to load the host system buffer (think <code>pbcopy</code>). The main reason TMUX is better is because it is the right tool for that job. TMUX windows, panes, and buffers can be completely scripted <em>very</em> easily from the command line using simple shell commands. Vim cannot.</p>
+</div>
+<div class="paragraph">
+<p>Want to run IRC at the same time as you editor and have them both come up at the same time? That can <em>only</em> be done with Vim + TMUX, not Vim alone. Want to have some service or cronjob automatically open a window or pane in your current work session? Only TMUX can do that, not Vim. So, again, why would you handicap yourself by using the wrong tool for the job, in this case windows and panes in Vim. Want to integrate your functional cut and paste buffers with your host system and other programs? Vim buffers cannot do this, but a clever <code>yyy</code> or <code>ppp</code> Vim filter can. It can even be made to open another TMUX window but—more importantly—can be fully integrated into anything else running on your computer. Vim buffers cannot.</p>
+</div>
+<div class="paragraph">
+<p>Only <code>:help</code> is a valid exception to this.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -2797,7 +3581,7 @@ fmt <i class="conum" data-value="7"></i><b>(7)</b>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-12 23:20:47 -0500
+Last updated 2024-12-12 23:26:56 -0500
 </div>
 </div>
 </body>
