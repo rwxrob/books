@@ -64,3 +64,12 @@ sudo apt install wslu
 
 Now when you do anything like open a URL or a file it will use the host Windows OS application to do it. This is particularly nice when authenticating with `gh auth login` later and opening a graphical web browser when a terminal one needs the help with a single `,` keystroke.
 
+== Start WSL terminal
+
+Until we upgrade the terminal, you can pull up a terminal running bash shell in WSL by pressing `Windows` key and typing `wsl` and pressing `Enter`.
+
+[NOTE]
+====
+Later, you'll type `wezterm` to pull up our upgraded terminal running the same bash and WSL2 inside of it.
+====
+
