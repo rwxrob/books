@@ -1,0 +1,136 @@
+== Linux: apt
+
+The `apt` command is one of the easiest package managers to use, which is the main reason Linux distributions that use it are so popular, managing software becomes efficient and straightforward, whether you’re running Linux natively or through WSL2 on Windows. Here’s your crash course.
+
+=== Most Common apt Commands
+
+Update the package lists by fetching the latest information from repositories:
+
+[source,bash]
+----
+sudo apt update
+----
+
+Upgrade all installed packages to their latest versions based on the updated package list:
+
+[source,bash]
+----
+sudo apt upgrade -y
+----
+
+Install new software packages from the repositories:
+
+[source,bash]
+----
+sudo apt install <package-name>
+----
+
+Example:
+
+[source,bash]
+----
+sudo apt install git
+----
+
+Uninstall software packages but leave behind configuration files:
+
+[source,bash]
+----
+sudo apt remove <package-name>
+----
+
+For a complete cleanup, including configuration files:
+
+[source,bash]
+----
+sudo apt purge <package-name>
+----
+
+Search for available packages by name or description:
+
+[source,bash]
+----
+apt search <keyword>
+----
+
+Example:
+
+[source,bash]
+----
+apt search python
+----
+
+List all installed packages on your system:
+
+[source,bash]
+----
+dpkg -l
+----
+
+Free up disk space by removing unnecessary dependencies:
+
+[source,bash]
+----
+sudo apt autoremove
+----
+
+Clear out cached files no longer needed:
+
+[source,bash]
+----
+sudo apt autoclean
+----
+
+=== Advanced apt Commands
+
+Provides detailed information about a package:
+
+[source,bash]
+----
+apt show <package-name>
+----
+
+Resolves any broken dependencies that may arise during installation or updates:
+
+[source,bash]
+----
+sudo apt --fix-broken install
+----
+
+Expands your software sources for specific or updated packages:
+
+[source,bash]
+----
+sudo add-apt-repository ppa:<repository-name>
+sudo apt update
+----
+
+Example:
+
+[source,bash]
+----
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+----
+
+=== Tips for Efficient Package Management
+
+Run `sudo apt update` and `sudo apt upgrade` regularly to keep your system secure and up-to-date.
+
+Use `apt search` to ensure the package you want is available and correctly named.
+
+`apt show` gives insights into what you’re installing, including dependencies.
+
+Save time by chaining commands:
+
+[source,bash]
+----
+sudo apt update && sudo apt upgrade -y
+----
+
+With these commands, you’ll master package management on `apt`-based systems, whether you’re on WSL2 or native Linux.
+
+[CAUTION]
+====
+According to the documentation, `apt-get` should used intead of `apt` for scripts.
+====

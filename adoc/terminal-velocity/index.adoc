@@ -78,7 +78,7 @@ include::validate-bash-on-linux.adoc[]
 [[manage-software]]
 = Manage installed software
 
-_In development..._
+include::manage-software/index.adoc[]
 
 [[wezterm]]
 = Get Wezterm terminal

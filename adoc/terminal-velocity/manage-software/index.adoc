@@ -1,0 +1,10 @@
+Package management is the backbone of software installation, updates, and maintenance on Unix (macOS) and Linux (WSL2, Ubuntu, etc.).
+
+[NOTE]
+====
+Unix and Linux have been using package management since the 90s, `rpm`, `yum`, `dnf`, `zypper`, `emerge`, `installp`, `pkg`,`apk`, `pacman`. Native Windows has even joined in with the official `winget` command-line package management.
+====
+
+include::apt.adoc[]
+
+include::brew.adoc[]

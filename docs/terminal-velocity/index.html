@@ -528,7 +528,12 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_make_bash_your_default_shell_2">Make bash your default shell</a></li>
 </ul>
 </li>
-<li><a href="#manage-software">Manage installed software</a></li>
+<li><a href="#manage-software">Manage installed software</a>
+<ul class="sectlevel2">
+<li><a href="#_linux_apt">Linux: apt</a></li>
+<li><a href="#_mac_brew">Mac: brew</a></li>
+</ul>
+</li>
 <li><a href="#wezterm">Get Wezterm terminal</a></li>
 <li><a href="#shell">Learn shell basics</a></li>
 <li><a href="#github">Get Git and GitHub</a></li>
@@ -1151,7 +1156,331 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 <h2 id="manage-software"><a class="link" href="#manage-software">Manage installed software</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
+<p>Package management is the backbone of software installation, updates, and maintenance on Unix (macOS) and Linux (WSL2, Ubuntu, etc.).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Unix and Linux have been using package management since the 90s, <code>rpm</code>, <code>yum</code>, <code>dnf</code>, <code>zypper</code>, <code>emerge</code>, <code>installp</code>, <code>pkg</code>,<code>apk</code>, <code>pacman</code>. Native Windows has even joined in with the official <code>winget</code> command-line package management.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_linux_apt"><a class="link" href="#_linux_apt">Linux: apt</a></h3>
+<div class="paragraph">
+<p>The <code>apt</code> command is one of the easiest package managers to use, which is the main reason Linux distributions that use it are so popular, managing software becomes efficient and straightforward, whether you’re running Linux natively or through WSL2 on Windows. Here’s your crash course.</p>
+</div>
+<div class="sect3">
+<h4 id="_most_common_apt_commands"><a class="link" href="#_most_common_apt_commands">Most Common apt Commands</a></h4>
+<div class="paragraph">
+<p>Update the package lists by fetching the latest information from repositories:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Upgrade all installed packages to their latest versions based on the updated package list:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>upgrade<span class="tok-w"> </span>-y</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Install new software packages from the repositories:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>&lt;package-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>git</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Uninstall software packages but leave behind configuration files:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>remove<span class="tok-w"> </span>&lt;package-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For a complete cleanup, including configuration files:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>purge<span class="tok-w"> </span>&lt;package-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Search for available packages by name or description:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>apt<span class="tok-w"> </span>search<span class="tok-w"> </span>&lt;keyword&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>apt<span class="tok-w"> </span>search<span class="tok-w"> </span>python</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>List all installed packages on your system:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>dpkg<span class="tok-w"> </span>-l</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Free up disk space by removing unnecessary dependencies:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>autoremove</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Clear out cached files no longer needed:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>autoclean</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_advanced_apt_commands"><a class="link" href="#_advanced_apt_commands">Advanced apt Commands</a></h4>
+<div class="paragraph">
+<p>Provides detailed information about a package:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>apt<span class="tok-w"> </span>show<span class="tok-w"> </span>&lt;package-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Resolves any broken dependencies that may arise during installation or updates:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>--fix-broken<span class="tok-w"> </span>install</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Expands your software sources for specific or updated packages:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>add-apt-repository<span class="tok-w"> </span>ppa:&lt;repository-name&gt;
+sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>add-apt-repository<span class="tok-w"> </span>ppa:deadsnakes/ppa
+sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_tips_for_efficient_package_management"><a class="link" href="#_tips_for_efficient_package_management">Tips for Efficient Package Management</a></h4>
+<div class="paragraph">
+<p>Run <code>sudo apt update</code> and <code>sudo apt upgrade</code> regularly to keep your system secure and up-to-date.</p>
+</div>
+<div class="paragraph">
+<p>Use <code>apt search</code> to ensure the package you want is available and correctly named.</p>
+</div>
+<div class="paragraph">
+<p><code>apt show</code> gives insights into what you’re installing, including dependencies.</p>
+</div>
+<div class="paragraph">
+<p>Save time by chaining commands:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update<span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>upgrade<span class="tok-w"> </span>-y</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>With these commands, you’ll master package management on <code>apt</code>-based systems, whether you’re on WSL2 or native Linux.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>According to the documentation, <code>apt-get</code> should used intead of <code>apt</code> for scripts.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mac_brew"><a class="link" href="#_mac_brew">Mac: brew</a></h3>
+<div class="paragraph">
+<p>Package management on macOS becomes a breeze with Homebrew, a powerful package manager that simplifies the installation, updating, and maintenance of software. Here’s everything you need to get started and master the basics.</p>
+</div>
+<div class="sect3">
+<h4 id="_most_common_homebrew_commands"><a class="link" href="#_most_common_homebrew_commands">Most common Homebrew commands</a></h4>
+<div class="paragraph">
+<p>Update the list of available formulas and casks:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>update</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Upgrade all installed formulas and casks to their latest versions:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>upgrade</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Install a new package:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>&lt;package-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>git</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Uninstall a package:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>uninstall<span class="tok-w"> </span>&lt;package-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Search for a package by name or description:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>search<span class="tok-w"> </span>&lt;keyword&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>search<span class="tok-w"> </span>python</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>List all installed packages:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>list</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Clean up old or unused packages and cached files:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>cleanup</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_advanced_homebrew_commands"><a class="link" href="#_advanced_homebrew_commands">Advanced Homebrew commands</a></h4>
+<div class="paragraph">
+<p>View detailed information about a package:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>info<span class="tok-w"> </span>&lt;package-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Check for potential issues with your Homebrew setup:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>doctor</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Install a cask (macOS apps, fonts, plugins):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>--cask<span class="tok-w"> </span>&lt;cask-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>--cask<span class="tok-w"> </span>google-chrome</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_tips_for_efficient_package_management_2"><a class="link" href="#_tips_for_efficient_package_management_2">Tips for efficient package management</a></h4>
+<div class="paragraph">
+<p>Run <code>brew update</code> and <code>brew upgrade</code> regularly to ensure your packages and dependencies stay current.</p>
+</div>
+<div class="paragraph">
+<p>Use <code>brew search</code> to explore available packages and discover new tools.</p>
+</div>
+<div class="paragraph">
+<p>Leverage <code>brew info</code> to learn more about a package before installing it.</p>
+</div>
+<div class="paragraph">
+<p>Combine commands for efficiency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>update<span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span>brew<span class="tok-w"> </span>upgrade</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>With these commands, Homebrew will be your go-to tool for managing software on macOS with ease and confidence.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1657,7 +1986,7 @@ fmt <i class="conum" data-value="7"></i><b>(7)</b>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-12 19:41:50 -0500
+Last updated 2024-12-12 20:16:16 -0500
 </div>
 </div>
 </body>
