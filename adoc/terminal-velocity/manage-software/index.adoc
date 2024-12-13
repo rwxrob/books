@@ -8,3 +8,5 @@ Unix and Linux have been using package management since the 90s, `rpm`, `yum`, `
 include::apt.adoc[]
 
 include::brew.adoc[]
+
+include::winget.adoc[]

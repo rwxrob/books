@@ -532,6 +532,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <ul class="sectlevel2">
 <li><a href="#_linux_apt">Linux: apt</a></li>
 <li><a href="#_mac_brew">Mac: brew</a></li>
+<li><a href="#_windows_winget">Windows: winget</a></li>
 </ul>
 </li>
 <li><a href="#wezterm">Get Wezterm terminal</a></li>
@@ -1479,6 +1480,185 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 </div>
 <div class="paragraph">
 <p>With these commands, Homebrew will be your go-to tool for managing software on macOS with ease and confidence.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_windows_winget"><a class="link" href="#_windows_winget">Windows: winget</a></h3>
+<div class="paragraph">
+<p>Windows finally has a native package manager: <strong>winget</strong> (Windows Package Manager). It simplifies the process of installing, updating, and managing software directly from the command line, just like package managers on Unix-like systems. Here’s how you can master the basics.</p>
+</div>
+<div class="sect3">
+<h4 id="_installing_winget"><a class="link" href="#_installing_winget">Installing winget</a></h4>
+<div class="paragraph">
+<p>Most modern versions of Windows 10 and 11 already have <strong>winget</strong> installed. To check, open PowerShell or Command Prompt and run:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-p">-</span><span class="tok-n">-version</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you see a version number, you’re good to go. If not, install it via the <strong>Microsoft Store</strong> by searching for the <strong>App Installer</strong>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_common_winget_commands"><a class="link" href="#_common_winget_commands">Common winget commands</a></h4>
+<div class="sect4">
+<h5 id="_search_for_a_package"><a class="link" href="#_search_for_a_package">Search for a package</a></h5>
+<div class="paragraph">
+<p>Find the package you want by searching the repository:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">search</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-p">&lt;</span><span class="tok-n">package-id</span><span class="tok-p">&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">search</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">microsoft</span><span class="tok-p">.</span><span class="tok-n">visualstudiocode</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_install_a_package"><a class="link" href="#_install_a_package">Install a package</a></h5>
+<div class="paragraph">
+<p>Once you know the exact package ID, install it:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">install</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-p">&lt;</span><span class="tok-n">package-id</span><span class="tok-p">&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">install</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">microsoft</span><span class="tok-p">.</span><span class="tok-n">visualstudiocode</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_list_installed_packages"><a class="link" href="#_list_installed_packages">List installed packages</a></h5>
+<div class="paragraph">
+<p>See all the software installed on your system through winget:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">list</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_update_installed_packages"><a class="link" href="#_update_installed_packages">Update installed packages</a></h5>
+<div class="paragraph">
+<p>Update a specific package to its latest version:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">upgrade</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-p">&lt;</span><span class="tok-n">package-id</span><span class="tok-p">&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">upgrade</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">microsoft</span><span class="tok-p">.</span><span class="tok-n">visualstudiocode</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Or, update everything at once:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">upgrade</span> <span class="tok-p">-</span><span class="tok-n">-all</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_uninstall_a_package"><a class="link" href="#_uninstall_a_package">Uninstall a package</a></h5>
+<div class="paragraph">
+<p>Remove an installed package:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">uninstall</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-p">&lt;</span><span class="tok-n">package-id</span><span class="tok-p">&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">uninstall</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">microsoft</span><span class="tok-p">.</span><span class="tok-n">visualstudiocode</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_show_package_details"><a class="link" href="#_show_package_details">Show package details</a></h5>
+<div class="paragraph">
+<p>Get more information about a specific package, including its description, source, and version:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">show</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-p">&lt;</span><span class="tok-n">package-id</span><span class="tok-p">&gt;</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_advanced_winget_tips"><a class="link" href="#_advanced_winget_tips">Advanced winget tips</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>View Command Help</strong>:</p>
+<div class="paragraph">
+<p>Not sure about a specific command? Use the help flag:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-p">-</span><span class="tok-n">-help</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>Add Third-Party Repositories</strong>:</p>
+<div class="paragraph">
+<p>winget supports additional repositories, giving you access to even more packages. Check out the official documentation for setup instructions.</p>
+</div>
+</li>
+<li>
+<p><strong>Silent Installs</strong>:</p>
+<div class="paragraph">
+<p>Some packages support silent installation. To avoid unnecessary prompts during installation, add:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-p">-</span><span class="tok-n">-silent</span></code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_benefits_of_winget"><a class="link" href="#_benefits_of_winget">Benefits of winget</a></h4>
+<div class="paragraph">
+<p><strong>Unified Package Management</strong>: Manage all your software installations and updates from one tool.</p>
+</div>
+<div class="paragraph">
+<p><strong>Simplified Workflow</strong>: No need to download installers or navigate through GUI wizards.</p>
+</div>
+<div class="paragraph">
+<p><strong>Cross-Compatibility</strong>: Works seamlessly with Windows 10 and 11.</p>
+</div>
+<div class="paragraph">
+<p>With winget, Windows users finally have a powerful tool to simplify software management. Whether you’re a developer or just looking to streamline your setup, winget brings the convenience of Linux-style package management to the Windows ecosystem.</p>
 </div>
 </div>
 </div>
