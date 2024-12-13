@@ -46,3 +46,7 @@ chsh -s /bin/bash
 ----
 
 Log out and back in, or restart your terminal.
+
+== Hacker's perspective
+
+Bash _is_ the Linux shell; it's not a choice. It's the backbone of a hacker's workflow. It's where commands come to life, scripts become solutions, and ideas turn into automation. Mastering bash on Linux means mastering the system itself—understanding its pulse, bending it to your will. Ideas instantly become new commands. No compilation. No bloated plugin framework. Every command you type in bash is a step closer to complete control. Hackers thrive here, in the terminal's simplicity and depth. To use bash on Linux is to embrace the essence of what it means to hack.

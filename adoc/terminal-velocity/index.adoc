@@ -39,7 +39,7 @@ include::preface/whats-in-this-book.adoc[]
 
 include::preface/how-to-use-this-book.adoc[]
 
-include::preface/whats-with-the-hacker-stuff.adoc[]
+include::preface/hackers-perspective.adoc[]
 
 include::terminal-origins.adoc[]
 

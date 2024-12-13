@@ -73,3 +73,6 @@ Until we upgrade the terminal, you can pull up a terminal running bash shell in 
 Later, you'll type `wezterm` to pull up our upgraded terminal running the same bash and WSL2 inside of it.
 ====
 
+== Hacker's perspective
+
+WSL2 is the hacker's gateway to seamless versatility, blending the power of Linux with the flexibility of Windows. But true mastery comes with wslu—a toolkit that supercharges your WSL2 experience. With wslu, you can open files, launch browsers, and integrate Linux commands with Windows apps effortlessly. It breaks down barriers, making your environment feel like one cohesive system. Hackers don't settle for limits—they expand them, and WSL2 with wslu does just that. Debug, deploy, script, and innovate—all while the system works around you, not the other way around.

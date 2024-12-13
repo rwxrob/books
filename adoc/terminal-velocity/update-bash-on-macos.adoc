@@ -82,3 +82,7 @@ bash --version
 ----
 
 If you see something like `5.x.x`, congratulations—you're on modern bash.
+
+== Hacker's perspective
+
+Bash on macOS is a relic of the past—stuck in an older version that limits your tools and techniques. Upgrading Bash isn't just an update; it's a statement. When it comes to their own tools, hackers live on the edge, and that means using the latest features, faster scripts, and modern syntaxes that the old shell can't handle. Upgrading puts you in control, unlocking the full power of your terminal to code, automate, and innovate without barriers. Don't settle for outdated defaults—upgrade Bash and take command of your Unix system like any hacker would.

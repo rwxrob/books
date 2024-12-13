@@ -61,3 +61,7 @@ Linux has multiple application launchers, depending on your desktop environment 
 - Open files: Search for files by name.
 - Run commands: Execute terminal commands directly.
 - Perform calculations and translations with plugins.
+
+== Hacker's perspective
+
+The launcher is more than a convenience—it's the hacker's command center. Forget digging through menus or clicking aimlessly; mastery of the launcher means instant access to everything you need, right when you need it. It's about speed, precision, and control—three pillars of the hacker mindset. Whether you're firing up WezTerm, searching for system settings, or running commands, the launcher turns your keyboard into a gateway for efficiency. A hacker doesn't waste time clicking; they orchestrate their tools with purpose. Learn the launcher, and you'll not just use your system—you'll command it.

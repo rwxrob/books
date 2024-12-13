@@ -95,6 +95,6 @@ This is one of the reasons we installed `wslu` earlier on WSL2 on Windows since 
 
 - *Get ideas for own dot files and scripts*:  everyone shares their personal home directory configurations. You'll start yours next.
 
-== The hacker’s perspective
+== Hacker’s perspective
 
-GitHub isn't just for developers—it's for hackers, thinkers, and creators. It's a playground, a library, and a stage all in one. Whether you're contributing to open-source security tools, learning from codebases, or building your own projects, GitHub is where it all happens. Get an account, dive in, and start hacking (ethically, of course).
+GitHub isn't just for developers—it's for writers, hackers, thinkers, and creators. It's a playground, a library, and a stage all in one. Whether you're contributing to open-source security tools, learning from codebases, writing a book like this one, or building your own projects, GitHub is where it all happens. Get an account, dive in, and start hacking (ethically, of course).

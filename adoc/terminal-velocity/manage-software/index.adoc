@@ -13,3 +13,7 @@ include::apt.adoc[]
 include::brew.adoc[]
 
 include::winget.adoc[]
+
+== Hacker's perspective
+
+A package manager like `apt`, `brew`, or `winget` is more than just a convenience—it's a hacker's lifeline to efficiency. These tools cut through the noise, letting you install, update, and manage software in seconds, all from the command line. Forget hunting down installers or navigating GUI wizards; package managers give you precision and speed. Hackers don't waste time—they automate, optimize, and stay ahead. Mastering `apt`, `brew`, or `winget` means mastering your environment, turning software management into a seamless part of your workflow. It's not just a skill; it's a mindset: control everything, waste nothing.
