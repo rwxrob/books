@@ -69,10 +69,11 @@ include::preface/how-to-use-this-book.adoc[]
 
 include::preface/whats-with-the-hacker-stuff.adoc[]
 
-[[unix]]
-= Get Unix or Linux OS
+include::get-wsl2-on-windows.adoc[]
 
-_In development..._
+include::update-bash-on-macos.adoc[]
+
+include::validate-bash-on-linux.adoc[]
 
 [[manage-software]]
 = Manage installed software

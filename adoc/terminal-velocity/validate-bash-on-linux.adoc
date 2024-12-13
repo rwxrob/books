@@ -1,0 +1,48 @@
+= Validate bash on Linux
+
+Alright, you're on a Linux distro that uses `apt`, so you’ve already got Bash. That's a good start, but let's make sure you've got the latest version and a clean setup.
+
+== Check your current bash version
+
+Open your terminal and run:
+
+[source,bash]
+----
+bash --version
+----
+
+You should see something like `5.x.x`. If it's already up-to-date, skip to *Step 4*. If it's not, let’s fix that.
+
+== Update your software repositories
+
+Make sure your package lists are up-to-date so you can fetch the latest versions of everything:
+
+[source,bash]
+----
+sudo apt update && sudo apt upgrade -y
+----
+
+This also upgrades your current Bash if the distro maintains a newer version in the repositories. Check the version again with:
+
+[source,bash]
+----
+bash --version
+----
+
+== Make bash your default shell
+
+Double-check that bash is your default shell:
+
+[source,bash]
+----
+echo $SHELL
+----
+
+If it doesn’t show `/bin/bash`, set it:
+
+[source,bash]
+----
+chsh -s /bin/bash
+----
+
+Log out and back in, or restart your terminal.

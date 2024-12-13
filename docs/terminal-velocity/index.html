@@ -502,7 +502,31 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_whats_with_the_hacker_stuff">What&#8217;s with the hacker stuff?</a></li>
 </ul>
 </li>
-<li><a href="#unix">Get Unix or Linux OS</a></li>
+<li><a href="#_get_wsl2_bash_on_windows">Get WSL2 bash on Windows</a>
+<ul class="sectlevel2">
+<li><a href="#_enable_wsl">Enable WSL</a></li>
+<li><a href="#_upgrade_to_wsl2">Upgrade to WSL2</a></li>
+<li><a href="#_install_ubuntu_into_wsl2">Install Ubuntu into WSL2</a></li>
+<li><a href="#_update_your_software_repositories">Update your software repositories</a></li>
+<li><a href="#_install_wsl_utilities">Install WSL utilities</a></li>
+</ul>
+</li>
+<li><a href="#_update_bash_on_mac">Update bash on Mac</a>
+<ul class="sectlevel2">
+<li><a href="#_install_homebrew">Install Homebrew</a></li>
+<li><a href="#_install_bash_with_brew">Install bash with brew</a></li>
+<li><a href="#_add_bash_to_the_shell_list">Add bash to the shell list</a></li>
+<li><a href="#_make_bash_your_default_shell">Make bash your default shell</a></li>
+<li><a href="#_check_your_current_bash_version">Check your current bash version</a></li>
+</ul>
+</li>
+<li><a href="#_validate_bash_on_linux">Validate bash on Linux</a>
+<ul class="sectlevel2">
+<li><a href="#_check_your_current_bash_version_2">Check your current bash version</a></li>
+<li><a href="#_update_your_software_repositories_2">Update your software repositories</a></li>
+<li><a href="#_make_bash_your_default_shell_2">Make bash your default shell</a></li>
+</ul>
+</li>
 <li><a href="#manage-software">Manage installed software</a></li>
 <li><a href="#wezterm">Get Wezterm terminal</a></li>
 <li><a href="#shell">Learn shell basics</a></li>
@@ -838,10 +862,267 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 </div>
 </div>
 <div class="sect1">
-<h2 id="unix"><a class="link" href="#unix">Get Unix or Linux OS</a></h2>
+<h2 id="_get_wsl2_bash_on_windows"><a class="link" href="#_get_wsl2_bash_on_windows">Get WSL2 bash on Windows</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
+<p>Alright, listen up. You&#8217;ve got a Windows machine and dreams of running Linux without dealing with dual-boot nightmares or spinning up a resource-hogging virtual machine or dual-booting every time. Enter WSL2—your ticket to running Ubuntu seamlessly, like a hacker in a sci-fi flick. Here&#8217;s how you get it up and running, no fluff, just action.</p>
+</div>
+<div class="sect2">
+<h3 id="_enable_wsl"><a class="link" href="#_enable_wsl">Enable WSL</a></h3>
+<div class="paragraph">
+<p>First things first, open PowerShell. No, not PowerPoint, your terminal. Hit <code>Win</code> and start typing <code>powershell</code>. Then, fire this off:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>wsl<span class="tok-w"> </span>--install</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This command does the heavy lifting: enabling WSL, installing the kernel, and grabbing a default Linux distribution, which should be Ubuntu. You will probably have to restart your computer.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_upgrade_to_wsl2"><a class="link" href="#_upgrade_to_wsl2">Upgrade to WSL2</a></h3>
+<div class="paragraph">
+<p>If Windows decides to hand you WSL1 like it’s 2018, upgrade it manually:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>wsl<span class="tok-w"> </span>--set-default-version<span class="tok-w"> </span><span class="tok-m">2</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>WSL2 is where the magic happens—full Linux kernel, better performance, and actual compatibility with modern tools.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_install_ubuntu_into_wsl2"><a class="link" href="#_install_ubuntu_into_wsl2">Install Ubuntu into WSL2</a></h3>
+<div class="paragraph">
+<p>If Ubuntu didn&#8217;t install during Step 1, snag it manually. Open the <strong>Microsoft Store</strong> (I know, gross) and search for "Ubuntu." Pick your flavor—<code>Ubuntu 20.04</code>, <code>22.04</code>, whatever fits your vibe. Click <strong>Get</strong> and let it download.</p>
+</div>
+<div class="paragraph">
+<p>When it&#8217;s done, open it from the Start menu or run:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>wsl<span class="tok-w"> </span>-d<span class="tok-w"> </span>Ubuntu</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_update_your_software_repositories"><a class="link" href="#_update_your_software_repositories">Update your software repositories</a></h3>
+<div class="paragraph">
+<p>You&#8217;re in. First boot might feel sluggish—it&#8217;s setting up the filesystem. Follow the prompts to create your Linux username and password. Remember, this isn&#8217;t your Windows password; it’s your Linux alter ego. Make it a good one, lowercase, easy to remember, short, no weird punctuation. You will use the same username to create a <a href="#github">GitHub account</a>, so you might want to skip to that.</p>
+</div>
+<div class="paragraph">
+<p>Next, update everything:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update<span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>upgrade<span class="tok-w"> </span>-y</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>We&#8217;ll talk more about <code>apt</code> for <a href="#manage-software">software package management later</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_install_wsl_utilities"><a class="link" href="#_install_wsl_utilities">Install WSL utilities</a></h3>
+<div class="paragraph">
+<p>Want seamless access to your Windows files? They’re right here in <code>/mnt/c</code>.</p>
+</div>
+<div class="paragraph">
+<p>In order to open files with the default applications from WSL2 we need to install a helper utility software package called <code>wslu</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>wslu</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now when you do anything like open a URL or a file it will use the host Windows OS application to do it. This is particularly nice when authenticating with <code>gh auth login</code> later and opening a graphical web browser when a terminal one needs the help with a single <code>,</code> keystroke.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_update_bash_on_mac"><a class="link" href="#_update_bash_on_mac">Update bash on Mac</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Alright, macOS is Unix. It ships with bash. But here&#8217;s the catch: it&#8217;s old—<strong>real</strong> old. Apple stopped updating bash beyond version 3.2 because of licensing drama. If you want to run scripts like it&#8217;s the 21st century, you need the latest bash. Don&#8217;t worry, though, we&#8217;re fixing that right now.</p>
+</div>
+<div class="sect2">
+<h3 id="_install_homebrew"><a class="link" href="#_install_homebrew">Install Homebrew</a></h3>
+<div class="paragraph">
+<p>First things first—if you don&#8217;t have Homebrew, your Mac&#8217;s missing the single most powerful tool it can have. Open Terminal by typing <code>Command + Space</code> and typing <code>terminal</code> and drop this in:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>/bin/bash<span class="tok-w"> </span>-c<span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-k">$(</span>curl<span class="tok-w"> </span>-fsSL<span class="tok-w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="tok-k">)</span><span class="tok-s2">&quot;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Let brew do its thing. When it&#8217;s done, confirm it&#8217;s installed:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>--version</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you see a version number, you&#8217;re good to go.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_install_bash_with_brew"><a class="link" href="#_install_bash_with_brew">Install bash with brew</a></h3>
+<div class="paragraph">
+<p>Next, use Homebrew to install the latest version of bash. Run:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>bash</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>That&#8217;s it—new bash installed. But wait, you&#8217;re not done yet.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_add_bash_to_the_shell_list"><a class="link" href="#_add_bash_to_the_shell_list">Add bash to the shell list</a></h3>
+<div class="paragraph">
+<p>Your Mac still doesn&#8217;t know the new bash exists. You&#8217;ve got to tell it. First, find where Homebrew installed bash:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>--prefix</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This will give you a path like <code>/opt/homebrew</code>. Add <code>/opt/homebrew/bin/bash</code> (or similar) to your list of allowed shells:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span><span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-k">$(</span>brew<span class="tok-w"> </span>--prefix<span class="tok-k">)</span><span class="tok-s2">/bin/bash&quot;</span><span class="tok-w"> </span>&gt;&gt;<span class="tok-w"> </span>/etc/shells</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This will append a line to the bottom of the file. Use the <code>tail</code> command to look at the last line:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>tail<span class="tok-w"> </span>-1<span class="tok-w"> </span>/etc/shells</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_make_bash_your_default_shell"><a class="link" href="#_make_bash_your_default_shell">Make bash your default shell</a></h3>
+<div class="paragraph">
+<p>Now it&#8217;s time to switch. Set the new bash as your default shell:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>chsh<span class="tok-w"> </span>-s<span class="tok-w"> </span><span class="tok-k">$(</span>brew<span class="tok-w"> </span>--prefix<span class="tok-k">)</span>/bin/bash</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Log out and back in, or just open a new terminal window. Check which Bash you’re using now:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-nv">$SHELL</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It should point to something besides <code>/bin/bash</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_check_your_current_bash_version"><a class="link" href="#_check_your_current_bash_version">Check your current bash version</a></h3>
+<div class="paragraph">
+<p>Check the Bash version to make sure you&#8217;re running the latest:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>bash<span class="tok-w"> </span>--version</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you see something like <code>5.x.x</code>, congratulations—you&#8217;re on modern bash.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_validate_bash_on_linux"><a class="link" href="#_validate_bash_on_linux">Validate bash on Linux</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Alright, you&#8217;re on a Linux distro that uses <code>apt</code>, so you’ve already got Bash. That&#8217;s a good start, but let&#8217;s make sure you&#8217;ve got the latest version and a clean setup.</p>
+</div>
+<div class="sect2">
+<h3 id="_check_your_current_bash_version_2"><a class="link" href="#_check_your_current_bash_version_2">Check your current bash version</a></h3>
+<div class="paragraph">
+<p>Open your terminal and run:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>bash<span class="tok-w"> </span>--version</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You should see something like <code>5.x.x</code>. If it&#8217;s already up-to-date, skip to <strong>Step 4</strong>. If it&#8217;s not, let’s fix that.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_update_your_software_repositories_2"><a class="link" href="#_update_your_software_repositories_2">Update your software repositories</a></h3>
+<div class="paragraph">
+<p>Make sure your package lists are up-to-date so you can fetch the latest versions of everything:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update<span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>upgrade<span class="tok-w"> </span>-y</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This also upgrades your current Bash if the distro maintains a newer version in the repositories. Check the version again with:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>bash<span class="tok-w"> </span>--version</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_make_bash_your_default_shell_2"><a class="link" href="#_make_bash_your_default_shell_2">Make bash your default shell</a></h3>
+<div class="paragraph">
+<p>Double-check that bash is your default shell:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-nv">$SHELL</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If it doesn’t show <code>/bin/bash</code>, set it:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>chsh<span class="tok-w"> </span>-s<span class="tok-w"> </span>/bin/bash</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Log out and back in, or restart your terminal.</p>
+</div>
 </div>
 </div>
 </div>
@@ -1355,7 +1636,7 @@ fmt <i class="conum" data-value="7"></i><b>(7)</b>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-12 17:07:51 -0500
+Last updated 2024-12-12 19:41:50 -0500
 </div>
 </div>
 </body>
