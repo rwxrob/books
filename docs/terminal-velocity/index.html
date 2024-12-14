@@ -565,12 +565,18 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_hackers_perspective_8">Hacker&#8217;s perspective</a></li>
 </ul>
 </li>
+<li><a href="#_install_xdg_utils_on_linuxwsl2">Install xdg-utils on Linux/WSL2</a>
+<ul class="sectlevel2">
+<li><a href="#_test_opening_something">Test opening something</a></li>
+<li><a href="#_hackers_perspective_9">Hacker&#8217;s perspective</a></li>
+</ul>
+</li>
 <li><a href="#get-wezterm">Get WezTerm terminal</a>
 <ul class="sectlevel2">
 <li><a href="#_windows_install_with_winget">Windows: Install with winget</a></li>
 <li><a href="#_mac_install_with_homebrew">Mac: Install with Homebrew</a></li>
 <li><a href="#_linuxwsl2_install_with_apt">Linux/WSL2: Install with apt</a></li>
-<li><a href="#_hackers_perspective_9">Hacker&#8217;s perspective</a></li>
+<li><a href="#_hackers_perspective_10">Hacker&#8217;s perspective</a></li>
 </ul>
 </li>
 <li><a href="#github">Get Git and GitHub</a>
@@ -578,7 +584,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_why_github_matters_to_hackers">Why GitHub matters to hackers</a></li>
 <li><a href="#_get_a_github_account">Get a GitHub account</a></li>
 <li><a href="#_github_tips_for_hackers">GitHub tips for hackers</a></li>
-<li><a href="#_hackers_perspective_10">Hacker’s perspective</a></li>
+<li><a href="#_hackers_perspective_11">Hacker’s perspective</a></li>
 </ul>
 </li>
 <li><a href="#dotfiles">Start a dotfiles repo</a>
@@ -588,7 +594,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_make_it_yours">Make it yours</a></li>
 <li><a href="#_commit_and_push_changes">Commit and push changes</a></li>
 <li><a href="#_bootstrap_any_machine">Bootstrap any machine</a></li>
-<li><a href="#_hackers_perspective_11">Hacker&#8217;s perspective</a></li>
+<li><a href="#_hackers_perspective_12">Hacker&#8217;s perspective</a></li>
 </ul>
 </li>
 <li><a href="#config-wezterm">Configure WezTerm terminal</a></li>
@@ -1336,7 +1342,7 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Any executable can be run from within WSL2, you just have to make sure you have the <code>.exe</code> at the end (ex: <code>powershell.exe</code>, <code>winget.exe</code>, <code>notepad.exe</code>). This level of integration makes it possible to create automatic notifications and other integrations with Windows but to write them in bash or even Go and have them run on Linux under WSL2. If that doesn&#8217;t bring out your hacker grin, I don&#8217;t know what will.</p>
+<p>Any executable can be run from within WSL2, you just have to make sure you have the <code>.exe</code> at the end (ex: <code>powershell.exe</code>, <code>winget.exe</code>, <code>ipconfig.exe</code>, <code>notepad.exe</code>). This level of integration makes it possible to create automatic notifications and other integrations with Windows but to write them in bash or even Go and have them run on Linux under WSL2. If that doesn&#8217;t bring out your hacker grin, I don&#8217;t know what will.</p>
 </div>
 </td>
 </tr>
@@ -2087,6 +2093,55 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 </div>
 </div>
 <div class="sect1">
+<h2 id="_install_xdg_utils_on_linuxwsl2"><a class="link" href="#_install_xdg_utils_on_linuxwsl2">Install xdg-utils on Linux/WSL2</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>xdg-utils is the hacker&#8217;s Swiss Army knife for opening files, URLs, and applications from the command line. Whether you&#8217;re on Linux, macOS, or running WSL2 on Windows, installing xdg-utils ensures seamless integration with your host system. It&#8217;s lightweight, versatile, and indispensable. Let&#8217;s get it set up.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>macOS doesn&#8217;t need xdg-utils because it&#8217;s already hardwired for efficiency. The open command is your built-in backdoor to launch files, URLs, or apps without breaking stride. Apple baked this in to keep the system sleek, self-contained, and hacker-ready out of the box. While xdg-utils is great for cross-platform setups, macOS doesn&#8217;t need it—it&#8217;s already engineered for command-line dominance.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update
+sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>xdg-utils</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_test_opening_something"><a class="link" href="#_test_opening_something">Test opening something</a></h3>
+<div class="paragraph">
+<p>With wslu already in place, this setup is unstoppable. Test it by opening a URL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code><span></span>xdg-open https://example.com
+open https://example.com</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Your Windows browser should spring to life.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_hackers_perspective_9"><a class="link" href="#_hackers_perspective_9">Hacker&#8217;s perspective</a></h3>
+<div class="paragraph">
+<p>xdg-utils isn&#8217;t just a utility; it&#8217;s a statement of efficiency. Hackers don&#8217;t waste time fumbling through menus or searching for apps—they command their system with precision. Whether you&#8217;re jumping between WSL2 and Windows, working on Linux, xdg-utils lets you stay in control. Install it everywhere, and keep hacking.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="get-wezterm"><a class="link" href="#get-wezterm">Get WezTerm terminal</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -2197,7 +2252,7 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 </div>
 </div>
 <div class="sect2">
-<h3 id="_hackers_perspective_9"><a class="link" href="#_hackers_perspective_9">Hacker&#8217;s perspective</a></h3>
+<h3 id="_hackers_perspective_10"><a class="link" href="#_hackers_perspective_10">Hacker&#8217;s perspective</a></h3>
 <div class="paragraph">
 <p>WezTerm isn&#8217;t just another terminal emulator. It&#8217;s a statement. With GPU acceleration, tabs, panes, and full cross-platform support, it&#8217;s designed for hackers who live in the terminal. Whether you&#8217;re running scripts, managing servers, or coding the next big thing, WezTerm is the tool you need to keep up.</p>
 </div>
@@ -2373,7 +2428,7 @@ gh<span class="tok-w"> </span>--version</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_hackers_perspective_10"><a class="link" href="#_hackers_perspective_10">Hacker’s perspective</a></h3>
+<h3 id="_hackers_perspective_11"><a class="link" href="#_hackers_perspective_11">Hacker’s perspective</a></h3>
 <div class="paragraph">
 <p>GitHub isn&#8217;t just for developers—it&#8217;s for writers, hackers, thinkers, and creators. It&#8217;s a playground, a library, and a stage all in one. Whether you&#8217;re contributing to open-source security tools, learning from codebases, writing a book like this one, or building your own projects, GitHub is where it all happens. Get an account, dive in, and start hacking (ethically, of course).</p>
 </div>
@@ -2536,7 +2591,7 @@ git<span class="tok-w"> </span>push</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_hackers_perspective_11"><a class="link" href="#_hackers_perspective_11">Hacker&#8217;s perspective</a></h3>
+<h3 id="_hackers_perspective_12"><a class="link" href="#_hackers_perspective_12">Hacker&#8217;s perspective</a></h3>
 <div class="paragraph">
 <p>Dotfiles aren&#8217;t just a tradition; they&#8217;re a rite of passage. They represent ownership of your tools, your workflow, and your productivity. Every alias, every script, every tweak is a step toward mastery. With GitHub and the right template, managing and deploying your dotfiles is easier than ever. Hackers don&#8217;t wait for tools to adapt to them—they make the tools theirs. Start your dotfiles collection today, and take your first step toward complete system control.</p>
 </div>
@@ -3807,7 +3862,7 @@ fmt <i class="conum" data-value="7"></i><b>(7)</b>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-13 15:03:10 -0500
+Last updated 2024-12-13 19:03:36 -0500
 </div>
 </div>
 </body>

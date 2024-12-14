@@ -1,0 +1,30 @@
+= Install xdg-utils on Linux/WSL2
+
+xdg-utils is the hacker's Swiss Army knife for opening files, URLs, and applications from the command line. Whether you're on Linux, macOS, or running WSL2 on Windows, installing xdg-utils ensures seamless integration with your host system. It's lightweight, versatile, and indispensable. Let's get it set up.
+
+[NOTE]
+====
+macOS doesn't need xdg-utils because it's already hardwired for efficiency. The open command is your built-in backdoor to launch files, URLs, or apps without breaking stride. Apple baked this in to keep the system sleek, self-contained, and hacker-ready out of the box. While xdg-utils is great for cross-platform setups, macOS doesn't need it—it's already engineered for command-line dominance.
+====
+
+[source, sh]
+----
+sudo apt update
+sudo apt install xdg-utils
+----
+
+== Test opening something
+
+With wslu already in place, this setup is unstoppable. Test it by opening a URL:
+
+[source]
+----
+xdg-open https://example.com
+open https://example.com
+----
+
+Your Windows browser should spring to life.
+
+== Hacker's perspective
+
+xdg-utils isn't just a utility; it's a statement of efficiency. Hackers don't waste time fumbling through menus or searching for apps—they command their system with precision. Whether you're jumping between WSL2 and Windows, working on Linux, xdg-utils lets you stay in control. Install it everywhere, and keep hacking.

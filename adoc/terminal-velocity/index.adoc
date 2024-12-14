@@ -55,6 +55,8 @@ include::validate-bash-on-linux.adoc[]
 
 include::manage-software/index.adoc[]
 
+include::install-xdg-utils.adoc[]
+
 include::get-wezterm.adoc[]
 
 include::get-git-github.adoc[]

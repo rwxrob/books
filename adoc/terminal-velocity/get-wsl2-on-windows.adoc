@@ -66,7 +66,7 @@ Now when you do anything like open a URL or a file it will use the host Windows 
 
 [TIP]
 ====
-Any executable can be run from within WSL2, you just have to make sure you have the `.exe` at the end (ex: `powershell.exe`, `winget.exe`, `notepad.exe`). This level of integration makes it possible to create automatic notifications and other integrations with Windows but to write them in bash or even Go and have them run on Linux under WSL2. If that doesn't bring out your hacker grin, I don't know what will.
+Any executable can be run from within WSL2, you just have to make sure you have the `.exe` at the end (ex: `powershell.exe`, `winget.exe`, `ipconfig.exe`, `notepad.exe`). This level of integration makes it possible to create automatic notifications and other integrations with Windows but to write them in bash or even Go and have them run on Linux under WSL2. If that doesn't bring out your hacker grin, I don't know what will.
 ====
 
 == Start WSL terminal
