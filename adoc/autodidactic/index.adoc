@@ -40,6 +40,8 @@ include::where-to-do-what.adoc[]
 
 include::perpetual-publishing.adoc[]
 
+include::strong-opinions-weakly-held.adoc[]
+
 = Get a job
 
 include::cv-vs-resume.adoc[]
@@ -47,3 +49,4 @@ include::cv-vs-resume.adoc[]
 = Purpose
 
 include::motivation.adoc[]
+
