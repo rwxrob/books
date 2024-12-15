@@ -13,7 +13,7 @@
 :sectnums!:
 :sectlinks:
 :toc: left
-:toclevels: 2
+:toclevels: 3
 :toc-title: Table of Contents
 :description: Boost your coding, hacking, and learning with a Unix or Linux terminal
 :keywords: terminal unix linux tech education tutorials learning techlife hacking cybersecurity cli command-line bash golang programming coding applied-programming independent-learning irc weechat tmux ed ex vi vim neovim nvim w3m lynx twitch proxmox homelab init beginner noob kubernetes network software-development utilities
@@ -25,11 +25,15 @@
 
 _Boost your coding, hacking, and learning with a Unix or Linux terminal_
 
-include::copyright.adoc[]
+// ————————— front matter —————————
 
-include::dedication.adoc[]
+include::front/copyright.adoc[]
 
-include::prerequisites.adoc[]
+include::front/dedication.adoc[]
+
+include::front/prerequisites.adoc[]
+
+// —————————— preface ——————————
 
 include::preface/welcome.adoc[]
 
@@ -41,37 +45,43 @@ include::preface/how-to-use-this-book.adoc[]
 
 include::preface/hackers-perspective.adoc[]
 
+// ———————— Just enough history ———————
+
 include::terminal-origins.adoc[]
 
-include::learn-launcher.adoc[]
+// ———————— setup termimal PDE ————————
 
-include::learn-alt-tab.adoc[]
+include::first-terminal/first.adoc[]
 
-include::get-wsl2-on-windows.adoc[]
+include::first-terminal/learn-launcher.adoc[]
 
-include::update-bash-on-macos.adoc[]
+//include::learn-alt-tab.adoc[]
 
-include::validate-bash-on-linux.adoc[]
+//include::manage-software/index.adoc[]
 
-include::manage-software/index.adoc[]
+//include::get-wsl2-on-windows.adoc[]
 
-include::install-xdg-utils.adoc[]
+//include::install-xdg-utils.adoc[]
 
-include::get-wezterm.adoc[]
+//include::update-bash-on-macos.adoc[]
 
-include::get-git-github.adoc[]
+//include::validate-bash-on-linux.adoc[]
 
-include::start-dotfiles.adoc[]
+//include::get-git-github.adoc[]
 
-[[config-wezterm]]
-= Configure WezTerm terminal
+//include::start-dotfiles.adoc[]
 
-_In development..._
+//include::config-bash.adoc[]
+
+//include::config-wezterm.adoc[]
 
 [[shell]]
 = Learn shell basics
 
+// include::learn-shell-basics.adoc[]
 _In development..._
+
+//include::tmux/index.adoc[]
 
 [[tmux]]
 = Learn screen and tmux multiplexing
@@ -104,6 +114,8 @@ _In development..._
 = Learn Markdown and pandoc
 
 _In development..._
+
+// ———————- decode config dialects ———————-
 
 [[json]]
 = Learn jq for JSON structured data

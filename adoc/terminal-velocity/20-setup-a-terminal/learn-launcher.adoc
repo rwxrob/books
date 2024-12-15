@@ -1,9 +1,11 @@
 [[launcher]]
-= Learn to launch anything
+== Launch fast
+
+Not knowing how to launch your terminal with the quickest keystroke is like standing in front of a rocket, staring at the control panel, and wondering which button to press. If you can’t launch, you’ll never hit terminal velocity.
 
 Every operating system offers a quick and efficient way to launch applications, open files, and search for information—similar to macOS’s powerful Spotlight feature. Learning how to use these tools effectively can save time and streamline your workflow. This guide will walk you through Spotlight equivalents on Windows, Linux, and other systems.
 
-== Why learn launcher?
+=== Why learn launcher?
 
 - **Efficiency**: launching apps and files directly saves time compared to navigating menus. Your fingers never need to leave home row on the keyboard.
 
@@ -11,7 +13,7 @@ Every operating system offers a quick and efficient way to launch applications, 
 
 - **Universal skills**: mastering these tools makes you productive on any operating system.
 
-== Spotlight on Mac
+=== Spotlight on Mac
 
 On macOS, Spotlight is the built-in search and launcher tool.
 
@@ -28,7 +30,7 @@ On macOS, Spotlight is the built-in search and launcher tool.
 - Look up definitions: Type a word to get a dictionary entry.
 - Search the web: Type your query and select a browser result.
 
-== Search on Windows
+=== Search on Windows
 
 Windows provides a built-in search tool that acts as a launcher.
 
@@ -42,7 +44,7 @@ Windows provides a built-in search tool that acts as a launcher.
 - Search files: Enter the file name or content keywords.
 - Execute commands: Run shell commands directly.
 
-== Activities on Linux
+=== Activities on Linux
 
 Linux has multiple application launchers, depending on your desktop environment and preferences.
 
@@ -62,6 +64,6 @@ Linux has multiple application launchers, depending on your desktop environment 
 - Run commands: Execute terminal commands directly.
 - Perform calculations and translations with plugins.
 
-== Hacker's perspective
+=== Hacker's perspective
 
 The launcher is more than a convenience—it's the hacker's command center. Forget digging through menus or clicking aimlessly; mastery of the launcher means instant access to everything you need, right when you need it. It's about speed, precision, and control—three pillars of the hacker mindset. Whether you're firing up WezTerm, searching for system settings, or running commands, the launcher turns your keyboard into a gateway for efficiency. A hacker doesn't waste time clicking; they orchestrate their tools with purpose. Learn the launcher, and you'll not just use your system—you'll command it.

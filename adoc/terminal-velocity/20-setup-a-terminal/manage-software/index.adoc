@@ -5,7 +5,7 @@ Package management is the backbone of software installation, updates, and mainte
 
 [NOTE]
 ====
-Unix and Linux have been using package management since the 90s, `rpm`, `yum`, `dnf`, `zypper`, `emerge`, `installp`, `pkg`,`apk`, `pacman`. Native Windows has even joined in with the official `winget` command-line package management.
+Unix and Linux have been using package management since the 90s, `rpm`, `yum`, `dnf`, `zypper`, `emerge`, `installp`, `pkg`,`apk`, `pacman`. Native Windows has even joined in with the official `winget` command-line package management. There are way too many to cover in a single book, therefore, we'll just cover the main ones: `apt`, `brew`, `winget`. That's it.
 ====
 
 include::apt.adoc[]

@@ -4,7 +4,7 @@ Are you a parent or a teacher? If so, thank you for being _awesome_! It takes a 
 
 The answer is yes. Yes I am. In fact, my goal is to fully corrupt them much the same as Socrates. If I am successful your children will become _better_ that the status quo, they'll think critically, ask uncomfortable questions, and use their new powers and tools to ethically disrupt this broken world transforming it into something better. They'll become the most annoying people you've ever known—in the best way possible.
 
-==== Why me?
+=== Why learn from me?
 
 Why me? Because getting people to discover this potential and realize it through their own learning is my super power. I've been mentored by the best and I'm _really_ good at it. Since the first time my scouts begged "Mr. Rob, teach us to code. Mr. Rob, teach us to hack. Mr. Rob, teach us Russian." I have been bound and determined to make this a reality. In fact, I started SKILSTAK Coding Arts in 2013 with my own retirement money to address the _real_ needs of the tech industry and those who might consider it as a career, raising a generation of highly skilled knowledge warriors.
 
@@ -24,7 +24,7 @@ It's been a blast being with these people. My favorite memories are all the time
 
 The point is, these success stories don't have to be about someone else. They can be about someone _you know and love_. Terminal tech skills really do change lives and I'm here to help in whatever way I can.
 
-==== Not a text book
+=== Not a text book
 
 While it is true that this book can be thought of as a text book for absolute beginners, the book is very clearly written to include everyone _outside_ of educational institutions. In fact, I wrote it mostly with pro-active _parents_ in mind who want to give their kids a head-start in tech (not teachers).
 

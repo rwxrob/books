@@ -1,0 +1,105 @@
+== What's included in the book
+
+So, what's in this book? Everything you need to start, and nothing you don't. This isn't some bloated manual crammed with fluff. Every page is designed to sharpen your edge, to give you the skills you need to move faster, work smarter, and take control. These are the foundational building blocks of your `skilstak`. The rest? You’ll build it.
+
+=== Get Unix or Linux
+
+Can't do much without a CPU—a Unix or Linux CPU. Look. You can't escape learning Windows—the most vulnerable operating system on planet Earth. Besides, people won't suspect you are a skilled hacker carrying around a corporate Windows laptop. Think of it as camouflage. Thankfully, that largest Unix distro on the planet is macOS and Windows comes with Linux these days (the _Windows Subsystem for Linux_, WSL2).
+
+[CAUTION]
+====
+You want Linux, but you're sweating over the install? Don't. This isn't about proving you can partition a drive or wrangle bootloaders. It's about getting into the fight.
+
+If you're on Windows, use WSL. It's not 'real' Linux, sure—but who cares? It runs the commands, compiles the code, gets the job done. On Mac? You're already halfway there. Fire up the terminal and start typing. The Unix kernel is waiting.
+
+The point is this: don't let the install process slow you down. The system you're using _right now_ is enough to get started. Dive in, learn the commands, break things. Master the environment first—bare hands in the terminal. The distro wars? The dual boot debates? They'll still be there when you're ready to level up.
+
+Right now, it's about ops, not aesthetics. Don't waste time decorating your bunker when you haven't learned to fire the weapon. Just get in. The rest will follow.
+====
+
+=== Setup a terminal
+
+Upgrading your terminal and integrating core terminal tools isn't just an enhancement—its a game-changer:
+
+- `wezterm` - fast and dynamically configurable terminal
+- `nvim` - new version of the world's best text editor
+- `tmux` - windows managers? who needs 'em with tmux
+- `weechat` - OG chat client with full twitch integration
+- `w3m` - text-based web browsing for lightening fast research
+- `lynx` - an original alternative to `w3m` with different aesthetics
+- `mods` - Claude AI assistant integration from the command line with `?`
+- `duck` - duckduckgo.com queries from the command line with `??`
+- `google` - google.com queries from the command line with `???`
+
+Together, this setup transforms the terminal into a high-performance, multi-tool powerhouse. It’s not just worth it—it’s essential for anyone serious about speed, efficiency, and taking control of their environment.
+
+=== Grok your config
+
+Once you have a working terminal, it's time the master the main config dialects:
+
+- bash - universal command shell and scripting language
+- JSON - structured data that powers web APIs and more
+- YAML - JSON on steroids powering all of enterprise computing
+- TOML - a better INI format [I made the https://github.com/toml-lang/toml/pull/408[logo], btw]
+- Lua - dynamic config in the world's most embeddable language.
+- Vimscript - ugly, horrible, and required
+
+[CAUTION]
+====
+Don't like coding in different languages? Sort of a one-trick-pony? Get out. Stop wasting our time.
+====
+
+While learning these essential dialects we'll dissecting your configs. You'll know every single line so you can tailor it to your liking.
+
+=== Code for the terminal
+
+Bash and Go aren’t just tools—they’re the stuff tools are made of. Bash gives you raw, direct control over your system, letting you script and shape your environment in real time. Go takes it further, letting you craft fast, reliable binaries, with embedded resources and payloads, that can automate, extend, and evolve your workflows—even fill in when there's not an OS at all. Compiled Go code can be run _setuid_. Scripts cannot. Hackers start here because these languages aren’t just for using tools—they’re for creating them. With Bash and Go, you’re not just working in the system—you’re defining it.
+
+[CAUTION]
+====
+Why no C or Rust? Are you kidding? You don't even know how to code yet? Be happy you are learning a _real_, compiled language that is actually simple enough for beginners to understand, not some memory-leaking, slow, interpreted trash like PHP, JavaScript, Python, or Ruby. Yes, you _must_ learn all of these languages—and more—to be considered even a mediocre hacker. Just not now. Bash and Go are a perfect pairing.
+
+And, by the way, no, Python is not the "revolutionary language of machine learning." Its like that wizard in Harry Potter who is "really good with memory charms" (in this case that being C stubbing). Python for machine learning and scientific computing is merely pretty syntax on top of C and C++ doing all the _actual_ work. But no one seems to talk about that for some reason.
+
+Rob Pike once called Go "an easier C". It's completely compatible with C code later. In fact, Go is so beloved by hackers that Pike had to officially ask them to please not make malware with it. So there's that to look forward to.
+====
+
+==== Bash
+
+We already learned enough bash for configuring your `.bashrc`. Now it's time to really master more than most corporate drones ever will. Wanna taste: `man bash`.
+
+==== Go
+
+When it comes to cross-compiling gorgeous apps quickly that run with blazing speed in the terminal there's no better language than Go. We'll learn all the main stuff plus the standard packages that make creating commands painless and powerful:
+
+- Bonzai - beautiful, command trees with completion, persistent variables, and more
+- Cobra - world's most widely adopted command line Go framework (even though it sucks)
+- Tview - terminal layout library with forms, dialogs, etc.
+- Tcell - think of the terminal as a screen with a bunch of cells as large pixels
+- Bubbletea - reactive terminal apps that feel modern at the cost of complexity
+
+Don't worry. I won't assume you have ever written a line of code before.
+
+[CAUTION]
+====
+Don't expect a full computer science course in this book. We're hackers, not academics. I once had a senior computer science professor at a large university ask me what Go was—in 2020. They'd never heard of it.
+
+Hackers live in the right now. We keep up. Making the impossible, possible. We don't waste time working out the best sort algorithm in the least amount of time. Let some other out-of-touch nerds do that. We got stuff to do.
+
+We will walk rooted node trees, but not to get an A in some overpriced college course. Because effective text parsing is a core skill for any elite hacker dealing with a world-size bin of text files to own.
+
+And, no, we are not going to learn all of Go. That'll come later. Just-in-time learning—every hacker's #1 skill. Don't learn it til you need it.
+====
+
+=== Plan your next op
+
+Remember this book just boosts you to _terminal velocity_. (I never tire of saying that.) What next? What's behind the metaphorical doors you'll lock pick in this never-ending text adventure of learning:
+
+- What do you want to do with your life?
+- What are the best jobs for hackers like us?
+- Do you even need a job?
+- Should you get a job and where?
+- What languages should you learn next?
+- How can you keep up on your learning?
+- Will you ever find love?
+- Are we all dreaming or in a big simulation?

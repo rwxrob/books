@@ -1,6 +1,6 @@
-= Terminal origins
+= Just enough history
 
-Listen up. The terminal isn't just some relic of the past—it's the edge, the pulse of everything we do. People think they need flashy GUIs, shortcuts, whatever—they're wrong. The real power has always been here, in this black box with a blinking cursor. The terminal is raw, unfiltered control. It's where Unix set the rules and Linux rewrote them for anyone bold enough to take control. If you’re ready to wake up, you need to start here. Understand the tools, the history, the mindset. Because once you do, you’ll see—it's not just code. It's power.
+The terminal isn't just some relic of the past—it's the edge, the pulse of everything we do. People think they need flashy GUIs, shortcuts, whatever—they're wrong. The real power has always been here, in this black box with a blinking cursor. The terminal is raw, unfiltered control. It's where Unix set the rules and Linux rewrote them for anyone bold enough to take control. If you’re ready to wake up, you need to start here. Understand the tools, the history, the mindset. Because once you do, you’ll see—it's not just code. It's power.
 
 == From teletypes to command lines
 
