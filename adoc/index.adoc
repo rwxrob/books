@@ -21,7 +21,7 @@ _Boost your coding, hacking, and learning with a Unix or Linux terminal_
 _Keys to success as a modern knowledge warrior_
 
 - *Linux homelab init* +
-_Get enterprise ready with a Proxmox power tower_
+_Level-up your control with a Proxmox power tower_
 
 - link:bad-strimmer[*Bad Strimmer, No Biscuit*] +
 _Lessons learned from my livestream fails_

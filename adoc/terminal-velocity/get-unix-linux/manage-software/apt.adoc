@@ -1,8 +1,8 @@
-== Linux: apt
+=== Linux: apt
 
 The `apt` command is one of the easiest package managers to use, which is the main reason Linux distributions that use it are so popular, managing software becomes efficient and straightforward, whether you’re running Linux natively or through WSL2 on Windows. Here’s your crash course.
 
-=== Most Common apt Commands
+==== Most Common apt Commands
 
 Update the package lists by fetching the latest information from repositories:
 
@@ -81,7 +81,7 @@ Clear out cached files no longer needed:
 sudo apt autoclean
 ----
 
-=== Advanced apt Commands
+==== Advanced apt Commands
 
 Provides detailed information about a package:
 
@@ -113,7 +113,7 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 ----
 
-=== Tips for Efficient Package Management
+==== Tips for Efficient Package Management
 
 Run `sudo apt update` and `sudo apt upgrade` regularly to keep your system secure and up-to-date.
 

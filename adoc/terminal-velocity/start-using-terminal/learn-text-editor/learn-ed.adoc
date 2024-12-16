@@ -159,7 +159,7 @@ Finds the next occurrence of a pattern in the file.
 
 ==== `g/re/p`: search for pattern and print it
 
-Globally finds all the occurences of a pattern in the file and then prints them out.
+Globally finds all the occurrences of a pattern in the file and then prints them out.
 
 [source, sh]
 ----

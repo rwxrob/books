@@ -1,0 +1,101 @@
+
+
+[[shell]]
+= Learn shell basics
+
+// include::learn-shell-basics.adoc[]
+_In development..._
+
+//include::tmux/index.adoc[]
+
+[[tmux]]
+= Learn screen and tmux multiplexing
+
+_In development..._
+
+//include::learn-text-editor/index.adoc[]
+
+[[labrepo]]
+= Start a lab repo
+
+_In development..._
+
+[[weechat]]
+= Learn weechat IRC
+
+_In development..._
+
+[[browser]]
+= Learn w3m or lynx web browser
+
+_In development..._
+
+[[mods]]
+= Learn mods terminal AI assistant
+
+_In development..._
+
+[[markdown]]
+= Learn Markdown and pandoc
+
+_In development..._
+
+// ———————- decode config dialects ———————-
+
+[[json]]
+= Learn jq for JSON structured data
+
+_In development..._
+
+[[yaml]]
+= Learn yq for YAML structured data
+
+_In development..._
+
+[[bash]]
+= Learn bash scripting
+
+_In development..._
+
+[[bashrc]]
+= Customize bashrc file
+
+[[advshell]]
+= Learn shell advanced commands
+
+`find`, `xargs`, `entr`, `ps`, `awk`, `sed, `perl`, `tr`, `cut`, `split`, `sort`, `uniq`, `ip`, `strace`, `base64`, `ssh`, `top`, `netstat`, `ipconfig`, `ifconfig`, `nc`, `complete`, `tail`, `head`, `cat`, `tac`
+
+_In development..._
+
+[[bashcompletion]]
+= Learn bash completion
+
+_In development..._
+
+[[golang]]
+= Learn Go terminal programming
+
+_In development..._
+
+//include::learn-go-programming/index.adoc[]
+
+_In development..._
+
+= Learn Lua basics for configuration
+
+_In development..._
+
+[[podman]]
+= Learn podman for OCI containers
+
+_In development..._
+
+[[k8s]]
+= Learn local Kubernetes commands
+
+_In development..._
+
+[[appendix]]
+= Appendix
+
+include::90-appendix/index.adoc[]

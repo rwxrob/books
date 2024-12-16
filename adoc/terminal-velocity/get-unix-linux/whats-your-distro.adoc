@@ -1,0 +1,5 @@
+[CAUTION]
+====
+Asking someone “what’s your distro?” is like walking into a room and shouting, “I have no idea what I’m talking about.” That question assumes every single person on the planet with a terminal in front of them is running some flavor of Linux. Spoiler alert: they’re not.
+====
+

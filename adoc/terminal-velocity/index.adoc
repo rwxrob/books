@@ -45,15 +45,34 @@ include::preface/how-to-use-this-book.adoc[]
 
 include::preface/hackers-perspective.adoc[]
 
-// ———————— Just enough history ———————
+// ———————— get unix or linux ————————
 
-include::terminal-origins.adoc[]
+include::get-unix-linux/index.adoc[]
 
-// ———————— setup termimal PDE ————————
+// ——————— setup a terminal ———————
 
-include::first-terminal/first.adoc[]
+include::start-using-terminal/index.adoc[]
 
-include::first-terminal/learn-launcher.adoc[]
+// ——————— create a learning lab ———————
+
+include::create-lab-repo/index.adoc[]
+
+// ———————— grok your config ————————
+
+include::grok-your-configs/index.adoc[]
+
+// ——————— code for the terminal ———————
+
+include::code-for-terminal/index.adoc[]
+
+// ———————— plan your next op ————————
+
+include::plan-your-next-op/index.adoc[]
+
+
+//include::terminal-origins.adoc[]
+
+//include::first-terminal/-launcher.adoc[]
 
 //include::learn-alt-tab.adoc[]
 
@@ -74,101 +93,6 @@ include::first-terminal/learn-launcher.adoc[]
 //include::config-bash.adoc[]
 
 //include::config-wezterm.adoc[]
-
-[[shell]]
-= Learn shell basics
-
-// include::learn-shell-basics.adoc[]
-_In development..._
-
-//include::tmux/index.adoc[]
-
-[[tmux]]
-= Learn screen and tmux multiplexing
-
-_In development..._
-
-include::learn-text-editor/index.adoc[]
-
-[[labrepo]]
-= Start a lab repo
-
-_In development..._
-
-[[weechat]]
-= Learn weechat IRC
-
-_In development..._
-
-[[browser]]
-= Learn w3m or lynx web browser
-
-_In development..._
-
-[[mods]]
-= Learn mods terminal AI assistant
-
-_In development..._
-
-[[markdown]]
-= Learn Markdown and pandoc
-
-_In development..._
-
-// ———————- decode config dialects ———————-
-
-[[json]]
-= Learn jq for JSON structured data
-
-_In development..._
-
-[[yaml]]
-= Learn yq for YAML structured data
-
-_In development..._
-
-[[bash]]
-= Learn bash scripting
-
-_In development..._
-
-[[bashrc]]
-= Customize bashrc file
-
-[[advshell]]
-= Learn shell advanced commands
-
-`find`, `xargs`, `entr`, `ps`, `awk`, `sed, `perl`, `tr`, `cut`, `split`, `sort`, `uniq`, `ip`, `strace`, `base64`, `ssh`, `top`, `netstat`, `ipconfig`, `ifconfig`, `nc`, `complete`, `tail`, `head`, `cat`, `tac`
-
-_In development..._
-
-[[bashcompletion]]
-= Learn bash completion
-
-_In development..._
-
-[[golang]]
-= Learn Go terminal programming
-
-_In development..._
-
-include::learn-go-programming/index.adoc[]
-
-_In development..._
-
-= Learn Lua basics for configuration
-
-_In development..._
-
-[[podman]]
-= Learn podman for OCI containers
-
-_In development..._
-
-[[k8s]]
-= Learn local Kubernetes commands
-
-_In development..._
 
 [[appendix]]
 = Appendix

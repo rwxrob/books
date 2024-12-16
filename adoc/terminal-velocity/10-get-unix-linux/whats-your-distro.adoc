@@ -1,7 +1,0 @@
-[CAUTION]
-====
-Asking someone “what’s your distro?” is like walking into a room and shouting, “I have no idea what I’m talking about.” That question assumes every single person on the planet with a terminal in front of them is running some flavor of Linux. Spoiler alert: they’re not. Take macOS, for example. It’s not Linux. It’s Unix. And here’s the kicker—Apple pays tens of thousands of dollars every year just to maintain their “Unix audit compliance” so they can legally slap that label on macOS and call it the world’s largest Unix distribution. Love Apple, hate Apple—it doesn’t matter. They’re not wrong.
-
-Want to know why? It’s because Jobs was a pirate in a turtleneck. He stole BSD Unix for NeXT after Apple booted him, then turned around and forced Apple to adopt his “NeXT operating system” when they begged him to come back. And guess what? NeXT was still BSD Unix under the hood. Over time, Apple rebranded it as `darwin`—because, let’s face it, even Apple doesn’t like admitting their shiny macOS core started with something as raw as BSD. That’s why when you run the `uname` command on macOS today, you’re not seeing `freebsd`. You’re seeing Apple’s handprint, their little act of revisionist history etched into the command line forever.
-====
-

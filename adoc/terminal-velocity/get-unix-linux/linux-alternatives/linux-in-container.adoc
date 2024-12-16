@@ -1,0 +1,32 @@
+=== Linux in container
+
+This approach is lightweight, risk-free, and an excellent way to familiarize yourself with Linux and container technology.
+
+[CAUTION]
+====
+Containers don't allow integration with the host system. That's the point. So do expect to be able to open host system apps and stuff.
+====
+
+Imagine being able to try out any Linux distro without wiping your hard drive, dual-booting, or wrestling with a VM. That's the power of containers. They don't just open doors but blows them off their hinges. Whether you're curious about Ubuntu, Fedora, Kali, or something more niche like Alpine or Arch, `podman` lets you spin up a lightweight containerized version in seconds. No risk, no commitment, just pure exploration.
+
+But containers aren't just for trying out Linux—they're a cornerstone of modern computing and the entire "cloud native" movement. Later in the book _Linux Homelab Init_, you'll learn how to use containers to isolate applications, deploy services, and even simulate entire network setups. Containers are lightweight, portable, and essential for anyone serious about building scalable, efficient systems. Think of them as the foundation of your future homelab, a tool you'll rely on again and again. Here's an overview:
+
+- **Step 1:** Install `podman`.
+- **Step 2:** Run a linux container: `podman run -it --rm ubuntu`.
+- **Step 3:** Explore, install, and break as much as you like.
+
+That's it. It really is that easy. No wonder hackers love creating container images with all their favorite hacking tools in them. One install and another command and an entire Linux system is at their control. Try some of the following to compare:
+
+[source, shell]
+----
+podman run -it --rm docker.io/kalilinux/kali-rolling
+podman run -it --rm alpine
+podman run -it --rm busybox
+podman run -it --rm golang
+podman run -it --rm nicolaka/netshoot
+----
+
+[CAUTION]
+====
+Don't do `docker`. The entire company's been deprecated by the industry. 
+====

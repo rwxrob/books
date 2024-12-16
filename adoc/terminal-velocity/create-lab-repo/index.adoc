@@ -1,0 +1,10 @@
+[[create-learning-lab]]
+= Create learning lab
+
+Back in the day, every hacker worth their salt had a black book—a secret stash of notes, exploits, and sketches of chaotic brilliance. It was personal, analog, and irreplaceable. But times have changed. The modern hacker doesn't carry around a notebook; they wield a **lab**—a repository that's part journal, part toolkit, and part playground.
+
+A lab repo is your digital black book reimagined. It's where your Markdown codebook sits side-by-side with runnable scripts, experiments, and proof-of-concepts. This isn't just documentation—it's a live record of your evolution. Markdown captures the *why*, the *how*, and the *what ifs*, while the runnable code turns theory into action. Together, they're not just a record of your past ideas; they're a springboard for your future ones.
+
+The beauty of a lab is that it grows with you. Every script you write, every idea you test, every concept you fail and rebuild—it all lives here. It's not static, like the black book of old; it's dynamic, alive. The lab doesn't just hold your tools—it *is* the tool.
+
+So don't just code. Don't just take notes. Build your lab. Because in this game, knowledge isn't power—knowledge that runs, logs, and scales is power. The old black book has a new digital companion.

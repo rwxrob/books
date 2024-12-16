@@ -1,6 +1,12 @@
 == How to use this book
 
-Even though this book is mostly a compilation of several smaller ones, it is still designed to be read from top to bottom. The concepts and tools build on one another. The tasks associated with the tools, however, are designed to be re-learned often like an agent preparing for a special op. Повторение — мать учения. Repetition is the mother of learning. Anyone who has ever done anything in the military knows not all op procedures can be memorized and ready at all times, which is why you create your own little black book while reading this one, just like an _actual_ cybersecurity agent would in the field.
+RTFM. Read the Friggin Manual. All of it.
+
+Even though this book more like six smaller ones, it is still designed to be read from top to bottom. The concepts and tools build on one another. The tasks associated with the tools, however, are designed to be re-learned often like an agent preparing for a special op. You'll have to go through it once, from top to bottom to download it into your brain.
+
+=== Wax on. Wax off
+
+Повторение — мать учения. Repetition is the mother of learning. Anyone who has ever done anything worth learning knows not all procedures can be memorized and ready. You have to come back to them and repeat them. This is why you setup your own learning lab where you take dynamic notes that change as the times do and as you learn more. It's the reason this book is perpetually published. It's never finished. A hacker's learning never is. Always adapting and acquiring new skills and knowledge. Once you think you've learned it all, you're dead.
 
 === Don't just read it
 
@@ -12,7 +18,7 @@ We humans are social creatures. Learning is communal. Join a community that is f
 
 [NOTE]
 ====
-My sincere hope is that the parents, teachers, and young hackers reading these words will find opportunities and motivation to create their own clubs and communities dedicated to helping others master the art of the terminal command line and bash scripting and all the well-earned benefits of doing so. While you are working on creating your own community, consider joining mine at https://linktr.ee/rwxrob.
+My sincere hope is that the parents, teachers, and young hackers reading these words will find opportunities and motivation to create their own clubs and communities dedicated to helping others master the art of the terminal command line and bash scripting and all the well-earned benefits of doing so. While you are working on creating your own community, consider joining my crew: https://linktr.ee/rwxrob.
 ====
 
 === Find a mentor

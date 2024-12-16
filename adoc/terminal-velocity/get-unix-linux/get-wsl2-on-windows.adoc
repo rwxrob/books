@@ -1,8 +1,8 @@
-= Get WSL2 bash on Windows
+== Windows WSL2
 
 Alright, listen up. You've got a Windows machine and dreams of running Linux without dealing with dual-boot nightmares or spinning up a resource-hogging virtual machine or dual-booting every time. Enter WSL2—your ticket to running Ubuntu seamlessly, like a hacker in a sci-fi flick. Here's how you get it up and running, no fluff, just action.
 
-== Enable WSL
+=== Enable WSL
 
 First things first, open PowerShell. No, not PowerPoint, your terminal. Hit `Win` and start typing `powershell`. Then, fire this off:
 
@@ -13,7 +13,7 @@ wsl --install
 
 This command does the heavy lifting: enabling WSL, installing the kernel, and grabbing a default Linux distribution, which should be Ubuntu. You will probably have to restart your computer.
 
-== Upgrade to WSL2
+=== Upgrade to WSL2
 
 If Windows decides to hand you WSL1 like it’s 2018, upgrade it manually:
 
@@ -24,7 +24,7 @@ wsl --set-default-version 2
 
 WSL2 is where the magic happens—full Linux kernel, better performance, and actual compatibility with modern tools.
 
-== Install Ubuntu into WSL2
+=== Install Ubuntu into WSL2
 
 If Ubuntu didn't install during Step 1, snag it manually. Open the *Microsoft Store* (I know, gross) and search for "Ubuntu." Pick your flavor—`Ubuntu 20.04`, `22.04`, whatever fits your vibe. Click *Get* and let it download.
 
@@ -35,7 +35,7 @@ When it's done, open it from the Start menu or run:
 wsl -d Ubuntu
 ----
 
-== Update your software repositories
+=== Update your software repositories
 
 You're in. First boot might feel sluggish—it's setting up the filesystem. Follow the prompts to create your Linux username and password. Remember, this isn't your Windows password; it’s your Linux alter ego. Make it a good one, lowercase, easy to remember, short, no weird punctuation. You will use the same username to create a <<github, GitHub account>>, so you might want to skip to that.
 
@@ -51,7 +51,7 @@ sudo apt update && sudo apt upgrade -y
 We'll talk more about `apt` for <<manage-software, software package management later>>.
 ====
 
-== Install WSL utilities
+=== Install WSL utilities
 
 Want seamless access to your Windows files? They’re right here in `/mnt/c`.
 
@@ -69,7 +69,7 @@ Now when you do anything like open a URL or a file it will use the host Windows 
 Any executable can be run from within WSL2, you just have to make sure you have the `.exe` at the end (ex: `powershell.exe`, `winget.exe`, `ipconfig.exe`, `notepad.exe`). This level of integration makes it possible to create automatic notifications and other integrations with Windows but to write them in bash or even Go and have them run on Linux under WSL2. If that doesn't bring out your hacker grin, I don't know what will.
 ====
 
-== Start WSL terminal
+==== Start WSL terminal
 
 Until we upgrade the terminal, you can pull up a terminal anytime by running bash shell in WSL by pressing `Windows` key and typing `wsl` and pressing `Enter`.
 
@@ -78,6 +78,6 @@ Until we upgrade the terminal, you can pull up a terminal anytime by running bas
 Later, you'll type `wezterm` to pull up our upgraded terminal running the same bash and WSL2 inside of it.
 ====
 
-== Hacker's perspective
+=== Hacker's perspective
 
 WSL2 is the hacker's gateway to seamless versatility, blending the power of Linux with the flexibility of Windows. But true mastery comes with wslu—a toolkit that supercharges your WSL2 experience. With wslu, you can open files, launch browsers, and integrate Linux commands with Windows apps effortlessly. It breaks down barriers, making your environment feel like one cohesive system. Hackers don't settle for limits—they expand them, and WSL2 with wslu does just that. Debug, deploy, script, and innovate—all while the system works around you, not the other way around.

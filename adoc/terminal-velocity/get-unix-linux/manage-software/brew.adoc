@@ -1,8 +1,8 @@
-== Mac: brew
+=== Mac: brew
 
 Package management on macOS becomes a breeze with Homebrew, a powerful package manager that simplifies the installation, updating, and maintenance of software. Here’s everything you need to get started and master the basics.
 
-=== Most common Homebrew commands
+==== Most common Homebrew commands
 
 Update the list of available formulas and casks:
 
@@ -67,7 +67,7 @@ Clean up old or unused packages and cached files:
 brew cleanup
 ----
 
-=== Advanced Homebrew commands
+==== Advanced Homebrew commands
 
 View detailed information about a package:
 
@@ -97,7 +97,7 @@ Example:
 brew install --cask google-chrome
 ----
 
-=== Tips for efficient package management
+==== Tips for efficient package management
 
 Run `brew update` and `brew upgrade` regularly to ensure your packages and dependencies stay current.
 
