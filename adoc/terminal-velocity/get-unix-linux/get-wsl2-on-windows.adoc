@@ -26,9 +26,7 @@ WSL2 is where the magic happens—full Linux kernel, better performance, and act
 
 === Install Ubuntu into WSL2
 
-If Ubuntu didn't install during Step 1, snag it manually. Open the *Microsoft Store* (I know, gross) and search for "Ubuntu." Pick your flavor—`Ubuntu 20.04`, `22.04`, whatever fits your vibe. Click *Get* and let it download.
-
-When it's done, open it from the Start menu or run:
+If Ubuntu didn't install during Step 1, snag it manually. Open the *Microsoft Store* (I know, gross) and search for "Ubuntu." When it's done, open it from the Start menu or run:
 
 [source,bash]
 ----
@@ -37,7 +35,7 @@ wsl -d Ubuntu
 
 === Update your software repositories
 
-You're in. First boot might feel sluggish—it's setting up the filesystem. Follow the prompts to create your Linux username and password. Remember, this isn't your Windows password; it’s your Linux alter ego. Make it a good one, lowercase, easy to remember, short, no weird punctuation. You will use the same username to create a <<github, GitHub account>>, so you might want to skip to that.
+You're in. First boot might feel sluggish—it's setting up the filesystem. Follow the prompts to create your Linux username and password. Remember, this isn't your Windows password; it's your Linux alter ego. Make it a good one, lowercase, easy to remember, short, no weird punctuation. You will use the same username to create a <<github, GitHub account>>, so you might want to skip to that.
 
 Next, update everything:
 

@@ -7,11 +7,13 @@ This isn't about perfection; it's about initiation. You don't need the perfect c
 
 We'll get there. One step at a time.
 
+include::learn-launcher.adoc[]
+
+include::learn-alt-tab.adoc[]
+
+
 // get-git-github.adoc
 // get-wezterm.adoc
-// install-xdg-utils.adoc
-// learn-alt-tab.adoc
-// learn-launcher.adoc
 // learn-text-editor
 // start-dotfiles.adoc
 // terminal-origins.adoc

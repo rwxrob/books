@@ -57,7 +57,7 @@ Example:
 
 [source,bash]
 ----
-apt search python
+apt search golang
 ----
 
 List all installed packages on your system:

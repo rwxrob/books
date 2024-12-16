@@ -496,136 +496,98 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#prerequisites">Prerequisites</a></li>
 <li><a href="#preface">Preface</a>
 <ul class="sectlevel2">
-<li><a href="#_who_should_read_this_book">Who should read this book</a></li>
-<li><a href="#_whats_included_in_the_book">What&#8217;s included in the book</a></li>
-<li><a href="#_how_to_use_this_book">How to use this book</a></li>
+<li><a href="#_who_should_read_this_book">Who should read this book</a>
+<ul class="sectlevel3">
+<li><a href="#_hacker_first_coder_second">Hacker first, coder second</a></li>
+<li><a href="#_dear_parents_and_pedagogues">Dear parents and pedagogues</a></li>
+<li><a href="#_why_learn_from_me">Why learn from me?</a></li>
+<li><a href="#_not_a_text_book">Not a text book</a></li>
+</ul>
+</li>
+<li><a href="#_whats_included_in_the_book">What&#8217;s included in the book</a>
+<ul class="sectlevel3">
+<li><a href="#_get_unix_or_linux">Get Unix or Linux</a></li>
+<li><a href="#_start_using_terminal">Start using terminal</a></li>
+<li><a href="#_create_lab_repo">Create lab repo</a></li>
+<li><a href="#_grok_your_configs">Grok your configs</a></li>
+<li><a href="#_code_for_the_terminal">Code for the terminal</a></li>
+<li><a href="#_plan_your_next_op">Plan your next op</a></li>
+</ul>
+</li>
+<li><a href="#_how_to_use_this_book">How to use this book</a>
+<ul class="sectlevel3">
+<li><a href="#_wax_on_wax_off">Wax on. Wax off</a></li>
+<li><a href="#_dont_just_read_it">Don&#8217;t just read it</a></li>
+<li><a href="#_join_a_crew">Join a crew</a></li>
+<li><a href="#_find_a_mentor">Find a mentor</a></li>
+<li><a href="#_become_a_mentor">Become a mentor</a></li>
+<li><a href="#_trust_me_kiddo">Trust me, kiddo</a></li>
+<li><a href="#_say_hello_chloe">Say hello, Chloe</a></li>
+</ul>
+</li>
 <li><a href="#_hackers_perspective">Hacker&#8217;s perspective</a></li>
 </ul>
 </li>
-<li><a href="#_terminal_origins">Terminal origins</a>
+<li><a href="#get-unix-linux">Get Unix or Linux</a>
 <ul class="sectlevel2">
-<li><a href="#_from_teletypes_to_command_lines">From teletypes to command lines</a></li>
-<li><a href="#_what_were_teletypes">What were teletypes?</a></li>
-<li><a href="#_how_teletypes_shaped_terminals">How teletypes shaped terminals</a></li>
-<li><a href="#_legacy_in_modern_terminals">Legacy in modern terminals</a></li>
-<li><a href="#_unix_and_the_model_33">Unix and the Model 33</a></li>
+<li><a href="#_mac_is_unix">Mac <em>is</em> Unix</a>
+<ul class="sectlevel3">
 <li><a href="#_hackers_perspective_2">Hacker&#8217;s perspective</a></li>
 </ul>
 </li>
-<li><a href="#launcher">Learn to launch anything</a>
-<ul class="sectlevel2">
-<li><a href="#_why_learn_launcher">Why learn launcher?</a></li>
-<li><a href="#_spotlight_on_mac">Spotlight on Mac</a></li>
-<li><a href="#_search_on_windows">Search on Windows</a></li>
-<li><a href="#_activities_on_linux">Activities on Linux</a></li>
-<li><a href="#_hackers_perspective_3">Hacker&#8217;s perspective</a></li>
-</ul>
-</li>
-<li><a href="#_learn_alt_tab_for_window_switching">Learn Alt-Tab for window switching</a>
-<ul class="sectlevel2">
-<li><a href="#_why_learn_alt_tab">Why learn Alt-Tab?</a></li>
-<li><a href="#_how_to_use_alt_tab">How to use Alt-Tab</a></li>
-<li><a href="#_hackers_perspective_4">Hacker&#8217;s perspective</a></li>
-</ul>
-</li>
-<li><a href="#_get_wsl2_bash_on_windows">Get WSL2 bash on Windows</a>
-<ul class="sectlevel2">
+<li><a href="#_windows_wsl2">Windows WSL2</a>
+<ul class="sectlevel3">
 <li><a href="#_enable_wsl">Enable WSL</a></li>
 <li><a href="#_upgrade_to_wsl2">Upgrade to WSL2</a></li>
 <li><a href="#_install_ubuntu_into_wsl2">Install Ubuntu into WSL2</a></li>
 <li><a href="#_update_your_software_repositories">Update your software repositories</a></li>
 <li><a href="#_install_wsl_utilities">Install WSL utilities</a></li>
-<li><a href="#_start_wsl_terminal">Start WSL terminal</a></li>
-<li><a href="#_hackers_perspective_5">Hacker&#8217;s perspective</a></li>
+<li><a href="#_hackers_perspective_3">Hacker&#8217;s perspective</a></li>
 </ul>
 </li>
-<li><a href="#_update_bash_on_mac">Update bash on Mac</a>
-<ul class="sectlevel2">
-<li><a href="#_install_homebrew">Install Homebrew</a></li>
-<li><a href="#_install_bash_with_brew">Install bash with brew</a></li>
-<li><a href="#_add_bash_to_the_shell_list">Add bash to the shell list</a></li>
-<li><a href="#_make_bash_your_default_shell">Make bash your default shell</a></li>
-<li><a href="#_check_your_current_bash_version">Check your current bash version</a></li>
-<li><a href="#_hackers_perspective_6">Hacker&#8217;s perspective</a></li>
-</ul>
-</li>
-<li><a href="#_validate_bash_on_linux">Validate bash on Linux</a>
-<ul class="sectlevel2">
-<li><a href="#_check_your_current_bash_version_2">Check your current bash version</a></li>
-<li><a href="#_update_your_software_repositories_2">Update your software repositories</a></li>
-<li><a href="#_make_bash_your_default_shell_2">Make bash your default shell</a></li>
-<li><a href="#_hackers_perspective_7">Hacker&#8217;s perspective</a></li>
-</ul>
-</li>
-<li><a href="#manage-software">Manage installed software</a>
-<ul class="sectlevel2">
+<li><a href="#package-managers">Package managers</a>
+<ul class="sectlevel3">
 <li><a href="#_linux_apt">Linux: apt</a></li>
 <li><a href="#_mac_brew">Mac: brew</a></li>
 <li><a href="#_windows_winget">Windows: winget</a></li>
-<li><a href="#_hackers_perspective_8">Hacker&#8217;s perspective</a></li>
+<li><a href="#_benefits_of_winget">Benefits of winget</a></li>
+<li><a href="#_hackers_perspective_4">Hacker&#8217;s perspective</a></li>
 </ul>
 </li>
-<li><a href="#_install_xdg_utils_on_linuxwsl2">Install xdg-utils on Linux/WSL2</a>
+<li><a href="#_alt_linux">Alt Linux</a>
+<ul class="sectlevel3">
+<li><a href="#_linux_on_metal_2">Linux on metal</a></li>
+<li><a href="#_linux_in_virtual_machine">Linux in virtual machine</a></li>
+<li><a href="#_linux_in_container">Linux in container</a></li>
+<li><a href="#_hackers_perspective_5">Hacker&#8217;s perspective</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#start-using-terminal">Start using terminal</a>
 <ul class="sectlevel2">
-<li><a href="#_test_opening_something">Test opening something</a></li>
-<li><a href="#_hackers_perspective_9">Hacker&#8217;s perspective</a></li>
+<li><a href="#launcher">Launch fast</a>
+<ul class="sectlevel3">
+<li><a href="#_why_learn_launcher">Why learn launcher?</a></li>
+<li><a href="#_spotlight_on_mac">Spotlight on Mac</a></li>
+<li><a href="#_search_on_windows">Search on Windows</a></li>
+<li><a href="#_activities_on_linux">Activities on Linux</a></li>
+<li><a href="#_hackers_perspective_6">Hacker&#8217;s perspective</a></li>
 </ul>
 </li>
-<li><a href="#get-wezterm">Get WezTerm terminal</a>
-<ul class="sectlevel2">
-<li><a href="#_windows_install_with_winget">Windows: Install with winget</a></li>
-<li><a href="#_mac_install_with_homebrew">Mac: Install with Homebrew</a></li>
-<li><a href="#_linuxwsl2_install_with_apt">Linux/WSL2: Install with apt</a></li>
-<li><a href="#_hackers_perspective_10">Hacker&#8217;s perspective</a></li>
+<li><a href="#_learn_alt_tab_for_window_switching">Learn Alt-Tab for window switching</a>
+<ul class="sectlevel3">
+<li><a href="#_why_learn_alt_tab">Why learn Alt-Tab?</a></li>
+<li><a href="#_how_to_use_alt_tab">How to use Alt-Tab</a></li>
+<li><a href="#_hackers_perspective_7">Hacker&#8217;s perspective</a></li>
 </ul>
 </li>
-<li><a href="#github">Get Git and GitHub</a>
-<ul class="sectlevel2">
-<li><a href="#_why_github_matters_to_hackers">Why GitHub matters to hackers</a></li>
-<li><a href="#_get_a_github_account">Get a GitHub account</a></li>
-<li><a href="#_github_tips_for_hackers">GitHub tips for hackers</a></li>
-<li><a href="#_hackers_perspective_11">Hacker’s perspective</a></li>
 </ul>
 </li>
-<li><a href="#dotfiles">Start a dotfiles repo</a>
-<ul class="sectlevel2">
-<li><a href="#_why_dotfiles_matter">Why dotfiles matter</a></li>
-<li><a href="#_create_your_dotfiles_repo">Create your dotfiles repo</a></li>
-<li><a href="#_make_it_yours">Make it yours</a></li>
-<li><a href="#_commit_and_push_changes">Commit and push changes</a></li>
-<li><a href="#_bootstrap_any_machine">Bootstrap any machine</a></li>
-<li><a href="#_hackers_perspective_12">Hacker&#8217;s perspective</a></li>
-</ul>
-</li>
-<li><a href="#config-wezterm">Configure WezTerm terminal</a></li>
-<li><a href="#shell">Learn shell basics</a></li>
-<li><a href="#tmux">Learn screen and tmux multiplexing</a></li>
-<li><a href="#edit-text">Learn to edit text anywhere</a>
-<ul class="sectlevel2">
-<li><a href="#_text_editing_with_ed_ex_vi_vim_and_nvim">Text editing with ed, ex, vi, vim, and nvim</a></li>
-<li><a href="#_learn_ed">Learn ed</a></li>
-<li><a href="#learn-vim">Learn Vim</a></li>
-</ul>
-</li>
-<li><a href="#labrepo">Start a lab repo</a></li>
-<li><a href="#weechat">Learn weechat IRC</a></li>
-<li><a href="#browser">Learn w3m or lynx web browser</a></li>
-<li><a href="#mods">Learn mods terminal AI assistant</a></li>
-<li><a href="#markdown">Learn Markdown and pandoc</a></li>
-<li><a href="#json">Learn jq for JSON structured data</a></li>
-<li><a href="#yaml">Learn yq for YAML structured data</a></li>
-<li><a href="#bash">Learn bash scripting</a></li>
-<li><a href="#bashrc">Customize bashrc file</a></li>
-<li><a href="#advshell">Learn shell advanced commands</a></li>
-<li><a href="#bashcompletion">Learn bash completion</a></li>
-<li><a href="#golang">Learn Go terminal programming</a>
-<ul class="sectlevel2">
-<li><a href="#_你好朋友">你好，朋友</a></li>
-</ul>
-</li>
-<li><a href="#_learn_lua_basics_for_configuration">Learn Lua basics for configuration</a></li>
-<li><a href="#podman">Learn podman for OCI containers</a></li>
-<li><a href="#k8s">Learn local Kubernetes commands</a></li>
+<li><a href="#create-learning-lab">Create learning lab</a></li>
+<li><a href="#grok-config">Grok your config</a></li>
+<li><a href="#code-for-terminal">Code for the terminal</a></li>
+<li><a href="#plan-next-op">Plan your next op</a></li>
 <li><a href="#appendix">Appendix</a>
 <ul class="sectlevel2">
 <li><a href="#gitea">Gitea alternative to GitHub</a></li>
@@ -773,8 +735,9 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 <div class="paragraph">
 <p>The answer is yes. Yes I am. In fact, my goal is to fully corrupt them much the same as Socrates. If I am successful your children will become <em>better</em> that the status quo, they&#8217;ll think critically, ask uncomfortable questions, and use their new powers and tools to ethically disrupt this broken world transforming it into something better. They&#8217;ll become the most annoying people you&#8217;ve ever known—in the best way possible.</p>
 </div>
-<div class="sect4">
-<h5 id="_why_me"><a class="link" href="#_why_me">Why me?</a></h5>
+</div>
+<div class="sect3">
+<h4 id="_why_learn_from_me"><a class="link" href="#_why_learn_from_me">Why learn from me?</a></h4>
 <div class="paragraph">
 <p>Why me? Because getting people to discover this potential and realize it through their own learning is my super power. I&#8217;ve been mentored by the best and I&#8217;m <em>really</em> good at it. Since the first time my scouts begged "Mr. Rob, teach us to code. Mr. Rob, teach us to hack. Mr. Rob, teach us Russian." I have been bound and determined to make this a reality. In fact, I started SKILSTAK Coding Arts in 2013 with my own retirement money to address the <em>real</em> needs of the tech industry and those who might consider it as a career, raising a generation of highly skilled knowledge warriors.</p>
 </div>
@@ -807,8 +770,8 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 <p>The point is, these success stories don&#8217;t have to be about someone else. They can be about someone <em>you know and love</em>. Terminal tech skills really do change lives and I&#8217;m here to help in whatever way I can.</p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="_not_a_text_book"><a class="link" href="#_not_a_text_book">Not a text book</a></h5>
+<div class="sect3">
+<h4 id="_not_a_text_book"><a class="link" href="#_not_a_text_book">Not a text book</a></h4>
 <div class="paragraph">
 <p>While it is true that this book can be thought of as a text book for absolute beginners, the book is very clearly written to include everyone <em>outside</em> of educational institutions. In fact, I wrote it mostly with pro-active <em>parents</em> in mind who want to give their kids a head-start in tech (not teachers).</p>
 </div>
@@ -820,25 +783,296 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 </div>
 </div>
 </div>
-</div>
 <div class="sect2">
 <h3 id="_whats_included_in_the_book"><a class="link" href="#_whats_included_in_the_book">What&#8217;s included in the book</a></h3>
 <div class="paragraph">
 <p>So, what&#8217;s in this book? Everything you need to start, and nothing you don&#8217;t. This isn&#8217;t some bloated manual crammed with fluff. Every page is designed to sharpen your edge, to give you the skills you need to move faster, work smarter, and take control. These are the foundational building blocks of your <code>skilstak</code>. The rest? You’ll build it.</p>
 </div>
+<div class="paragraph">
+<p>This book is divided into six parts:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Get Unix or Linux</p>
+</li>
+<li>
+<p>Start using terminal</p>
+</li>
+<li>
+<p>Create lab repo</p>
+</li>
+<li>
+<p>Grok your configs</p>
+</li>
+<li>
+<p>Code for the terminal</p>
+</li>
+<li>
+<p>Plan your next op</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>There is also additional secondarily relevant content in the appendix.</p>
+</div>
+<div class="sect3">
+<h4 id="_get_unix_or_linux"><a class="link" href="#_get_unix_or_linux">Get Unix or Linux</a></h4>
+<div class="paragraph">
+<p>There&#8217;s not much you can do without a CPU. And the best computer operating system for that CPU is Unix or Linux. But how do you hack on a Windows or a Mac? The hacker&#8217;s dilemma.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Don&#8217;t let the install process slow you down. The system you&#8217;re using <em>right now</em> is enough to get started. Dive in, learn the commands, break things. Master the environment first—bare hands in the terminal. The distro wars? The dual boot debates? They&#8217;ll still be there when you&#8217;re ready to level up. Right now, it&#8217;s about ops, not aesthetics. Don&#8217;t waste time decorating your bunker when you haven&#8217;t learned to fire the weapon. Just get in. The rest will follow.</p>
+</div>
+<div class="paragraph">
+<p>Besides, people won&#8217;t suspect you&#8217;re a skilled hacker carrying around a corporate Windows laptop. Think of it as camouflage.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect4">
+<h5 id="_linux_on_metal"><a class="link" href="#_linux_on_metal">Linux on metal</a></h5>
+<div class="paragraph">
+<p>The lucky ones running are already running Linux on bare metal. They&#8217;re already free from the chains of Windows. No bloated background processes, no endless updates hijacking their workflow—just raw power, precision, and control. Their machine doesn&#8217;t just run; it listens, ready to do exactly what they need, exactly when they need it. If that&#8217;s you, congrats. You&#8217;re starting ahead of the game. But don&#8217;t expect me to show you how to install Linux on your computer, yet. That&#8217;ll come later, in another book: <em>Linux homelab init</em>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_macos_is_unix"><a class="link" href="#_macos_is_unix">macOS is Unix</a></h5>
+<div class="paragraph">
+<p>macOS is the largest Unix distro on the planet, a moniker for this they pay 10s of thousands of dollars every year to be audited for Unix compliance. So yeah, it&#8217;s a Unix system with a custom desktop environment.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_windows_subsystem_for_linux_wsl2"><a class="link" href="#_windows_subsystem_for_linux_wsl2">Windows Subsystem for Linux (WSL2)</a></h5>
+<div class="paragraph">
+<p>You can&#8217;t escape learning Windows—the most vulnerable operating system on planet Earth. So using one now is fine. It&#8217;s not 'real' Linux, sure—but who cares? It runs the commands, compiles the code, gets the job done. This isn&#8217;t about proving you can partition a drive or wrangle bootloaders. It&#8217;s about getting into the fight. WSL2 gets you there.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_software_package_managers"><a class="link" href="#_software_package_managers">Software package managers</a></h5>
+<div class="paragraph">
+<p>Every OS has a package manager. Knowing how to install, update, and remove software using nothing but a single command is essential:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>brew</code> - macOS</p>
+</li>
+<li>
+<p><code>winget</code> - Windows</p>
+</li>
+<li>
+<p><code>apt</code> - Linux including WSL2</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_start_using_terminal"><a class="link" href="#_start_using_terminal">Start using terminal</a></h4>
+<div class="paragraph">
+<p>Upgrading your terminal and integrating core terminal tools isn&#8217;t just an enhancement—its a game-changer:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>bash</code> - universal command shell and scripting language</p>
+</li>
+<li>
+<p><code>wezterm</code> - fast and dynamically configurable terminal</p>
+</li>
+<li>
+<p><code>git</code>/<code>gh</code> - save, share, distribute your source code</p>
+</li>
+<li>
+<p><code>nano</code>/<code>ed</code>/<code>ex</code>/<code>vi</code>/<code>vim</code>/<code>nvim</code> - terminal text editors at your fingertips</p>
+</li>
+<li>
+<p><code>screen</code>/<code>tmux</code> - who needs a window manager when you have a multiplexer</p>
+</li>
+<li>
+<p><code>w3m</code>/<code>lynx</code> - terminal web browsers for lightening fast research</p>
+</li>
+<li>
+<p><code>mods</code>/<code>?</code> - Claude AI assistant integration from the command line</p>
+</li>
+<li>
+<p><code>duck</code>/<code>??</code> - duckduckgo.com queries from the command line</p>
+</li>
+<li>
+<p><code>google</code>/<code>???</code> - google.com queries from the command line</p>
+</li>
+<li>
+<p><code>weechat</code> - OG IRC chat client with authenticated Twitch integration</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Together, this setup transforms the terminal into a high-performance, multi-tool powerhouse. It’s not just worth it—it’s essential for anyone serious about speed, efficiency, and taking control of their environment.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_create_lab_repo"><a class="link" href="#_create_lab_repo">Create lab repo</a></h4>
+<div class="paragraph">
+<p>A lab repo isn&#8217;t just a folder—it&#8217;s your personal codebook, your digital sanctum. It&#8217;s where ideas are born, tested, and sharpened. Markdown notes document the chaos, while the code tells the story of your experiments, your breakthroughs, your failures. It&#8217;s not about just saving files; it&#8217;s about building a map of your learning, linking thought to execution. This isn&#8217;t documentation—it&#8217;s a blueprint for hacking the future, one test, one script, one revelation at a time.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_grok_your_configs"><a class="link" href="#_grok_your_configs">Grok your configs</a></h4>
+<div class="paragraph">
+<p>Once you have a working terminal, a lab, and some dotfiles, it&#8217;s time the master config dialects:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>bash - universal command shell and scripting language</p>
+</li>
+<li>
+<p>JSON - structured data that powers web APIs and more</p>
+</li>
+<li>
+<p>YAML - JSON on steroids powering all of enterprise computing</p>
+</li>
+<li>
+<p>TOML - a better INI format [I made the <a href="https://github.com/toml-lang/toml/pull/408">logo</a>, btw]</p>
+</li>
+<li>
+<p>Lua - dynamic config in the world&#8217;s most embeddable language.</p>
+</li>
+<li>
+<p>Vimscript - just enough—ugly, horrible, and required</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Don&#8217;t like coding in different languages? At least now you know. Put the book down and walk away.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>While learning these essential dialects we&#8217;ll dissecting your configs. You&#8217;ll know every single line so you can tailor it to your liking.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_code_for_the_terminal"><a class="link" href="#_code_for_the_terminal">Code for the terminal</a></h4>
+<div class="paragraph">
+<p>Bash and Go aren’t just tools—they’re the stuff tools are made of. Bash gives you raw, direct control over your system, letting you script and shape your environment in real time. Go takes it further, letting you craft fast, reliable binaries, with embedded resources and payloads, that can automate, extend, and evolve your workflows—even fill in when there&#8217;s no OS at all. Compiled Go code can run as <em>setuid</em>. Scripts cannot. Hackers start here because these languages aren’t just for using tools—they’re for creating them. With Bash and Go, you’re not just working in the system—you’re defining it.</p>
+</div>
+<div class="sect4">
+<h5 id="_bash"><a class="link" href="#_bash">Bash</a></h5>
+<div class="paragraph">
+<p>We already learned enough bash for your configs. Now it&#8217;s time to really master more than most ever will. Wanna taste? How about the 270 page <code>man bash</code>. Don&#8217;t worry. Most of it is completely useless.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_go"><a class="link" href="#_go">Go</a></h5>
+<div class="paragraph">
+<p>When it comes to cross-compiling gorgeous apps quickly that run with blazing speed in the terminal there&#8217;s no better language than Go. We&#8217;ll learn all the main stuff plus the standard packages that make creating commands painless and powerful:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Bonzai - beautiful, command trees with completion, persistent variables, and more</p>
+</li>
+<li>
+<p>Cobra - world&#8217;s most widely adopted command line Go framework (even though it sucks)</p>
+</li>
+<li>
+<p>Tview - terminal layout library with forms, dialogs, etc.</p>
+</li>
+<li>
+<p>Tcell - think of the terminal as a screen with a bunch of cells as large pixels</p>
+</li>
+<li>
+<p>Bubbletea - reactive terminal apps that feel modern at the cost of complexity</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Don&#8217;t worry. I won&#8217;t assume you have ever written a line of code before. But don&#8217;t expect a full computer science course. We&#8217;re hackers, not algorithm-obsessed academics with tenured time to waste.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_plan_your_next_op"><a class="link" href="#_plan_your_next_op">Plan your next op</a></h4>
+<div class="paragraph">
+<p>Remember this book just boosts you to <em>terminal velocity</em>. (I never tire of saying that.) What next? What&#8217;s behind the metaphorical doors you&#8217;ll lock pick in this never-ending text adventure of learning:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>What do you want to do with your life?</p>
+</li>
+<li>
+<p>What are the best jobs for hackers like us?</p>
+</li>
+<li>
+<p>Do you even need a job?</p>
+</li>
+<li>
+<p>Should you get a job and where?</p>
+</li>
+<li>
+<p>What languages should you learn next?</p>
+</li>
+<li>
+<p>How do I practice hacking safely?</p>
+</li>
+<li>
+<p>How can I setup my home lab?</p>
+</li>
+<li>
+<p>How can you keep up on your learning?</p>
+</li>
+<li>
+<p>Will you ever find love?</p>
+</li>
+<li>
+<p>Are we all dreaming or in a big simulation?</p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_how_to_use_this_book"><a class="link" href="#_how_to_use_this_book">How to use this book</a></h3>
 <div class="paragraph">
-<p>Even though this book is mostly a compilation of several smaller ones, it is still designed to be read from top to bottom. The concepts and tools build on one another. The tasks associated with the tools, however, are designed to be re-learned often like an agent preparing for a special op. Повторение — мать учения. Repetition is the mother of learning. Anyone who has ever done anything in the military knows not all op procedures can be memorized and ready at all times, which is why you create your own little black book while reading this one, just like an <em>actual</em> cybersecurity agent would in the field.</p>
+<p>RTFM. Read the Friggin Manual. All of it.</p>
+</div>
+<div class="paragraph">
+<p>Even though this book more like six smaller ones, it is still designed to be read from top to bottom. The concepts and tools build on one another. The tasks associated with the tools, however, are designed to be re-learned often like an agent preparing for a special op. You&#8217;ll have to go through it once, from top to bottom to download it into your brain.</p>
+</div>
+<div class="sect3">
+<h4 id="_wax_on_wax_off"><a class="link" href="#_wax_on_wax_off">Wax on. Wax off</a></h4>
+<div class="paragraph">
+<p>Повторение — мать учения. Repetition is the mother of learning. Anyone who has ever done anything worth learning knows not all procedures can be memorized and ready. You have to come back to them and repeat them. This is why you setup your own learning lab where you take dynamic notes that change as the times do and as you learn more. It&#8217;s the reason this book is perpetually published. It&#8217;s never finished. A hacker&#8217;s learning never is. Always adapting and acquiring new skills and knowledge. Once you think you&#8217;ve learned it all, you&#8217;re dead.</p>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_dont_just_read_it"><a class="link" href="#_dont_just_read_it">Don&#8217;t just read it</a></h4>
 <div class="paragraph">
 <p>Learning to hack from the terminal is going to take a lot more than this silly book. Don&#8217;t misunderstand. You&#8217;re gonna be doing a <em>lot</em> of reading as a techie. Get used to it. But take some time now to figure out how you do more than just the stuff in this book. You can join a community, find a mentor, or become a mentor yourself. And speaking of mentoring, AI, heard of it? There&#8217;s no better tool to assist you with learning this stuff, or learning <em>anything</em> for that matter. Look into it.</p>
 </div>
-<div class="sect4">
-<h5 id="_join_a_crew"><a class="link" href="#_join_a_crew">Join a crew</a></h5>
+</div>
+<div class="sect3">
+<h4 id="_join_a_crew"><a class="link" href="#_join_a_crew">Join a crew</a></h4>
 <div class="paragraph">
 <p>We humans are social creatures. Learning is communal. Join a community that is focused on learning the same things as you. Meetups, hacker spaces, clubs, church groups, social media, and live streamer chat groups are all great places to find a community. The community is a place to collaborate and share peer reviews of one another&#8217;s learning and projects. Who knows, you might find a friend. I did.</p>
 </div>
@@ -850,15 +1084,15 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 </td>
 <td class="content">
 <div class="paragraph">
-<p>My sincere hope is that the parents, teachers, and young hackers reading these words will find opportunities and motivation to create their own clubs and communities dedicated to helping others master the art of the terminal command line and bash scripting and all the well-earned benefits of doing so. While you are working on creating your own community, consider joining mine at <a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>.</p>
+<p>My sincere hope is that the parents, teachers, and young hackers reading these words will find opportunities and motivation to create their own clubs and communities dedicated to helping others master the art of the terminal command line and bash scripting and all the well-earned benefits of doing so. While you are working on creating your own community, consider joining my crew: <a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 </div>
-<div class="sect4">
-<h5 id="_find_a_mentor"><a class="link" href="#_find_a_mentor">Find a mentor</a></h5>
+<div class="sect3">
+<h4 id="_find_a_mentor"><a class="link" href="#_find_a_mentor">Find a mentor</a></h4>
 <div class="paragraph">
 <p>Humans have been passing knowledge one to another since the beginning. It&#8217;s what we do. Wanna forge a sword or horse shoe? Better find the blacksmith and get them to show you their craft. Coding is no different. Just don&#8217;t ask them to <em>teach</em> you. They are probably too busy paying their bills doing what they are good at rather than spending that time teaching you how to do it. If you are respectful of their time, however, they might just be willing to mentor you—especially if you show genuine interest in their craft.</p>
 </div>
@@ -866,11 +1100,10 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 <p>You will find that many people <em>want</em> to share what they know but just don&#8217;t know how to do it or who would want to hear. Find these people and approach them. Perhaps you can find a few mentors so you can compare how they differ in their approach to programming.</p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="_become_a_mentor"><a class="link" href="#_become_a_mentor">Become a mentor</a></h5>
+<div class="sect3">
+<h4 id="_become_a_mentor"><a class="link" href="#_become_a_mentor">Become a mentor</a></h4>
 <div class="paragraph">
 <p>Here&#8217;s a secret a lot of people who get paid a lot of money don&#8217;t want you to know, you don&#8217;t need any special training to help someone else learn. In fact, as a beginner who has recently mastered something you are perhaps the best suited to help another beginner learn it because what made it click for you is still fresh in your mind. Ask a veteran when the last time anything clicked for them? They get so used to what they do they completely forget what it was like to be a beginner. So don&#8217;t be shy. Offer your help to another beginner. And remember, you really haven&#8217;t learned it until you can help someone else learn it as well.</p>
-</div>
 </div>
 </div>
 <div class="sect3">
@@ -938,318 +1171,53 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 </div>
 </div>
 <div class="sect1">
-<h2 id="_terminal_origins"><a class="link" href="#_terminal_origins">Terminal origins</a></h2>
+<h2 id="get-unix-linux"><a class="link" href="#get-unix-linux">Get Unix or Linux</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Listen up. The terminal isn&#8217;t just some relic of the past—it&#8217;s the edge, the pulse of everything we do. People think they need flashy GUIs, shortcuts, whatever—they&#8217;re wrong. The real power has always been here, in this black box with a blinking cursor. The terminal is raw, unfiltered control. It&#8217;s where Unix set the rules and Linux rewrote them for anyone bold enough to take control. If you’re ready to wake up, you need to start here. Understand the tools, the history, the mindset. Because once you do, you’ll see—it&#8217;s not just code. It&#8217;s power.</p>
+<p>Let&#8217;s make this short. If you have a Mac you&#8217;re done. Just update stuff with <code>brew</code>. If you have Windows, install WSL2 and you&#8217;re in the game. That&#8217;s it. Both of these are mandatory learning for any hacker. Add them to your <code>TODO</code> lists now. That said, there are still a few alternative ways to get Linux. We&#8217;ll <em>briefly</em> talk about how that is done without getting into the details. You can get to that later.</p>
 </div>
-<div class="sect2">
-<h3 id="_from_teletypes_to_command_lines"><a class="link" href="#_from_teletypes_to_command_lines">From teletypes to command lines</a></h3>
 <div class="paragraph">
-<p>The modern terminal traces its lineage back to <em>teletype machines</em> (<code>tty</code>), devices originally designed to send and receive typed messages over telegraph lines. These electromechanical marvels bridged human communication with machines, setting the stage for the command line interfaces we use today.</p>
+<p>We also have to talk about getting the software you need and keeping it up to date, a thing called a <em>package manager</em>. Learn it. Use it. You&#8217;ll save tons of time.</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_what_were_teletypes"><a class="link" href="#_what_were_teletypes">What were teletypes?</a></h3>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>Teletypes were essentially typewriters connected to a communication line, capable of sending and receiving text. Early models like the <strong>Teletype Model 33</strong> (1963) became iconic in the computing world, serving as both input and output devices for time-sharing systems. Back then you had to buy time for a lot of money to even use a computer so using it efficiently was a big deal. Imagine if you had to pay even $10/hour to use your computer now.</p>
+<p>Asking someone “what’s your distro?” is like walking into a room and shouting, “I have no idea what I’m talking about.” That question assumes every single person on the planet with a terminal in front of them is running some flavor of Linux. Spoiler alert: they’re not.</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_how_teletypes_shaped_terminals"><a class="link" href="#_how_teletypes_shaped_terminals">How teletypes shaped terminals</a></h3>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Input via keyboards</strong>: users typed commands directly onto the teletype keyboard. For example, in the <strong>Multics</strong> operating system, users would type commands like <code>print filename</code>. The machine printed the results on paper.</p>
-</li>
-<li>
-<p><strong>Output on paper or screens</strong>: output appeared in real-time, printed on paper rolls. Early systems like <strong>DEC PDP-11</strong> connected to teletypes allowed users to interact with Unix via commands typed on the Model 33.</p>
-</li>
-<li>
-<p><strong>Full-duplex communication</strong>: teletypes supported simultaneous input and output. You could type commands while the machine printed responses.</p>
-</li>
-<li>
-<p><strong>Baud rates</strong>: the Model 33 operated at 10 characters per second (110 baud), a speed that today feels like a crawl but was revolutionary for its time. Understanding how slow these interfaces is key to understanding how we got wildly efficient tools like <code>vi</code> for text input. Spamming the arrow keys to move around the screen would have been ridiculously slow. Computers and terminals are much faster now, but understanding this helps us understand things like the <code>vimtutor</code> tutorial that was made for a much different, slower time. Having every keystroke cause a pop-up tab-completion possibility would have been impossible, but today that is considered normal.</p>
-</li>
-</ul>
-</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="sect2">
-<h3 id="_legacy_in_modern_terminals"><a class="link" href="#_legacy_in_modern_terminals">Legacy in modern terminals</a></h3>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>TTY as a concept</strong>: modern Unix/Linux systems still refer to terminal sessions as <code>tty</code>, a nod to their teletype ancestry.</p>
-</li>
-<li>
-<p><strong>Behavior</strong>: features like line buffering and carriage return come directly from teletype operation quirks.</p>
-</li>
-<li>
-<p><strong>Commands</strong>: early commands like <code>ls</code>, <code>cp</code>, and <code>cat</code> in Unix were designed to be typed on teletypes. The <code>man</code> command was designed to generate actual paper manuals.</p>
-</li>
-<li>
-<p><strong>Documentation</strong>: some tutorials and documentation such as <code>vimtutor</code> assume you are using an extremely slow screen and overemphasize counting and positional navigation when search-centric navigation and completion are now preferred.</p>
-</li>
-</ul>
+<h3 id="_mac_is_unix"><a class="link" href="#_mac_is_unix">Mac <em>is</em> Unix</a></h3>
+<div class="paragraph">
+<p>Let&#8217;s clear something up right now: if you&#8217;re using a Mac, you&#8217;re already halfway to the promised land. macOS isn&#8217;t just Unix-based—it&#8217;s <em><strong>certified Unix</strong></em>. That&#8217;s right, your shiny aluminum rectangle is running on the world&#8217;s largest Unix distribution. Feel powerful yet? You should.</p>
+</div>
+<div class="paragraph">
+<p>macOS traces its lineage back to BSD (Berkeley Software Distribution), one of the OG Unix offshoots. It&#8217;s like the refined, Ivy-League sibling of Linux. Behind the polished GUI is a terminal waiting to get its hands dirty. Fire it up, and you&#8217;ve got access to all the Unix tools hackers and coders swear by—<code>ls</code>, <code>grep</code>, <code>awk</code>, you name it. It&#8217;s a full-time Unix machine moonlighting as a consumer-friendly OS.</p>
+</div>
+<div class="paragraph">
+<p>And here&#8217;s the kicker: Apple pays to keep it certified. That means when you&#8217;re typing commands in your Mac terminal, you&#8217;re not just running "like" Unix—you&#8217;re running the real deal. It&#8217;s the same foundation that powers servers, supercomputers, and everything in between. The same philosophy of small, composable tools, the same file hierarchy, the same command-line DNA.</p>
+</div>
+<div class="sect3">
+<h4 id="_hackers_perspective_2"><a class="link" href="#_hackers_perspective_2">Hacker&#8217;s perspective</a></h4>
+<div class="paragraph">
+<p>So why does this Mac stuff matter? Because it means if you&#8217;ve got a Mac, you already own one of the best Unix environments out there. You don&#8217;t need to dual-boot Linux, spin up a VM, or SSH into a remote box just to get started. It&#8217;s all right there, preinstalled, waiting for you to discover it. Sure, Linux might feel more hardcore—and we&#8217;ll get to that—but don&#8217;t let anyone tell you your Mac can&#8217;t play with the 1337. It already is. Only a time-wasting moron would challenge that. Unix was a thing way before Linux was a pipe dream and it still is. Torvalds admits he never would have made Linux had he known BSD was a thing. Yet here we are.</p>
+</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_unix_and_the_model_33"><a class="link" href="#_unix_and_the_model_33">Unix and the Model 33</a></h3>
-<div class="paragraph">
-<p>In the 1970s, Ken Thompson and Dennis Ritchie (friends of the young Rob Pike, who invented the Go programming and Unicode language later) developed <strong>Unix</strong> using a PDP-11 connected to a Teletype Model 33. Commands like <code>ls</code> (list files) or <code>man</code> (manual pages) were short to minimize typing effort on the slow device. The Model 33’s limitations, like its speed and one-line-at-a-time input, directly influenced the minimalism of Unix’s command-line interface. The modern <em>Internet of (hackable) Things</em> today ironically contains many more devices just like these original slow ones that can only be hacked with the same minimal command line attacks.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_hackers_perspective_2"><a class="link" href="#_hackers_perspective_2">Hacker&#8217;s perspective</a></h3>
-<div class="paragraph">
-<p>The terminal isn&#8217;t just a tool; it&#8217;s a time machine. Every keystroke you enter is a direct link to the engineers who started it all—back when progress sounded like the clatter of teletypes and the hum of innovation filling the room. Those engineers—call them 'boomers' if you want—laid the groundwork for everything we touch today. Efficient. Concise. Text-driven. Their vision shaped the tools we now call modern: virtual terminals, IDEs, and command-line powerhouses.</p>
-</div>
-<div class="paragraph">
-<p>Hackers respect history, not because it&#8217;s old, but because it works. The terminal isn&#8217;t about nostalgia; it&#8217;s about allegiance to an idea—that simplicity and control will always outlast trends. Use it well, and you&#8217;re not just hacking the system; you&#8217;re standing on the shoulders of the ones who built it.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="launcher"><a class="link" href="#launcher">Learn to launch anything</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Every operating system offers a quick and efficient way to launch applications, open files, and search for information—similar to macOS’s powerful Spotlight feature. Learning how to use these tools effectively can save time and streamline your workflow. This guide will walk you through Spotlight equivalents on Windows, Linux, and other systems.</p>
-</div>
-<div class="sect2">
-<h3 id="_why_learn_launcher"><a class="link" href="#_why_learn_launcher">Why learn launcher?</a></h3>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Efficiency</strong>: launching apps and files directly saves time compared to navigating menus. Your fingers never need to leave home row on the keyboard.</p>
-</li>
-<li>
-<p><strong>Focus</strong>: search and launch tools help you avoid distractions by providing a single interface for tasks.</p>
-</li>
-<li>
-<p><strong>Universal skills</strong>: mastering these tools makes you productive on any operating system.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_spotlight_on_mac"><a class="link" href="#_spotlight_on_mac">Spotlight on Mac</a></h3>
-<div class="paragraph">
-<p>On macOS, Spotlight is the built-in search and launcher tool.</p>
-</div>
-<div class="paragraph">
-<p><strong>How to access Spotlight</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Use the keyboard shortcut <code>Command (⌘) + Space</code>.</p>
-</li>
-<li>
-<p>Click the magnifying glass icon in the top-right corner of the menu bar.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>What you can do</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Launch apps: Type the app name and press <code>Enter</code>.</p>
-</li>
-<li>
-<p>Search files: Enter the file name or keywords.</p>
-</li>
-<li>
-<p>Perform calculations: Type <code>5 * 7</code> or <code>100 USD to EUR</code>.</p>
-</li>
-<li>
-<p>Look up definitions: Type a word to get a dictionary entry.</p>
-</li>
-<li>
-<p>Search the web: Type your query and select a browser result.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_search_on_windows"><a class="link" href="#_search_on_windows">Search on Windows</a></h3>
-<div class="paragraph">
-<p>Windows provides a built-in search tool that acts as a launcher.</p>
-</div>
-<div class="paragraph">
-<p><strong>How to access Windows search</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press <code>Win</code> or click the search icon on the taskbar.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>What you can do</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Launch apps: Type the app name and press <code>Enter</code>.</p>
-</li>
-<li>
-<p>Search files: Enter the file name or content keywords.</p>
-</li>
-<li>
-<p>Execute commands: Run shell commands directly.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_activities_on_linux"><a class="link" href="#_activities_on_linux">Activities on Linux</a></h3>
-<div class="paragraph">
-<p>Linux has multiple application launchers, depending on your desktop environment and preferences.</p>
-</div>
-<div class="paragraph">
-<p><strong>GNOME: activities overview</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press the <code>Super</code> key (Windows key) to open the Activities Overview.</p>
-</li>
-<li>
-<p>Type the app name or file you want to open.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>KDE Plasma: KRunner</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press <code>Alt + Space</code> to open KRunner.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>What you can do</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Launch apps: Type the name and press <code>Enter</code>.</p>
-</li>
-<li>
-<p>Open files: Search for files by name.</p>
-</li>
-<li>
-<p>Run commands: Execute terminal commands directly.</p>
-</li>
-<li>
-<p>Perform calculations and translations with plugins.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_hackers_perspective_3"><a class="link" href="#_hackers_perspective_3">Hacker&#8217;s perspective</a></h3>
-<div class="paragraph">
-<p>The launcher is more than a convenience—it&#8217;s the hacker&#8217;s command center. Forget digging through menus or clicking aimlessly; mastery of the launcher means instant access to everything you need, right when you need it. It&#8217;s about speed, precision, and control—three pillars of the hacker mindset. Whether you&#8217;re firing up WezTerm, searching for system settings, or running commands, the launcher turns your keyboard into a gateway for efficiency. A hacker doesn&#8217;t waste time clicking; they orchestrate their tools with purpose. Learn the launcher, and you&#8217;ll not just use your system—you&#8217;ll command it.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_learn_alt_tab_for_window_switching"><a class="link" href="#_learn_alt_tab_for_window_switching">Learn Alt-Tab for window switching</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The <code>Alt + Tab</code> shortcut is a universal skill that works across operating systems, allowing you to switch between open windows quickly and efficiently. It&#8217;s one of the most basic yet powerful tools to enhance productivity. No additional graphical window manager (like <code>i3</code>) is needed if you have already mastered this one skill.</p>
-</div>
-<div class="sect2">
-<h3 id="_why_learn_alt_tab"><a class="link" href="#_why_learn_alt_tab">Why learn Alt-Tab?</a></h3>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Speed</strong>: quickly toggle between tasks without touching the mouse.</p>
-</li>
-<li>
-<p><strong>Universality</strong>: works on nearly every major operating system, making it a portable skill.</p>
-</li>
-<li>
-<p><strong>Focus</strong>: reduces distraction by helping you stay in the flow of your work.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Incorporating <code>Alt + Tab</code> into your daily workflow ensures you can multitask efficiently across all platforms.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_how_to_use_alt_tab"><a class="link" href="#_how_to_use_alt_tab">How to use Alt-Tab</a></h3>
-<div class="paragraph">
-<p><strong>On Windows</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Hold <code>Alt</code> and press <code>Tab</code> to cycle through open applications.</p>
-</li>
-<li>
-<p>Release both keys when the desired window is highlighted.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>On macOS</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Use <code>Command (⌘) + Tab</code> for similar functionality.</p>
-</li>
-<li>
-<p>Press <code>Command (⌘) + ~</code> to switch between windows of the same application.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>On Linux</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Most desktop environments support <code>Alt + Tab</code> natively.</p>
-</li>
-<li>
-<p>Additional variations, like <code>Super + Tab</code>, may be available depending on your configuration.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Others</strong>:</p>
-</div>
-<div class="paragraph">
-<p>This functionality is supported on all tablets and phones as well so long as you attach a keyboard to them.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_hackers_perspective_4"><a class="link" href="#_hackers_perspective_4">Hacker&#8217;s perspective</a></h3>
-<div class="paragraph">
-<p>Alt-Tab isn’t just a shortcut; it’s a power move. Hackers don’t waste time fumbling through taskbars or desktops—they flow between windows seamlessly, keeping their focus sharp and their hands on the keyboard. Alt-Tab is about efficiency, controlling your environment without breaking your rhythm. Whether you’re debugging, researching, or coding at the speed of thought, mastering window switching is the key to maintaining momentum. A true hacker knows: every second counts, and Alt-Tab is how you make them count.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_get_wsl2_bash_on_windows"><a class="link" href="#_get_wsl2_bash_on_windows">Get WSL2 bash on Windows</a></h2>
-<div class="sectionbody">
+<h3 id="_windows_wsl2"><a class="link" href="#_windows_wsl2">Windows WSL2</a></h3>
 <div class="paragraph">
 <p>Alright, listen up. You&#8217;ve got a Windows machine and dreams of running Linux without dealing with dual-boot nightmares or spinning up a resource-hogging virtual machine or dual-booting every time. Enter WSL2—your ticket to running Ubuntu seamlessly, like a hacker in a sci-fi flick. Here&#8217;s how you get it up and running, no fluff, just action.</p>
 </div>
-<div class="sect2">
-<h3 id="_enable_wsl"><a class="link" href="#_enable_wsl">Enable WSL</a></h3>
+<div class="sect3">
+<h4 id="_enable_wsl"><a class="link" href="#_enable_wsl">Enable WSL</a></h4>
 <div class="paragraph">
 <p>First things first, open PowerShell. No, not PowerPoint, your terminal. Hit <code>Win</code> and start typing <code>powershell</code>. Then, fire this off:</p>
 </div>
@@ -1262,8 +1230,8 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 <p>This command does the heavy lifting: enabling WSL, installing the kernel, and grabbing a default Linux distribution, which should be Ubuntu. You will probably have to restart your computer.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_upgrade_to_wsl2"><a class="link" href="#_upgrade_to_wsl2">Upgrade to WSL2</a></h3>
+<div class="sect3">
+<h4 id="_upgrade_to_wsl2"><a class="link" href="#_upgrade_to_wsl2">Upgrade to WSL2</a></h4>
 <div class="paragraph">
 <p>If Windows decides to hand you WSL1 like it’s 2018, upgrade it manually:</p>
 </div>
@@ -1276,13 +1244,10 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 <p>WSL2 is where the magic happens—full Linux kernel, better performance, and actual compatibility with modern tools.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_install_ubuntu_into_wsl2"><a class="link" href="#_install_ubuntu_into_wsl2">Install Ubuntu into WSL2</a></h3>
+<div class="sect3">
+<h4 id="_install_ubuntu_into_wsl2"><a class="link" href="#_install_ubuntu_into_wsl2">Install Ubuntu into WSL2</a></h4>
 <div class="paragraph">
-<p>If Ubuntu didn&#8217;t install during Step 1, snag it manually. Open the <strong>Microsoft Store</strong> (I know, gross) and search for "Ubuntu." Pick your flavor—<code>Ubuntu 20.04</code>, <code>22.04</code>, whatever fits your vibe. Click <strong>Get</strong> and let it download.</p>
-</div>
-<div class="paragraph">
-<p>When it&#8217;s done, open it from the Start menu or run:</p>
+<p>If Ubuntu didn&#8217;t install during Step 1, snag it manually. Open the <strong>Microsoft Store</strong> (I know, gross) and search for "Ubuntu." When it&#8217;s done, open it from the Start menu or run:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1290,10 +1255,10 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_update_your_software_repositories"><a class="link" href="#_update_your_software_repositories">Update your software repositories</a></h3>
+<div class="sect3">
+<h4 id="_update_your_software_repositories"><a class="link" href="#_update_your_software_repositories">Update your software repositories</a></h4>
 <div class="paragraph">
-<p>You&#8217;re in. First boot might feel sluggish—it&#8217;s setting up the filesystem. Follow the prompts to create your Linux username and password. Remember, this isn&#8217;t your Windows password; it’s your Linux alter ego. Make it a good one, lowercase, easy to remember, short, no weird punctuation. You will use the same username to create a <a href="#github">GitHub account</a>, so you might want to skip to that.</p>
+<p>You&#8217;re in. First boot might feel sluggish—it&#8217;s setting up the filesystem. Follow the prompts to create your Linux username and password. Remember, this isn&#8217;t your Windows password; it&#8217;s your Linux alter ego. Make it a good one, lowercase, easy to remember, short, no weird punctuation. You will use the same username to create a <a href="#github">GitHub account</a>, so you might want to skip to that.</p>
 </div>
 <div class="paragraph">
 <p>Next, update everything:</p>
@@ -1318,8 +1283,8 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_install_wsl_utilities"><a class="link" href="#_install_wsl_utilities">Install WSL utilities</a></h3>
+<div class="sect3">
+<h4 id="_install_wsl_utilities"><a class="link" href="#_install_wsl_utilities">Install WSL utilities</a></h4>
 <div class="paragraph">
 <p>Want seamless access to your Windows files? They’re right here in <code>/mnt/c</code>.</p>
 </div>
@@ -1348,9 +1313,8 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 </tr>
 </table>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_start_wsl_terminal"><a class="link" href="#_start_wsl_terminal">Start WSL terminal</a></h3>
+<div class="sect4">
+<h5 id="_start_wsl_terminal"><a class="link" href="#_start_wsl_terminal">Start WSL terminal</a></h5>
 <div class="paragraph">
 <p>Until we upgrade the terminal, you can pull up a terminal anytime by running bash shell in WSL by pressing <code>Windows</code> key and typing <code>wsl</code> and pressing <code>Enter</code>.</p>
 </div>
@@ -1369,199 +1333,16 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_hackers_perspective_5"><a class="link" href="#_hackers_perspective_5">Hacker&#8217;s perspective</a></h3>
+</div>
+<div class="sect3">
+<h4 id="_hackers_perspective_3"><a class="link" href="#_hackers_perspective_3">Hacker&#8217;s perspective</a></h4>
 <div class="paragraph">
 <p>WSL2 is the hacker&#8217;s gateway to seamless versatility, blending the power of Linux with the flexibility of Windows. But true mastery comes with wslu—a toolkit that supercharges your WSL2 experience. With wslu, you can open files, launch browsers, and integrate Linux commands with Windows apps effortlessly. It breaks down barriers, making your environment feel like one cohesive system. Hackers don&#8217;t settle for limits—they expand them, and WSL2 with wslu does just that. Debug, deploy, script, and innovate—all while the system works around you, not the other way around.</p>
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_update_bash_on_mac"><a class="link" href="#_update_bash_on_mac">Update bash on Mac</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Alright, macOS is Unix. It ships with bash. But here&#8217;s the catch: it&#8217;s old—<strong>real</strong> old. Apple stopped updating bash beyond version 3.2 because of licensing drama. If you want to run scripts like it&#8217;s the 21st century, you need the latest bash. Don&#8217;t worry, though, we&#8217;re fixing that right now.</p>
-</div>
 <div class="sect2">
-<h3 id="_install_homebrew"><a class="link" href="#_install_homebrew">Install Homebrew</a></h3>
-<div class="paragraph">
-<p>First things first—if you don&#8217;t have Homebrew, your Mac&#8217;s missing the single most powerful tool it can have. Open Terminal by typing <code>Command + Space</code> and typing <code>terminal</code> and drop this in:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>/bin/bash<span class="tok-w"> </span>-c<span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-k">$(</span>curl<span class="tok-w"> </span>-fsSL<span class="tok-w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="tok-k">)</span><span class="tok-s2">&quot;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Let brew do its thing. When it&#8217;s done, confirm it&#8217;s installed:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>If you see a version number, you&#8217;re good to go.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_install_bash_with_brew"><a class="link" href="#_install_bash_with_brew">Install bash with brew</a></h3>
-<div class="paragraph">
-<p>Next, use Homebrew to install the latest version of bash. Run:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>bash</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>That&#8217;s it—new bash installed. But wait, you&#8217;re not done yet.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_add_bash_to_the_shell_list"><a class="link" href="#_add_bash_to_the_shell_list">Add bash to the shell list</a></h3>
-<div class="paragraph">
-<p>Your Mac still doesn&#8217;t know the new bash exists. You&#8217;ve got to tell it. First, find where Homebrew installed bash:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>--prefix</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>This will give you a path like <code>/opt/homebrew</code>. Add <code>/opt/homebrew/bin/bash</code> (or similar) to your list of allowed shells:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span><span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-k">$(</span>brew<span class="tok-w"> </span>--prefix<span class="tok-k">)</span><span class="tok-s2">/bin/bash&quot;</span><span class="tok-w"> </span>&gt;&gt;<span class="tok-w"> </span>/etc/shells</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>This will append a line to the bottom of the file. Use the <code>tail</code> command to look at the last line:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>tail<span class="tok-w"> </span>-1<span class="tok-w"> </span>/etc/shells</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_make_bash_your_default_shell"><a class="link" href="#_make_bash_your_default_shell">Make bash your default shell</a></h3>
-<div class="paragraph">
-<p>Now it&#8217;s time to switch. Set the new bash as your default shell:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>chsh<span class="tok-w"> </span>-s<span class="tok-w"> </span><span class="tok-k">$(</span>brew<span class="tok-w"> </span>--prefix<span class="tok-k">)</span>/bin/bash</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Log out and back in, or just open a new terminal window. Check which Bash you’re using now:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-nv">$SHELL</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>It should point to something besides <code>/bin/bash</code>.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_check_your_current_bash_version"><a class="link" href="#_check_your_current_bash_version">Check your current bash version</a></h3>
-<div class="paragraph">
-<p>Check the Bash version to make sure you&#8217;re running the latest:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>bash<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>If you see something like <code>5.x.x</code>, congratulations—you&#8217;re on modern bash.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_hackers_perspective_6"><a class="link" href="#_hackers_perspective_6">Hacker&#8217;s perspective</a></h3>
-<div class="paragraph">
-<p>Bash on macOS is a relic of the past—stuck in an older version that limits your tools and techniques. Upgrading Bash isn&#8217;t just an update; it&#8217;s a statement. When it comes to their own tools, hackers live on the edge, and that means using the latest features, faster scripts, and modern syntaxes that the old shell can&#8217;t handle. Upgrading puts you in control, unlocking the full power of your terminal to code, automate, and innovate without barriers. Don&#8217;t settle for outdated defaults—upgrade Bash and take command of your Unix system like any hacker would.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_validate_bash_on_linux"><a class="link" href="#_validate_bash_on_linux">Validate bash on Linux</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Alright, you&#8217;re on a Linux distro that uses <code>apt</code>, so you’ve already got Bash. That&#8217;s a good start, but let&#8217;s make sure you&#8217;ve got the latest version and a clean setup.</p>
-</div>
-<div class="sect2">
-<h3 id="_check_your_current_bash_version_2"><a class="link" href="#_check_your_current_bash_version_2">Check your current bash version</a></h3>
-<div class="paragraph">
-<p>Open your terminal and run:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>bash<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>You should see something like <code>5.x.x</code>. If it&#8217;s already up-to-date, skip to <strong>Step 4</strong>. If it&#8217;s not, let’s fix that.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_update_your_software_repositories_2"><a class="link" href="#_update_your_software_repositories_2">Update your software repositories</a></h3>
-<div class="paragraph">
-<p>Make sure your package lists are up-to-date so you can fetch the latest versions of everything:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update<span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>upgrade<span class="tok-w"> </span>-y</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>This also upgrades your current Bash if the distro maintains a newer version in the repositories. Check the version again with:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>bash<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_make_bash_your_default_shell_2"><a class="link" href="#_make_bash_your_default_shell_2">Make bash your default shell</a></h3>
-<div class="paragraph">
-<p>Double-check that bash is your default shell:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-nv">$SHELL</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>If it doesn’t show <code>/bin/bash</code>, set it:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>chsh<span class="tok-w"> </span>-s<span class="tok-w"> </span>/bin/bash</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Log out and back in, or restart your terminal.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_hackers_perspective_7"><a class="link" href="#_hackers_perspective_7">Hacker&#8217;s perspective</a></h3>
-<div class="paragraph">
-<p>Bash <em>is</em> the Linux shell; it&#8217;s not a choice. It&#8217;s the backbone of a hacker&#8217;s workflow. It&#8217;s where commands come to life, scripts become solutions, and ideas turn into automation. Mastering bash on Linux means mastering the system itself—understanding its pulse, bending it to your will. Ideas instantly become new commands. No compilation. No bloated plugin framework. Every command you type in bash is a step closer to complete control. Hackers thrive here, in the terminal&#8217;s simplicity and depth. To use bash on Linux is to embrace the essence of what it means to hack.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="manage-software"><a class="link" href="#manage-software">Manage installed software</a></h2>
-<div class="sectionbody">
+<h3 id="package-managers"><a class="link" href="#package-managers">Package managers</a></h3>
 <div class="paragraph">
 <p>Package management is the backbone of software installation, updates, and maintenance on Unix (macOS) and Linux (WSL2, Ubuntu, etc.).</p>
 </div>
@@ -1573,19 +1354,19 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Unix and Linux have been using package management since the 90s, <code>rpm</code>, <code>yum</code>, <code>dnf</code>, <code>zypper</code>, <code>emerge</code>, <code>installp</code>, <code>pkg</code>,<code>apk</code>, <code>pacman</code>. Native Windows has even joined in with the official <code>winget</code> command-line package management.</p>
+<p>Unix and Linux have been using package management since the 90s, <code>rpm</code>, <code>yum</code>, <code>dnf</code>, <code>zypper</code>, <code>emerge</code>, <code>installp</code>, <code>pkg</code>,<code>apk</code>, <code>pacman</code>. Native Windows has even joined in with the official <code>winget</code> command-line package management. There are way too many to cover in a single book, therefore, we&#8217;ll just cover the main ones: <code>apt</code>, <code>brew</code>, <code>winget</code>. That&#8217;s it.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="sect2">
-<h3 id="_linux_apt"><a class="link" href="#_linux_apt">Linux: apt</a></h3>
+<div class="sect3">
+<h4 id="_linux_apt"><a class="link" href="#_linux_apt">Linux: apt</a></h4>
 <div class="paragraph">
 <p>The <code>apt</code> command is one of the easiest package managers to use, which is the main reason Linux distributions that use it are so popular, managing software becomes efficient and straightforward, whether you’re running Linux natively or through WSL2 on Windows. Here’s your crash course.</p>
 </div>
-<div class="sect3">
-<h4 id="_most_common_apt_commands"><a class="link" href="#_most_common_apt_commands">Most Common apt Commands</a></h4>
+<div class="sect4">
+<h5 id="_most_common_apt_commands"><a class="link" href="#_most_common_apt_commands">Most Common apt Commands</a></h5>
 <div class="paragraph">
 <p>Update the package lists by fetching the latest information from repositories:</p>
 </div>
@@ -1647,7 +1428,7 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>apt<span class="tok-w"> </span>search<span class="tok-w"> </span>python</code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span>apt<span class="tok-w"> </span>search<span class="tok-w"> </span>golang</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1675,8 +1456,8 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_advanced_apt_commands"><a class="link" href="#_advanced_apt_commands">Advanced apt Commands</a></h4>
+<div class="sect4">
+<h5 id="_advanced_apt_commands"><a class="link" href="#_advanced_apt_commands">Advanced apt Commands</a></h5>
 <div class="paragraph">
 <p>Provides detailed information about a package:</p>
 </div>
@@ -1712,8 +1493,8 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_tips_for_efficient_package_management"><a class="link" href="#_tips_for_efficient_package_management">Tips for Efficient Package Management</a></h4>
+<div class="sect4">
+<h5 id="_tips_for_efficient_package_management"><a class="link" href="#_tips_for_efficient_package_management">Tips for Efficient Package Management</a></h5>
 <div class="paragraph">
 <p>Run <code>sudo apt update</code> and <code>sudo apt upgrade</code> regularly to keep your system secure and up-to-date.</p>
 </div>
@@ -1750,13 +1531,13 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_mac_brew"><a class="link" href="#_mac_brew">Mac: brew</a></h3>
+<div class="sect3">
+<h4 id="_mac_brew"><a class="link" href="#_mac_brew">Mac: brew</a></h4>
 <div class="paragraph">
 <p>Package management on macOS becomes a breeze with Homebrew, a powerful package manager that simplifies the installation, updating, and maintenance of software. Here’s everything you need to get started and master the basics.</p>
 </div>
-<div class="sect3">
-<h4 id="_most_common_homebrew_commands"><a class="link" href="#_most_common_homebrew_commands">Most common Homebrew commands</a></h4>
+<div class="sect4">
+<h5 id="_most_common_homebrew_commands"><a class="link" href="#_most_common_homebrew_commands">Most common Homebrew commands</a></h5>
 <div class="paragraph">
 <p>Update the list of available formulas and casks:</p>
 </div>
@@ -1830,8 +1611,8 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_advanced_homebrew_commands"><a class="link" href="#_advanced_homebrew_commands">Advanced Homebrew commands</a></h4>
+<div class="sect4">
+<h5 id="_advanced_homebrew_commands"><a class="link" href="#_advanced_homebrew_commands">Advanced Homebrew commands</a></h5>
 <div class="paragraph">
 <p>View detailed information about a package:</p>
 </div>
@@ -1865,8 +1646,8 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_tips_for_efficient_package_management_2"><a class="link" href="#_tips_for_efficient_package_management_2">Tips for efficient package management</a></h4>
+<div class="sect4">
+<h5 id="_tips_for_efficient_package_management_2"><a class="link" href="#_tips_for_efficient_package_management_2">Tips for efficient package management</a></h5>
 <div class="paragraph">
 <p>Run <code>brew update</code> and <code>brew upgrade</code> regularly to ensure your packages and dependencies stay current.</p>
 </div>
@@ -1889,8 +1670,8 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_windows_winget"><a class="link" href="#_windows_winget">Windows: winget</a></h3>
+<div class="sect3">
+<h4 id="_windows_winget"><a class="link" href="#_windows_winget">Windows: winget</a></h4>
 <div class="paragraph">
 <p>Windows finally has a native package manager: <code>winget</code> (Windows Package Manager). It simplifies the process of installing, updating, and managing software directly from the command line, just like package managers on Unix-like systems. Here’s how you can master the basics.</p>
 </div>
@@ -1908,27 +1689,22 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="_installing_winget"><a class="link" href="#_installing_winget">Installing winget</a></h4>
+<div class="sect4">
+<h5 id="_installing_winget"><a class="link" href="#_installing_winget">Installing winget</a></h5>
 <div class="paragraph">
-<p>Most modern versions of Windows 10 and 11 already have <code>winget</code> installed. To check, open PowerShell or Command Prompt and run:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-p">-</span><span class="tok-n">-version</span></code></pre>
-</div>
+<p>Most modern versions of Windows 10 and 11 already have <code>winget</code> installed. To check, open PowerShell or Command Prompt and run: <code>winget --version</code></p>
 </div>
 <div class="paragraph">
 <p>If you see a version number, you’re good to go. If not, install it via the <strong>Microsoft Store</strong> by searching for the <strong>App Installer</strong>.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_common_winget_commands"><a class="link" href="#_common_winget_commands">Common winget commands</a></h4>
+<div class="sect4">
+<h5 id="_common_winget_commands"><a class="link" href="#_common_winget_commands">Common winget commands</a></h5>
 <div class="paragraph">
 <p>Here are some of the <code>winget</code> command that you will use most often.</p>
 </div>
-<div class="sect4">
-<h5 id="_search_for_a_package"><a class="link" href="#_search_for_a_package">Search for a package</a></h5>
+<div class="sect5">
+<h6 id="_search_for_a_package"><a class="link" href="#_search_for_a_package">Search for a package</a></h6>
 <div class="paragraph">
 <p>Find the package you want by searching the repository:</p>
 </div>
@@ -1943,6 +1719,7 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">search</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">github</span><span class="tok-p">.</span><span class="tok-nb">cli</span></code></pre>
+</div>
 </div>
 </div>
 </div>
@@ -1968,7 +1745,7 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 <div class="sect4">
 <h5 id="_list_installed_packages"><a class="link" href="#_list_installed_packages">List installed packages</a></h5>
 <div class="paragraph">
-<p>See all the software installed on your system through winget:</p>
+<p>See all the software installed on your system through <code>winget</code>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2035,36 +1812,6 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 </div>
 </div>
 <div class="sect3">
-<h4 id="_advanced_winget_tips"><a class="link" href="#_advanced_winget_tips">Advanced winget tips</a></h4>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>View Command Help</strong>: not sure about a specific command? Use the help flag:</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-p">-</span><span class="tok-n">-help</span></code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Add third-party repositories</strong>: winget supports additional repositories, giving you access to even more packages. Check out the official documentation for setup instructions.</p>
-</li>
-<li>
-<p><strong>Silent installs</strong>: some packages support silent installation. To avoid unnecessary prompts during installation, add:</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-p">-</span><span class="tok-n">-silent</span></code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
 <h4 id="_benefits_of_winget"><a class="link" href="#_benefits_of_winget">Benefits of winget</a></h4>
 <div class="ulist">
 <ul>
@@ -2080,631 +1827,84 @@ sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pr
 </ul>
 </div>
 <div class="paragraph">
-<p>With winget, Windows users finally have a powerful tool to simplify software management. Whether you’re a developer or just looking to streamline your setup, winget brings the convenience of Linux-style package management to the Windows ecosystem.</p>
+<p>With <code>winget</code>, Windows users finally have a powerful tool to simplify software management. Whether you’re a developer or just looking to streamline your setup, <code>winget</code> brings the convenience of Linux-style package management to the Windows ecosystem.</p>
 </div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_hackers_perspective_8"><a class="link" href="#_hackers_perspective_8">Hacker&#8217;s perspective</a></h3>
+<div class="sect3">
+<h4 id="_hackers_perspective_4"><a class="link" href="#_hackers_perspective_4">Hacker&#8217;s perspective</a></h4>
 <div class="paragraph">
 <p>A package manager like <code>apt</code>, <code>brew</code>, or <code>winget</code> is more than just a convenience—it&#8217;s a hacker&#8217;s lifeline to efficiency. These tools cut through the noise, letting you install, update, and manage software in seconds, all from the command line. Forget hunting down installers or navigating GUI wizards; package managers give you precision and speed. Hackers don&#8217;t waste time—they automate, optimize, and stay ahead. Mastering <code>apt</code>, <code>brew</code>, or <code>winget</code> means mastering your environment, turning software management into a seamless part of your workflow. It&#8217;s not just a skill; it&#8217;s a mindset: control everything, waste nothing.</p>
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_install_xdg_utils_on_linuxwsl2"><a class="link" href="#_install_xdg_utils_on_linuxwsl2">Install xdg-utils on Linux/WSL2</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>xdg-utils is the hacker&#8217;s Swiss Army knife for opening files, URLs, and applications from the command line. Whether you&#8217;re on Linux, macOS, or running WSL2 on Windows, installing xdg-utils ensures seamless integration with your host system. It&#8217;s lightweight, versatile, and indispensable. Let&#8217;s get it set up.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>macOS doesn&#8217;t need xdg-utils because it&#8217;s already hardwired for efficiency. The open command is your built-in backdoor to launch files, URLs, or apps without breaking stride. Apple baked this in to keep the system sleek, self-contained, and hacker-ready out of the box. While xdg-utils is great for cross-platform setups, macOS doesn&#8217;t need it—it&#8217;s already engineered for command-line dominance.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update
-sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>xdg-utils</code></pre>
-</div>
-</div>
 <div class="sect2">
-<h3 id="_test_opening_something"><a class="link" href="#_test_opening_something">Test opening something</a></h3>
+<h3 id="_alt_linux"><a class="link" href="#_alt_linux">Alt Linux</a></h3>
 <div class="paragraph">
-<p>With wslu already in place, this setup is unstoppable. Test it by opening a URL:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code><span></span>xdg-open https://example.com
-open https://example.com</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Your Windows browser should spring to life.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_hackers_perspective_9"><a class="link" href="#_hackers_perspective_9">Hacker&#8217;s perspective</a></h3>
-<div class="paragraph">
-<p>xdg-utils isn&#8217;t just a utility; it&#8217;s a statement of efficiency. Hackers don&#8217;t waste time fumbling through menus or searching for apps—they command their system with precision. Whether you&#8217;re jumping between WSL2 and Windows, working on Linux, xdg-utils lets you stay in control. Install it everywhere, and keep hacking.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="get-wezterm"><a class="link" href="#get-wezterm">Get WezTerm terminal</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>When you can hack from your own computer, WezTerm is your gateway to a terminal experience that matches your skills: fast, modern, and built for power users. Whether you&#8217;re hacking on Windows, macOS, or Linux, this guide gets you set up without breaking a sweat. Pick your platform, follow the steps, and take control of your terminal. It&#8217;s time to upgrade your game.</p>
-</div>
-<div class="sect2">
-<h3 id="_windows_install_with_winget"><a class="link" href="#_windows_install_with_winget">Windows: Install with winget</a></h3>
-<div class="paragraph">
-<p>You&#8217;ve got <strong>winget</strong>, and that&#8217;s all you need. Open PowerShell and run:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">install</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">wez</span><span class="tok-p">.</span><span class="tok-n">wezterm</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>When it&#8217;s done, launch WezTerm:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">wezterm</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Done. That&#8217;s it. Fast, efficient, and no unnecessary clicking around.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_mac_install_with_homebrew"><a class="link" href="#_mac_install_with_homebrew">Mac: Install with Homebrew</a></h3>
-<div class="paragraph">
-<p>On macOS, <strong>Homebrew</strong> does all the heavy lifting. Just run:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>wezterm</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Once it&#8217;s installed, start WezTerm:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>wezterm</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>That&#8217;s how macOS should always feel—simple and to the point.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_linuxwsl2_install_with_apt"><a class="link" href="#_linuxwsl2_install_with_apt">Linux/WSL2: Install with apt</a></h3>
-<div class="paragraph">
-<p>For apt-based systems like Ubuntu, you can use the official WezTerm repository for a streamlined install.</p>
+<p>Since you&#8217;re just starting out, stick with WSL2 on Windows or macOS&#8217;s built-in Unix core. They&#8217;re easy to set up, give you immediate access to the command line, and let you focus on learning Linux without diving into the deep end. Save the heavy lifting—VMs, containers, or bare metal installs—for when you&#8217;re ready to level up. But here&#8217;s a taste. Consider it extra credit for later after you&#8217;ve hacked your A grade.</p>
 </div>
 <div class="sect3">
-<h4 id="_add_the_wezterm_repository"><a class="link" href="#_add_the_wezterm_repository">Add the WezTerm repository</a></h4>
+<h4 id="_linux_on_metal_2"><a class="link" href="#_linux_on_metal_2">Linux on metal</a></h4>
 <div class="paragraph">
-<p>Add the GPG key and repository to your system:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>curl<span class="tok-w"> </span>-fsSL<span class="tok-w"> </span><span class="tok-s2">&quot;https://apt.wezfurlong.org/wezterm.asc&quot;</span><span class="tok-w"> </span><span class="tok-p">|</span><span class="tok-w"> </span>gpg<span class="tok-w"> </span>--dearmor<span class="tok-w"> </span><span class="tok-p">|</span><span class="tok-w"> </span>sudo<span class="tok-w"> </span>tee<span class="tok-w"> </span>/usr/share/keyrings/wezterm-archive-keyring.gpg<span class="tok-w"> </span>&gt;<span class="tok-w"> </span>/dev/null
-
-<span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-s2">&quot;deb [signed-by=/usr/share/keyrings/wezterm-archive-keyring.gpg] https://apt.wezfurlong.org/ stable main&quot;</span><span class="tok-w"> </span><span class="tok-p">|</span><span class="tok-w"> </span>sudo<span class="tok-w"> </span>tee<span class="tok-w"> </span>/etc/apt/sources.list.d/wezterm.list</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_update_your_package_lists"><a class="link" href="#_update_your_package_lists">Update your package lists</a></h4>
-<div class="paragraph">
-<p>Refresh your package index:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_install_wezterm"><a class="link" href="#_install_wezterm">Install WezTerm</a></h4>
-<div class="paragraph">
-<p>Install it directly with apt:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>wezterm</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_verify_and_launch"><a class="link" href="#_verify_and_launch">Verify and Launch</a></h4>
-<div class="paragraph">
-<p>Check the installation:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>wezterm<span class="tok-w"> </span>--version</code></pre>
-</div>
+<p>Installing Linux on bare metal is the real deal. It&#8217;s the kind of move that separates the dabblers from the diehards, the curious from the committed. It&#8217;s raw. It&#8217;s hands-on. It&#8217;s hacking your hardware to unlock its full potential. And yeah, we&#8217;re not going to cover it here. Why? Because this book is about getting you up and running <strong>fast</strong>—not sending you down the rabbit hole of bootloaders, partitioning, and kernel options.</p>
 </div>
 <div class="paragraph">
-<p>Then start it up:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>wezterm</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_hackers_perspective_10"><a class="link" href="#_hackers_perspective_10">Hacker&#8217;s perspective</a></h3>
-<div class="paragraph">
-<p>WezTerm isn&#8217;t just another terminal emulator. It&#8217;s a statement. With GPU acceleration, tabs, panes, and full cross-platform support, it&#8217;s designed for hackers who live in the terminal. Whether you&#8217;re running scripts, managing servers, or coding the next big thing, WezTerm is the tool you need to keep up.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="github"><a class="link" href="#github">Get Git and GitHub</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>If you&#8217;re serious about coding, collaborating, or hacking (the good kind), you need a GitHub account. GitHub isn&#8217;t just a platform for software development—it&#8217;s a global repository of knowledge, code, and collaboration. For hackers, it&#8217;s an invaluable tool for both learning and sharing. Let&#8217;s get you started.</p>
-</div>
-<div class="sect2">
-<h3 id="_why_github_matters_to_hackers"><a class="link" href="#_why_github_matters_to_hackers">Why GitHub matters to hackers</a></h3>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Learn from the best</strong>: GitHub hosts millions of open-source projects. Dive into repositories from industry giants or individual coders solving unique problems. Explore everything from cutting-edge AI models to security tools and exploits.</p>
-</li>
-<li>
-<p><strong>Version control mastery</strong>: understanding <code>git</code> and version control is a must for any hacker. GitHub is the perfect place to practice these skills in real-world scenarios.</p>
-</li>
-<li>
-<p><strong>Collaborate and contribute</strong>: join open-source projects, contribute code, and learn from community feedback. It&#8217;s the ultimate way to build your reputation and skills.</p>
-</li>
-<li>
-<p><strong>Showcase your skills</strong>: use GitHub as your portfolio. Potential collaborators, employers, or even other hackers will look at your repositories to see what you&#8217;re capable of.</p>
-</li>
-<li>
-<p><strong>Explore hidden gems</strong>: GitHub isn&#8217;t just code. It&#8217;s a treasure trove of scripts, configs, and knowledge that hackers can leverage for learning and inspiration.</p>
-</li>
-<li>
-<p><strong>Host your tools</strong>: publish your own scripts, utilities, or tools. Sharing your work solidifies your place in the hacker community.</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>You don&#8217;t have to use GitHub, you can <a href="#gitea">setup Gitea</a> instead—eventually.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_get_a_github_account"><a class="link" href="#_get_a_github_account">Get a GitHub account</a></h3>
-<div class="paragraph">
-<p>Everyone starts with a GitHub account. Here&#8217;s the part where you have to be thirteen or older.</p>
-</div>
-<div class="sect3">
-<h4 id="_sign_up"><a class="link" href="#_sign_up">Sign up</a></h4>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Visit <a href="https://github.com" class="bare">https://github.com</a>.</p>
-</li>
-<li>
-<p>Click on <strong>Sign Up</strong>.</p>
-</li>
-<li>
-<p>Enter a username (pick something unique and memorable), email, and password.</p>
-</li>
-</ol>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Choose a username that matches your local system&#8217;s account name on WSL2, Linux, or macOS. Consistency across environments reduces confusion and simplifies setup.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_install_git_and_github_cli"><a class="link" href="#_install_git_and_github_cli">Install Git and GitHub CLI</a></h4>
-<div class="paragraph">
-<p>The <code>git</code> and <code>gh</code> commands are two of the most important that you will use, sometimes hundreds of times a day.</p>
-</div>
-<div class="sect4">
-<h5 id="_for_macos"><a class="link" href="#_for_macos">For macOS</a></h5>
-<div class="paragraph">
-<p>Install Git and GitHub CLI with Homebrew:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>git<span class="tok-w"> </span>gh</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_for_linuxwsl2"><a class="link" href="#_for_linuxwsl2">For Linux/WSL2</a></h5>
-<div class="paragraph">
-<p>Update your system and install Git and GitHub CLI:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update<span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>-y<span class="tok-w"> </span>git<span class="tok-w"> </span>gh</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_verify_installations"><a class="link" href="#_verify_installations">Verify installations</a></h5>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>git<span class="tok-w"> </span>--version
-gh<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_authenticate_with_github_cli"><a class="link" href="#_authenticate_with_github_cli">Authenticate with GitHub CLI</a></h4>
-<div class="paragraph">
-<p>Use the GitHub CLI tool to authenticate your account securely:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>gh<span class="tok-w"> </span>auth<span class="tok-w"> </span>login</code></pre>
-</div>
+<p>But let&#8217;s talk about why it matters. Installing Linux on bare metal means wiping the slate clean. You take control, replacing whatever bloated factory OS came with your machine with a streamlined, efficient, and <em>yours-to-command</em> system. It&#8217;s the ultimate way to strip your environment down to just what you need—no more, no less.</p>
 </div>
 <div class="paragraph">
-<p>Choose HTTPS your preferred authentication method.</p>
-</div>
-<div class="paragraph">
-<p>Follow the prompts to log in and configure access. Your web browser should be opened automatically.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>This is one of the reasons we installed <code>wslu</code> earlier on WSL2 on Windows since it allows the web browser to be automatically opened by the <code>gh auth login</code> command.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_github_tips_for_hackers"><a class="link" href="#_github_tips_for_hackers">GitHub tips for hackers</a></h3>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Fork and tweak</strong>: fork repositories of tools or code you admire, tweak them, and make them yours.</p>
-</li>
-<li>
-<p><strong>Follow interesting developers</strong>: keep up with others who are building tools or hacking on problems that interest you.</p>
-</li>
-<li>
-<p><strong>Discover awesome lists</strong>: search for curated "awesome lists" on GitHub to find new tools, frameworks, and libraries.</p>
-</li>
-<li>
-<p><strong>Get ideas for own dot files and scripts</strong>:  everyone shares their personal home directory configurations. You&#8217;ll start yours next.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_hackers_perspective_11"><a class="link" href="#_hackers_perspective_11">Hacker’s perspective</a></h3>
-<div class="paragraph">
-<p>GitHub isn&#8217;t just for developers—it&#8217;s for writers, hackers, thinkers, and creators. It&#8217;s a playground, a library, and a stage all in one. Whether you&#8217;re contributing to open-source security tools, learning from codebases, writing a book like this one, or building your own projects, GitHub is where it all happens. Get an account, dive in, and start hacking (ethically, of course).</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="dotfiles"><a class="link" href="#dotfiles">Start a dotfiles repo</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Every hacker worth their salt has a dotfiles collection—a personal toolkit of scripts, configurations, and tweaks that transform any terminal into their perfect workspace. Dotfiles aren&#8217;t just files; they&#8217;re the DNA of your workflow, the signature of your system mastery. Let&#8217;s get you started on the path to creating your own, the hacker&#8217;s way.</p>
-</div>
-<div class="sect2">
-<h3 id="_why_dotfiles_matter"><a class="link" href="#_why_dotfiles_matter">Why dotfiles matter</a></h3>
-<div class="paragraph">
-<p>Dotfiles are the ultimate expression of control. They house everything but mainly your <code>.bashrc</code>, your <code>.vimrc</code>, and <code>.tmux.conf</code>, the configurations that make your tools work the way you want them to. Hackers can always use the defaults when they have to—but prefer to  refine, customize, and adapt their environment. With dotfiles, your setup becomes portable, repeatable, and tailored to perfection. It&#8217;s not just about efficiency—it&#8217;s about owning your system and quickly turning any <em>other</em> system into your own as well.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_create_your_dotfiles_repo"><a class="link" href="#_create_your_dotfiles_repo">Create your dotfiles repo</a></h3>
-<div class="paragraph">
-<p>GitHub makes managing and sharing your dotfiles effortless. Using a repository as a template allows you to bootstrap your setup on any machine, in seconds. Here&#8217;s how to start your dotfiles collection with GitHub and the power of <code>gh</code>.</p>
-</div>
-<div class="paragraph">
-<p>Run the following command to create a private repository for your dotfiles using a pre-built template:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>gh<span class="tok-w"> </span>repo<span class="tok-w"> </span>create<span class="tok-w"> </span>dot<span class="tok-w"> </span>--template<span class="tok-w"> </span>rwxrob/dot-template<span class="tok-w"> </span>--clone<span class="tok-w"> </span>--private</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>What&#8217;s happening here:</p>
+<p>If you&#8217;re ready for the challenge, the process looks something like this:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>dot</code> is the name of your new repository. Simple and universal. Also <code>dotfiles</code>.</p>
+<p><strong>Step 1:</strong> Download a Linux distro ISO (like Ubuntu, Fedora, or Arch—your choice).</p>
 </li>
 <li>
-<p><code>--template rwxrob/dot-template</code> pre-configured template to jumpstart your collection.</p>
+<p><strong>Step 2:</strong> Burn it to a USB drive using a tool like <code>dd</code> or Balena Etcher.</p>
 </li>
 <li>
-<p><code>--clone</code> brings the repository to your local machine immediately.</p>
+<p><strong>Step 3:</strong> Boot into the live environment, blow away the old partitions, and install your shiny new system.</p>
 </li>
 <li>
-<p><code>--private</code> keeps your dotfiles secure—because not everything needs to be public.</p>
+<p><strong>Step 4:</strong> Set up your disk layout, pick your desktop environment (if any), and configure it to fit your workflow.</p>
 </li>
 </ul>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
 <div class="paragraph">
-<p>In the hacker community, copying another hacker&#8217;s dotfiles to get started isn&#8217;t just acceptable—it&#8217;s tradition. Dotfiles are deeply personal, shaped by years of customization, but every hacker begins somewhere. Borrowing someone else&#8217;s collection is like inheriting a toolbox, ready for you to tweak and adapt. It&#8217;s not about imitation; it&#8217;s about building on what works. To get started, explore the vast collection of dotfiles on GitHub:</p>
+<p>Sounds simple, right? It can be&#8230;&#8203; until you hit the curveballs: missing drivers, UEFI vs. BIOS debates, and cryptic error messages that you&#8217;ll need your AI to explain. But that&#8217;s the point. It&#8217;s a crash course in understanding your machine, building confidence, and learning how Linux <em>really</em> works.</p>
 </div>
 <div class="paragraph">
-<p><a href="https://github.com/search?q=dotfiles&amp;type=repositories" class="bare">https://github.com/search?q=dotfiles&amp;type=repositories</a></p>
+<p>Still, if you&#8217;re not ready to go bare metal, that&#8217;s okay. Tools like WSL2 or containers or virtual machines can get you started without the risk. But when the time comes—and it will—you&#8217;ll know where to begin.</p>
 </div>
 <div class="paragraph">
-<p>Pick one, pilfer it, repeat. That&#8217;s what they&#8217;re for. Hackers don&#8217;t reinvent the wheel—they improve it.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_make_it_yours"><a class="link" href="#_make_it_yours">Make it yours</a></h3>
-<div class="paragraph">
-<p>Once cloned, navigate into your new repository and start customizing:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nb">cd</span><span class="tok-w"> </span>dot<span class="tok-w">                </span><i class="conum" data-value="1"></i><b>(1)</b>
-nano<span class="tok-w"> </span>README.md<span class="tok-w">        </span><i class="conum" data-value="2"></i><b>(2)</b></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Change into the <code>dot</code> directory</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Open the <code>README.md</code> file with <code>nano</code> text editor</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>There&#8217;s no shame in using nano to get started—every hacker needs a starting point. At least you&#8217;re still in the terminal. But don&#8217;t put off learning vim. It&#8217;s not as hard as it seems, and once you get the hang of it, you&#8217;ll wonder how you ever lived without its power and efficiency. Start small, practice often, and level up.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Eventually, we&#8217;ll be add aliases, functions, and environment variables to <code>bash/bashrc</code> and customizing your <code>/vim/vimrc</code> and stuff. These files will define how your system behaves.</p>
-</div>
-<div class="paragraph">
-<p>Where are the dots? That&#8217;ll come later. These files get linked into your home directory and begin with a dot (<code>.</code>) then.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_commit_and_push_changes"><a class="link" href="#_commit_and_push_changes">Commit and push changes</a></h3>
-<div class="paragraph">
-<p>After making edits, push your changes back to GitHub to keep your repository up to date:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>git<span class="tok-w"> </span>add<span class="tok-w"> </span>.
-git<span class="tok-w"> </span>commit<span class="tok-w"> </span>-m<span class="tok-w"> </span><span class="tok-s1">&#39;Initial customizations&#39;</span>
-git<span class="tok-w"> </span>push</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>You might be prompted to do some other things here along the way.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>This ensures your dotfiles are always available, ready to deploy wherever you go.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_bootstrap_any_machine"><a class="link" href="#_bootstrap_any_machine">Bootstrap any machine</a></h3>
-<div class="paragraph">
-<p>Setting up a new machine? Perhaps not now, but later when you need to things just got a lot easier. Clone your dotfiles repo and run your setup script:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>git<span class="tok-w"> </span>clone<span class="tok-w"> </span>https://github.com/&lt;your-username&gt;/dot
-<span class="tok-nb">cd</span><span class="tok-w"> </span>dot
-./setup</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Assuming you&#8217;ve already installed all the other software packages you need, this single command sequence turns any blank system into your personal hacker&#8217;s workspace.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_hackers_perspective_12"><a class="link" href="#_hackers_perspective_12">Hacker&#8217;s perspective</a></h3>
-<div class="paragraph">
-<p>Dotfiles aren&#8217;t just a tradition; they&#8217;re a rite of passage. They represent ownership of your tools, your workflow, and your productivity. Every alias, every script, every tweak is a step toward mastery. With GitHub and the right template, managing and deploying your dotfiles is easier than ever. Hackers don&#8217;t wait for tools to adapt to them—they make the tools theirs. Start your dotfiles collection today, and take your first step toward complete system control.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="config-wezterm"><a class="link" href="#config-wezterm">Configure WezTerm terminal</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="shell"><a class="link" href="#shell">Learn shell basics</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="tmux"><a class="link" href="#tmux">Learn screen and tmux multiplexing</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="edit-text"><a class="link" href="#edit-text">Learn to edit text anywhere</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-<div class="sect2">
-<h3 id="_text_editing_with_ed_ex_vi_vim_and_nvim"><a class="link" href="#_text_editing_with_ed_ex_vi_vim_and_nvim">Text editing with ed, ex, vi, vim, and nvim</a></h3>
-<div class="paragraph">
-<p>Listen, learning <strong>ed</strong>, <strong>ex</strong>, <strong>vi</strong>, <strong>vim</strong>, and finally <strong>nvim</strong> isn’t just some progression of tools—it’s the evolution of a mindset. This isn’t about convenience; it’s about control. Total, undeniable control. You want to call yourself a hacker? Then you need to start where it all began, in the silence of a terminal that doesn’t care about your comfort or your flashy GUI.</p>
-</div>
-<div class="sect3">
-<h4 id="_why_ed"><a class="link" href="#_why_ed">Why <code>ed</code>?</a></h4>
-<div class="paragraph">
-<p><code>ed</code> isn’t just a tool—it’s a foundation. It’s raw. It’s what you use when the system is against you. Imagine this: you’ve gained access, but there’s no PTY. No terminal emulator. Nothing fancy. You’re in, but the system isn’t your friend, and it sure as hell won’t give you a cozy keylogger-free interface. <code>ed</code> doesn’t broadcast to a PTY. It’s quiet. Silent. Like a shadow. Learn it, and you’ve already outmaneuvered the lazy attackers who need their tools to hold their hands.</p>
+<p>This isn&#8217;t about fear or hesitation. It&#8217;s about pacing yourself. Bare metal installs are a rite of passage for anyone serious about Linux. But for now? Let&#8217;s focus on building your skills. When you&#8217;re ready to take that step, you&#8217;ll know, and your machine will never be the same.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_then_ex"><a class="link" href="#_then_ex">Then <code>ex</code></a></h4>
+<h4 id="_linux_in_virtual_machine"><a class="link" href="#_linux_in_virtual_machine">Linux in virtual machine</a></h4>
 <div class="paragraph">
-<p>You graduate to <code>ex</code>, and it’s like finding a knife in the dark—it’s sharper, more versatile. <code>ex</code> introduces the idea of commanding the editor like an operating system. You don’t need to see what’s happening on the screen; you feel it. You own it. This is where you start to understand editing isn’t just about text—it’s about intent.</p>
+<p>The next best thing to a machine is a <em>virtual</em> machine. We&#8217;ll get into that whole "virtualisation" thing in <em>Linux homelab init</em> later. But here&#8217;s how it works:</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_then_vi"><a class="link" href="#_then_vi">Then <code>vi</code></a></h4>
-<div class="paragraph">
-<p>With <code>vi</code>, you step into the world of visibility. It&#8217;s literally the <em>visual</em> mode of <code>ex</code>. You see your actions take shape, but the constraints remain. It’s fast, lean, and everywhere. Why? Because it’s the standard. No matter what system you touch—some archaic Unix box or a modern Linux server—<code>vi</code> is there, waiting for you. The only place you <em>won&#8217;t</em> find it is in hacked containers, but that&#8217;ll come later. Learn it, and you can edit your way out of anything.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_then_vim"><a class="link" href="#_then_vim">Then <code>vim</code></a></h4>
-<div class="paragraph">
-<p><code>vim</code> is power. It’s mastery. It&#8217;s iMprovement. It’s taking everything you’ve learned and putting it on steroids. Syntax highlighting, macros, buffers—you don’t just edit files now. You command them. You wield <code>vim</code> like a weapon, bending it to your will.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_finally_nvim"><a class="link" href="#_finally_nvim">Finally, <code>nvim</code></a></h4>
-<div class="paragraph">
-<p>And then there’s <code>nvim</code>. Modern, extensible, programmable. The preferred editor of Roblox players and software developers, which, let&#8217;s be honest, are usually one and the same. It’s for the hacker who doesn’t just want to use tools but wants to build their own on their cushy home rig. You script. You automate. You create your own path. Then you use your creations to own your enemies. <code>nvim</code> isn’t just a tool—it’s a platform for invention. But don’t skip the steps. Without the grit of <code>ed</code>, the insight of <code>ex</code>, the ubiquity of <code>vi</code>, and the power of <code>vim</code>, you won’t appreciate the elegance of <code>nvim</code>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_the_hackers_creed"><a class="link" href="#_the_hackers_creed">The hacker’s creed</a></h4>
-<div class="paragraph">
-<p>When you’re in, the system doesn’t want you there. GUIs are a liability, PTYs tattletale, and every keystroke could betray you. But with these tools, you’re invisible. They don’t demand attention, and they don’t leave a trail. They’re lean, fast, and everywhere. Learn them in this order, and you’ll become the master of any environment you touch.</p>
-</div>
-<div class="paragraph">
-<p>Hacking isn’t about the flash. It’s about control. Take it.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_learn_ed"><a class="link" href="#_learn_ed">Learn ed</a></h3>
-<div class="paragraph">
-<p><code>ed</code> is the original Unix text editor. It was based on QED that Ken Thompson had used so it was not the first but was definitely the most influential digital text editor in history.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>To shut down editor flame wars, someone will usually quote the <code>ed</code> <code>man</code> page: "ed is the standard Unix editor". Now you know why.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_one_line_at_a_time"><a class="link" href="#_one_line_at_a_time">One line at a time</a></h4>
-<div class="paragraph">
-<p>The <code>ed</code> editor is line-oriented, operating on a text file one line at a time. Today this may seem like a huge annoyance, but elite hackers know how valuable knowing how to edit text from just the command-line is today.</p>
-</div>
-<div class="paragraph">
-<p>When a system is compromised for the first time—and you (the hacker) gains access—very often it is by owning a vulnerability that will just run a single command injected into the small amount of compromised memory. There&#8217;s not enough room to run even a large program like <code>vim</code> if it is even on the computer. Having something small—and even better—something that doesn&#8217;t have to be sent over the wire is a golden advantage once you&#8217;ve gained this initial access.</p>
-</div>
-<div class="paragraph">
-<p>Then there&#8217;s the problem of getting a full terminal interface instead of just a command line interface. As we&#8217;ll learn <code>vi</code> stands for <em>visual</em> mode of the command-line <code>ex</code> (a newer <code>ed</code>). Even if you did have the memory and <code>vi</code> availability, it requires a much more complicated interface driver (a <code>pty</code>) in order to work, which takes time and energy to setup. Some devices don&#8217;t even have <code>pty</code> devices at all because they are not even designed to ever be used interactively—but you can.</p>
-</div>
-<div class="paragraph">
-<p>This is where <code>ed</code> skills shine. If you can edit the key files that you need to with nothing more than a simple read-evaluate-print-loop (REPL) command line you can enhance your connection to do other things later.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Step 1:</strong> Download a Linux distro ISO (like Ubuntu, Fedora, or Arch—your choice).</p>
+</li>
+<li>
+<p><strong>Step 2:</strong> Download a virtual machine engine (like UTM for Mac or VMWare for Windows).</p>
+</li>
+<li>
+<p><strong>Step 3:</strong> Open the VM engine app and create a new VM pointing to the downloaded ISO.</p>
+</li>
+<li>
+<p><strong>Step 4:</strong> Set the VM networking to "bridged" so appears on your home network.</p>
+</li>
+<li>
+<p><strong>Step 5:</strong> Start up your new VM and work through the installer.</p>
+</li>
+<li>
+<p><strong>Step 6:</strong> Setup secure shell and <code>ssh</code> into your new VM.</p>
+</li>
+</ul>
 </div>
 <div class="admonitionblock caution">
 <table>
@@ -2714,10 +1914,7 @@ git<span class="tok-w"> </span>push</code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Security conscious systems monitoring often triggers when <em>anything</em> uses a <code>pty</code> in order to detect unauthorized interactivity. Using something like <code>ed</code> doesn&#8217;t trigger these alarms. In fact, you can even make it so there are no keystrokes at all to monitor by typing the commands on your system and just sending them one at a time to the compromised target.</p>
-</div>
-<div class="paragraph">
-<p>While I was at Teleport our sysadmins caught a hacker who did exactly this through a vulnerable printer driver that was listening on the public Internet. I watched our lead admin—with the cops standing beside him—as he setup a keylogger and saved every keystroke the black-hat made to a file so they could put the naive script kiddie away. They did. Had he known what you know now they might never have caught him.</p>
+<p>A VM by its very nature has no access to your host system so you can forget about automating things on your computer using it. Something as simple as opening a file or a web URL with your graphic web browser are impossible in a VM (unless you use a full desktop VM, but why, seriously).</p>
 </div>
 </td>
 </tr>
@@ -2725,1101 +1922,343 @@ git<span class="tok-w"> </span>push</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_getting_started"><a class="link" href="#_getting_started">Getting started</a></h4>
+<h4 id="_linux_in_container"><a class="link" href="#_linux_in_container">Linux in container</a></h4>
 <div class="paragraph">
-<p>To open a file in <code>ed</code>, use the following command:</p>
+<p>This approach is lightweight, risk-free, and an excellent way to familiarize yourself with Linux and container technology.</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>ed<span class="tok-w"> </span>filename.txt</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>If the file does not exist, <code>ed</code> creates it when you save changes.</p>
-</div>
-<div class="sect4">
-<h5 id="_a_append_text"><a class="link" href="#_a_append_text"><code>a</code>: append text</a></h5>
-<div class="paragraph">
-<p>Appends text after the current line. End the input with a period (<code>.</code>) on a new line.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>a
-This<span class="tok-w"> </span>is<span class="tok-w"> </span>the<span class="tok-w"> </span>first<span class="tok-w"> </span>line.
-This<span class="tok-w"> </span>is<span class="tok-w"> </span>the<span class="tok-w"> </span>second<span class="tok-w"> </span>line.
-.</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_i_insert_text"><a class="link" href="#_i_insert_text"><code>i</code>: insert text</a></h5>
-<div class="paragraph">
-<p>Inserts text before the current line.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>i
-This<span class="tok-w"> </span>line<span class="tok-w"> </span>will<span class="tok-w"> </span>be<span class="tok-w"> </span>inserted<span class="tok-w"> </span>before<span class="tok-w"> </span>the<span class="tok-w"> </span>current<span class="tok-w"> </span>line.
-.</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_c_change_text"><a class="link" href="#_c_change_text"><code>c</code>: change text</a></h5>
-<div class="paragraph">
-<p>Replaces the current line with new text.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>c
-This<span class="tok-w"> </span>is<span class="tok-w"> </span>the<span class="tok-w"> </span>new<span class="tok-w"> </span>text<span class="tok-w"> </span><span class="tok-k">for</span><span class="tok-w"> </span>the<span class="tok-w"> </span>current<span class="tok-w"> </span>line.
-.</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_d_delete_text"><a class="link" href="#_d_delete_text"><code>d</code>: delete text</a></h5>
-<div class="paragraph">
-<p>Deletes the current line or a specified range of lines.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>d</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>To delete a range of lines:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-m">1</span>,3d</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_p_or_print_the_current_line"><a class="link" href="#_p_or_print_the_current_line"><code>p</code> or <code>.</code>: print the current line</a></h5>
-<div class="paragraph">
-<p>Prints the text on the current line.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>p</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Or the simpler:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>.</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
+<div class="admonitionblock caution">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-caution" title="Caution"></i>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>You will find <code>.</code> is used to mean <em>current</em> a lot in everything from the terminal. For example, it also means the current directory in the file system.</p>
+<p>Containers don&#8217;t allow integration with the host system. That&#8217;s the point. So do expect to be able to open host system apps and stuff.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Imagine being able to try out any Linux distro without wiping your hard drive, dual-booting, or wrestling with a VM. That&#8217;s the power of containers. They don&#8217;t just open doors but blows them off their hinges. Whether you&#8217;re curious about Ubuntu, Fedora, Kali, or something more niche like Alpine or Arch, <code>podman</code> lets you spin up a lightweight containerized version in seconds. No risk, no commitment, just pure exploration.</p>
+</div>
+<div class="paragraph">
+<p>But containers aren&#8217;t just for trying out Linux—they&#8217;re a cornerstone of modern computing and the entire "cloud native" movement. Later in the book <em>Linux Homelab Init</em>, you&#8217;ll learn how to use containers to isolate applications, deploy services, and even simulate entire network setups. Containers are lightweight, portable, and essential for anyone serious about building scalable, efficient systems. Think of them as the foundation of your future homelab, a tool you&#8217;ll rely on again and again. Here&#8217;s an overview:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Step 1:</strong> Install <code>podman</code>.</p>
+</li>
+<li>
+<p><strong>Step 2:</strong> Run a linux container: <code>podman run -it --rm ubuntu</code>.</p>
+</li>
+<li>
+<p><strong>Step 3:</strong> Explore, install, and break as much as you like.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>That&#8217;s it. It really is that easy. No wonder hackers love creating container images with all their favorite hacking tools in them. One install and another command and an entire Linux system is at their control. Try some of the following to compare:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>podman<span class="tok-w"> </span>run<span class="tok-w"> </span>-it<span class="tok-w"> </span>--rm<span class="tok-w"> </span>docker.io/kalilinux/kali-rolling
+podman<span class="tok-w"> </span>run<span class="tok-w"> </span>-it<span class="tok-w"> </span>--rm<span class="tok-w"> </span>alpine
+podman<span class="tok-w"> </span>run<span class="tok-w"> </span>-it<span class="tok-w"> </span>--rm<span class="tok-w"> </span>busybox
+podman<span class="tok-w"> </span>run<span class="tok-w"> </span>-it<span class="tok-w"> </span>--rm<span class="tok-w"> </span>golang
+podman<span class="tok-w"> </span>run<span class="tok-w"> </span>-it<span class="tok-w"> </span>--rm<span class="tok-w"> </span>nicolaka/netshoot</code></pre>
+</div>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Don&#8217;t do <code>docker</code>. The entire company&#8217;s been deprecated by the industry.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 </div>
-<div class="sect4">
-<h5 id="_n_print_line_number"><a class="link" href="#_n_print_line_number"><code>n</code>: print line number</a></h5>
+<div class="sect3">
+<h4 id="_hackers_perspective_5"><a class="link" href="#_hackers_perspective_5">Hacker&#8217;s perspective</a></h4>
 <div class="paragraph">
-<p>Prints the line number alongside the text.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>n</code></pre>
+<p>Linux isn&#8217;t just an operating system—it&#8217;s a choice, a weapon, and the foundation of everything that matters in tech. How you run it—on bare metal, inside a virtual machine, or spun up in a container—says a lot about how you operate. Bare metal is raw power and total control. Virtual machines give you the flexibility to experiment without risking your system. Containers? They&#8217;re precision tools for rapid deployment and isolation. Each method is a different path into the same world, and knowing when to use which is what separates the pros from the amateurs. This isn&#8217;t just about running Linux; it&#8217;s about running it your way.</p>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="_print_the_current_line_number"><a class="link" href="#_print_the_current_line_number"><code>=</code>: print the current line number</a></h5>
+</div>
+</div>
+<div class="sect1">
+<h2 id="start-using-terminal"><a class="link" href="#start-using-terminal">Start using terminal</a></h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Displays the number of the current line.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-o">=</span></code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_nmp_print_range_of_lines"><a class="link" href="#_nmp_print_range_of_lines"><code>N,Mp</code>: print range of lines</a></h5>
-<div class="paragraph">
-<p>Prints everything from first line number (N) to second line number (M).</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-m">10</span>,20p</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_p_print_the_whole_file"><a class="link" href="#_p_print_the_whole_file"><code>%p</code>: print the whole file</a></h5>
-<div class="paragraph">
-<p>Prints everything from first line to last.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>%p</code></pre>
-</div>
+<p>Forget the noise, the guides, the endless rabbit holes of config tweaks. All of that? It can wait. Right now, we&#8217;re here to do one thing: get your terminal up and running. Nothing fancy. No frills. Just power, raw and ready.</p>
 </div>
 <div class="paragraph">
-<p>This is the same as the following:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-m">1</span>,<span class="tok-nv">$p</span></code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_re_search_for_a_regular_expression_pattern"><a class="link" href="#_re_search_for_a_regular_expression_pattern"><code>/re/</code>: search for a regular expression pattern</a></h5>
-<div class="paragraph">
-<p>Finds the next occurrence of a pattern in the file.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>/text/</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_grep_search_for_pattern_and_print_it"><a class="link" href="#_grep_search_for_pattern_and_print_it"><code>g/re/p</code>: search for pattern and print it</a></h5>
-<div class="paragraph">
-<p>Globally finds all the occurences of a pattern in the file and then prints them out.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>g/^1/p</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>If you didn&#8217;t notice by now, this is the origin of the <code>grep</code> (<code>g</code> + <code>r`egular + `e`xpression + `p</code>) command, which does exactly the same thing but as a single command.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_spatternreplacement_substitute_text"><a class="link" href="#_spatternreplacement_substitute_text"><code>s/pattern/replacement/</code>: substitute text</a></h5>
-<div class="paragraph">
-<p>Replaces the first occurrence of a pattern in the current line with the replacement.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>s/old/new/</code></pre>
-</div>
+<p>This isn&#8217;t about perfection; it&#8217;s about initiation. You don&#8217;t need the perfect configs, just enough to get you started. First, we open the door. Later, we&#8217;ll learn everything you need to grok to hack your configs to your heart&#8217;s content.</p>
 </div>
 <div class="paragraph">
-<p>To replace globally in all lines:</p>
+<p>We&#8217;ll get there. One step at a time.</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-m">1</span>,<span class="tok-nv">$s</span>/old/new/g</code></pre>
-</div>
+<div class="sect2">
+<h3 id="launcher"><a class="link" href="#launcher">Launch fast</a></h3>
+<div class="paragraph">
+<p>Not knowing how to launch your terminal with the quickest keystroke is like standing in front of a rocket, staring at the control panel, and wondering which button to press. If you can’t launch, you’ll never hit terminal velocity.</p>
 </div>
 <div class="paragraph">
-<p>Or, you can use <code>%</code> instead:</p>
+<p>Every operating system offers a quick and efficient way to launch applications, open files, and search for information—similar to macOS’s powerful Spotlight feature. Learning how to use these tools effectively can save time and streamline your workflow. This guide will walk you through Spotlight equivalents on Windows, Linux, and other systems.</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>%s/old/new/g</code></pre>
+<div class="sect3">
+<h4 id="_why_learn_launcher"><a class="link" href="#_why_learn_launcher">Why learn launcher?</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Efficiency</strong>: launching apps and files directly saves time compared to navigating menus. Your fingers never need to leave home row on the keyboard.</p>
+</li>
+<li>
+<p><strong>Focus</strong>: search and launch tools help you avoid distractions by providing a single interface for tasks.</p>
+</li>
+<li>
+<p><strong>Universal skills</strong>: mastering these tools makes you productive on any operating system.</p>
+</li>
+</ul>
 </div>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
+<div class="sect3">
+<h4 id="_spotlight_on_mac"><a class="link" href="#_spotlight_on_mac">Spotlight on Mac</a></h4>
 <div class="paragraph">
-<p>If you didn&#8217;t notice by now, this is the origin of the <code>sed</code> (<code>s</code> - <code>ed</code>) command, which does exactly the same thing but as a single command.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_w_write_changes"><a class="link" href="#_w_write_changes"><code>w</code>: write changes</a></h5>
-<div class="paragraph">
-<p>Writes the changes made to the file.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>w</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_q_quit"><a class="link" href="#_q_quit"><code>q</code>: quit</a></h5>
-<div class="paragraph">
-<p>Exits the editor.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>q</code></pre>
-</div>
+<p>On macOS, Spotlight is the built-in search and launcher tool.</p>
 </div>
 <div class="paragraph">
-<p>Usually, you will want to combine this with <code>w</code> so save before quitting. It&#8217;s a good habit.</p>
+<p><strong>How to access Spotlight</strong>:</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>wq</code></pre>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the keyboard shortcut <code>Command (⌘) + Space</code>.</p>
+</li>
+<li>
+<p>Click the magnifying glass icon in the top-right corner of the menu bar.</p>
+</li>
+</ul>
 </div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_q_quit_without_saving"><a class="link" href="#_q_quit_without_saving"><code>Q</code>: quit without saving</a></h5>
 <div class="paragraph">
-<p>Exits the editor without saving changes.</p>
+<p><strong>What you can do</strong>:</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>Q</code></pre>
+<div class="ulist">
+<ul>
+<li>
+<p>Launch apps: Type the app name and press <code>Enter</code>.</p>
+</li>
+<li>
+<p>Search files: Enter the file name or keywords.</p>
+</li>
+<li>
+<p>Perform calculations: Type <code>5 * 7</code> or <code>100 USD to EUR</code>.</p>
+</li>
+<li>
+<p>Look up definitions: Type a word to get a dictionary entry.</p>
+</li>
+<li>
+<p>Search the web: Type your query and select a browser result.</p>
+</li>
+</ul>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_search_on_windows"><a class="link" href="#_search_on_windows">Search on Windows</a></h4>
+<div class="paragraph">
+<p>Windows provides a built-in search tool that acts as a launcher.</p>
+</div>
+<div class="paragraph">
+<p><strong>How to access Windows search</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Press <code>Win</code> or click the search icon on the taskbar.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>What you can do</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Launch apps: Type the app name and press <code>Enter</code>.</p>
+</li>
+<li>
+<p>Search files: Enter the file name or content keywords.</p>
+</li>
+<li>
+<p>Execute commands: Run shell commands directly.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_activities_on_linux"><a class="link" href="#_activities_on_linux">Activities on Linux</a></h4>
+<div class="paragraph">
+<p>Linux has multiple application launchers, depending on your desktop environment and preferences.</p>
+</div>
+<div class="paragraph">
+<p><strong>GNOME: activities overview</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Press the <code>Super</code> key (Windows key) to open the Activities Overview.</p>
+</li>
+<li>
+<p>Type the app name or file you want to open.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>KDE Plasma: KRunner</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Press <code>Alt + Space</code> to open KRunner.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>What you can do</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Launch apps: Type the name and press <code>Enter</code>.</p>
+</li>
+<li>
+<p>Open files: Search for files by name.</p>
+</li>
+<li>
+<p>Run commands: Execute terminal commands directly.</p>
+</li>
+<li>
+<p>Perform calculations and translations with plugins.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_hackers_perspective_6"><a class="link" href="#_hackers_perspective_6">Hacker&#8217;s perspective</a></h4>
+<div class="paragraph">
+<p>The launcher is more than a convenience—it&#8217;s the hacker&#8217;s command center. Forget digging through menus or clicking aimlessly; mastery of the launcher means instant access to everything you need, right when you need it. It&#8217;s about speed, precision, and control—three pillars of the hacker mindset. Whether you&#8217;re firing up WezTerm, searching for system settings, or running commands, the launcher turns your keyboard into a gateway for efficiency. A hacker doesn&#8217;t waste time clicking; they orchestrate their tools with purpose. Learn the launcher, and you&#8217;ll not just use your system—you&#8217;ll command it.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="learn-vim"><a class="link" href="#learn-vim">Learn Vim</a></h3>
+<h3 id="_learn_alt_tab_for_window_switching"><a class="link" href="#_learn_alt_tab_for_window_switching">Learn Alt-Tab for window switching</a></h3>
 <div class="paragraph">
-<p>When it comes to mastering text editing, choosing the right starting point can have a profound impact on your efficiency, understanding, and future flexibility as a developer or technical professional. Among the myriad of editors available, learning Vim first offers unique advantages that extend well beyond mere productivity. Honestly, it&#8217;s not as hard as people think. Start with the basics.</p>
-</div>
-<div class="paragraph">
-<p>Is it hard? Yes.</p>
-</div>
-<div class="paragraph">
-<p>Is it worth it? Yes.</p>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Do not even attempt to learn Vim before learning to type from home row on an American keyboard and achieving a speed of about 30 words per minute.</p>
-</div>
-</td>
-</tr>
-</table>
+<p>The <code>Alt + Tab</code> shortcut is a universal skill that works across operating systems, allowing you to switch between open windows quickly and efficiently. It&#8217;s one of the most basic yet powerful tools to enhance productivity. No additional graphical window manager (like <code>i3</code>) is needed if you have already mastered this one skill.</p>
 </div>
 <div class="sect3">
-<h4 id="_avoid_gimmicks_and_games"><a class="link" href="#_avoid_gimmicks_and_games">Avoid gimmicks and games</a></h4>
-<div class="paragraph">
-<p>Don&#8217;t do things like VimAdventures or even VimTutor. Use an <em>actual</em> terminal to learn how to use a <em>terminal</em> editor instead. I know, crazy, right? The thought that just maybe a <em>web</em> app isn&#8217;t the best way to learn a <em>terminal</em> editor. It doesn&#8217;t work. I promise. Not even all the key combinations are possible doing that stuff within a web browser.</p>
-</div>
-<div class="paragraph">
-<p>Plus you won&#8217;t remember them. Our brains are hard coded to remember things by association. None of this gimmick creators are aware of that, for some reason. The best way to learn Vim is to use <code>vim</code> to edit actual documents and code. Commit to learning it <em>right</em> and then tell yourself you won&#8217;t create or edit another text file with any other editor. If you are frightened, start with simple notes that you have backed up in Git.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Making the commitment to do everything in <code>vim</code> is terrifying at first. I remember exactly where I was sitting, looking out the two-story window across the street at Wieden &amp; Kennedy in Portland, Oregon while working for Teleport Internet Services. The same place I committed to learning Linux when my unknowing mentor Joey (our head systems administrator) told me about it. At first the pain was excruciating, would I make my deadlines, would people thought I was a slow coder, would I royally screw up an important configuration file. That fear quickly turned to the greatest confidence I&#8217;ve gained. I can handle any text file on any of millions of Unix and Linux systems and containers in the world today. It&#8217;s so worth it.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_learn_standard_vim_first"><a class="link" href="#_learn_standard_vim_first">Learn standard Vim first</a></h4>
-<div class="paragraph">
-<p>The first thing anyone who learns that you are learning Vim will try to tell you is all the things you should customize and install to make it "easier" to use Vim. Don&#8217;t listen to them, for now. Right now you are focused on learning the standard Vim text editor with mostly default settings so that you can use Vim on any computer that has it installed. Then, after you have fully mastered the standard, you can decide what to allow yourself to use on your favorite computer confident in the knowledge that you can be productive on <em>any</em> computer that has Vim if you need to be later. To do otherwise would be to shoot yourself in the foot by putting bad things permanently into your muscle memory.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_vimtutor_gets_almost_everything_wrong"><a class="link" href="#_vimtutor_gets_almost_everything_wrong">Vimtutor gets almost everything wrong</a></h4>
-<div class="paragraph">
-<p>The <code>vimtutor</code> was made by college kids who just learned it and Bram who added several unnecessary Vim-isms. It is full of substantial errors. Many of them make it impossible for you to use <code>vi</code> if that is all you have, and for no reason. Many of the combinations are actually harder to type like <code>:10</code> versus <code>:10G</code>.  The <code>vimtutor</code> is still better than many other methods of learning, but make sure you understand the rest of the summary that follows when you do it.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_summary"><a class="link" href="#_summary">Summary</a></h4>
-<div class="paragraph">
-<p>The full documentation for commands is perhaps best referenced in the excellent Neovim help documentation itself with <code>:help</code>. You can get help on a specific command, for example, by typing the command after <code>:help</code> like <code>:help )</code>. The following summary distinguishes the command I personally find the most useful and organizes them based on the ones you will have in <em>any</em> <code>vi</code> from those in <code>vim</code> and <code>nvim</code>. This helps you make a solid decision about what priority you put on learning the command. For example, <code>:100</code> takes you to line number 100 without updating the "jump list" but you might not care to ever start doing that if you want to be compatible with <code>vi</code> which used <code>100G</code> instead. The <code>:100</code> does not work in <code>vi</code> at all. This also affects how you memorize use of external filters, which are supported in most all versions of <code>vi</code> but <em>do not work</em> with <code>:100</code> while they do work with <code>:100G</code>. I&#8217;ve organized these confusing distinctions for your simply here so you know to learn the <code>vi</code> compatible stuff first before using the rest—as any true hacker would prefer.</p>
-</div>
-<div class="paragraph">
-<p><em>Coming soon &#8230;&#8203;</em></p>
-</div>
-<div class="paragraph">
-<p><em>(This is currently a place for me to dump all the things that I notice as I remember them. Eventually, each will be fleshed out in addition to being included in the quick reference sheet and the eventual <code>learnvim</code> command.)</em></p>
-</div>
+<h4 id="_why_learn_alt_tab"><a class="link" href="#_why_learn_alt_tab">Why learn Alt-Tab?</a></h4>
 <div class="ulist">
 <ul>
 <li>
-<p>Use <code>Control-[</code> instead of <code>Esc</code> on American keyboards.</p>
+<p><strong>Speed</strong>: quickly toggle between tasks without touching the mouse.</p>
 </li>
 <li>
-<p><code>hjkl</code> for navigation</p>
+<p><strong>Universality</strong>: works on nearly every major operating system, making it a portable skill.</p>
 </li>
 <li>
-<p><code>u</code> for undo</p>
-</li>
-<li>
-<p>Prefer search-centric navigation with <code>/</code> and <code>?</code> (over line num and counting)</p>
-</li>
-<li>
-<p><code>:r /tmp/foo</code> to read file</p>
-</li>
-<li>
-<p>Do not use counts for motion, use search and paragraph <code>p</code> and word <code>w</code></p>
-</li>
-<li>
-<p>Filters (<code>!!</code>,<code>!}</code>)</p>
-</li>
-<li>
-<p><code>:n</code> next file</p>
-</li>
-<li>
-<p><code>:wn</code> save current file so can open next (otherwise you have to find later)</p>
-</li>
-<li>
-<p><code>:N</code> open previous file</p>
-</li>
-<li>
-<p>Use filter instead of <code>:r</code> (<code>:r !ls</code> becomes <code>ls</code> on line and <code>!!bash</code>)</p>
-</li>
-<li>
-<p>Filters on actual text (instead of <code>:</code>) allow easy modification and multi-line</p>
-</li>
-<li>
-<p>Filter command + backspace to remove <code>!</code> easier than typing <code>:#,#</code> numbers</p>
-</li>
-<li>
-<p>Filter with <code>yyy</code> command to yank to <code>/tmp/buf</code> (loads <code>pbcopy</code> also)</p>
-</li>
-<li>
-<p>Filter with <code>ddd</code> command to delete to <code>/tmp/buf</code> (loads <code>pbcopy</code> also)</p>
-</li>
-<li>
-<p>Filter with <code>cmt</code> to comment based on current file type</p>
-</li>
-<li>
-<p>Filter with <code>pre foo</code> to prefix</p>
-</li>
-<li>
-<p>Prefer new <code>tmux</code> window over external commands with <code>:!</code> (unless filters)</p>
-</li>
-<li>
-<p><code>ZZ</code> instead of <code>:wq</code>, <code>:qw</code>, or <code>:x</code></p>
-</li>
-<li>
-<p><code>:q!</code> instead of <code>ZQ</code></p>
-</li>
-<li>
-<p><code>x</code> to delete character under cursor</p>
-</li>
-<li>
-<p><code>i</code> to start inserting in front of current character</p>
-</li>
-<li>
-<p><code>w</code> for word nav</p>
-</li>
-<li>
-<p><code>G</code> always instead of <code>:</code> (vimism)</p>
-</li>
-<li>
-<p><code>1G</code> instead of <code>gg</code> (vimism) to nav to start of file</p>
-</li>
-<li>
-<p><code>D</code> instead of <code>d$</code> to delete to end of line</p>
-</li>
-<li>
-<p><code>C</code> instead of <code>c$</code> to change to end of line</p>
-</li>
-<li>
-<p><code>y$</code> yank to end of line</p>
-</li>
-<li>
-<p><code>ct</code> change up to next character</p>
-</li>
-<li>
-<p><code>c/</code> change up to next search match</p>
-</li>
-<li>
-<p><code>A</code> append to end of line</p>
-</li>
-<li>
-<p><code>ea</code> append to the end of a word</p>
-</li>
-<li>
-<p><code>p</code> to put/paste on line after</p>
-</li>
-<li>
-<p><code>P</code> to put/paste line above (good for top of file)</p>
-</li>
-<li>
-<p><code>r</code> replace current character with another</p>
-</li>
-<li>
-<p><code>o</code> open new line for editing after current line</p>
-</li>
-<li>
-<p><code>O</code> open new line for editing above (good for top of file)</p>
-</li>
-<li>
-<p><code>I</code> to insert at beginning of text on the line</p>
-</li>
-<li>
-<p><code>0i</code> to insert at absolute beginning of line</p>
-</li>
-<li>
-<p><code>J</code> join following line to current</p>
-</li>
-<li>
-<p><code>t&lt;char&gt;</code> to navigate to first character in line (better than counting)</p>
-</li>
-<li>
-<p><code>/</code> to navigate to search match</p>
-</li>
-<li>
-<p><code>n</code> to repeat search for next</p>
-</li>
-<li>
-<p><code>N</code> to go back to previous search match</p>
-</li>
-<li>
-<p><code>.</code> repeat last command, spam this a lot, easier than numbers</p>
-</li>
-<li>
-<p><code>!!</code> to replace current line by sending it to filter program</p>
-</li>
-<li>
-<p>Use <code>Control-i</code> optionally instead of <code>Tab</code></p>
-</li>
-<li>
-<p><code>~</code> toggle case of current character</p>
-</li>
-<li>
-<p><code>:s,some,other,g</code> replace other with some on line (<code>:s/some/other/g</code> also)</p>
-</li>
-<li>
-<p><code>:%s,some,other,g</code> replace some with other in file (live display)</p>
-</li>
-<li>
-<p><code>:set list</code> show all spaces and tabs</p>
-</li>
-<li>
-<p><code>:set nolist</code> hide all spaces and tabs</p>
-</li>
-<li>
-<p><code>:set nu</code> turn on line numbers</p>
-</li>
-<li>
-<p><code>:set nonu</code> turn off line numbers</p>
-</li>
-<li>
-<p><code>:help</code> for help</p>
+<p><strong>Focus</strong>: reduces distraction by helping you stay in the flow of your work.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Vimisms that are useful and worth learning:</p>
+<p>Incorporating <code>Alt + Tab</code> into your daily workflow ensures you can multitask efficiently across all platforms.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_how_to_use_alt_tab"><a class="link" href="#_how_to_use_alt_tab">How to use Alt-Tab</a></h4>
+<div class="paragraph">
+<p><strong>On Windows</strong>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>(</code> start of sentence</p>
+<p>Hold <code>Alt</code> and press <code>Tab</code> to cycle through open applications.</p>
 </li>
 <li>
-<p><code>)</code> end of sentence</p>
-</li>
-<li>
-<p><code>das</code> cut current current sentence</p>
-</li>
-<li>
-<p><code>K</code> to see documentation about anything</p>
-</li>
-<li>
-<p><code>gwaf</code> reformat comment paragraphs, etc</p>
-</li>
-<li>
-<p><code>gd</code> to jump to definition</p>
-</li>
-<li>
-<p><code>gj</code> down one display line (good for single line markdown paragraphs)</p>
-</li>
-<li>
-<p><code>gk</code> down one display line (good for single line markdown paragraphs)</p>
-</li>
-<li>
-<p><code>C-o</code> to jump to last nav position</p>
-</li>
-<li>
-<p><code>C-i</code> opposite of <code>C-o</code></p>
-</li>
-<li>
-<p><code>gx</code> to open a URL in web browser</p>
-</li>
-<li>
-<p><code>z=</code> to lookup word in dictionary</p>
-</li>
-<li>
-<p><code>zg</code> to add a word to dictionary</p>
-</li>
-<li>
-<p><code>,</code> leader (for later)</p>
-</li>
-<li>
-<p><code>Tab Tab</code> for in-line omni-completion</p>
-</li>
-<li>
-<p><code>C-d</code> for completion from <code>:</code> line</p>
-</li>
-<li>
-<p><code>C-n</code> down in completion menu</p>
-</li>
-<li>
-<p><code>C-p</code> up in completion menu</p>
-</li>
-<li>
-<p><code>C-r</code> (vimism) for redo (but rare)</p>
-</li>
-<li>
-<p><code>C-w C-o</code> fix window buffers</p>
-</li>
-<li>
-<p><code>ciw</code> start changing the current word from within it.</p>
-</li>
-<li>
-<p><code>!ap</code> send the current paragraph to filter program</p>
-</li>
-<li>
-<p><code>dap</code> to delete a paragraph from within it.</p>
-</li>
-<li>
-<p><code>yap</code> to yank a paragraph from within it.</p>
-</li>
-<li>
-<p><code>daf</code> to yank delete an entire function.</p>
-</li>
-<li>
-<p><code>dif</code> to yank indide of the function.</p>
-</li>
-<li>
-<p><code>yif</code> to yank the inside of a function.</p>
-</li>
-<li>
-<p><code>yaf</code> to yank an entire function.</p>
-</li>
-<li>
-<p>Paragraph and function operations: <code>dap</code>,<code>yap</code>,<code>daf</code>,<code>yaf</code></p>
-</li>
-<li>
-<p><code>daw</code> + <code>.</code> instead of <code>d2w</code> to delete current word</p>
-</li>
-<li>
-<p>Filters (<code>!af</code>, <code>!if</code>)</p>
-</li>
-<li>
-<p><code>C-l</code> clear last search term</p>
-</li>
-<li>
-<p><code>:PlugInstall</code> reload plugins</p>
-</li>
-<li>
-<p><code>:GoInstallBinaries</code> download and install Go development binaries (slow)</p>
-</li>
-<li>
-<p><code>C-]</code> follow link in <code>:help</code> (only, <code>C-]</code> is paste in <code>tmux</code>)</p>
+<p>Release both keys when the desired window is highlighted.</p>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p><strong>On macOS</strong>:</p>
 </div>
-<div class="sect3">
-<h4 id="_donts"><a class="link" href="#_donts">Don&#8217;ts</a></h4>
 <div class="ulist">
 <ul>
 <li>
-<p>Forget about <code>?</code> use <code>/</code> instead which wraps, then <code>N</code> to consistently go back</p>
+<p>Use <code>Command (⌘) + Tab</code> for similar functionality.</p>
 </li>
 <li>
-<p>Forget about <code>e</code>.</p>
-</li>
-<li>
-<p>Forget about <code>R</code>.</p>
-</li>
-<li>
-<p>Do not use Vim visual mode, use filters and TMUX copy and paste instead!</p>
-</li>
-<li>
-<p>Forget about <code>%</code> since requires exact position (use <code>dap</code>, etc. instead)</p>
+<p>Press <code>Command (⌘) + ~</code> to switch between windows of the same application.</p>
 </li>
 </ul>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_multiple_panes_and_buffers"><a class="link" href="#_multiple_panes_and_buffers">Multiple panes and buffers</a></h4>
 <div class="paragraph">
-<p>I&#8217;ve seen so many Vim users—particularly Neovim users—completely wall themselves in by becoming completely dependent on Vim buffers and panes. Soon they start turning to completely bloated options that find and open files, do Internet searches, and other insanity—some of which requires NodeJS to be installed in order to even use Neovim. None of that has any place in a <em>text editor</em>—even one that only you are going to use on your nice cushy personal workstation.</p>
+<p><strong>On Linux</strong>:</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Emacs users have been doing this forever. They gave in to the dark side and decided to just keep adding things to it. Eventually they ultimately decided to create an OS within their editor, one big Lisp interpreter to rule them all. Vim is not Emacs even though sometimes Neovim feels like it actually wants to be Emacs—but with Lua instead.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Eventually, the smart ones realize they would have been better off the entire time using TMUX windows instead—especially when TMUX is setup to be compatible with the original <code>screen</code> that can be found on any Unix system for some time. Cutting and pasting between TMUX windows works <em>even if you are not in an editor session</em> and can be automatically setup to load the host system buffer (think <code>pbcopy</code>). The main reason TMUX is better is because it is the right tool for that job. TMUX windows, panes, and buffers can be completely scripted <em>very</em> easily from the command line using simple shell commands. Vim cannot.</p>
-</div>
-<div class="paragraph">
-<p>Want to run IRC at the same time as you editor and have them both come up at the same time? That can <em>only</em> be done with Vim + TMUX, not Vim alone. Want to have some service or cronjob automatically open a window or pane in your current work session? Only TMUX can do that, not Vim. So, again, why would you handicap yourself by using the wrong tool for the job, in this case windows and panes in Vim. Want to integrate your functional cut and paste buffers with your host system and other programs? Vim buffers cannot do this, but a clever <code>yyy</code> or <code>ppp</code> Vim filter can. It can even be made to open another TMUX window but—more importantly—can be fully integrated into anything else running on your computer. Vim buffers cannot.</p>
-</div>
-<div class="paragraph">
-<p>Only <code>:help</code> is a valid exception to this.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="labrepo"><a class="link" href="#labrepo">Start a lab repo</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="weechat"><a class="link" href="#weechat">Learn weechat IRC</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="browser"><a class="link" href="#browser">Learn w3m or lynx web browser</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="mods"><a class="link" href="#mods">Learn mods terminal AI assistant</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="markdown"><a class="link" href="#markdown">Learn Markdown and pandoc</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="json"><a class="link" href="#json">Learn jq for JSON structured data</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="yaml"><a class="link" href="#yaml">Learn yq for YAML structured data</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="bash"><a class="link" href="#bash">Learn bash scripting</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="bashrc"><a class="link" href="#bashrc">Customize bashrc file</a></h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="advshell"><a class="link" href="#advshell">Learn shell advanced commands</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><code>find</code>, <code>xargs</code>, <code>entr</code>, <code>ps</code>, <code>awk</code>, <code>sed, `perl</code>, <code>tr</code>, <code>cut</code>, <code>split</code>, <code>sort</code>, <code>uniq</code>, <code>ip</code>, <code>strace</code>, <code>base64</code>, <code>ssh</code>, <code>top</code>, <code>netstat</code>, <code>ipconfig</code>, <code>ifconfig</code>, <code>nc</code>, <code>complete</code>, <code>tail</code>, <code>head</code>, <code>cat</code>, <code>tac</code></p>
-</div>
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="bashcompletion"><a class="link" href="#bashcompletion">Learn bash completion</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="golang"><a class="link" href="#golang">Learn Go terminal programming</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-<div class="sect2">
-<h3 id="_你好朋友"><a class="link" href="#_你好朋友">你好，朋友</a></h3>
-<div class="paragraph">
-<p>Cast your first spell to greet the world of magic and code! This cantrip sets the tone for your magical journey ahead, giving acolytes like you a satisfying first success invoking code magic. "Hello World" is recognized across the realm as the first spell most mages will ever cast and continues to be a strong tradition today.</p>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>You should already feel completely comfortable opening, editing, and saving a file before doing this first spell. If not go back to <a href="#learnvim">Learn Vim</a> until you have mastered the basics.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_task"><a class="link" href="#_task">Task</a></h4>
-<div class="paragraph">
-<p>Print something to the terminal console for the user to read.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_practice"><a class="link" href="#_practice">Practice</a></h4>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>It is assumed that you are in your <code>codebook</code> repo directory for all of these.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>First make a directory called <code>hello</code> and change into it. If you don&#8217;t remember how, go back and refresh <a href="#learn-shell">your basic shell skills</a> from the previous section.</p>
-</div>
-<div class="paragraph">
-<p>Now type the following code into a file called <code>main.go</code> (ignore the numbered circles, for now):</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-kn">package</span><span class="tok-w"> </span><span class="tok-nx">main</span><span class="tok-w">                          </span><i class="conum" data-value="1"></i><b>(1)</b>
-
-<span class="tok-kn">import</span><span class="tok-w"> </span><span class="tok-s">&quot;fmt&quot;</span><span class="tok-w">                          </span><i class="conum" data-value="2"></i><b>(2)</b>
-
-<span class="tok-kd">func</span><span class="tok-w"> </span><span class="tok-nx">main</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w">                         </span><i class="conum" data-value="3"></i><b>(3)</b>
-<span class="tok-w">    </span><span class="tok-c1">// fmt.Println(&quot;Hello, friend!&quot;)   </span><i class="conum" data-value="4"></i><b>(4)</b> <i class="conum" data-value="5"></i><b>(5)</b>
-<span class="tok-w">    </span><span class="tok-nx">fmt</span><span class="tok-p">.</span><span class="tok-nx">Println</span><span class="tok-p">(</span><span class="tok-s">&quot;你好，朋友&quot;</span><span class="tok-p">)</span><span class="tok-w">         </span><i class="conum" data-value="6"></i><b>(6)</b>
-<span class="tok-p">}</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Now let&#8217;s run it. Enter the following command from the command line:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>go<span class="tok-w"> </span>run<span class="tok-w"> </span>main.go</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>I see sparks and a greeting appear out of the ether! Your first cantrip is cast. Congratulations!</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Never written code before? If so, mark this date on your calendar as your <em>code birthday</em>. You&#8217;ll want to remember it one day.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Let&#8217;s decipher the glyphs of your spell:</p>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Declares this file is package <code>main</code> which is where the action is.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Imports the standard <code>fmt</code> package containing <code>Println</code>.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>Declares special <code>main</code> function, every program must have one.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="4"></i><b>4</b></td>
-<td>Prints "Hello, World!" to the console with a new line at the end.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="5"></i><b>5</b></td>
-<td>Use <code>//</code> to deactivate code or "comment it out".</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="6"></i><b>6</b></td>
-<td>Unicode (emojis, languages) are supported by the language.</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Rob Pike and Ken Thompson (two of Go&#8217;s inventors) more or less invented Unicode as well, which is used for emojis and different languages. It&#8217;s no surprise that, unlike other languages, Go has first-class support for these built into the language itself. 😃</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>But we aren&#8217;t done yet. There are other ways to cast this spell. Try the following:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>go<span class="tok-w"> </span>build
-./greet</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Notice it does the same thing but creates a binary executable. Now delete it so we can try another way:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>rm<span class="tok-w"> </span>greet</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>That&#8217;s a new command to add to your list. Make sure to read about <code>rm</code> with <code>man rm</code> a bit to get to understand it. It&#8217;s a powerful and dangerous command.</p>
-</div>
-<div class="paragraph">
-<p>Now that <code>greet</code> is gone. Let&#8217;s create one and install it in one command:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>go<span class="tok-w"> </span>install</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Woops! Looks like we got an error:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code><span></span>go: go.mod file not found in current directory or any parent directory</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>What&#8217;s that about? The reason is because only Go <em>modules</em> can be installed. We&#8217;ll get into modules a lot later, but for now just know it means there has to be a <code>go.mod</code> file. Here&#8217;s how to you create one (change <code>you</code>):</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>go<span class="tok-w"> </span>mod<span class="tok-w"> </span>init<span class="tok-w"> </span>github.com/you/codebook/hello
-go<span class="tok-w"> </span>install
-greet</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Notice this time that the <code>./</code> wasn&#8217;t required. That&#8217;s because the <code>greet</code> command was compiled and moved into your <code>PATH</code>—specifically your <code>GOBIN</code> directory. Have a look at both of them:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span><span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-nv">$PATH</span><span class="tok-w">     </span><i class="conum" data-value="1"></i><b>(1)</b>
-path<span class="tok-w">           </span><i class="conum" data-value="2"></i><b>(2)</b>
-go<span class="tok-w"> </span>env<span class="tok-w"> </span>GOBIN<span class="tok-w">   </span><i class="conum" data-value="3"></i><b>(3)</b></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Prints the list of directories combined with a colon between each</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Same as &lt;1&gt; but easier to read</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>The directory Go always installs into</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>The <code>PATH</code> contains a list of directory paths that can contain executable commands. Anything with executable permission in one of these directories doesn&#8217;t need to have directory at the the beginning telling where to find it. <code>./</code> means "in this directory right here". You could, for example, run <code>ls</code> with <code>/bin/ls</code> instead, but who wants to type that. To see the full path to any command use the <code>which</code> command:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>which<span class="tok-w"> </span>ls
-which<span class="tok-w"> </span>greet</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>At this point you might have noticed that <code>go</code> does a <em>lot</em>. You might have even tried <code>man go</code> and noticed there isn&#8217;t anything. Go has decided to put all the help documentation into the command itself:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>go<span class="tok-w"> </span><span class="tok-nb">help</span><span class="tok-w"> </span><span class="tok-p">|</span><span class="tok-w"> </span>less</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Just thought you should know.</p>
-</div>
-<div class="paragraph">
-<p>That&#8217;s a lot for now. Let it sink in for a while, then try out some of these challenges to test your mastery of what you&#8217;ve learned.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_challenges"><a class="link" href="#_challenges">Challenges</a></h4>
 <div class="ulist">
 <ul>
 <li>
-<p>Write and run a program to print "Hello World!" to the screen.</p>
+<p>Most desktop environments support <code>Alt + Tab</code> natively.</p>
 </li>
 <li>
-<p>Alter the program to print hello in another language to the screen.</p>
-</li>
-<li>
-<p>Add an emoji of the world in the output.</p>
-</li>
-<li>
-<p>Delete the program and write another from scratch.</p>
+<p>Additional variations, like <code>Super + Tab</code>, may be available depending on your configuration.</p>
 </li>
 </ul>
 </div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
 <div class="paragraph">
-<p>Now is the time to show what you have mastered to a mentor or friend who is learning with you. See what they have to say. Even though this is a small application, it&#8217;s a good time to get in the habit of <em>peer review</em> when another looks over it and validates it or gives feedback.</p>
+<p><strong>Others</strong>:</p>
 </div>
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>This functionality is supported on all tablets and phones as well so long as you attach a keyboard to them.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_review"><a class="link" href="#_review">Review</a></h4>
-<div class="literalblock">
-<div class="content">
-<pre>go run <i class="conum" data-value="1"></i><b>(1)</b>
-go build <i class="conum" data-value="2"></i><b>(2)</b>
-go mod init <i class="conum" data-value="3"></i><b>(3)</b>
-go install <i class="conum" data-value="4"></i><b>(4)</b>
-main <i class="conum" data-value="5"></i><b>(5)</b>
-string <i class="conum" data-value="6"></i><b>(6)</b>
-fmt <i class="conum" data-value="7"></i><b>(7)</b>
-// comment <i class="conum" data-value="8"></i><b>(8)</b></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>some</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>here</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>adf</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="4"></i><b>4</b></td>
-<td>adf</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="5"></i><b>5</b></td>
-<td>adf</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="6"></i><b>6</b></td>
-<td>adf</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="7"></i><b>7</b></td>
-<td>adf</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="8"></i><b>8</b></td>
-<td>adf</td>
-</tr>
-</table>
-</div>
+<h4 id="_hackers_perspective_7"><a class="link" href="#_hackers_perspective_7">Hacker&#8217;s perspective</a></h4>
 <div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
+<p>Alt-Tab isn&#8217;t just a shortcut; it&#8217;s a power move. Hackers don&#8217;t waste time fumbling through taskbars or desktops—they flow between windows seamlessly, keeping their focus sharp and their hands on the keyboard. Alt-Tab is about efficiency, controlling your environment without breaking your rhythm. Whether you&#8217;re debugging, researching, or coding at the speed of thought, mastering window switching is the key to maintaining momentum. A true hacker knows: every second counts, and Alt-Tab is how you make them count.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_learn_lua_basics_for_configuration"><a class="link" href="#_learn_lua_basics_for_configuration">Learn Lua basics for configuration</a></h2>
+<h2 id="create-learning-lab"><a class="link" href="#create-learning-lab">Create learning lab</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Back in the day, every hacker worth their salt had a black book—a secret stash of notes, exploits, and sketches of chaotic brilliance. It was personal, analog, and irreplaceable. But times have changed. The modern hacker doesn&#8217;t carry around a notebook; they wield a <strong>lab</strong>—a repository that&#8217;s part journal, part toolkit, and part playground.</p>
+</div>
+<div class="paragraph">
+<p>A lab repo is your digital black book reimagined. It&#8217;s where your Markdown codebook sits side-by-side with runnable scripts, experiments, and proof-of-concepts. This isn&#8217;t just documentation—it&#8217;s a live record of your evolution. Markdown captures the <strong>why</strong>, the <strong>how</strong>, and the <strong>what ifs</strong>, while the runnable code turns theory into action. Together, they&#8217;re not just a record of your past ideas; they&#8217;re a springboard for your future ones.</p>
+</div>
+<div class="paragraph">
+<p>The beauty of a lab is that it grows with you. Every script you write, every idea you test, every concept you fail and rebuild—it all lives here. It&#8217;s not static, like the black book of old; it&#8217;s dynamic, alive. The lab doesn&#8217;t just hold your tools—it <strong>is</strong> the tool.</p>
+</div>
+<div class="paragraph">
+<p>So don&#8217;t just code. Don&#8217;t just take notes. Build your lab. Because in this game, knowledge isn&#8217;t power—knowledge that runs, logs, and scales is power. The old black book has a new digital companion.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="grok-config"><a class="link" href="#grok-config">Grok your config</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><em>In development&#8230;&#8203;</em></p>
@@ -3827,7 +2266,7 @@ fmt <i class="conum" data-value="7"></i><b>(7)</b>
 </div>
 </div>
 <div class="sect1">
-<h2 id="podman"><a class="link" href="#podman">Learn podman for OCI containers</a></h2>
+<h2 id="code-for-terminal"><a class="link" href="#code-for-terminal">Code for the terminal</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><em>In development&#8230;&#8203;</em></p>
@@ -3835,7 +2274,7 @@ fmt <i class="conum" data-value="7"></i><b>(7)</b>
 </div>
 </div>
 <div class="sect1">
-<h2 id="k8s"><a class="link" href="#k8s">Learn local Kubernetes commands</a></h2>
+<h2 id="plan-next-op"><a class="link" href="#plan-next-op">Plan your next op</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><em>In development&#8230;&#8203;</em></p>
@@ -3862,7 +2301,7 @@ fmt <i class="conum" data-value="7"></i><b>(7)</b>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-13 19:03:36 -0500
+Last updated 2024-12-16 00:58:10 -0500
 </div>
 </div>
 </body>
