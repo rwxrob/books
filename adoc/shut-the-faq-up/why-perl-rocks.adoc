@@ -1,0 +1,138 @@
+= Why are you still using Perl?
+
+While trends may favor newer tools, the undeniable truth remains: Perl is still the most powerful and versatile language for text processing from the command line. Despite the rise of languages like Python, Perl's unparalleled features and efficiency make it the go-to choice for developers, hackers, and sysadmins who need to process text with precision and speed. It's regular expression DNA is in every other modern language.
+
+== Why Perl rules the command line
+
+=== A text-processing powerhouse
+
+At its core, Perl was designed for text manipulation. Its regular expression engine is not just powerful; it's legendary. Perl offers features like backreferences, named captures, and advanced pattern matching that other tools struggle to replicate.
+
+Example of extracting and printing matches:
+
+[source,perl]
+----
+perl -ne 'print "$1\n" if /error: (\S+)/' logfile.txt
+----
+
+This one-liner scans a log file, extracts the error codes, and prints them with unmatched clarity and efficiency.
+
+=== One-liners for every occasion
+
+Perl's syntax is compact yet expressive, making it ideal for writing one-liners that handle tasks ranging from simple filtering to complex data transformation.
+
+For example, replacing all instances of "foo" with "bar" in multiple files:
+
+[source,perl]
+----
+perl -pi -e 's/foo/bar/g' *.txt
+----
+
+No need for temporary files or complex pipelines—Perl does it all in place.
+
+=== Flexibility beyond compare
+
+Unlike `awk` or `sed` or `tr` or `grep`, Perl seamlessly bridges the gap between simple text-processing tasks and full-fledged programming. Need to parse comma-delimited files, handle multi-line input, or manipulate strings? Perl has you covered without requiring external libraries or tools.
+
+Example: Parsing a comma-delimited file and extracting specific fields:
+
+[source,perl]
+----
+perl -F, -lane 'print $F[0], $F[2]' data.txt
+----
+
+This one-liner uses Perl’s split and field syntax to process comma-delimited files effortlessly.
+
+=== Portability and compatibility
+
+Perl scripts run on virtually every operating system. From Linux to macOS to Windows, Perl's ubiquitous availability ensures that your scripts will work anywhere without modification. Unlike tools like `sed`, which can have differing behaviors across environments, Perl provides consistent functionality no matter the platform.
+
+=== A legacy of innovation
+
+Perl introduced many features that other tools later adopted, including powerful regex support and flexible file handling. It's not just a language—it's the backbone of countless legacy systems and workflows.
+
+=== Libpcre: Perl's DNA in modern languages
+
+Perl's influence goes far beyond its interpreter—it's baked into the very fabric of modern programming. The `libpcre` (Perl-Compatible Regular Expressions) library, inspired by Perl's regex engine, is now included in almost every major language and framework.
+
+Examples of libpcre in action:
+
+- **Python:** The `re` module is heavily influenced by Perl's regex syntax.
+- **JavaScript:** Many of its regular expression capabilities are directly inspired by Perl.
+- **PHP:** Uses libpcre for its regex functionality.
+- **Go:** The `regexp` package in Go relies on libpcre-like behavior for its regex processing.
+- **Ruby:** Adopts Perl-like regex features for its own implementation.
+
+These languages didn't reinvent the wheel; they borrowed Perl's regex engine for its unmatched power and flexibility. Even when you're not directly using Perl, you're likely benefiting from its innovations.
+
+=== Sed vs. Perl: The portability advantage
+
+While `sed` is often used for in-place text replacements with its `-i` flag, this feature isn't consistently supported across systems. For example, the behavior of `sed -i` differs between GNU sed and BSD sed (e.g., on macOS), often requiring workarounds like adding an empty string (`''`).
+
+In contrast, Perl's `-p -i -e` syntax works universally and consistently across platforms:
+
+[source,perl]
+----
+perl -pi -e 's/foo/bar/g' *.txt
+----
+
+This portability makes Perl the better choice for scripts and one-liners intended for diverse environments. It's better to burn Perl into your one-liner command muscle memory than any of these alternatives.
+
+=== Implicit printing with `perl -p`
+
+One of Perl's standout features is its ability to process and transform every line of a file with implicit printing using the `-p` flag. This eliminates the need for an explicit `print` statement, making your code cleaner and more concise.
+
+Example: Adding line numbers to a file:
+
+[source,perl]
+----
+perl -p -e '$. .= ": $_"' file.txt
+----
+
+Each line is prefixed with its line number, and the result is printed automatically.
+
+Another example: Converting text to uppercase:
+
+[source,perl]
+----
+perl -p -e '$_ = uc($_)' file.txt
+----
+
+Every line of the file is transformed to uppercase and printed without additional effort.
+
+== The "awk vs. Perl" debate
+
+While awk remains a respected tool for lightweight text processing, it pales in comparison to Perl's versatility and depth. Tasks that require multiple pipelines in awk can often be handled in a single Perl script.
+
+For example, extracting and transforming data with awk:
+
+[source,bash]
+----
+awk -F, '{print $1, $3}' file.txt
+----
+
+In Perl, the equivalent is just as simple but far more extensible:
+
+[source,perl]
+----
+perl -F, -lane 'print $F[0], $F[2]' file.txt
+----
+
+== The "boomer language" myth
+
+The idea that Perl is a "boomer language" is a complete misunderstanding of its power and relevance. While newer languages like Python have gained popularity, Perl remains the tool of choice for those who value:
+
+- **Efficiency:** Do more with less code.
+- **Reliability:** Proven in production for decades.
+- **Performance:** Optimized for text-heavy workloads.
+
+[IMPORTANT]
+====
+The reason Perl because the defacto language for _all_ backend web development—when there was no JavaScript and no frontend at all—is because the only alternatives were C and POSIX shell, which, as anyone who knows what they are talking about will tell you, is ridiculously insecure and easy to shell-inject. Perl even comes with taint checking (`-T`) and forces the develop to explicitly match any data the originated outside of the script in any way. Python never fucking did that. JavaScript sure didn't. Perl was never intended to do what it because the standard for, it was just that fucking good. Today there are tons of other options for backend web development that are all far superior for that, but _all_ of those language suck ass when it comes to text processing from the command line.
+====
+
+== Why Perl still matters
+
+Trends come and go, but Perl's utility and efficiency have stood the test of time. When you need to process text on the command line, nothing matches Perl's combination of power, flexibility, and ease of use.
+
+So next time someone questions why you use Perl, just point them to this page and let them know: Perl is not just a tool—it's a way of getting things done right the first time.

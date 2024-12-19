@@ -827,8 +827,20 @@ start-working-at-terminal-velocity<span class="tok-o">()</span><span class="tok-
 <span class="tok-w">	</span>:start-using-ai-from-terminal
 <span class="tok-w">	</span>:start-managing-stuff-with-git
 <span class="tok-w">	</span>:start-creating-terminal-apps
+<span class="tok-w">	</span>:start-using-perl-from-command-line
 <span class="tok-w">	</span>:decide-what-to-learn-next
 <span class="tok-w">	</span>:get-a-job-for-terminal-lovers
+<span class="tok-o">}</span>
+
+start-using-perl-from-command-line<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:grok-why-perl-was-created
+<span class="tok-w">	</span>:grok-why-perl-won-regular-expressions
+<span class="tok-w">	</span>:grok-why-perl-wins-cli-text-processing
+<span class="tok-w">	</span>:grok-when-perl-destroys-awk
+<span class="tok-w">	</span>:grok-when-perl-destroys-sed
+<span class="tok-w">	</span>:grok-when-perl-destroys-grep
+<span class="tok-w">	</span>:grok-when-perl-destroys-python
+<span class="tok-w">	</span>:grok-when-perl-destroys-ruby
 <span class="tok-o">}</span>
 
 check-that-you-have-prerequisites<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
@@ -845,7 +857,7 @@ setup-terminal-on-workstation<span class="tok-o">()</span><span class="tok-w"> <
 <span class="tok-w">	</span>:start-using-package-managers<span class="tok-w">     </span><span class="tok-c1"># apt, brew, winget.exe</span>
 
 <span class="tok-w">	</span><span class="tok-nb">read</span><span class="tok-w"> </span>-rp<span class="tok-w"> </span><span class="tok-s2">&quot;Do you care about colors and fastest terminal? [Y|n]&quot;</span><span class="tok-w"> </span>resp
-<span class="tok-w">	</span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-o">[[</span><span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-si">${</span><span class="tok-nv">resp</span><span class="tok-p">,,</span><span class="tok-si">}</span><span class="tok-s2">&quot;</span><span class="tok-w"> </span><span class="tok-o">=</span>~<span class="tok-w"> </span>^y<span class="tok-w"> </span><span class="tok-o">]]</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
+<span class="tok-w">	</span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-o">[[</span><span class="tok-w"> </span><span class="tok-si">${</span><span class="tok-nv">resp</span><span class="tok-p">,,</span><span class="tok-si">}</span><span class="tok-w"> </span><span class="tok-o">=</span>~<span class="tok-w"> </span>^y<span class="tok-w"> </span><span class="tok-o">]]</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
 <span class="tok-w">		</span>:start-using-wezterm-terminal
 <span class="tok-w">	</span><span class="tok-k">else</span>
 <span class="tok-w">		</span>:start-using-builtin-terminal
