@@ -32,7 +32,7 @@ setup-terminal-on-workstation() {
 	:start-using-package-managers     # apt, brew, winget.exe
 
 	read -rp "Do you care about colors and fastest terminal? [Y|n]" resp
-	if [[ "$resp" =~ ^y ]]; then
+	if [[ "${resp,,}" =~ ^y ]]; then
 		:start-using-wezterm-terminal
 	else
 		:start-using-builtin-terminal
