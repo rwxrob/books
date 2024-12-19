@@ -107,3 +107,5 @@ include::terms.adoc[]
 //include::config-wezterm.adoc[]
 
 //include::appendix/index.adoc[]
+
+include::appendix/index.adoc[]

@@ -14,20 +14,26 @@ start-working-at-terminal-velocity() {
 	:start-using-ai-from-terminal
 	:start-managing-stuff-with-git
 	:start-creating-terminal-apps
-	:start-using-perl-from-command-line
+	:start-using-perl-from-cli-only
 	:decide-what-to-learn-next
 	:get-a-job-for-terminal-lovers
 }
 
-start-using-perl-from-command-line() {
+start-using-perl-from-cli-only() {
 	:grok-why-perl-was-created
 	:grok-why-perl-won-regular-expressions
 	:grok-why-perl-wins-cli-text-processing
+	:grok-why-perl-loses-for-everything-else
 	:grok-when-perl-destroys-awk
 	:grok-when-perl-destroys-sed
 	:grok-when-perl-destroys-grep
 	:grok-when-perl-destroys-python
 	:grok-when-perl-destroys-ruby
+	:start-using-perl-to-find-replace
+	:start-using-perl-to-map
+	:start-using-perl-to-filter
+	:start-using-perl-to-reduce
+	:start-using-perl-to-transform
 }
 
 check-that-you-have-prerequisites() {
@@ -87,9 +93,10 @@ start-connecting-with-other-terminal-lovers() {
 }
 
 start-creating-advanced-terminal-apps() {
-	start-creating-advanced-bash-commands  # parameter expansion, hashes, etc.
-	start-creating-terminal-commands-in-go # flags, bonzai, cobra, bubbletea
-	learn-enough-lua-for-dynamic-configs   # ~/.wezterm.lua, ~/.config/nvim/init.lua
+	:grok-map-filter-reduce-transform
+	:start-creating-advanced-bash-commands  # parameter expansion, hashes, etc.
+	:start-creating-terminal-commands-in-go # flags, bonzai, cobra, bubbletea
+	:learn-enough-lua-for-dynamic-configs   # ~/.wezterm.lua, ~/.config/nvim/init.lua
 }
 
 start-managing-stuff-with-git() {

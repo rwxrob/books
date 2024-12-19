@@ -514,6 +514,11 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </ul>
 </li>
 <li><a href="#_terminology">Terminology</a></li>
+<li><a href="#appendix">Appendix</a>
+<ul class="sectlevel2">
+<li><a href="#_im_obsessed_with_text_processing">I&#8217;m obsessed with text processing</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -827,20 +832,26 @@ start-working-at-terminal-velocity<span class="tok-o">()</span><span class="tok-
 <span class="tok-w">	</span>:start-using-ai-from-terminal
 <span class="tok-w">	</span>:start-managing-stuff-with-git
 <span class="tok-w">	</span>:start-creating-terminal-apps
-<span class="tok-w">	</span>:start-using-perl-from-command-line
+<span class="tok-w">	</span>:start-using-perl-from-cli-only
 <span class="tok-w">	</span>:decide-what-to-learn-next
 <span class="tok-w">	</span>:get-a-job-for-terminal-lovers
 <span class="tok-o">}</span>
 
-start-using-perl-from-command-line<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+start-using-perl-from-cli-only<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
 <span class="tok-w">	</span>:grok-why-perl-was-created
 <span class="tok-w">	</span>:grok-why-perl-won-regular-expressions
 <span class="tok-w">	</span>:grok-why-perl-wins-cli-text-processing
+<span class="tok-w">	</span>:grok-why-perl-loses-for-everything-else
 <span class="tok-w">	</span>:grok-when-perl-destroys-awk
 <span class="tok-w">	</span>:grok-when-perl-destroys-sed
 <span class="tok-w">	</span>:grok-when-perl-destroys-grep
 <span class="tok-w">	</span>:grok-when-perl-destroys-python
 <span class="tok-w">	</span>:grok-when-perl-destroys-ruby
+<span class="tok-w">	</span>:start-using-perl-to-find-replace
+<span class="tok-w">	</span>:start-using-perl-to-map
+<span class="tok-w">	</span>:start-using-perl-to-filter
+<span class="tok-w">	</span>:start-using-perl-to-reduce
+<span class="tok-w">	</span>:start-using-perl-to-transform
 <span class="tok-o">}</span>
 
 check-that-you-have-prerequisites<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
@@ -900,9 +911,10 @@ start-connecting-with-other-terminal-lovers<span class="tok-o">()</span><span cl
 <span class="tok-o">}</span>
 
 start-creating-advanced-terminal-apps<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>start-creating-advanced-bash-commands<span class="tok-w">  </span><span class="tok-c1"># parameter expansion, hashes, etc.</span>
-<span class="tok-w">	</span>start-creating-terminal-commands-in-go<span class="tok-w"> </span><span class="tok-c1"># flags, bonzai, cobra, bubbletea</span>
-<span class="tok-w">	</span>learn-enough-lua-for-dynamic-configs<span class="tok-w">   </span><span class="tok-c1"># ~/.wezterm.lua, ~/.config/nvim/init.lua</span>
+<span class="tok-w">	</span>:grok-map-filter-reduce-transform
+<span class="tok-w">	</span>:start-creating-advanced-bash-commands<span class="tok-w">  </span><span class="tok-c1"># parameter expansion, hashes, etc.</span>
+<span class="tok-w">	</span>:start-creating-terminal-commands-in-go<span class="tok-w"> </span><span class="tok-c1"># flags, bonzai, cobra, bubbletea</span>
+<span class="tok-w">	</span>:learn-enough-lua-for-dynamic-configs<span class="tok-w">   </span><span class="tok-c1"># ~/.wezterm.lua, ~/.config/nvim/init.lua</span>
 <span class="tok-o">}</span>
 
 start-managing-stuff-with-git<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
@@ -1179,10 +1191,27 @@ boost-to-terminal-velocity</code></pre>
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="appendix"><a class="link" href="#appendix">Appendix</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>All the stuff that doesn&#8217;t belong in the rest of the book but seems worth including.</p>
+</div>
+<div class="sect2">
+<h3 id="_im_obsessed_with_text_processing"><a class="link" href="#_im_obsessed_with_text_processing">I&#8217;m obsessed with text processing</a></h3>
+<div class="paragraph">
+<p>I&#8217;m not exactly sure why but I have always been absolutely obsessed with parsing text in every and any way possible. Sometimes I wonder if this is because I started with Perl for the beginning of my career for most significant stuff. Maybe it&#8217;s my affinity for syntax and spoken and written languages. Maybe all of that comes from other particular way my semi-autistic brain is wired. I love that stuff.</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;ve never actually made a compiler but I have made <em>transpilers</em> before. For some reason the compiler part doesn&#8217;t interest me. I&#8217;m all about finding the syntax of one thing and transforming it into something else. For example, writing this book in bash code and then transpiling it to an Excalidraw flow chart by implementing an AST parser for bash itself and interpreting it into API commands that generate the flow chart automatically. Now <em>there&#8217;s</em> a project I find so amazing I have a hard time not dropping everything and just working on that right now.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-19 10:35:17 -0500
+Last updated 2024-12-19 13:18:31 -0500
 </div>
 </div>
 </body>
