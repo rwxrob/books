@@ -128,7 +128,7 @@ The idea that Perl is a "boomer language" is a complete misunderstanding of its 
 
 [IMPORTANT]
 ====
-The reason Perl because the defacto language for _all_ backend web development—when there was no JavaScript and no frontend at all—is because the only alternatives were C and POSIX shell, which, as anyone who knows what they are talking about will tell you, is ridiculously insecure and easy to shell-inject. Perl even comes with taint checking (`-T`) and forces the develop to explicitly match any data the originated outside of the script in any way. Python never fucking did that. JavaScript sure didn't. Perl was never intended to do what it because the standard for, it was just that fucking good. Today there are tons of other options for backend web development that are all far superior for that, but _all_ of those language suck ass when it comes to text processing from the command line.
+The reason Perl because the defacto language for _all_ backend web development—when there was no JavaScript and no frontend at all—is because the only alternatives were C and POSIX shell, which, as anyone who knows what they are talking about will tell you, is ridiculously insecure and easy to shell-inject. Perl even comes with taint checking (`-T`) and forces the develop to explicitly match any data the originated outside of the script in any way. Python never fucking did that. JavaScript sure didn't. Perl was never intended to do all the web backend processing it was forced to do, it was just that fucking good. Today there are tons of other options for backend web development that are all far superior for that, but _all_ of those language suck ass when it comes to text processing from the command line.
 ====
 
 == Why Perl still matters
