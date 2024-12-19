@@ -46,6 +46,8 @@ include::strong-opinions-weakly-held.adoc[]
 
 include::cv-vs-resume.adoc[]
 
+include::work-with-good-people.adoc[]
+
 = Purpose
 
 include::motivation.adoc[]

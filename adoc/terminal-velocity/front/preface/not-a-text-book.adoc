@@ -1,0 +1,3 @@
+=== Write your own book
+
+Where we're going, we don't need textbooks. A lab repo isn't just a folder—it's your personal codebook, your own personal manual. You'll use it your entire life. It's where ideas are born, tested, and sharpened. Markdown notes document the chaos, while the code tells the story of your experiments, your breakthroughs, your failures. It's not about just saving files; it's about building a map of your learning, linking thought to execution. This isn't documentation—it's a blueprint for hacking the future, one test, one script, one revelation at a time.

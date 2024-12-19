@@ -1,0 +1,11 @@
+== The hacker’s way
+
+In this book, _The Hard Way_ is better known as _The Hacker's Way_. It's not about doing things the easy way or even the fast way—it's about doing them _your_ way. This path teaches you to think like a hacker: to see every gap as an opportunity, every problem as a puzzle, and every limitation as a challenge to overcome.
+
+Here, we focus on _what_ to learn rather than spoon-feeding you the _how_. You'll find guidance on the tools, concepts, and techniques that matter, but the specifics? Those are yours to discover. The Hacker's Way demands that you go beyond the pages of this book, leveraging your curiosity, creativity, and the boundless resources of the digital world to piece it all together.
+
+Why this approach? Because hacking isn't about following instructions; it's about breaking them down, understanding them, and reimagining them. The act of figuring out how something works on your own—not just by imitating but by innovating—is what transforms you into a true hacker. It builds not just technical skills but also resilience, independence, and an instinct for solving problems on your terms.
+
+When this book leaves out the _how_, it's intentional. It's your cue to dig deeper. Fire up your search engine, dive into documentation, and collaborate with your AI assistants. Don't just find the answer—dissect it, experiment with it, and make it yours. The Hacker's Way is about mastering the process, not just the outcome.
+
+This is a mindset for those who thrive on challenges and who are willing to embrace the unknown. It's for the autodidacts, the problem solvers, and the terminal knowledge warriors. If you choose The Hacker's Way, you'll gain something far more valuable than shortcuts: you'll gain the ability to create your own.

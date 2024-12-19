@@ -1,0 +1,13 @@
+== Trust me, kiddo
+
+Most of us have to commit to one school (and no, not the kind with lockers and hall passes) to get started. Like Neo with Morpheus, there's got to be some level of trust—enough to take that first leap. But here's the kicker: you shouldn't trust anyone, ever. Not until they've earned it. And yet, how does someone earn your trust without you taking the risk to trust them first? It's a paradox, a mind-bending loop that feels impossible to solve. But it's in that uncertainty, in that leap of faith, where the real learning begins.
+
+Commitment to a single school does not mean there is no value in others, or even that this school is better. Just that you are dedicated to this one at the moment. You would never walk into a Karate dojo and start talking about why Judo is a superior martial art. The masters of both dojos can even strongly respect the other for their commitment despite their different approaches. The master of the dojo need not justify why their form is better. That is up to the student to determine on their own after they have mastered the forms. A master and mentor, instead, focus uniquely on the advantages of the form they know and how to execute it.
+
+Learning the terminal follows the same philosophy. At first, you're typing commands, opening multiple concurrent windows, and running programs without fully understanding how it all connects. By focusing on the terminal environment and immersing yourself in bash's syntax and tools, you're laying a foundation that will make advanced concepts easier to grasp later.
+
+By dedicating yourself to the terminal you're committing to a single, cohesive system. The command line's simplicity and clarity make it an excellent first experience with programming. Every command line _is_ a line of code. The terminal, as your dojo, reinforces this focus by stripping away distractions and emphasizing direct, hands-on practice.
+
+Through this focused practice, you begin to see the "why" behind the techniques, and the lessons become part of your intuition, your faith transforms into fact. So dedicate yourself to _this_ practice right now.
+
+Once you have mastered the basics of a single discipline, you are prepared to branch out. A martial artist with a strong foundation in one style can explore others and integrate their techniques into a unique, personal expression. Similarly, a terminal hacker with a host of commands at their fingertips can easily add new ones—even create their own—by applying the foundational skills they've gained.

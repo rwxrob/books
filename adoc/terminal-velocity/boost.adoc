@@ -1,0 +1,33 @@
+= Your script
+
+> The code _is_ the documentation.
+
+What better way to learn to code than programming yourself with _actual_ code. Here you will find everything you need to do and learn to optimize your personal performance with a Unix-like terminal workflow in bash, a real language.
+
+Not only will you be learning to use the terminal, you'll become an interpreter as you read each line, evaluate it, perform what it says, and loop to repeat that process for a new line, which is a real thing called a REPL. In a very real sense, you take the place of the bash command shell interpreter running on your computer. After all, the only difference between you and bash is your squishy gray persistence layer.
+
+[NOTE]
+====
+Now would be a good time to go watch that scene from Star Wars, A New Hope, where C3PO introduces himself as an _interpreter_ who converts languages into instructions other devices understand, like "Bocce" and "the binary language of moisture evaporators." You'll have a lot in common with C3PO while working through this script.
+====
+
+== What _is_ a script?
+
+An actor's script and a bash script, though from vastly different domains, share a striking similarity: both are carefully crafted sets of instructions designed to guide actions and interactions. In an actor's script, the lines of dialogue and stage directions dictate the performance, instructing the actor on what to say, how to say it, and how to move or react. These instructions form a blueprint for storytelling, where the actor becomes the interpreter, turning static words into dynamic expressions.
+
+Similarly, a bash script provides a series of commands that a computer interprets and executes, automating tasks or orchestrating processes. Just as an actor's script might include cues for a dramatic pause or a sudden outburst, a bash script might contain conditional statements or loops, signaling the system to pause, evaluate conditions, or repeat actions. Both types of scripts rely on precise language to avoid misinterpretation—whether by the actor or the computer—and both have an audience: the viewer for the actor's script, and the user or developer for the bash script.
+
+Ultimately, both scripts transform abstract instructions into meaningful action. An actor brings a script to life by adding emotion and timing, while a bash script comes alive when executed, interacting with files, systems, or other programs. In both cases, the effectiveness of the script depends on the clarity of its instructions and the skill of its interpreter.
+
+== Execute this
+
+In coding, the term _execute_ simply means to carry out or perform a set of instructions. When you execute a script or a program, you're telling the computer to follow the sequence of commands it contains and perform the tasks specified. This usage comes from the idea of execution as "putting into effect" or "bringing something to life." It's entirely unrelated to the darker connotation of the word associated with capital punishment.
+
+In programming, "execution" is a vital concept—it transforms static lines of code into dynamic processes, turning logic and algorithms into actions that produce results. Whether it's running a script to clean up files, compiling code into an application, or querying a database, execution is what bridges the gap between planning and doing. For learners, it's helpful to remember that when we say "execute," we're referring to the moment a computer takes our written instructions and makes them real.
+
+Time for you to execute. Here's your script. Now execute it. Follow each line and when you come to a new one, see if there is a _subroutine_ for that line that has more lines. You can think of it as a textual flow-chart, because that is _exactly_ what it is. You got this. Let's go.
+
+[source, bash]
+----
+include::boost[]
+----

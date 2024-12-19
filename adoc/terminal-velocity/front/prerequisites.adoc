@@ -1,14 +1,11 @@
 [[prerequisites]]
 = Prerequisites
 
-There's not much you can do without a CPU. Don't read another word until you have:
-
-- A computer with an American keyboard on which you can install software
+- A decent computer that can run reasonable performant games
+- An American keyboard
 - A phone for research and reading while working
 - A reliable Internet connection for installing and saving
 - An email account that you control
 - The ability to type 30 words per minute from home row
 - Enough snacks and drinks to keep you from getting hangry
-
-Windows, macOS, Linux? All are fine. A CPU's a CPU. Ignore fights about which OS is best. You have better things to do.
 

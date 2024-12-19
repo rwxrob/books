@@ -1,0 +1,16 @@
+== ChatGPT for learning
+
+In my experience ChatGPT is an absolute necessity for anyone wanting to truly take their learning to the next level. I'm not getting paid to say that (but I would happily accept money for saying so). You really should consider subscribing if you are serious about adopting an autodidactic lifestyle. ChatGPT is specifically designed for general learning and creativity and runs on anything with full contextual history. Mine has helped me keep my conversational Russian and French skills up, planned bike trips, helped me code the mundane stuff, reminded me of things I forgot about, offered up random ideas, and so much more.
+
+[NOTE]
+====
+Claude, another AI assistant, is better for `mods` terminal API integration and for coding.
+====
+
+Still skeptical? I know I was.
+
+Here's the thing. On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges with a supportive AI companion—even when a helpful human mentor is also available.
+
+We are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. Don't get left behind.
+
+We are already seeing this difference around us every day. I'm remarkably faster at the same job now with AI doing the same thing I've been doing for four years, and that's not even just the coding part. Querying an AI is exponentially better for research than a Google search, provided I verify the results, as always.

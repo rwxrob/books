@@ -1,0 +1,22 @@
+= Terminology
+
+Let's cover some terms that will help understand what you have been doing. You don't have to read them all now, but see if you can identify them in the code that follows:
+
+- Procedure -  a set of instructions to accomplish a _task_
+- Scope - how high or low the level of instructional detail
+- Algorithm -  mostly just a fancy way to say _procedure_
+- Task - 
+- Skill - 
+- Ability - 
+- Knowledge - 
+- Operation - 
+- Parameter - a variable passed into a _function_, _method_, or _procedure_ from an _argument_
+- Argument - a value assigned to a _parameter_ variable
+- Variable - 
+- Constant - 
+- Type - 
+- Object - 
+- Method - 
+- Function - optionally put something in, get something out, like a machine
+- Subroutine - a reusable block of code including methods, functions, procedures
+

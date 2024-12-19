@@ -15,7 +15,7 @@
 :toc: left
 :toclevels: 3
 :toc-title: Table of Contents
-:description: Boost your coding, hacking, and learning with a Unix or Linux terminal
+:description: Boost your coding, hacking, and learning with fastest human-computer interface
 :keywords: terminal unix linux tech education tutorials learning techlife hacking cybersecurity cli command-line bash golang programming coding applied-programming independent-learning irc weechat tmux ed ex vi vim neovim nvim w3m lynx twitch proxmox homelab init beginner noob kubernetes network software-development utilities
 :icons: font
 :xrefstyle: short
@@ -23,51 +23,63 @@
 :pygments-style: vs
 :pygments-linenums-mode: table
 
-_Boost your coding, hacking, and learning with a Unix or Linux terminal_
-
-// ————————— front matter —————————
+_Boost your coding, hacking, and learning with the fastest human-computer interface_
 
 include::front/copyright.adoc[]
 
 include::front/dedication.adoc[]
 
-include::front/prerequisites.adoc[]
+include::front/preface/welcome.adoc[]
 
-// —————————— preface ——————————
+include::front/preface/who-should-read-this.adoc[]
 
-include::preface/welcome.adoc[]
+include::front/preface/the-hackers-way.adoc[]
 
-include::preface/who-should-read.adoc[]
+include::front/preface/write-your-own-book.adoc[]
 
-include::preface/whats-in-this-book.adoc[]
+include::front/preface/wax-on-wax-off.adoc[]
 
-include::preface/how-to-use-this-book.adoc[]
+include::front/preface/dont-just-read.adoc[]
 
-include::preface/hackers-perspective.adoc[]
+include::front/preface/get-an-ai.adoc[]
+
+include::front/preface/trust-me-kiddo.adoc[]
+
+include::front/preface/parents-and-pedagogues.adoc[]
+
+include::boost.adoc[]
+
+include::terms.adoc[]
+
+//include::preface/hackers-perspective.adoc[]
+
+// ———————— setup a terminal ————————
+
+//include::set-up-a-terminal/index.adoc[]
 
 // ———————— get unix or linux ————————
 
-include::get-unix-linux/index.adoc[]
+//include::get-unix-linux/index.adoc[]
 
 // ——————— setup a terminal ———————
 
-include::start-using-terminal/index.adoc[]
+//include::start-using-terminal/index.adoc[]
 
 // ——————— create a learning lab ———————
 
-include::create-lab-repo/index.adoc[]
+//include::create-lab-repo/index.adoc[]
 
 // ———————— grok your config ————————
 
-include::grok-your-configs/index.adoc[]
+//include::grok-your-configs/index.adoc[]
 
 // ——————— code for the terminal ———————
 
-include::code-for-terminal/index.adoc[]
+//include::code-for-terminal/index.adoc[]
 
 // ———————— plan your next op ————————
 
-include::plan-your-next-op/index.adoc[]
+//include::plan-your-next-op/index.adoc[]
 
 
 //include::terminal-origins.adoc[]
@@ -94,7 +106,4 @@ include::plan-your-next-op/index.adoc[]
 
 //include::config-wezterm.adoc[]
 
-[[appendix]]
-= Appendix
-
-include::appendix/index.adoc[]
+//include::appendix/index.adoc[]

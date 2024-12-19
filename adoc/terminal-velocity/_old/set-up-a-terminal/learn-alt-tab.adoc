@@ -1,4 +1,4 @@
-== Learn Alt-Tab for window switching
+== Alt-Tab for window switching
 
 The `Alt + Tab` shortcut is a universal skill that works across operating systems, allowing you to switch between open windows quickly and efficiently. It's one of the most basic yet powerful tools to enhance productivity. No additional graphical window manager (like `i3`) is needed if you have already mastered this one skill.
 

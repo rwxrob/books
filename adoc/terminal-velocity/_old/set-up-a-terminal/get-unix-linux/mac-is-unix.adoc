@@ -1,4 +1,4 @@
-== Mac _is_ Unix
+=== Mac _is_ Unix
 
 Let's clear something up right now: if you're using a Mac, you're already halfway to the promised land. macOS isn't just Unix-based—it's _**certified Unix**_. That's right, your shiny aluminum rectangle is running on the world's largest Unix distribution. Feel powerful yet? You should.
 
@@ -6,6 +6,6 @@ macOS traces its lineage back to BSD (Berkeley Software Distribution), one of th
 
 And here's the kicker: Apple pays to keep it certified. That means when you're typing commands in your Mac terminal, you're not just running "like" Unix—you're running the real deal. It's the same foundation that powers servers, supercomputers, and everything in between. The same philosophy of small, composable tools, the same file hierarchy, the same command-line DNA.
 
-=== Hacker's perspective
+==== Hacker's perspective
 
 So why does this Mac stuff matter? Because it means if you've got a Mac, you already own one of the best Unix environments out there. You don't need to dual-boot Linux, spin up a VM, or SSH into a remote box just to get started. It's all right there, preinstalled, waiting for you to discover it. Sure, Linux might feel more hardcore—and we'll get to that—but don't let anyone tell you your Mac can't play with the 1337. It already is. Only a time-wasting moron would challenge that. Unix was a thing way before Linux was a pipe dream and it still is. Torvalds admits he never would have made Linux had he known BSD was a thing. Yet here we are.

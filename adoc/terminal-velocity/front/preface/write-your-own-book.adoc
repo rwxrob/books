@@ -1,0 +1,7 @@
+== Write your own book
+
+For a hacker, the best book isn't something you buy—it's something you create. Following a textbook might teach you the basics, but it won't sharpen the skills that truly matter: curiosity, problem-solving, and adaptability. Hackers learn by doing, breaking things, and figuring out how to put them back together better. Writing your own book filled with original notes in Markdown that includes runnable code saved with Git is the ultimate extension of that process.
+
+When you create your own book, you decide what's important. Instead of passively consuming information, you actively shape it, curating concepts and methods that matter to you. You remember it better. This approach forces you to think deeply, experiment, and learn at your own pace. Every chapter you write becomes a record of what you've discovered, how you've applied it, and what you've learned in the process.
+
+By building your own resource, you're not just learning—you're documenting your journey in a way that's meaningful and personal. Unlike a static textbook, your book evolves with you, reflecting the growth of your knowledge and skills. It's not just a guide; it's a testament to your ability to hack the learning process itself.

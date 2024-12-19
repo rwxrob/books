@@ -1,0 +1,38 @@
+== Windows WSL2
+
+Alright, listen up. You've got a Windows machine and dreams of running Linux without dealing with dual-boot nightmares or spinning up a resource-hogging virtual machine or dual-booting every time. Enter WSL2—your ticket to running Ubuntu seamlessly, like a hacker in a sci-fi flick. Here's how you get it up and running, no fluff, just action.
+
+=== Enable WSL
+
+First things first, open PowerShell. No, not PowerPoint, your terminal. Hit `Win` and start typing `powershell`. Then, fire this off:
+
+[source,bash]
+----
+wsl --install
+----
+
+This command does the heavy lifting: enabling WSL, installing the kernel, and grabbing a default Linux distribution, which should be Ubuntu. You will probably have to restart your computer.
+
+=== Upgrade to WSL2
+
+If Windows decides to hand you WSL1 like it’s 2018, upgrade it manually:
+
+[source,bash]
+----
+wsl --set-default-version 2
+----
+
+WSL2 is where the magic happens—full Linux kernel, better performance, and actual compatibility with modern tools.
+
+=== Install Ubuntu into WSL2
+
+If Ubuntu didn't install during Step 1, snag it manually. Open the *Microsoft Store* (I know, gross) and search for "Ubuntu." When it's done, open it from the Start menu or run:
+
+[source,bash]
+----
+wsl -d Ubuntu
+----
+
+=== Hacker's perspective
+
+WSL2 isn't just fast—it's a game-changer for anyone running Linux on Windows. It ditches the clunky syscall translation of WSL1 and fires up a real Linux kernel inside a stripped-down virtual machine, delivering near-native speed and full compatibility. It's like hacking two systems at once—Windows and Linux—without rebooting or splitting your workflow. Files, networks, and apps flow seamlessly between the two worlds, letting you script, code, and test with zero friction. Add in GPU acceleration and container support, and WSL2 turns your Windows box into a double agent: a Linux powerhouse hiding in plain sight.

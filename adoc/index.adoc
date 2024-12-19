@@ -12,10 +12,10 @@
 :icons: font
 :xrefstyle: short
 
-Here you'll find my perpetually unfinished books. I make no promises. I have a job.
+Here you'll find my perpetually unfinished books.
 
 - link:terminal-velocity[*Terminal Velocity*] +
-_Boost your coding, hacking, and learning with a Unix or Linux terminal_
+_Boost your coding, hacking, and learning with the fastest human-computer interface_
 
 - link:autodidactic[*Autodidactic*] +
 _Keys to success as a modern knowledge warrior_

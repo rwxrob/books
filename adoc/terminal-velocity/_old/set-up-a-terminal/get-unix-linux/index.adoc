@@ -1,0 +1,11 @@
+[[get-unix-linux]]
+== Get Unix or Linux
+
+Let's make this short. If you have a Mac you're done. If you have Windows, install WSL2 and you're in the game. That's it. Both of these are mandatory learning for any hacker. Add them to your `TODO` lists now.
+
+include::whats-your-distro.adoc[]
+
+include::mac-is-unix.adoc[]
+
+include::get-wsl2-on-windows.adoc[]
+

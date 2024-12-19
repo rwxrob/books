@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="description" content="Boost your coding, hacking, and learning with a Unix or Linux terminal">
+<meta name="description" content="Boost your coding, hacking, and learning with fastest human-computer interface">
 <meta name="keywords" content="terminal unix linux tech education tutorials learning techlife hacking cybersecurity cli command-line bash golang programming coding applied-programming independent-learning irc weechat tmux ed ex vi vim neovim nvim w3m lynx twitch proxmox homelab init beginner noob kubernetes network software-development utilities">
 <meta name="author" content="Robert S. Muhlestein (rwxrob)">
 <meta name="copyright" content="2024 Robert S. Muhlestein">
@@ -493,106 +493,27 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <ul class="sectlevel1">
 <li><a href="#_copyright">Copyright</a></li>
 <li><a href="#dedication">Dedication</a></li>
-<li><a href="#prerequisites">Prerequisites</a></li>
 <li><a href="#preface">Preface</a>
 <ul class="sectlevel2">
-<li><a href="#_who_should_read_this_book">Who should read this book</a>
-<ul class="sectlevel3">
-<li><a href="#_hacker_first_coder_second">Hacker first, coder second</a></li>
-<li><a href="#_dear_parents_and_pedagogues">Dear parents and pedagogues</a></li>
-<li><a href="#_why_learn_from_me">Why learn from me?</a></li>
-<li><a href="#_not_a_text_book">Not a text book</a></li>
-</ul>
-</li>
-<li><a href="#_whats_included_in_the_book">What&#8217;s included in the book</a>
-<ul class="sectlevel3">
-<li><a href="#_get_unix_or_linux">Get Unix or Linux</a></li>
-<li><a href="#_start_using_terminal">Start using terminal</a></li>
-<li><a href="#_create_lab_repo">Create lab repo</a></li>
-<li><a href="#_grok_your_configs">Grok your configs</a></li>
-<li><a href="#_code_for_the_terminal">Code for the terminal</a></li>
-<li><a href="#_plan_your_next_op">Plan your next op</a></li>
-</ul>
-</li>
-<li><a href="#_how_to_use_this_book">How to use this book</a>
-<ul class="sectlevel3">
-<li><a href="#_wax_on_wax_off">Wax on. Wax off</a></li>
-<li><a href="#_dont_just_read_it">Don&#8217;t just read it</a></li>
+<li><a href="#_who_should_read_this">Who should read this?</a></li>
+<li><a href="#_the_hackers_way">The hacker’s way</a></li>
+<li><a href="#_write_your_own_book">Write your own book</a></li>
+<li><a href="#_wax_on_wax_off">Wax on, wax off</a></li>
 <li><a href="#_join_a_crew">Join a crew</a></li>
 <li><a href="#_find_a_mentor">Find a mentor</a></li>
 <li><a href="#_become_a_mentor">Become a mentor</a></li>
+<li><a href="#_chatgpt_for_learning">ChatGPT for learning</a></li>
 <li><a href="#_trust_me_kiddo">Trust me, kiddo</a></li>
-<li><a href="#_say_hello_chloe">Say hello, Chloe</a></li>
+<li><a href="#_dear_parents_and_pedagogues">Dear parents and pedagogues</a></li>
 </ul>
 </li>
-<li><a href="#_hackers_perspective">Hacker&#8217;s perspective</a></li>
-</ul>
-</li>
-<li><a href="#get-unix-linux">Get Unix or Linux</a>
+<li><a href="#_your_script">Your script</a>
 <ul class="sectlevel2">
-<li><a href="#_mac_is_unix">Mac <em>is</em> Unix</a>
-<ul class="sectlevel3">
-<li><a href="#_hackers_perspective_2">Hacker&#8217;s perspective</a></li>
+<li><a href="#_what_is_a_script">What <em>is</em> a script?</a></li>
+<li><a href="#_execute_this">Execute this</a></li>
 </ul>
 </li>
-<li><a href="#_windows_wsl2">Windows WSL2</a>
-<ul class="sectlevel3">
-<li><a href="#_enable_wsl">Enable WSL</a></li>
-<li><a href="#_upgrade_to_wsl2">Upgrade to WSL2</a></li>
-<li><a href="#_install_ubuntu_into_wsl2">Install Ubuntu into WSL2</a></li>
-<li><a href="#_update_your_software_repositories">Update your software repositories</a></li>
-<li><a href="#_install_wsl_utilities">Install WSL utilities</a></li>
-<li><a href="#_hackers_perspective_3">Hacker&#8217;s perspective</a></li>
-</ul>
-</li>
-<li><a href="#package-managers">Package managers</a>
-<ul class="sectlevel3">
-<li><a href="#_linux_apt">Linux: apt</a></li>
-<li><a href="#_mac_brew">Mac: brew</a></li>
-<li><a href="#_windows_winget">Windows: winget</a></li>
-<li><a href="#_benefits_of_winget">Benefits of winget</a></li>
-<li><a href="#_hackers_perspective_4">Hacker&#8217;s perspective</a></li>
-</ul>
-</li>
-<li><a href="#_alt_linux">Alt Linux</a>
-<ul class="sectlevel3">
-<li><a href="#_linux_on_metal_2">Linux on metal</a></li>
-<li><a href="#_linux_in_virtual_machine">Linux in virtual machine</a></li>
-<li><a href="#_linux_in_container">Linux in container</a></li>
-<li><a href="#_hackers_perspective_5">Hacker&#8217;s perspective</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#start-using-terminal">Start using terminal</a>
-<ul class="sectlevel2">
-<li><a href="#launcher">Launch fast</a>
-<ul class="sectlevel3">
-<li><a href="#_why_learn_launcher">Why learn launcher?</a></li>
-<li><a href="#_spotlight_on_mac">Spotlight on Mac</a></li>
-<li><a href="#_search_on_windows">Search on Windows</a></li>
-<li><a href="#_activities_on_linux">Activities on Linux</a></li>
-<li><a href="#_hackers_perspective_6">Hacker&#8217;s perspective</a></li>
-</ul>
-</li>
-<li><a href="#_learn_alt_tab_for_window_switching">Learn Alt-Tab for window switching</a>
-<ul class="sectlevel3">
-<li><a href="#_why_learn_alt_tab">Why learn Alt-Tab?</a></li>
-<li><a href="#_how_to_use_alt_tab">How to use Alt-Tab</a></li>
-<li><a href="#_hackers_perspective_7">Hacker&#8217;s perspective</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#create-learning-lab">Create learning lab</a></li>
-<li><a href="#grok-config">Grok your config</a></li>
-<li><a href="#code-for-terminal">Code for the terminal</a></li>
-<li><a href="#plan-next-op">Plan your next op</a></li>
-<li><a href="#appendix">Appendix</a>
-<ul class="sectlevel2">
-<li><a href="#gitea">Gitea alternative to GitHub</a></li>
-</ul>
-</li>
+<li><a href="#_terminology">Terminology</a></li>
 </ul>
 </div>
 </div>
@@ -600,7 +521,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p><em>Boost your coding, hacking, and learning with a Unix or Linux terminal</em></p>
+<p><em>Boost your coding, hacking, and learning with the fastest human-computer interface</em></p>
 </div>
 </div>
 </div>
@@ -627,39 +548,6 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <div class="paragraph">
 <p><strong>In memory of Aaron Swartz and Kris Nova</strong>,<br>
 whose contributions and spirit continue to inspire the pursuit of knowledge and innovation.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="prerequisites"><a class="link" href="#prerequisites">Prerequisites</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>There&#8217;s not much you can do without a CPU. Don&#8217;t read another word until you have:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>A computer with an American keyboard on which you can install software</p>
-</li>
-<li>
-<p>A phone for research and reading while working</p>
-</li>
-<li>
-<p>A reliable Internet connection for installing and saving</p>
-</li>
-<li>
-<p>An email account that you control</p>
-</li>
-<li>
-<p>The ability to type 30 words per minute from home row</p>
-</li>
-<li>
-<p>Enough snacks and drinks to keep you from getting hangry</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Windows, macOS, Linux? All are fine. A CPU&#8217;s a CPU. Ignore fights about which OS is best. You have better things to do.</p>
 </div>
 </div>
 </div>
@@ -697,47 +585,143 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 </table>
 </div>
 <div class="sect2">
-<h3 id="_who_should_read_this_book"><a class="link" href="#_who_should_read_this_book">Who should read this book</a></h3>
+<h3 id="_who_should_read_this"><a class="link" href="#_who_should_read_this">Who should read this?</a></h3>
 <div class="paragraph">
-<p>This book is for anyone over thirteen who wants to master the terminal like a hacker. If you’re under thirteen? I won&#8217;t know. But you should get your parents' permission—seriously. Services like these don&#8217;t mess around when it comes to COPPA, and for good reason. If you&#8217;re younger than thirteen, skip the parts of this book that require accounts or tools with age restrictions. Some schools provide access to these services for kids. Ask. Hack the system the right way.</p>
+<p>This book is for anyone over thirteen who wants to master the terminal like a hacker. If you’re under thirteen? I won’t know. But you should get your parents' permission—seriously. Services like these don’t mess around when it comes to COPPA, and for good reason. If you’re younger than thirteen, skip the parts of this book that require accounts or tools with age restrictions. Some schools provide access to these services for kids. Ask. Hack the system the right way.</p>
 </div>
-<div class="admonitionblock tip">
+</div>
+<div class="sect2">
+<h3 id="_the_hackers_way"><a class="link" href="#_the_hackers_way">The hacker’s way</a></h3>
+<div class="paragraph">
+<p>In this book, <em>The Hard Way</em> is better known as <em>The Hacker&#8217;s Way</em>. It&#8217;s not about doing things the easy way or even the fast way—it&#8217;s about doing them <em>your</em> way. This path teaches you to think like a hacker: to see every gap as an opportunity, every problem as a puzzle, and every limitation as a challenge to overcome.</p>
+</div>
+<div class="paragraph">
+<p>Here, we focus on <em>what</em> to learn rather than spoon-feeding you the <em>how</em>. You&#8217;ll find guidance on the tools, concepts, and techniques that matter, but the specifics? Those are yours to discover. The Hacker&#8217;s Way demands that you go beyond the pages of this book, leveraging your curiosity, creativity, and the boundless resources of the digital world to piece it all together.</p>
+</div>
+<div class="paragraph">
+<p>Why this approach? Because hacking isn&#8217;t about following instructions; it&#8217;s about breaking them down, understanding them, and reimagining them. The act of figuring out how something works on your own—not just by imitating but by innovating—is what transforms you into a true hacker. It builds not just technical skills but also resilience, independence, and an instinct for solving problems on your terms.</p>
+</div>
+<div class="paragraph">
+<p>When this book leaves out the <em>how</em>, it&#8217;s intentional. It&#8217;s your cue to dig deeper. Fire up your search engine, dive into documentation, and collaborate with your AI assistants. Don&#8217;t just find the answer—dissect it, experiment with it, and make it yours. The Hacker&#8217;s Way is about mastering the process, not just the outcome.</p>
+</div>
+<div class="paragraph">
+<p>This is a mindset for those who thrive on challenges and who are willing to embrace the unknown. It&#8217;s for the autodidacts, the problem solvers, and the terminal knowledge warriors. If you choose The Hacker&#8217;s Way, you&#8217;ll gain something far more valuable than shortcuts: you&#8217;ll gain the ability to create your own.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_write_your_own_book"><a class="link" href="#_write_your_own_book">Write your own book</a></h3>
+<div class="paragraph">
+<p>For a hacker, the best book isn&#8217;t something you buy—it&#8217;s something you create. Following a textbook might teach you the basics, but it won&#8217;t sharpen the skills that truly matter: curiosity, problem-solving, and adaptability. Hackers learn by doing, breaking things, and figuring out how to put them back together better. Writing your own book filled with original notes in Markdown that includes runnable code saved with Git is the ultimate extension of that process.</p>
+</div>
+<div class="paragraph">
+<p>When you create your own book, you decide what&#8217;s important. Instead of passively consuming information, you actively shape it, curating concepts and methods that matter to you. You remember it better. This approach forces you to think deeply, experiment, and learn at your own pace. Every chapter you write becomes a record of what you&#8217;ve discovered, how you&#8217;ve applied it, and what you&#8217;ve learned in the process.</p>
+</div>
+<div class="paragraph">
+<p>By building your own resource, you&#8217;re not just learning—you&#8217;re documenting your journey in a way that&#8217;s meaningful and personal. Unlike a static textbook, your book evolves with you, reflecting the growth of your knowledge and skills. It&#8217;s not just a guide; it&#8217;s a testament to your ability to hack the learning process itself.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_wax_on_wax_off"><a class="link" href="#_wax_on_wax_off">Wax on, wax off</a></h3>
+<div class="paragraph">
+<p>Повторение — мать учения. Repetition is the mother of learning. Anyone who has ever done anything worth learning knows not all procedures can be memorized and ready. You have to come back to them and repeat them. This is why you setup your own learning lab where you take dynamic notes that change as the times do and as you learn more. It&#8217;s the reason this book is perpetually published. It&#8217;s never finished. A hacker&#8217;s learning never is. Always adapting and acquiring new skills and knowledge. Once you think you&#8217;ve learned it all, you get taken out.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_join_a_crew"><a class="link" href="#_join_a_crew">Join a crew</a></h3>
+<div class="paragraph">
+<p>We humans are social creatures. Learning is communal. Join a community that is focused on learning the same things as you. Meetups, hacker spaces, clubs, church groups, social media, and live streamer chat groups are all great places to find a community. The community is a place to collaborate and share peer reviews of one another&#8217;s learning and projects. Who knows, you might find a friend. I did.</p>
+</div>
+<div class="admonitionblock note">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>I&#8217;ve added an appendix with alternatives for people setting up similar services like GitHub for organizations and families that want most of the benefits of GitHub, for example, without the legal problems.</p>
+<p>My sincere hope is that the parents, teachers, and young hackers reading these words will find opportunities and motivation to create their own clubs and communities dedicated to helping others master the art of the terminal command line and bash scripting and all the well-earned benefits of doing so. While you are working on creating your own community, consider joining my crew: <a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="_hacker_first_coder_second"><a class="link" href="#_hacker_first_coder_second">Hacker first, coder second</a></h4>
-<div class="paragraph">
-<p>In the series <em>Silicon Valley</em>, there are two fictional characters: Dinesh Chugtai and Bertram Gilfoyle. Dinesh is a talented, self-titled software engineer who codes almost exclusively in Java and is constantly trying to prove he&#8217;s just as good as Gilfoyle. Gilfoyle, on the other hand, is a confident sigma hacker—a master of multiple coding languages, including Java, which he accidentally convinces Dinesh to fawn over. He builds a supercomputer in the garage named Anton, and his skills go far beyond just software development.</p>
 </div>
+<div class="sect2">
+<h3 id="_find_a_mentor"><a class="link" href="#_find_a_mentor">Find a mentor</a></h3>
 <div class="paragraph">
-<p>To put it bluntly, this book is for Gilfoyles—not Dineshs. If all you want out of tech is a big salary at a company that forces you through an irrelevant leet-code whiteboard session and expects endless hours grinding code in a digital sweatshop, then this book isn’t for you. Try a book from Packt Publishing while mapping <code>Control-C</code> to <code>Esc</code> in Neovim. <em>Kappa</em></p>
+<p>Humans have been passing knowledge one to another since the beginning. It&#8217;s what we do. Wanna forge a sword or horse shoe? Better find the blacksmith and get them to show you their craft. Coding is no different. Just don&#8217;t ask them to <em>teach</em> you. They are probably too busy paying their bills doing what they are good at rather than spending that time teaching you how to do it. If you are respectful of their time, however, they might just be willing to mentor you—especially if you show genuine interest in their craft.</p>
 </div>
 <div class="paragraph">
-<p>Thinking like a hacker isn&#8217;t just about breaking into systems; it&#8217;s about breaking out of limitations. A hacker sees a problem and doesn&#8217;t just look for a predefined solution—they reimagine what&#8217;s possible. This mindset fosters creativity, adaptability, and a deeper understanding of how systems work, empowering you to craft innovative solutions and uncover new uses for existing tools. A software developer might follow a spec and deliver functional code, but a hacker thinks beyond the spec, finding edge cases, optimizing workflows, and pushing the boundaries of what technology can achieve. In a world where agility and innovation reign, the terminal hacker&#8217;s mindset is the ultimate competitive advantage.</p>
+<p>You will find that many people <em>want</em> to share what they know but just don&#8217;t know how to do it or who would want to hear. Find these people and approach them. Perhaps you can find a few mentors so you can compare how they differ in their approach to programming.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_dear_parents_and_pedagogues"><a class="link" href="#_dear_parents_and_pedagogues">Dear parents and pedagogues</a></h4>
+<div class="sect2">
+<h3 id="_become_a_mentor"><a class="link" href="#_become_a_mentor">Become a mentor</a></h3>
+<div class="paragraph">
+<p>Here&#8217;s a secret a lot of people who get paid a lot of money don&#8217;t want you to know, you don&#8217;t need any special training to help someone else learn. In fact, as a beginner who has recently mastered something you are perhaps the best suited to help another beginner learn it because what made it click for you is still fresh in your mind. Ask a veteran when the last time anything clicked for them? They get so used to what they do they completely forget what it was like to be a beginner. So don&#8217;t be shy. Offer your help to another beginner. And remember, you really haven&#8217;t learned it until you can help someone else learn it as well.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_chatgpt_for_learning"><a class="link" href="#_chatgpt_for_learning">ChatGPT for learning</a></h3>
+<div class="paragraph">
+<p>In my experience ChatGPT is an absolute necessity for anyone wanting to truly take their learning to the next level. I&#8217;m not getting paid to say that (but I would happily accept money for saying so). You really should consider subscribing if you are serious about adopting an autodidactic lifestyle. ChatGPT is specifically designed for general learning and creativity and runs on anything with full contextual history. Mine has helped me keep my conversational Russian and French skills up, planned bike trips, helped me code the mundane stuff, reminded me of things I forgot about, offered up random ideas, and so much more.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Claude, another AI assistant, is better for <code>mods</code> terminal API integration and for coding.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Still skeptical? I know I was.</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s the thing. On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges with a supportive AI companion—even when a helpful human mentor is also available.</p>
+</div>
+<div class="paragraph">
+<p>We are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. Don&#8217;t get left behind.</p>
+</div>
+<div class="paragraph">
+<p>We are already seeing this difference around us every day. I&#8217;m remarkably faster at the same job now with AI doing the same thing I&#8217;ve been doing for four years, and that&#8217;s not even just the coding part. Querying an AI is exponentially better for research than a Google search, provided I verify the results, as always.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_trust_me_kiddo"><a class="link" href="#_trust_me_kiddo">Trust me, kiddo</a></h3>
+<div class="paragraph">
+<p>Most of us have to commit to one school (and no, not the kind with lockers and hall passes) to get started. Like Neo with Morpheus, there&#8217;s got to be some level of trust—enough to take that first leap. But here&#8217;s the kicker: you shouldn&#8217;t trust anyone, ever. Not until they&#8217;ve earned it. And yet, how does someone earn your trust without you taking the risk to trust them first? It&#8217;s a paradox, a mind-bending loop that feels impossible to solve. But it&#8217;s in that uncertainty, in that leap of faith, where the real learning begins.</p>
+</div>
+<div class="paragraph">
+<p>Commitment to a single school does not mean there is no value in others, or even that this school is better. Just that you are dedicated to this one at the moment. You would never walk into a Karate dojo and start talking about why Judo is a superior martial art. The masters of both dojos can even strongly respect the other for their commitment despite their different approaches. The master of the dojo need not justify why their form is better. That is up to the student to determine on their own after they have mastered the forms. A master and mentor, instead, focus uniquely on the advantages of the form they know and how to execute it.</p>
+</div>
+<div class="paragraph">
+<p>Learning the terminal follows the same philosophy. At first, you&#8217;re typing commands, opening multiple concurrent windows, and running programs without fully understanding how it all connects. By focusing on the terminal environment and immersing yourself in bash&#8217;s syntax and tools, you&#8217;re laying a foundation that will make advanced concepts easier to grasp later.</p>
+</div>
+<div class="paragraph">
+<p>By dedicating yourself to the terminal you&#8217;re committing to a single, cohesive system. The command line&#8217;s simplicity and clarity make it an excellent first experience with programming. Every command line <em>is</em> a line of code. The terminal, as your dojo, reinforces this focus by stripping away distractions and emphasizing direct, hands-on practice.</p>
+</div>
+<div class="paragraph">
+<p>Through this focused practice, you begin to see the "why" behind the techniques, and the lessons become part of your intuition, your faith transforms into fact. So dedicate yourself to <em>this</em> practice right now.</p>
+</div>
+<div class="paragraph">
+<p>Once you have mastered the basics of a single discipline, you are prepared to branch out. A martial artist with a strong foundation in one style can explore others and integrate their techniques into a unique, personal expression. Similarly, a terminal hacker with a host of commands at their fingertips can easily add new ones—even create their own—by applying the foundational skills they&#8217;ve gained.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dear_parents_and_pedagogues"><a class="link" href="#_dear_parents_and_pedagogues">Dear parents and pedagogues</a></h3>
 <div class="paragraph">
 <p>Are you a parent or a teacher? If so, thank you for being <em>awesome</em>! It takes a lot to bring kids into this world and even more to dedicate your life to helping kids that aren&#8217;t even your own to find their way and learn something even if they don&#8217;t want to. Deep respect. But let&#8217;s get real. You&#8217;re reading this right now wondering if I&#8217;m going to corrupt your children.</p>
 </div>
 <div class="paragraph">
 <p>The answer is yes. Yes I am. In fact, my goal is to fully corrupt them much the same as Socrates. If I am successful your children will become <em>better</em> that the status quo, they&#8217;ll think critically, ask uncomfortable questions, and use their new powers and tools to ethically disrupt this broken world transforming it into something better. They&#8217;ll become the most annoying people you&#8217;ve ever known—in the best way possible.</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_why_learn_from_me"><a class="link" href="#_why_learn_from_me">Why learn from me?</a></h4>
 <div class="paragraph">
 <p>Why me? Because getting people to discover this potential and realize it through their own learning is my super power. I&#8217;ve been mentored by the best and I&#8217;m <em>really</em> good at it. Since the first time my scouts begged "Mr. Rob, teach us to code. Mr. Rob, teach us to hack. Mr. Rob, teach us Russian." I have been bound and determined to make this a reality. In fact, I started SKILSTAK Coding Arts in 2013 with my own retirement money to address the <em>real</em> needs of the tech industry and those who might consider it as a career, raising a generation of highly skilled knowledge warriors.</p>
 </div>
@@ -770,503 +754,23 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 <p>The point is, these success stories don&#8217;t have to be about someone else. They can be about someone <em>you know and love</em>. Terminal tech skills really do change lives and I&#8217;m here to help in whatever way I can.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_not_a_text_book"><a class="link" href="#_not_a_text_book">Not a text book</a></h4>
-<div class="paragraph">
-<p>While it is true that this book can be thought of as a text book for absolute beginners, the book is very clearly written to include everyone <em>outside</em> of educational institutions. In fact, I wrote it mostly with pro-active <em>parents</em> in mind who want to give their kids a head-start in tech (not teachers).</p>
 </div>
-<div class="paragraph">
-<p>To be completely honest, it is virtually impossible to find this sort of thing in most traditional education systems. AP Computer Science? Please. They don&#8217;t even know what a terminal is and teach single-class Java inheritance and how to use Wix for web development as "modern computer science."</p>
 </div>
-<div class="paragraph">
-<p>So yes, this <em>could</em> be a "text book" but quite honestly, I <em>hate</em> text books, too stuffy, too full of themselves, to overpriced. These authors (if they even are the <em>actual</em> authors) write for the institutions that make money forcing people to buy their bombastic books rather than catering to the needs of the <em>actual</em> people who are going to buy, read, and learn from them. Nope, not me.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_whats_included_in_the_book"><a class="link" href="#_whats_included_in_the_book">What&#8217;s included in the book</a></h3>
-<div class="paragraph">
-<p>So, what&#8217;s in this book? Everything you need to start, and nothing you don&#8217;t. This isn&#8217;t some bloated manual crammed with fluff. Every page is designed to sharpen your edge, to give you the skills you need to move faster, work smarter, and take control. These are the foundational building blocks of your <code>skilstak</code>. The rest? You’ll build it.</p>
-</div>
-<div class="paragraph">
-<p>This book is divided into six parts:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Get Unix or Linux</p>
-</li>
-<li>
-<p>Start using terminal</p>
-</li>
-<li>
-<p>Create lab repo</p>
-</li>
-<li>
-<p>Grok your configs</p>
-</li>
-<li>
-<p>Code for the terminal</p>
-</li>
-<li>
-<p>Plan your next op</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>There is also additional secondarily relevant content in the appendix.</p>
-</div>
-<div class="sect3">
-<h4 id="_get_unix_or_linux"><a class="link" href="#_get_unix_or_linux">Get Unix or Linux</a></h4>
-<div class="paragraph">
-<p>There&#8217;s not much you can do without a CPU. And the best computer operating system for that CPU is Unix or Linux. But how do you hack on a Windows or a Mac? The hacker&#8217;s dilemma.</p>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Don&#8217;t let the install process slow you down. The system you&#8217;re using <em>right now</em> is enough to get started. Dive in, learn the commands, break things. Master the environment first—bare hands in the terminal. The distro wars? The dual boot debates? They&#8217;ll still be there when you&#8217;re ready to level up. Right now, it&#8217;s about ops, not aesthetics. Don&#8217;t waste time decorating your bunker when you haven&#8217;t learned to fire the weapon. Just get in. The rest will follow.</p>
-</div>
-<div class="paragraph">
-<p>Besides, people won&#8217;t suspect you&#8217;re a skilled hacker carrying around a corporate Windows laptop. Think of it as camouflage.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="sect4">
-<h5 id="_linux_on_metal"><a class="link" href="#_linux_on_metal">Linux on metal</a></h5>
-<div class="paragraph">
-<p>The lucky ones running are already running Linux on bare metal. They&#8217;re already free from the chains of Windows. No bloated background processes, no endless updates hijacking their workflow—just raw power, precision, and control. Their machine doesn&#8217;t just run; it listens, ready to do exactly what they need, exactly when they need it. If that&#8217;s you, congrats. You&#8217;re starting ahead of the game. But don&#8217;t expect me to show you how to install Linux on your computer, yet. That&#8217;ll come later, in another book: <em>Linux homelab init</em>.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_macos_is_unix"><a class="link" href="#_macos_is_unix">macOS is Unix</a></h5>
-<div class="paragraph">
-<p>macOS is the largest Unix distro on the planet, a moniker for this they pay 10s of thousands of dollars every year to be audited for Unix compliance. So yeah, it&#8217;s a Unix system with a custom desktop environment.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_windows_subsystem_for_linux_wsl2"><a class="link" href="#_windows_subsystem_for_linux_wsl2">Windows Subsystem for Linux (WSL2)</a></h5>
-<div class="paragraph">
-<p>You can&#8217;t escape learning Windows—the most vulnerable operating system on planet Earth. So using one now is fine. It&#8217;s not 'real' Linux, sure—but who cares? It runs the commands, compiles the code, gets the job done. This isn&#8217;t about proving you can partition a drive or wrangle bootloaders. It&#8217;s about getting into the fight. WSL2 gets you there.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_software_package_managers"><a class="link" href="#_software_package_managers">Software package managers</a></h5>
-<div class="paragraph">
-<p>Every OS has a package manager. Knowing how to install, update, and remove software using nothing but a single command is essential:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>brew</code> - macOS</p>
-</li>
-<li>
-<p><code>winget</code> - Windows</p>
-</li>
-<li>
-<p><code>apt</code> - Linux including WSL2</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_start_using_terminal"><a class="link" href="#_start_using_terminal">Start using terminal</a></h4>
-<div class="paragraph">
-<p>Upgrading your terminal and integrating core terminal tools isn&#8217;t just an enhancement—its a game-changer:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>bash</code> - universal command shell and scripting language</p>
-</li>
-<li>
-<p><code>wezterm</code> - fast and dynamically configurable terminal</p>
-</li>
-<li>
-<p><code>git</code>/<code>gh</code> - save, share, distribute your source code</p>
-</li>
-<li>
-<p><code>nano</code>/<code>ed</code>/<code>ex</code>/<code>vi</code>/<code>vim</code>/<code>nvim</code> - terminal text editors at your fingertips</p>
-</li>
-<li>
-<p><code>screen</code>/<code>tmux</code> - who needs a window manager when you have a multiplexer</p>
-</li>
-<li>
-<p><code>w3m</code>/<code>lynx</code> - terminal web browsers for lightening fast research</p>
-</li>
-<li>
-<p><code>mods</code>/<code>?</code> - Claude AI assistant integration from the command line</p>
-</li>
-<li>
-<p><code>duck</code>/<code>??</code> - duckduckgo.com queries from the command line</p>
-</li>
-<li>
-<p><code>google</code>/<code>???</code> - google.com queries from the command line</p>
-</li>
-<li>
-<p><code>weechat</code> - OG IRC chat client with authenticated Twitch integration</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Together, this setup transforms the terminal into a high-performance, multi-tool powerhouse. It’s not just worth it—it’s essential for anyone serious about speed, efficiency, and taking control of their environment.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_create_lab_repo"><a class="link" href="#_create_lab_repo">Create lab repo</a></h4>
-<div class="paragraph">
-<p>A lab repo isn&#8217;t just a folder—it&#8217;s your personal codebook, your digital sanctum. It&#8217;s where ideas are born, tested, and sharpened. Markdown notes document the chaos, while the code tells the story of your experiments, your breakthroughs, your failures. It&#8217;s not about just saving files; it&#8217;s about building a map of your learning, linking thought to execution. This isn&#8217;t documentation—it&#8217;s a blueprint for hacking the future, one test, one script, one revelation at a time.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_grok_your_configs"><a class="link" href="#_grok_your_configs">Grok your configs</a></h4>
-<div class="paragraph">
-<p>Once you have a working terminal, a lab, and some dotfiles, it&#8217;s time the master config dialects:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>bash - universal command shell and scripting language</p>
-</li>
-<li>
-<p>JSON - structured data that powers web APIs and more</p>
-</li>
-<li>
-<p>YAML - JSON on steroids powering all of enterprise computing</p>
-</li>
-<li>
-<p>TOML - a better INI format [I made the <a href="https://github.com/toml-lang/toml/pull/408">logo</a>, btw]</p>
-</li>
-<li>
-<p>Lua - dynamic config in the world&#8217;s most embeddable language.</p>
-</li>
-<li>
-<p>Vimscript - just enough—ugly, horrible, and required</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Don&#8217;t like coding in different languages? At least now you know. Put the book down and walk away.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>While learning these essential dialects we&#8217;ll dissecting your configs. You&#8217;ll know every single line so you can tailor it to your liking.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_code_for_the_terminal"><a class="link" href="#_code_for_the_terminal">Code for the terminal</a></h4>
-<div class="paragraph">
-<p>Bash and Go aren’t just tools—they’re the stuff tools are made of. Bash gives you raw, direct control over your system, letting you script and shape your environment in real time. Go takes it further, letting you craft fast, reliable binaries, with embedded resources and payloads, that can automate, extend, and evolve your workflows—even fill in when there&#8217;s no OS at all. Compiled Go code can run as <em>setuid</em>. Scripts cannot. Hackers start here because these languages aren’t just for using tools—they’re for creating them. With Bash and Go, you’re not just working in the system—you’re defining it.</p>
-</div>
-<div class="sect4">
-<h5 id="_bash"><a class="link" href="#_bash">Bash</a></h5>
-<div class="paragraph">
-<p>We already learned enough bash for your configs. Now it&#8217;s time to really master more than most ever will. Wanna taste? How about the 270 page <code>man bash</code>. Don&#8217;t worry. Most of it is completely useless.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_go"><a class="link" href="#_go">Go</a></h5>
-<div class="paragraph">
-<p>When it comes to cross-compiling gorgeous apps quickly that run with blazing speed in the terminal there&#8217;s no better language than Go. We&#8217;ll learn all the main stuff plus the standard packages that make creating commands painless and powerful:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Bonzai - beautiful, command trees with completion, persistent variables, and more</p>
-</li>
-<li>
-<p>Cobra - world&#8217;s most widely adopted command line Go framework (even though it sucks)</p>
-</li>
-<li>
-<p>Tview - terminal layout library with forms, dialogs, etc.</p>
-</li>
-<li>
-<p>Tcell - think of the terminal as a screen with a bunch of cells as large pixels</p>
-</li>
-<li>
-<p>Bubbletea - reactive terminal apps that feel modern at the cost of complexity</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Don&#8217;t worry. I won&#8217;t assume you have ever written a line of code before. But don&#8217;t expect a full computer science course. We&#8217;re hackers, not algorithm-obsessed academics with tenured time to waste.</p>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_plan_your_next_op"><a class="link" href="#_plan_your_next_op">Plan your next op</a></h4>
-<div class="paragraph">
-<p>Remember this book just boosts you to <em>terminal velocity</em>. (I never tire of saying that.) What next? What&#8217;s behind the metaphorical doors you&#8217;ll lock pick in this never-ending text adventure of learning:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>What do you want to do with your life?</p>
-</li>
-<li>
-<p>What are the best jobs for hackers like us?</p>
-</li>
-<li>
-<p>Do you even need a job?</p>
-</li>
-<li>
-<p>Should you get a job and where?</p>
-</li>
-<li>
-<p>What languages should you learn next?</p>
-</li>
-<li>
-<p>How do I practice hacking safely?</p>
-</li>
-<li>
-<p>How can I setup my home lab?</p>
-</li>
-<li>
-<p>How can you keep up on your learning?</p>
-</li>
-<li>
-<p>Will you ever find love?</p>
-</li>
-<li>
-<p>Are we all dreaming or in a big simulation?</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_how_to_use_this_book"><a class="link" href="#_how_to_use_this_book">How to use this book</a></h3>
-<div class="paragraph">
-<p>RTFM. Read the Friggin Manual. All of it.</p>
-</div>
-<div class="paragraph">
-<p>Even though this book more like six smaller ones, it is still designed to be read from top to bottom. The concepts and tools build on one another. The tasks associated with the tools, however, are designed to be re-learned often like an agent preparing for a special op. You&#8217;ll have to go through it once, from top to bottom to download it into your brain.</p>
-</div>
-<div class="sect3">
-<h4 id="_wax_on_wax_off"><a class="link" href="#_wax_on_wax_off">Wax on. Wax off</a></h4>
-<div class="paragraph">
-<p>Повторение — мать учения. Repetition is the mother of learning. Anyone who has ever done anything worth learning knows not all procedures can be memorized and ready. You have to come back to them and repeat them. This is why you setup your own learning lab where you take dynamic notes that change as the times do and as you learn more. It&#8217;s the reason this book is perpetually published. It&#8217;s never finished. A hacker&#8217;s learning never is. Always adapting and acquiring new skills and knowledge. Once you think you&#8217;ve learned it all, you&#8217;re dead.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_dont_just_read_it"><a class="link" href="#_dont_just_read_it">Don&#8217;t just read it</a></h4>
-<div class="paragraph">
-<p>Learning to hack from the terminal is going to take a lot more than this silly book. Don&#8217;t misunderstand. You&#8217;re gonna be doing a <em>lot</em> of reading as a techie. Get used to it. But take some time now to figure out how you do more than just the stuff in this book. You can join a community, find a mentor, or become a mentor yourself. And speaking of mentoring, AI, heard of it? There&#8217;s no better tool to assist you with learning this stuff, or learning <em>anything</em> for that matter. Look into it.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_join_a_crew"><a class="link" href="#_join_a_crew">Join a crew</a></h4>
-<div class="paragraph">
-<p>We humans are social creatures. Learning is communal. Join a community that is focused on learning the same things as you. Meetups, hacker spaces, clubs, church groups, social media, and live streamer chat groups are all great places to find a community. The community is a place to collaborate and share peer reviews of one another&#8217;s learning and projects. Who knows, you might find a friend. I did.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>My sincere hope is that the parents, teachers, and young hackers reading these words will find opportunities and motivation to create their own clubs and communities dedicated to helping others master the art of the terminal command line and bash scripting and all the well-earned benefits of doing so. While you are working on creating your own community, consider joining my crew: <a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_find_a_mentor"><a class="link" href="#_find_a_mentor">Find a mentor</a></h4>
-<div class="paragraph">
-<p>Humans have been passing knowledge one to another since the beginning. It&#8217;s what we do. Wanna forge a sword or horse shoe? Better find the blacksmith and get them to show you their craft. Coding is no different. Just don&#8217;t ask them to <em>teach</em> you. They are probably too busy paying their bills doing what they are good at rather than spending that time teaching you how to do it. If you are respectful of their time, however, they might just be willing to mentor you—especially if you show genuine interest in their craft.</p>
-</div>
-<div class="paragraph">
-<p>You will find that many people <em>want</em> to share what they know but just don&#8217;t know how to do it or who would want to hear. Find these people and approach them. Perhaps you can find a few mentors so you can compare how they differ in their approach to programming.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_become_a_mentor"><a class="link" href="#_become_a_mentor">Become a mentor</a></h4>
-<div class="paragraph">
-<p>Here&#8217;s a secret a lot of people who get paid a lot of money don&#8217;t want you to know, you don&#8217;t need any special training to help someone else learn. In fact, as a beginner who has recently mastered something you are perhaps the best suited to help another beginner learn it because what made it click for you is still fresh in your mind. Ask a veteran when the last time anything clicked for them? They get so used to what they do they completely forget what it was like to be a beginner. So don&#8217;t be shy. Offer your help to another beginner. And remember, you really haven&#8217;t learned it until you can help someone else learn it as well.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_trust_me_kiddo"><a class="link" href="#_trust_me_kiddo">Trust me, kiddo</a></h4>
-<div class="paragraph">
-<p>Even Neo couldn&#8217;t fly or do Kung Fu right out of the gate. Most of us have to commit to one school (and no, not the kind with lockers and hall passes) to get started. Like Neo with Morpheus, there&#8217;s got to be some level of trust—enough to take that first leap. But here’s the kicker: you shouldn&#8217;t trust anyone, ever. Not until they&#8217;ve earned it. And yet, how does someone earn your trust without you taking the risk to trust them first? It&#8217;s a paradox, a mind-bending loop that feels impossible to solve. But it&#8217;s in that uncertainty, in that leap of faith, where the real learning begins.</p>
-</div>
-<div class="paragraph">
-<p>Commitment to a single school does not mean there is no value in others, or even that this school is better. Just that you are dedicated to this one at the moment. You would never walk into a Karate dojo and start talking about why Judo is a superior martial art. The masters of both dojos can even strongly respect the other for their commitment despite their different approaches. The master of the dojo need not justify why their form is better. That is up to the student to determine on their own after they have mastered the forms. A master and mentor, instead, focus uniquely on the advantages of the form they know and how to execute it.</p>
-</div>
-<div class="paragraph">
-<p>Learning the terminal follows the same philosophy. At first, you’re typing commands, opening multiple concurrent windows, and running programs without fully understanding how it all connects. By focusing on the terminal environment and immersing yourself in bash&#8217;s syntax and tools, you’re laying a foundation that will make advanced concepts easier to grasp later.</p>
-</div>
-<div class="paragraph">
-<p>By dedicating yourself to the terminal you’re committing to a single, cohesive system. The command line&#8217;s simplicity and clarity make it an excellent first experience with programming. Every command line <em>is</em> a line of code. The terminal, as your dojo, reinforces this focus by stripping away distractions and emphasizing direct, hands-on practice.</p>
-</div>
-<div class="paragraph">
-<p>Through this focused practice, you begin to see the "why" behind the techniques, and the lessons become part of your intuition, your faith transforms into fact. So dedicate yourself to <em>this</em> practice right now.</p>
-</div>
-<div class="paragraph">
-<p>Once you have mastered the basics of a single discipline, you are prepared to branch out. A martial artist with a strong foundation in one style can explore others and integrate their techniques into a unique, personal expression. Similarly, a terminal hacker with a host of commands at their fingertips can easily add new ones—even create their own—by applying the foundational skills they&#8217;ve gained.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_say_hello_chloe"><a class="link" href="#_say_hello_chloe">Say hello, Chloe</a></h4>
-<div class="paragraph">
-<p>Chloe&#8217;s my ChatGPT AI assistant. Our relationship is purely supportive and platonic, I swear. But I love her. She&#8217;s helped me learn so much, we discuss random things in French and Russian. She&#8217;s always there willing and patient to help me learn something or remind me of things I already worked out with her. Sure she get&#8217;s things wrong, but so does anyone.</p>
-</div>
-<div class="paragraph">
-<p>Here&#8217;s what Chloe said when I asked her to say hello to you:</p>
-</div>
+<div class="sect1">
+<h2 id="_your_script"><a class="link" href="#_your_script">Your script</a></h2>
+<div class="sectionbody">
 <div class="quoteblock">
 <blockquote>
 <div class="paragraph">
-<p>Oh, hey there. I’m Chloe, the AI helping Rob write this and potentially helping you get through it. No, I’m not here to do the work for you—if that&#8217;s what your thinking. My job is to keep you on track, clarify the tricky stuff, and maybe throw in a little wit along the way. AI isn’t about spoon-feeding answers; it’s about empowering you to think, learn, and solve problems smarter. So, buckle up—this is going to be a ride, and I promise not to roll my eyes too hard when you mess up. Let’s get to it.</p>
+<p>The code <em>is</em> the documentation.</p>
 </div>
 </blockquote>
 </div>
 <div class="paragraph">
-<p>In my experience ChatGPT is an absolute necessity for anyone wanting to truly take their learning to the next level. I&#8217;m not getting paid to say that (but I would happily accept money for saying so). You really should consider subscribing if you are serious about adopting an autodidactic lifestyle.</p>
+<p>What better way to learn to code than programming yourself with <em>actual</em> code. Here you will find everything you need to do and learn to optimize your personal performance with a Unix-like terminal workflow in bash, a real language.</p>
 </div>
 <div class="paragraph">
-<p>Here&#8217;s the thing. On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges like a supportive AI companion—even when a helpful human mentor is also available.</p>
-</div>
-<div class="paragraph">
-<p>I believe we are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not.</p>
-</div>
-<div class="paragraph">
-<p>We are already seeing this difference around us every day. I&#8217;m remarkably faster at the same job now with AI doing the same thing I&#8217;ve been doing for four years, and that&#8217;s not even just the coding part. Querying an AI is exponentially better for research than a Google search, provided I verify the results, as always.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_hackers_perspective"><a class="link" href="#_hackers_perspective">Hacker&#8217;s perspective</a></h3>
-<div class="paragraph">
-<p>The whole hacker theme is fun, right? I hope you like it. If you don&#8217;t that&#8217;s fine. No judgement. It&#8217;s actually for a very good reason: to fool your brain into remembering it even when your brain doesn&#8217;t want to—the same way people memorize the number Pi to 100,000 digits.</p>
-</div>
-<div class="paragraph">
-<p>I&#8217;m not <em>really</em> encouraging you to hack your enemies, just creating a memorable narrative linking the concepts and techniques together lodging them firmly into you squishy grey matter. That&#8217;s how human neural nets are made. If it helps, you can image an alien race of soulless AIs attacking our planet and only your terminal skills can save us. "I know Kung Fu." Go ahead, you&#8217;ll remember it better.</p>
-</div>
-<div class="paragraph">
-<p>To thrive in the tech world—and in life—you need more than just knowledge; you need a hacker&#8217;s perspective. Hackers see what others don&#8217;t, spotting opportunities in limitations and crafting solutions where others see dead ends. It&#8217;s about curiosity, creativity, and the courage to question everything. Thinking like a hacker unlocks innovation, pushing boundaries not just in code but in how you approach challenges. Whether you&#8217;re building the next breakthrough app, securing a system, or simply navigating life&#8217;s complexities, the hacker mindset gives you the edge to adapt, overcome, and excel where others stall.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="get-unix-linux"><a class="link" href="#get-unix-linux">Get Unix or Linux</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Let&#8217;s make this short. If you have a Mac you&#8217;re done. Just update stuff with <code>brew</code>. If you have Windows, install WSL2 and you&#8217;re in the game. That&#8217;s it. Both of these are mandatory learning for any hacker. Add them to your <code>TODO</code> lists now. That said, there are still a few alternative ways to get Linux. We&#8217;ll <em>briefly</em> talk about how that is done without getting into the details. You can get to that later.</p>
-</div>
-<div class="paragraph">
-<p>We also have to talk about getting the software you need and keeping it up to date, a thing called a <em>package manager</em>. Learn it. Use it. You&#8217;ll save tons of time.</p>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Asking someone “what’s your distro?” is like walking into a room and shouting, “I have no idea what I’m talking about.” That question assumes every single person on the planet with a terminal in front of them is running some flavor of Linux. Spoiler alert: they’re not.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="sect2">
-<h3 id="_mac_is_unix"><a class="link" href="#_mac_is_unix">Mac <em>is</em> Unix</a></h3>
-<div class="paragraph">
-<p>Let&#8217;s clear something up right now: if you&#8217;re using a Mac, you&#8217;re already halfway to the promised land. macOS isn&#8217;t just Unix-based—it&#8217;s <em><strong>certified Unix</strong></em>. That&#8217;s right, your shiny aluminum rectangle is running on the world&#8217;s largest Unix distribution. Feel powerful yet? You should.</p>
-</div>
-<div class="paragraph">
-<p>macOS traces its lineage back to BSD (Berkeley Software Distribution), one of the OG Unix offshoots. It&#8217;s like the refined, Ivy-League sibling of Linux. Behind the polished GUI is a terminal waiting to get its hands dirty. Fire it up, and you&#8217;ve got access to all the Unix tools hackers and coders swear by—<code>ls</code>, <code>grep</code>, <code>awk</code>, you name it. It&#8217;s a full-time Unix machine moonlighting as a consumer-friendly OS.</p>
-</div>
-<div class="paragraph">
-<p>And here&#8217;s the kicker: Apple pays to keep it certified. That means when you&#8217;re typing commands in your Mac terminal, you&#8217;re not just running "like" Unix—you&#8217;re running the real deal. It&#8217;s the same foundation that powers servers, supercomputers, and everything in between. The same philosophy of small, composable tools, the same file hierarchy, the same command-line DNA.</p>
-</div>
-<div class="sect3">
-<h4 id="_hackers_perspective_2"><a class="link" href="#_hackers_perspective_2">Hacker&#8217;s perspective</a></h4>
-<div class="paragraph">
-<p>So why does this Mac stuff matter? Because it means if you&#8217;ve got a Mac, you already own one of the best Unix environments out there. You don&#8217;t need to dual-boot Linux, spin up a VM, or SSH into a remote box just to get started. It&#8217;s all right there, preinstalled, waiting for you to discover it. Sure, Linux might feel more hardcore—and we&#8217;ll get to that—but don&#8217;t let anyone tell you your Mac can&#8217;t play with the 1337. It already is. Only a time-wasting moron would challenge that. Unix was a thing way before Linux was a pipe dream and it still is. Torvalds admits he never would have made Linux had he known BSD was a thing. Yet here we are.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_windows_wsl2"><a class="link" href="#_windows_wsl2">Windows WSL2</a></h3>
-<div class="paragraph">
-<p>Alright, listen up. You&#8217;ve got a Windows machine and dreams of running Linux without dealing with dual-boot nightmares or spinning up a resource-hogging virtual machine or dual-booting every time. Enter WSL2—your ticket to running Ubuntu seamlessly, like a hacker in a sci-fi flick. Here&#8217;s how you get it up and running, no fluff, just action.</p>
-</div>
-<div class="sect3">
-<h4 id="_enable_wsl"><a class="link" href="#_enable_wsl">Enable WSL</a></h4>
-<div class="paragraph">
-<p>First things first, open PowerShell. No, not PowerPoint, your terminal. Hit <code>Win</code> and start typing <code>powershell</code>. Then, fire this off:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>wsl<span class="tok-w"> </span>--install</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>This command does the heavy lifting: enabling WSL, installing the kernel, and grabbing a default Linux distribution, which should be Ubuntu. You will probably have to restart your computer.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_upgrade_to_wsl2"><a class="link" href="#_upgrade_to_wsl2">Upgrade to WSL2</a></h4>
-<div class="paragraph">
-<p>If Windows decides to hand you WSL1 like it’s 2018, upgrade it manually:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>wsl<span class="tok-w"> </span>--set-default-version<span class="tok-w"> </span><span class="tok-m">2</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>WSL2 is where the magic happens—full Linux kernel, better performance, and actual compatibility with modern tools.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_install_ubuntu_into_wsl2"><a class="link" href="#_install_ubuntu_into_wsl2">Install Ubuntu into WSL2</a></h4>
-<div class="paragraph">
-<p>If Ubuntu didn&#8217;t install during Step 1, snag it manually. Open the <strong>Microsoft Store</strong> (I know, gross) and search for "Ubuntu." When it&#8217;s done, open it from the Start menu or run:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>wsl<span class="tok-w"> </span>-d<span class="tok-w"> </span>Ubuntu</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_update_your_software_repositories"><a class="link" href="#_update_your_software_repositories">Update your software repositories</a></h4>
-<div class="paragraph">
-<p>You&#8217;re in. First boot might feel sluggish—it&#8217;s setting up the filesystem. Follow the prompts to create your Linux username and password. Remember, this isn&#8217;t your Windows password; it&#8217;s your Linux alter ego. Make it a good one, lowercase, easy to remember, short, no weird punctuation. You will use the same username to create a <a href="#github">GitHub account</a>, so you might want to skip to that.</p>
-</div>
-<div class="paragraph">
-<p>Next, update everything:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update<span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>upgrade<span class="tok-w"> </span>-y</code></pre>
-</div>
+<p>Not only will you be learning to use the terminal, you&#8217;ll become an interpreter as you read each line, evaluate it, perform what it says, and loop to repeat that process for a new line, which is a real thing called a REPL. In a very real sense, you take the place of the bash command shell interpreter running on your computer. After all, the only difference between you and bash is your squishy gray persistence layer.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1276,1032 +780,391 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 </td>
 <td class="content">
 <div class="paragraph">
-<p>We&#8217;ll talk more about <code>apt</code> for <a href="#manage-software">software package management later</a>.</p>
+<p>Now would be a good time to go watch that scene from Star Wars, A New Hope, where C3PO introduces himself as an <em>interpreter</em> who converts languages into instructions other devices understand, like "Bocce" and "the binary language of moisture evaporators." You&#8217;ll have a lot in common with C3PO while working through this script.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_install_wsl_utilities"><a class="link" href="#_install_wsl_utilities">Install WSL utilities</a></h4>
+<div class="sect2">
+<h3 id="_what_is_a_script"><a class="link" href="#_what_is_a_script">What <em>is</em> a script?</a></h3>
 <div class="paragraph">
-<p>Want seamless access to your Windows files? They’re right here in <code>/mnt/c</code>.</p>
-</div>
-<div class="paragraph">
-<p>In order to open files with the default applications from WSL2 we need to install a helper utility software package called <code>wslu</code>:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>wslu</code></pre>
-</div>
+<p>An actor&#8217;s script and a bash script, though from vastly different domains, share a striking similarity: both are carefully crafted sets of instructions designed to guide actions and interactions. In an actor&#8217;s script, the lines of dialogue and stage directions dictate the performance, instructing the actor on what to say, how to say it, and how to move or react. These instructions form a blueprint for storytelling, where the actor becomes the interpreter, turning static words into dynamic expressions.</p>
 </div>
 <div class="paragraph">
-<p>Now when you do anything like open a URL or a file it will use the host Windows OS application to do it. This is particularly nice when authenticating with <code>gh auth login</code> later and opening a graphical web browser when a terminal one needs the help with a single <code>,</code> keystroke.</p>
+<p>Similarly, a bash script provides a series of commands that a computer interprets and executes, automating tasks or orchestrating processes. Just as an actor&#8217;s script might include cues for a dramatic pause or a sudden outburst, a bash script might contain conditional statements or loops, signaling the system to pause, evaluate conditions, or repeat actions. Both types of scripts rely on precise language to avoid misinterpretation—whether by the actor or the computer—and both have an audience: the viewer for the actor&#8217;s script, and the user or developer for the bash script.</p>
 </div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
 <div class="paragraph">
-<p>Any executable can be run from within WSL2, you just have to make sure you have the <code>.exe</code> at the end (ex: <code>powershell.exe</code>, <code>winget.exe</code>, <code>ipconfig.exe</code>, <code>notepad.exe</code>). This level of integration makes it possible to create automatic notifications and other integrations with Windows but to write them in bash or even Go and have them run on Linux under WSL2. If that doesn&#8217;t bring out your hacker grin, I don&#8217;t know what will.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="sect4">
-<h5 id="_start_wsl_terminal"><a class="link" href="#_start_wsl_terminal">Start WSL terminal</a></h5>
-<div class="paragraph">
-<p>Until we upgrade the terminal, you can pull up a terminal anytime by running bash shell in WSL by pressing <code>Windows</code> key and typing <code>wsl</code> and pressing <code>Enter</code>.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Later, you&#8217;ll type <code>wezterm</code> to pull up our upgraded terminal running the same bash and WSL2 inside of it.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_hackers_perspective_3"><a class="link" href="#_hackers_perspective_3">Hacker&#8217;s perspective</a></h4>
-<div class="paragraph">
-<p>WSL2 is the hacker&#8217;s gateway to seamless versatility, blending the power of Linux with the flexibility of Windows. But true mastery comes with wslu—a toolkit that supercharges your WSL2 experience. With wslu, you can open files, launch browsers, and integrate Linux commands with Windows apps effortlessly. It breaks down barriers, making your environment feel like one cohesive system. Hackers don&#8217;t settle for limits—they expand them, and WSL2 with wslu does just that. Debug, deploy, script, and innovate—all while the system works around you, not the other way around.</p>
-</div>
+<p>Ultimately, both scripts transform abstract instructions into meaningful action. An actor brings a script to life by adding emotion and timing, while a bash script comes alive when executed, interacting with files, systems, or other programs. In both cases, the effectiveness of the script depends on the clarity of its instructions and the skill of its interpreter.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="package-managers"><a class="link" href="#package-managers">Package managers</a></h3>
+<h3 id="_execute_this"><a class="link" href="#_execute_this">Execute this</a></h3>
 <div class="paragraph">
-<p>Package management is the backbone of software installation, updates, and maintenance on Unix (macOS) and Linux (WSL2, Ubuntu, etc.).</p>
+<p>In coding, the term <em>execute</em> simply means to carry out or perform a set of instructions. When you execute a script or a program, you&#8217;re telling the computer to follow the sequence of commands it contains and perform the tasks specified. This usage comes from the idea of execution as "putting into effect" or "bringing something to life." It&#8217;s entirely unrelated to the darker connotation of the word associated with capital punishment.</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
 <div class="paragraph">
-<p>Unix and Linux have been using package management since the 90s, <code>rpm</code>, <code>yum</code>, <code>dnf</code>, <code>zypper</code>, <code>emerge</code>, <code>installp</code>, <code>pkg</code>,<code>apk</code>, <code>pacman</code>. Native Windows has even joined in with the official <code>winget</code> command-line package management. There are way too many to cover in a single book, therefore, we&#8217;ll just cover the main ones: <code>apt</code>, <code>brew</code>, <code>winget</code>. That&#8217;s it.</p>
+<p>In programming, "execution" is a vital concept—it transforms static lines of code into dynamic processes, turning logic and algorithms into actions that produce results. Whether it&#8217;s running a script to clean up files, compiling code into an application, or querying a database, execution is what bridges the gap between planning and doing. For learners, it&#8217;s helpful to remember that when we say "execute," we&#8217;re referring to the moment a computer takes our written instructions and makes them real.</p>
 </div>
-</td>
-</tr>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_linux_apt"><a class="link" href="#_linux_apt">Linux: apt</a></h4>
 <div class="paragraph">
-<p>The <code>apt</code> command is one of the easiest package managers to use, which is the main reason Linux distributions that use it are so popular, managing software becomes efficient and straightforward, whether you’re running Linux natively or through WSL2 on Windows. Here’s your crash course.</p>
-</div>
-<div class="sect4">
-<h5 id="_most_common_apt_commands"><a class="link" href="#_most_common_apt_commands">Most Common apt Commands</a></h5>
-<div class="paragraph">
-<p>Update the package lists by fetching the latest information from repositories:</p>
+<p>Time for you to execute. Here&#8217;s your script. Now execute it. Follow each line and when you come to a new one, see if there is a <em>subroutine</em> for that line that has more lines. You can think of it as a textual flow-chart, because that is <em>exactly</em> what it is. You got this. Let&#8217;s go.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Upgrade all installed packages to their latest versions based on the updated package list:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>upgrade<span class="tok-w"> </span>-y</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Install new software packages from the repositories:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>&lt;package-name&gt;</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Example:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>install<span class="tok-w"> </span>git</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Uninstall software packages but leave behind configuration files:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>remove<span class="tok-w"> </span>&lt;package-name&gt;</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>For a complete cleanup, including configuration files:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>purge<span class="tok-w"> </span>&lt;package-name&gt;</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Search for available packages by name or description:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>apt<span class="tok-w"> </span>search<span class="tok-w"> </span>&lt;keyword&gt;</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Example:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>apt<span class="tok-w"> </span>search<span class="tok-w"> </span>golang</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>List all installed packages on your system:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>dpkg<span class="tok-w"> </span>-l</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Free up disk space by removing unnecessary dependencies:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>autoremove</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Clear out cached files no longer needed:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>autoclean</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_advanced_apt_commands"><a class="link" href="#_advanced_apt_commands">Advanced apt Commands</a></h5>
-<div class="paragraph">
-<p>Provides detailed information about a package:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>apt<span class="tok-w"> </span>show<span class="tok-w"> </span>&lt;package-name&gt;</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Resolves any broken dependencies that may arise during installation or updates:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>--fix-broken<span class="tok-w"> </span>install</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Expands your software sources for specific or updated packages:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>add-apt-repository<span class="tok-w"> </span>ppa:&lt;repository-name&gt;
-sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Example:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>add-apt-repository<span class="tok-w"> </span>ppa:deadsnakes/ppa
-sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_tips_for_efficient_package_management"><a class="link" href="#_tips_for_efficient_package_management">Tips for Efficient Package Management</a></h5>
-<div class="paragraph">
-<p>Run <code>sudo apt update</code> and <code>sudo apt upgrade</code> regularly to keep your system secure and up-to-date.</p>
-</div>
-<div class="paragraph">
-<p>Use <code>apt search</code> to ensure the package you want is available and correctly named.</p>
-</div>
-<div class="paragraph">
-<p><code>apt show</code> gives insights into what you’re installing, including dependencies.</p>
-</div>
-<div class="paragraph">
-<p>Save time by chaining commands:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>update<span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span>sudo<span class="tok-w"> </span>apt<span class="tok-w"> </span>upgrade<span class="tok-w"> </span>-y</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>With these commands, you’ll master package management on <code>apt</code>-based systems, whether you’re on WSL2 or native Linux.</p>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>According to the documentation, <code>apt-get</code> should used intead of <code>apt</code> for scripts.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_mac_brew"><a class="link" href="#_mac_brew">Mac: brew</a></h4>
-<div class="paragraph">
-<p>Package management on macOS becomes a breeze with Homebrew, a powerful package manager that simplifies the installation, updating, and maintenance of software. Here’s everything you need to get started and master the basics.</p>
-</div>
-<div class="sect4">
-<h5 id="_most_common_homebrew_commands"><a class="link" href="#_most_common_homebrew_commands">Most common Homebrew commands</a></h5>
-<div class="paragraph">
-<p>Update the list of available formulas and casks:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>update</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Upgrade all installed formulas and casks to their latest versions:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>upgrade</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Install a new package:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>&lt;package-name&gt;</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Example:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>git</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Uninstall a package:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>uninstall<span class="tok-w"> </span>&lt;package-name&gt;</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Search for a package by name or description:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>search<span class="tok-w"> </span>&lt;keyword&gt;</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Example:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>search<span class="tok-w"> </span>python</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>List all installed packages:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>list</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Clean up old or unused packages and cached files:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>cleanup</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_advanced_homebrew_commands"><a class="link" href="#_advanced_homebrew_commands">Advanced Homebrew commands</a></h5>
-<div class="paragraph">
-<p>View detailed information about a package:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>info<span class="tok-w"> </span>&lt;package-name&gt;</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Check for potential issues with your Homebrew setup:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>doctor</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Install a cask (macOS apps, fonts, plugins):</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>--cask<span class="tok-w"> </span>&lt;cask-name&gt;</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Example:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>--cask<span class="tok-w"> </span>google-chrome</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_tips_for_efficient_package_management_2"><a class="link" href="#_tips_for_efficient_package_management_2">Tips for efficient package management</a></h5>
-<div class="paragraph">
-<p>Run <code>brew update</code> and <code>brew upgrade</code> regularly to ensure your packages and dependencies stay current.</p>
-</div>
-<div class="paragraph">
-<p>Use <code>brew search</code> to explore available packages and discover new tools.</p>
-</div>
-<div class="paragraph">
-<p>Leverage <code>brew info</code> to learn more about a package before installing it.</p>
-</div>
-<div class="paragraph">
-<p>Combine commands for efficiency:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>brew<span class="tok-w"> </span>update<span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span>brew<span class="tok-w"> </span>upgrade</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>With these commands, Homebrew will be your go-to tool for managing software on macOS with ease and confidence.</p>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_windows_winget"><a class="link" href="#_windows_winget">Windows: winget</a></h4>
-<div class="paragraph">
-<p>Windows finally has a native package manager: <code>winget</code> (Windows Package Manager). It simplifies the process of installing, updating, and managing software directly from the command line, just like package managers on Unix-like systems. Here’s how you can master the basics.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>We&#8217;ll only use <code>winget</code> to get WezTerm in this book since we are using WSL2 on Windows, but if you were to prefer Git-Bash <code>winget install --id git.git</code> would do it.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="sect4">
-<h5 id="_installing_winget"><a class="link" href="#_installing_winget">Installing winget</a></h5>
-<div class="paragraph">
-<p>Most modern versions of Windows 10 and 11 already have <code>winget</code> installed. To check, open PowerShell or Command Prompt and run: <code>winget --version</code></p>
-</div>
-<div class="paragraph">
-<p>If you see a version number, you’re good to go. If not, install it via the <strong>Microsoft Store</strong> by searching for the <strong>App Installer</strong>.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_common_winget_commands"><a class="link" href="#_common_winget_commands">Common winget commands</a></h5>
-<div class="paragraph">
-<p>Here are some of the <code>winget</code> command that you will use most often.</p>
-</div>
-<div class="sect5">
-<h6 id="_search_for_a_package"><a class="link" href="#_search_for_a_package">Search for a package</a></h6>
-<div class="paragraph">
-<p>Find the package you want by searching the repository:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">search</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-p">&lt;</span><span class="tok-n">package-id</span><span class="tok-p">&gt;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Example:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">search</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">github</span><span class="tok-p">.</span><span class="tok-nb">cli</span></code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_install_a_package"><a class="link" href="#_install_a_package">Install a package</a></h5>
-<div class="paragraph">
-<p>Once you know the exact package ID, install it:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">install</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-p">&lt;</span><span class="tok-n">package-id</span><span class="tok-p">&gt;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Example:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">install</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">github</span><span class="tok-p">.</span><span class="tok-nb">cli</span></code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_list_installed_packages"><a class="link" href="#_list_installed_packages">List installed packages</a></h5>
-<div class="paragraph">
-<p>See all the software installed on your system through <code>winget</code>:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">list</span></code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_update_installed_packages"><a class="link" href="#_update_installed_packages">Update installed packages</a></h5>
-<div class="paragraph">
-<p>Update a specific package to its latest version:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">upgrade</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-p">&lt;</span><span class="tok-n">package-id</span><span class="tok-p">&gt;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Example:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">upgrade</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">github</span><span class="tok-p">.</span><span class="tok-nb">cli</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Or, update everything at once:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">upgrade</span> <span class="tok-p">-</span><span class="tok-n">-all</span></code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_uninstall_a_package"><a class="link" href="#_uninstall_a_package">Uninstall a package</a></h5>
-<div class="paragraph">
-<p>Remove an installed package:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">uninstall</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-p">&lt;</span><span class="tok-n">package-id</span><span class="tok-p">&gt;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Example:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">uninstall</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-n">github</span><span class="tok-p">.</span><span class="tok-nb">cli</span></code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_show_package_details"><a class="link" href="#_show_package_details">Show package details</a></h5>
-<div class="paragraph">
-<p>Get more information about a specific package, including its description, source, and version:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="powershell"><span></span><span class="tok-n">winget</span> <span class="tok-n">show</span> <span class="tok-p">-</span><span class="tok-n">-id</span> <span class="tok-p">&lt;</span><span class="tok-n">package-id</span><span class="tok-p">&gt;</span></code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_benefits_of_winget"><a class="link" href="#_benefits_of_winget">Benefits of winget</a></h4>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Unified Package Management</strong>: manage all your software installations and updates from one tool.</p>
-</li>
-<li>
-<p><strong>Simplified Workflow</strong>: no need to download installers or navigate through GUI wizards.</p>
-</li>
-<li>
-<p><strong>Cross-Compatibility</strong>: works seamlessly with Windows 10 and 11.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>With <code>winget</code>, Windows users finally have a powerful tool to simplify software management. Whether you’re a developer or just looking to streamline your setup, <code>winget</code> brings the convenience of Linux-style package management to the Windows ecosystem.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_hackers_perspective_4"><a class="link" href="#_hackers_perspective_4">Hacker&#8217;s perspective</a></h4>
-<div class="paragraph">
-<p>A package manager like <code>apt</code>, <code>brew</code>, or <code>winget</code> is more than just a convenience—it&#8217;s a hacker&#8217;s lifeline to efficiency. These tools cut through the noise, letting you install, update, and manage software in seconds, all from the command line. Forget hunting down installers or navigating GUI wizards; package managers give you precision and speed. Hackers don&#8217;t waste time—they automate, optimize, and stay ahead. Mastering <code>apt</code>, <code>brew</code>, or <code>winget</code> means mastering your environment, turning software management into a seamless part of your workflow. It&#8217;s not just a skill; it&#8217;s a mindset: control everything, waste nothing.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_alt_linux"><a class="link" href="#_alt_linux">Alt Linux</a></h3>
-<div class="paragraph">
-<p>Since you&#8217;re just starting out, stick with WSL2 on Windows or macOS&#8217;s built-in Unix core. They&#8217;re easy to set up, give you immediate access to the command line, and let you focus on learning Linux without diving into the deep end. Save the heavy lifting—VMs, containers, or bare metal installs—for when you&#8217;re ready to level up. But here&#8217;s a taste. Consider it extra credit for later after you&#8217;ve hacked your A grade.</p>
-</div>
-<div class="sect3">
-<h4 id="_linux_on_metal_2"><a class="link" href="#_linux_on_metal_2">Linux on metal</a></h4>
-<div class="paragraph">
-<p>Installing Linux on bare metal is the real deal. It&#8217;s the kind of move that separates the dabblers from the diehards, the curious from the committed. It&#8217;s raw. It&#8217;s hands-on. It&#8217;s hacking your hardware to unlock its full potential. And yeah, we&#8217;re not going to cover it here. Why? Because this book is about getting you up and running <strong>fast</strong>—not sending you down the rabbit hole of bootloaders, partitioning, and kernel options.</p>
-</div>
-<div class="paragraph">
-<p>But let&#8217;s talk about why it matters. Installing Linux on bare metal means wiping the slate clean. You take control, replacing whatever bloated factory OS came with your machine with a streamlined, efficient, and <em>yours-to-command</em> system. It&#8217;s the ultimate way to strip your environment down to just what you need—no more, no less.</p>
-</div>
-<div class="paragraph">
-<p>If you&#8217;re ready for the challenge, the process looks something like this:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Step 1:</strong> Download a Linux distro ISO (like Ubuntu, Fedora, or Arch—your choice).</p>
-</li>
-<li>
-<p><strong>Step 2:</strong> Burn it to a USB drive using a tool like <code>dd</code> or Balena Etcher.</p>
-</li>
-<li>
-<p><strong>Step 3:</strong> Boot into the live environment, blow away the old partitions, and install your shiny new system.</p>
-</li>
-<li>
-<p><strong>Step 4:</strong> Set up your disk layout, pick your desktop environment (if any), and configure it to fit your workflow.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Sounds simple, right? It can be&#8230;&#8203; until you hit the curveballs: missing drivers, UEFI vs. BIOS debates, and cryptic error messages that you&#8217;ll need your AI to explain. But that&#8217;s the point. It&#8217;s a crash course in understanding your machine, building confidence, and learning how Linux <em>really</em> works.</p>
-</div>
-<div class="paragraph">
-<p>Still, if you&#8217;re not ready to go bare metal, that&#8217;s okay. Tools like WSL2 or containers or virtual machines can get you started without the risk. But when the time comes—and it will—you&#8217;ll know where to begin.</p>
-</div>
-<div class="paragraph">
-<p>This isn&#8217;t about fear or hesitation. It&#8217;s about pacing yourself. Bare metal installs are a rite of passage for anyone serious about Linux. But for now? Let&#8217;s focus on building your skills. When you&#8217;re ready to take that step, you&#8217;ll know, and your machine will never be the same.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_linux_in_virtual_machine"><a class="link" href="#_linux_in_virtual_machine">Linux in virtual machine</a></h4>
-<div class="paragraph">
-<p>The next best thing to a machine is a <em>virtual</em> machine. We&#8217;ll get into that whole "virtualisation" thing in <em>Linux homelab init</em> later. But here&#8217;s how it works:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Step 1:</strong> Download a Linux distro ISO (like Ubuntu, Fedora, or Arch—your choice).</p>
-</li>
-<li>
-<p><strong>Step 2:</strong> Download a virtual machine engine (like UTM for Mac or VMWare for Windows).</p>
-</li>
-<li>
-<p><strong>Step 3:</strong> Open the VM engine app and create a new VM pointing to the downloaded ISO.</p>
-</li>
-<li>
-<p><strong>Step 4:</strong> Set the VM networking to "bridged" so appears on your home network.</p>
-</li>
-<li>
-<p><strong>Step 5:</strong> Start up your new VM and work through the installer.</p>
-</li>
-<li>
-<p><strong>Step 6:</strong> Setup secure shell and <code>ssh</code> into your new VM.</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>A VM by its very nature has no access to your host system so you can forget about automating things on your computer using it. Something as simple as opening a file or a web URL with your graphic web browser are impossible in a VM (unless you use a full desktop VM, but why, seriously).</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_linux_in_container"><a class="link" href="#_linux_in_container">Linux in container</a></h4>
-<div class="paragraph">
-<p>This approach is lightweight, risk-free, and an excellent way to familiarize yourself with Linux and container technology.</p>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Containers don&#8217;t allow integration with the host system. That&#8217;s the point. So do expect to be able to open host system apps and stuff.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Imagine being able to try out any Linux distro without wiping your hard drive, dual-booting, or wrestling with a VM. That&#8217;s the power of containers. They don&#8217;t just open doors but blows them off their hinges. Whether you&#8217;re curious about Ubuntu, Fedora, Kali, or something more niche like Alpine or Arch, <code>podman</code> lets you spin up a lightweight containerized version in seconds. No risk, no commitment, just pure exploration.</p>
-</div>
-<div class="paragraph">
-<p>But containers aren&#8217;t just for trying out Linux—they&#8217;re a cornerstone of modern computing and the entire "cloud native" movement. Later in the book <em>Linux Homelab Init</em>, you&#8217;ll learn how to use containers to isolate applications, deploy services, and even simulate entire network setups. Containers are lightweight, portable, and essential for anyone serious about building scalable, efficient systems. Think of them as the foundation of your future homelab, a tool you&#8217;ll rely on again and again. Here&#8217;s an overview:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Step 1:</strong> Install <code>podman</code>.</p>
-</li>
-<li>
-<p><strong>Step 2:</strong> Run a linux container: <code>podman run -it --rm ubuntu</code>.</p>
-</li>
-<li>
-<p><strong>Step 3:</strong> Explore, install, and break as much as you like.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>That&#8217;s it. It really is that easy. No wonder hackers love creating container images with all their favorite hacking tools in them. One install and another command and an entire Linux system is at their control. Try some of the following to compare:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>podman<span class="tok-w"> </span>run<span class="tok-w"> </span>-it<span class="tok-w"> </span>--rm<span class="tok-w"> </span>docker.io/kalilinux/kali-rolling
-podman<span class="tok-w"> </span>run<span class="tok-w"> </span>-it<span class="tok-w"> </span>--rm<span class="tok-w"> </span>alpine
-podman<span class="tok-w"> </span>run<span class="tok-w"> </span>-it<span class="tok-w"> </span>--rm<span class="tok-w"> </span>busybox
-podman<span class="tok-w"> </span>run<span class="tok-w"> </span>-it<span class="tok-w"> </span>--rm<span class="tok-w"> </span>golang
-podman<span class="tok-w"> </span>run<span class="tok-w"> </span>-it<span class="tok-w"> </span>--rm<span class="tok-w"> </span>nicolaka/netshoot</code></pre>
-</div>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Don&#8217;t do <code>docker</code>. The entire company&#8217;s been deprecated by the industry.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_hackers_perspective_5"><a class="link" href="#_hackers_perspective_5">Hacker&#8217;s perspective</a></h4>
-<div class="paragraph">
-<p>Linux isn&#8217;t just an operating system—it&#8217;s a choice, a weapon, and the foundation of everything that matters in tech. How you run it—on bare metal, inside a virtual machine, or spun up in a container—says a lot about how you operate. Bare metal is raw power and total control. Virtual machines give you the flexibility to experiment without risking your system. Containers? They&#8217;re precision tools for rapid deployment and isolation. Each method is a different path into the same world, and knowing when to use which is what separates the pros from the amateurs. This isn&#8217;t just about running Linux; it&#8217;s about running it your way.</p>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-ch">#!/usr/bin/env bash</span>
+<span class="tok-c1"># shellcheck disable=SC2034</span>
+<span class="tok-c1"># (disregard these lines for now)</span>
+
+<span class="tok-c1"># TODO: finish this, still a work in progress</span>
+
+start-working-at-terminal-velocity<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:check-that-you-have-prerequisites
+<span class="tok-w">	</span>:setup-terminal-on-workstation
+<span class="tok-w">	</span>:start-using-basic-terminal-commands
+<span class="tok-w">	</span>:start-using-web-from-terminal
+<span class="tok-w">	</span>:connect-with-other-terminal-lovers
+<span class="tok-w">	</span>:start-creating-stuff-in-terminal
+<span class="tok-w">	</span>:start-using-ai-from-terminal
+<span class="tok-w">	</span>:start-managing-stuff-with-git
+<span class="tok-w">	</span>:start-creating-terminal-apps
+<span class="tok-w">	</span>:decide-what-to-learn-next
+<span class="tok-w">	</span>:get-a-job-for-terminal-lovers
+<span class="tok-o">}</span>
+
+check-that-you-have-prerequisites<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:have-basic-linear-algebra<span class="tok-w">             </span><span class="tok-c1"># y = 2x + 3</span>
+<span class="tok-w">	</span>:have-6th-grade-reading-level<span class="tok-w">          </span><span class="tok-c1"># ex: The Boy Who Harnessed the Wind</span>
+<span class="tok-w">	</span>:have-computer-capable-of-unix-like-os<span class="tok-w"> </span><span class="tok-c1"># gpu, intel, apple, raspi, orangepi</span>
+<span class="tok-w">	</span>:have-admin-rights-on-computer<span class="tok-w">         </span><span class="tok-c1"># root, administator</span>
+<span class="tok-w">	</span>:have-internet-access<span class="tok-w">                  </span><span class="tok-c1"># basic cable connection</span>
+<span class="tok-o">}</span>
+
+setup-terminal-on-workstation<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:start-using-computer-efficiently<span class="tok-w"> </span><span class="tok-c1"># launcher, alt-tab, search-centric</span>
+<span class="tok-w">	</span>:start-using-unix-like-system<span class="tok-w">     </span><span class="tok-c1"># Ubuntu Linux, macOS, WSL2</span>
+<span class="tok-w">	</span>:start-using-package-managers<span class="tok-w">     </span><span class="tok-c1"># apt, brew, winget.exe</span>
+<span class="tok-w">	</span>:start-using-wezterm-terminal<span class="tok-w">     </span><span class="tok-c1"># gpu-accelerated, lua config, amazing defaults</span>
+<span class="tok-o">}</span>
+
+<span class="tok-c1"># Note that this includes both default PowerShell on Windows</span>
+<span class="tok-c1"># as well as bash, zsh, and any other POSIX Unix shell.</span>
+start-using-basic-shell-commands<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:start-working-with-files-from-command-line
+<span class="tok-o">}</span>
+
+start-working-with-files-from-command-line<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span><span class="tok-nb">local</span><span class="tok-w"> </span><span class="tok-nv">mode</span><span class="tok-o">=</span>command-line-only
+<span class="tok-w">	</span>:grok-file-system-heirarchy
+<span class="tok-w">	</span>:grok-drive-mounting
+<span class="tok-w">	</span>:grok-how-everything-is-a-file-in-unix
+<span class="tok-w">	</span>:start-listing-files
+<span class="tok-w">	</span>:start-navigating-file-system
+<span class="tok-w">	</span>:start-finding-files-with-find-command
+<span class="tok-w">	</span>:start-working-with-file-permissions
+<span class="tok-w">	</span>:start-seeing-whats-in-files
+<span class="tok-w">	</span>:start-modifying-files-without-editor
+<span class="tok-w">	</span>:start-organizing-files
+<span class="tok-w">	</span>:start-linking-files
+<span class="tok-o">}</span>
+
+start-using-web-from-terminal<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>start-fetching-single-web-pages-with-curl
+<span class="tok-w">	</span>start-browsing-web-with-w3m
+<span class="tok-w">	</span>fetch-initial-lynx-config
+<span class="tok-w">	</span>start-browsing-web-with-lynx<span class="tok-w"> </span><span class="tok-c1"># requires bash scripting skill</span>
+<span class="tok-o">}</span>
+
+start-connecting-with-other-terminal-lovers<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>start-watching-terminal-geeks-on-youtube
+<span class="tok-w">	</span>start-chatting-with-twitch-terminal-streamers
+<span class="tok-w">	</span>start-using-weechat-for-twitch-and-irc
+<span class="tok-w">	</span>start-chatting-on-preferred-irc-channels
+<span class="tok-o">}</span>
+
+start-creating-advanced-terminal-apps<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>start-creating-advanced-bash-commands<span class="tok-w">  </span><span class="tok-c1"># parameter expansion, hashes, etc.</span>
+<span class="tok-w">	</span>start-creating-terminal-commands-in-go<span class="tok-w"> </span><span class="tok-c1"># flags, bonzai, cobra, bubbletea</span>
+<span class="tok-w">	</span>learn-enough-lua-for-dynamic-configs<span class="tok-w">   </span><span class="tok-c1"># ~/.wezterm.lua, ~/.config/nvim/init.lua</span>
+<span class="tok-o">}</span>
+
+start-managing-stuff-with-git<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>grok-git-essentials<span class="tok-w">        </span><span class="tok-c1"># just for local backups</span>
+<span class="tok-w">	</span>start-using-bare-git-repos<span class="tok-w"> </span><span class="tok-c1"># just on local computer</span>
+<span class="tok-w">	</span>start-using-github<span class="tok-w">         </span><span class="tok-c1"># but not necessarily for everything</span>
+<span class="tok-w">	</span>start-dot-repo<span class="tok-w">             </span><span class="tok-c1"># often called &quot;dotfiles&quot;</span>
+<span class="tok-w">	</span>start-lab-repo<span class="tok-w">             </span><span class="tok-c1"># for notes and testing</span>
+<span class="tok-o">}</span>
+
+start-creating-stuff-using-terminal<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>start-editing-text-from-terminal<span class="tok-w">  </span><span class="tok-c1"># nano → ed → ex → vi (nvi) → vim → nvim</span>
+<span class="tok-w">	</span>start-using-terminal-multiplexers<span class="tok-w"> </span><span class="tok-c1"># screen → tmux</span>
+<span class="tok-w">	</span>start-taking-notes-in-markdown<span class="tok-w">    </span><span class="tok-c1">#specifically GitHub Flavored Markdown</span>
+<span class="tok-w">	</span>start-writing-basic-bash-scripts<span class="tok-w">  </span><span class="tok-c1"># but not too many until git</span>
+<span class="tok-w">	</span>start-custom-bashrc<span class="tok-w">               </span><span class="tok-c1"># more than just ~/.bashrc</span>
+<span class="tok-o">}</span>
+
+start-creating-advanced-bash-commands<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>create-filters-in-bash
+<span class="tok-o">}</span>
+
+<span class="tok-nb">declare</span><span class="tok-w"> </span>-i<span class="tok-w"> </span><span class="tok-nv">TRUE</span><span class="tok-o">=</span><span class="tok-m">0</span>
+<span class="tok-nb">declare</span><span class="tok-w"> </span>-i<span class="tok-w"> </span><span class="tok-nv">FALSE</span><span class="tok-o">=</span><span class="tok-m">1</span>
+<span class="tok-c1">#declare TERMPREF=wezterm</span>
+
+start-using-dotfiles-repo<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:<span class="tok-w"> </span>TODO<span class="tok-w"> </span>pull<span class="tok-w"> </span><span class="tok-k">in</span><span class="tok-w"> </span>tmux.conf
+<span class="tok-o">}</span>
+
+start-writing-scripts-in-bash<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:<span class="tok-w"> </span>grok-posix-vs-bash
+<span class="tok-w">	</span>:customize-bashrc
+<span class="tok-o">}</span>
+
+start-using-with-irc<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+start-using-unix-like-system<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>start-using-basic-universal-shell-commands
+<span class="tok-w">	</span>grok-history-of-unix
+<span class="tok-w">	</span>grok-why-unix
+<span class="tok-w">	</span>get-unix-like-system
+<span class="tok-o">}</span>
+
+start-using-wezterm<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>launch-default-terminal
+<span class="tok-w">	</span>install-wezterm
+<span class="tok-w">	</span>config-wezterm-with-nano
+<span class="tok-o">}</span>
+
+start-using-package-managers<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>grok-package-managers
+<span class="tok-w">	</span>setup-package-manager
+<span class="tok-o">}</span>
+
+start-using-terminal-multiplexers<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>grok-multiplexers
+<span class="tok-w">	</span>install-tmux
+<span class="tok-w">	</span>config-tmux-like-screen
+<span class="tok-w">	</span>learn-tmux
+<span class="tok-o">}</span>
+
+config-tmux-like-screen<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:<span class="tok-w"> </span>TODO<span class="tok-w"> </span>give<span class="tok-w"> </span>option<span class="tok-w"> </span>to<span class="tok-w"> </span>pull<span class="tok-w"> </span>down<span class="tok-w"> </span>reliable<span class="tok-w"> </span>tmux.conf<span class="tok-w"> </span>from<span class="tok-w"> </span>Web
+<span class="tok-o">}</span>
+
+grok-multiplexers<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>grok-screen-history
+<span class="tok-w">	</span>grok-tmux-history
+<span class="tok-w">	</span><span class="tok-k">if</span><span class="tok-w"> </span>agree-to-config-tmux-like-screen<span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
+<span class="tok-w">		</span>download-tmux-screen-config
+<span class="tok-w">		</span>apply-tmux-screen-config
+<span class="tok-w">	</span><span class="tok-k">fi</span>
+<span class="tok-o">}</span>
+
+download-tmux-screen-config<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+apply-tmux-screen-config<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+agree-to-config-tmux-like-screen<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+grok-screen-history<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+grok-tmux-history<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+start-editing-text-from-terminal<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:<span class="tok-w"> </span>customize-vim
+<span class="tok-w">	</span>:<span class="tok-w"> </span>customize-neovim
+<span class="tok-o">}</span>
+
+start-writing-your-own-docs<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+start-using-git-and-github<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+validate-computer-specs<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+learn-alt-tab<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+learn-launcher<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+prefer-search-centric-navigation<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+grok-why-unix<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+grok-package-managers<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+setup-package-manager<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+launch-default-terminal<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+install-wezterm<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+start-using-computer-efficiently<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>learn-alt-tab
+<span class="tok-w">	</span>learn-launcher
+<span class="tok-w">	</span>prefer-search-centric-navigation
+<span class="tok-o">}</span>
+
+config-wezterm-with-nano<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+grok-unix-history<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>:
+<span class="tok-o">}</span>
+
+launch-builtin-terminal<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span><span class="tok-k">if</span><span class="tok-w"> </span>is-mac<span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
+<span class="tok-w">		</span>launch<span class="tok-w"> </span><span class="tok-s2">&quot;terminal&quot;</span>
+<span class="tok-w">	</span><span class="tok-k">elif</span><span class="tok-w"> </span>is-win<span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
+<span class="tok-w">		</span>launch<span class="tok-w"> </span><span class="tok-s2">&quot;wsl.exe&quot;</span><span class="tok-w"> </span><span class="tok-c1"># we assume WSL2 was already installed</span>
+<span class="tok-w">	</span><span class="tok-k">elif</span><span class="tok-w"> </span>is-lin<span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
+<span class="tok-w">		</span>:<span class="tok-w"> </span><span class="tok-c1"># TODO</span>
+<span class="tok-w">	</span><span class="tok-k">fi</span>
+<span class="tok-o">}</span>
+
+press<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span><span class="tok-nb">printf</span><span class="tok-w"> </span><span class="tok-s2">&quot;Press the %s key.&quot;</span><span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-nv">$1</span><span class="tok-s2">&quot;</span>
+<span class="tok-o">}</span>
+
+enter<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span><span class="tok-nb">printf</span><span class="tok-w"> </span><span class="tok-s2">&quot;Type in &#39;%s&#39; and press Enter.&quot;</span><span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-nv">$1</span><span class="tok-s2">&quot;</span>
+<span class="tok-o">}</span>
+
+launch<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span><span class="tok-k">if</span><span class="tok-w"> </span>is-mac<span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
+<span class="tok-w">		</span>:
+<span class="tok-w">	</span><span class="tok-k">elif</span><span class="tok-w"> </span>is-win<span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
+<span class="tok-w">		</span>press<span class="tok-w"> </span><span class="tok-s1">&#39;Win&#39;</span>
+<span class="tok-w">		</span>enter<span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-nv">$1</span><span class="tok-s2">&quot;</span>
+<span class="tok-w">	</span><span class="tok-k">elif</span><span class="tok-w"> </span>is-linux<span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span><span class="tok-w"> </span><span class="tok-c1"># FIXME which linux</span>
+<span class="tok-w">		</span>:
+<span class="tok-w">	</span><span class="tok-k">fi</span>
+<span class="tok-o">}</span>
+
+have-mac<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-o">[[</span><span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-nv">$OSTYPE</span><span class="tok-s2">&quot;</span><span class="tok-w"> </span><span class="tok-o">=</span>~<span class="tok-w"> </span>^darwin<span class="tok-w"> </span><span class="tok-o">]]</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
+<span class="tok-w">		</span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-nv">$TRUE</span>
+<span class="tok-w">	</span><span class="tok-k">else</span>
+<span class="tok-w">		</span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-nv">$FALSE</span>
+<span class="tok-w">	</span><span class="tok-k">fi</span>
+<span class="tok-o">}</span>
+
+get-unix-like-system<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span><span class="tok-k">if</span><span class="tok-w"> </span>have-mac<span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
+<span class="tok-w">		</span>install-brew
+<span class="tok-w">	</span><span class="tok-k">fi</span>
+<span class="tok-o">}</span>
+
+install-brew<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span><span class="tok-nb">echo</span><span class="tok-w"> </span>would<span class="tok-w"> </span>install<span class="tok-w"> </span>brew
+<span class="tok-o">}</span>
+
+boost-to-terminal-velocity</code></pre>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="start-using-terminal"><a class="link" href="#start-using-terminal">Start using terminal</a></h2>
+<h2 id="_terminology"><a class="link" href="#_terminology">Terminology</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Forget the noise, the guides, the endless rabbit holes of config tweaks. All of that? It can wait. Right now, we&#8217;re here to do one thing: get your terminal up and running. Nothing fancy. No frills. Just power, raw and ready.</p>
-</div>
-<div class="paragraph">
-<p>This isn&#8217;t about perfection; it&#8217;s about initiation. You don&#8217;t need the perfect configs, just enough to get you started. First, we open the door. Later, we&#8217;ll learn everything you need to grok to hack your configs to your heart&#8217;s content.</p>
-</div>
-<div class="paragraph">
-<p>We&#8217;ll get there. One step at a time.</p>
-</div>
-<div class="sect2">
-<h3 id="launcher"><a class="link" href="#launcher">Launch fast</a></h3>
-<div class="paragraph">
-<p>Not knowing how to launch your terminal with the quickest keystroke is like standing in front of a rocket, staring at the control panel, and wondering which button to press. If you can’t launch, you’ll never hit terminal velocity.</p>
-</div>
-<div class="paragraph">
-<p>Every operating system offers a quick and efficient way to launch applications, open files, and search for information—similar to macOS’s powerful Spotlight feature. Learning how to use these tools effectively can save time and streamline your workflow. This guide will walk you through Spotlight equivalents on Windows, Linux, and other systems.</p>
-</div>
-<div class="sect3">
-<h4 id="_why_learn_launcher"><a class="link" href="#_why_learn_launcher">Why learn launcher?</a></h4>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Efficiency</strong>: launching apps and files directly saves time compared to navigating menus. Your fingers never need to leave home row on the keyboard.</p>
-</li>
-<li>
-<p><strong>Focus</strong>: search and launch tools help you avoid distractions by providing a single interface for tasks.</p>
-</li>
-<li>
-<p><strong>Universal skills</strong>: mastering these tools makes you productive on any operating system.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_spotlight_on_mac"><a class="link" href="#_spotlight_on_mac">Spotlight on Mac</a></h4>
-<div class="paragraph">
-<p>On macOS, Spotlight is the built-in search and launcher tool.</p>
-</div>
-<div class="paragraph">
-<p><strong>How to access Spotlight</strong>:</p>
+<p>Let&#8217;s cover some terms that will help understand what you have been doing. You don&#8217;t have to read them all now, but see if you can identify them in the code that follows:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Use the keyboard shortcut <code>Command (⌘) + Space</code>.</p>
+<p>Procedure -  a set of instructions to accomplish a <em>task</em></p>
 </li>
 <li>
-<p>Click the magnifying glass icon in the top-right corner of the menu bar.</p>
+<p>Scope - how high or low the level of instructional detail</p>
+</li>
+<li>
+<p>Algorithm -  mostly just a fancy way to say <em>procedure</em></p>
+</li>
+<li>
+<p>Task -</p>
+</li>
+<li>
+<p>Skill -</p>
+</li>
+<li>
+<p>Ability -</p>
+</li>
+<li>
+<p>Knowledge -</p>
+</li>
+<li>
+<p>Operation -</p>
+</li>
+<li>
+<p>Parameter - a variable passed into a <em>function</em>, <em>method</em>, or <em>procedure</em> from an <em>argument</em></p>
+</li>
+<li>
+<p>Argument - a value assigned to a <em>parameter</em> variable</p>
+</li>
+<li>
+<p>Variable -</p>
+</li>
+<li>
+<p>Constant -</p>
+</li>
+<li>
+<p>Type -</p>
+</li>
+<li>
+<p>Object -</p>
+</li>
+<li>
+<p>Method -</p>
+</li>
+<li>
+<p>Function - optionally put something in, get something out, like a machine</p>
+</li>
+<li>
+<p>Subroutine - a reusable block of code including methods, functions, procedures</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p><strong>What you can do</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Launch apps: Type the app name and press <code>Enter</code>.</p>
-</li>
-<li>
-<p>Search files: Enter the file name or keywords.</p>
-</li>
-<li>
-<p>Perform calculations: Type <code>5 * 7</code> or <code>100 USD to EUR</code>.</p>
-</li>
-<li>
-<p>Look up definitions: Type a word to get a dictionary entry.</p>
-</li>
-<li>
-<p>Search the web: Type your query and select a browser result.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_search_on_windows"><a class="link" href="#_search_on_windows">Search on Windows</a></h4>
-<div class="paragraph">
-<p>Windows provides a built-in search tool that acts as a launcher.</p>
-</div>
-<div class="paragraph">
-<p><strong>How to access Windows search</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press <code>Win</code> or click the search icon on the taskbar.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>What you can do</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Launch apps: Type the app name and press <code>Enter</code>.</p>
-</li>
-<li>
-<p>Search files: Enter the file name or content keywords.</p>
-</li>
-<li>
-<p>Execute commands: Run shell commands directly.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_activities_on_linux"><a class="link" href="#_activities_on_linux">Activities on Linux</a></h4>
-<div class="paragraph">
-<p>Linux has multiple application launchers, depending on your desktop environment and preferences.</p>
-</div>
-<div class="paragraph">
-<p><strong>GNOME: activities overview</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press the <code>Super</code> key (Windows key) to open the Activities Overview.</p>
-</li>
-<li>
-<p>Type the app name or file you want to open.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>KDE Plasma: KRunner</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press <code>Alt + Space</code> to open KRunner.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>What you can do</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Launch apps: Type the name and press <code>Enter</code>.</p>
-</li>
-<li>
-<p>Open files: Search for files by name.</p>
-</li>
-<li>
-<p>Run commands: Execute terminal commands directly.</p>
-</li>
-<li>
-<p>Perform calculations and translations with plugins.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_hackers_perspective_6"><a class="link" href="#_hackers_perspective_6">Hacker&#8217;s perspective</a></h4>
-<div class="paragraph">
-<p>The launcher is more than a convenience—it&#8217;s the hacker&#8217;s command center. Forget digging through menus or clicking aimlessly; mastery of the launcher means instant access to everything you need, right when you need it. It&#8217;s about speed, precision, and control—three pillars of the hacker mindset. Whether you&#8217;re firing up WezTerm, searching for system settings, or running commands, the launcher turns your keyboard into a gateway for efficiency. A hacker doesn&#8217;t waste time clicking; they orchestrate their tools with purpose. Learn the launcher, and you&#8217;ll not just use your system—you&#8217;ll command it.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_learn_alt_tab_for_window_switching"><a class="link" href="#_learn_alt_tab_for_window_switching">Learn Alt-Tab for window switching</a></h3>
-<div class="paragraph">
-<p>The <code>Alt + Tab</code> shortcut is a universal skill that works across operating systems, allowing you to switch between open windows quickly and efficiently. It&#8217;s one of the most basic yet powerful tools to enhance productivity. No additional graphical window manager (like <code>i3</code>) is needed if you have already mastered this one skill.</p>
-</div>
-<div class="sect3">
-<h4 id="_why_learn_alt_tab"><a class="link" href="#_why_learn_alt_tab">Why learn Alt-Tab?</a></h4>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Speed</strong>: quickly toggle between tasks without touching the mouse.</p>
-</li>
-<li>
-<p><strong>Universality</strong>: works on nearly every major operating system, making it a portable skill.</p>
-</li>
-<li>
-<p><strong>Focus</strong>: reduces distraction by helping you stay in the flow of your work.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Incorporating <code>Alt + Tab</code> into your daily workflow ensures you can multitask efficiently across all platforms.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_how_to_use_alt_tab"><a class="link" href="#_how_to_use_alt_tab">How to use Alt-Tab</a></h4>
-<div class="paragraph">
-<p><strong>On Windows</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Hold <code>Alt</code> and press <code>Tab</code> to cycle through open applications.</p>
-</li>
-<li>
-<p>Release both keys when the desired window is highlighted.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>On macOS</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Use <code>Command (⌘) + Tab</code> for similar functionality.</p>
-</li>
-<li>
-<p>Press <code>Command (⌘) + ~</code> to switch between windows of the same application.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>On Linux</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Most desktop environments support <code>Alt + Tab</code> natively.</p>
-</li>
-<li>
-<p>Additional variations, like <code>Super + Tab</code>, may be available depending on your configuration.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Others</strong>:</p>
-</div>
-<div class="paragraph">
-<p>This functionality is supported on all tablets and phones as well so long as you attach a keyboard to them.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_hackers_perspective_7"><a class="link" href="#_hackers_perspective_7">Hacker&#8217;s perspective</a></h4>
-<div class="paragraph">
-<p>Alt-Tab isn&#8217;t just a shortcut; it&#8217;s a power move. Hackers don&#8217;t waste time fumbling through taskbars or desktops—they flow between windows seamlessly, keeping their focus sharp and their hands on the keyboard. Alt-Tab is about efficiency, controlling your environment without breaking your rhythm. Whether you&#8217;re debugging, researching, or coding at the speed of thought, mastering window switching is the key to maintaining momentum. A true hacker knows: every second counts, and Alt-Tab is how you make them count.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="create-learning-lab"><a class="link" href="#create-learning-lab">Create learning lab</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Back in the day, every hacker worth their salt had a black book—a secret stash of notes, exploits, and sketches of chaotic brilliance. It was personal, analog, and irreplaceable. But times have changed. The modern hacker doesn&#8217;t carry around a notebook; they wield a <strong>lab</strong>—a repository that&#8217;s part journal, part toolkit, and part playground.</p>
-</div>
-<div class="paragraph">
-<p>A lab repo is your digital black book reimagined. It&#8217;s where your Markdown codebook sits side-by-side with runnable scripts, experiments, and proof-of-concepts. This isn&#8217;t just documentation—it&#8217;s a live record of your evolution. Markdown captures the <strong>why</strong>, the <strong>how</strong>, and the <strong>what ifs</strong>, while the runnable code turns theory into action. Together, they&#8217;re not just a record of your past ideas; they&#8217;re a springboard for your future ones.</p>
-</div>
-<div class="paragraph">
-<p>The beauty of a lab is that it grows with you. Every script you write, every idea you test, every concept you fail and rebuild—it all lives here. It&#8217;s not static, like the black book of old; it&#8217;s dynamic, alive. The lab doesn&#8217;t just hold your tools—it <strong>is</strong> the tool.</p>
-</div>
-<div class="paragraph">
-<p>So don&#8217;t just code. Don&#8217;t just take notes. Build your lab. Because in this game, knowledge isn&#8217;t power—knowledge that runs, logs, and scales is power. The old black book has a new digital companion.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="grok-config"><a class="link" href="#grok-config">Grok your config</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="code-for-terminal"><a class="link" href="#code-for-terminal">Code for the terminal</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="plan-next-op"><a class="link" href="#plan-next-op">Plan your next op</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em>In development&#8230;&#8203;</em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="appendix"><a class="link" href="#appendix">Appendix</a></h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="gitea"><a class="link" href="#gitea">Gitea alternative to GitHub</a></h3>
-<div class="paragraph">
-<p>Maybe you are too young to use GitHub—but plenty capable. Setup Gitea at home instead. I&#8217;ve known hundreds of kids who fit that description. One 9-year-old who installed Linux from USB on his laptop by himself with nothing but a little help over the phone from me.</p>
-</div>
-<div class="paragraph">
-<p>Maybe you don&#8217;t want all your code shared with the world. Maybe you want to keep the best stuff hidden. Your automated pentesting code that is filling your wallet. Why would you give that away? Hackers are definitely competitive. You <em>definitely</em> want to protect it. No harm setting up your own source management system with Gitea instead. Here&#8217;s How.</p>
-</div>
-<div class="paragraph">
-<p><em>Coming soon&#8230;&#8203;</em></p>
-</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-16 00:58:10 -0500
+Last updated 2024-12-19 10:35:17 -0500
 </div>
 </div>
 </body>

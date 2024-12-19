@@ -1,0 +1,84 @@
+= Your source code
+
+Here's the code to optimize your personal performance with a Unix-like terminal workflow. Just load it into your brain and you're good to go. The only difference between you and a computer is your squishy gray persistence storage. Getting it to stick it the tricky part.
+
+----
+
+- Get a Unix-like system with direct host integration
+  - Pick one of the following:
+    - macOS with `brew` and updated `bash`
+    - Any Ubuntu Linux flavor on metal
+    - WSL2 + `wslu` + `xdg-utils` with Ubuntu on Windows
+  - Grok why these options are the only ones that matter for now
+    - Mainstream Unix or Linux, not emulated
+    - Great package management
+    - Full host system applications integration
+  - Grok your package manager
+    - Mac: `brew`
+    - Linux: `apt`
+    - Windows WSL2: `winget.exe` + `apt`
+
+- Use your computer efficiently
+  - Learn to launch
+  - Learn to Alt-Tab
+  - Learn to be search-centric in all you interactions
+
+- Launch default terminal
+  - Why should I learn the default terminal?
+  - `wsl.exe` on Windows
+  - `terminal` on Mac
+  - `gnome-terminal` on Linux
+
+- Install WezTerm
+  - Why install WezTerm?
+  - Launch default terminal
+  - Windows: `winget.exe install --id wez.wezterm`
+  - Mac: `brew install wezterm`
+  - Linux: add `wez/wezterm` PPA then `sudo apt install wezterm`
+
+- Configure WezTerm
+  - Launch default terminal (if not already up)
+  - Notice what directory you are in: `pwd`
+  - Notice what is in your current directory: `ls`
+  - Return to your home directory anytime: `cd`
+  - Windows WSL2 (only):
+    - Change into Windows-specific home directory: `cd /mnt/c/users/<you>`
+  - Why use `nano` for editing (right now)?
+  - Open `.wezterm.lua` file for editing: `nano .wezterm.lua`
+  - Add `return { default_domain = "WSL:Ubuntu" }`
+  - Save and close the file
+  - Exit the old terminal: `exit`
+  - Launch `wezterm` and notice it uses bash: `echo $SHELL`
+  - Grok Lua basics for configuration (and look at examples)
+  - Customize to taste (don't forget your commas):
+    - Increase `font_size` to something else (ex: `26`)
+    - Set your `color_scheme` (ex: `Gruvbox Material (Gogh)`)
+    - Use `term = 'xterm-256color'` for millions of colors
+    - Lookup other configuration options from WezTerm site
+
+- Get started with GitHub
+  - What is Git and GitHub?
+  - Look around GitHub a bit to understand it
+  - Pick a good lower-case, short username
+  - Don't create a repo while signing up (will do from command line)
+  - Install `git` and `gh` commands:
+    - Mac: `brew install git gh`
+    - Linux (including Windows WSL2): `sudo apt install git gh`
+  - Authenticate and login to GitHub from command line: `gh auth login`
+
+- Start editing text and taking notes
+  - Understand history: `ed` → `ex` → `vi` (`nvi`) → `vim` → `nvim`
+  - Create lab repo: `gh repo create lab --clone --private`
+  - Change into `lab` repo
+  - Create main `README.md` file: `touch README.md`
+  - Add some simple notes and introduction: `nano README.md`
+  - Say goodbye to `nano`
+  - Create a file for `ed` notes: `touch ed.txt`
+  - Learn `ed` while editing notes: `ed ed.txt`
+  - Create a file for Vim notes: `touch vim.md`
+  - Start editing Vim notes: `vim vim.md`
+  - Learn `vim` while editing notes: `vim vim.md`
+  - Learn GitHub Flavored Markdown: `vim markdown.md`
+
+- Set up bash
+- Learn basic shell navigation

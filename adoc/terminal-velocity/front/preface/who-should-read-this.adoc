@@ -1,0 +1,3 @@
+== Who should read this?
+
+This book is for anyone over thirteen who wants to master the terminal like a hacker. If you’re under thirteen? I won’t know. But you should get your parents' permission—seriously. Services like these don’t mess around when it comes to COPPA, and for good reason. If you’re younger than thirteen, skip the parts of this book that require accounts or tools with age restrictions. Some schools provide access to these services for kids. Ask. Hack the system the right way.
