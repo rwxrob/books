@@ -1,0 +1,3 @@
+= Why is your stream so quiet?
+
+I learned the hard way that muting everything is best when just sharing a terminal in over-the-shoulder mode. For more on that and other lessons, see my perpetually unpublished link:https://rwxrob.github.io/books/bad-strimmer/[_Bad Strimmer_].

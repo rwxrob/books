@@ -60,4 +60,6 @@ include::why-perl-rocks.adoc[]
 
 include::why-another-go-book.adoc[]
 
+include::why-so-quiet.adoc[]
+
 include::why-asciidoc-not-mkdocs.adoc[]
