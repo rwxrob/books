@@ -21,7 +21,7 @@ start-working-at-terminal-velocity() {
 check-that-you-have-prerequisites() {
 	:have-basic-linear-algebra             # y = 2x + 3
 	:have-6th-grade-reading-level          # ex: The Boy Who Harnessed the Wind
-	:have-computer-capable-of-unix-like-os # gpu, intel, apple, raspi, orangepi
+	:have-computer-capable-of-unix-like-os # intel, apple, raspi, orangepi
 	:have-admin-rights-on-computer         # root, administator
 	:have-internet-access                  # basic cable connection
 }
@@ -30,7 +30,13 @@ setup-terminal-on-workstation() {
 	:start-using-computer-efficiently # launcher, alt-tab, search-centric
 	:start-using-unix-like-system     # Ubuntu Linux, macOS, WSL2
 	:start-using-package-managers     # apt, brew, winget.exe
-	:start-using-wezterm-terminal     # gpu-accelerated, lua config, amazing defaults
+
+	read -rp "Do you care about colors and fastest terminal? [Y|n]" resp
+	if [[ "$resp" =~ ^y ]]; then
+		:start-using-wezterm-terminal
+	else
+		:start-using-builtin-terminal
+	fi
 }
 
 # Note that this includes both default PowerShell on Windows

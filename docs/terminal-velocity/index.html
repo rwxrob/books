@@ -834,7 +834,7 @@ start-working-at-terminal-velocity<span class="tok-o">()</span><span class="tok-
 check-that-you-have-prerequisites<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
 <span class="tok-w">	</span>:have-basic-linear-algebra<span class="tok-w">             </span><span class="tok-c1"># y = 2x + 3</span>
 <span class="tok-w">	</span>:have-6th-grade-reading-level<span class="tok-w">          </span><span class="tok-c1"># ex: The Boy Who Harnessed the Wind</span>
-<span class="tok-w">	</span>:have-computer-capable-of-unix-like-os<span class="tok-w"> </span><span class="tok-c1"># gpu, intel, apple, raspi, orangepi</span>
+<span class="tok-w">	</span>:have-computer-capable-of-unix-like-os<span class="tok-w"> </span><span class="tok-c1"># intel, apple, raspi, orangepi</span>
 <span class="tok-w">	</span>:have-admin-rights-on-computer<span class="tok-w">         </span><span class="tok-c1"># root, administator</span>
 <span class="tok-w">	</span>:have-internet-access<span class="tok-w">                  </span><span class="tok-c1"># basic cable connection</span>
 <span class="tok-o">}</span>
@@ -843,7 +843,13 @@ setup-terminal-on-workstation<span class="tok-o">()</span><span class="tok-w"> <
 <span class="tok-w">	</span>:start-using-computer-efficiently<span class="tok-w"> </span><span class="tok-c1"># launcher, alt-tab, search-centric</span>
 <span class="tok-w">	</span>:start-using-unix-like-system<span class="tok-w">     </span><span class="tok-c1"># Ubuntu Linux, macOS, WSL2</span>
 <span class="tok-w">	</span>:start-using-package-managers<span class="tok-w">     </span><span class="tok-c1"># apt, brew, winget.exe</span>
-<span class="tok-w">	</span>:start-using-wezterm-terminal<span class="tok-w">     </span><span class="tok-c1"># gpu-accelerated, lua config, amazing defaults</span>
+
+<span class="tok-w">	</span><span class="tok-nb">read</span><span class="tok-w"> </span>-rp<span class="tok-w"> </span><span class="tok-s2">&quot;Do you care about colors and fastest terminal? [Y|n]&quot;</span><span class="tok-w"> </span>resp
+<span class="tok-w">	</span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-o">[[</span><span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-nv">$resp</span><span class="tok-s2">&quot;</span><span class="tok-w"> </span><span class="tok-o">=</span>~<span class="tok-w"> </span>^y<span class="tok-w"> </span><span class="tok-o">]]</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
+<span class="tok-w">		</span>:start-using-wezterm-terminal
+<span class="tok-w">	</span><span class="tok-k">else</span>
+<span class="tok-w">		</span>:start-using-builtin-terminal
+<span class="tok-w">	</span><span class="tok-k">fi</span>
 <span class="tok-o">}</span>
 
 <span class="tok-c1"># Note that this includes both default PowerShell on Windows</span>
