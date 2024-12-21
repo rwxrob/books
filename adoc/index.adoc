@@ -14,17 +14,17 @@
 
 Here you'll find my perpetually unfinished books.
 
-- link:terminal-velocity[*Terminal Velocity*] +
-_Boost your coding, hacking, and learning with the fastest human-computer interface_
+- *A Code Mage's First Spell Book* +
+_Learn computer science and practical programming with Go as a first language_
 
 - link:autodidactic[*Autodidactic*] +
 _Keys to success as a modern knowledge warrior_
 
+- link:terminal-velocity[*Terminal Velocity*] +
+_Boost your coding, hacking, and learning with the fastest human-computer interface_
+
 - *Linux homelab init* +
 _Level-up your control with a Proxmox power tower_
-
-- *A Code Mage's First Spell Book* +
-_Learn computer science and practical programming with Go as a first language._
 
 - link:bad-strimmer[*Bad Strimmer, No Biscuit*] +
 _Lessons learned from my livestream fails_
