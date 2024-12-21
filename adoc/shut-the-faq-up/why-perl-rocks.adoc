@@ -118,7 +118,18 @@ In Perl, the equivalent is just as simple but far more extensible:
 perl -F, -lane 'print $F[0], $F[2]' file.txt
 ----
 
+== Best language for Vim and Neovim
+
+Perl's unmatched supremacy in text processing makes it a natural companion to Vim or Neovim for advanced editing workflows. Its concise syntax, powerful regular expressions, and vast array of built-in text-manipulation tools allow users to quickly and efficiently transform content. Pairing Perl with Vim's filter functionality (`!!`) creates a seamless editing experience: you can write transformations or scripts directly within your document, execute them by piping the content to the Perl interpreter, and replace the original text with the output—all without leaving your editor.
+
+This workflow exemplifies the Unix philosophy of combining small, powerful tools to create robust solutions. By leveraging Perl's flexibility and efficiency, you can perform anything from basic substitutions to complex data transformations inline. This eliminates the need for external preprocessing or postprocessing steps, making your editing environment not just a tool for writing but a dynamic, programmable text-processing powerhouse. For anyone serious about crafting or editing text at scale, the synergy between Perl and Vim offers unparalleled power and flexibility.
+
 == The "boomer language" myth
+
+[CAUTION]
+====
+First of all, if you use the word "boomer" in the pejorative you have just instantly filtered yourself from the brains of most competent technologists. Only complete dumb-asses say such things. Every generation has had its idiot-detecting terminology and that is one main one today. If you think stuff on 4-chan is worth repeating, you can move along.
+====
 
 The idea that Perl is a "boomer language" is a complete misunderstanding of its power and relevance. While newer languages like Python have gained popularity, Perl remains the tool of choice for those who value:
 

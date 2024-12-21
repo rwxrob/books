@@ -23,6 +23,9 @@ _Keys to success as a modern knowledge warrior_
 - *Linux homelab init* +
 _Level-up your control with a Proxmox power tower_
 
+- *A Code Mage's First Spell Book* +
+_Learn computer science and practical programming with Go as a first language._
+
 - link:bad-strimmer[*Bad Strimmer, No Biscuit*] +
 _Lessons learned from my livestream fails_
 

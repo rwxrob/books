@@ -30,6 +30,8 @@
 
 = Lessons learned
 
+include::be-yourself.adoc[]
+
 include::titles.adoc[]
 
 include::comments.adoc[]
