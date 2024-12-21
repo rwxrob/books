@@ -27,17 +27,17 @@ _Boost your coding, hacking, and learning with the fastest human-computer interf
 (ages 13 and up)
 
 - *Linux homelab init* +
-_Level-up your control with a Proxmox power tower_
+_Level-up your control with a Proxmox power tower_ +
 (ages 13 and up)
 
 - link:bad-strimmer[*Bad Strimmer, No Biscuit*] +
-_Lessons learned from my livestream fails_
+_Lessons learned from my livestream fails_ +
 (adults over 18)
 
 - link:shut-the-faq-up[*Shut the FAQ Up*] +
-_All the questions I'm tired of answering_
+_All the questions I'm tired of answering_ +
 (adults over 18)
 
 - link:mormons-tale[*There and Never Back Again*] (adults over 18) +
-_A Mormon's tale_
+_A Mormon's tale_ +
 (adults over 18)
