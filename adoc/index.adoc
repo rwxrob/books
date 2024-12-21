@@ -14,23 +14,30 @@
 
 Here you'll find my perpetually unfinished books.
 
-- *A Code Mage's First Spell Book* (ages 10 and up) +
-_Learn computer science and practical programming with Go as a first language_
+- *A Code Mage's First Spell Book* +
+_Learn computer science and practical programming with Go as a first language_ +
+(ages 10 and up)
 
-- link:autodidactic[*Autodidactic*] (ages 12 and up) +
-_Keys to success as a modern knowledge warrior_
+- link:autodidactic[*Autodidactic*] +
+_Keys to success as a modern knowledge warrior_ +
+(ages 12 and up)
 
-- link:terminal-velocity[*Terminal Velocity*] (ages 13 and up) +
-_Boost your coding, hacking, and learning with the fastest human-computer interface_
+- link:terminal-velocity[*Terminal Velocity*] +
+_Boost your coding, hacking, and learning with the fastest human-computer interface_ +
+(ages 13 and up)
 
-- *Linux homelab init* (ages 13 and up) +
+- *Linux homelab init* +
 _Level-up your control with a Proxmox power tower_
+(ages 13 and up)
 
-- link:bad-strimmer[*Bad Strimmer, No Biscuit*] (adults over 18) +
+- link:bad-strimmer[*Bad Strimmer, No Biscuit*] +
 _Lessons learned from my livestream fails_
+(adults over 18)
 
-- link:shut-the-faq-up[*Shut the FAQ Up*] (adults over 18) +
+- link:shut-the-faq-up[*Shut the FAQ Up*] +
 _All the questions I'm tired of answering_
+(adults over 18)
 
 - link:mormons-tale[*There and Never Back Again*] (adults over 18) +
 _A Mormon's tale_
+(adults over 18)
