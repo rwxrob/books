@@ -1,307 +1,316 @@
-#!/usr/bin/env bash
-# shellcheck disable=SC2034
-# (disregard these lines for now)
+#!/bin/sh
+set -e
 
 # TODO: finish this, still a work in progress
 
-start-working-at-terminal-velocity() {
-	:check-that-you-have-prerequisites
-	:setup-terminal-on-workstation
-	:start-using-basic-terminal-commands
-	:start-using-web-from-terminal
-	:connect-with-other-terminal-lovers
-	:start-creating-stuff-in-terminal
-	:start-using-ai-from-terminal
-	:start-managing-stuff-with-git
-	:start-creating-terminal-apps
-	:start-using-perl-from-cli-only
-	:decide-what-to-learn-next
-	:get-a-job-for-terminal-lovers
+use_unix_terminal() {
+	check_prerequisites
+	#setup_terminal
+	#navigate_file_system
+	#manipulate_files
+	#edit_files_with_text_editor
+	#manage_screens_with_tmux
+	#write_simple_shell_scripts
+	#manage_source_with_git
+	#manage_development_with_github
+	#configure_interactive_shell
+	#configure_vim_nvim
+	#use_web_from_terminal
+	#use_ai_from_terminal
+	#use_irc_from_terminal
+	#manipulate_text_with_perl
+	#develop_terminal_apps_with_go
 }
 
-start-using-perl-from-cli-only() {
-	:grok-why-perl-was-created
-	:grok-why-perl-won-regular-expressions
-	:grok-why-perl-wins-cli-text-processing
-	:grok-why-perl-loses-for-everything-else
-	:grok-when-perl-destroys-awk
-	:grok-when-perl-destroys-sed
-	:grok-when-perl-destroys-grep
-	:grok-when-perl-destroys-python
-	:grok-when-perl-destroys-ruby
-	:start-using-perl-to-find-replace
-	:start-using-perl-to-map
-	:start-using-perl-to-filter
-	:start-using-perl-to-reduce
-	:start-using-perl-to-transform
+check_prerequisites() {
+	have_basic_linear_algebra # y = 2x + 3
+	#have_6th_grade_reading_level  # ex: The Boy Who Harnessed the Wind
+	#have_compatible_computer      # intel, apple, raspi, orangepi
+	#have_admin_rights_on_computer # root, administator
+	#have_internet_access          # basic cable connection
 }
 
-check-that-you-have-prerequisites() {
-	:have-basic-linear-algebra             # y = 2x + 3
-	:have-6th-grade-reading-level          # ex: The Boy Who Harnessed the Wind
-	:have-computer-capable-of-unix-like-os # intel, apple, raspi, orangepi
-	:have-admin-rights-on-computer         # root, administator
-	:have-internet-access                  # basic cable connection
+have_basic_linear_algebra() {
+	assert \
+		"Do you have basic linear algebra skills?" \
+		"Consider Kahn Academy."
 }
 
-setup-terminal-on-workstation() {
-	:start-using-computer-efficiently # launcher, alt-tab, search-centric
-	:start-using-unix-like-system     # Ubuntu Linux, macOS, WSL2
-	:start-using-package-managers     # apt, brew, winget.exe
+# ----------------------------- utilities ----------------------------
 
-	read -rp "Do you care about colors and fastest terminal? [Y|n]" resp
-	if [[ ${resp,,} =~ ^y ]]; then
-		:start-using-wezterm-terminal
-	else
-		:start-using-builtin-terminal
+assert() {
+	printf "%s [N|y] " "$1"
+	read -r resp
+	if [ "$resp" != y ]; then
+		echo "$2"
+		exit
 	fi
 }
 
-# Note that this includes both default PowerShell on Windows
-# as well as bash, zsh, and any other POSIX Unix shell.
-start-using-basic-shell-commands() {
-	:start-working-with-files-from-command-line
-}
+use_unix_terminal
 
-start-working-with-files-from-command-line() {
-	local mode=command-line-only
-	:grok-file-system-heirarchy
-	:grok-drive-mounting
-	:grok-how-everything-is-a-file-in-unix
-	:start-listing-files
-	:start-navigating-file-system
-	:start-finding-files-with-find-command
-	:start-working-with-file-permissions
-	:start-seeing-whats-in-files
-	:start-modifying-files-without-editor
-	:start-organizing-files
-	:start-linking-files
-}
+# ----------------------------- old stuff ----------------------------
 
-start-using-web-from-terminal() {
-	start-fetching-single-web-pages-with-curl
-	start-browsing-web-with-w3m
-	fetch-initial-lynx-config
-	start-browsing-web-with-lynx # requires bash scripting skill
-}
+: <<-'EOM'
+	setup_terminal_on_workstation() {
+		:start_using_computer_efficiently # launcher, alt_tab, search_centric
+		:start_using_unix_like_system     # Ubuntu Linux, macOS, WSL2
+		:start_using_package_managers     # apt, brew, winget.exe
 
-start-connecting-with-other-terminal-lovers() {
-	start-watching-terminal-geeks-on-youtube
-	start-chatting-with-twitch-terminal-streamers
-	start-using-weechat-for-twitch-and-irc
-	start-chatting-on-preferred-irc-channels
-}
+		read _rp "Do you care about colors and fastest terminal? [Y|n]" resp
+		if [[ ${resp,,} =~ ^y ]]; then
+			:start_using_wezterm_terminal
+		else
+			:start_using_builtin_terminal
+		fi
+	}
 
-start-creating-advanced-terminal-apps() {
-	:grok-map-filter-reduce-transform
-	:start-creating-advanced-bash-commands  # parameter expansion, hashes, etc.
-	:start-creating-terminal-commands-in-go # flags, bonzai, cobra, bubbletea
-	:learn-enough-lua-for-dynamic-configs   # ~/.wezterm.lua, ~/.config/nvim/init.lua
-}
+	# Note that this includes both default PowerShell on Windows
+	# as well as bash, zsh, and any other POSIX Unix shell.
+	start_using_basic_shell_commands() {
+		:start_working_with_files_from_command_line
+	}
 
-start-managing-stuff-with-git() {
-	grok-git-essentials        # just for local backups
-	start-using-bare-git-repos # just on local computer
-	start-using-github         # but not necessarily for everything
-	start-dot-repo             # often called "dotfiles"
-	start-lab-repo             # for notes and testing
-}
+	start_working_with_files_from_command_line() {
+		local mode=command_line_only
+		:grok_file_system_heirarchy
+		:grok_drive_mounting
+		:grok_how_everything_is_a_file_in_unix
+		:start_listing_files
+		:start_navigating_file_system
+		:start_finding_files_with_find_command
+		:start_working_with_file_permissions
+		:start_seeing_whats_in_files
+		:start_modifying_files_without_editor
+		:start_organizing_files
+		:start_linking_files
+	}
 
-start-creating-stuff-using-terminal() {
-	start-editing-text-from-terminal  # nano → ed → ex → vi (nvi) → vim → nvim
-	start-using-terminal-multiplexers # screen → tmux
-	start-taking-notes-in-markdown    #specifically GitHub Flavored Markdown
-	start-writing-basic-bash-scripts  # but not too many until git
-	start-custom-bashrc               # more than just ~/.bashrc
-}
+	start_using_web_from_terminal() {
+		start_fetching_single_web_pages_with_curl
+		start_browsing_web_with_w3m
+		fetch_initial_lynx_config
+		start_browsing_web_with_lynx # requires bash scripting skill
+	}
 
-start-creating-advanced-bash-commands() {
-	create-filters-in-bash
-}
+	start_connecting_with_other_terminal_lovers() {
+		start_watching_terminal_geeks_on_youtube
+		start_chatting_with_twitch_terminal_streamers
+		start_using_weechat_for_twitch_and_irc
+		start_chatting_on_preferred_irc_channels
+	}
 
-declare -i TRUE=0
-declare -i FALSE=1
-#declare TERMPREF=wezterm
+	start_creating_advanced_terminal_apps() {
+		:grok_map_filter_reduce_transform
+		:start_creating_advanced_bash_commands  # parameter expansion, hashes, etc.
+		:start_creating_terminal_commands_in_go # flags, bonzai, cobra, bubbletea
+		:learn_enough_lua_for_dynamic_configs   # ~/.wezterm.lua, ~/.config/nvim/init.lua
+	}
 
-start-using-dotfiles-repo() {
-	: TODO pull in tmux.conf
-}
+	start_managing_stuff_with_git() {
+		grok_git_essentials        # just for local backups
+		start_using_bare_git_repos # just on local computer
+		start_using_github         # but not necessarily for everything
+		start_dot_repo             # often called "dotfiles"
+		start_lab_repo             # for notes and testing
+	}
 
-start-writing-scripts-in-bash() {
-	: grok-posix-vs-bash
-	:customize-bashrc
-}
+	start_creating_stuff_using_terminal() {
+		start_editing_text_from_terminal  # nano → ed → ex → vi (nvi) → vim → nvim
+		start_using_terminal_multiplexers # screen → tmux
+		start_taking_notes_in_markdown    #specifically GitHub Flavored Markdown
+		start_writing_basic_bash_scripts  # but not too many until git
+		start_custom_bashrc               # more than just ~/.bashrc
+	}
 
-start-using-with-irc() {
-	:
-}
+	start_creating_advanced_bash_commands() {
+		create_filters_in_bash
+	}
 
-start-using-unix-like-system() {
-	start-using-basic-universal-shell-commands
-	grok-history-of-unix
-	grok-why-unix
-	get-unix-like-system
-}
+	declare _i TRUE=0
+	declare _i FALSE=1
+	#declare TERMPREF=wezterm
 
-start-using-wezterm() {
-	launch-default-terminal
-	install-wezterm
-	config-wezterm-with-nano
-}
+	start_using_dotfiles_repo() {
+		: TODO pull in tmux.conf
+	}
 
-start-using-package-managers() {
-	grok-package-managers
-	setup-package-manager
-}
+	start_writing_scripts_in_bash() {
+		: grok_posix_vs_bash
+		:customize_bashrc
+	}
 
-start-using-terminal-multiplexers() {
-	grok-multiplexers
-	install-tmux
-	config-tmux-like-screen
-	learn-tmux
-}
-
-config-tmux-like-screen() {
-	: TODO give option to pull down reliable tmux.conf from Web
-}
-
-grok-multiplexers() {
-	grok-screen-history
-	grok-tmux-history
-	if agree-to-config-tmux-like-screen; then
-		download-tmux-screen-config
-		apply-tmux-screen-config
-	fi
-}
-
-download-tmux-screen-config() {
-	:
-}
-
-apply-tmux-screen-config() {
-	:
-}
-
-agree-to-config-tmux-like-screen() {
-	:
-}
-
-grok-screen-history() {
-	:
-}
-
-grok-tmux-history() {
-	:
-}
-
-start-editing-text-from-terminal() {
-	: customize-vim
-	: customize-neovim
-}
-
-start-writing-your-own-docs() {
-	:
-}
-
-start-using-git-and-github() {
-	:
-}
-
-validate-computer-specs() {
-	:
-}
-
-learn-alt-tab() {
-	:
-}
-
-learn-launcher() {
-	:
-}
-
-prefer-search-centric-navigation() {
-	:
-}
-
-grok-why-unix() {
-	:
-}
-
-grok-package-managers() {
-	:
-}
-
-setup-package-manager() {
-	:
-}
-
-launch-default-terminal() {
-	:
-}
-
-install-wezterm() {
-	:
-}
-
-start-using-computer-efficiently() {
-	learn-alt-tab
-	learn-launcher
-	prefer-search-centric-navigation
-}
-
-config-wezterm-with-nano() {
-	:
-}
-
-grok-unix-history() {
-	:
-}
-
-launch-builtin-terminal() {
-	if is-mac; then
-		launch "terminal"
-	elif is-win; then
-		launch "wsl.exe" # we assume WSL2 was already installed
-	elif is-lin; then
-		: # TODO
-	fi
-}
-
-press() {
-	printf "Press the %s key." "$1"
-}
-
-enter() {
-	printf "Type in '%s' and press Enter." "$1"
-}
-
-launch() {
-	if is-mac; then
+	start_using_with_irc() {
 		:
-	elif is-win; then
-		press 'Win'
-		enter "$1"
-	elif is-linux; then # FIXME which linux
+	}
+
+	start_using_unix_like_system() {
+		start_using_basic_universal_shell_commands
+		grok_history_of_unix
+		grok_why_unix
+		get_unix_like_system
+	}
+
+	start_using_wezterm() {
+		launch_default_terminal
+		install_wezterm
+		config_wezterm_with_nano
+	}
+
+	start_using_package_managers() {
+		grok_package_managers
+		setup_package_manager
+	}
+
+	start_using_terminal_multiplexers() {
+		grok_multiplexers
+		install_tmux
+		config_tmux_like_screen
+		learn_tmux
+	}
+
+	config_tmux_like_screen() {
+		: TODO give option to pull down reliable tmux.conf from Web
+	}
+
+	grok_multiplexers() {
+		grok_screen_history
+		grok_tmux_history
+		if agree_to_config_tmux_like_screen; then
+			download_tmux_screen_config
+			apply_tmux_screen_config
+		fi
+	}
+
+	download_tmux_screen_config() {
 		:
-	fi
-}
+	}
 
-have-mac() {
-	if [[ "$OSTYPE" =~ ^darwin ]]; then
-		return $TRUE
-	else
-		return $FALSE
-	fi
-}
+	apply_tmux_screen_config() {
+		:
+	}
 
-get-unix-like-system() {
-	if have-mac; then
-		install-brew
-	fi
-}
+	agree_to_config_tmux_like_screen() {
+		:
+	}
 
-install-brew() {
-	echo would install brew
-}
+	grok_screen_history() {
+		:
+	}
 
-boost-to-terminal-velocity
+	grok_tmux_history() {
+		:
+	}
+
+	start_editing_text_from_terminal() {
+		: customize_vim
+		: customize_neovim
+	}
+
+	start_writing_your_own_docs() {
+		:
+	}
+
+	start_using_git_and_github() {
+		:
+	}
+
+	validate_computer_specs() {
+		:
+	}
+
+	learn_alt_tab() {
+		:
+	}
+
+	learn_launcher() {
+		:
+	}
+
+	prefer_search_centric_navigation() {
+		:
+	}
+
+	grok_why_unix() {
+		:
+	}
+
+	grok_package_managers() {
+		:
+	}
+
+	setup_package_manager() {
+		:
+	}
+
+	launch_default_terminal() {
+		:
+	}
+
+	install_wezterm() {
+		:
+	}
+
+	start_using_computer_efficiently() {
+		learn_alt_tab
+		learn_launcher
+		prefer_search_centric_navigation
+	}
+
+	config_wezterm_with_nano() {
+		:
+	}
+
+	grok_unix_history() {
+		:
+	}
+
+	launch_builtin_terminal() {
+		if is_mac; then
+			launch "terminal"
+		elif is_win; then
+			launch "wsl.exe" # we assume WSL2 was already installed
+		elif is_lin; then
+			: # TODO
+		fi
+	}
+
+	press() {
+		printf "Press the %s key." "$1"
+	}
+
+	enter() {
+		printf "Type in '%s' and press Enter." "$1"
+	}
+
+	launch() {
+		if is_mac; then
+			:
+		elif is_win; then
+			press 'Win'
+			enter "$1"
+		elif is_linux; then # FIXME which linux
+			:
+		fi
+	}
+
+	have_mac() {
+		if [[ "$OSTYPE" =~ ^darwin ]]; then
+			return $TRUE
+		else
+			return $FALSE
+		fi
+	}
+
+	get_unix_like_system() {
+		if have_mac; then
+			install_brew
+		fi
+	}
+
+	install_brew() {
+		echo would install brew
+	}
+
+	boost_to_terminal_velocity
+EOM

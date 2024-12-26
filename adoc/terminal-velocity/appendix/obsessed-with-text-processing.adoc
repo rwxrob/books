@@ -1,5 +1,0 @@
-== I'm obsessed with text processing
-
-I'm not exactly sure why but I have always been absolutely obsessed with parsing text in every and any way possible. Sometimes I wonder if this is because I started with Perl for the beginning of my career for most significant stuff. Maybe it's my affinity for syntax and spoken and written languages. Maybe all of that comes from other particular way my semi-autistic brain is wired. I love that stuff.
-
-I've never actually made a compiler but I have made _transpilers_ before. For some reason the compiler part doesn't interest me. I'm all about finding the syntax of one thing and transforming it into something else. For example, writing this book in bash code and then transpiling it to an Excalidraw flow chart by implementing an AST parser for bash itself and interpreting it into API commands that generate the flow chart automatically. Now _there's_ a project I find so amazing I have a hard time not dropping everything and just working on that right now.

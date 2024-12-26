@@ -1,0 +1,5 @@
+= Edit text
+
+== No visual mode
+
+Vim introduced visual mode—unnecessarily. It brings nothing to the table that anyone who knows how to use `vi` Unix filters would want.
