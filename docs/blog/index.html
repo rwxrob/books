@@ -5,9 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
+<meta name="description" content="Just my blog">
+<meta name="keywords" content="terminal unix linux tech education tutorials learning techlife hacking cybersecurity cli command-line bash golang programming coding applied-programming independent-learning irc weechat tmux ed ex vi vim neovim nvim w3m lynx twitch proxmox homelab init beginner noob kubernetes network software-development utilities">
 <meta name="author" content="Robert S. Muhlestein (rwxrob)">
 <meta name="copyright" content="2024 Robert S. Muhlestein">
-<title>Books from Robert S. Muhlestein (rwxrob)</title>
+<title>rwxrob</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -437,67 +439,268 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="book">
+<body class="book toc2 toc-left">
 <div id="header">
-<h1>Books from Robert S. Muhlestein (rwxrob)</h1>
+<h1>rwxrob</h1>
 <div class="details">
 <span id="author" class="author">Robert S. Muhlestein (rwxrob)</span><br>
 <span id="email" class="email"><a href="mailto:rob@rwx.gg">rob@rwx.gg</a></span><br>
-<br><span id="revremark">https://github.com/rwxrob/books</span>
+<br><span id="revremark">First draft</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_what_is_a_sysde">What is a SysDE?</a></li>
+</ul>
 </div>
 </div>
 <div id="content">
-<div id="preamble">
+<div class="sect1">
+<h2 id="_what_is_a_sysde"><a class="link" href="#_what_is_a_sysde">What is a SysDE?</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Here you&#8217;ll find my perpetually unfinished books:</p>
+<p>A SysDE is a <em>Systems Developer Engineer</em> or <em>Systems Dev Engineer</em>, a title that appears to have started at Amazon and is not to be confused with <em>Systems Engineer</em> or <em>Software Development Engineer</em>.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>From what I can tell, he didn’t have to go through the entire leetCode monkey dance. What does this position entail on a day to day basis?</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>I was convinced that the team would benefit in hiring engineers that are SysDE’s over SDE’s or SE’s.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Looks like the industry has finally <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> booted the horrendous SRE (Site Reliability Engineer) title that Google horribly forced on the industry with that horrible book and came up with a reliable replacement that actually covers <em>exactly</em> what I do—and have always done. Once again, Amazon beats Google. The first searches on the Web pull up hits coming from job postings to Amazon, a company that makes heavy use of the title in their job postings. I finally have a title I can reliably search for that is the <em>exact</em> job I want. And guess what, most of these jobs average 200K. I&#8217;ll be using this title as the primary target for my new <em>Just Start Your SysDE Career with Go</em>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Full disclosure, Amazon is the only company in Silicon Valley that I ever considered seriously joining. I had a great recruiter reach out to me directly and we had a great phone interview, long ago.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>I prefer the Amazon engineer&#8217;s ideas on the title over all the academics flailing to figure out what it means. The head of a college I once met with had no idea what Go even was in 2022. Academics regularly have no idea about what the industry is doing, so asking the "dean of [your] college" about industry terms is about as valuable as asking the lunch lady about for loops.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>A Code Mage&#8217;s First Spell Book</strong> - <span class="small">ages 10 and up</span><br>
-<em>Learn practical computer science and programming with Go as a first language</em><br></p>
+<p>"application modernization"</p>
 </li>
 <li>
-<p><a href="autodidactic"><strong>Autodidactic</strong></a> - <span class="small">ages 12 and up</span><br>
-<em>Keys to success as a modern knowledge warrior</em><br></p>
+<p>"enterprise development"</p>
 </li>
 <li>
-<p><a href="terminal-velocity"><strong>Terminal Velocity</strong></a> - <span class="small">ages 13 and up</span><br>
-<em>Boost your coding, hacking, and learning with the fastest human-computer interface</em><br></p>
+<p>"delivering scalable tooling and automation"</p>
 </li>
 <li>
-<p><a href="go-sysde"><strong>Jump Start Your SysDE Career with Go</strong></a> - <span class="small">ages 13 and up</span><br>
-<em>Learn practical computer science and programming with Go as a first language</em><br></p>
+<p>"expert generalist"</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_traits"><a class="link" href="#_traits">Traits</a></h3>
+<div class="paragraph">
+<p>According to Ramesh, an Amazon Senior Tech Lead responsible for putting together engineering teams, here are the five main traits describing a SysDE:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>"Technology generalist"</p>
 </li>
 <li>
-<p><strong>Linux homelab init</strong> - <span class="small">ages 13 and up</span><br>
-<em>Level-up your control with a Proxmox power tower</em><br></p>
+<p>"Enabling builders"</p>
 </li>
 <li>
-<p><a href="golang-gotchas"><strong>Golang Gotchas</strong></a> - <span class="small">ages 13 and up</span><br>
-<em>Lessons learned the hard way from over a decade of Go coding</em><br></p>
+<p>"Building systems to scale"</p>
 </li>
 <li>
-<p><a href="bad-strimmer"><strong>Bad Strimmer</strong></a> - <span class="small">adults over 18</span><br>
-<em>Lessons learned from my livestream fails</em><br></p>
+<p>"Can write software"</p>
 </li>
 <li>
-<p><a href="faq"><strong>Frequently Asked Questions</strong></a> - <span class="small">adults over 18</span><br>
-<em>All the questions I&#8217;m tired of answering</em><br></p>
+<p>"Great at troubleshooting"</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Just reading that list fills me with glee. Finally, I feel seen! I have been doing exactly these things for 30 years and always felt uncomfortable with the titles that didn&#8217;t quite fit:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sysadmins don&#8217;t do the level of coding that I always have</p>
 </li>
 <li>
-<p><a href="mormons-tale"><strong>There and Never Back Again</strong></a> - <span class="small">adults over 18</span><br>
-<em>A Mormon&#8217;s tale</em><br></p>
+<p>SREs are focused on monitoring and uptime of a site</p>
+</li>
+<li>
+<p>DevOps is, well, no one really knows</p>
+</li>
+<li>
+<p>Infrastructure Engineer is way too broad, but it is generalist</p>
+</li>
+<li>
+<p>Software Engineer is horrible, software developers are <em>not</em> engineers</p>
+</li>
+<li>
+<p>Software Developer is just someone who imagines and writes code</p>
+</li>
+<li>
+<p>Hacker is the closest but it is security related and not about helping devs</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_my_history"><a class="link" href="#_my_history">My history</a></h3>
+<div class="paragraph">
+<p>I&#8217;ve been renamed so many titles in my career it&#8217;s insane—usually while doing exactly the same thing. When I got an 18K raise (if you include bonuses) they changed my title from <em>Infrastructure Engineer</em> to <em>Senior Backend Systems Software Developer</em> even though no one calls me that. At another employer I changed from <em>IT Specialist</em> to <em>Software Engineer</em> and got a $5000 raise (although now I realize just how much they low-balled me there).</p>
+</div>
+<div class="paragraph">
+<p>Let me highlight the stuff I&#8217;ve worked on over the years, each thing is perfectly in the list of what a SysDE would be focused on doing:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Middleware API for enterprise applications to submit massive ML jobs</p>
+</li>
+<li>
+<p>Monolith utility to replace collection of shell scripts for K8SAPP deployments</p>
+</li>
+<li>
+<p>Enterprise deployment of Harbor containing 35 terabytes of container images</p>
+</li>
+<li>
+<p>Communication protocol between agents and servers for compliance data</p>
+</li>
+<li>
+<p>Data store in PostgreSQL to contain compliance data gathered from agent</p>
+</li>
+<li>
+<p>Fork bomb in C to test throttling software</p>
+</li>
+<li>
+<p>CGI libraries used by 1000s of users at an ISP</p>
+</li>
+<li>
+<p>WebSpinner to allow 1000s of users to create own web pages</p>
+</li>
+<li>
+<p>Script to spin up Apache Virtual Server in one command enabling sales people</p>
+</li>
+<li>
+<p>Automated build and deployment of <code>klogin</code> tool for Kubernetes users</p>
+</li>
+<li>
+<p>Exchange rate web page fed from financial source</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The point is that these titles don&#8217;t seem to matter much—until they do. Not getting your title right on a resume or interview or even phone call with someone interested in you can automatically shut doors that lazy interviewers are too lazy to open to figure out what it is you really do.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_programming"><a class="link" href="#_programming">Programming</a></h3>
+<div class="paragraph">
+<p>All the Amazon job postings require mastery of "at least one modern programming language" which they list as the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Python</p>
+</li>
+<li>
+<p>Ruby</p>
+</li>
+<li>
+<p>C/C++</p>
+</li>
+<li>
+<p>Golang</p>
+</li>
+<li>
+<p>Java</p>
+</li>
+<li>
+<p>Rust</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A few of the postings did not include Rust or Java. None of them include Perl. All of they have Python and Go prominently listed, probably because all the modern automation and cloud-native tools are written in one of these two languages.</p>
+</div>
+<div class="sect3">
+<h4 id="_scripting"><a class="link" href="#_scripting">Scripting</a></h4>
+<div class="paragraph">
+<p>Perl, Python, Ruby, Bash, POSIX Shell, JavaScript, hell, even TCL for <code>expect</code>. A kick-ass SysDE can script in anything—on a Unix system.</p>
+</div>
+<div class="paragraph">
+<p>A SysDE knows how to read and write any scripting language that exists. They might not be a specialist, and will forget a lot over time, but they can interpret anything that they might encounter or have to integrate.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lives_for_text_processing"><a class="link" href="#_lives_for_text_processing">Lives for text processing</a></h3>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Write programs to handle text streams, because that is a universal interface.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>SysDEs live for processing text since text is the language of integration and automation—because that is the Unix way. Since Perl is the undisputed leader in text processing—the reason it was created—it remains a dominant skill for all SysDEs. Parsing the same thing in Python or Ruby or Go is often painfully annoying when a SysDE is throwing together a proof-of-concept automation. A SysDE knows why using <code>awk</code> is just idiotic compared to <code>perl</code> and can articulate why.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references"><a class="link" href="#_references">References</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Understanding the Systems Dev Engineer Role<br>
+<a href="https://www.linkedin.com/pulse/understanding-systems-dev-engineer-role-ramesh-krishnaram" class="bare">https://www.linkedin.com/pulse/understanding-systems-dev-engineer-role-ramesh-krishnaram</a></p>
+</li>
+<li>
+<p>Reddit - Dive into anything<br>
+<a href="https://www.reddit.com/r/aws/comments/kk1il5/what_is_a_system_development_engineer_at_aws/" class="bare">https://www.reddit.com/r/aws/comments/kk1il5/what_is_a_system_development_engineer_at_aws/</a></p>
+</li>
+<li>
+<p>What exactly is a SysDE?<br>
+<a href="https://www.reddit.com/r/uwaterloo/comments/85d7tl/what_exactly_is_syde/" class="bare">https://www.reddit.com/r/uwaterloo/comments/85d7tl/what_exactly_is_syde/</a></p>
+</li>
+<li>
+<p>Unix philosophy - Wikipedia<br>
+<a href="https://en.wikipedia.org/wiki/Unix_philosophy" class="bare">https://en.wikipedia.org/wiki/Unix_philosophy</a></p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 </div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. Okay, 2021 is when articles started popping up even though I didn&#8217;t see them until 2025. Of course, haven&#8217;t been looking for a job really in that time.
+</div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-27 12:01:10 -0500
+Last updated 2024-12-27 12:20:54 -0500
 </div>
 </div>
 </body>

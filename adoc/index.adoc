@@ -12,32 +12,31 @@
 :icons: font
 :xrefstyle: short
 
-Here you'll find my perpetually unfinished books.
+Here you'll find my perpetually unfinished books:
 
-- *A Code Mage's First Spell Book* +
-_Learn computer science and practical programming with Go as a first language_ +
-(ages 10 and up)
+- *A Code Mage's First Spell Book* - [small]#ages 10 and up# +
+_Learn practical computer science and programming with Go as a first language_ +
 
-- link:autodidactic[*Autodidactic*] +
+- link:autodidactic[*Autodidactic*] - [small]#ages 12 and up# +
 _Keys to success as a modern knowledge warrior_ +
-(ages 12 and up)
 
-- link:terminal-velocity[*Terminal Velocity*] +
+- link:terminal-velocity[*Terminal Velocity*] - [small]#ages 13 and up# +
 _Boost your coding, hacking, and learning with the fastest human-computer interface_ +
-(ages 13 and up)
 
-- *Linux homelab init* +
+- link:go-sysde[*Jump Start Your SysDE Career with Go*] - [small]#ages 13 and up# +
+_Learn practical computer science and programming with Go as a first language_ +
+
+- *Linux homelab init* - [small]#ages 13 and up# +
 _Level-up your control with a Proxmox power tower_ +
-(ages 13 and up)
 
-- link:bad-strimmer[*Bad Strimmer, No Biscuit*] +
+- link:golang-gotchas[*Golang Gotchas*] - [small]#ages 13 and up# +
+_Lessons learned the hard way from over a decade of Go coding_ +
+
+- link:bad-strimmer[*Bad Strimmer*] - [small]#adults over 18# +
 _Lessons learned from my livestream fails_ +
-(adults over 18)
 
-- link:shut-the-faq-up[*Shut the FAQ Up*] +
+- link:faq[*Frequently Asked Questions*] - [small]#adults over 18# +
 _All the questions I'm tired of answering_ +
-(adults over 18)
 
-- link:mormons-tale[*There and Never Back Again*] (adults over 18) +
+- link:mormons-tale[*There and Never Back Again*] - [small]#adults over 18# +
 _A Mormon's tale_ +
-(adults over 18)

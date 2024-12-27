@@ -514,11 +514,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </ul>
 </li>
 <li><a href="#_terminology">Terminology</a></li>
-<li><a href="#appendix">Appendix</a>
-<ul class="sectlevel2">
-<li><a href="#_im_obsessed_with_text_processing">I&#8217;m obsessed with text processing</a></li>
-</ul>
-</li>
+<li><a href="#appendix">Appendix</a></li>
 </ul>
 </div>
 </div>
@@ -816,313 +812,322 @@ whose contributions and spirit continue to inspire the pursuit of knowledge and 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-ch">#!/usr/bin/env bash</span>
-<span class="tok-c1"># shellcheck disable=SC2034</span>
-<span class="tok-c1"># (disregard these lines for now)</span>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-ch">#!/bin/sh</span>
+<span class="tok-nb">set</span><span class="tok-w"> </span>-e
 
 <span class="tok-c1"># TODO: finish this, still a work in progress</span>
 
-start-working-at-terminal-velocity<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:check-that-you-have-prerequisites
-<span class="tok-w">	</span>:setup-terminal-on-workstation
-<span class="tok-w">	</span>:start-using-basic-terminal-commands
-<span class="tok-w">	</span>:start-using-web-from-terminal
-<span class="tok-w">	</span>:connect-with-other-terminal-lovers
-<span class="tok-w">	</span>:start-creating-stuff-in-terminal
-<span class="tok-w">	</span>:start-using-ai-from-terminal
-<span class="tok-w">	</span>:start-managing-stuff-with-git
-<span class="tok-w">	</span>:start-creating-terminal-apps
-<span class="tok-w">	</span>:start-using-perl-from-cli-only
-<span class="tok-w">	</span>:decide-what-to-learn-next
-<span class="tok-w">	</span>:get-a-job-for-terminal-lovers
+use_unix_terminal<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>check_prerequisites
+<span class="tok-w">	</span><span class="tok-c1">#setup_terminal</span>
+<span class="tok-w">	</span><span class="tok-c1">#navigate_file_system</span>
+<span class="tok-w">	</span><span class="tok-c1">#manipulate_files</span>
+<span class="tok-w">	</span><span class="tok-c1">#edit_files_with_text_editor</span>
+<span class="tok-w">	</span><span class="tok-c1">#manage_screens_with_tmux</span>
+<span class="tok-w">	</span><span class="tok-c1">#write_simple_shell_scripts</span>
+<span class="tok-w">	</span><span class="tok-c1">#manage_source_with_git</span>
+<span class="tok-w">	</span><span class="tok-c1">#manage_development_with_github</span>
+<span class="tok-w">	</span><span class="tok-c1">#configure_interactive_shell</span>
+<span class="tok-w">	</span><span class="tok-c1">#configure_vim_nvim</span>
+<span class="tok-w">	</span><span class="tok-c1">#use_web_from_terminal</span>
+<span class="tok-w">	</span><span class="tok-c1">#use_ai_from_terminal</span>
+<span class="tok-w">	</span><span class="tok-c1">#use_irc_from_terminal</span>
+<span class="tok-w">	</span><span class="tok-c1">#manipulate_text_with_perl</span>
+<span class="tok-w">	</span><span class="tok-c1">#develop_terminal_apps_with_go</span>
 <span class="tok-o">}</span>
 
-start-using-perl-from-cli-only<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:grok-why-perl-was-created
-<span class="tok-w">	</span>:grok-why-perl-won-regular-expressions
-<span class="tok-w">	</span>:grok-why-perl-wins-cli-text-processing
-<span class="tok-w">	</span>:grok-why-perl-loses-for-everything-else
-<span class="tok-w">	</span>:grok-when-perl-destroys-awk
-<span class="tok-w">	</span>:grok-when-perl-destroys-sed
-<span class="tok-w">	</span>:grok-when-perl-destroys-grep
-<span class="tok-w">	</span>:grok-when-perl-destroys-python
-<span class="tok-w">	</span>:grok-when-perl-destroys-ruby
-<span class="tok-w">	</span>:start-using-perl-to-find-replace
-<span class="tok-w">	</span>:start-using-perl-to-map
-<span class="tok-w">	</span>:start-using-perl-to-filter
-<span class="tok-w">	</span>:start-using-perl-to-reduce
-<span class="tok-w">	</span>:start-using-perl-to-transform
+check_prerequisites<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>have_basic_linear_algebra<span class="tok-w"> </span><span class="tok-c1"># y = 2x + 3</span>
+<span class="tok-w">	</span><span class="tok-c1">#have_6th_grade_reading_level  # ex: The Boy Who Harnessed the Wind</span>
+<span class="tok-w">	</span><span class="tok-c1">#have_compatible_computer      # intel, apple, raspi, orangepi</span>
+<span class="tok-w">	</span><span class="tok-c1">#have_admin_rights_on_computer # root, administator</span>
+<span class="tok-w">	</span><span class="tok-c1">#have_internet_access          # basic cable connection</span>
 <span class="tok-o">}</span>
 
-check-that-you-have-prerequisites<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:have-basic-linear-algebra<span class="tok-w">             </span><span class="tok-c1"># y = 2x + 3</span>
-<span class="tok-w">	</span>:have-6th-grade-reading-level<span class="tok-w">          </span><span class="tok-c1"># ex: The Boy Who Harnessed the Wind</span>
-<span class="tok-w">	</span>:have-computer-capable-of-unix-like-os<span class="tok-w"> </span><span class="tok-c1"># intel, apple, raspi, orangepi</span>
-<span class="tok-w">	</span>:have-admin-rights-on-computer<span class="tok-w">         </span><span class="tok-c1"># root, administator</span>
-<span class="tok-w">	</span>:have-internet-access<span class="tok-w">                  </span><span class="tok-c1"># basic cable connection</span>
+have_basic_linear_algebra<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span>assert<span class="tok-w"> </span><span class="tok-se">\</span>
+<span class="tok-w">		</span><span class="tok-s2">&quot;Do you have basic linear algebra skills?&quot;</span><span class="tok-w"> </span><span class="tok-se">\</span>
+<span class="tok-w">		</span><span class="tok-s2">&quot;Consider Kahn Academy.&quot;</span>
 <span class="tok-o">}</span>
 
-setup-terminal-on-workstation<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:start-using-computer-efficiently<span class="tok-w"> </span><span class="tok-c1"># launcher, alt-tab, search-centric</span>
-<span class="tok-w">	</span>:start-using-unix-like-system<span class="tok-w">     </span><span class="tok-c1"># Ubuntu Linux, macOS, WSL2</span>
-<span class="tok-w">	</span>:start-using-package-managers<span class="tok-w">     </span><span class="tok-c1"># apt, brew, winget.exe</span>
+<span class="tok-c1"># ----------------------------- utilities ----------------------------</span>
 
-<span class="tok-w">	</span><span class="tok-nb">read</span><span class="tok-w"> </span>-rp<span class="tok-w"> </span><span class="tok-s2">&quot;Do you care about colors and fastest terminal? [Y|n]&quot;</span><span class="tok-w"> </span>resp
-<span class="tok-w">	</span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-o">[[</span><span class="tok-w"> </span><span class="tok-si">${</span><span class="tok-nv">resp</span><span class="tok-p">,,</span><span class="tok-si">}</span><span class="tok-w"> </span><span class="tok-o">=</span>~<span class="tok-w"> </span>^y<span class="tok-w"> </span><span class="tok-o">]]</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
-<span class="tok-w">		</span>:start-using-wezterm-terminal
-<span class="tok-w">	</span><span class="tok-k">else</span>
-<span class="tok-w">		</span>:start-using-builtin-terminal
+assert<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
+<span class="tok-w">	</span><span class="tok-nb">printf</span><span class="tok-w"> </span><span class="tok-s2">&quot;%s [N|y] &quot;</span><span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-nv">$1</span><span class="tok-s2">&quot;</span>
+<span class="tok-w">	</span><span class="tok-nb">read</span><span class="tok-w"> </span>-r<span class="tok-w"> </span>resp
+<span class="tok-w">	</span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-o">[</span><span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-nv">$resp</span><span class="tok-s2">&quot;</span><span class="tok-w"> </span>!<span class="tok-o">=</span><span class="tok-w"> </span>y<span class="tok-w"> </span><span class="tok-o">]</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
+<span class="tok-w">		</span><span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-nv">$2</span><span class="tok-s2">&quot;</span>
+<span class="tok-w">		</span><span class="tok-nb">exit</span>
 <span class="tok-w">	</span><span class="tok-k">fi</span>
 <span class="tok-o">}</span>
 
-<span class="tok-c1"># Note that this includes both default PowerShell on Windows</span>
-<span class="tok-c1"># as well as bash, zsh, and any other POSIX Unix shell.</span>
-start-using-basic-shell-commands<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:start-working-with-files-from-command-line
-<span class="tok-o">}</span>
+use_unix_terminal
 
-start-working-with-files-from-command-line<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span><span class="tok-nb">local</span><span class="tok-w"> </span><span class="tok-nv">mode</span><span class="tok-o">=</span>command-line-only
-<span class="tok-w">	</span>:grok-file-system-heirarchy
-<span class="tok-w">	</span>:grok-drive-mounting
-<span class="tok-w">	</span>:grok-how-everything-is-a-file-in-unix
-<span class="tok-w">	</span>:start-listing-files
-<span class="tok-w">	</span>:start-navigating-file-system
-<span class="tok-w">	</span>:start-finding-files-with-find-command
-<span class="tok-w">	</span>:start-working-with-file-permissions
-<span class="tok-w">	</span>:start-seeing-whats-in-files
-<span class="tok-w">	</span>:start-modifying-files-without-editor
-<span class="tok-w">	</span>:start-organizing-files
-<span class="tok-w">	</span>:start-linking-files
-<span class="tok-o">}</span>
+<span class="tok-c1"># ----------------------------- old stuff ----------------------------</span>
 
-start-using-web-from-terminal<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>start-fetching-single-web-pages-with-curl
-<span class="tok-w">	</span>start-browsing-web-with-w3m
-<span class="tok-w">	</span>fetch-initial-lynx-config
-<span class="tok-w">	</span>start-browsing-web-with-lynx<span class="tok-w"> </span><span class="tok-c1"># requires bash scripting skill</span>
-<span class="tok-o">}</span>
+:<span class="tok-w"> </span><span class="tok-s">&lt;&lt;-&#39;EOM&#39;</span>
+<span class="tok-s">	setup_terminal_on_workstation() {</span>
+<span class="tok-s">		:start_using_computer_efficiently # launcher, alt_tab, search_centric</span>
+<span class="tok-s">		:start_using_unix_like_system     # Ubuntu Linux, macOS, WSL2</span>
+<span class="tok-s">		:start_using_package_managers     # apt, brew, winget.exe</span>
 
-start-connecting-with-other-terminal-lovers<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>start-watching-terminal-geeks-on-youtube
-<span class="tok-w">	</span>start-chatting-with-twitch-terminal-streamers
-<span class="tok-w">	</span>start-using-weechat-for-twitch-and-irc
-<span class="tok-w">	</span>start-chatting-on-preferred-irc-channels
-<span class="tok-o">}</span>
+<span class="tok-s">		read _rp &quot;Do you care about colors and fastest terminal? [Y|n]&quot; resp</span>
+<span class="tok-s">		if [[ ${resp,,} =~ ^y ]]; then</span>
+<span class="tok-s">			:start_using_wezterm_terminal</span>
+<span class="tok-s">		else</span>
+<span class="tok-s">			:start_using_builtin_terminal</span>
+<span class="tok-s">		fi</span>
+<span class="tok-s">	}</span>
 
-start-creating-advanced-terminal-apps<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:grok-map-filter-reduce-transform
-<span class="tok-w">	</span>:start-creating-advanced-bash-commands<span class="tok-w">  </span><span class="tok-c1"># parameter expansion, hashes, etc.</span>
-<span class="tok-w">	</span>:start-creating-terminal-commands-in-go<span class="tok-w"> </span><span class="tok-c1"># flags, bonzai, cobra, bubbletea</span>
-<span class="tok-w">	</span>:learn-enough-lua-for-dynamic-configs<span class="tok-w">   </span><span class="tok-c1"># ~/.wezterm.lua, ~/.config/nvim/init.lua</span>
-<span class="tok-o">}</span>
+<span class="tok-s">	# Note that this includes both default PowerShell on Windows</span>
+<span class="tok-s">	# as well as bash, zsh, and any other POSIX Unix shell.</span>
+<span class="tok-s">	start_using_basic_shell_commands() {</span>
+<span class="tok-s">		:start_working_with_files_from_command_line</span>
+<span class="tok-s">	}</span>
 
-start-managing-stuff-with-git<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>grok-git-essentials<span class="tok-w">        </span><span class="tok-c1"># just for local backups</span>
-<span class="tok-w">	</span>start-using-bare-git-repos<span class="tok-w"> </span><span class="tok-c1"># just on local computer</span>
-<span class="tok-w">	</span>start-using-github<span class="tok-w">         </span><span class="tok-c1"># but not necessarily for everything</span>
-<span class="tok-w">	</span>start-dot-repo<span class="tok-w">             </span><span class="tok-c1"># often called &quot;dotfiles&quot;</span>
-<span class="tok-w">	</span>start-lab-repo<span class="tok-w">             </span><span class="tok-c1"># for notes and testing</span>
-<span class="tok-o">}</span>
+<span class="tok-s">	start_working_with_files_from_command_line() {</span>
+<span class="tok-s">		local mode=command_line_only</span>
+<span class="tok-s">		:grok_file_system_heirarchy</span>
+<span class="tok-s">		:grok_drive_mounting</span>
+<span class="tok-s">		:grok_how_everything_is_a_file_in_unix</span>
+<span class="tok-s">		:start_listing_files</span>
+<span class="tok-s">		:start_navigating_file_system</span>
+<span class="tok-s">		:start_finding_files_with_find_command</span>
+<span class="tok-s">		:start_working_with_file_permissions</span>
+<span class="tok-s">		:start_seeing_whats_in_files</span>
+<span class="tok-s">		:start_modifying_files_without_editor</span>
+<span class="tok-s">		:start_organizing_files</span>
+<span class="tok-s">		:start_linking_files</span>
+<span class="tok-s">	}</span>
 
-start-creating-stuff-using-terminal<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>start-editing-text-from-terminal<span class="tok-w">  </span><span class="tok-c1"># nano → ed → ex → vi (nvi) → vim → nvim</span>
-<span class="tok-w">	</span>start-using-terminal-multiplexers<span class="tok-w"> </span><span class="tok-c1"># screen → tmux</span>
-<span class="tok-w">	</span>start-taking-notes-in-markdown<span class="tok-w">    </span><span class="tok-c1">#specifically GitHub Flavored Markdown</span>
-<span class="tok-w">	</span>start-writing-basic-bash-scripts<span class="tok-w">  </span><span class="tok-c1"># but not too many until git</span>
-<span class="tok-w">	</span>start-custom-bashrc<span class="tok-w">               </span><span class="tok-c1"># more than just ~/.bashrc</span>
-<span class="tok-o">}</span>
+<span class="tok-s">	start_using_web_from_terminal() {</span>
+<span class="tok-s">		start_fetching_single_web_pages_with_curl</span>
+<span class="tok-s">		start_browsing_web_with_w3m</span>
+<span class="tok-s">		fetch_initial_lynx_config</span>
+<span class="tok-s">		start_browsing_web_with_lynx # requires bash scripting skill</span>
+<span class="tok-s">	}</span>
 
-start-creating-advanced-bash-commands<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>create-filters-in-bash
-<span class="tok-o">}</span>
+<span class="tok-s">	start_connecting_with_other_terminal_lovers() {</span>
+<span class="tok-s">		start_watching_terminal_geeks_on_youtube</span>
+<span class="tok-s">		start_chatting_with_twitch_terminal_streamers</span>
+<span class="tok-s">		start_using_weechat_for_twitch_and_irc</span>
+<span class="tok-s">		start_chatting_on_preferred_irc_channels</span>
+<span class="tok-s">	}</span>
 
-<span class="tok-nb">declare</span><span class="tok-w"> </span>-i<span class="tok-w"> </span><span class="tok-nv">TRUE</span><span class="tok-o">=</span><span class="tok-m">0</span>
-<span class="tok-nb">declare</span><span class="tok-w"> </span>-i<span class="tok-w"> </span><span class="tok-nv">FALSE</span><span class="tok-o">=</span><span class="tok-m">1</span>
-<span class="tok-c1">#declare TERMPREF=wezterm</span>
+<span class="tok-s">	start_creating_advanced_terminal_apps() {</span>
+<span class="tok-s">		:grok_map_filter_reduce_transform</span>
+<span class="tok-s">		:start_creating_advanced_bash_commands  # parameter expansion, hashes, etc.</span>
+<span class="tok-s">		:start_creating_terminal_commands_in_go # flags, bonzai, cobra, bubbletea</span>
+<span class="tok-s">		:learn_enough_lua_for_dynamic_configs   # ~/.wezterm.lua, ~/.config/nvim/init.lua</span>
+<span class="tok-s">	}</span>
 
-start-using-dotfiles-repo<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:<span class="tok-w"> </span>TODO<span class="tok-w"> </span>pull<span class="tok-w"> </span><span class="tok-k">in</span><span class="tok-w"> </span>tmux.conf
-<span class="tok-o">}</span>
+<span class="tok-s">	start_managing_stuff_with_git() {</span>
+<span class="tok-s">		grok_git_essentials        # just for local backups</span>
+<span class="tok-s">		start_using_bare_git_repos # just on local computer</span>
+<span class="tok-s">		start_using_github         # but not necessarily for everything</span>
+<span class="tok-s">		start_dot_repo             # often called &quot;dotfiles&quot;</span>
+<span class="tok-s">		start_lab_repo             # for notes and testing</span>
+<span class="tok-s">	}</span>
 
-start-writing-scripts-in-bash<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:<span class="tok-w"> </span>grok-posix-vs-bash
-<span class="tok-w">	</span>:customize-bashrc
-<span class="tok-o">}</span>
+<span class="tok-s">	start_creating_stuff_using_terminal() {</span>
+<span class="tok-s">		start_editing_text_from_terminal  # nano → ed → ex → vi (nvi) → vim → nvim</span>
+<span class="tok-s">		start_using_terminal_multiplexers # screen → tmux</span>
+<span class="tok-s">		start_taking_notes_in_markdown    #specifically GitHub Flavored Markdown</span>
+<span class="tok-s">		start_writing_basic_bash_scripts  # but not too many until git</span>
+<span class="tok-s">		start_custom_bashrc               # more than just ~/.bashrc</span>
+<span class="tok-s">	}</span>
 
-start-using-with-irc<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	start_creating_advanced_bash_commands() {</span>
+<span class="tok-s">		create_filters_in_bash</span>
+<span class="tok-s">	}</span>
 
-start-using-unix-like-system<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>start-using-basic-universal-shell-commands
-<span class="tok-w">	</span>grok-history-of-unix
-<span class="tok-w">	</span>grok-why-unix
-<span class="tok-w">	</span>get-unix-like-system
-<span class="tok-o">}</span>
+<span class="tok-s">	declare _i TRUE=0</span>
+<span class="tok-s">	declare _i FALSE=1</span>
+<span class="tok-s">	#declare TERMPREF=wezterm</span>
 
-start-using-wezterm<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>launch-default-terminal
-<span class="tok-w">	</span>install-wezterm
-<span class="tok-w">	</span>config-wezterm-with-nano
-<span class="tok-o">}</span>
+<span class="tok-s">	start_using_dotfiles_repo() {</span>
+<span class="tok-s">		: TODO pull in tmux.conf</span>
+<span class="tok-s">	}</span>
 
-start-using-package-managers<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>grok-package-managers
-<span class="tok-w">	</span>setup-package-manager
-<span class="tok-o">}</span>
+<span class="tok-s">	start_writing_scripts_in_bash() {</span>
+<span class="tok-s">		: grok_posix_vs_bash</span>
+<span class="tok-s">		:customize_bashrc</span>
+<span class="tok-s">	}</span>
 
-start-using-terminal-multiplexers<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>grok-multiplexers
-<span class="tok-w">	</span>install-tmux
-<span class="tok-w">	</span>config-tmux-like-screen
-<span class="tok-w">	</span>learn-tmux
-<span class="tok-o">}</span>
+<span class="tok-s">	start_using_with_irc() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-config-tmux-like-screen<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:<span class="tok-w"> </span>TODO<span class="tok-w"> </span>give<span class="tok-w"> </span>option<span class="tok-w"> </span>to<span class="tok-w"> </span>pull<span class="tok-w"> </span>down<span class="tok-w"> </span>reliable<span class="tok-w"> </span>tmux.conf<span class="tok-w"> </span>from<span class="tok-w"> </span>Web
-<span class="tok-o">}</span>
+<span class="tok-s">	start_using_unix_like_system() {</span>
+<span class="tok-s">		start_using_basic_universal_shell_commands</span>
+<span class="tok-s">		grok_history_of_unix</span>
+<span class="tok-s">		grok_why_unix</span>
+<span class="tok-s">		get_unix_like_system</span>
+<span class="tok-s">	}</span>
 
-grok-multiplexers<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>grok-screen-history
-<span class="tok-w">	</span>grok-tmux-history
-<span class="tok-w">	</span><span class="tok-k">if</span><span class="tok-w"> </span>agree-to-config-tmux-like-screen<span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
-<span class="tok-w">		</span>download-tmux-screen-config
-<span class="tok-w">		</span>apply-tmux-screen-config
-<span class="tok-w">	</span><span class="tok-k">fi</span>
-<span class="tok-o">}</span>
+<span class="tok-s">	start_using_wezterm() {</span>
+<span class="tok-s">		launch_default_terminal</span>
+<span class="tok-s">		install_wezterm</span>
+<span class="tok-s">		config_wezterm_with_nano</span>
+<span class="tok-s">	}</span>
 
-download-tmux-screen-config<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	start_using_package_managers() {</span>
+<span class="tok-s">		grok_package_managers</span>
+<span class="tok-s">		setup_package_manager</span>
+<span class="tok-s">	}</span>
 
-apply-tmux-screen-config<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	start_using_terminal_multiplexers() {</span>
+<span class="tok-s">		grok_multiplexers</span>
+<span class="tok-s">		install_tmux</span>
+<span class="tok-s">		config_tmux_like_screen</span>
+<span class="tok-s">		learn_tmux</span>
+<span class="tok-s">	}</span>
 
-agree-to-config-tmux-like-screen<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	config_tmux_like_screen() {</span>
+<span class="tok-s">		: TODO give option to pull down reliable tmux.conf from Web</span>
+<span class="tok-s">	}</span>
 
-grok-screen-history<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	grok_multiplexers() {</span>
+<span class="tok-s">		grok_screen_history</span>
+<span class="tok-s">		grok_tmux_history</span>
+<span class="tok-s">		if agree_to_config_tmux_like_screen; then</span>
+<span class="tok-s">			download_tmux_screen_config</span>
+<span class="tok-s">			apply_tmux_screen_config</span>
+<span class="tok-s">		fi</span>
+<span class="tok-s">	}</span>
 
-grok-tmux-history<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	download_tmux_screen_config() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-start-editing-text-from-terminal<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:<span class="tok-w"> </span>customize-vim
-<span class="tok-w">	</span>:<span class="tok-w"> </span>customize-neovim
-<span class="tok-o">}</span>
+<span class="tok-s">	apply_tmux_screen_config() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-start-writing-your-own-docs<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	agree_to_config_tmux_like_screen() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-start-using-git-and-github<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	grok_screen_history() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-validate-computer-specs<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	grok_tmux_history() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-learn-alt-tab<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	start_editing_text_from_terminal() {</span>
+<span class="tok-s">		: customize_vim</span>
+<span class="tok-s">		: customize_neovim</span>
+<span class="tok-s">	}</span>
 
-learn-launcher<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	start_writing_your_own_docs() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-prefer-search-centric-navigation<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	start_using_git_and_github() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-grok-why-unix<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	validate_computer_specs() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-grok-package-managers<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	learn_alt_tab() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-setup-package-manager<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	learn_launcher() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-launch-default-terminal<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	prefer_search_centric_navigation() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-install-wezterm<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	grok_why_unix() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-start-using-computer-efficiently<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>learn-alt-tab
-<span class="tok-w">	</span>learn-launcher
-<span class="tok-w">	</span>prefer-search-centric-navigation
-<span class="tok-o">}</span>
+<span class="tok-s">	grok_package_managers() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-config-wezterm-with-nano<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	setup_package_manager() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-grok-unix-history<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span>:
-<span class="tok-o">}</span>
+<span class="tok-s">	launch_default_terminal() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-launch-builtin-terminal<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span><span class="tok-k">if</span><span class="tok-w"> </span>is-mac<span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
-<span class="tok-w">		</span>launch<span class="tok-w"> </span><span class="tok-s2">&quot;terminal&quot;</span>
-<span class="tok-w">	</span><span class="tok-k">elif</span><span class="tok-w"> </span>is-win<span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
-<span class="tok-w">		</span>launch<span class="tok-w"> </span><span class="tok-s2">&quot;wsl.exe&quot;</span><span class="tok-w"> </span><span class="tok-c1"># we assume WSL2 was already installed</span>
-<span class="tok-w">	</span><span class="tok-k">elif</span><span class="tok-w"> </span>is-lin<span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
-<span class="tok-w">		</span>:<span class="tok-w"> </span><span class="tok-c1"># TODO</span>
-<span class="tok-w">	</span><span class="tok-k">fi</span>
-<span class="tok-o">}</span>
+<span class="tok-s">	install_wezterm() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-press<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span><span class="tok-nb">printf</span><span class="tok-w"> </span><span class="tok-s2">&quot;Press the %s key.&quot;</span><span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-nv">$1</span><span class="tok-s2">&quot;</span>
-<span class="tok-o">}</span>
+<span class="tok-s">	start_using_computer_efficiently() {</span>
+<span class="tok-s">		learn_alt_tab</span>
+<span class="tok-s">		learn_launcher</span>
+<span class="tok-s">		prefer_search_centric_navigation</span>
+<span class="tok-s">	}</span>
 
-enter<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span><span class="tok-nb">printf</span><span class="tok-w"> </span><span class="tok-s2">&quot;Type in &#39;%s&#39; and press Enter.&quot;</span><span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-nv">$1</span><span class="tok-s2">&quot;</span>
-<span class="tok-o">}</span>
+<span class="tok-s">	config_wezterm_with_nano() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-launch<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span><span class="tok-k">if</span><span class="tok-w"> </span>is-mac<span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
-<span class="tok-w">		</span>:
-<span class="tok-w">	</span><span class="tok-k">elif</span><span class="tok-w"> </span>is-win<span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
-<span class="tok-w">		</span>press<span class="tok-w"> </span><span class="tok-s1">&#39;Win&#39;</span>
-<span class="tok-w">		</span>enter<span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-nv">$1</span><span class="tok-s2">&quot;</span>
-<span class="tok-w">	</span><span class="tok-k">elif</span><span class="tok-w"> </span>is-linux<span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span><span class="tok-w"> </span><span class="tok-c1"># FIXME which linux</span>
-<span class="tok-w">		</span>:
-<span class="tok-w">	</span><span class="tok-k">fi</span>
-<span class="tok-o">}</span>
+<span class="tok-s">	grok_unix_history() {</span>
+<span class="tok-s">		:</span>
+<span class="tok-s">	}</span>
 
-have-mac<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-o">[[</span><span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-nv">$OSTYPE</span><span class="tok-s2">&quot;</span><span class="tok-w"> </span><span class="tok-o">=</span>~<span class="tok-w"> </span>^darwin<span class="tok-w"> </span><span class="tok-o">]]</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
-<span class="tok-w">		</span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-nv">$TRUE</span>
-<span class="tok-w">	</span><span class="tok-k">else</span>
-<span class="tok-w">		</span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-nv">$FALSE</span>
-<span class="tok-w">	</span><span class="tok-k">fi</span>
-<span class="tok-o">}</span>
+<span class="tok-s">	launch_builtin_terminal() {</span>
+<span class="tok-s">		if is_mac; then</span>
+<span class="tok-s">			launch &quot;terminal&quot;</span>
+<span class="tok-s">		elif is_win; then</span>
+<span class="tok-s">			launch &quot;wsl.exe&quot; # we assume WSL2 was already installed</span>
+<span class="tok-s">		elif is_lin; then</span>
+<span class="tok-s">			: # TODO</span>
+<span class="tok-s">		fi</span>
+<span class="tok-s">	}</span>
 
-get-unix-like-system<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span><span class="tok-k">if</span><span class="tok-w"> </span>have-mac<span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-k">then</span>
-<span class="tok-w">		</span>install-brew
-<span class="tok-w">	</span><span class="tok-k">fi</span>
-<span class="tok-o">}</span>
+<span class="tok-s">	press() {</span>
+<span class="tok-s">		printf &quot;Press the %s key.&quot; &quot;$1&quot;</span>
+<span class="tok-s">	}</span>
 
-install-brew<span class="tok-o">()</span><span class="tok-w"> </span><span class="tok-o">{</span>
-<span class="tok-w">	</span><span class="tok-nb">echo</span><span class="tok-w"> </span>would<span class="tok-w"> </span>install<span class="tok-w"> </span>brew
-<span class="tok-o">}</span>
+<span class="tok-s">	enter() {</span>
+<span class="tok-s">		printf &quot;Type in &#39;%s&#39; and press Enter.&quot; &quot;$1&quot;</span>
+<span class="tok-s">	}</span>
 
-boost-to-terminal-velocity</code></pre>
+<span class="tok-s">	launch() {</span>
+<span class="tok-s">		if is_mac; then</span>
+<span class="tok-s">			:</span>
+<span class="tok-s">		elif is_win; then</span>
+<span class="tok-s">			press &#39;Win&#39;</span>
+<span class="tok-s">			enter &quot;$1&quot;</span>
+<span class="tok-s">		elif is_linux; then # FIXME which linux</span>
+<span class="tok-s">			:</span>
+<span class="tok-s">		fi</span>
+<span class="tok-s">	}</span>
+
+<span class="tok-s">	have_mac() {</span>
+<span class="tok-s">		if [[ &quot;$OSTYPE&quot; =~ ^darwin ]]; then</span>
+<span class="tok-s">			return $TRUE</span>
+<span class="tok-s">		else</span>
+<span class="tok-s">			return $FALSE</span>
+<span class="tok-s">		fi</span>
+<span class="tok-s">	}</span>
+
+<span class="tok-s">	get_unix_like_system() {</span>
+<span class="tok-s">		if have_mac; then</span>
+<span class="tok-s">			install_brew</span>
+<span class="tok-s">		fi</span>
+<span class="tok-s">	}</span>
+
+<span class="tok-s">	install_brew() {</span>
+<span class="tok-s">		echo would install brew</span>
+<span class="tok-s">	}</span>
+
+<span class="tok-s">	boost_to_terminal_velocity</span>
+<span class="tok-s">EOM</span></code></pre>
 </div>
 </div>
 </div>
@@ -1197,21 +1202,15 @@ boost-to-terminal-velocity</code></pre>
 <div class="paragraph">
 <p>All the stuff that doesn&#8217;t belong in the rest of the book but seems worth including.</p>
 </div>
-<div class="sect2">
-<h3 id="_im_obsessed_with_text_processing"><a class="link" href="#_im_obsessed_with_text_processing">I&#8217;m obsessed with text processing</a></h3>
 <div class="paragraph">
-<p>I&#8217;m not exactly sure why but I have always been absolutely obsessed with parsing text in every and any way possible. Sometimes I wonder if this is because I started with Perl for the beginning of my career for most significant stuff. Maybe it&#8217;s my affinity for syntax and spoken and written languages. Maybe all of that comes from other particular way my semi-autistic brain is wired. I love that stuff.</p>
-</div>
-<div class="paragraph">
-<p>I&#8217;ve never actually made a compiler but I have made <em>transpilers</em> before. For some reason the compiler part doesn&#8217;t interest me. I&#8217;m all about finding the syntax of one thing and transforming it into something else. For example, writing this book in bash code and then transpiling it to an Excalidraw flow chart by implementing an AST parser for bash itself and interpreting it into API commands that generate the flow chart automatically. Now <em>there&#8217;s</em> a project I find so amazing I have a hard time not dropping everything and just working on that right now.</p>
-</div>
+<p>Unresolved directive in appendix/index.adoc - include::obsessed-with-text-processing.adoc[]</p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-19 13:18:31 -0500
+Last updated 2024-12-26 11:41:59 -0500
 </div>
 </div>
 </body>

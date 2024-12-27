@@ -5,9 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
+<meta name="description" content="Learn practical computer science and programming with Go as a first language">
+<meta name="keywords" content="go golang coding programming computer science beginners software development terminal">
 <meta name="author" content="Robert S. Muhlestein (rwxrob)">
 <meta name="copyright" content="2024 Robert S. Muhlestein">
-<title>Books from Robert S. Muhlestein (rwxrob)</title>
+<title>Jump Start Your Coding Career with Go</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -437,67 +439,211 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="book">
+<body class="book toc2 toc-left">
 <div id="header">
-<h1>Books from Robert S. Muhlestein (rwxrob)</h1>
+<h1>Jump Start Your Coding Career with Go</h1>
 <div class="details">
 <span id="author" class="author">Robert S. Muhlestein (rwxrob)</span><br>
 <span id="email" class="email"><a href="mailto:rob@rwx.gg">rob@rwx.gg</a></span><br>
-<br><span id="revremark">https://github.com/rwxrob/books</span>
+<br><span id="revremark">First draft</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_copyright">Copyright</a></li>
+<li><a href="#dedication">Dedication</a></li>
+<li><a href="#preface">Preface</a>
+<ul class="sectlevel2">
+<li><a href="#_who_should_read_this">Who should read this?</a></li>
+<li><a href="#_write_your_own_book">Write your own book</a></li>
+<li><a href="#_the_hackers_way">The hacker’s way</a></li>
+<li><a href="#_wax_on_wax_off">Wax on, wax off</a></li>
+<li><a href="#_join_a_crew">Join a crew</a></li>
+<li><a href="#_find_a_mentor">Find a mentor</a></li>
+<li><a href="#_become_a_mentor">Become a mentor</a></li>
+<li><a href="#_chatgpt_for_learning">ChatGPT for learning</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Here you&#8217;ll find my perpetually unfinished books:</p>
+<p><em>Learn practical computer science and programming with Go as a first language</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_copyright"><a class="link" href="#_copyright">Copyright</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Copyright © 2024 Robert S. Muhlestein (rwxrob). All rights reserved.</p>
+</div>
+<div class="paragraph">
+<p>The code portions of this book are dedicated to the public domain under the terms of the <strong>Creative Commons Zero (CC0 1.0 Universal)</strong> license (<a href="https://creativecommons.org/publicdomain/zero/1.0/" class="bare">https://creativecommons.org/publicdomain/zero/1.0/</a>). This means you are free to copy, modify, distribute the <em>code portions only</em>, even for commercial purposes, without asking permission, and without saying where you got them. This is so there is no fear your creations are your own after learning to code using them.</p>
+</div>
+<div class="paragraph">
+<p>The non-code prose and images are licensed under the more restrictive Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0) (<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="bare">https://creativecommons.org/licenses/by-nc-nd/4.0/</a>). This means that no non-code prose or image from the book may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the copyright holder. This includes remaking the same content in different formats such as PDF or EPUB since these fall under the definition of derived works. This restriction is primarily in place to ensure outdated copies are not redistributed given the frequent updates expected.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="dedication"><a class="link" href="#dedication">Dedication</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To Joey, who gave me the patient nudge I needed to get good.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="preface"><a class="link" href="#preface">Preface</a></h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>“What is the most important thing you could be working on in the world right now? And if you’re not working on that, why aren’t you?” (Aaron Swartz)</p>
+</div>
+</blockquote>
+</div>
+<div class="sect2">
+<h3 id="_who_should_read_this"><a class="link" href="#_who_should_read_this">Who should read this?</a></h3>
+<div class="paragraph">
+<p>This book is for people who want to start creating useful things in Go—proof of employability—as fast as possible:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>A Code Mage&#8217;s First Spell Book</strong> - <span class="small">ages 10 and up</span><br>
-<em>Learn practical computer science and programming with Go as a first language</em><br></p>
+<p>CS graduates who can&#8217;t get a job because they can&#8217;t make anything</p>
 </li>
 <li>
-<p><a href="autodidactic"><strong>Autodidactic</strong></a> - <span class="small">ages 12 and up</span><br>
-<em>Keys to success as a modern knowledge warrior</em><br></p>
+<p>Future SysDE</p>
 </li>
 <li>
-<p><a href="terminal-velocity"><strong>Terminal Velocity</strong></a> - <span class="small">ages 13 and up</span><br>
-<em>Boost your coding, hacking, and learning with the fastest human-computer interface</em><br></p>
+<p>Cloud-native engineers who want to understand the source code</p>
 </li>
 <li>
-<p><a href="go-sysde"><strong>Jump Start Your SysDE Career with Go</strong></a> - <span class="small">ages 13 and up</span><br>
-<em>Learn practical computer science and programming with Go as a first language</em><br></p>
+<p>Perl and Ruby coders who cannot yet retire</p>
 </li>
 <li>
-<p><strong>Linux homelab init</strong> - <span class="small">ages 13 and up</span><br>
-<em>Level-up your control with a Proxmox power tower</em><br></p>
+<p>Hackers attracted to Go&#8217;s embedded file system</p>
 </li>
 <li>
-<p><a href="golang-gotchas"><strong>Golang Gotchas</strong></a> - <span class="small">ages 13 and up</span><br>
-<em>Lessons learned the hard way from over a decade of Go coding</em><br></p>
+<p>Middleware and backend developers tired of NodeJS, Ruby, Django, and PHP</p>
 </li>
 <li>
-<p><a href="bad-strimmer"><strong>Bad Strimmer</strong></a> - <span class="small">adults over 18</span><br>
-<em>Lessons learned from my livestream fails</em><br></p>
-</li>
-<li>
-<p><a href="faq"><strong>Frequently Asked Questions</strong></a> - <span class="small">adults over 18</span><br>
-<em>All the questions I&#8217;m tired of answering</em><br></p>
-</li>
-<li>
-<p><a href="mormons-tale"><strong>There and Never Back Again</strong></a> - <span class="small">adults over 18</span><br>
-<em>A Mormon&#8217;s tale</em><br></p>
+<p>Unix geeks who love BusyBox and would love to make their own</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>This book assumes you are over thirteen.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_write_your_own_book"><a class="link" href="#_write_your_own_book">Write your own book</a></h3>
+<div class="paragraph">
+<p>Where we&#8217;re going, we don&#8217;t need textbooks. A lab repo isn&#8217;t just a folder—it&#8217;s your personal codebook, your own personal manual. You&#8217;ll use it your entire life. It&#8217;s where ideas are born, tested, and sharpened. Markdown or AsciiDoc notes document the chaos, while the code tells the story of your experiments, your breakthroughs, your failures. It&#8217;s not about just saving files; it&#8217;s about building a map of your learning, linking thought to execution. This isn&#8217;t documentation—it&#8217;s a blueprint for hacking the future, one test, one script, one revelation at a time.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_hackers_way"><a class="link" href="#_the_hackers_way">The hacker’s way</a></h3>
+<div class="paragraph">
+<p>In this book, <em>The Hard Way</em> is better known as <em>The Hacker&#8217;s Way</em>. It&#8217;s not about doing things the easy way or even the fast way—it&#8217;s about doing them <em>your</em> way. This path teaches you to think like a hacker: to see every gap as an opportunity, every problem as a puzzle, and every limitation as a challenge to overcome.</p>
+</div>
+<div class="paragraph">
+<p>Here, we focus on <em>what</em> to learn rather than spoon-feeding you the <em>how</em>. You&#8217;ll find guidance on the tools, concepts, and techniques that matter, but the specifics? Those are yours to discover. The Hacker&#8217;s Way demands that you go beyond the pages of this book, leveraging your curiosity, creativity, and the boundless resources of the digital world to piece it all together.</p>
+</div>
+<div class="paragraph">
+<p>Why this approach? Because hacking isn&#8217;t about following instructions; it&#8217;s about breaking them down, understanding them, and reimagining them. The act of figuring out how something works on your own—not just by imitating but by innovating—is what transforms you into a true hacker. It builds not just technical skills but also resilience, independence, and an instinct for solving problems on your terms.</p>
+</div>
+<div class="paragraph">
+<p>When this book leaves out the <em>how</em>, it&#8217;s intentional. It&#8217;s your cue to dig deeper. Fire up your search engine, dive into documentation, and collaborate with your AI assistants. Don&#8217;t just find the answer—dissect it, experiment with it, and make it yours. The Hacker&#8217;s Way is about mastering the process, not just the outcome.</p>
+</div>
+<div class="paragraph">
+<p>This is a mindset for those who thrive on challenges and who are willing to embrace the unknown. It&#8217;s for the autodidacts, the problem solvers, and the terminal knowledge warriors. If you choose The Hacker&#8217;s Way, you&#8217;ll gain something far more valuable than shortcuts: you&#8217;ll gain the ability to create your own.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_wax_on_wax_off"><a class="link" href="#_wax_on_wax_off">Wax on, wax off</a></h3>
+<div class="paragraph">
+<p>Повторение — мать учения. Repetition is the mother of learning. Anyone who has ever done anything worth learning knows not all procedures can be memorized and ready. You have to come back to them and repeat them. This is why you setup your own learning lab where you take dynamic notes that change as the times do and as you learn more. It&#8217;s the reason this book is perpetually published. It&#8217;s never finished. A hacker&#8217;s learning never is. Always adapting and acquiring new skills and knowledge. Once you think you&#8217;ve learned it all, you get taken out.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_join_a_crew"><a class="link" href="#_join_a_crew">Join a crew</a></h3>
+<div class="paragraph">
+<p>We humans are social creatures. Learning is communal. Join a community that is focused on learning the same things as you. Meetups, hacker spaces, clubs, church groups, social media, and live streamer chat groups are all great places to find a community. The community is a place to collaborate and share peer reviews of one another&#8217;s learning and projects. Who knows, you might find a friend. I did.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>My sincere hope is that the parents, teachers, and young hackers reading these words will find opportunities and motivation to create their own clubs and communities dedicated to helping others master the art of the terminal command line and bash scripting and all the well-earned benefits of doing so. While you are working on creating your own community, consider joining my crew: <a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_find_a_mentor"><a class="link" href="#_find_a_mentor">Find a mentor</a></h3>
+<div class="paragraph">
+<p>Humans have been passing knowledge one to another since the beginning. It&#8217;s what we do. Wanna forge a sword or horse shoe? Better find the blacksmith and get them to show you their craft. Coding is no different. Just don&#8217;t ask them to <em>teach</em> you. They are probably too busy paying their bills doing what they are good at rather than spending that time teaching you how to do it. If you are respectful of their time, however, they might just be willing to mentor you—especially if you show genuine interest in their craft.</p>
+</div>
+<div class="paragraph">
+<p>You will find that many people <em>want</em> to share what they know but just don&#8217;t know how to do it or who would want to hear. Find these people and approach them. Perhaps you can find a few mentors so you can compare how they differ in their approach to programming.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_become_a_mentor"><a class="link" href="#_become_a_mentor">Become a mentor</a></h3>
+<div class="paragraph">
+<p>Here&#8217;s a secret a lot of people who get paid a lot of money don&#8217;t want you to know, you don&#8217;t need any special training to help someone else learn. In fact, as a beginner who has recently mastered something you are perhaps the best suited to help another beginner learn it because what made it click for you is still fresh in your mind. Ask a veteran when the last time anything clicked for them? They get so used to what they do they completely forget what it was like to be a beginner. So don&#8217;t be shy. Offer your help to another beginner. And remember, you really haven&#8217;t learned it until you can help someone else learn it as well.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_chatgpt_for_learning"><a class="link" href="#_chatgpt_for_learning">ChatGPT for learning</a></h3>
+<div class="paragraph">
+<p>In my experience ChatGPT is an absolute necessity for anyone wanting to truly take their learning to the next level. I&#8217;m not getting paid to say that (but I would happily accept money for saying so). You really should consider subscribing if you are serious about adopting an autodidactic lifestyle. ChatGPT is specifically designed for general learning and creativity and runs on anything with full contextual history. Mine has helped me keep my conversational Russian and French skills up, planned bike trips, helped me code the mundane stuff, reminded me of things I forgot about, offered up random ideas, and so much more.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Claude, another AI assistant, is better for <code>mods</code> terminal API integration and for coding.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Still skeptical? I know I was.</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s the thing. On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges with a supportive AI companion—even when a helpful human mentor is also available.</p>
+</div>
+<div class="paragraph">
+<p>We are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. Don&#8217;t get left behind.</p>
+</div>
+<div class="paragraph">
+<p>We are already seeing this difference around us every day. I&#8217;m remarkably faster at the same job now with AI doing the same thing I&#8217;ve been doing for four years, and that&#8217;s not even just the coding part. Querying an AI is exponentially better for research than a Google search, provided I verify the results, as always.</p>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-27 12:01:10 -0500
+Last updated 2024-12-27 11:19:22 -0500
 </div>
 </div>
 </body>
