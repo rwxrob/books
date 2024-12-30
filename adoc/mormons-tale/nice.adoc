@@ -514,4 +514,8 @@ These are your contents and you have all the right to restrict it, but i myself 
 
 Thank you very much for showing me filtering it makes workflow real smooth I don't need most of Neovim plugins any more also now I want to do and accomplish so I can be even faster in terminal. I think more people should know it.
 
+---
 
+**Name**: kraalle
+
+...also wanted to mention (should have mentioned 7 months ago). I went from a 40k/year miserable job to 6 figure job because of the content you create. I am rather happy now. Fulfilling job and has allowed me to do more with my life.
