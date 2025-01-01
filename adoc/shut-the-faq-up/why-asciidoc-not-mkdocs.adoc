@@ -1,7 +1,0 @@
-= Why AsciiDoc instead of MkDocs?
-
-I love and use them both a lot.
-
-AsciiDoc is superior for creating books, PDFs and EPUBs. MkDocs doesn't really have any of that.
-
-MkDocs is superior for web sites with have indexed searching in them. This is ideal for technical documentation but doesn't allow that same information to be published easily in any other form but the web.

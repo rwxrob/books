@@ -1,7 +1,0 @@
-[[appendix]]
-= Appendix
-
-All the stuff that doesn't belong in the rest of the book but seems worth including.
-
-include::obsessed-with-text-processing.adoc[]
-
